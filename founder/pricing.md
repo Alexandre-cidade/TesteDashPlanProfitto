@@ -4,7 +4,7 @@ Fontes: painel de 50 compradores simulados (`panel/results.md`, `pricing-curve.m
 
 ## Antes de tudo: o painel deu 0 de 50, e parte disso é culpa do pitch
 
-Nenhum dos 50 compradou o Assistido a R$ 350. Os motivos foram confiança (24), hábito (14) e preço (12). Mas o pitch dizia, por honestidade, que "a empresa não informou se há fidelidade ou como funciona o cancelamento", e **49 de 50** citaram exatamente isso. Logo, o 0% mede uma oferta incompleta, não o serviço. Mesmo assim, três sinais se sustentam independentemente do pitch:
+Nenhum dos 50 comprou o Assistido a R$ 350. Os motivos foram confiança (24), hábito (14) e preço (12). Mas o pitch dizia, por honestidade, que "a empresa não informou se há fidelidade ou como funciona o cancelamento", e **49 de 50** citaram exatamente isso. Logo, o 0% mede uma oferta incompleta, não o serviço. Mesmo assim, três sinais se sustentam independentemente do pitch:
 
 1. **R$ 350 está acima da faixa aceitável** para a média: PME de R$ 300, e metade disse que R$ 350 ou menos já é "caro demais".
 2. **32 de 50 pediram para começar por um diagnóstico avulso** ou um primeiro mês de teste antes de assinar.
