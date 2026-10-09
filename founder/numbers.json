@@ -1,0 +1,80 @@
+{
+  "business": "Planejamento financeiro por assinatura (nome a definir) — Acompanhamento para famílias",
+  "unit": "cliente-mês",
+  "price": 297,
+  "variable": [
+    {
+      "label": "Tempo do planejador: 2 h/cliente/mês (check-in 30 min + preparo + WhatsApp) × R$ 70/h [ESTIMATIVA]",
+      "cost": 140
+    },
+    {
+      "label": "Dashplan por cliente [ESTIMATIVA, ref. Meu Vista R$ 599 / 10 famílias]",
+      "cost": 60
+    },
+    {
+      "label": "Imposto sobre receita ~11% (Simples, serviços) [ESTIMATIVA — confirmar com contador]",
+      "cost": 32.67
+    },
+    {
+      "label": "Taxa de cobrança recorrente ~3,5% [ESTIMATIVA]",
+      "cost": 10.4
+    }
+  ],
+  "fixed_monthly": [
+    {
+      "label": "Marketing (anúncios + conteúdo) [ESTIMATIVA]",
+      "cost": 3000
+    },
+    {
+      "label": "Coworking / sala para atendimento presencial em POA [ESTIMATIVA]",
+      "cost": 1000
+    },
+    {
+      "label": "Contador [ESTIMATIVA]",
+      "cost": 600
+    },
+    {
+      "label": "Ferramentas (CRM, agenda, assinatura eletrônica, WhatsApp Business) [ESTIMATIVA]",
+      "cost": 300
+    },
+    {
+      "label": "Pró-labore dos sócios fora do tempo de atendimento [NÃO INFORMADO — R$ 0 por ora]",
+      "cost": 0
+    }
+  ],
+  "startup": [
+    {
+      "label": "Abertura de empresa, registros [ESTIMATIVA]",
+      "cost": 2000
+    },
+    {
+      "label": "Jurídico: contrato, termos de cancelamento, LGPD [ESTIMATIVA]",
+      "cost": 3000
+    },
+    {
+      "label": "Marca e site/landing pages [ESTIMATIVA]",
+      "cost": 5000
+    },
+    {
+      "label": "Anúncios de lançamento e testes de preço [ESTIMATIVA]",
+      "cost": 5000
+    }
+  ],
+  "days_per_month": 1,
+  "capacity_per_day": 160,
+  "plan_per_day": 80,
+  "ramp_per_day": [
+    3,
+    6,
+    10,
+    15,
+    20,
+    25,
+    30,
+    35,
+    40,
+    45,
+    50,
+    55
+  ]
+}
