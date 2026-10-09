@@ -1,0 +1,13 @@
+{
+  "id": "P019",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "R$ 350 por mês dá R$ 4.200 por ano, é dinheiro que eu poderia estar finalmente investindo. Minha planilha já controla meus gastos e metas de graça.",
+  "objection": "Já perdi dinheiro com dica de investimento uma vez; pagar caro todo mês, sem saber se tem fidelidade ou como cancelar, para uma empresa nova que eu não conheço, me parece mais um jeito de perder dinheiro.",
+  "would_change_my_mind": "Uma consulta avulsa de diagnóstico com preço fixo, sem assinatura, e o planejador sendo independente, sem ganhar comissão vendendo produto.",
+  "price_too_cheap": 30,
+  "price_cheap": 80,
+  "price_expensive": 150,
+  "price_too_expensive": 250
+}

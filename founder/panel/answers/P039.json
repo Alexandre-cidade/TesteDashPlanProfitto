@@ -1,0 +1,13 @@
+{
+  "id": "P039",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "É uma empresa nova e ninguém que eu confio me indicou; eu só contrato serviço assim por recomendação de amigo ou colega. Além disso já paguei app de finanças e larguei, e não sei se consigo cancelar se acontecer de novo.",
+  "objection": "Vou pagar R$ 350 todo mês e não usar, como já aconteceu com app, e ainda não sei se tem fidelidade ou como cancelo.",
+  "would_change_my_mind": "Um amigo ou colega de confiança me dizer que usa esse planejador há meses e que realmente mudou as finanças dele.",
+  "price_too_cheap": 80,
+  "price_cheap": 180,
+  "price_expensive": 400,
+  "price_too_expensive": 650
+}

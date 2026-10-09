@@ -1,0 +1,13 @@
+{
+  "id": "P013",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Já perdi dinheiro seguindo dica de quem dizia entender de investimento, e app de controle eu larguei em um mês. Pagar R$ 350 todo mês para uma empresa nova, sem saber se tem fidelidade, não me convence; minha planilha faz o básico.",
+  "objection": "Não sei quem é esse planejador, se ele ganha comissão empurrando produto, e a empresa nem diz como cancelar. Parece mais um compromisso mensal que eu vou largar.",
+  "would_change_my_mind": "Planejador com certificação (CFP) e remuneração só pela taxa, sem comissão de produto, com cancelamento livre a qualquer momento e uma primeira consulta de diagnóstico avulsa para eu testar.",
+  "price_too_cheap": 80,
+  "price_cheap": 150,
+  "price_expensive": 280,
+  "price_too_expensive": 400
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P005",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "R$ 350 por mês, todo mês, é mais de R$ 4 mil por ano para alguém me dizer o que eu já ouço de graça no YouTube. E ainda sem saber se tem fidelidade, eu não assino.",
+  "objection": "Pagar caro todo mês sem saber se consigo cancelar quando quiser, e no fim continuar brigando com meu marido sobre dinheiro do mesmo jeito.",
+  "would_change_my_mind": "Uma primeira sessão de diagnóstico a preço baixo, com nós dois juntos, e cancelamento livre a qualquer momento escrito na oferta.",
+  "price_too_cheap": 50,
+  "price_cheap": 120,
+  "price_expensive": 220,
+  "price_too_expensive": 350
+}

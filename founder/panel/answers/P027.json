@@ -1,0 +1,13 @@
+{
+  "id": "P027",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Empresa nova, sem nenhum histórico no Reclame Aqui, e nem dizem se tem fidelidade ou como cancelar. Já paguei app de finanças e larguei; não vou assinar R$ 350 por mês no escuro.",
+  "objection": "Não sei se consigo cancelar fácil e tenho medo de pagar todo mês e não usar, como já aconteceu comigo.",
+  "would_change_my_mind": "Cancelamento sem fidelidade escrito no contrato, com um primeiro mês de teste ou diagnóstico avulso, e algumas avaliações reais que eu consiga checar.",
+  "price_too_cheap": 80,
+  "price_cheap": 180,
+  "price_expensive": 350,
+  "price_too_expensive": 550
+}

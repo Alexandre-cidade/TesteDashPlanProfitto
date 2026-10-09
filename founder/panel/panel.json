@@ -1,0 +1,101 @@
+{
+ "n": 50,
+ "seed": 998290,
+ "customer": {
+  "business": "Planejamento financeiro por assinatura (nome a definir), Porto Alegre/RS + digital",
+  "target": "Pessoas e famílias de Porto Alegre e região, de 25 a 65 anos, com renda familiar a partir de ~R$ 6 mil/mês, que querem organizar as finanças e construir patrimônio. Todos os valores são em reais (R$); a renda é anual e os preços que você der são mensais, em R$",
+  "where": "Porto Alegre/RS, atendimento online e presencial",
+  "age": [
+   25,
+   65
+  ],
+  "segments": [
+   {
+    "name": "Jovem profissional, ainda sem investimentos",
+    "share": 0.35,
+    "income": [
+     72000,
+     150000
+    ]
+   },
+   {
+    "name": "Família de classe média com filhos",
+    "share": 0.35,
+    "income": [
+     120000,
+     300000
+    ]
+   },
+   {
+    "name": "Profissional liberal de alta renda (médico, advogado, empresário)",
+    "share": 0.2,
+    "income": [
+     300000,
+     700000
+    ]
+   },
+   {
+    "name": "Pré-aposentado ou aposentado",
+    "share": 0.1,
+    "income": [
+     100000,
+     350000
+    ]
+   }
+  ],
+  "behaviours": [
+   {
+    "name": "Faz planilha sozinho",
+    "share": 0.2,
+    "how": "Controla tudo numa planilha e acha que não precisa de ajuda paga."
+   },
+   {
+    "name": "Confia no gerente ou assessor do banco",
+    "share": 0.18,
+    "how": "Deixa as decisões com o gerente ou o assessor da corretora, que não cobram mensalidade."
+   },
+   {
+    "name": "Já usou app e largou",
+    "share": 0.16,
+    "how": "Baixou Mobills ou Organizze, usou por um mês e abandonou."
+   },
+   {
+    "name": "Segue influenciador de finanças",
+    "share": 0.14,
+    "how": "Assiste a conteúdo de finanças no YouTube e Instagram e já viu ofertas de planejamento online."
+   },
+   {
+    "name": "Pesquisa no Reclame Aqui antes de comprar",
+    "share": 0.12,
+    "how": "Só contrata depois de ler reclamações e checar se o cancelamento é fácil."
+   },
+   {
+    "name": "Endividado buscando saída",
+    "share": 0.1,
+    "how": "Tem cartão ou cheque especial rodando e quer ajuda, mas o dinheiro está curto."
+   },
+   {
+    "name": "Contrata por indicação",
+    "share": 0.1,
+    "how": "Só contrata serviço que um amigo ou colega de confiança recomendou."
+   }
+  ],
+  "objections": [
+   "R$ 350 por mês é caro para alguém me dizer para gastar menos",
+   "Meu gerente do banco ou meu assessor já faz isso de graça",
+   "Já tentei app e larguei; vou pagar e não usar",
+   "E se eu quiser cancelar? Essas empresas complicam",
+   "Como sei que esse planejador é bom e não vai me empurrar produto?",
+   "Uma planilha resolve, não preciso pagar todo mês",
+   "Depois das primeiras reuniões, o que muda no mês seguinte?"
+  ],
+  "habits": [
+   "você mora em Porto Alegre e trabalha das 9h às 18h",
+   "você já perdeu dinheiro numa dica de investimento",
+   "você tem um objetivo concreto, como comprar um imóvel ou a escola dos filhos",
+   "você paga outras assinaturas, como streaming e academia",
+   "você conversa sobre dinheiro com o cônjuge e sempre termina em discussão"
+  ]
+ },
+ "pitch": "Planejamento Financeiro Assistido, de uma nova empresa de planejamento financeiro de Porto Alegre.\nUm planejador financeiro faz um diagnóstico das suas finanças, monta um plano com suas metas e acompanha você periodicamente, por vídeo ou presencialmente em Porto Alegre.\nVocê também recebe acesso a uma plataforma online para controlar gastos, ver metas e projeções.\nR$ 350 por mês, por assinatura. A empresa não informou se há fidelidade ou como funciona o cancelamento."
+}

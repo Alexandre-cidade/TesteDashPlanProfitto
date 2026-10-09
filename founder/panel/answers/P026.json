@@ -1,0 +1,13 @@
+{
+  "id": "P026",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Até tenho dinheiro pra pagar R$ 350, mas é uma empresa nova que nem diz se tem fidelidade ou como cancela. Não entro numa assinatura assim no escuro, ainda mais quando o conteúdo dos influenciadores que sigo já me dá uma boa parte disso de graça.",
+  "objection": "E se eu quiser cancelar? Sem saber se tem multa ou fidelidade, parece que vão complicar minha saída, igual academia.",
+  "would_change_my_mind": "Cancelamento a qualquer momento, sem multa e pelo próprio app, escrito na oferta, e de preferência um primeiro mês ou diagnóstico de teste.",
+  "price_too_cheap": 80,
+  "price_cheap": 180,
+  "price_expensive": 350,
+  "price_too_expensive": 550
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P012",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Eu já controlo tudo na minha planilha há anos e o gerente do banco me orienta nos investimentos sem cobrar nada. Pagar R$ 350 todo mês, mais de R$ 4 mil por ano, para alguém me dizer o que eu já sei não faz sentido para mim.",
+  "objection": "Não vejo o que um planejador vai fazer que a minha planilha e o banco já não fazem, e ainda nem dizem se tem fidelidade ou como cancelo.",
+  "would_change_my_mind": "Se o planejador servisse de mediador neutro numa conversa com meu marido sobre metas, com uma primeira sessão de diagnóstico gratuita e cancelamento livre a qualquer momento.",
+  "price_too_cheap": 50,
+  "price_cheap": 100,
+  "price_expensive": 200,
+  "price_too_expensive": 300
+}

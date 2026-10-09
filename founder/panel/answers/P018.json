@@ -1,0 +1,13 @@
+{
+  "id": "P018",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Ganho uns R$ 7.700 por mês e ainda não tenho nada investido; pagar R$ 350 todo mês, sem saber se tem fidelidade, é dinheiro que eu poderia estar começando a investir. Já vejo muita coisa de graça no YouTube e Instagram, então preciso de algo bem concreto pra justificar esse valor.",
+  "objection": "Depois das primeiras reuniões, o que muda no mês seguinte? Tenho medo de pagar R$ 350 todo mês por um diagnóstico que acontece uma vez e depois virar só um app de controle de gastos, sem saber como cancelar.",
+  "would_change_my_mind": "Um primeiro mês com diagnóstico a preço reduzido e cancelamento livre por escrito, mostrando exatamente o que o acompanhamento mensal entrega depois disso.",
+  "price_too_cheap": 40,
+  "price_cheap": 100,
+  "price_expensive": 200,
+  "price_too_expensive": 300
+}

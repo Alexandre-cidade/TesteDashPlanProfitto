@@ -1,0 +1,13 @@
+{
+  "id": "P029",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Estou com cartão e cheque especial rodando; tirar mais R$ 350 por mês agora, sem saber se tem fidelidade, é aumentar o buraco. Já paguei app e larguei, tenho medo de virar mais uma assinatura esquecida.",
+  "objection": "Pagar R$ 350 todo mês quando o dinheiro já está curto, sem saber se consigo cancelar fácil, e acabar não usando como aconteceu com os apps.",
+  "would_change_my_mind": "Um primeiro mês grátis ou bem barato focado em sair das dívidas, sem fidelidade e com cancelamento simples por escrito.",
+  "price_too_cheap": 40,
+  "price_cheap": 100,
+  "price_expensive": 200,
+  "price_too_expensive": 300
+}

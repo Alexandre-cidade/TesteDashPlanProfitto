@@ -1,0 +1,13 @@
+{
+  "id": "P031",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Empresa nova, sem histórico no Reclame Aqui, e nem diz como funciona o cancelamento. Não assino algo por R$ 350 por mês sem saber se vou conseguir sair quando quiser.",
+  "objection": "E se eu quiser cancelar? Não informaram fidelidade nem multa, e empresa que esconde isso costuma complicar na hora de sair.",
+  "would_change_my_mind": "Cancelamento sem fidelidade e sem multa, por escrito no contrato, que eu consiga fazer online sozinha, mais um planejador certificado (CFP) com reputação que eu possa checar.",
+  "price_too_cheap": 100,
+  "price_cheap": 200,
+  "price_expensive": 450,
+  "price_too_expensive": 700
+}

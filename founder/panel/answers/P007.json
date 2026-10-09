@@ -1,0 +1,13 @@
+{
+  "id": "P007",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Meu gerente do banco já me orienta sem cobrar nada, e R$ 350 por mês é mais do que pago de streaming e academia juntos. Não vou pagar uma empresa nova que nem conheço por algo que hoje recebo de graça.",
+  "objection": "Depois do diagnóstico e das primeiras reuniões, o que muda no mês seguinte que justifique continuar pagando R$ 350? E nem dizem se tem fidelidade ou como cancelo.",
+  "would_change_my_mind": "Um primeiro mês gratuito ou sem fidelidade, com cancelamento a qualquer hora, e uma conta clara de quanto eu economizaria ou ganharia a mais em comparação com o que meu gerente já faz.",
+  "price_too_cheap": 30,
+  "price_cheap": 80,
+  "price_expensive": 180,
+  "price_too_expensive": 300
+}

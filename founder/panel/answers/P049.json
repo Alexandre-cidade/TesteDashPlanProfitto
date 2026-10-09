@@ -1,0 +1,13 @@
+{
+  "id": "P049",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "R$ 350 por mês é mais do que eu pago de academia e streaming juntos, e é muito para alguém me dizer para gastar menos. Já larguei o Organizze depois de um mês, não sei se com gente me acompanhando seria diferente o bastante para valer isso.",
+  "objection": "Pagar todo mês um valor alto sem saber se tem fidelidade ou como cancelar, e acabar abandonando como fiz com os apps.",
+  "would_change_my_mind": "Um primeiro diagnóstico avulso com preço fechado, sem fidelidade, e depois uma mensalidade bem menor só para o acompanhamento.",
+  "price_too_cheap": 30,
+  "price_cheap": 80,
+  "price_expensive": 180,
+  "price_too_expensive": 300
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P024",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "R$ 350 não pesa no meu bolso, mas é uma empresa nova que eu nunca ouvi falar e nem diz se tem fidelidade ou como cancela. Já larguei Mobills e Organizze, e para controlar gasto minha planilha resolve; não vou assinar no escuro.",
+  "objection": "Não sei quem é esse planejador, que formação tem, se é independente ou vai me empurrar produto, e não sei se consigo sair quando quiser.",
+  "would_change_my_mind": "Saber quem são os planejadores (certificação CFP, independentes, sem comissão de produto) e ter cancelamento livre a qualquer momento, idealmente com um primeiro mês de diagnóstico sem compromisso.",
+  "price_too_cheap": 100,
+  "price_cheap": 200,
+  "price_expensive": 450,
+  "price_too_expensive": 700
+}

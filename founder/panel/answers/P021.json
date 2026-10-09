@@ -1,0 +1,13 @@
+{
+  "id": "P021",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Eu já controlo tudo na minha planilha e não vejo por que pagar R$ 350 por mês para alguém me dizer o que eu já sei. Já perdi dinheiro seguindo dica de investimento de terceiro, então não vou pagar para uma empresa nova que nem conheço me orientar.",
+  "objection": "Uma empresa recém-criada, sem histórico, cobrando assinatura sem dizer se tem fidelidade ou como cancelo. E não sei se o planejador ganha comissão empurrando produto.",
+  "would_change_my_mind": "Um planejador certificado (CFP), remunerado só pela taxa, sem comissão de produto, com cancelamento a qualquer momento e um diagnóstico inicial avulso para eu ver se agrega algo além da minha planilha.",
+  "price_too_cheap": 50,
+  "price_cheap": 100,
+  "price_expensive": 200,
+  "price_too_expensive": 350
+}

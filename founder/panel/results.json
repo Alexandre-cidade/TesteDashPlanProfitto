@@ -1,0 +1,179 @@
+{
+ "business": "Planejamento financeiro por assinatura (nome a definir), Porto Alegre/RS + digital",
+ "seed": 998290,
+ "dealt": 50,
+ "answered": 50,
+ "skipped": [],
+ "buys": 0,
+ "passes": 50,
+ "buy_rate": 0.0,
+ "by_segment": [
+  [
+   "Jovem profissional, ainda sem investimentos",
+   18,
+   0.0
+  ],
+  [
+   "Família de classe média com filhos",
+   17,
+   0.0
+  ],
+  [
+   "Pré-aposentado ou aposentado",
+   5,
+   0.0
+  ],
+  [
+   "Profissional liberal de alta renda (médico, advogado, empresário)",
+   10,
+   0.0
+  ]
+ ],
+ "by_behaviour": [
+  [
+   "Confia no gerente ou assessor do banco",
+   9,
+   0.0
+  ],
+  [
+   "Faz planilha sozinho",
+   10,
+   0.0
+  ],
+  [
+   "Contrata por indicação",
+   5,
+   0.0
+  ],
+  [
+   "Segue influenciador de finanças",
+   7,
+   0.0
+  ],
+  [
+   "Endividado buscando saída",
+   5,
+   0.0
+  ],
+  [
+   "Já usou app e largou",
+   8,
+   0.0
+  ],
+  [
+   "Pesquisa no Reclame Aqui antes de comprar",
+   6,
+   0.0
+  ]
+ ],
+ "by_income": [
+  [
+   "under $136,000",
+   16,
+   0.0
+  ],
+  [
+   "$246,000 and up",
+   17,
+   0.0
+  ],
+  [
+   "$136,000 to $246,000",
+   17,
+   0.0
+  ]
+ ],
+ "why_not": [
+  [
+   "trust",
+   24,
+   [
+    "Meu gerente do banco já me orienta de graça. Pagar R$ 350 todo mês para uma empresa nova que nem diz como cancelar não faz sentido para mim agora.",
+    "Eu só contrato quem alguém de confiança me indicou, e ninguém que eu conheço usou essa empresa nova. Além disso, R$ 350 por mês sem saber se tem fidelidade ou como cancelar me parece arriscado demais."
+   ],
+   [
+    "P001",
+    "P004"
+   ]
+  ],
+  [
+   "habit",
+   14,
+   [
+    "Já controlo tudo na minha planilha e sei para onde vai meu dinheiro. Pagar R$ 350 todo mês, R$ 4.200 por ano, é dinheiro que eu prefiro colocar direto na meta do apartamento.",
+    "Eu já controlo tudo na minha planilha e funciona; já tentei app e larguei, e pagar R$ 350 por mês para alguém me dizer o que eu já anoto não faz sentido pra mim."
+   ],
+   [
+    "P002",
+    "P003"
+   ]
+  ],
+  [
+   "price",
+   12,
+   [
+    "R$ 350 por mês, todo mês, é mais de R$ 4 mil por ano para alguém me dizer o que eu já ouço de graça no YouTube. E ainda sem saber se tem fidelidade, eu não assino.",
+    "Eu tô com cartão e cheque especial rodando, R$ 350 todo mês é praticamente uma parcela de dívida a mais. Pagar isso pra alguém me dizer pra gastar menos não fecha a conta agora."
+   ],
+   [
+    "P005",
+    "P009"
+   ]
+  ]
+ ],
+ "why_yes": [],
+ "flip": [
+  "Cancelamento livre a qualquer momento, sem multa, escrito de forma clara, e um primeiro mês ou diagnóstico gratuito para eu ver se vale a pena.",
+  "Um diagnóstico avulso, pago uma vez só e sem fidelidade, que me mostrasse um erro ou ganho concreto no meu plano do imóvel que eu não teria visto sozinho.",
+  "Um diagnóstico avulso, sem assinatura, que me mostrasse em números algo que minha planilha não mostra, como quanto eu deixo de ganhar em investimento ou imposto.",
+  "Uma amiga ou colega de confiança me contar que usou, que o planejador ajudou de verdade e que dá para cancelar quando quiser.",
+  "Uma primeira sessão de diagnóstico a preço baixo, com nós dois juntos, e cancelamento livre a qualquer momento escrito na oferta.",
+  "Cancelamento sem fidelidade e sem multa, escrito claramente, com um primeiro mês de diagnóstico grátis ou barato para eu ver se o plano realmente me ajuda a comprar o imóvel mais rápido do que com o gerente.",
+  "Um primeiro mês gratuito ou sem fidelidade, com cancelamento a qualquer hora, e uma conta clara de quanto eu economizaria ou ganharia a mais em comparação com o que meu gerente já faz.",
+  "Um primeiro mês de diagnóstico focado em sair do cheque especial, sem fidelidade e com cancelamento fácil por escrito, com o planejador me cobrando ativamente em vez de eu ter que lembrar de abrir a plataforma.",
+  "Um plano mais barato focado em sair das dívidas, sem fidelidade, ou que só cobre depois que eu economizar pelo menos o valor da mensalidade.",
+  "Cancelamento a qualquer momento por escrito, sem multa, e um planejador independente com certificação (CFP) que me mostre por escrito que não ganha comissão de produto, ao contrário do meu assessor.",
+  "Uma indicação de alguém de confiança que usou e viu resultado concreto, mais cancelamento livre a qualquer momento sem multa.",
+  "Se o planejador servisse de mediador neutro numa conversa com meu marido sobre metas, com uma primeira sessão de diagnóstico gratuita e cancelamento livre a qualquer momento.",
+  "Planejador com certificação (CFP) e remuneração só pela taxa, sem comissão de produto, com cancelamento livre a qualquer momento e uma primeira consulta de diagnóstico avulsa para eu testar.",
+  "Ver que o planejador é certificado e independente, sem vender produto, e uma demonstração concreta de quanto ele me faria economizar ou ganhar a mais do que o meu gerente, com cancelamento livre a qualquer momento.",
+  "Cancelamento sem multa a qualquer momento por escrito, mais uma primeira consulta de diagnóstico grátis ou barata com um planejador certificado (CFP) que não ganhe comissão de produto.",
+  "Um diagnóstico inicial avulso ou primeiro mês com cancelamento livre, mostrando um plano concreto para eu chegar na entrada do imóvel antes do que eu chegaria sozinho.",
+  "Cancelamento sem fidelidade e sem multa, que dê para fazer online, escrito com todas as letras, e um primeiro diagnóstico gratuito ou um mês de teste para eu e meu marido irmos juntos.",
+  "Um primeiro mês com diagnóstico a preço reduzido e cancelamento livre por escrito, mostrando exatamente o que o acompanhamento mensal entrega depois disso.",
+  "Uma consulta avulsa de diagnóstico com preço fixo, sem assinatura, e o planejador sendo independente, sem ganhar comissão vendendo produto.",
+  "Ver, com os meus números, quanto o meu banco e o assessor me cobram em taxas escondidas e quanto um planejador independente, sem conflito de interesse, me faria ganhar a mais, com cancelamento livre a qualquer momento.",
+  "Um planejador certificado (CFP), remunerado só pela taxa, sem comissão de produto, com cancelamento a qualquer momento e um diagnóstico inicial avulso para eu ver se agrega algo além da minha planilha.",
+  "Um plano mais barato focado em sair das dívidas, sem fidelidade e com cancelamento a qualquer momento, ou com a primeira consulta de diagnóstico grátis.",
+  "Cancelamento sem fidelidade escrito no contrato, cancelável online, e um primeiro mês ou diagnóstico avulso para eu testar antes de assinar.",
+  "Saber quem são os planejadores (certificação CFP, independentes, sem comissão de produto) e ter cancelamento livre a qualquer momento, idealmente com um primeiro mês de diagnóstico sem compromisso.",
+  "Cancelamento sem multa a qualquer momento, por escrito no contrato, e algumas avaliações reais de clientes no Reclame Aqui.",
+  "Cancelamento a qualquer momento, sem multa e pelo próprio app, escrito na oferta, e de preferência um primeiro mês ou diagnóstico de teste.",
+  "Cancelamento sem fidelidade escrito no contrato, com um primeiro mês de teste ou diagnóstico avulso, e algumas avaliações reais que eu consiga checar.",
+  "Um plano focado em quitar dívida, com preço menor ou pago só no começo, e cancelamento livre a qualquer mês por escrito.",
+  "Um primeiro mês grátis ou bem barato focado em sair das dívidas, sem fidelidade e com cancelamento simples por escrito.",
+  "Um primeiro mês com diagnóstico por um preço baixo e cancelamento livre a qualquer momento, escrito claramente.",
+  "Cancelamento sem fidelidade e sem multa, por escrito no contrato, que eu consiga fazer online sozinha, mais um planejador certificado (CFP) com reputação que eu possa checar.",
+  "Se fosse um planejador certificado e independente, que não ganha comissão vendendo produto, focado em coisas que a planilha não resolve, como sucessão, previdência e tributação, cobrando por projeto e sem fidelidade.",
+  "Saber claramente que o planejador não ganha comissão sobre produtos, com uma primeira consulta de diagnóstico gratuita ou barata e cancelamento sem multa a qualquer momento.",
+  "Cancelamento sem multa a qualquer momento, por escrito no contrato, e a garantia de que o planejador não recebe comissão sobre produtos (remuneração só pela assinatura), com algumas avaliações reais de clientes.",
+  "Cancelamento a qualquer momento, sem multa, escrito na oferta, e um primeiro mês ou diagnóstico mais barato pra testar antes de assinar.",
+  "Um amigo ou colega de confiança me contar que usa há alguns meses e que o planejador realmente fez diferença nas finanças dele.",
+  "Um colega de confiança me contar que usou e que o plano realmente o ajudou a chegar no objetivo dele, com cancelamento livre a qualquer mês.",
+  "Um diagnóstico inicial avulso por um preço único, sem fidelidade, mostrando quanto eu realmente economizaria ou ganharia a mais por ano, e só depois decidir se vale o acompanhamento.",
+  "Um amigo ou colega de confiança me dizer que usa esse planejador há meses e que realmente mudou as finanças dele.",
+  "Um diagnóstico avulso com preço fechado e sem mensalidade, focado em como começar a investir, em vez de assinatura contínua.",
+  "Um diagnóstico avulso, pago uma vez, que olhasse minha planilha e mostrasse algo concreto que eu não estou vendo (aposentadoria, imposto, investimentos), sem assinatura presa.",
+  "Um diagnóstico único com preço fechado, ou mensalidade sem fidelidade com cancelamento a qualquer momento, deixando claro que o planejador não ganha comissão sobre produto que me recomenda.",
+  "Se alguém de confiança, tipo uma amiga ou meu contador, me indicasse depois de usar, e se o planejador fosse certificado e independente, sem vender produto, com cancelamento livre a qualquer hora.",
+  "Saber quem é o planejador (certificação CFP, sem comissão de produto) e poder cancelar quando quiser, de preferência com uma primeira reunião de diagnóstico presencial antes de assinar.",
+  "Uma amiga ou colega de confiança me contar que usou e que ajudou de verdade a parar as brigas sobre dinheiro em casa, e saber que posso cancelar quando quiser.",
+  "Indicação de um colega de confiança, planejador com certificação CFP e foco em sucessão e aposentadoria, sem fidelidade e sem conflito de interesse na venda de produtos.",
+  "Um planejador certificado (CFP) declaradamente independente, sem comissão de produto, que aceitasse trabalhar em cima da minha planilha, com cancelamento livre a qualquer momento.",
+  "Cancelamento sem multa, a qualquer momento e pelo próprio site, por escrito, junto com uma primeira reunião de diagnóstico grátis para eu ver se o planejador é bom antes de pagar.",
+  "Um primeiro diagnóstico avulso com preço fechado, sem fidelidade, e depois uma mensalidade bem menor só para o acompanhamento.",
+  "Cancelamento sem multa escrito no contrato e garantia por escrito de que o planejador não ganha comissão sobre produtos, de preferência com certificação CFP."
+ ],
+ "purchases_first_month_per_buyer": null,
+ "price_answers": 50
+}

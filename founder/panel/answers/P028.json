@@ -1,0 +1,13 @@
+{
+  "id": "P028",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Estou com cartão e cheque especial rodando, e mais R$ 350 por mês de assinatura agora é justamente o tipo de gasto que eu deveria cortar. Preciso de ajuda pra sair da dívida, mas não sei se pagar isso todo mês me tira dela mais rápido.",
+  "objection": "Depois das primeiras reuniões, o que muda no mês seguinte? Tenho medo de pagar R$ 350 todo mês por um app de gastos e uma conversa de vez em quando, e ainda nem dizem se tem fidelidade ou como cancelar.",
+  "would_change_my_mind": "Um plano focado em quitar dívida, com preço menor ou pago só no começo, e cancelamento livre a qualquer mês por escrito.",
+  "price_too_cheap": 40,
+  "price_cheap": 100,
+  "price_expensive": 200,
+  "price_too_expensive": 300
+}

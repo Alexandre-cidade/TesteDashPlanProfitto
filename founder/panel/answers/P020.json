@@ -1,0 +1,13 @@
+{
+  "id": "P020",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "R$ 350 não pesa no meu bolso, mas já tenho o gerente do private e o assessor da corretora cuidando disso sem mensalidade. Não vejo por que pagar uma empresa nova que acabou de abrir para fazer o que eles já fazem.",
+  "objection": "Depois do diagnóstico e das primeiras reuniões, o que muda no mês seguinte? Parece que vou pagar R$ 350 todo mês por uma planilha e uma call de vez em quando, e nem sei se tem fidelidade ou como cancelo.",
+  "would_change_my_mind": "Ver, com os meus números, quanto o meu banco e o assessor me cobram em taxas escondidas e quanto um planejador independente, sem conflito de interesse, me faria ganhar a mais, com cancelamento livre a qualquer momento.",
+  "price_too_cheap": 80,
+  "price_cheap": 200,
+  "price_expensive": 600,
+  "price_too_expensive": 1200
+}

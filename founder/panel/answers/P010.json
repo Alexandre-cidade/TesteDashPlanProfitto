@@ -1,0 +1,13 @@
+{
+  "id": "P010",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Já tenho meu assessor da corretora e o gerente do banco cuidando disso sem me cobrar mensalidade; não vejo por que pagar R$ 350 por mês para uma empresa nova que eu nem conheço fazer algo parecido.",
+  "objection": "Não disseram se tem fidelidade nem como cancelo. Se eu entrar e quiser sair, aposto que vão complicar, e ainda vou ter que abrir toda a minha vida financeira para gente que acabou de abrir as portas.",
+  "would_change_my_mind": "Cancelamento a qualquer momento por escrito, sem multa, e um planejador independente com certificação (CFP) que me mostre por escrito que não ganha comissão de produto, ao contrário do meu assessor.",
+  "price_too_cheap": 80,
+  "price_cheap": 200,
+  "price_expensive": 450,
+  "price_too_expensive": 800
+}

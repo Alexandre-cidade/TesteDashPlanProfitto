@@ -1,0 +1,13 @@
+{
+  "id": "P032",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Eu já controlo tudo na minha planilha há anos e sei exatamente para onde vai meu dinheiro. Pagar R$ 350 todo mês para alguém me dizer o que eu já sei, mais uma plataforma de gastos que eu não vou usar, não faz sentido para mim.",
+  "objection": "Uma planilha resolve, não preciso pagar todo mês. E uma empresa nova que nem diz se tem fidelidade ou como cancelar já me deixa com o pé atrás.",
+  "would_change_my_mind": "Se fosse um planejador certificado e independente, que não ganha comissão vendendo produto, focado em coisas que a planilha não resolve, como sucessão, previdência e tributação, cobrando por projeto e sem fidelidade.",
+  "price_too_cheap": 80,
+  "price_cheap": 150,
+  "price_expensive": 300,
+  "price_too_expensive": 500
+}

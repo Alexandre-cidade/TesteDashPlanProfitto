@@ -1,0 +1,13 @@
+{
+  "id": "P016",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "R$ 350 por mês dá R$ 4.200 por ano, dinheiro que eu podia estar colocando direto na entrada do apartamento. Já larguei o Organizze depois de um mês, e pagar caro por mais uma plataforma de gastos não me convence.",
+  "objection": "Não sei se tem fidelidade nem como cancelar, e não quero ficar preso pagando R$ 350 todo mês por alguém me dizer para gastar menos.",
+  "would_change_my_mind": "Um diagnóstico inicial avulso ou primeiro mês com cancelamento livre, mostrando um plano concreto para eu chegar na entrada do imóvel antes do que eu chegaria sozinho.",
+  "price_too_cheap": 50,
+  "price_cheap": 120,
+  "price_expensive": 220,
+  "price_too_expensive": 320
+}

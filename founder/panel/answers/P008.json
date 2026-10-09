@@ -1,0 +1,13 @@
+{
+  "id": "P008",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Já paguei app de finanças e larguei em duas semanas; R$ 350 por mês sem saber se tem fidelidade, com cheque especial rodando, vira só mais uma assinatura que eu não uso. Ganho bem, mas agora cada boleto novo pesa.",
+  "objection": "Vou pagar, ter uma ou duas reuniões, não seguir o plano e continuar pagando porque não sei como cancelar.",
+  "would_change_my_mind": "Um primeiro mês de diagnóstico focado em sair do cheque especial, sem fidelidade e com cancelamento fácil por escrito, com o planejador me cobrando ativamente em vez de eu ter que lembrar de abrir a plataforma.",
+  "price_too_cheap": 80,
+  "price_cheap": 150,
+  "price_expensive": 300,
+  "price_too_expensive": 500
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P001",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Meu gerente do banco já me orienta de graça. Pagar R$ 350 todo mês para uma empresa nova que nem diz como cancelar não faz sentido para mim agora.",
+  "objection": "E se eu quiser cancelar? Eles nem informam se tem fidelidade, e essas empresas sempre complicam na hora de sair.",
+  "would_change_my_mind": "Cancelamento livre a qualquer momento, sem multa, escrito de forma clara, e um primeiro mês ou diagnóstico gratuito para eu ver se vale a pena.",
+  "price_too_cheap": 40,
+  "price_cheap": 90,
+  "price_expensive": 180,
+  "price_too_expensive": 300
+}

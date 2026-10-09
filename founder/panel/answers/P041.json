@@ -1,0 +1,13 @@
+{
+  "id": "P041",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Eu já controlo tudo na minha planilha e ela funciona; pagar R$ 350 por mês, R$ 4.200 por ano, por algo que eu já faço sozinho não fecha a conta. E plataforma de gastos eu já testei e larguei.",
+  "objection": "Vou pagar uma assinatura sem saber se tem fidelidade, usar dois meses e abandonar, igual fiz com os apps. E não sei se esse planejador sabe mais do que eu sobre previdência e patrimônio.",
+  "would_change_my_mind": "Um diagnóstico avulso, pago uma vez, que olhasse minha planilha e mostrasse algo concreto que eu não estou vendo (aposentadoria, imposto, investimentos), sem assinatura presa.",
+  "price_too_cheap": 50,
+  "price_cheap": 100,
+  "price_expensive": 200,
+  "price_too_expensive": 300
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P014",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Meu gerente do banco e meu assessor da corretora já me ajudam com as metas do apartamento e da escola das crianças sem cobrar nada. Pagar R$ 350 por mês, mais de R$ 4 mil por ano, para uma empresa nova que eu nunca ouvi falar não faz sentido agora.",
+  "objection": "Não conheço essa empresa, não sei quem são os planejadores nem se são certificados, e eles nem dizem se tem fidelidade ou como cancelar. Assinatura sem regra clara de saída me deixa com o pé atrás.",
+  "would_change_my_mind": "Ver que o planejador é certificado e independente, sem vender produto, e uma demonstração concreta de quanto ele me faria economizar ou ganhar a mais do que o meu gerente, com cancelamento livre a qualquer momento.",
+  "price_too_cheap": 50,
+  "price_cheap": 120,
+  "price_expensive": 250,
+  "price_too_expensive": 400
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P040",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Eu já controlo tudo na minha planilha e ela funciona. Pagar R$ 350 todo mês, mais de R$ 4 mil por ano, para alguém me dizer para gastar menos não faz sentido; esse dinheiro eu prefiro começar a investir.",
+  "objection": "R$ 350 por mês é caro para um acompanhamento que eu mesmo já faço, e ainda nem dizem se tem fidelidade ou como cancelar.",
+  "would_change_my_mind": "Um diagnóstico avulso com preço fechado e sem mensalidade, focado em como começar a investir, em vez de assinatura contínua.",
+  "price_too_cheap": 30,
+  "price_cheap": 80,
+  "price_expensive": 150,
+  "price_too_expensive": 250
+}

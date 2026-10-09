@@ -1,0 +1,13 @@
+{
+  "id": "P030",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "R$ 350 por mês é mais do que eu pago em streaming e academia somados, e eu já larguei o Mobills e o Organizze depois de um mês. Não vou assinar mais uma mensalidade cara sem saber se consigo cancelar quando cansar.",
+  "objection": "Pagar R$ 4.200 por ano para alguém me dizer para gastar menos, sem saber se tem fidelidade ou multa para sair.",
+  "would_change_my_mind": "Um primeiro mês com diagnóstico por um preço baixo e cancelamento livre a qualquer momento, escrito claramente.",
+  "price_too_cheap": 40,
+  "price_cheap": 90,
+  "price_expensive": 180,
+  "price_too_expensive": 300
+}

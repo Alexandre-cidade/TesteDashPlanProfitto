@@ -1,0 +1,13 @@
+{
+  "id": "P037",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "É uma empresa nova que ninguém que eu conheço usou, e eu só contrato serviço que um amigo indicou. Além disso, R$ 350 por mês sai do mesmo dinheiro que eu estou tentando juntar para a entrada do apartamento.",
+  "objection": "Não conheço ninguém que tenha usado e não sei se tem fidelidade ou multa para cancelar; pagar R$ 4.200 por ano para alguém me dizer para gastar menos parece caro sem saber se funciona.",
+  "would_change_my_mind": "Um colega de confiança me contar que usou e que o plano realmente o ajudou a chegar no objetivo dele, com cancelamento livre a qualquer mês.",
+  "price_too_cheap": 50,
+  "price_cheap": 120,
+  "price_expensive": 220,
+  "price_too_expensive": 350
+}

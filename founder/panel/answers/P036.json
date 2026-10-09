@@ -1,0 +1,13 @@
+{
+  "id": "P036",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Eu só contrato serviço que alguém de confiança me indicou, e ninguém me falou dessa empresa nova. Já perdi dinheiro seguindo dica de investimento, então não vou pagar R$ 350 por mês para um desconhecido mexer no meu planejamento.",
+  "objection": "Depois das primeiras reuniões, o que muda no mês seguinte? Tenho medo de pagar todo mês por um acompanhamento que vira uma planilha e uma call rápida, e ainda nem sei se tem fidelidade ou como cancelo.",
+  "would_change_my_mind": "Um amigo ou colega de confiança me contar que usa há alguns meses e que o planejador realmente fez diferença nas finanças dele.",
+  "price_too_cheap": 80,
+  "price_cheap": 150,
+  "price_expensive": 300,
+  "price_too_expensive": 450
+}
