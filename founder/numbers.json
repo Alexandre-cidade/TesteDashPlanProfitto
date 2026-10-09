@@ -8,10 +8,6 @@
       "cost": 59.4
     },
     {
-      "label": "Dashplan por cliente [FUNDADOR]",
-      "cost": 20
-    },
-    {
       "label": "Imposto sobre receita ~11% (Simples, serviços) [ESTIMATIVA — contador]",
       "cost": 32.67
     },
@@ -34,7 +30,7 @@
       "cost": 300
     },
     {
-      "label": "Plataforma: PMT mensal [FUNDADOR]",
+      "label": "Plataforma Dashplan: PMT mensal, cobre até 400 acessos; acima, R$ 20/acesso extra [FUNDADOR]",
       "cost": 5000
     },
     {

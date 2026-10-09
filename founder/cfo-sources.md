@@ -8,7 +8,7 @@ v2: Dashplan, remuneração do planejador, fixos e caixa vieram do fundador (09/
 | Remuneração do planejador | **20% da receita do cliente** (talvez + fixo) | **Fundador.** R$ 70/h passou a servir só de referência de atratividade |
 | Horas por cliente-mês | 2 h | Estimativa: check-in de 30 min + ~45 min de preparo e registro + ~45 min de WhatsApp. Cronometrar nos primeiros clientes |
 | Horas por diagnóstico | 4–6 h | Estimativa: coleta e análise + montagem do plano + reunião de entrega (e sessão do casal) |
-| Dashplan por cliente | **R$ 20 (fundador)**; v1 usava R$ 60 | **Proxy, não é o preço do Dashplan**: a plataforma concorrente Meu Vista cobra R$ 599/mês para 10 famílias (≈ R$ 60/família), segundo trecho de busca de [meuvista.com](https://meuvista.com/precos-e-planos-meuvista/). Substituir pelo contrato real |
+| Dashplan por cliente | **R$ 0 até 400 acessos** (incluído na PMT); R$ 20 por acesso acima disso (fundador); v1 usava R$ 60 | **Proxy, não é o preço do Dashplan**: a plataforma concorrente Meu Vista cobra R$ 599/mês para 10 famílias (≈ R$ 60/família), segundo trecho de busca de [meuvista.com](https://meuvista.com/precos-e-planos-meuvista/). Substituir pelo contrato real |
 | Imposto sobre receita | ~11% | Estimativa da faixa inicial do Simples Nacional para serviços. Depende do anexo (III ou V) e do fator R. **Confirmar com contador** |
 | Taxa de cobrança recorrente | ~3,5% | Estimativa da faixa típica de cartão e cobrança recorrente no Brasil. Confirmar com o gateway escolhido |
 | Marketing | R$ 3.000/mês | Estimativa, não informada pelo fundador |
@@ -21,5 +21,5 @@ v2: Dashplan, remuneração do planejador, fixos e caixa vieram do fundador (09/
 | Capacidade | 160 clientes | 2 planejadores × 160 h / 2 h por cliente (estimativa) |
 | Plano | 80 clientes | Estimativa: meio da capacidade |
 | Caixa disponível | R$ 100 mil | **Fundador** |
-| PMT da plataforma | R$ 5.000/mês | **Fundador** (v3). Dúvida: soma-se aos R$ 20 por cliente ou substitui? |
+| PMT da plataforma | R$ 5.000/mês | **Fundador**: cobre até 400 acessos; acima, R$ 20/acesso extra e a PMT sobe proporcionalmente. Como a capacidade planejada é de 160 clientes, não há custo de plataforma por cliente |
 | CEO, adiantamento de lucros | R$ 10.000/mês | **Fundador** (v3). Tratamento fiscal a validar com contador |
