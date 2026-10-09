@@ -1,0 +1,13 @@
+{
+  "id": "P004",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Ganho uns R$ 7 mil por mês e ainda nem invisto; pagar R$ 490 por um plano e depois R$ 297 todo mês parece dinheiro que eu deveria estar guardando. Já larguei o Mobills e o Organizze, e tenho medo de pagar caro para largar de novo.",
+  "objection": "Depois das primeiras reuniões, o que muda no mês seguinte? Uma reunião de 30 minutos por mês e uma plataforma de gastos parecem os mesmos apps que eu já abandonei, só que bem mais caros.",
+  "would_change_my_mind": "Ver um resultado concreto de alguém parecido comigo (quanto passou a guardar em 3 meses) ou um diagnóstico mais barato, tipo R$ 200, para testar antes de me comprometer.",
+  "price_too_cheap": 40,
+  "price_cheap": 90,
+  "price_expensive": 180,
+  "price_too_expensive": 280
+}

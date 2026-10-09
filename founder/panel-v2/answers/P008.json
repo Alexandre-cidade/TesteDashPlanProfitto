@@ -1,0 +1,13 @@
+{
+  "id": "P008",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Já controlo tudo na minha planilha e sei para onde vai cada real; pagar R$ 490 para alguém me dizer 3 ações que eu provavelmente já sei não fecha a conta. Já baixei app de controle e larguei, e essa plataforma online seria só mais um.",
+  "objection": "Vou pagar, receber um PDF com conselho genérico tipo 'faça reserva de emergência' e voltar pra minha planilha. E R$ 297 por mês dá mais de R$ 3.500 por ano que eu poderia estar aportando no próprio objetivo do imóvel.",
+  "would_change_my_mind": "Se o diagnóstico fosse focado no meu objetivo concreto (simulação de compra do imóvel vs. escola dos filhos, com números em cima da minha planilha) e custasse uns R$ 200, ou se alguém que conheço dissesse que o plano trouxe algo que a planilha não mostrava.",
+  "price_too_cheap": 50,
+  "price_cheap": 150,
+  "price_expensive": 300,
+  "price_too_expensive": 500
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P005",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Já vejo tudo isso de graça no YouTube e uma planilha resolve; R$ 490 de entrada e depois R$ 297 todo mês é dinheiro que eu prefiro investir. O que me tenta é ter alguém neutro pra acabar com as brigas com meu marido, mas não a esse preço.",
+  "objection": "Pagar todo mês por algo que eu e meu marido poderíamos fazer numa planilha, e nada garante que um plano escrito faça a gente parar de discutir sobre dinheiro.",
+  "would_change_my_mind": "Uma primeira reunião gratuita com o casal junto, para eu ver se o planejador consegue mediar a conversa antes de pagar os R$ 490.",
+  "price_too_cheap": 50,
+  "price_cheap": 100,
+  "price_expensive": 180,
+  "price_too_expensive": 280
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P006",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Gostei de poder cancelar pelo site sem multa e de não ter comissão, mas estou com o cheque especial rodando: tirar R$ 490 de uma vez agora é dinheiro que deveria ir pra dívida. E R$ 297 por mês depois é quase uma parcela a mais no meu orçamento.",
+  "objection": "Pagar R$ 490 pra alguém me dizer pra cortar gastos e quitar o cheque especial, coisa que eu meio que já sei, quando o que me falta é justamente dinheiro sobrando.",
+  "would_change_my_mind": "Um diagnóstico bem mais barato, uns R$ 150, ou poder parcelar em 3x sem juros, com foco em sair da dívida.",
+  "price_too_cheap": 50,
+  "price_cheap": 120,
+  "price_expensive": 200,
+  "price_too_expensive": 300
+}

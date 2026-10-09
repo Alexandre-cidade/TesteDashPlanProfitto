@@ -1,0 +1,13 @@
+{
+  "id": "P020",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Empresa nova não tem nenhum histórico no Reclame Aqui, e eu não pago R$ 490 para quem ainda não consigo checar. O cancelamento fácil me agrada, mas a garantia só cobre o prazo de entrega, não se o plano presta.",
+  "objection": "Depois do diagnóstico e das primeiras reuniões, o que muda de verdade no mês seguinte por R$ 297? Tenho medo de pagar todo mês por uma conversa de 30 minutos e um app de planilha.",
+  "would_change_my_mind": "Ver avaliações reais de clientes (Reclame Aqui ou indicação de alguém conhecido) e um exemplo de plano entregue, com a certificação do planejador (CFP).",
+  "price_too_cheap": 100,
+  "price_cheap": 180,
+  "price_expensive": 300,
+  "price_too_expensive": 450
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P012",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Dinheiro não é o problema, R$ 490 é nada pra mim. Mas meu assessor da corretora já cuida disso sem me cobrar nada, e eu não tenho tempo nem vontade de abrir minhas contas pra mais uma pessoa de uma empresa que acabou de surgir.",
+  "objection": "Depois das primeiras reuniões, o que muda no mês seguinte? Uma reunião de 30 minutos por mês e um app de gastos não me aproximam do imóvel mais rápido do que meu assessor já faz de graça.",
+  "would_change_my_mind": "Um plano concreto pro meu objetivo (o imóvel) mostrando quanto o conflito de interesse do meu assessor me custa em taxas e produtos, com números, recomendado por um colega médico ou advogado em quem eu confio.",
+  "price_too_cheap": 150,
+  "price_cheap": 400,
+  "price_expensive": 1200,
+  "price_too_expensive": 2500
+}

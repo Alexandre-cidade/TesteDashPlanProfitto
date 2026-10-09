@@ -1,0 +1,13 @@
+{
+  "id": "P011",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Eu já controlo tudo na minha planilha e sei para onde vai cada real; pagar R$ 490 para alguém me dizer 3 ações que eu provavelmente já sei não faz sentido. Meu objetivo é o imóvel, e isso eu resolvo com aporte e disciplina, não com reunião de 30 minutos.",
+  "objection": "Depois do diagnóstico, o que muda no mês seguinte? Uma reunião mensal e um app de gastos eu já substituo com a minha planilha; não vejo o que um planejador genérico acrescenta para quem já é organizado e ganha bem.",
+  "would_change_my_mind": "Se o diagnóstico trouxesse algo que eu não faço sozinho, tipo planejamento tributário e estrutura de compra do imóvel (financiar vs. à vista, uso do FGTS, PJ vs. PF), com um exemplo concreto de quanto isso economiza.",
+  "price_too_cheap": 80,
+  "price_cheap": 150,
+  "price_expensive": 300,
+  "price_too_expensive": 500
+}

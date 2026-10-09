@@ -1,0 +1,13 @@
+{
+  "id": "P013",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "R$ 490 por um plano com 3 ações e depois R$ 297 por mês é muito pra mim agora; já larguei Mobills e Organizze em um mês, e uma planilha faz o controle sem custar nada. Gostei de não venderem produto, mas não pago isso pra alguém me dizer o que eu já sei que devia fazer.",
+  "objection": "Vou pagar R$ 490, receber um PDF com três ações óbvias e abandonar igual abandonei os apps. E depois de perder dinheiro numa dica, desconfio de quem diz que vai me ajudar a construir patrimônio.",
+  "would_change_my_mind": "Uma primeira conversa gratuita ou um diagnóstico bem mais barato, uns R$ 150, com garantia de devolução se eu achar o plano genérico, não só se atrasar.",
+  "price_too_cheap": 50,
+  "price_cheap": 150,
+  "price_expensive": 300,
+  "price_too_expensive": 500
+}

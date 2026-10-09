@@ -1,0 +1,13 @@
+{
+  "id": "P001",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Eu ganho uns R$ 10 mil por mês e ainda nem invisto, então R$ 297 todo mês pra alguém me dizer pra gastar menos parece dinheiro que eu podia estar investindo. Vejo esse conteúdo de graça no YouTube e uma planilha resolve o básico.",
+  "objection": "Pagar mensalidade pra uma coisa que eu acho que consigo fazer sozinho com planilha e os vídeos que já assisto; o problema lá em casa é a briga com minha esposa, não falta de informação.",
+  "would_change_my_mind": "Se o diagnóstico de R$ 490 incluísse uma reunião com nós dois juntos pra acabar com a briga sobre dinheiro, eu talvez pagasse só o diagnóstico pra testar.",
+  "price_too_cheap": 39,
+  "price_cheap": 79,
+  "price_expensive": 150,
+  "price_too_expensive": 250
+}

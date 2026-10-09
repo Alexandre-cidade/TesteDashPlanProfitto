@@ -1,0 +1,13 @@
+{
+  "id": "P014",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Ainda nem comecei a investir e meu gerente do banco já me ajuda sem cobrar nada. Pagar R$ 490 de cara e depois R$ 297 por mês, mais que streaming e academia juntos, não faz sentido pra quem ainda tá no começo.",
+  "objection": "Meu gerente ou o assessor da corretora já faz isso de graça, então por que eu pagaria quase R$ 300 por mês por algo que eu não sei se preciso?",
+  "would_change_my_mind": "Um diagnóstico bem mais barato, tipo uns R$ 150, pra eu ver na prática que o plano é melhor do que o que o gerente me fala.",
+  "price_too_cheap": 30,
+  "price_cheap": 60,
+  "price_expensive": 120,
+  "price_too_expensive": 200
+}

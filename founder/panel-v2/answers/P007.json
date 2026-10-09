@@ -1,0 +1,13 @@
+{
+  "id": "P007",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Eu controlo tudo na minha planilha há anos e sei para onde vai cada real; pagar R$ 297 por mês para alguém me dizer o que eu já sei não faz sentido. O diagnóstico de R$ 490 até daria uma olhada, mas não vejo o que ele vai me mostrar que eu não enxergo sozinho.",
+  "objection": "Uma planilha resolve, não preciso pagar todo mês. E um planejador de uma empresa nova, que eu não conheço, vai analisar meus investimentos melhor do que eu?",
+  "would_change_my_mind": "Se a reunião fosse com minha esposa junto e servisse para a gente parar de brigar por dinheiro e fechar um plano de aposentadoria em comum, eu pagaria o diagnóstico uma vez.",
+  "price_too_cheap": 50,
+  "price_cheap": 100,
+  "price_expensive": 200,
+  "price_too_expensive": 300
+}

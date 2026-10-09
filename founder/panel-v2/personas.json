@@ -1,0 +1,222 @@
+[
+ {
+  "id": "P001",
+  "name": "Omar",
+  "age": 33,
+  "segment": "Jovem profissional, ainda sem investimentos",
+  "income": 125000,
+  "behaviour": "Segue influenciador de finanças",
+  "behaviour_how": "Assiste a conteúdo de finanças no YouTube e Instagram e já viu ofertas de planejamento online.",
+  "objection": "Uma planilha resolve, não preciso pagar todo mês",
+  "habit": "você conversa sobre dinheiro com o cônjuge e sempre termina em discussão"
+ },
+ {
+  "id": "P002",
+  "name": "Tomas",
+  "age": 50,
+  "segment": "Família de classe média com filhos",
+  "income": 129000,
+  "behaviour": "Confia no gerente ou assessor do banco",
+  "behaviour_how": "Deixa as decisões com o gerente ou o assessor da corretora, que não cobram mensalidade.",
+  "objection": "Já tentei app e larguei; vou pagar e não usar",
+  "habit": "você mora em Porto Alegre e trabalha das 9h às 18h"
+ },
+ {
+  "id": "P003",
+  "name": "Celine",
+  "age": 40,
+  "segment": "Profissional liberal de alta renda (médico, advogado, empresário)",
+  "income": 618000,
+  "behaviour": "Endividado buscando saída",
+  "behaviour_how": "Tem cartão ou cheque especial rodando e quer ajuda, mas o dinheiro está curto.",
+  "objection": "Depois das primeiras reuniões, o que muda no mês seguinte?",
+  "habit": "você mora em Porto Alegre e trabalha das 9h às 18h"
+ },
+ {
+  "id": "P004",
+  "name": "Olivia",
+  "age": 50,
+  "segment": "Jovem profissional, ainda sem investimentos",
+  "income": 84000,
+  "behaviour": "Já usou app e largou",
+  "behaviour_how": "Baixou Mobills ou Organizze, usou por um mês e abandonou.",
+  "objection": "Depois das primeiras reuniões, o que muda no mês seguinte?",
+  "habit": "você mora em Porto Alegre e trabalha das 9h às 18h"
+ },
+ {
+  "id": "P005",
+  "name": "Ines",
+  "age": 60,
+  "segment": "Família de classe média com filhos",
+  "income": 162000,
+  "behaviour": "Segue influenciador de finanças",
+  "behaviour_how": "Assiste a conteúdo de finanças no YouTube e Instagram e já viu ofertas de planejamento online.",
+  "objection": "Uma planilha resolve, não preciso pagar todo mês",
+  "habit": "você conversa sobre dinheiro com o cônjuge e sempre termina em discussão"
+ },
+ {
+  "id": "P006",
+  "name": "Owen",
+  "age": 26,
+  "segment": "Jovem profissional, ainda sem investimentos",
+  "income": 97000,
+  "behaviour": "Endividado buscando saída",
+  "behaviour_how": "Tem cartão ou cheque especial rodando e quer ajuda, mas o dinheiro está curto.",
+  "objection": "E se eu quiser cancelar? Essas empresas complicam",
+  "habit": "você tem um objetivo concreto, como comprar um imóvel ou a escola dos filhos"
+ },
+ {
+  "id": "P007",
+  "name": "Eli",
+  "age": 50,
+  "segment": "Pré-aposentado ou aposentado",
+  "income": 251000,
+  "behaviour": "Faz planilha sozinho",
+  "behaviour_how": "Controla tudo numa planilha e acha que não precisa de ajuda paga.",
+  "objection": "Uma planilha resolve, não preciso pagar todo mês",
+  "habit": "você conversa sobre dinheiro com o cônjuge e sempre termina em discussão"
+ },
+ {
+  "id": "P008",
+  "name": "Gabriel",
+  "age": 37,
+  "segment": "Família de classe média com filhos",
+  "income": 215000,
+  "behaviour": "Faz planilha sozinho",
+  "behaviour_how": "Controla tudo numa planilha e acha que não precisa de ajuda paga.",
+  "objection": "Já tentei app e larguei; vou pagar e não usar",
+  "habit": "você tem um objetivo concreto, como comprar um imóvel ou a escola dos filhos"
+ },
+ {
+  "id": "P009",
+  "name": "Poppy",
+  "age": 36,
+  "segment": "Família de classe média com filhos",
+  "income": 283000,
+  "behaviour": "Contrata por indicação",
+  "behaviour_how": "Só contrata serviço que um amigo ou colega de confiança recomendou.",
+  "objection": "Já tentei app e larguei; vou pagar e não usar",
+  "habit": "você mora em Porto Alegre e trabalha das 9h às 18h"
+ },
+ {
+  "id": "P010",
+  "name": "Leah",
+  "age": 37,
+  "segment": "Família de classe média com filhos",
+  "income": 247000,
+  "behaviour": "Segue influenciador de finanças",
+  "behaviour_how": "Assiste a conteúdo de finanças no YouTube e Instagram e já viu ofertas de planejamento online.",
+  "objection": "R$ 350 por mês é caro para alguém me dizer para gastar menos",
+  "habit": "você paga outras assinaturas, como streaming e academia"
+ },
+ {
+  "id": "P011",
+  "name": "Adrian",
+  "age": 30,
+  "segment": "Profissional liberal de alta renda (médico, advogado, empresário)",
+  "income": 399000,
+  "behaviour": "Faz planilha sozinho",
+  "behaviour_how": "Controla tudo numa planilha e acha que não precisa de ajuda paga.",
+  "objection": "Depois das primeiras reuniões, o que muda no mês seguinte?",
+  "habit": "você tem um objetivo concreto, como comprar um imóvel ou a escola dos filhos"
+ },
+ {
+  "id": "P012",
+  "name": "Mason",
+  "age": 38,
+  "segment": "Profissional liberal de alta renda (médico, advogado, empresário)",
+  "income": 531000,
+  "behaviour": "Confia no gerente ou assessor do banco",
+  "behaviour_how": "Deixa as decisões com o gerente ou o assessor da corretora, que não cobram mensalidade.",
+  "objection": "Depois das primeiras reuniões, o que muda no mês seguinte?",
+  "habit": "você tem um objetivo concreto, como comprar um imóvel ou a escola dos filhos"
+ },
+ {
+  "id": "P013",
+  "name": "Farah",
+  "age": 49,
+  "segment": "Jovem profissional, ainda sem investimentos",
+  "income": 109000,
+  "behaviour": "Já usou app e largou",
+  "behaviour_how": "Baixou Mobills ou Organizze, usou por um mês e abandonou.",
+  "objection": "Uma planilha resolve, não preciso pagar todo mês",
+  "habit": "você já perdeu dinheiro numa dica de investimento"
+ },
+ {
+  "id": "P014",
+  "name": "Aria",
+  "age": 28,
+  "segment": "Jovem profissional, ainda sem investimentos",
+  "income": 86000,
+  "behaviour": "Confia no gerente ou assessor do banco",
+  "behaviour_how": "Deixa as decisões com o gerente ou o assessor da corretora, que não cobram mensalidade.",
+  "objection": "Meu gerente do banco ou meu assessor já faz isso de graça",
+  "habit": "você paga outras assinaturas, como streaming e academia"
+ },
+ {
+  "id": "P015",
+  "name": "Lucia",
+  "age": 28,
+  "segment": "Família de classe média com filhos",
+  "income": 176000,
+  "behaviour": "Pesquisa no Reclame Aqui antes de comprar",
+  "behaviour_how": "Só contrata depois de ler reclamações e checar se o cancelamento é fácil.",
+  "objection": "Uma planilha resolve, não preciso pagar todo mês",
+  "habit": "você tem um objetivo concreto, como comprar um imóvel ou a escola dos filhos"
+ },
+ {
+  "id": "P016",
+  "name": "Rafael",
+  "age": 45,
+  "segment": "Família de classe média com filhos",
+  "income": 299000,
+  "behaviour": "Contrata por indicação",
+  "behaviour_how": "Só contrata serviço que um amigo ou colega de confiança recomendou.",
+  "objection": "Já tentei app e larguei; vou pagar e não usar",
+  "habit": "você mora em Porto Alegre e trabalha das 9h às 18h"
+ },
+ {
+  "id": "P017",
+  "name": "Elle",
+  "age": 51,
+  "segment": "Pré-aposentado ou aposentado",
+  "income": 258000,
+  "behaviour": "Faz planilha sozinho",
+  "behaviour_how": "Controla tudo numa planilha e acha que não precisa de ajuda paga.",
+  "objection": "R$ 350 por mês é caro para alguém me dizer para gastar menos",
+  "habit": "você conversa sobre dinheiro com o cônjuge e sempre termina em discussão"
+ },
+ {
+  "id": "P018",
+  "name": "Iris",
+  "age": 40,
+  "segment": "Profissional liberal de alta renda (médico, advogado, empresário)",
+  "income": 366000,
+  "behaviour": "Já usou app e largou",
+  "behaviour_how": "Baixou Mobills ou Organizze, usou por um mês e abandonou.",
+  "objection": "R$ 350 por mês é caro para alguém me dizer para gastar menos",
+  "habit": "você conversa sobre dinheiro com o cônjuge e sempre termina em discussão"
+ },
+ {
+  "id": "P019",
+  "name": "Noah",
+  "age": 27,
+  "segment": "Jovem profissional, ainda sem investimentos",
+  "income": 91000,
+  "behaviour": "Confia no gerente ou assessor do banco",
+  "behaviour_how": "Deixa as decisões com o gerente ou o assessor da corretora, que não cobram mensalidade.",
+  "objection": "E se eu quiser cancelar? Essas empresas complicam",
+  "habit": "você tem um objetivo concreto, como comprar um imóvel ou a escola dos filhos"
+ },
+ {
+  "id": "P020",
+  "name": "Jade",
+  "age": 64,
+  "segment": "Jovem profissional, ainda sem investimentos",
+  "income": 106000,
+  "behaviour": "Pesquisa no Reclame Aqui antes de comprar",
+  "behaviour_how": "Só contrata depois de ler reclamações e checar se o cancelamento é fácil.",
+  "objection": "Depois das primeiras reuniões, o que muda no mês seguinte?",
+  "habit": "você paga outras assinaturas, como streaming e academia"
+ }
+]

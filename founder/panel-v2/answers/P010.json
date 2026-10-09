@@ -1,0 +1,13 @@
+{
+  "id": "P010",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Dá pra pagar, não é isso. Mas eu já vejo bastante conteúdo de finanças no YouTube e no Instagram e acho que um plano com '3 primeiras ações' vai me dizer o que eu já sei: cortar gastos e investir mais. Não vejo por que pagar R$ 490 agora, numa semana normal, por algo que parece genérico.",
+  "objection": "Medo de pagar para ouvir 'gaste menos' de uma empresa nova que eu não conheço. A garantia só devolve se não entregarem no prazo, não se o plano for raso ou inútil para mim.",
+  "would_change_my_mind": "Ver um exemplo real de plano entregue (anonimizado) que vá além do óbvio, ou uma garantia de satisfação no diagnóstico, não só de prazo.",
+  "price_too_cheap": 50,
+  "price_cheap": 150,
+  "price_expensive": 250,
+  "price_too_expensive": 350
+}

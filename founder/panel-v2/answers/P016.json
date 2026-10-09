@@ -1,0 +1,13 @@
+{
+  "id": "P016",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "É uma empresa nova que ninguém que eu conheço usou, e eu só contrato serviço que amigo ou colega de confiança indicou. Além disso já paguei app de finanças e larguei, então R$ 490 para um plano por escrito de alguém que eu nunca ouvi falar não me convence agora.",
+  "objection": "Não conheço ninguém que tenha usado esse planejador, e tenho medo de pagar, receber um PDF genérico e voltar ao mesmo hábito de antes, como aconteceu com o app.",
+  "would_change_my_mind": "Um amigo ou colega de confiança me contar que fez o diagnóstico, que o plano foi realmente personalizado e que a família dele está seguindo.",
+  "price_too_cheap": 150,
+  "price_cheap": 300,
+  "price_expensive": 500,
+  "price_too_expensive": 900
+}
