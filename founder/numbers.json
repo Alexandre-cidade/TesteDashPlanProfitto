@@ -34,8 +34,12 @@
       "cost": 300
     },
     {
-      "label": "Outros fixos: 'praticamente zero' [FUNDADOR]",
-      "cost": 0
+      "label": "Plataforma: PMT mensal [FUNDADOR]",
+      "cost": 5000
+    },
+    {
+      "label": "CEO: adiantamento de lucros [FUNDADOR]",
+      "cost": 10000
     }
   ],
   "startup": [

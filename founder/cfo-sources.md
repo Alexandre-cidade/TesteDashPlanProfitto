@@ -21,3 +21,5 @@ v2: Dashplan, remuneração do planejador, fixos e caixa vieram do fundador (09/
 | Capacidade | 160 clientes | 2 planejadores × 160 h / 2 h por cliente (estimativa) |
 | Plano | 80 clientes | Estimativa: meio da capacidade |
 | Caixa disponível | R$ 100 mil | **Fundador** |
+| PMT da plataforma | R$ 5.000/mês | **Fundador** (v3). Dúvida: soma-se aos R$ 20 por cliente ou substitui? |
+| CEO, adiantamento de lucros | R$ 10.000/mês | **Fundador** (v3). Tratamento fiscal a validar com contador |
