@@ -1,0 +1,596 @@
+<title>Simulador Lastro</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* Layout: painel de alavancas fixo à esquerda + resultados ao vivo à direita; abas para os outros lados do negócio. */
+:root{
+  --bg:#F6F2EA; --surface:#FFFDF8; --sunk:#EEE8DC; --ink:#14323A; --muted:#566A6D; --line:#DDD5C6;
+  --accent:#8A5A12; --accent-fill:#C9862A; --on-accent:#FFFFFF;
+  --s1:#2a78d6; --s2:#eb6834;
+  --good:#1E7A46; --good-bg:#E3F1E8; --warn:#9A5B00; --warn-bg:#F7ECD6; --bad:#B3261E; --bad-bg:#F8E1DE;
+  --dot0:#D9D2C4; --dot1:#E9C27A; --dot2:#C9862A; --dot3:#1E7A46;
+  --f-display:"Fraunces", Georgia, "Times New Roman", serif;
+  --f-body:"Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --r:10px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0F1E22; --surface:#15282D; --sunk:#0B171A; --ink:#E8F0EE; --muted:#9BB0B2; --line:#28423F;
+  --accent:#E8AE4F; --accent-fill:#C9862A; --on-accent:#14110A;
+  --s1:#3987e5; --s2:#d95926;
+  --good:#5CC48A; --good-bg:#16352A; --warn:#E9AE4B; --warn-bg:#3A2E14; --bad:#F2806F; --bad-bg:#3D1F1C;
+  --dot0:#2C4447; --dot1:#7A6332; --dot2:#C9862A; --dot3:#4CB97A; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0F1E22; --surface:#15282D; --sunk:#0B171A; --ink:#E8F0EE; --muted:#9BB0B2; --line:#28423F;
+  --accent:#E8AE4F; --accent-fill:#C9862A; --on-accent:#14110A;
+  --s1:#3987e5; --s2:#d95926;
+  --good:#5CC48A; --good-bg:#16352A; --warn:#E9AE4B; --warn-bg:#3A2E14; --bad:#F2806F; --bad-bg:#3D1F1C;
+  --dot0:#2C4447; --dot1:#7A6332; --dot2:#C9862A; --dot3:#4CB97A; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:14px;line-height:1.5}
+.wrap{max-width:1280px;margin:0 auto;padding-inline:20px;padding-block:20px 48px}
+h1,h2,h3{font-family:var(--f-display);font-weight:650;text-wrap:balance;margin:0;letter-spacing:-.01em}
+h1{font-size:1.9rem}h2{font-size:1.35rem}h3{font-size:1.05rem}
+.eyebrow{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.muted{color:var(--muted)}
+.num{font-variant-numeric:tabular-nums}
+header.top{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px 24px;padding-block:4px 16px;border-bottom:1px solid var(--line)}
+.verdict{display:inline-flex;align-items:center;gap:8px;padding:6px 12px;border-radius:999px;font-weight:600;font-size:.85rem}
+.verdict.no{background:var(--warn-bg);color:var(--warn)} .verdict.yes{background:var(--good-bg);color:var(--good)} .verdict.bad{background:var(--bad-bg);color:var(--bad)}
+.note{background:var(--sunk);border-radius:var(--r);padding:10px 14px;color:var(--muted);font-size:.85rem;max-width:80ch}
+nav.tabs{display:flex;gap:4px;overflow-x:auto;margin-block:16px;border-bottom:1px solid var(--line)}
+nav.tabs button{background:none;border:0;border-bottom:2px solid transparent;padding:10px 14px;color:var(--muted);font:600 .9rem var(--f-body);cursor:pointer;white-space:nowrap}
+nav.tabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--accent-fill)}
+nav.tabs button:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--accent-fill);outline-offset:2px}
+.sim{display:grid;grid-template-columns:330px minmax(0,1fr);gap:20px;align-items:start}
+@media (max-width:900px){.sim{grid-template-columns:minmax(0,1fr)}}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px}
+aside.levers{position:sticky;top:calc(env(safe-area-inset-top,0px) + 8px);max-height:calc(100vh - 16px);overflow:auto}
+@media (max-width:900px){aside.levers{position:static;max-height:none}}
+fieldset{border:0;margin:0;padding:0;display:grid;gap:10px}
+fieldset+fieldset{margin-top:16px;padding-top:14px;border-top:1px solid var(--line)}
+legend{font:600 .72rem var(--f-body);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding:0;margin-bottom:6px}
+.ctl{display:grid;gap:4px}
+.ctl .row{display:flex;justify-content:space-between;gap:8px;align-items:baseline}
+.ctl label{font-weight:500}
+.ctl output{font-weight:600;font-variant-numeric:tabular-nums}
+input[type=range]{width:100%;accent-color:var(--accent-fill)}
+.tog{display:flex;align-items:flex-start;gap:10px;cursor:pointer}
+.tog input{margin-top:3px;accent-color:var(--accent-fill);width:16px;height:16px;flex:none}
+.tog small{display:block;color:var(--muted);font-size:.78rem;line-height:1.35}
+.btns{display:flex;flex-wrap:wrap;gap:6px}
+.btn{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:8px;padding:6px 10px;font:500 .82rem var(--f-body);cursor:pointer}
+.btn:hover{border-color:var(--accent-fill)}
+.btn.primary{background:var(--accent-fill);border-color:var(--accent-fill);color:var(--on-accent);font-weight:600}
+.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+@media (max-width:1100px){.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.kpi{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:12px 14px;display:grid;gap:2px;min-width:0}
+.kpi .v{font-family:var(--f-display);font-size:1.5rem;font-weight:650;font-variant-numeric:tabular-nums;line-height:1.15}
+.kpi .l{font-size:.78rem;color:var(--muted)}
+.delta{font-size:.78rem;font-weight:600;font-variant-numeric:tabular-nums}
+.delta.up{color:var(--good)}.delta.down{color:var(--bad)}.delta.eq{color:var(--muted)}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+@media (max-width:1100px){.grid2{grid-template-columns:minmax(0,1fr)}}
+.stack{display:grid;gap:14px}
+.chart{width:100%;height:auto;display:block}
+.chart text{fill:var(--muted);font:11px var(--f-body);font-variant-numeric:tabular-nums}
+.chart .grid line{stroke:var(--line);stroke-width:1}
+.chart .ref{stroke:var(--muted);stroke-dasharray:4 4;stroke-width:1}
+.chart .zero{stroke:var(--bad);stroke-width:1;opacity:.6}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:.8rem;color:var(--muted)}
+.legend i{display:inline-block;width:14px;height:2px;vertical-align:middle;margin-right:6px}
+.tip{position:fixed;pointer-events:none;background:var(--ink);color:var(--bg);padding:8px 10px;border-radius:8px;font-size:.8rem;line-height:1.4;max-width:320px;z-index:20;box-shadow:0 6px 24px rgba(0,0,0,.18)}
+.dots{display:grid;grid-template-columns:repeat(20,minmax(0,1fr));gap:5px}
+@media (max-width:600px){.dots{grid-template-columns:repeat(10,minmax(0,1fr))}}
+.dot{aspect-ratio:1;border-radius:50%;border:0;padding:0;cursor:pointer;background:var(--dot0);position:relative}
+.dot.real::after{content:"";position:absolute;inset:30%;border-radius:50%;background:var(--surface)}
+.dot.sel{outline:2px solid var(--ink);outline-offset:2px}
+.scale{display:flex;gap:12px;flex-wrap:wrap;font-size:.78rem;color:var(--muted);align-items:center}
+.scale span{display:inline-flex;align-items:center;gap:6px}
+.scale b{width:10px;height:10px;border-radius:50%;display:inline-block}
+.bars{display:grid;gap:6px}
+.bar{display:grid;grid-template-columns:minmax(0,1fr) 48px;gap:8px;align-items:center;font-size:.85rem}
+.bar .t{display:grid;gap:3px;min-width:0}
+.bar .track{height:8px;background:var(--sunk);border-radius:4px;overflow:hidden}
+.bar .fill{height:100%;background:var(--s1);border-radius:0 4px 4px 0}
+.bar .val{text-align:right;font-weight:600;font-variant-numeric:tabular-nums}
+.bar button{all:unset;cursor:pointer;color:var(--accent);font-size:.75rem;font-weight:600}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px;min-width:0}
+.pcard{display:grid;gap:8px}
+.pills{display:flex;flex-wrap:wrap;gap:6px}
+.pill{font-size:.74rem;padding:2px 8px;border-radius:999px;background:var(--sunk);color:var(--muted);font-weight:500}
+.pill.off{background:var(--bad-bg);color:var(--bad)} .pill.on{background:var(--good-bg);color:var(--good)}
+blockquote{margin:0;padding-left:12px;border-left:2px solid var(--accent-fill);font-style:normal}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.85rem}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600}
+td.n{text-align:right;font-variant-numeric:tabular-nums}
+.cols3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+@media (max-width:900px){.cols3{grid-template-columns:minmax(0,1fr)}}
+.swatch{height:56px;border-radius:8px;display:flex;align-items:flex-end;padding:6px 8px;font-size:.75rem;font-weight:600}
+.tl{display:grid;gap:0}
+.tl .it{display:grid;grid-template-columns:110px minmax(0,1fr);gap:14px;padding-block:10px;border-bottom:1px solid var(--line)}
+.tl .it.crit .d{color:var(--bad);font-weight:600}
+.sev{display:inline-block;font-size:.72rem;font-weight:600;padding:1px 7px;border-radius:999px}
+.sev.h{background:var(--bad-bg);color:var(--bad)}.sev.m{background:var(--warn-bg);color:var(--warn)}.sev.l{background:var(--good-bg);color:var(--good)}
+select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid var(--line);background:var(--surface);color:var(--ink)}
+.flexbetween{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <div style="display:grid;gap:6px">
+      <span class="eyebrow">Planejamento financeiro por assinatura · Porto Alegre · nome provisório: Lastro</span>
+      <h1>Simulador do negócio</h1>
+    </div>
+    <div style="display:grid;gap:6px;justify-items:end">
+      <span id="verdict" class="verdict no">Veredito do plano: Not yet</span>
+      <span class="muted" style="font-size:.8rem">Dados do pacote Founder · 10/10/2026</span>
+    </div>
+  </header>
+
+  <nav class="tabs" role="tablist" aria-label="Seções">
+    <button role="tab" aria-selected="true" data-tab="sim" id="t-sim">Simulador</button>
+    <button role="tab" aria-selected="false" data-tab="people" id="t-people">Os 100 compradores</button>
+    <button role="tab" aria-selected="false" data-tab="market" id="t-market">Mercado e preço</button>
+    <button role="tab" aria-selected="false" data-tab="offer" id="t-offer">Oferta e marca</button>
+    <button role="tab" aria-selected="false" data-tab="ops" id="t-ops">Operação e lançamento</button>
+    <button role="tab" aria-selected="false" data-tab="board" id="t-board">Conselho</button>
+  </nav>
+
+  <!-- SIMULADOR -->
+  <section id="p-sim" role="tabpanel" aria-labelledby="t-sim">
+    <div class="sim">
+      <aside class="panel levers" aria-label="Alavancas">
+        <div class="flexbetween" style="margin-bottom:10px">
+          <h3>Alavancas</h3>
+          <select id="preset" aria-label="Cenários prontos">
+            <option value="">Cenários prontos…</option>
+            <option value="v1">Pitch original (v1)</option>
+            <option value="atual">Oferta atual (v2)</option>
+            <option value="rec">Recomendado</option>
+            <option value="tudo">Tudo ligado</option>
+          </select>
+        </div>
+        <fieldset><legend>Preço</legend>
+          <div class="ctl"><div class="row"><label for="m">Acompanhamento</label><output id="o-m"></output></div><input type="range" id="m" min="97" max="797" step="10"></div>
+          <label class="tog"><input type="checkbox" id="diag"><span>Diagnóstico como porta de entrada<small>O cliente compra um diagnóstico avulso antes de assinar.</small></span></label>
+          <div class="ctl" id="dprice-wrap"><div class="row"><label for="dprice">Preço do diagnóstico</label><output id="o-dprice"></output></div><input type="range" id="dprice" min="0" max="790" step="10"></div>
+          <label class="tog"><input type="checkbox" id="parcelado"><span>Diagnóstico em 3x sem juros</span></label>
+        </fieldset>
+        <fieldset><legend>Confiança</legend>
+          <label class="tog"><input type="checkbox" id="cancel"><span>Cancelamento livre, por escrito<small>Sem fidelidade, pelo site, sem multa.</small></span></label>
+          <label class="tog"><input type="checkbox" id="comissao"><span>Sem comissão<small>Só ligue se for verdade.</small></span></label>
+          <label class="tog"><input type="checkbox" id="cfp"><span>Planejador CFP identificado</span></label>
+          <label class="tog"><input type="checkbox" id="garantia"><span>Garantia de qualidade<small>Devolve o diagnóstico se o plano for genérico.</small></span></label>
+          <label class="tog"><input type="checkbox" id="exemplo"><span>Plano exemplo publicado</span></label>
+          <label class="tog"><input type="checkbox" id="prova"><span>Prova social<small>Indicações e avaliações reais. Só existe depois do piloto.</small></span></label>
+        </fieldset>
+        <fieldset><legend>Entregas</legend>
+          <label class="tog"><input type="checkbox" id="checkin"><span>Check-in mensal marcado pelo planejador</span></label>
+          <label class="tog"><input type="checkbox" id="casal"><span>Sessão do casal</span></label>
+          <label class="tog"><input type="checkbox" id="raiox"><span>Raio-X das tarifas do banco</span></label>
+          <label class="tog"><input type="checkbox" id="dividas"><span>Trilha para sair das dívidas</span></label>
+          <label class="tog"><input type="checkbox" id="tributario"><span>Módulo tributário, PJ e sucessão</span></label>
+        </fieldset>
+        <fieldset><legend>Vendas</legend>
+          <div class="ctl"><div class="row"><label for="rede">Contatos da rede por mês</label><output id="o-rede"></output></div><input type="range" id="rede" min="0" max="200" step="5"></div>
+          <div class="ctl"><div class="row"><label for="mkt">Marketing por mês</label><output id="o-mkt"></output></div><input type="range" id="mkt" min="0" max="15000" step="500"></div>
+          <div class="ctl"><div class="row"><label for="cpl">Custo por pessoa interessada</label><output id="o-cpl"></output></div><input type="range" id="cpl" min="10" max="150" step="5"></div>
+          <div class="ctl"><div class="row"><label for="real">Desconto de realismo do painel</label><output id="o-real"></output></div><input type="range" id="real" min="10" max="100" step="5"></div>
+          <div class="ctl"><div class="row"><label for="conv">Diagnóstico que vira assinatura</label><output id="o-conv"></output></div><input type="range" id="conv" min="0" max="100" step="5"></div>
+          <div class="ctl"><div class="row"><label for="churn">Cancelamentos por mês</label><output id="o-churn"></output></div><input type="range" id="churn" min="0" max="15" step="0.5"></div>
+        </fieldset>
+        <fieldset><legend>Custos</legend>
+          <div class="ctl"><div class="row"><label for="ceo1">CEO antes do break-even</label><output id="o-ceo1"></output></div><input type="range" id="ceo1" min="0" max="15000" step="500"></div>
+          <div class="ctl"><div class="row"><label for="ceo2">CEO depois do break-even</label><output id="o-ceo2"></output></div><input type="range" id="ceo2" min="0" max="20000" step="500"></div>
+          <div class="ctl"><div class="row"><label for="plan">Planejador (% da receita)</label><output id="o-plan"></output></div><input type="range" id="plan" min="10" max="40" step="1"></div>
+          <div class="ctl"><div class="row"><label for="tax">Imposto sobre receita</label><output id="o-tax"></output></div><input type="range" id="tax" min="6" max="20" step="0.5"></div>
+          <div class="ctl"><div class="row"><label for="pmt">PMT da plataforma (até 400 acessos)</label><output id="o-pmt"></output></div><input type="range" id="pmt" min="0" max="10000" step="250"></div>
+          <div class="ctl"><div class="row"><label for="cash">Caixa inicial</label><output id="o-cash"></output></div><input type="range" id="cash" min="20000" max="300000" step="5000"></div>
+        </fieldset>
+        <div class="btns" style="margin-top:16px">
+          <button class="btn primary" id="save">Salvar como referência</button>
+          <button class="btn" id="reset">Voltar à oferta atual</button>
+        </div>
+        <p class="muted" style="font-size:.75rem;margin:8px 0 0">As setas comparam com a referência salva. Ao abrir, a referência é a oferta atual.</p>
+      </aside>
+
+      <div class="stack">
+        <div class="note" id="honesty">Os 100 compradores são agentes de IA que responderam às ofertas. A página não roda os agentes de novo a cada mudança: ela usa um modelo calibrado nas respostas deles (preço que cada um aceita e as barreiras que cada um citou). Com a oferta atual, o modelo prevê cerca de 8%, e os agentes reais compraram 6–10%. Mudanças que nenhum agente viu, como ligar tudo, são extrapolação. Confirme com a pré-venda.</div>
+        <div class="kpis" id="kpis"></div>
+        <div class="grid2">
+          <div class="card">
+            <div class="flexbetween"><h3>Clientes ativos</h3><div class="legend"><span><i style="background:var(--s1)"></i>Cenário</span><span><i style="background:var(--s2)"></i>Referência</span><span><i style="background:var(--muted);height:0;border-top:1px dashed var(--muted)"></i>Break-even</span></div></div>
+            <svg class="chart" id="ch-clients" viewBox="0 0 560 240" role="img" aria-label="Clientes ativos por mês"></svg>
+          </div>
+          <div class="card">
+            <div class="flexbetween"><h3>Caixa acumulado</h3><div class="legend"><span><i style="background:var(--s1)"></i>Cenário</span><span><i style="background:var(--s2)"></i>Referência</span></div></div>
+            <svg class="chart" id="ch-cash" viewBox="0 0 560 240" role="img" aria-label="Caixa acumulado por mês"></svg>
+          </div>
+        </div>
+        <div class="grid2">
+          <div class="card">
+            <div class="flexbetween"><h3>Quem compraria agora</h3><span class="muted num" id="dots-sum"></span></div>
+            <div class="scale" style="margin-block:8px 10px"><span><b style="background:var(--dot3)"></b>provável (≥50%)</span><span><b style="background:var(--dot2)"></b>talvez (25–50%)</span><span><b style="background:var(--dot1)"></b>difícil (10–25%)</span><span><b style="background:var(--dot0)"></b>não (&lt;10%)</span></div>
+            <div class="dots" id="dots"></div>
+            <p class="muted" style="font-size:.75rem;margin:10px 0 0">Bolinha vazada = comprou de verdade no painel. Toque numa bolinha para ver a pessoa.</p>
+          </div>
+          <div class="card">
+            <h3>O que mais moveria os compradores</h3>
+            <p class="muted" style="font-size:.8rem;margin:4px 0 10px">Ganho de compradores (de 100) se você ligar cada alavanca que está desligada.</p>
+            <div class="bars" id="levers-rank"></div>
+          </div>
+        </div>
+        <div class="card" id="pick-card" hidden></div>
+        <div class="card">
+          <h3>Mês a mês</h3>
+          <div class="tbl" style="margin-top:8px"><table id="tbl-month"></table></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PESSOAS -->
+  <section id="p-people" role="tabpanel" aria-labelledby="t-people" hidden>
+    <div class="stack">
+      <div class="flexbetween">
+        <div><h2>Os 100 compradores</h2><p class="muted" style="margin:4px 0 0">50 viram o pitch original (v1, 0 compraram). 50 viram a oferta atual (v3, 3 compraram o diagnóstico). Mais 20 do re-teste (v2, 2 compraram) entraram só na calibração.</p></div>
+        <div class="btns"><select id="f-seg" aria-label="Filtrar por segmento"><option value="">Todos os segmentos</option></select><select id="f-ver" aria-label="Filtrar por versão"><option value="">v1 e v3</option><option value="v1">Só v1</option><option value="v3">Só v3</option></select></div>
+      </div>
+      <div class="grid2" id="seg-summary"></div>
+      <div class="card"><h3>Por que passam (respostas reais)</h3><div class="bars" id="reasons" style="margin-top:10px"></div></div>
+      <div class="card"><h3>Barreiras mais citadas</h3><p class="muted" style="font-size:.8rem;margin:4px 0 10px">O que cada um disse que mudaria a decisão, agrupado.</p><div class="bars" id="barriers"></div></div>
+      <div class="card"><h3>Todas as pessoas</h3><div class="tbl" style="margin-top:8px"><table id="tbl-people"></table></div></div>
+    </div>
+  </section>
+
+  <!-- MERCADO -->
+  <section id="p-market" role="tabpanel" aria-labelledby="t-market" hidden>
+    <div class="stack">
+      <h2>Mercado e preço</h2>
+      <div class="note">A plataforma não diferencia: a Grão (Grupo Primo) entrega pelo mesmo Dashplan, que tem mais de 2 mil profissionais usando. O diferencial tem que estar no nicho, no método e no atendimento.</div>
+      <div class="card">
+        <h3>Preço mensal com humano: onde cada um fica</h3>
+        <svg class="chart" id="ch-price" viewBox="0 0 760 210" role="img" aria-label="Escala de preço mensal com concorrentes e faixa aceitável"></svg>
+      </div>
+      <div class="card"><h3>Concorrentes</h3><div class="tbl" style="margin-top:8px"><table>
+        <tr><th>Quem</th><th>Tipo</th><th>Onde</th><th>Preço comparável</th><th>Leitura</th></tr>
+        <tr><td><b>Ável Planejamento</b></td><td>Direto</td><td>Porto Alegre (rede XP)</td><td class="num">R$ 149,90 / R$ 299,90 por mês*</td><td>A ameaça mais perigosa: local, mais barata que o Assistido</td></tr>
+        <tr><td><b>Grão (Grupo Primo)</b></td><td>Direto</td><td>Online</td><td>Não público</td><td>Mesmo Dashplan; reclamações de entrega e cancelamento</td></tr>
+        <tr><td>Planejadores com Dashplan</td><td>Direto</td><td>Online</td><td>Varia</td><td>2 mil+ profissionais, mesma ferramenta</td></tr>
+        <tr><td>Santiago Finanças</td><td>Direto</td><td>Online</td><td class="num">R$ 997 inicial</td><td>Plano inicial + acompanhamento opcional</td></tr>
+        <tr><td>Unolife</td><td>Direto</td><td>Online</td><td class="num">R$ 79,99 / sessão</td><td>Avulso, sem mensalidade</td></tr>
+        <tr><td>Consultor CVM (fee fixo)</td><td>Indireto</td><td>Online</td><td class="num">~R$ 500 por mês</td><td>Regulado, sem comissão</td></tr>
+        <tr><td>Assessores XP e bancos</td><td>Indireto</td><td>Porto Alegre</td><td>"Grátis" (comissão)</td><td>A objeção nº 1 do painel: "meu gerente faz de graça"</td></tr>
+        <tr><td>Apps (Organizze, Mobills, Meu Planner)</td><td>Substituto</td><td>App</td><td class="num">R$ 13–69 por mês</td><td>Abandonados no 2º mês, segundo o painel</td></tr>
+      </table></div><p class="muted" style="font-size:.75rem;margin:8px 0 0">* Preços da Ável vêm do levantamento do fundador e não foram verificados.</p></div>
+      <div class="cols3">
+        <div class="card"><span class="eyebrow">Faixa aceitável do painel v1</span><div class="kpi" style="border:0;padding:6px 0 0"><span class="v num">R$ 81–300</span><span class="l">Van Westendorp, 50 compradores, pitch a R$ 350</span></div></div>
+        <div class="card"><span class="eyebrow">Profissional liberal</span><div class="kpi" style="border:0;padding:6px 0 0"><span class="v num">até R$ 450</span><span class="l">Ponto em que começa a achar caro (mediana)</span></div></div>
+        <div class="card"><span class="eyebrow">Jovem sem investimentos</span><div class="kpi" style="border:0;padding:6px 0 0"><span class="v num">até R$ 200</span><span class="l">Ponto em que começa a achar caro (mediana)</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OFERTA E MARCA -->
+  <section id="p-offer" role="tabpanel" aria-labelledby="t-offer" hidden>
+    <div class="stack">
+      <h2>Oferta e marca</h2>
+      <div class="grid2">
+        <div class="card stack">
+          <span class="eyebrow">Oferta: "Plano Claro em 15 Dias"</span>
+          <h3>Em 15 dias você sabe para onde vai cada real, do iFood ao cheque especial, e recebe um plano escrito com os 3 próximos passos.</h3>
+          <table>
+            <tr><th>Degrau</th><th>Preço</th></tr>
+            <tr><td>Diagnóstico Financeiro (avulso)</td><td class="num">testar R$ 197 vs R$ 297</td></tr>
+            <tr><td>Acompanhamento (famílias)</td><td class="num">R$ 297 por mês</td></tr>
+            <tr><td>Assistido Profissional</td><td class="num">R$ 390 por mês</td></tr>
+            <tr><td>Personalizado</td><td class="num">R$ 750+ por mês</td></tr>
+            <tr><td>Private / Family</td><td class="num">R$ 1.500+ por mês</td></tr>
+          </table>
+          <div><span class="eyebrow">Bônus</span><div class="pills" style="margin-top:6px"><span class="pill">Sessão do casal</span><span class="pill">Raio-X do banco</span><span class="pill">Plano exemplo</span></div></div>
+          <div><span class="eyebrow">Garantia</span><p style="margin:4px 0 0">Plano atrasado ou genérico: devolução de 100% do diagnóstico. Nunca prometer rentabilidade.</p></div>
+        </div>
+        <div class="card stack">
+          <span class="eyebrow">Equação de valor</span>
+          <div class="bars" id="value-eq"></div>
+          <span class="eyebrow">Posicionamento recomendado</span>
+          <p style="margin:0">Para profissionais liberais e casais de Porto Alegre que ganham bem mas não sabem para onde vai o dinheiro, e brigam por isso em casa: um plano escrito em 15 dias e acompanhamento mensal, sem fidelidade e sem comissão, ao contrário do gerente do banco.</p>
+          <span class="eyebrow">Ganchos que mais converteram no painel</span>
+          <div class="pills"><span class="pill">"Quanto você gastou de iFood este ano?"</span><span class="pill">"Toda conversa sobre dinheiro aqui em casa vira briga."</span><span class="pill">"Cheque especial rodando? Um plano para sair em 90 dias."</span></div>
+        </div>
+      </div>
+      <div class="card stack">
+        <div class="flexbetween"><h3>Marca: Lastro <span class="muted" style="font:500 .85rem var(--f-body)">(recomendado; checar INPI classe 36 e registro.br)</span></h3><span class="pill">Alternativas: Pila · Contas Claras</span></div>
+        <p style="font-family:var(--f-display);font-size:1.4rem;margin:0">Contas claras. Plano escrito.</p>
+        <div class="cols3" style="grid-template-columns:repeat(4,minmax(0,1fr))">
+          <div class="swatch" style="background:#14323A;color:#F6F2EA">Tinta #14323A</div>
+          <div class="swatch" style="background:#F6F2EA;color:#14323A;border:1px solid var(--line)">Papel #F6F2EA</div>
+          <div class="swatch" style="background:#C9862A;color:#14323A">Âmbar #C9862A</div>
+          <div class="swatch" style="background:#8A5A12;color:#FFFFFF">Âmbar escuro #8A5A12</div>
+        </div>
+        <p class="muted" style="margin:0;font-size:.85rem">Voz: direta, calma, honesta. Fontes: Fraunces (títulos) e Inter (texto).</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- OPERAÇÃO -->
+  <section id="p-ops" role="tabpanel" aria-labelledby="t-ops" hidden>
+    <div class="stack">
+      <h2>Operação e lançamento</h2>
+      <div class="grid2">
+        <div class="card"><h3>Cronograma</h3><div class="tl" style="margin-top:6px">
+          <div class="it crit"><span class="d num">até 16/10</span><span><b>Escopo CVM, CNPJ e gateway</b>. Decide se o planejador recomenda investimentos. Caminho crítico.</span></div>
+          <div class="it"><span class="d num">22/10</span><span><b>Pré-venda</b> para 100 nomes da rede (metade a R$ 197, metade a R$ 297)</span></div>
+          <div class="it crit"><span class="d num">09/11</span><span><b>Decisão de seguir</b>: ≥ 20 diagnósticos pagos e ≥ 50% de conversão. Só então ligar CEO e marketing.</span></div>
+          <div class="it"><span class="d num">16/11</span><span>Lançamento suave com os clientes da pré-venda</span></div>
+          <div class="it"><span class="d num">23/11</span><span><b>Lançamento público</b>. Turma fundadora até 31/01/2027 ou 30 vagas.</span></div>
+          <div class="it"><span class="d num">23/12</span><span>Revisão do dia 30: re-rodar o CFO com números reais</span></div>
+        </div></div>
+        <div class="card"><h3>Riscos</h3><div class="tbl" style="margin-top:6px"><table>
+          <tr><th>Risco</th><th>Impacto</th><th>Plano</th></tr>
+          <tr><td>Caixa acaba no mês ~5</td><td><span class="sev h">crítico</span></td><td>Pré-venda antes de ligar os fixos; CEO a R$ 5 mil até o break-even</td></tr>
+          <tr><td>Recomendar investimento sem registro CVM</td><td><span class="sev h">crítico</span></td><td>Definir escopo antes de lançar</td></tr>
+          <tr><td>Dashplan falha ou sobe preço</td><td><span class="sev h">alto</span></td><td>SLA por escrito, exportação de dados, plano B em planilha</td></tr>
+          <tr><td>Planejador mal pago com 20%</td><td><span class="sev m">médio</span></td><td>Medir tempo; meta de 50 min por cliente-mês</td></tr>
+          <tr><td>Muitas devoluções da garantia</td><td><span class="sev m">médio</span></td><td>Revisão por um segundo planejador</td></tr>
+          <tr><td>Imposto maior (Anexo V)</td><td><span class="sev m">médio</span></td><td>Contador define antes de abrir; ajuste a alavanca de imposto</td></tr>
+        </table></div></div>
+      </div>
+      <div class="card"><h3>Capacidade</h3><p style="margin:6px 0 0">Com ~50 minutos por cliente-mês, um planejador atende ~150 clientes de acompanhamento. Cada diagnóstico leva ~4 h. A 20% de R$ 297, o planejador recebe R$ 59,40 por cliente-mês.</p></div>
+    </div>
+  </section>
+
+  <!-- CONSELHO -->
+  <section id="p-board" role="tabpanel" aria-labelledby="t-board" hidden>
+    <div class="stack">
+      <h2>Conselho</h2>
+      <div class="cols3">
+        <div class="card"><span class="eyebrow">Lente de Oferta</span><div class="kpi" style="border:0;padding:6px 0"><span class="v">5/10</span><span class="l">Financiaria com condições</span></div><p style="margin:0;font-size:.85rem">Oferta genérica vira commodity; falta prova e garantia; o Digital "usa sozinho" tende a churn.</p></div>
+        <div class="card"><span class="eyebrow">Lente de Monopólio</span><div class="kpi" style="border:0;padding:6px 0"><span class="v">4/10</span><span class="l">Financiaria com condições</span></div><p style="margin:0;font-size:.85rem">Nenhuma vantagem durável; mercado amplo sem nicho; o humano não escala.</p></div>
+        <div class="card"><span class="eyebrow">Lente de Produto</span><div class="kpi" style="border:0;padding:6px 0"><span class="v">5/10</span><span class="l">Financiaria com condições</span></div><p style="margin:0;font-size:.85rem">Quatro planos para todo mundo; experiência sobre plataforma de terceiros; passagens app ↔ pessoa.</p></div>
+      </div>
+      <div class="card"><h3>Condições</h3><div class="tbl" style="margin-top:6px"><table id="tbl-cond"></table></div></div>
+    </div>
+  </section>
+</div>
+<div class="tip" id="tip" hidden></div>
+
+<script type="application/json" id="data">__DATA__</script>
+<script>
+(function(){
+const D=JSON.parse(document.getElementById('data').textContent);
+const P=D.personas, K=D.k, W=D.w;
+const $=id=>document.getElementById(id);
+const BRL=v=>(v<0?'−':'')+'R$ '+Math.round(Math.abs(v)).toLocaleString('pt-BR');
+const BRLk=v=>{const a=Math.abs(v);const s=a>=1000?(a/1000).toLocaleString('pt-BR',{maximumFractionDigits:a>=100000?0:1})+' mil':Math.round(a)+'';return (v<0?'−':'')+'R$ '+s};
+const pct=v=>Math.round(v*100)+'%';
+
+const LEVERS={cancel:'Cancelamento livre',comissao:'Sem comissão',cfp:'Planejador CFP',garantia:'Garantia de qualidade',exemplo:'Plano exemplo',prova:'Prova social',checkin:'Check-in ativo',casal:'Sessão do casal',raiox:'Raio-X do banco',dividas:'Trilha de dívidas',tributario:'Módulo tributário',parcelado:'Diagnóstico em 3x'};
+const BAR2LEV={cancel:'cancel',comissao:'comissao',cfp:'cfp',indicacao:'prova',avaliacoes:'prova',exemplo:'exemplo',garantia_qual:'garantia',casal:'casal',dividas:'dividas',parcelado:'parcelado',tributario:'tributario',raiox:'raiox',checkin:'checkin'};
+const BARNAME={cancel:'Medo de não conseguir cancelar',comissao:'Desconfiança de comissão',cfp:'Quer planejador certificado',indicacao:'Só compra por indicação',avaliacoes:'Quer avaliações reais',exemplo:'Quer ver um plano exemplo',garantia_qual:'Garantia só cobre atraso',casal:'Briga com o cônjuge',dividas:'Dívida rodando',parcelado:'Quer parcelar',tributario:'Quer tributário / sucessão',raiox:'Acha que o gerente faz de graça',checkin:'Já largou app',diag_barato:'Quer diagnóstico barato ou 1ª conversa grátis'};
+
+const PRESETS={
+ atual:{m:297,diag:true,dprice:490,parcelado:false,cancel:true,comissao:true,cfp:false,garantia:false,exemplo:false,prova:false,checkin:true,casal:false,raiox:false,dividas:false,tributario:false,rede:25,mkt:3000,cpl:40,real:50,conv:50,churn:3,ceo1:10000,ceo2:10000,plan:20,tax:11,pmt:5000,cash:100000},
+};
+PRESETS.v1=Object.assign({},PRESETS.atual,{m:350,diag:false,dprice:0,cancel:false,comissao:false,checkin:false});
+PRESETS.rec=Object.assign({},PRESETS.atual,{dprice:197,garantia:true,exemplo:true,casal:true,raiox:true,dividas:true,ceo1:5000});
+PRESETS.tudo=Object.assign({},PRESETS.rec,{cfp:true,prova:true,tributario:true,parcelado:true});
+
+const IDS=Object.keys(PRESETS.atual);
+function read(){const c={};IDS.forEach(k=>{const el=$(k);c[k]=el.type==='checkbox'?el.checked:+el.value});return c}
+function write(c){IDS.forEach(k=>{const el=$(k);if(el.type==='checkbox')el.checked=!!c[k];else el.value=c[k]})}
+
+// ---- modelo do comprador (calibrado nas respostas dos agentes) ----
+function pscore(p,m){const[tc,c,e,t]=p.p;let s;if(m<=c)s=1;else if(m<=e)s=1-0.4*(m-c)/Math.max(1,e-c);else if(m<t)s=0.6*(t-m)/Math.max(1,t-e);else s=0;if(m<tc)s*=0.5;return s}
+function dscore(p,d){if(d<=0)return 1;const hi=Math.max(600,p.p[3]*2);return d<=200?1:Math.max(0,(hi-d)/(hi-200))}
+function unresolved(p,c){const u=[];p.B.forEach(b=>{if(b==='diag_barato'){if(!(c.diag&&c.dprice<=200))u.push(b);return}if(!c[BAR2LEV[b]])u.push(b)});return u}
+function prob(p,c){const u=unresolved(p,c).length;const pen=Math.pow(W,u);
+  if(c.diag)return Math.min(1,K*dscore(p,c.dprice)*(0.5+0.5*pscore(p,c.m))*pen);
+  return Math.min(1,K*0.6*pscore(p,c.m)*pen)}
+function panelRate(c){let s=0;P.forEach(p=>s+=prob(p,c));return s/P.length}
+
+// ---- modelo do negócio ----
+function simulate(c){
+  const rate=panelRate(c)*c.real/100;
+  const months=[];let clients=0,cash=c.cash-15000,beMonth=null,minCash=cash,outMonth=null;
+  const unitVar=(c.plan+c.tax+3.5)/100;
+  const contrib=c.m*(1-unitVar);
+  for(let mo=1;mo<=24;mo++){
+    const ramp=mo===1?0.5:mo===2?0.75:1;
+    const leads=(c.rede+(c.cpl>0?c.mkt/c.cpl:0))*ramp;
+    const buyers=leads*rate;
+    const diags=c.diag?buyers:0;
+    const newSubs=c.diag?buyers*c.conv/100:buyers;
+    clients=clients*(1-c.churn/100)+newSubs;
+    const revSubs=clients*c.m, revDiag=diags*c.dprice;
+    const rev=revSubs+revDiag;
+    const varCost=rev*unitVar;
+    const platform=c.pmt+Math.max(0,clients-400)*20;
+    const preBE=beMonth===null;
+    const ceo=preBE?c.ceo1:c.ceo2;
+    const fixed=platform+c.mkt+900+ceo;
+    const profit=rev-varCost-fixed;
+    if(beMonth===null&&profit>=0)beMonth=mo;
+    cash+=profit;minCash=Math.min(minCash,cash);
+    if(outMonth===null&&cash<0)outMonth=mo;
+    months.push({mo,leads,diags,newSubs,clients,rev,varCost,fixed,profit,cash});
+  }
+  const fixedRef=c.pmt+c.mkt+900+c.ceo1;
+  const beClients=contrib>0?fixedRef/contrib:Infinity;
+  const y1=months.slice(0,12).reduce((a,x)=>a+x.profit,0);
+  return {rate,months,contrib,beClients,beMonth,minCash,outMonth,y1,panel:panelRate(c)};
+}
+
+// ---- estado ----
+let ref=null;
+try{const s=localStorage.getItem('lastro-ref');if(s)ref=JSON.parse(s)}catch(e){}
+if(!ref)ref=Object.assign({},PRESETS.atual);
+let cur=Object.assign({},PRESETS.atual);
+try{const s=localStorage.getItem('lastro-cur');if(s)cur=Object.assign({},PRESETS.atual,JSON.parse(s))}catch(e){}
+write(cur);
+
+const FMT={m:v=>BRL(v)+'/mês',dprice:v=>v==0?'grátis':BRL(v),rede:v=>v+' pessoas',mkt:v=>BRL(v),cpl:v=>BRL(v),real:v=>v+'%',conv:v=>v+'%',churn:v=>String(v).replace('.',',')+'%',ceo1:v=>BRL(v),ceo2:v=>BRL(v),plan:v=>v+'%',tax:v=>String(v).replace('.',',')+'%',pmt:v=>BRL(v),cash:v=>BRL(v)};
+
+function delta(a,b,higherBetter,fmt){
+  const d=a-b; const eps=Math.max(Math.abs(b)*0.005,0.0001);
+  if(!isFinite(a)||!isFinite(b)){return '<span class="delta eq">—</span>'}
+  if(Math.abs(d)<eps)return '<span class="delta eq">= igual à referência</span>';
+  const good=higherBetter?d>0:d<0;
+  return `<span class="delta ${good?'up':'down'}">${d>0?'▲':'▼'} ${fmt(Math.abs(d))} ${good?'melhor':'pior'}</span>`;
+}
+
+function kpis(r,R,c){
+  const last=r.months[11],Rl=R.months[11];
+  const items=[
+   ['Compradores no painel',Math.round(r.panel*100)+' de 100',delta(r.panel*100,R.panel*100,true,v=>v.toFixed(1)),'probabilidade somada dos 100'],
+   [c.diag?'Diagnósticos por mês':'Assinaturas novas por mês',(c.diag?r.months[5].diags:r.months[5].newSubs).toFixed(1).replace('.',','),delta(c.diag?r.months[5].diags:r.months[5].newSubs,(R.months[5].diags||R.months[5].newSubs),true,v=>v.toFixed(1)),'mês 6, depois do desconto de realismo'],
+   ['Clientes ativos no mês 12',Math.round(last.clients),delta(last.clients,Rl.clients,true,v=>Math.round(v)),'break-even: '+(isFinite(r.beClients)?Math.ceil(r.beClients):'∞')+' clientes'],
+   ['Receita no mês 12',BRLk(last.rev),delta(last.rev,Rl.rev,true,BRLk),'assinaturas + diagnósticos'],
+   ['Margem por cliente',BRL(r.contrib)+' ('+pct(r.contrib/c.m)+')',delta(r.contrib,R.contrib,true,BRL),'depois de planejador, imposto e cobrança'],
+   ['Resultado do ano 1',BRLk(r.y1),delta(r.y1,R.y1,true,BRLk),'operacional, sem o investimento inicial'],
+   ['Ponto mais baixo do caixa',BRLk(r.minCash),delta(r.minCash,R.minCash,true,BRLk),r.outMonth?'caixa fica negativo no mês '+r.outMonth:'o caixa nunca zera em 24 meses'],
+   ['Mês do primeiro lucro',r.beMonth?'mês '+r.beMonth:'depois do mês 24',delta(r.beMonth||25,R.beMonth||25,false,v=>Math.round(v)+' meses'),'primeiro mês com resultado ≥ 0'],
+  ];
+  $('kpis').innerHTML=items.map(([l,v,d,s])=>`<div class="kpi"><span class="l">${l}</span><span class="v">${v}</span>${d}<span class="l">${s}</span></div>`).join('');
+  const st=$('verdict');
+  if(r.outMonth){st.className='verdict bad';st.textContent='Cenário: caixa acaba no mês '+r.outMonth}
+  else if(r.y1>=0){st.className='verdict yes';st.textContent='Cenário: lucro no ano 1'}
+  else {st.className='verdict no';st.textContent='Cenário: prejuízo no ano 1, caixa aguenta'}
+}
+
+// ---- gráficos ----
+const tip=$('tip');
+function showTip(e,html){tip.innerHTML=html;tip.hidden=false;const x=Math.min(e.clientX+14,window.innerWidth-tip.offsetWidth-8);const y=Math.min(e.clientY+14,window.innerHeight-tip.offsetHeight-8);tip.style.left=x+'px';tip.style.top=y+'px'}
+function hideTip(){tip.hidden=true}
+function niceMax(v){if(v<=0)return 1;const p=Math.pow(10,Math.floor(Math.log10(v)));const n=v/p;return (n<=1?1:n<=2?2:n<=5?5:10)*p}
+function lineChart(svg,seriesA,seriesB,opts){
+  const Wd=560,H=240,l=78,r=14,t=12,b=26,iw=Wd-l-r,ih=H-t-b;
+  const all=seriesA.concat(seriesB).concat(opts.ref!=null&&isFinite(opts.ref)?[opts.ref]:[]);
+  let lo=Math.min(0,...all),hi=Math.max(1,...all);
+  const raw=(hi-lo)/5,pw=Math.pow(10,Math.floor(Math.log10(raw))),nn=raw/pw,step=(nn<=1?1:nn<=2?2:nn<=2.5?2.5:nn<=5?5:10)*pw;
+  const mn=Math.floor(lo/step)*step,mx=Math.ceil(hi/step)*step;
+  const x=i=>l+iw*i/(seriesA.length-1), y=v=>t+ih*(1-(v-mn)/(mx-mn||1));
+  let g='<g class="grid">';
+  for(let v=mn;v<=mx+step/2;v+=step){g+=`<line x1="${l}" x2="${Wd-r}" y1="${y(v)}" y2="${y(v)}"/><text x="${l-6}" y="${y(v)+4}" text-anchor="end">${opts.fmt(Math.abs(v)<step/1000?0:v)}</text>`}
+  g+='</g>';
+  let xl='';[1,6,12,18,24].forEach(m=>{xl+=`<text x="${x(m-1)}" y="${H-8}" text-anchor="middle">${m===1?'mês 1':m}</text>`});
+  const path=s=>s.map((v,i)=>(i?'L':'M')+x(i).toFixed(1)+' '+y(v).toFixed(1)).join(' ');
+  let refl='';if(opts.ref!=null&&isFinite(opts.ref)&&opts.ref<=mx)refl=`<line class="ref" x1="${l}" x2="${Wd-r}" y1="${y(opts.ref)}" y2="${y(opts.ref)}"/><text x="${Wd-r}" y="${y(opts.ref)-5}" text-anchor="end">break-even ${Math.ceil(opts.ref)}</text>`;
+  let zero=mn<0?`<line class="zero" x1="${l}" x2="${Wd-r}" y1="${y(0)}" y2="${y(0)}"/>`:'';
+  const endA=seriesA.length-1;
+  svg.innerHTML=g+xl+refl+zero+
+   `<path d="${path(seriesB)}" fill="none" stroke="var(--s2)" stroke-width="2" stroke-dasharray="6 4"/>`+
+   `<path d="${path(seriesA)}" fill="none" stroke="var(--s1)" stroke-width="2"/>`+
+   `<circle cx="${x(endA)}" cy="${y(seriesA[endA])}" r="4" fill="var(--s1)" stroke="var(--surface)" stroke-width="2"/>`+
+   `<line id="${svg.id}-x" y1="${t}" y2="${t+ih}" stroke="var(--muted)" stroke-width="1" opacity="0"/>`+
+   `<rect x="${l}" y="${t}" width="${iw}" height="${ih}" fill="transparent" id="${svg.id}-hit"/>`;
+  const hit=svg.querySelector('#'+svg.id+'-hit'),cross=svg.querySelector('#'+svg.id+'-x');
+  const move=e=>{const pt=svg.getBoundingClientRect();const sx=(e.clientX-pt.left)/pt.width*Wd;const i=Math.max(0,Math.min(seriesA.length-1,Math.round((sx-l)/iw*(seriesA.length-1))));cross.setAttribute('x1',x(i));cross.setAttribute('x2',x(i));cross.setAttribute('opacity','.5');showTip(e,`<b>Mês ${i+1}</b><br>Cenário: ${opts.fmtTip(seriesA[i])}<br>Referência: ${opts.fmtTip(seriesB[i])}`)};
+  hit.addEventListener('pointermove',move);hit.addEventListener('pointerleave',()=>{cross.setAttribute('opacity','0');hideTip()});
+}
+
+function dotColor(v){return v>=0.5?'var(--dot3)':v>=0.25?'var(--dot2)':v>=0.1?'var(--dot1)':'var(--dot0)'}
+let selected=null;
+function dots(c){
+  const el=$('dots');
+  if(!el.children.length){el.innerHTML=P.map((p,i)=>`<button class="dot${p.y?' real':''}" data-i="${i}" aria-label="${p.n}, ${p.a} anos"></button>`).join('');
+    el.addEventListener('click',e=>{const b=e.target.closest('.dot');if(!b)return;selected=+b.dataset.i;renderPick(read())});
+    el.addEventListener('pointerover',e=>{const b=e.target.closest('.dot');if(!b)return;const p=P[+b.dataset.i];showTip(e,`<b>${p.n}, ${p.a}</b> · ${p.s}<br>${p.b}<br>Chance agora: ${pct(prob(p,read()))}`)});
+    el.addEventListener('pointerout',hideTip)}
+  let sum=0;[...el.children].forEach((b,i)=>{const v=prob(P[i],c);sum+=v;b.style.background=dotColor(v);b.classList.toggle('sel',i===selected)});
+  $('dots-sum').textContent='≈ '+Math.round(sum)+' de 100';
+}
+function renderPick(c){
+  const card=$('pick-card');if(selected===null){card.hidden=true;return}
+  const p=P[selected];const u=unresolved(p,c);
+  const pills=p.B.map(b=>`<span class="pill ${u.includes(b)?'off':'on'}">${u.includes(b)?'✕':'✓'} ${BARNAME[b]||b}</span>`).join('');
+  card.hidden=false;
+  card.innerHTML=`<div class="pcard"><div class="flexbetween"><h3>${p.n}, ${p.a} anos</h3><span class="pill">${p.v==='v1'?'viu o pitch original':'viu a oferta atual'} · ${p.y?'COMPROU':'não comprou'}</span></div>
+  <span class="muted">${p.s} · ${p.b} · renda ~${BRL(p.i)}/ano</span>
+  <div><span class="eyebrow">Chance de comprar com as alavancas atuais</span><div class="kpi" style="border:0;padding:4px 0"><span class="v">${pct(prob(p,c))}</span></div></div>
+  <div><span class="eyebrow">Barreiras (verde = resolvida agora)</span><div class="pills" style="margin-top:6px">${pills||'<span class="pill">nenhuma barreira citada</span>'}</div></div>
+  <div><span class="eyebrow">Preço mensal que aceita</span><p class="num" style="margin:4px 0 0">barato demais R$ ${p.p[0]} · barganha R$ ${p.p[1]} · começa a ficar caro R$ ${p.p[2]} · caro demais R$ ${p.p[3]}</p></div>
+  <blockquote>"${p.r}"</blockquote>
+  <p style="margin:0"><b>O que mudaria:</b> ${p.w||'—'}</p>
+  <p class="muted" style="margin:0;font-size:.75rem">Fala de um comprador simulado. Pesquisa, não depoimento.</p></div>`;
+}
+function leverRank(c){
+  const base=panelRate(c)*100;const rows=[];
+  Object.keys(LEVERS).forEach(k=>{if(c[k])return;const c2=Object.assign({},c,{[k]:true});rows.push([k,LEVERS[k],panelRate(c2)*100-base])});
+  if(!c.diag||c.dprice>200){const c2=Object.assign({},c,{diag:true,dprice:197});rows.push(['__d','Diagnóstico a R$ 197',panelRate(c2)*100-base])}
+  rows.sort((a,b)=>b[2]-a[2]);
+  const mx=Math.max(1,...rows.map(r=>r[2]));
+  $('levers-rank').innerHTML=rows.length?rows.slice(0,8).map(([k,n,v])=>`<div class="bar"><div class="t"><div class="flexbetween"><span>${n}</span><button data-k="${k}">ligar</button></div><div class="track"><div class="fill" style="width:${Math.max(2,v/mx*100)}%"></div></div></div><span class="val">+${v.toFixed(1).replace('.',',')}</span></div>`).join(''):'<p class="muted">Todas as alavancas já estão ligadas.</p>';
+}
+$('levers-rank').addEventListener('click',e=>{const b=e.target.closest('button[data-k]');if(!b)return;const k=b.dataset.k;if(k==='__d'){$('diag').checked=true;$('dprice').value=197}else $(k).checked=true;update()});
+
+function monthTable(r){
+  const rows=r.months.filter(m=>[1,2,3,6,9,12,18,24].includes(m.mo));
+  $('tbl-month').innerHTML='<tr><th>Mês</th><th class="n">Interessados</th><th class="n">Diagnósticos</th><th class="n">Novos assinantes</th><th class="n">Clientes</th><th class="n">Receita</th><th class="n">Resultado</th><th class="n">Caixa</th></tr>'+rows.map(m=>`<tr><td>${m.mo}</td><td class="n">${Math.round(m.leads)}</td><td class="n">${m.diags.toFixed(1)}</td><td class="n">${m.newSubs.toFixed(1)}</td><td class="n">${Math.round(m.clients)}</td><td class="n">${BRL(m.rev)}</td><td class="n" style="color:${m.profit<0?'var(--bad)':'var(--good)'}">${BRL(m.profit)}</td><td class="n" style="color:${m.cash<0?'var(--bad)':'inherit'}">${BRL(m.cash)}</td></tr>`).join('');
+}
+
+function update(){
+  const c=read();cur=c;
+  try{localStorage.setItem('lastro-cur',JSON.stringify(c))}catch(e){}
+  Object.keys(FMT).forEach(k=>{$('o-'+k).textContent=FMT[k](c[k])});
+  $('dprice-wrap').style.opacity=c.diag?1:.4;$('dprice').disabled=!c.diag;
+  const r=simulate(c),R=simulate(ref);
+  kpis(r,R,c);
+  lineChart($('ch-clients'),r.months.map(m=>m.clients),R.months.map(m=>m.clients),{ref:r.beClients,fmt:v=>Math.round(v),fmtTip:v=>Math.round(v)+' clientes'});
+  lineChart($('ch-cash'),r.months.map(m=>m.cash),R.months.map(m=>m.cash),{fmt:BRLk,fmtTip:BRL});
+  dots(c);leverRank(c);renderPick(c);monthTable(r);
+}
+document.querySelectorAll('aside input').forEach(el=>el.addEventListener('input',()=>{$('preset').value='';update()}));
+$('preset').addEventListener('change',e=>{if(!e.target.value)return;write(PRESETS[e.target.value]);update()});
+$('save').addEventListener('click',()=>{ref=read();try{localStorage.setItem('lastro-ref',JSON.stringify(ref))}catch(e){}$('save').textContent='Referência salva';setTimeout(()=>$('save').textContent='Salvar como referência',1500);update()});
+$('reset').addEventListener('click',()=>{write(PRESETS.atual);ref=Object.assign({},PRESETS.atual);try{localStorage.setItem('lastro-ref',JSON.stringify(ref))}catch(e){}update()});
+
+// ---- abas ----
+const tabs=[...document.querySelectorAll('nav.tabs button')];
+function showTab(id){tabs.forEach(b=>{const on=b.dataset.tab===id;b.setAttribute('aria-selected',on);$('p-'+b.dataset.tab).hidden=!on});try{localStorage.setItem('lastro-tab',id)}catch(e){}}
+tabs.forEach(b=>b.addEventListener('click',()=>showTab(b.dataset.tab)));
+let startTab=(location.hash||'').slice(1);if(!tabs.some(b=>b.dataset.tab===startTab)){try{startTab=localStorage.getItem('lastro-tab')||'sim'}catch(e){startTab='sim'}}
+showTab(tabs.some(b=>b.dataset.tab===startTab)?startTab:'sim');
+
+// ---- aba pessoas ----
+const segs=[...new Set(P.map(p=>p.s))];
+$('f-seg').innerHTML+=segs.map(s=>`<option>${s}</option>`).join('');
+const RC={trust:'Confiança',habit:'Hábito (planilha, gerente)',price:'Preço',need:'Não vê necessidade',other:'Outro'};
+function people(){
+  const fs=$('f-seg').value,fv=$('f-ver').value;
+  const L=P.filter(p=>(!fs||p.s===fs)&&(!fv||p.v===fv));
+  const bySeg={};P.forEach(p=>{(bySeg[p.s]=bySeg[p.s]||[]).push(p)});
+  $('seg-summary').innerHTML=segs.map(s=>{const g=bySeg[s];const med=a=>{const x=a.slice().sort((p,q)=>p-q);return x[Math.floor(x.length/2)]};return `<div class="card"><span class="eyebrow">${s}</span><div class="flexbetween" style="margin-top:6px"><span><b class="num">${g.length}</b> pessoas · <b class="num">${g.filter(p=>p.y).length}</b> compraram</span><span class="num muted">caro a partir de R$ ${med(g.map(p=>p.p[2]))}</span></div></div>`}).join('');
+  const rc={};L.filter(p=>!p.y).forEach(p=>rc[p.rc]=(rc[p.rc]||0)+1);
+  const mx=Math.max(1,...Object.values(rc));
+  $('reasons').innerHTML=Object.entries(rc).sort((a,b)=>b[1]-a[1]).map(([k,v])=>`<div class="bar"><div class="t"><span>${RC[k]||k}</span><div class="track"><div class="fill" style="width:${v/mx*100}%"></div></div></div><span class="val">${v}</span></div>`).join('');
+  const bc={};L.forEach(p=>p.B.forEach(b=>bc[b]=(bc[b]||0)+1));
+  const mb=Math.max(1,...Object.values(bc));
+  $('barriers').innerHTML=Object.entries(bc).sort((a,b)=>b[1]-a[1]).map(([k,v])=>`<div class="bar"><div class="t"><span>${BARNAME[k]||k}</span><div class="track"><div class="fill" style="width:${v/mb*100}%"></div></div></div><span class="val">${v}</span></div>`).join('');
+  $('tbl-people').innerHTML='<tr><th>Pessoa</th><th>Segmento</th><th>Comportamento</th><th>Viu</th><th>Comprou</th><th>Por quê (nas palavras dela)</th><th class="n">Caro a partir de</th></tr>'+L.map(p=>`<tr><td><b>${p.n}</b>, ${p.a}</td><td>${p.s}</td><td>${p.b}</td><td>${p.v}</td><td>${p.y?'<span class="sev l">sim</span>':'não'}</td><td style="min-width:260px">${p.r}</td><td class="n">R$ ${p.p[2]}</td></tr>`).join('');
+}
+$('f-seg').addEventListener('change',people);$('f-ver').addEventListener('change',people);people();
+
+// ---- preço (régua) ----
+(function(){const svg=$('ch-price'),Wd=760,l=20,r=20,y0=120,mx=800;const x=v=>l+(Wd-l-r)*v/mx;
+  let s=`<rect x="${x(81)}" y="${y0-14}" width="${x(300)-x(81)}" height="28" rx="4" fill="var(--good-bg)"/><text x="${(x(81)+x(300))/2}" y="${y0+4}" text-anchor="middle" style="fill:var(--good);font-weight:600">faixa aceitável do painel</text>`;
+  s+=`<line x1="${l}" x2="${Wd-r}" y1="${y0+24}" y2="${y0+24}" stroke="var(--line)"/>`;
+  [0,100,200,300,400,500,600,700,800].forEach(v=>s+=`<line x1="${x(v)}" x2="${x(v)}" y1="${y0+20}" y2="${y0+28}" stroke="var(--line)"/><text x="${x(v)}" y="${y0+44}" text-anchor="middle">R$ ${v}</text>`);
+  const pts=[[41,'Apps',1],[149.9,'Ável Essencial',0],[299.9,'Ável Estratégico',1],[297,'Seu Acompanhamento',2],[390,'Seu Profissional',3],[500,'Consultor CVM',0],[750,'Seu Personalizado',1]];
+  pts.forEach(([v,n,row])=>{const mine=n.startsWith('Seu');const yy=row%2?y0-50:y0-78;s+=`<line x1="${x(v)}" x2="${x(v)}" y1="${yy+6}" y2="${y0+24}" stroke="${mine?'var(--accent-fill)':'var(--muted)'}" stroke-width="${mine?2:1}"/><circle cx="${x(v)}" cy="${y0+24}" r="5" fill="${mine?'var(--accent-fill)':'var(--muted)'}" stroke="var(--surface)" stroke-width="2"/><text x="${x(v)}" y="${yy}" text-anchor="middle" style="${mine?'fill:var(--ink);font-weight:600':''}">${n}</text>`});
+  svg.innerHTML=s})();
+
+// ---- equação de valor ----
+$('value-eq').innerHTML=[['Resultado dos sonhos',6,7],['Probabilidade percebida',2,6],['Tempo até o resultado',3,7],['Esforço e sacrifício',3,6]].map(([n,a,b])=>`<div class="bar"><div class="t"><div class="flexbetween"><span>${n}</span><span class="muted num">v1 ${a} → ${b}</span></div><div class="track"><div class="fill" style="width:${b*10}%"></div></div></div><span class="val">${b}/10</span></div>`).join('');
+
+// ---- condições ----
+const COND=[['Escolher um segmento inicial','em andamento','Profissionais liberais e casais (marketing.md)'],['Promessa em uma frase + resultado em 90 dias','feito','"Plano Claro em 15 Dias"'],['Unit economics positiva','feito','R$ 194,53 por cliente-mês (65%)'],['Garantia que o caixa aguente','feito','Diagnóstico a partir de R$ 197'],['Paga os fixos no ano 1','não','Depende do ritmo de clientes: use o simulador'],['Caixa suficiente','não na rampa base','Pré-venda + CEO a R$ 5 mil até o break-even'],['Custo por cliente medido','aberto','Pré-venda de 12/10 a 08/11'],['Enquadramento CVM e comissão','aberto','Decidir até 16/10'],['Vantagem durável declarada','aberto','Nicho + método + marca'],['Piloto pago com resultados','aberto','Meta: ≥ 20 diagnósticos pagos']];
+$('tbl-cond').innerHTML='<tr><th>Condição</th><th>Status</th><th>Como</th></tr>'+COND.map(([a,b,c])=>`<tr><td>${a}</td><td><span class="sev ${b==='feito'?'l':b==='aberto'||b==='em andamento'?'m':'h'}">${b}</span></td><td>${c}</td></tr>`).join('');
+
+update();
+})();
+</script>

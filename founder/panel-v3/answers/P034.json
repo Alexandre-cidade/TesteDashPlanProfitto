@@ -1,0 +1,13 @@
+{
+  "id": "P034",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Tô com cheque especial e cartão rodando; tirar R$ 490 de uma vez agora pra alguém me dizer que eu gasto demais dói. E se eu continuar são mais R$ 297 por mês, quase o que eu pago de academia e streaming somados vezes três.",
+  "objection": "Já paguei app e larguei; tenho medo de pagar o diagnóstico, receber um PDF com 3 ações óbvias tipo 'corte gastos' e no mês seguinte estar no mesmo buraco, só que R$ 490 mais pobre.",
+  "would_change_my_mind": "Um diagnóstico bem mais barato ou parcelado sem juros, com foco direto em renegociar minhas dívidas e mostrar quanto de juros eu economizaria, de preferência pago depois que eu ver o plano.",
+  "price_too_cheap": 50,
+  "price_cheap": 120,
+  "price_expensive": 250,
+  "price_too_expensive": 450
+}

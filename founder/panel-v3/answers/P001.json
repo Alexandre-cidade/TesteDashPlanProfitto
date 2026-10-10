@@ -1,0 +1,13 @@
+{
+  "id": "P001",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Empresa nova, que ninguém que eu conheço usou nem me indicou. Meu assessor do banco já olha meus investimentos sem me cobrar nada, então não vou pagar R$ 490 pra um desconhecido me dizer três coisas.",
+  "objection": "Não conheço ninguém que tenha usado. Sem indicação de alguém de confiança eu não entrego meus números pra uma empresa que acabou de abrir, por mais que digam que não ganham comissão.",
+  "would_change_my_mind": "Um amigo ou colega de confiança me contar que fez o diagnóstico e que o plano realmente mudou alguma coisa pra ele.",
+  "price_too_cheap": 100,
+  "price_cheap": 200,
+  "price_expensive": 350,
+  "price_too_expensive": 500
+}

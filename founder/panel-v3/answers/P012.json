@@ -1,0 +1,13 @@
+{
+  "id": "P012",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Eu já controlo tudo na minha planilha e sei para onde vai cada real. Pagar R$ 490 para alguém me dizer 3 ações que eu provavelmente já sei, e depois R$ 297 por mês, não fecha a conta para mim.",
+  "objection": "Não sei quem é esse planejador nem que formação ele tem. Ser uma empresa nova sem histórico pesa, e não vejo o que ele faria que a minha planilha não faz.",
+  "would_change_my_mind": "Ver um exemplo real de plano entregue e saber a certificação do planejador (tipo CFP), com indicação de alguém conhecido que usou e economizou mais do que pagou.",
+  "price_too_cheap": 50,
+  "price_cheap": 150,
+  "price_expensive": 250,
+  "price_too_expensive": 400
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P045",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Empresa nova que ninguém que eu conheço usou; eu só contrato serviço que um amigo ou colega indicou. E meu assessor do banco já me dá orientação sem cobrar nada à parte.",
+  "objection": "Não conheço ninguém que tenha usado, e não sei se um planejador desconhecido vai me dizer algo que meu assessor do banco já não diz de graça.",
+  "would_change_my_mind": "Um amigo ou colega de confiança me contar que fez o diagnóstico e que o plano realmente mudou as finanças da família dele.",
+  "price_too_cheap": 100,
+  "price_cheap": 200,
+  "price_expensive": 350,
+  "price_too_expensive": 550
+}

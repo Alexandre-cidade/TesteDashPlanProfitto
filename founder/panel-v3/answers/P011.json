@@ -1,0 +1,13 @@
+{
+  "id": "P011",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Eu já controlo tudo na minha planilha, cada centavo da casa e das crianças. Pagar R$ 490 pra alguém me dizer 3 ações que eu provavelmente já sei, e depois R$ 297 por mês, não faz sentido pra mim agora.",
+  "objection": "Não sei quem é esse planejador nem que formação ele tem; empresa nova, sem ninguém que eu conheça que tenha usado. O 'não vende produto' ajuda, mas não prova que o plano vai ser melhor que o que eu já faço sozinho.",
+  "would_change_my_mind": "Ver o planejador com certificação CFP e um exemplo real de diagnóstico, ou um amigo de confiança dizendo que o plano mudou alguma coisa concreta nas finanças dele, com um diagnóstico mais barato tipo R$ 200 pra testar.",
+  "price_too_cheap": 50,
+  "price_cheap": 100,
+  "price_expensive": 200,
+  "price_too_expensive": 300
+}

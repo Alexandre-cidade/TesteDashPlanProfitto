@@ -1,0 +1,13 @@
+{
+  "id": "P004",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Eu já tenho o gerente do banco e o assessor da corretora que cuidam disso sem me cobrar nada. Pagar R$ 490 e depois R$ 297 por mês, com 64 anos, para alguém de uma empresa nova que eu não conheço, não faz sentido quando uma planilha resolve o controle de gastos.",
+  "objection": "Por que pagar todo mês se o meu gerente já me orienta de graça? E é uma empresa nova, não sei quem são esses planejadores.",
+  "would_change_my_mind": "Uma indicação de alguém de confiança que usou e mostrou que o gerente estava me empurrando produtos ruins e que o plano economizou mais do que custa.",
+  "price_too_cheap": 50,
+  "price_cheap": 100,
+  "price_expensive": 180,
+  "price_too_expensive": 250
+}

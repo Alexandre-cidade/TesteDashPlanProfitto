@@ -1,0 +1,13 @@
+{
+  "id": "P013",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Gostei de não ter comissão, mas já me queimei com dica de investimento e é uma empresa nova que eu nunca ouvi falar. Com o cheque especial rodando, tirar R$ 490 agora para um plano de alguém que eu não conheço não me parece prioridade.",
+  "objection": "A garantia só devolve o dinheiro se o plano atrasar, não se o plano for ruim ou genérico. Como sei que o planejador entende de dívida e não vai me entregar um PDF padrão?",
+  "would_change_my_mind": "Uma conversa gratuita antes de pagar, ou indicação de alguém conhecido que saiu do vermelho com eles, e poder parcelar o diagnóstico.",
+  "price_too_cheap": 80,
+  "price_cheap": 150,
+  "price_expensive": 250,
+  "price_too_expensive": 450
+}

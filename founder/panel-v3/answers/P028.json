@@ -1,0 +1,13 @@
+{
+  "id": "P028",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Meu gerente do banco já me orienta sem cobrar nada, e eu sempre deixei essas decisões com ele. Pagar R$ 490 de cara e depois R$ 297 por mês, com o que eu ganho, pesa mais que a academia e o streaming juntos.",
+  "objection": "Por que eu pagaria quase R$ 300 por mês por algo que o gerente ou o assessor da corretora fazem de graça? E é uma empresa nova, não sei quem são.",
+  "would_change_my_mind": "Ver, com números, que o meu gerente está me empurrando produtos ruins e me fazendo perder dinheiro, por indicação de alguém de confiança que já usou.",
+  "price_too_cheap": 30,
+  "price_cheap": 60,
+  "price_expensive": 120,
+  "price_too_expensive": 200
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P050",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Gostei de poder cancelar pelo site sem multa e do diagnóstico sem assinatura, mas é uma empresa nova e ninguém que eu conheço usou. Eu só contrato serviço que amigo ou colega recomendou, e mexer nas finanças da família com desconhecido eu não faço.",
+  "objection": "Ninguém de confiança me indicou. É uma empresa nova, não sei quem é o planejador nem se o plano vai servir pra meta concreta que eu tenho, que é comprar o apartamento.",
+  "would_change_my_mind": "Um amigo ou colega de confiança me contar que fez o diagnóstico e que o plano ajudou de verdade.",
+  "price_too_cheap": 100,
+  "price_cheap": 200,
+  "price_expensive": 350,
+  "price_too_expensive": 500
+}

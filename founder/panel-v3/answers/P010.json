@@ -1,0 +1,13 @@
+{
+  "id": "P010",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Já me queimei com dica de investimento e já larguei Mobills e Organizze depois de um mês, então pagar R$ 490 de cara para uma empresa nova que eu não conheço me parece repetir o mesmo filme. Meu gerente do banco já me dá uma orientação sem eu pagar nada.",
+  "objection": "Não sei quem é esse planejador nem que resultado ele já entregou para alguém; uma empresa recém-aberta pode sumir, e a garantia só devolve se o plano não chegar, não se o plano for ruim.",
+  "would_change_my_mind": "Indicação de um amigo ou colega de Porto Alegre que já usou e melhorou as contas, mais saber que o planejador tem certificação (CFP) e ver um exemplo de plano antes de pagar.",
+  "price_too_cheap": 50,
+  "price_cheap": 120,
+  "price_expensive": 250,
+  "price_too_expensive": 400
+}

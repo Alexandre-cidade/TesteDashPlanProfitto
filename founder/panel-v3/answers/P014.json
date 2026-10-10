@@ -1,0 +1,13 @@
+{
+  "id": "P014",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Dinheiro não é o problema, R$ 490 eu gasto num jantar. O problema é que já me queimei com dica de investimento e essa é uma empresa nova, sem nome, e eu não sei quem é o planejador nem qual a formação dele; meu assessor do banco pelo menos eu conheço.",
+  "objection": "Quem é esse planejador? Não fala de certificação (CFP), experiência, nem tem cliente para eu perguntar. Para alguém com a minha renda, um plano genérico com '3 primeiras ações' parece raso, e eu sei que vou largar a plataforma de controle de gastos como larguei o Organizze.",
+  "would_change_my_mind": "Saber que o planejador é CFP com anos de experiência atendendo profissionais liberais de alta renda, e a indicação de um colega médico ou advogado que já usou.",
+  "price_too_cheap": 150,
+  "price_cheap": 300,
+  "price_expensive": 900,
+  "price_too_expensive": 1500
+}

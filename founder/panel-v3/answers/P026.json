@@ -1,0 +1,13 @@
+{
+  "id": "P026",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Estou com o cheque especial rodando e o dinheiro curto. Tirar R$ 490 de uma vez agora, e depois mais R$ 297 por mês, é justamente o que eu não posso fazer. Prefiro montar uma planilha e cortar gastos sozinha.",
+  "objection": "Pagar para alguém me dizer que tenho que parar de gastar, quando o que me aperta é a dívida. Uma planilha resolve, não preciso pagar todo mês.",
+  "would_change_my_mind": "Um diagnóstico bem mais barato, ou parcelado sem juros, focado só em sair das dívidas, de preferência perto de R$ 150.",
+  "price_too_cheap": 40,
+  "price_cheap": 90,
+  "price_expensive": 180,
+  "price_too_expensive": 280
+}

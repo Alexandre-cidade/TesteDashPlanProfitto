@@ -1,0 +1,13 @@
+{
+  "id": "P021",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Quem cuida do meu dinheiro é o gerente do banco e o assessor da corretora, e eles não me cobram nada. Pagar R$ 490 e depois R$ 297 por mês para alguém que eu não conheço, ainda mais com plataforma online que eu já sei que vou largar, não faz sentido para mim agora.",
+  "objection": "Já tentei app de controle e larguei. Tenho medo de pagar a mensalidade e não usar, igual academia, e o meu gerente já me atende sem custo.",
+  "would_change_my_mind": "Uma indicação de alguém de confiança que usou e mostrou quanto economizou ou deixou de perder com as taxas e produtos que o banco empurra.",
+  "price_too_cheap": 50,
+  "price_cheap": 100,
+  "price_expensive": 180,
+  "price_too_expensive": 280
+}

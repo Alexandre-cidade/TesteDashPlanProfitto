@@ -1,0 +1,13 @@
+{
+  "id": "P022",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Meu gerente e meu assessor já cuidam disso sem me cobrar nada, e não vejo motivo para pagar R$ 490 mais R$ 297 por mês a uma empresa nova que eu nunca ouvi falar.",
+  "objection": "Empresa recém-criada, sem histórico nem ninguém que eu conheça que tenha usado; já perdi dinheiro com dica de investimento e não vou entregar minhas contas para estranhos só porque prometem não ganhar comissão.",
+  "would_change_my_mind": "Indicação de um colega médico ou advogado de confiança que já usou e mostrou resultado concreto, mostrando onde meu assessor de banco está me custando dinheiro.",
+  "price_too_cheap": 100,
+  "price_cheap": 150,
+  "price_expensive": 300,
+  "price_too_expensive": 500
+}

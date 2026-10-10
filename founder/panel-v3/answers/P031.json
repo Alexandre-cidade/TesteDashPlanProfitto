@@ -1,0 +1,13 @@
+{
+  "id": "P031",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Empresa nova não tem histórico nenhum no Reclame Aqui, e eu não pago R$ 490 sem ler o que outros clientes dizem. Já perdi dinheiro com dica de investimento uma vez e não vou entregar minhas contas para quem eu não consigo checar.",
+  "objection": "A garantia só cobre o prazo de entrega, não a qualidade do plano. E depois das primeiras reuniões, o que muda no mês seguinte que justifique R$ 297 todo mês? Parece que vira uma reunião de 30 minutos e um app.",
+  "would_change_my_mind": "Ver avaliações reais de clientes (Reclame Aqui ou indicação de alguém que conheço) e um exemplo de plano entregue, mostrando o que de concreto mudou nas finanças de uma família.",
+  "price_too_cheap": 100,
+  "price_cheap": 200,
+  "price_expensive": 350,
+  "price_too_expensive": 500
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P020",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Tenho 62 anos, controlo tudo numa planilha há décadas e não preciso de alguém me dizendo para cortar gastos. Uma reunião de 30 minutos por mês não resolve a discussão com meu marido, e o que eu preciso a essa altura é sucessão e patrimônio, não controle de gastos.",
+  "objection": "Depois das primeiras reuniões, o que muda no mês seguinte? Pago R$ 297 para alguém olhar o que a minha planilha já mostra, e não sei se esse planejador de uma empresa nova tem experiência com patrimônio do meu tamanho.",
+  "would_change_my_mind": "Se o diagnóstico tratasse de sucessão, tributação e aposentadoria do casal, com uma reunião conjunta com meu marido conduzida por alguém com certificação e experiência comprovada com patrimônio alto.",
+  "price_too_cheap": 150,
+  "price_cheap": 400,
+  "price_expensive": 900,
+  "price_too_expensive": 1500
+}

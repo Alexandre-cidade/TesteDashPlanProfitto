@@ -1,0 +1,13 @@
+{
+  "id": "P009",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Eu já controlo tudo numa planilha e ela funciona pra gente. Pagar R$ 490 pra alguém me dizer 3 ações que provavelmente já sei, e depois R$ 297 por mês, é dinheiro que prefiro investir.",
+  "objection": "Uma planilha resolve, não preciso pagar todo mês por reunião de 30 minutos e uma plataforma de gastos que eu já faço sozinha.",
+  "would_change_my_mind": "Ver, com números de alguém parecido comigo, que o plano trouxe um ganho concreto (imposto, investimento, previdência dos filhos) maior que o custo, coisa que a planilha não pega.",
+  "price_too_cheap": 50,
+  "price_cheap": 90,
+  "price_expensive": 180,
+  "price_too_expensive": 297
+}

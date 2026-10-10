@@ -1,0 +1,13 @@
+{
+  "id": "P019",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "R$ 490 só pelo diagnóstico mais R$ 297 por mês é muito pra quem ainda nem começou a investir; o básico de gastar menos e montar reserva eu já vejo de graça no YouTube. E levar isso pra conversa com minha esposa ia virar mais uma briga sobre gastar dinheiro pra economizar dinheiro.",
+  "objection": "Pagar caro pra alguém me dizer o que os influenciadores já falam de graça, e uma empresa nova que eu nunca ouvi falar.",
+  "would_change_my_mind": "Um diagnóstico bem mais barato, tipo R$ 150 a R$ 200, que incluísse uma sessão com nós dois juntos pra parar as brigas sobre dinheiro em casa.",
+  "price_too_cheap": 50,
+  "price_cheap": 100,
+  "price_expensive": 180,
+  "price_too_expensive": 300
+}

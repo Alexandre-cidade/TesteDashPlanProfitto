@@ -1,0 +1,13 @@
+{
+  "id": "P027",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Eu já controlo tudo na minha planilha há anos e sei exatamente para onde vai cada real. Uma reunião de 30 minutos por mês e um app de gastos não me dizem nada que eu já não saiba.",
+  "objection": "Depois do diagnóstico e das três primeiras ações, o que muda no mês seguinte? Já perdi dinheiro com dica de investimento e uma empresa nova, sem histórico, não me prova que o planejador entende de patrimônio do meu tamanho, holding e sucessão.",
+  "would_change_my_mind": "Ver o currículo e a certificação (CFP) do planejador e um exemplo real de plano entregue para alguém com patrimônio parecido com o meu, focado em tributação e sucessão, não em controle de gastos.",
+  "price_too_cheap": 150,
+  "price_cheap": 300,
+  "price_expensive": 800,
+  "price_too_expensive": 1500
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P002",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Meu gerente do banco já cuida dos meus investimentos e não me cobra nada, então pagar R$ 490 e depois R$ 297 por mês por uma empresa nova que eu nunca ouvi falar não me parece necessário agora.",
+  "objection": "É uma empresa nova, sem histórico: como eu sei que esse planejador é bom de verdade e que o plano vai ser melhor do que o que meu gerente já faz de graça?",
+  "would_change_my_mind": "Uma indicação de alguém da família ou de amigos que já fez o diagnóstico e mostrou quanto economizou ou ganhou a mais do que com o gerente do banco.",
+  "price_too_cheap": 50,
+  "price_cheap": 120,
+  "price_expensive": 250,
+  "price_too_expensive": 400
+}

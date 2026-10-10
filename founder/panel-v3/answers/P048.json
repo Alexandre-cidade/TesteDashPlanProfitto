@@ -1,0 +1,13 @@
+{
+  "id": "P048",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "O preço não é problema pra mim, e o cancelamento pelo site sem multa até me tranquiliza. Mas é uma empresa nova: vou no Reclame Aqui e não tem histórico nenhum, e já tenho gerente private no banco que me atende de graça. Não entrego minhas contas e investimentos pra quem eu não consigo checar.",
+  "objection": "Empresa recém-criada, sem reputação no Reclame Aqui. A garantia só devolve se não entregarem no prazo, não se o plano for genérico. E não sei quem é o planejador nem que certificação tem.",
+  "would_change_my_mind": "Saber quem é o planejador, com certificação CFP e nome que eu possa checar, e algumas avaliações reais de clientes, ou a indicação de um colega que já tenha usado.",
+  "price_too_cheap": 100,
+  "price_cheap": 200,
+  "price_expensive": 600,
+  "price_too_expensive": 1200
+}

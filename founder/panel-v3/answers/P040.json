@@ -1,0 +1,13 @@
+{
+  "id": "P040",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Já baixei Mobills e Organizze e larguei em um mês; tenho medo de pagar R$ 490 por um plano bonito que vai ficar na gaveta igual. Gostei do cancelamento pelo site sem multa, mas uma empresa nova que eu nunca ouvi falar não me faz tirar R$ 490 do bolso essa semana.",
+  "objection": "Não sei se eu vou seguir o plano. O problema nunca foi falta de planilha, foi eu não manter o hábito, e R$ 297 por mês é mais que streaming e academia juntos.",
+  "would_change_my_mind": "Uma conversa inicial gratuita com o planejador, ou indicação de alguém conhecido aqui de Porto Alegre que já fez e mudou de verdade as finanças.",
+  "price_too_cheap": 100,
+  "price_cheap": 200,
+  "price_expensive": 350,
+  "price_too_expensive": 550
+}

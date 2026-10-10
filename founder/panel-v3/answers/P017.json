@@ -1,0 +1,13 @@
+{
+  "id": "P017",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Eu já controlo tudo na minha planilha e não vejo por que pagar R$ 490 para alguém me dizer o que eu já sei. Já larguei app antes, e uma plataforma de gastos é só mais uma coisa que vou abandonar.",
+  "objection": "Vou pagar, olhar o plano uma vez e voltar pra minha planilha; R$ 297 por mês pra uma reunião de 30 minutos parece caro pra quem nem começou a investir.",
+  "would_change_my_mind": "Se o diagnóstico ajudasse a gente, eu e minha esposa, a parar de brigar por dinheiro, com uma reunião a dois e alguém neutro mediando, eu talvez pagasse só o diagnóstico.",
+  "price_too_cheap": 50,
+  "price_cheap": 100,
+  "price_expensive": 200,
+  "price_too_expensive": 300
+}

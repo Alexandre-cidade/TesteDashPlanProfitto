@@ -1,0 +1,13 @@
+{
+  "id": "P015",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Com cheque especial rodando, tirar R$ 490 de uma vez agora é exatamente o tipo de gasto que me afunda mais. Gostei do cancelamento pelo site e de não venderem produto, mas hoje o dinheiro não fecha.",
+  "objection": "Pagar R$ 490 por um papel com 3 ações que eu talvez já saiba (cortar gasto, renegociar dívida) e depois ainda R$ 297 por mês, que é quase o juro que eu já pago. Já perdi dinheiro confiando em dica, então desconfio de quem promete organizar minha vida.",
+  "would_change_my_mind": "Poder parcelar o diagnóstico em 3x sem juros ou um diagnóstico mais simples focado só em sair das dívidas por uns R$ 150.",
+  "price_too_cheap": 50,
+  "price_cheap": 120,
+  "price_expensive": 200,
+  "price_too_expensive": 300
+}

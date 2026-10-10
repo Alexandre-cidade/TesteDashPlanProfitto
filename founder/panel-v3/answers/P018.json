@@ -1,0 +1,13 @@
+{
+  "id": "P018",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Empresa nova, que eu nunca ouvi falar e que ninguém da minha confiança indicou: não abro minhas contas, dívidas e investimentos para um desconhecido só porque vi um anúncio. O preço não é o problema; meu assessor do banco já me dá uma orientação sem custo extra.",
+  "objection": "Não sei quem é o planejador, que formação e certificação ele tem, nem conheço ninguém que já usou. E ainda não estou convencida de que isso entrega algo além do que meu assessor já faz de graça para o meu objetivo de comprar o imóvel.",
+  "would_change_my_mind": "Uma indicação de um colega ou amigo de confiança que já fez o diagnóstico e ficou satisfeito, de preferência mostrando como o plano ajudou num objetivo concreto parecido com o meu.",
+  "price_too_cheap": 100,
+  "price_cheap": 250,
+  "price_expensive": 600,
+  "price_too_expensive": 1200
+}

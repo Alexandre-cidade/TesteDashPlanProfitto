@@ -1,0 +1,13 @@
+{
+  "id": "P042",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Meu gerente do banco já me orienta sem cobrar nada, e para a meta do imóvel eu converso com ele. Pagar R$ 490 e depois R$ 297 por mês por algo que eu já tenho de graça não fecha, ainda mais sabendo que já larguei app de controle antes.",
+  "objection": "Vou pagar, olhar a plataforma duas semanas e abandonar como fiz com os apps; e não sei se esse planejador novo sabe mais que o assessor que já conheço.",
+  "would_change_my_mind": "Ver alguém de confiança mostrar que o gerente estava me empurrando produto ruim e que o plano independente economizou mais do que custa, em números concretos para o meu caso do imóvel.",
+  "price_too_cheap": 50,
+  "price_cheap": 100,
+  "price_expensive": 200,
+  "price_too_expensive": 300
+}

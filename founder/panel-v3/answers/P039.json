@@ -1,0 +1,13 @@
+{
+  "id": "P039",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "R$ 490 de cara e depois R$ 297 por mês é quase o que eu pagaria pra começar a investir; o básico de organizar gastos eu já vejo de graça nos influenciadores que sigo. Achei a proposta séria, mas não é agora que vou pagar por isso.",
+  "objection": "Pagar R$ 297 por mês pra alguém me dizer pra gastar menos, sendo que eu ainda nem tenho patrimônio pra justificar um planejador.",
+  "would_change_my_mind": "Um diagnóstico bem mais barato, tipo R$ 150 a R$ 200, ou acompanhamento abaixo de R$ 150 por mês, pra eu testar sem sentir no bolso.",
+  "price_too_cheap": 40,
+  "price_cheap": 100,
+  "price_expensive": 180,
+  "price_too_expensive": 280
+}

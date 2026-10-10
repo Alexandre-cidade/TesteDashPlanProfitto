@@ -1,0 +1,13 @@
+{
+  "id": "P003",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Meu gerente do private e meu assessor já cuidam dos meus investimentos sem me cobrar nada, e o resto eu controlo numa planilha. Não vejo por que pagar R$ 297 por mês a uma empresa nova que eu nunca ouvi falar.",
+  "objection": "Já tenho quem cuide do meu dinheiro de graça, e uma empresa recém-aberta não tem histórico nenhum para eu confiar meu patrimônio inteiro a ela.",
+  "would_change_my_mind": "Se meu contador ou um colega médico de confiança tivesse usado e me mostrasse que o planejador achou dinheiro que o banco estava me fazendo perder em taxas e produtos ruins.",
+  "price_too_cheap": 100,
+  "price_cheap": 200,
+  "price_expensive": 400,
+  "price_too_expensive": 800
+}
