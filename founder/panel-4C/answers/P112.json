@@ -1,0 +1,13 @@
+{
+  "id": "P112",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Quem cuida do dinheiro em casa é meu marido; eu atendo paciente o dia inteiro e não vou contratar planejador sem ele, então isso fica para uma conversa que provavelmente nunca acontece.",
+  "objection": "Já perdi dinheiro seguindo dica de investimento, e um planejador desconhecido de Porto Alegre não me dá segurança só por dizer que não ganha comissão.",
+  "would_change_my_mind": "Meu marido ver o plano de exemplo e propor a gente fazer junto.",
+  "price_too_cheap": 100,
+  "price_cheap": 200,
+  "price_expensive": 450,
+  "price_too_expensive": 800
+}

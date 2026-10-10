@@ -1,0 +1,13 @@
+{
+  "id": "P106",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "Já vi muita oferta assim nos canais que sigo e até acho útil, mas agora não é hora; a empresa está tomando meu tempo e vou deixar isso para o ano que vem.",
+  "objection": "Misturar PF e PJ é meu problema, e não sei se um planejador pessoal vai entender a parte da empresa.",
+  "would_change_my_mind": "Se eu tiver uma folga no fim do ano, ou se ficasse claro que eles organizam PF e PJ juntos.",
+  "price_too_cheap": 150,
+  "price_cheap": 300,
+  "price_expensive": 900,
+  "price_too_expensive": 1800
+}

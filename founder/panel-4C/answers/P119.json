@@ -1,0 +1,13 @@
+{
+  "id": "P119",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Eu só contrato o que alguém de confiança me indicou, e ninguém que eu conheço usou a Profitto; além disso minha bagunça é PF misturada com PJ e não vejo nada no anúncio sobre isso.",
+  "objection": "Não sei se esse planejador entende de empresa e pessoa física misturadas, e se eu quiser cancelar essas empresas sempre complicam.",
+  "would_change_my_mind": "Um amigo empresário me dizer que fez e que resolveu a separação das contas da empresa e da pessoa física.",
+  "price_too_cheap": 100,
+  "price_cheap": 200,
+  "price_expensive": 450,
+  "price_too_expensive": 700
+}

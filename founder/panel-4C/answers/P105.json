@@ -1,0 +1,13 @@
+{
+  "id": "P105",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "Tenho a decisão do imóvel na mesa, mas agora não é o momento de abrir toda a minha vida financeira para alguém; talvez no ano que vem. E 15 dias para um plano genérico de 3 ações não é a ajuda pontual que eu quero.",
+  "objection": "Não fica claro se eles analisam a minha decisão específica (o imóvel) ou só entregam um plano geral.",
+  "would_change_my_mind": "Uma oferta focada na decisão do imóvel, com resposta rápida, em poucos dias.",
+  "price_too_cheap": 150,
+  "price_cheap": 300,
+  "price_expensive": 600,
+  "price_too_expensive": 1000
+}

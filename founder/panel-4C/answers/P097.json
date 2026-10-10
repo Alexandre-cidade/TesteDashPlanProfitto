@@ -1,0 +1,13 @@
+{
+  "id": "P097",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Eu ajudo meus pais todo mês e já tenho um monte de assinatura; R$ 197 até vai, mas a lógica é me levar para R$ 297 por mês, e isso não cabe. O gerente do banco me orienta de graça.",
+  "objection": "Já baixei app e larguei; sei que vou pagar, receber o plano e não seguir.",
+  "would_change_my_mind": "Uma versão bem mais barata, tipo R$ 50 a 80 por mês, só com WhatsApp.",
+  "price_too_cheap": 20,
+  "price_cheap": 50,
+  "price_expensive": 100,
+  "price_too_expensive": 180
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P132",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Eu mesmo invisto pelo app e acompanho tudo. Já me queimei com dica de investimento e não vou pagar R$ 490 pra alguém me dizer o que eu já sei.",
+  "objection": "Não sei se o planejador sabe mais do que eu, e reunião mensal não é minha praia; prefiro resolver tudo sozinho no app.",
+  "would_change_my_mind": "Se fosse uma sessão única pra mim e minha esposa acertarmos as metas juntos, sem assinatura e mais barata.",
+  "price_too_cheap": 20,
+  "price_cheap": 60,
+  "price_expensive": 120,
+  "price_too_expensive": 200
+}

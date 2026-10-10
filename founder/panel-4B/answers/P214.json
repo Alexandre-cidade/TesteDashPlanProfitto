@@ -1,0 +1,13 @@
+{
+  "id": "P214",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Ganho bem e mesmo assim estou rodando cheque especial, alguma coisa está errada. R$ 197 uma vez, com devolução se atrasar, é menos do que eu pago de juros num mês, então faço o diagnóstico; a mensalidade eu decido depois.",
+  "objection": "Meu gerente do banco já se oferece para 'organizar' minha vida de graça; não sei se o planejador vai trazer algo diferente de cortar assinaturas.",
+  "would_change_my_mind": "Se o plano vier genérico, sem tratar das minhas dívidas concretas, eu não continuo no acompanhamento.",
+  "price_too_cheap": 80,
+  "price_cheap": 200,
+  "price_expensive": 450,
+  "price_too_expensive": 800
+}

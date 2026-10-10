@@ -1,0 +1,13 @@
+{
+  "id": "P098",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "Eu sei que preciso organizar, mas passei a semana inteira em videochamada e a última coisa que quero é mais uma reunião, ainda mais sobre dinheiro, que já vira briga em casa. Vou deixar para o mês que vem, como sempre.",
+  "objection": "Não tenho tempo nem energia para juntar todas as contas e sentar numa reunião, e R$ 490 é bastante para quem ainda nem começou a investir.",
+  "would_change_my_mind": "Se desse para fazer tudo por mensagem, sem reunião, e meu marido topasse participar sem virar discussão.",
+  "price_too_cheap": 40,
+  "price_cheap": 90,
+  "price_expensive": 200,
+  "price_too_expensive": 350
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P067",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "R$ 490 é mais de 10% do que eu ganho no mês e R$ 297 por mês é mais que todas as minhas assinaturas juntas. Uma planilha resolve, e eu vou começar mês que vem.",
+  "objection": "Pagar todo mês para alguém me organizar quando eu deveria estar guardando esse dinheiro para o meu objetivo.",
+  "would_change_my_mind": "Um plano de uns R$ 40 a R$ 50 por mês, focado em juntar para a entrada do imóvel.",
+  "price_too_cheap": 15,
+  "price_cheap": 30,
+  "price_expensive": 80,
+  "price_too_expensive": 150
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P220",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "O cartão está me engolindo e sozinha com app eu não fui longe; ter uma pessoa olhando minhas dívidas é diferente. R$ 197 de uma vez, com devolução se não entregarem, eu arrisco.",
+  "objection": "Tenho medo de repetir o que aconteceu com o app: receber o plano, me empolgar uma semana e largar, e aí a mensalidade vira mais uma conta.",
+  "would_change_my_mind": "Se o plano não trouxer um caminho concreto para sair do cheque especial, eu não sigo para o acompanhamento.",
+  "price_too_cheap": 50,
+  "price_cheap": 120,
+  "price_expensive": 250,
+  "price_too_expensive": 400
+}

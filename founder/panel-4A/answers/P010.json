@@ -1,0 +1,13 @@
+{
+  "id": "P010",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Eu só contrato serviço que algum colega de confiança indicou, e ninguém nunca me falou dessa empresa. Para o pouco que mexo, meu gerente do banco já me orienta sem cobrar.",
+  "objection": "Não conheço ninguém que tenha usado; pagar R$ 490 para um desconhecido de outra cidade não me passa confiança.",
+  "would_change_my_mind": "Indicação de um colega do serviço público que tenha usado e gostado.",
+  "price_too_cheap": 30,
+  "price_cheap": 80,
+  "price_expensive": 150,
+  "price_too_expensive": 250
+}

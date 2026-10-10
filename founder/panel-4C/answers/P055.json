@@ -1,0 +1,13 @@
+{
+  "id": "P055",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Estou com o cartão rodando e o mês apertado; pagar R$ 197 para alguém me dizer para gastar menos é dinheiro que eu deveria usar para abater a dívida.",
+  "objection": "Caro para quem já está devendo, e no fim o conselho vai ser o óbvio: cortar gastos.",
+  "would_change_my_mind": "Se o diagnóstico fosse parcelado ou se só pagasse depois de ver o plano de saída da dívida.",
+  "price_too_cheap": 10,
+  "price_cheap": 30,
+  "price_expensive": 70,
+  "price_too_expensive": 120
+}

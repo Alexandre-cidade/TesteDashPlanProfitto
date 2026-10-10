@@ -1,0 +1,13 @@
+{
+  "id": "P043",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Não vou abrir todas as minhas contas para uma empresa de Porto Alegre que nunca ouvi falar. E R$ 490 de uma vez, mais R$ 297 por mês, pesa no meu salário, já pago um monte de assinatura.",
+  "objection": "Expor extrato, cartão e salário para desconhecidos, e no fim descobrir que é só mais uma plataforma de controle de gastos igual ao app que eu larguei.",
+  "would_change_my_mind": "Indicação de alguém que eu conheço que usou, e uma explicação clara de como meus dados ficam protegidos.",
+  "price_too_cheap": 20,
+  "price_cheap": 50,
+  "price_expensive": 120,
+  "price_too_expensive": 200
+}

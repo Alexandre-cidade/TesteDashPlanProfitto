@@ -1,0 +1,13 @@
+{
+  "id": "P140",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Quem cuida do meu dinheiro é o assessor do banco, e ele não me cobra nada. Não vejo por que pagar mensalidade por isso, mesmo que o dinheiro do aumento tenha sumido.",
+  "objection": "Já tenho alguém de graça pra isso; pagar R$ 297 por mês parece serviço pra quem tem patrimônio muito maior que o meu.",
+  "would_change_my_mind": "Se ajudasse eu e minha esposa a pararmos de brigar por dinheiro, com algo concreto além do que o banco oferece.",
+  "price_too_cheap": 50,
+  "price_cheap": 120,
+  "price_expensive": 250,
+  "price_too_expensive": 400
+}

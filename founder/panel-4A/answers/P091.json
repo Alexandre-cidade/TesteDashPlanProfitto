@@ -1,0 +1,13 @@
+{
+  "id": "P091",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Eu já cuido dos meus investimentos sozinha pela corretora e já baixei app de controle de gastos que abandonei em duas semanas. Pagar R$ 490 para alguém me dizer três ações que eu provavelmente já sei não faz sentido para mim.",
+  "objection": "Vou pagar, receber um PDF bonito e não seguir nada, igual aconteceu com os apps; e depois da dica furada que me fez perder dinheiro, desconfio de qualquer um que fala de investimento.",
+  "would_change_my_mind": "Uma revisão pontual mais barata só da minha carteira, sem mensalidade, feita por alguém com certificação que eu possa verificar.",
+  "price_too_cheap": 50,
+  "price_cheap": 100,
+  "price_expensive": 200,
+  "price_too_expensive": 350
+}

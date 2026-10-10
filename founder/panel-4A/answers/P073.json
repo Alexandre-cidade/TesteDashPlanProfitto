@@ -1,0 +1,13 @@
+{
+  "id": "P073",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Tenho renda alta e uma planilha; dinheiro não é o problema, e não vou pagar mensalidade para algo que eu consigo fazer sozinho num domingo.",
+  "objection": "Assinatura mensal para planejamento me parece desnecessária para quem já se organiza; R$ 490 até é pouco, mas não sei se o plano vai além do óbvio.",
+  "would_change_my_mind": "Um diagnóstico focado só na compra do imóvel, com simulação de financiamento versus à vista, sem empurrar acompanhamento.",
+  "price_too_cheap": 100,
+  "price_cheap": 200,
+  "price_expensive": 400,
+  "price_too_expensive": 700
+}

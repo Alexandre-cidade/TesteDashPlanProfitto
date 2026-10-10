@@ -1,0 +1,13 @@
+{
+  "id": "P223",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Tenho uma decisão grande na mesa agora e o diagnóstico pontual de R$ 490, sem assinatura e com devolução se atrasar, é exatamente o formato que eu quero. O fato de não receberem comissão responde metade da minha desconfiança; a mensalidade eu não pretendo assinar.",
+  "objection": "Não diz quem é o planejador nem que formação ou certificação ele tem; o prazo está garantido, mas a qualidade do plano não.",
+  "would_change_my_mind": "Ver que o planejador não tem certificação nem experiência comprovada, ou que o plano é genérico e não trata da minha decisão específica.",
+  "price_too_cheap": 80,
+  "price_cheap": 150,
+  "price_expensive": 350,
+  "price_too_expensive": 600
+}

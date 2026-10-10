@@ -1,0 +1,13 @@
+{
+  "id": "P202",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Recebi aumento, me divorciei e não sei para onde o dinheiro vai; R$ 197 uma vez só, com devolução se atrasar, eu arrisco. Gostei de cancelar pelo site sem multa e de o planejador não vender produto, porque já perdi dinheiro com dica.",
+  "objection": "R$ 297 por mês depois é pesado para mim; tenho medo de o diagnóstico ser genérico e virar só uma porta para a assinatura.",
+  "would_change_my_mind": "Se o plano do diagnóstico vier genérico, não continuo na mensalidade.",
+  "price_too_cheap": 50,
+  "price_cheap": 120,
+  "price_expensive": 250,
+  "price_too_expensive": 400
+}

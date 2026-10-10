@@ -1,0 +1,13 @@
+{
+  "id": "P196",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Estou com cheque especial rodando e o caixa apertado; tirar R$ 490 agora para alguém me dizer para cortar gasto parece contraditório. Vou montar uma planilha e tentar resolver sozinho primeiro.",
+  "objection": "Pagar todo mês uma coisa que, no fundo, uma planilha bem feita resolve.",
+  "would_change_my_mind": "Poder pagar o diagnóstico parcelado ou só depois de ver o plano, com foco em sair da dívida em poucos meses.",
+  "price_too_cheap": 40,
+  "price_cheap": 90,
+  "price_expensive": 180,
+  "price_too_expensive": 300
+}

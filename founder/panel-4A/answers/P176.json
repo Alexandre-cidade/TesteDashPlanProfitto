@@ -1,0 +1,13 @@
+{
+  "id": "P176",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "O preço não é problema para mim, mas a oferta não diz quem é o planejador, que certificação tem nem mostra resultado de cliente. Já vi muita oferta parecida no Instagram e não contrato no escuro.",
+  "objection": "Como sei que esse planejador é bom? Dizer que não recebe comissão é bom, mas não prova competência.",
+  "would_change_my_mind": "Saber o nome e a certificação (tipo CFP) do planejador e ver depoimentos verificáveis de clientes com perfil parecido com o meu.",
+  "price_too_cheap": 150,
+  "price_cheap": 300,
+  "price_expensive": 700,
+  "price_too_expensive": 1200
+}

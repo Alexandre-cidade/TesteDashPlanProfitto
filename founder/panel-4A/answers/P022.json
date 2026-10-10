@@ -1,0 +1,13 @@
+{
+  "id": "P022",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "convenience",
+  "reason": "Meu gerente e o assessor da corretora já cuidam disso sem mensalidade, e eu não quero reunião todo mês nem ficar falando com ninguém. Se fosse um app que resolvesse sozinho, talvez.",
+  "objection": "Reunião mensal marcada pelo planejador e WhatsApp não é o que eu quero; prefiro algo 100% online sem conversa.",
+  "would_change_my_mind": "Uma versão só pela plataforma, sem reuniões, a um preço de assinatura de streaming.",
+  "price_too_cheap": 10,
+  "price_cheap": 30,
+  "price_expensive": 80,
+  "price_too_expensive": 150
+}

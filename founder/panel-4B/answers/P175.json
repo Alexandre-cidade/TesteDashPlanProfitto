@@ -1,0 +1,13 @@
+{
+  "id": "P175",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "convenience",
+  "reason": "R$ 197 uma vez só, com dinheiro de volta se atrasar, eu pago sem pensar muito; atendo cliente o dia todo e não tenho tempo de organizar nada sozinha. Provavelmente compro o diagnóstico no impulso, mesmo sabendo que talvez cancele o resto.",
+  "objection": "Ter que mandar todas as minhas contas para uma empresa que eu não conheço me incomoda bastante.",
+  "would_change_my_mind": "Se na hora de pagar pedissem senha de banco ou acesso direto às minhas contas, eu desistiria.",
+  "price_too_cheap": 70,
+  "price_cheap": 150,
+  "price_expensive": 400,
+  "price_too_expensive": 700
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P198",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Com o cartão rodando, R$ 490 mais R$ 297 por mês é dinheiro que vai fazer falta para pagar a dívida. É caro para alguém me dizer para gastar menos.",
+  "objection": "Gastar com consultoria justamente quando o dinheiro está curto; e a parte presencial em Porto Alegre não me serve.",
+  "would_change_my_mind": "Um diagnóstico de dívidas bem mais barato, online, por menos de R$ 150.",
+  "price_too_cheap": 20,
+  "price_cheap": 50,
+  "price_expensive": 100,
+  "price_too_expensive": 180
+}

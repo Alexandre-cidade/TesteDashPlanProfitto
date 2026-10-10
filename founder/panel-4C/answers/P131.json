@@ -1,0 +1,13 @@
+{
+  "id": "P131",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Tenho uma decisão de aposentadoria na mesa e R$ 197 por um plano escrito, com devolução se vier genérico, é dinheiro que não me faz falta. Compro o diagnóstico para resolver isso de uma vez.",
+  "objection": "Não tenho tempo para mais reuniões por vídeo; se virar uma série de encontros, eu desisto. E acompanhamento mensal não me interessa, quero só o pontual.",
+  "would_change_my_mind": "Se o diagnóstico exigir várias reuniões longas além da entrega, eu não faço.",
+  "price_too_cheap": 80,
+  "price_cheap": 150,
+  "price_expensive": 400,
+  "price_too_expensive": 700
+}

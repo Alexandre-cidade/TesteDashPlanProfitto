@@ -1,0 +1,13 @@
+{
+  "id": "P013",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Toda conversa de dinheiro com minha esposa vira briga e a gente quer comprar um imóvel; um terceiro neutro na sessão do casal é exatamente o que falta. Como é pagamento único, não tenho medo de pagar e não usar.",
+  "objection": "Com renda variável, assumir R$ 297 todo mês depois do diagnóstico me preocupa, e já larguei app antes.",
+  "would_change_my_mind": "Para a mensalidade: um preço menor ou que variasse nos meses fracos.",
+  "price_too_cheap": 60,
+  "price_cheap": 150,
+  "price_expensive": 250,
+  "price_too_expensive": 400
+}

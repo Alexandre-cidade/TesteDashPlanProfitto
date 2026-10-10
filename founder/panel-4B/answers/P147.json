@@ -1,0 +1,13 @@
+{
+  "id": "P147",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "O dinheiro está curto com o cheque especial rodando, e eu não quero mais uma reunião por vídeo nem ficar explicando minha vida para alguém. Prefiro algo que eu faça sozinha no computador.",
+  "objection": "Gastar R$ 197 e depois R$ 297 por mês quando já estou devendo, e ainda ter que falar com uma pessoa sobre um assunto que já me dá briga em casa.",
+  "would_change_my_mind": "Uma versão só pela plataforma, sem reunião, por bem menos, tipo R$ 50 por mês.",
+  "price_too_cheap": 15,
+  "price_cheap": 40,
+  "price_expensive": 90,
+  "price_too_expensive": 150
+}

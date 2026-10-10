@@ -1,0 +1,13 @@
+{
+  "id": "P194",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Minha planilha mostra o presente, mas estou perto de me aposentar e tenho um objetivo concreto; um plano por escrito de alguém sem comissão, por R$ 490 com devolução se atrasar, vale como segunda opinião. Compro só o diagnóstico; o acompanhamento mensal eu não pego.",
+  "objection": "Depois do diagnóstico, R$ 297 por mês para uma reunião de 30 minutos me parece repetir a mesma conversa; não está claro o que muda de um mês para o outro.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 60,
+  "price_cheap": 120,
+  "price_expensive": 250,
+  "price_too_expensive": 400
+}

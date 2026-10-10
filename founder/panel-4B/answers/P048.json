@@ -1,0 +1,13 @@
+{
+  "id": "P048",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Estou com cheque especial e cartão rodando; gastar R$ 297 por mês pra alguém me dizer pra gastar menos é piada. E meu marido brigaria comigo por mais uma despesa fixa.",
+  "objection": "Caro pra ouvir o óbvio enquanto o dinheiro está curto.",
+  "would_change_my_mind": "Se mostrassem quanto de juros eu economizaria renegociando as dívidas, mais do que o valor pago.",
+  "price_too_cheap": 30,
+  "price_cheap": 80,
+  "price_expensive": 180,
+  "price_too_expensive": 300
+}

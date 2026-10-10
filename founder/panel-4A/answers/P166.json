@@ -1,0 +1,13 @@
+{
+  "id": "P166",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "other",
+  "reason": "Quem decide gasto fixo lá em casa é minha esposa, e eu não tenho tempo para reunião todo mês. Depois de perder dinheiro com dica de investimento, fico com o pé atrás com qualquer pessoa falando de dinheiro.",
+  "objection": "Mais uma despesa fixa e mais reuniões, e eu teria que convencer minha esposa.",
+  "would_change_my_mind": "Minha esposa achar que vale a pena e o atendimento ser só por WhatsApp, sem reunião obrigatória.",
+  "price_too_cheap": 40,
+  "price_cheap": 100,
+  "price_expensive": 200,
+  "price_too_expensive": 320
+}

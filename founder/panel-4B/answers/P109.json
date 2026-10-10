@@ -1,0 +1,13 @@
+{
+  "id": "P109",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Tenho uma decisão grande de aposentadoria na mesa e preciso de alguém neutro que não venda produto; um diagnóstico pago uma vez, com plano por escrito, pode encerrar as discussões em casa. A mensalidade eu não pretendo assinar.",
+  "objection": "Não sei se as 3 primeiras ações vão tratar da minha decisão de aposentadoria ou se vão ser conselhos genéricos de orçamento.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 80,
+  "price_cheap": 180,
+  "price_expensive": 500,
+  "price_too_expensive": 900
+}

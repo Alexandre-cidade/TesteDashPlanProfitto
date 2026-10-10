@@ -1,0 +1,13 @@
+{
+  "id": "P132",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "other",
+  "reason": "Quem cuida do dinheiro lá em casa é minha esposa; eu no máximo mando o link para ela e o assunto morre no meio da semana. Sozinho eu não contrato nada disso.",
+  "objection": "Não tenho tempo para reuniões e não é decisão minha; ela vai perguntar por que pagar alguém se ela já cuida.",
+  "would_change_my_mind": "Minha esposa ver a oferta e decidir que vale a pena.",
+  "price_too_cheap": 100,
+  "price_cheap": 250,
+  "price_expensive": 500,
+  "price_too_expensive": 900
+}

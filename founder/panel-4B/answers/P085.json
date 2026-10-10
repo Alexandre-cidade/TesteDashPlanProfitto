@@ -1,0 +1,13 @@
+{
+  "id": "P085",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Faço minha planilha há anos e ela funciona. Um diagnóstico até poderia ser interessante, mas não vejo o que eu ganharia pagando todo mês depois disso.",
+  "objection": "Depois das primeiras reuniões, o que muda no mês seguinte? Parece que vira uma conversa de 30 minutos repetida por R$ 297.",
+  "would_change_my_mind": "Um exemplo concreto do que é entregue mês a mês, por exemplo planejamento de aposentadoria e sucessão para quem tem 55 anos.",
+  "price_too_cheap": 60,
+  "price_cheap": 150,
+  "price_expensive": 350,
+  "price_too_expensive": 600
+}

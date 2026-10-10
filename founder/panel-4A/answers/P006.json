@@ -1,0 +1,13 @@
+{
+  "id": "P006",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Controlo tudo na minha planilha faz anos e está funcionando. Que bom que dá para cancelar pelo site, mas não preciso pagar alguém para fazer o que eu já faço.",
+  "objection": "Não vejo o que um planejador ia me mostrar que eu não enxergo na minha própria planilha.",
+  "would_change_my_mind": "Uma revisão pontual focada em como transformar o que juntei em renda na aposentadoria, sem mensalidade.",
+  "price_too_cheap": 40,
+  "price_cheap": 90,
+  "price_expensive": 180,
+  "price_too_expensive": 300
+}

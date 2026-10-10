@@ -1,0 +1,13 @@
+{
+  "id": "P182",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "O gerente do banco e o assessor da corretora me atendem de graça, e eu ainda mando dinheiro para meus pais todo mês. Não vou pagar R$ 297 por mês para conversar 30 minutos.",
+  "objection": "Depois do diagnóstico e de umas reuniões, não sei o que muda no mês seguinte que justifique continuar pagando.",
+  "would_change_my_mind": "Um plano mais barato, tipo R$ 79 por mês, ou ver alguém da minha idade mostrando resultado concreto depois de seis meses.",
+  "price_too_cheap": 20,
+  "price_cheap": 60,
+  "price_expensive": 120,
+  "price_too_expensive": 200
+}

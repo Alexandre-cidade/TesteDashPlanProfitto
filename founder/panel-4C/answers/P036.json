@@ -1,0 +1,13 @@
+{
+  "id": "P036",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Minha renda varia e eu ainda ajudo meus pais todo mês; R$ 197 é dinheiro que me faz falta, e eu sei que vou acabar largando como larguei o app. Preciso de uma resposta para uma decisão específica, não de um plano com três ações.",
+  "objection": "Vou pagar, receber um PDF e não seguir. A plataforma de controle é mais um app que eu vou abandonar.",
+  "would_change_my_mind": "Uma consulta curta e mais barata só para a decisão que eu tenho agora, sem pacote.",
+  "price_too_cheap": 20,
+  "price_cheap": 50,
+  "price_expensive": 100,
+  "price_too_expensive": 150
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P111",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Ganhei aumento e o dinheiro some, e toda conversa sobre grana com meu marido vira briga; R$ 197 uma vez só com sessão do casal e garantia de devolução eu pago na hora.",
+  "objection": "Meu gerente do banco diz que me ajuda de graça, então fico pensando se não estou pagando por algo que já teria sem custo, e o mensal de R$ 297 eu provavelmente cancelaria.",
+  "would_change_my_mind": "Se meu gerente do banco sentasse comigo e com meu marido e fizesse um plano por escrito de graça.",
+  "price_too_cheap": 50,
+  "price_cheap": 100,
+  "price_expensive": 200,
+  "price_too_expensive": 300
+}

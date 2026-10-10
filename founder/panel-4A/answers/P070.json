@@ -1,0 +1,13 @@
+{
+  "id": "P070",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Tenho uma decisão grande na mesa e toda conversa com meu marido sobre dinheiro vira briga; um plano por escrito de alguém de fora, sem vender produto, pode acabar com a discussão. Pago o diagnóstico uma vez, a mensalidade não.",
+  "objection": "R$ 490 dói com a minha renda, e o acompanhamento mensal eu sei que ia pagar e largar como fiz com app.",
+  "would_change_my_mind": "Se o diagnóstico custasse mais perto de R$ 700 eu não pagaria; e se a mensalidade fosse uns R$ 100 eu até pensaria em continuar.",
+  "price_too_cheap": 30,
+  "price_cheap": 60,
+  "price_expensive": 150,
+  "price_too_expensive": 250
+}

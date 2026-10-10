@@ -1,0 +1,13 @@
+{
+  "id": "P064",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Eu invisto sozinho pelo app e já larguei app de controle de gastos antes; ia pagar e não usar. R$ 297 por mês eu prefiro aportar no Tesouro.",
+  "objection": "Já perdi dinheiro com dica de terceiro, então desconfio de quem vem me dizer o que fazer, e sei que não vou manter a disciplina de usar a plataforma.",
+  "would_change_my_mind": "Uma consulta avulsa barata só para revisar minha carteira e imposto de MEI, sem mensalidade.",
+  "price_too_cheap": 30,
+  "price_cheap": 70,
+  "price_expensive": 180,
+  "price_too_expensive": 350
+}

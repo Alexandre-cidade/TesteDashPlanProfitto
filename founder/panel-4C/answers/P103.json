@@ -1,0 +1,13 @@
+{
+  "id": "P103",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "other",
+  "reason": "Quem cuida do dinheiro lá em casa é minha esposa, e qualquer gasto fixo passa por ela. Eu atendo cliente o dia inteiro e não vou marcar reunião sozinho com um planejador.",
+  "objection": "Minhas contas da empresa e as pessoais são misturadas e o anúncio não fala nada de PJ; não sei se resolve meu caso, e não tenho tempo.",
+  "would_change_my_mind": "Minha esposa olhar e querer, e o plano tratar explicitamente da separação entre PF e PJ.",
+  "price_too_cheap": 150,
+  "price_cheap": 300,
+  "price_expensive": 600,
+  "price_too_expensive": 1000
+}

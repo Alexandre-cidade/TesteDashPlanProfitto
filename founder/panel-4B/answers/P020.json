@@ -1,0 +1,13 @@
+{
+  "id": "P020",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Estamos com cartão e cheque especial rodando; tirar R$ 197 agora e depois R$ 297 por mês aperta mais ainda. Vou tentar uma planilha primeiro.",
+  "objection": "Pagar para alguém me dizer que estou endividado, quando o que me falta é dinheiro, não sobra.",
+  "would_change_my_mind": "Um diagnóstico mais barato focado em sair das dívidas, ou pagamento só depois de eu economizar alguma coisa.",
+  "price_too_cheap": 30,
+  "price_cheap": 80,
+  "price_expensive": 150,
+  "price_too_expensive": 250
+}

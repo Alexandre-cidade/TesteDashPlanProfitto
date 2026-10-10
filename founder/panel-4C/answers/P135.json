@@ -1,0 +1,13 @@
+{
+  "id": "P135",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "A sessão com o casal e um terceiro neutro é exatamente o que falta, porque toda conversa sobre dinheiro aqui vira briga. E como é pagamento único com devolução, e o planejador não vende investimento, topo arriscar os R$ 197.",
+  "objection": "Já perdi dinheiro seguindo dica; tenho medo de pagar e receber um plano que eu mesma faria numa planilha. O mensal de R$ 297 eu não consigo pagar agora.",
+  "would_change_my_mind": "Se meu marido se recusar a ir na sessão do casal, aí não faz sentido para mim.",
+  "price_too_cheap": 40,
+  "price_cheap": 90,
+  "price_expensive": 200,
+  "price_too_expensive": 300
+}

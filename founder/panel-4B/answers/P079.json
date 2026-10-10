@@ -1,0 +1,13 @@
+{
+  "id": "P079",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "other",
+  "reason": "Quem cuida do dinheiro lá em casa é minha esposa, e qualquer gasto fixo passa por ela; levar isso para ela agora vira mais uma discussão. E me soa como serviço para quem tem muito mais dinheiro do que nós.",
+  "objection": "Não decido sozinho, e não quero começar outra briga em casa por causa de mais uma mensalidade.",
+  "would_change_my_mind": "Minha esposa ver a oferta e querer fazer o diagnóstico junto comigo.",
+  "price_too_cheap": 60,
+  "price_cheap": 150,
+  "price_expensive": 300,
+  "price_too_expensive": 500
+}

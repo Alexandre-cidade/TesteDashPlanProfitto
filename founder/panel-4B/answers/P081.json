@@ -1,0 +1,13 @@
+{
+  "id": "P081",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Eu já controlo tudo na minha planilha, inclusive a ajuda que dou aos meus pais todo mês. Não vejo o que um planejador que eu não conheço vai me dizer que eu já não sei, e não tenho tempo para reunião no meio dos atendimentos.",
+  "objection": "Não sei quem é esse planejador nem qual a formação dele. Dizer que não ganha comissão é bom, mas não prova que ele é bom.",
+  "would_change_my_mind": "Uma indicação de um colega médico ou advogado que usou e viu resultado concreto, por exemplo em imposto ou previdência de autônomo.",
+  "price_too_cheap": 80,
+  "price_cheap": 200,
+  "price_expensive": 500,
+  "price_too_expensive": 900
+}

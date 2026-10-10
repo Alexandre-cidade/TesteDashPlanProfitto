@@ -1,0 +1,13 @@
+{
+  "id": "P154",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "Quem cuida do dinheiro em casa é minha esposa e qualquer gasto fixo passa por ela; não vou levar uma mensalidade de R$ 297 para ela agora. Talvez no ano que vem.",
+  "objection": "Agora não é o momento, e eu nem decido isso sozinho.",
+  "would_change_my_mind": "Se minha esposa visse e quisesse fazer o diagnóstico junto comigo.",
+  "price_too_cheap": 40,
+  "price_cheap": 100,
+  "price_expensive": 220,
+  "price_too_expensive": 400
+}

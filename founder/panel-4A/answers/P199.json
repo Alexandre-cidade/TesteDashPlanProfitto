@@ -1,0 +1,13 @@
+{
+  "id": "P199",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "Acabei de me divorciar e ainda estou arrumando a vida; agora não é o momento. E investimento eu já faço sozinha pela corretora.",
+  "objection": "R$ 297 por mês é muito para o meu salário, e não sei se eu precisaria de alguém para o que já sei fazer.",
+  "would_change_my_mind": "Daqui a alguns meses, se eu continuar sem entender para onde vai o dinheiro, talvez só o diagnóstico.",
+  "price_too_cheap": 30,
+  "price_cheap": 70,
+  "price_expensive": 150,
+  "price_too_expensive": 250
+}

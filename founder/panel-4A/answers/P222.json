@@ -1,0 +1,13 @@
+{
+  "id": "P222",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Acabei de receber um valor grande e não quero decidir sozinha nem com base em vídeo de influenciador; R$ 490 por um plano por escrito de alguém que não ganha comissão é pouco perto do que está em jogo. Compro o diagnóstico, mas o acompanhamento mensal com reunião eu provavelmente não sigo.",
+  "objection": "Não quero ficar marcando reunião e conversando com planejador; se o diagnóstico depender de muita conversa, desisto. E não sei se três ações são suficientes para o tamanho do valor que recebi.",
+  "would_change_my_mind": "Descobrir que o diagnóstico exige reuniões ou ligações longas; aí eu procuraria algo 100% online.",
+  "price_too_cheap": 100,
+  "price_cheap": 200,
+  "price_expensive": 500,
+  "price_too_expensive": 900
+}

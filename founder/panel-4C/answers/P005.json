@@ -1,0 +1,13 @@
+{
+  "id": "P005",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Não conheço ninguém que tenha usado; já perdi dinheiro com dica e só contrato o que um amigo de confiança indicou.",
+  "objection": "Ser mais uma empresa falando bonito sobre dinheiro sem ninguém que eu conheça garantindo.",
+  "would_change_my_mind": "Um amigo ou colega me indicar dizendo que funcionou para ele.",
+  "price_too_cheap": 50,
+  "price_cheap": 150,
+  "price_expensive": 300,
+  "price_too_expensive": 500
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P035",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "A gente quer comprar um apartamento e não sabe quanto dá para juntar por mês. R$ 197 uma vez só, com garantia, é menos que um jantar fora; o acompanhamento mensal eu não pego, não tenho tempo para reunião todo mês.",
+  "objection": "Conciliar agenda dos dois para a sessão do casal vai ser difícil, e muito do que eles vão falar eu já vi de graça no YouTube.",
+  "would_change_my_mind": "Se a sessão tivesse que ser em horário comercial ou se o plano de exemplo parecer conteúdo de influenciador requentado.",
+  "price_too_cheap": 50,
+  "price_cheap": 120,
+  "price_expensive": 300,
+  "price_too_expensive": 500
+}

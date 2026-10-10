@@ -1,0 +1,13 @@
+{
+  "id": "P087",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Assisto bastante conteúdo de finanças no YouTube e já sei o básico; com uma planilha eu me viro. Pagar R$ 297 todo mês não faz sentido para mim.",
+  "objection": "Já vi várias ofertas parecidas nos canais que sigo; não sei o que essa tem de diferente além de cobrar mensalidade.",
+  "would_change_my_mind": "Ver o plano de exemplo e ele ter algo sobre aposentadoria que eu não acharia de graça no YouTube.",
+  "price_too_cheap": 40,
+  "price_cheap": 90,
+  "price_expensive": 200,
+  "price_too_expensive": 350
+}

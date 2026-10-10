@@ -1,0 +1,13 @@
+{
+  "id": "P046",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Não decido gasto sozinha, quem cuida do dinheiro é meu marido, e eu não vou abrir todas as nossas contas pra uma empresa que nunca ouvi falar. Já perdi dinheiro confiando em dica.",
+  "objection": "Expor nossas contas, dívidas e investimentos pra desconhecidos.",
+  "would_change_my_mind": "Meu marido topar e alguém conhecido indicar a Profitto; a sessão com o casal até me interessaria porque a gente sempre briga.",
+  "price_too_cheap": 60,
+  "price_cheap": 120,
+  "price_expensive": 250,
+  "price_too_expensive": 350
+}

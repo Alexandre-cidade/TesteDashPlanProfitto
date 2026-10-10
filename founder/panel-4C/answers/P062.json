@@ -1,0 +1,13 @@
+{
+  "id": "P062",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Com o que mando para os meus pais todo mês, sobra pouco. Isso parece coisa para quem já tem dinheiro investido, e eu ainda não tenho.",
+  "objection": "Já perdi dinheiro seguindo conselho dos outros, e R$ 197 é dinheiro que me faz falta.",
+  "would_change_my_mind": "Uma versão bem mais barata, focada em quem ainda está começando e não tem investimento.",
+  "price_too_cheap": 20,
+  "price_cheap": 50,
+  "price_expensive": 120,
+  "price_too_expensive": 200
+}

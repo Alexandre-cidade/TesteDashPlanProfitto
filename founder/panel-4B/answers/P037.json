@@ -1,0 +1,13 @@
+{
+  "id": "P037",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "convenience",
+  "reason": "Eu queria algo que eu mesma resolvesse online, sem ter que explicar minha bagunça entre empresa e pessoa física para um estranho. E com o caixa apertado, mais uma mensalidade agora não entra.",
+  "objection": "Não diz se o planejador entende de empresa; meu problema é PF e PJ misturadas, não só gasto pessoal.",
+  "would_change_my_mind": "Ficar claro que o diagnóstico cobre a separação PF/PJ e pode ser feito todo por escrito, sem reunião.",
+  "price_too_cheap": 50,
+  "price_cheap": 120,
+  "price_expensive": 250,
+  "price_too_expensive": 450
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P095",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "other",
+  "reason": "Quem cuida do dinheiro em casa é minha esposa; eu mandaria o link para ela, mas não fecho nada sozinho, ainda mais com esse dinheiro grande que acabou de entrar.",
+  "objection": "Já perdi dinheiro com dica de investimento e agora tenho uma quantia alta parada. Um plano de R$ 197 com 3 ações parece pequeno demais para o tamanho da decisão, e não sei se o planejador tem experiência com patrimônio desse porte.",
+  "would_change_my_mind": "Minha esposa ver o plano de exemplo no site e achar que vale; aí a gente faria o diagnóstico juntos.",
+  "price_too_cheap": 150,
+  "price_cheap": 400,
+  "price_expensive": 1200,
+  "price_too_expensive": 2500
+}

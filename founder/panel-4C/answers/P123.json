@@ -1,0 +1,13 @@
+{
+  "id": "P123",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Isso parece feito para quem está no cheque especial e não sabe quanto gasta; meu problema é investimento, imposto e aposentadoria, e uma planilha e o conteúdo que eu já assisto resolvem o básico.",
+  "objection": "Um plano com as 3 primeiras ações por R$ 197 vai ser raso demais para a minha realidade; não vejo nada sobre patrimônio, tributação ou sucessão.",
+  "would_change_my_mind": "Uma versão para alta renda, com planejador certificado tratando de investimentos, IR e aposentadoria de profissional liberal.",
+  "price_too_cheap": 150,
+  "price_cheap": 300,
+  "price_expensive": 800,
+  "price_too_expensive": 1500
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P027",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Já me queimei com dica de investimento e não vou abrir minhas contas para empresa que não conheço. Meu gerente me atende sem cobrar nada, e com renda variável R$ 197 pesa.",
+  "objection": "Entregar todos os meus dados financeiros para um desconhecido, depois do prejuízo que já tive.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 20,
+  "price_cheap": 60,
+  "price_expensive": 120,
+  "price_too_expensive": 200
+}

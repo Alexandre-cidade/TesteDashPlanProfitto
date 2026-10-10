@@ -1,0 +1,13 @@
+{
+  "id": "P039",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Não contrato nada sem ler o Reclame Aqui, e uma empresa pequena de Porto Alegre que eu nunca vi não tem histórico para me convencer. Além disso, passei a semana inteira em videochamada; mais uma reunião por vídeo e mais uma assinatura não é o que eu preciso.",
+  "objection": "Não sei se esse planejador tem nível para alguém com minha renda e patrimônio; parece pensado para quem está endividado.",
+  "would_change_my_mind": "Reputação boa e verificável no Reclame Aqui e credencial do planejador visível.",
+  "price_too_cheap": 100,
+  "price_cheap": 250,
+  "price_expensive": 700,
+  "price_too_expensive": 1500
+}

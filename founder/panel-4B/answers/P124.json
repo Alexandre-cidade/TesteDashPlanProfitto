@@ -1,0 +1,13 @@
+{
+  "id": "P124",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Ganhei aumento e o dinheiro sumiu, e app eu já sei que largo; 197 com devolução se não entregarem é barato para eu ver para onde vai o dinheiro. Faço o diagnóstico e só depois decido se assino.",
+  "objection": "Já paguei por app e larguei; tenho medo de assinar os 297 e daqui a três meses não abrir mais a plataforma.",
+  "would_change_my_mind": "Se o diagnóstico vier genérico, tipo 'gaste menos', eu não continuo.",
+  "price_too_cheap": 80,
+  "price_cheap": 180,
+  "price_expensive": 350,
+  "price_too_expensive": 550
+}

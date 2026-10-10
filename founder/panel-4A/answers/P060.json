@@ -1,0 +1,13 @@
+{
+  "id": "P060",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Meu gerente do banco já me dá uma orientação sem cobrar, e eu já larguei app de controle antes, então uma plataforma de gastos não é novidade. Com renda variável não vou assumir mais R$ 297 por mês.",
+  "objection": "Não vejo por que pagar se o banco faz algo parecido de graça, e passo o dia em videochamada, não quero mais uma.",
+  "would_change_my_mind": "Ficar claro em que o plano é melhor que o conselho do gerente, com um exemplo concreto.",
+  "price_too_cheap": 40,
+  "price_cheap": 80,
+  "price_expensive": 150,
+  "price_too_expensive": 250
+}

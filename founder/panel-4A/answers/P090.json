@@ -1,0 +1,13 @@
+{
+  "id": "P090",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Minha renda varia e R$ 490 é muito para mim; já larguei o Organizze em um mês e já perdi dinheiro com dica de investimento, não vou pagar para ouvir mais conselho.",
+  "objection": "Uma planilha resolve, não preciso pagar todo mês, e não sei se vou confiar no que me disserem.",
+  "would_change_my_mind": "Um diagnóstico bem mais barato, abaixo de R$ 100, pensado para quem é autônoma e tem renda que varia.",
+  "price_too_cheap": 15,
+  "price_cheap": 40,
+  "price_expensive": 90,
+  "price_too_expensive": 150
+}

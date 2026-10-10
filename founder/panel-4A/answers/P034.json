@@ -1,0 +1,13 @@
+{
+  "id": "P034",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "Ainda nem tenho investimento, e o gerente do banco me orienta de graça. R$ 490 agora é dinheiro que faz falta; talvez ano que vem.",
+  "objection": "Pagar caro para organizar um dinheiro que eu quase não tenho sobrando.",
+  "would_change_my_mind": "Um diagnóstico bem mais barato, uns R$ 150, e que eu pudesse fazer junto com minha esposa para parar as brigas.",
+  "price_too_cheap": 20,
+  "price_cheap": 50,
+  "price_expensive": 100,
+  "price_too_expensive": 180
+}

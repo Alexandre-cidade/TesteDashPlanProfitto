@@ -1,0 +1,13 @@
+{
+  "id": "P042",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Sei que minhas contas da empresa e as pessoais estão misturadas, mas meu gerente do banco já me orienta sem cobrar e esse tipo de coisa eu sempre empurro pro mês que vem.",
+  "objection": "Pagar R$ 297 por mês pra fazer algo que o banco já faz de graça, e ainda ter que juntar todos os papéis.",
+  "would_change_my_mind": "Se alguém resolvesse de vez a separação entre PF e PJ sem eu precisar levantar documento nenhum.",
+  "price_too_cheap": 50,
+  "price_cheap": 120,
+  "price_expensive": 250,
+  "price_too_expensive": 400
+}

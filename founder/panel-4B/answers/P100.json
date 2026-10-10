@@ -1,0 +1,13 @@
+{
+  "id": "P100",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Quero comprar meu apartamento e não sei por onde começar a investir; R$ 197 uma vez, com devolução se atrasar e sem comissão, eu topo testar. Os R$ 297 por mês já pesam no meu salário, esse eu não sei se continuo.",
+  "objection": "Como sei que o planejador é bom de verdade, e se o plano não vai ser o mesmo que eu vejo de graça no YouTube.",
+  "would_change_my_mind": "Se eu ver reclamações de que o diagnóstico é genérico ou de que empurram a mensalidade.",
+  "price_too_cheap": 40,
+  "price_cheap": 100,
+  "price_expensive": 200,
+  "price_too_expensive": 300
+}

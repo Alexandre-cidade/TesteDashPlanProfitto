@@ -1,0 +1,13 @@
+{
+  "id": "P086",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Já baixei app de controle e larguei em um mês, então pagar R$ 297 por mês com mais uma plataforma é pedir para jogar dinheiro fora. Com o que mando para os meus pais, não sobra para isso.",
+  "objection": "Vou pagar e não usar, igual aconteceu com o Mobills.",
+  "would_change_my_mind": "Um preço bem menor, tipo até R$ 100 por mês, e alguém que me cobrasse de verdade para eu não largar.",
+  "price_too_cheap": 15,
+  "price_cheap": 50,
+  "price_expensive": 100,
+  "price_too_expensive": 180
+}

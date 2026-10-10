@@ -1,0 +1,13 @@
+{
+  "id": "P026",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Minha planilha já mostra para onde vai o dinheiro e o gerente do banco me atende sem custo. Já me queimei com dica de investimento e fiquei mais desconfiado, não mais disposto a pagar consultor.",
+  "objection": "Não vejo o que justifica R$ 297 por mês se eu mesmo faço o controle.",
+  "would_change_my_mind": "Ver o diagnóstico de alguém parecido comigo e perceber algo que eu realmente não tinha visto.",
+  "price_too_cheap": 50,
+  "price_cheap": 100,
+  "price_expensive": 200,
+  "price_too_expensive": 350
+}

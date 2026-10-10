@@ -1,0 +1,13 @@
+{
+  "id": "P078",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Estou com cheque especial rodando e cada real conta; tirar R$ 490 agora, sem saber se vou seguir o plano, é aumentar o buraco.",
+  "objection": "Já larguei app; tenho medo de pagar e não usar, e aí perdi dinheiro que nem tenho.",
+  "would_change_my_mind": "Poder parcelar o diagnóstico ou pagar só se o plano mostrar uma saída concreta da dívida.",
+  "price_too_cheap": 30,
+  "price_cheap": 60,
+  "price_expensive": 120,
+  "price_too_expensive": 200
+}

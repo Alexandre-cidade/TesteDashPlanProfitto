@@ -1,0 +1,13 @@
+{
+  "id": "P221",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Eu controlo tudo na minha planilha há anos e sei exatamente pra onde vai cada real. Com renda que varia mês a mês, R$ 490 de diagnóstico e depois R$ 297 por mês é dinheiro que eu prefiro guardar.",
+  "objection": "Já passo a semana inteira em videochamada, não quero mais uma reunião mensal pra alguém me dizer o que minha planilha já mostra.",
+  "would_change_my_mind": "Um diagnóstico só por escrito, sem reunião, por bem menos de R$ 490, que pegasse a minha própria planilha e apontasse o que eu estou deixando passar.",
+  "price_too_cheap": 30,
+  "price_cheap": 60,
+  "price_expensive": 120,
+  "price_too_expensive": 200
+}

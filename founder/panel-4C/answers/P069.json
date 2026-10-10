@@ -1,0 +1,13 @@
+{
+  "id": "P069",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Já baixei app de controle e larguei em um mês, e isso tem cara de ser mais do mesmo, só que mais caro. Meu gerente me dá orientação de graça.",
+  "objection": "Vou pagar e largar como larguei o Organizze. E o gerente já faz isso sem custo.",
+  "would_change_my_mind": "Que o planejador fizesse o acompanhamento por mim, sem eu ter que alimentar plataforma nenhuma.",
+  "price_too_cheap": 20,
+  "price_cheap": 60,
+  "price_expensive": 150,
+  "price_too_expensive": 250
+}

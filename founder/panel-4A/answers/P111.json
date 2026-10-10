@@ -1,0 +1,13 @@
+{
+  "id": "P111",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "Dinheiro eu tenho, o problema não é esse. Sei que preciso ver para onde foi o aumento, mas agora não é hora, vou deixar para o começo do ano que vem.",
+  "objection": "Vou ter que juntar extrato, investimentos, o que mando para meus pais... só de pensar no trabalho de reunir tudo já desanimo.",
+  "would_change_my_mind": "Se o planejador buscasse tudo por mim e eu só precisasse de uma conversa para começar.",
+  "price_too_cheap": 100,
+  "price_cheap": 250,
+  "price_expensive": 600,
+  "price_too_expensive": 1200
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P083",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Estou com cheque especial e cartão rodando; tirar R$ 490 agora é tirar do que já não tem, e depois R$ 297 por mês seria mais uma conta.",
+  "objection": "Isso parece coisa para quem tem muito dinheiro sobrando, não para quem está tentando sair do vermelho.",
+  "would_change_my_mind": "Um diagnóstico voltado para dívida com preço bem menor ou parcelado, que só cobre depois de me mostrar quanto vou economizar de juros.",
+  "price_too_cheap": 20,
+  "price_cheap": 60,
+  "price_expensive": 120,
+  "price_too_expensive": 200
+}

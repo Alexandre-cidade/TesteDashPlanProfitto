@@ -1,0 +1,13 @@
+{
+  "id": "P075",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Meu assessor da corretora já cuida dos meus investimentos e não me cobra nada. Não vou pagar mensalidade para outra pessoa opinar sobre a mesma coisa.",
+  "objection": "Já tenho alguém de graça fazendo isso; pagar por fora parece desperdício.",
+  "would_change_my_mind": "Entender, com números, quanto o assessor do banco me custa em produtos com taxa alta, comparado com um planejador sem comissão.",
+  "price_too_cheap": 100,
+  "price_cheap": 200,
+  "price_expensive": 500,
+  "price_too_expensive": 900
+}

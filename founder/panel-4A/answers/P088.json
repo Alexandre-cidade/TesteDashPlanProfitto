@@ -1,0 +1,13 @@
+{
+  "id": "P088",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Deixo as decisões com meu gerente e não pago nada por isso; trazer mais um assunto de dinheiro para casa só ia virar mais briga com meu marido.",
+  "objection": "E se eu quiser cancelar? Dizem que é pelo site, mas essas empresas sempre complicam na hora.",
+  "would_change_my_mind": "Se servisse para mediar a conversa sobre dinheiro com meu marido, numa reunião online com nós dois, e eu visse alguém que cancelou sem problema.",
+  "price_too_cheap": 40,
+  "price_cheap": 100,
+  "price_expensive": 220,
+  "price_too_expensive": 350
+}

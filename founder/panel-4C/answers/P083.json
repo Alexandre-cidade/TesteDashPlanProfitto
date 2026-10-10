@@ -1,0 +1,13 @@
+{
+  "id": "P083",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "Eu sei que preciso separar PF e PJ e organizar isso, mas agora não dá, a empresa está tomando todo meu tempo. Deixo para o começo do ano que vem.",
+  "objection": "Já perdi dinheiro com dica de investimento e não sei se um planejador genérico entende a bagunça de empresário com conta pessoal e da empresa misturadas.",
+  "would_change_my_mind": "Se o diagnóstico tratasse explicitamente a separação de PF e PJ e alguém me cobrasse para começar, talvez eu fizesse agora.",
+  "price_too_cheap": 80,
+  "price_cheap": 200,
+  "price_expensive": 450,
+  "price_too_expensive": 800
+}

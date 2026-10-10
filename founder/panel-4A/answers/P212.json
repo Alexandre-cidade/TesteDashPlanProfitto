@@ -1,0 +1,13 @@
+{
+  "id": "P212",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "R$ 490 é mais de 10% do que eu tiro num mês bom, e minha renda varia. Meus investimentos eu já faço sozinho pela corretora, não preciso pagar alguém pra isso.",
+  "objection": "Pagar esse valor por um plano que diz coisas que eu já sei, num mês em que a renda pode cair.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 30,
+  "price_cheap": 60,
+  "price_expensive": 120,
+  "price_too_expensive": 200
+}

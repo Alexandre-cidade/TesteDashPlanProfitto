@@ -1,0 +1,13 @@
+{
+  "id": "P217",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Estou com cartão e cheque especial rodando; tirar R$ 490 agora é tirar da dívida. Já larguei app antes e minha mulher ia dizer que é mais um gasto que não vou usar.",
+  "objection": "Não tenho dinheiro sobrando, e pagar pra receber 3 ações que talvez eu não consiga seguir.",
+  "would_change_my_mind": "Poder parcelar ou pagar só se o plano realmente reduzir os juros que pago.",
+  "price_too_cheap": 20,
+  "price_cheap": 50,
+  "price_expensive": 100,
+  "price_too_expensive": 150
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P092",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Minha conta da empresa e a minha estão misturadas e o aumento sumiu, então R$ 197 para alguém olhar tudo eu pago agora mesmo. Já que diz que o planejador não ganha comissão, compro o diagnóstico e depois vejo se continuo.",
+  "objection": "Como sei que o planejador entende de empresa e não é só um vendedor de fundo fantasiado; e eu costumo assinar no impulso e cancelar depois.",
+  "would_change_my_mind": "Descobrir que o planejador recebe algum tipo de comissão ou indicação de produto.",
+  "price_too_cheap": 80,
+  "price_cheap": 200,
+  "price_expensive": 450,
+  "price_too_expensive": 800
+}

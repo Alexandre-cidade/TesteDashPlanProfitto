@@ -1,0 +1,13 @@
+{
+  "id": "P032",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Eu já invisto sozinha pelo app e sei montar minha carteira; não vou pagar alguém para me dizer o que eu leio de graça. R$ 297 por mês é mais uma assinatura pesada no meu orçamento.",
+  "objection": "O que um planejador vai me ensinar que eu já não sei? A única parte diferente é a sessão de casal, e isso não depende de investimento.",
+  "would_change_my_mind": "Se vendessem só a sessão de casal com mediador, mais barata, talvez eu topasse para parar as brigas.",
+  "price_too_cheap": 30,
+  "price_cheap": 60,
+  "price_expensive": 120,
+  "price_too_expensive": 200
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P045",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Minha renda varia todo mês e ainda ajudo meus pais; R$ 490 de cara é dinheiro que me faz falta. E reunião mensal é justamente o que eu não tenho tempo de fazer.",
+  "objection": "Pagar caro para receber 3 ações que talvez eu já saiba, sem garantia de que o plano serve para quem é MEI com renda instável.",
+  "would_change_my_mind": "Uma consulta pontual mais barata, de uns R$ 150 a R$ 200, focada só na minha decisão, sem reunião recorrente.",
+  "price_too_cheap": 30,
+  "price_cheap": 60,
+  "price_expensive": 150,
+  "price_too_expensive": 250
+}

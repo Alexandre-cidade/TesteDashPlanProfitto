@@ -1,0 +1,13 @@
+{
+  "id": "P008",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "Agora não é o momento, com as despesas do casamento; talvez ano que vem. E já larguei app, não sei se vou manter a rotina.",
+  "objection": "Minha esposa e eu discutimos sempre que falamos de dinheiro; não sei se ela toparia abrir tudo para um estranho.",
+  "would_change_my_mind": "Minha esposa querer fazer junto e a gente ter uma reunião presencial aqui em Porto Alegre.",
+  "price_too_cheap": 50,
+  "price_cheap": 120,
+  "price_expensive": 250,
+  "price_too_expensive": 400
+}

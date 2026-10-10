@@ -1,0 +1,13 @@
+{
+  "id": "P018",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Acabei de receber um valor alto e é exatamente agora que não vou abrir todas as minhas contas pra uma empresa que eu não conheço. Gosto que não ganham comissão, mas prefiro continuar na minha planilha.",
+  "objection": "Não sei quem são essas pessoas nem o que fazem com os meus dados.",
+  "would_change_my_mind": "Conhecer o planejador pessoalmente, ver credencial (tipo CFP) e referências de clientes reais antes de mostrar qualquer extrato.",
+  "price_too_cheap": 50,
+  "price_cheap": 150,
+  "price_expensive": 350,
+  "price_too_expensive": 600
+}

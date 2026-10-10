@@ -1,0 +1,13 @@
+{
+  "id": "P183",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "convenience",
+  "reason": "Já passo a semana inteira em reunião por vídeo e não quero mais uma, nem WhatsApp com planejador. Eu queria algo que eu resolvesse sozinha, no meu ritmo.",
+  "objection": "O serviço gira em torno de reunião e conversa com uma pessoa, e é exatamente isso que eu não quero.",
+  "would_change_my_mind": "Uma versão só com o plano por escrito e a plataforma, sem reuniões, por um preço menor.",
+  "price_too_cheap": 40,
+  "price_cheap": 100,
+  "price_expensive": 250,
+  "price_too_expensive": 400
+}

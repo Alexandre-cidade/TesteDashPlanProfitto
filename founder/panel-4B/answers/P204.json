@@ -1,0 +1,13 @@
+{
+  "id": "P204",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "convenience",
+  "reason": "O preço não é o problema, é o tempo: juntar extratos, dívidas e investimentos para o diagnóstico e ainda ter reunião mensal não cabe na minha semana. Já larguei app depois de um mês e sei que largaria isso também.",
+  "objection": "Não tenho tempo para reuniões nem para ficar mandando documento; vou pagar e não usar.",
+  "would_change_my_mind": "Se o planejador puxasse os dados sozinho e me mandasse tudo resolvido por WhatsApp, sem eu ter que reunir papelada nem fazer reunião.",
+  "price_too_cheap": 150,
+  "price_cheap": 250,
+  "price_expensive": 600,
+  "price_too_expensive": 1000
+}

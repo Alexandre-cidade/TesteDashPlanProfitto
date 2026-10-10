@@ -1,0 +1,13 @@
+{
+  "id": "P089",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "R$ 490 não pesa, mas uma planilha resolve, e qualquer coisa fixa passa pela minha esposa, que já cuida do dinheiro de casa. Ela ia dizer que a gente não precisa disso.",
+  "objection": "Uma planilha resolve, não preciso pagar todo mês para alguém me lembrar de gastar menos.",
+  "would_change_my_mind": "Se o diagnóstico separasse de verdade o que é da empresa e o que é da família, coisa que a planilha não resolve, e minha esposa visse valor nisso.",
+  "price_too_cheap": 100,
+  "price_cheap": 200,
+  "price_expensive": 450,
+  "price_too_expensive": 800
+}

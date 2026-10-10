@@ -1,0 +1,13 @@
+{
+  "id": "P009",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "Tenho uma decisão grande sobre a aposentadoria pela frente, mas agora não é o momento de começar mais um compromisso; talvez no ano que vem. E um plano com '3 primeiras ações' parece genérico para o que eu preciso decidir.",
+  "objection": "Não sei se o diagnóstico vai responder a minha pergunta específica ou se é só um pacote padrão para vender o acompanhamento.",
+  "would_change_my_mind": "Uma consulta pontual sobre a minha decisão específica, com resposta direta em poucos dias.",
+  "price_too_cheap": 80,
+  "price_cheap": 200,
+  "price_expensive": 400,
+  "price_too_expensive": 700
+}

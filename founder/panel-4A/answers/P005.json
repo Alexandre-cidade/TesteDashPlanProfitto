@@ -1,0 +1,13 @@
+{
+  "id": "P005",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Ganho uns R$ 4 mil por mês, ajudo meus pais e já pago um monte de assinatura. R$ 490 é quase um oitavo do meu salário; isso é coisa para quem tem dinheiro sobrando.",
+  "objection": "Já larguei o Mobills e o Organizze, provavelmente largaria isso também, só que pagando muito mais.",
+  "would_change_my_mind": "Algo por uns R$ 30 a R$ 50 por mês, sem pagar R$ 490 na entrada.",
+  "price_too_cheap": 10,
+  "price_cheap": 25,
+  "price_expensive": 60,
+  "price_too_expensive": 100
+}

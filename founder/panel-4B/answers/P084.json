@@ -1,0 +1,13 @@
+{
+  "id": "P084",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Eu cuido de tudo na minha planilha e para investimento já tenho o gerente e o assessor, que não me cobram nada. O valor não é o problema, o problema é mais uma reunião numa semana que já é só vídeo.",
+  "objection": "Meu gerente do banco ou meu assessor já faz isso de graça. E não está claro se esse planejador entende de empresa misturada com pessoa física, que é meu caso.",
+  "would_change_my_mind": "Se ficasse claro que eles separam PF e PJ e planejam a compra do imóvel olhando as duas coisas, eu pagaria o diagnóstico para testar.",
+  "price_too_cheap": 100,
+  "price_cheap": 300,
+  "price_expensive": 800,
+  "price_too_expensive": 1500
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P190",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Estou com cartão e cheque especial rodando; R$ 197 agora fazem falta, e R$ 297 por mês eu simplesmente não tenho. Primeiro preciso cortar as assinaturas que já pago.",
+  "objection": "É dinheiro que eu não tenho sobrando, e estou desconfiado se o cancelamento é mesmo tão simples quanto dizem.",
+  "would_change_my_mind": "Um diagnóstico focado em dívida, mais barato ou parcelado, tipo R$ 50 a R$ 80.",
+  "price_too_cheap": 15,
+  "price_cheap": 40,
+  "price_expensive": 90,
+  "price_too_expensive": 150
+}

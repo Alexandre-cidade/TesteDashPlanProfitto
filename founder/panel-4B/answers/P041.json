@@ -1,0 +1,13 @@
+{
+  "id": "P041",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Tenho uma decisão grande pra tomar agora e quero uma opinião de fora, uma vez só. Pago os R$ 197 do diagnóstico, que é único e devolvem se atrasar, mas a mensalidade não vou assinar.",
+  "objection": "Um plano com só 3 ações pode sair genérico demais, coisa que eu mesma montaria numa planilha.",
+  "would_change_my_mind": "Se o diagnóstico não tratasse da minha decisão específica (imóvel ou dívida), eu nem compraria.",
+  "price_too_cheap": 20,
+  "price_cheap": 60,
+  "price_expensive": 150,
+  "price_too_expensive": 297
+}

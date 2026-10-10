@@ -1,0 +1,13 @@
+{
+  "id": "P011",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "convenience",
+  "reason": "Eu quero algo que eu resolva sozinho, no meu tempo, e isso aqui é reunião marcada pelo planejador e WhatsApp com gente. Se eu já larguei o Mobills, não vou pagar R$ 297 por mês pra ter mais um compromisso na agenda.",
+  "objection": "Não quero ter que falar com ninguém nem ter reunião mensal; quero algo 100% online e automático.",
+  "would_change_my_mind": "Uma versão só online, sem reuniões, em que eu mando os dados e recebo o plano por escrito e alertas na plataforma, por um preço bem menor.",
+  "price_too_cheap": 20,
+  "price_cheap": 50,
+  "price_expensive": 120,
+  "price_too_expensive": 200
+}

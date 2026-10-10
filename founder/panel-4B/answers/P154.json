@@ -1,0 +1,13 @@
+{
+  "id": "P154",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Tenho uma decisão de aposentadoria e imóvel na mesa e quero uma opinião de alguém que não vende produto. O diagnóstico de R$ 197, pagamento único, resolve o que eu preciso; o acompanhamento mensal eu não pretendo assinar.",
+  "objection": "Que o plano seja genérico, só 3 ações básicas, e não entre a fundo na minha decisão específica.",
+  "would_change_my_mind": "Receber um plano superficial que não trate da decisão de aposentadoria.",
+  "price_too_cheap": 80,
+  "price_cheap": 200,
+  "price_expensive": 500,
+  "price_too_expensive": 1000
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P019",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Controlo tudo na minha planilha e não vou mandar todas as minhas contas para uma empresa que nunca ouvi falar. Já perdi dinheiro em dica, agora desconfio.",
+  "objection": "Expor todos os meus dados financeiros para uma empresa desconhecida.",
+  "would_change_my_mind": "Indicação de alguém próximo e saber exatamente como meus dados são guardados.",
+  "price_too_cheap": 50,
+  "price_cheap": 120,
+  "price_expensive": 250,
+  "price_too_expensive": 400
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P020",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Ganho bem, recebi aumento e não sei pra onde foi o dinheiro; R$ 490 é pouco pra mim e o diagnóstico com prazo e devolução é um risco pequeno. Faço o diagnóstico e só depois decido se assino.",
+  "objection": "Expor todas as minhas contas pra uma empresa que eu não conheço me incomoda bastante.",
+  "would_change_my_mind": "Se no primeiro contato pedirem senhas de banco ou acesso direto às contas, eu desisto na hora.",
+  "price_too_cheap": 100,
+  "price_cheap": 200,
+  "price_expensive": 500,
+  "price_too_expensive": 900
+}

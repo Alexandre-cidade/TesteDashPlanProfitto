@@ -1,0 +1,13 @@
+{
+  "id": "P018",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Recebi aumento e o dinheiro sumiu, preciso que alguém me mostre para onde está indo. R$ 197 uma vez e sem assinatura eu topo; se gostar, testo o mensal sabendo que cancelo pelo site.",
+  "objection": "Tenho medo de assinar o mensal no impulso e depois ficar pagando sem usar.",
+  "would_change_my_mind": "Se tivesse que entrar direto na mensalidade de R$ 297, eu não compraria.",
+  "price_too_cheap": 40,
+  "price_cheap": 100,
+  "price_expensive": 200,
+  "price_too_expensive": 350
+}

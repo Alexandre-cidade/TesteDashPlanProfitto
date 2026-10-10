@@ -1,0 +1,13 @@
+{
+  "id": "P021",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Controlo tudo na minha planilha há anos e sei exatamente onde está cada real, inclusive o que mando para meus pais. Não vejo o que um planejador de Porto Alegre vai me dizer que eu não sei.",
+  "objection": "Pagar R$ 297 todo mês por uma reunião de 30 minutos e um app de gastos que faz menos que minha planilha.",
+  "would_change_my_mind": "Se fosse focado em algo que a planilha não resolve, como sucessão, imposto de renda de profissional liberal ou previdência dos meus pais, com alguém realmente especializado.",
+  "price_too_cheap": 80,
+  "price_cheap": 150,
+  "price_expensive": 400,
+  "price_too_expensive": 800
+}

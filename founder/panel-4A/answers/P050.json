@@ -1,0 +1,13 @@
+{
+  "id": "P050",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Tenho uma decisão para tomar, mas R$ 490 é quase 7% do que eu ganho no mês; caro demais para alguém me dizer para cortar gastos e me dar 3 ações.",
+  "objection": "Já perdi dinheiro com dica de investimento e não sei se esse plano vai me dar algo que eu não acharia de graça no YouTube.",
+  "would_change_my_mind": "Um diagnóstico pontual por uns R$ 150 a R$ 200 focado só na minha decisão.",
+  "price_too_cheap": 20,
+  "price_cheap": 50,
+  "price_expensive": 120,
+  "price_too_expensive": 200
+}

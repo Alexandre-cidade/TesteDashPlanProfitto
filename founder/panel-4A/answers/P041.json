@@ -1,0 +1,13 @@
+{
+  "id": "P041",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Estou com a compra do imóvel na mesa e minhas contas PF e PJ estão misturadas; R$ 490 por um plano escrito em 15 dias, sem assinatura, é pouco perto do tamanho da decisão. Compro o diagnóstico, o acompanhamento mensal provavelmente não.",
+  "objection": "Já paguei app e larguei; tenho medo de assinar o mensal e não usar, e de um planejador de pessoa física não entender a parte da empresa.",
+  "would_change_my_mind": "Se o diagnóstico não tratasse a separação PF/PJ junto com a decisão do imóvel, eu não compraria.",
+  "price_too_cheap": 100,
+  "price_cheap": 200,
+  "price_expensive": 600,
+  "price_too_expensive": 1200
+}

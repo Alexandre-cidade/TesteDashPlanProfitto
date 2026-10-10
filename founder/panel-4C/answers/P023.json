@@ -1,0 +1,13 @@
+{
+  "id": "P023",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "Até acho interessante, mas atendo gente o dia todo e isso ia virar mais uma coisa para o mês que vem. E o gerente do banco já me dá umas orientações sem cobrar.",
+  "objection": "Pagar R$ 197 por algo que o banco diz que faz de graça, e ainda ter que juntar todos os extratos.",
+  "would_change_my_mind": "Ver no raio-X quanto o banco me cobra de tarifa e descobrir que é mais que R$ 197 por ano.",
+  "price_too_cheap": 30,
+  "price_cheap": 80,
+  "price_expensive": 180,
+  "price_too_expensive": 300
+}

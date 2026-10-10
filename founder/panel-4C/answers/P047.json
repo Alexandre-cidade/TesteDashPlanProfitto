@@ -1,0 +1,13 @@
+{
+  "id": "P047",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "O preço não é problema pra mim, mas não sei quem é o planejador, que certificação tem nem como guardam meus dados. Não entrego extrato e patrimônio pra uma empresa que vi num anúncio.",
+  "objection": "Expor todas as minhas contas e investimentos pra uma empresa que não conheço.",
+  "would_change_my_mind": "Saber o nome e a certificação (CFP) do planejador e como os dados são protegidos, ou uma indicação de alguém que eu sigo.",
+  "price_too_cheap": 150,
+  "price_cheap": 300,
+  "price_expensive": 700,
+  "price_too_expensive": 1200
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P126",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Minha planilha já mostra tudo, inclusive o que mando para meus pais e o que mudou com o divórcio; não vou pagar alguém para me dizer o que eu já vejo nas células.",
+  "objection": "Como sei que esse planejador sabe mais que eu e não vai só repetir o óbvio ou me empurrar alguma coisa depois?",
+  "would_change_my_mind": "Ver um exemplo real de plano entregue que trouxesse algo que minha planilha não mostra, tipo tributação ou partilha.",
+  "price_too_cheap": 50,
+  "price_cheap": 100,
+  "price_expensive": 200,
+  "price_too_expensive": 350
+}

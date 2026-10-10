@@ -1,0 +1,13 @@
+{
+  "id": "P103",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Eu só contrato quem algum colega de confiança indicou, e ninguém me falou da Profitto. Pagar R$ 297 por mês para alguém me dizer onde cortar gastos não me convence de cara.",
+  "objection": "Não conheço ninguém que usou, e não sei se o planejador entende a vida de um profissional liberal com renda alta.",
+  "would_change_my_mind": "Um colega médico ou advogado me dizer que usou e que o plano mudou alguma coisa concreta.",
+  "price_too_cheap": 150,
+  "price_cheap": 300,
+  "price_expensive": 800,
+  "price_too_expensive": 1500
+}

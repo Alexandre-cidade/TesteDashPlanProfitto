@@ -1,0 +1,13 @@
+{
+  "id": "P212",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Ninguém que eu conheço me indicou, e eu só contrato quem alguém de confiança já usou. Além disso, R$ 297 por mês pesa muito no meu salário.",
+  "objection": "Como vou saber se esse planejador é bom de verdade? Dizer que não recebe comissão é fácil, quero ouvir de alguém que usou.",
+  "would_change_my_mind": "Um colega ou amigo me contar que fez o diagnóstico e que ajudou de verdade.",
+  "price_too_cheap": 30,
+  "price_cheap": 80,
+  "price_expensive": 150,
+  "price_too_expensive": 250
+}

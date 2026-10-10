@@ -1,0 +1,13 @@
+{
+  "id": "P029",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Minha conta pessoal e a da empresa estão misturadas e ainda ajudo meus pais todo mês; um diagnóstico de R$ 490, pagamento único, eu consigo justificar em casa. A mensalidade eu não assino sem conversar com minha esposa e ver o plano antes.",
+  "objection": "Depois das primeiras reuniões, o que muda no mês seguinte? Tenho medo de pagar R$ 297 por mês por conversa repetida, e não está claro se eles entendem de separar PF e PJ.",
+  "would_change_my_mind": "Se ao falar com eles ficar claro que não mexem com a parte da empresa, desisto até do diagnóstico.",
+  "price_too_cheap": 80,
+  "price_cheap": 180,
+  "price_expensive": 400,
+  "price_too_expensive": 700
+}

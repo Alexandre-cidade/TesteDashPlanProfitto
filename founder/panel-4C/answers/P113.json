@@ -1,0 +1,13 @@
+{
+  "id": "P113",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "convenience",
+  "reason": "Trabalho das 9h às 18h, tenho filhos, e só de pensar em juntar papel de conta, dívida e ainda marcar sessão com o casal já desanimo; já assinei coisa no impulso e larguei, não quero repetir.",
+  "objection": "Não tenho tempo para reuniões, e um plano que exige que eu levante todas as minhas contas vai ficar parado.",
+  "would_change_my_mind": "Se desse para fazer tudo por WhatsApp, sem reunião, num horário depois das 20h.",
+  "price_too_cheap": 50,
+  "price_cheap": 100,
+  "price_expensive": 180,
+  "price_too_expensive": 250
+}

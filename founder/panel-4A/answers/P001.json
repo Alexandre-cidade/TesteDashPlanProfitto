@@ -1,0 +1,13 @@
+{
+  "id": "P001",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Estou com cartão e cheque especial rodando e ainda ajudo meus pais todo mês; tirar R$ 490 de uma vez, e depois quase R$ 300 por mês, é justamente o dinheiro que falta. Agora preciso pagar dívida, não contratar mais uma conta.",
+  "objection": "Pagar R$ 490 para alguém me dizer o que eu já sei, que preciso cortar gastos e renegociar, e ainda virar mais uma mensalidade.",
+  "would_change_my_mind": "Um diagnóstico focado só em sair das dívidas por bem menos, tipo R$ 100 a R$ 150, ou parcelado sem juros.",
+  "price_too_cheap": 30,
+  "price_cheap": 80,
+  "price_expensive": 150,
+  "price_too_expensive": 250
+}

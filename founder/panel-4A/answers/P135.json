@@ -1,0 +1,13 @@
+{
+  "id": "P135",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Nunca ouvi falar da Profitto e não vou mandar todas as minhas contas e dívidas pra uma empresa que eu não conheço. Além disso R$ 490 é muito pro meu salário.",
+  "objection": "Expor toda a minha vida financeira pra uma empresa desconhecida, sem saber o que ela faz com os meus dados.",
+  "would_change_my_mind": "Boa reputação no Reclame Aqui com reclamações respondidas e um diagnóstico bem mais barato.",
+  "price_too_cheap": 10,
+  "price_cheap": 30,
+  "price_expensive": 70,
+  "price_too_expensive": 120
+}

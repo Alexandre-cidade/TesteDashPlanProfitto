@@ -1,0 +1,13 @@
+{
+  "id": "P207",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "R$ 297 por mês é mais do que todas as minhas assinaturas juntas, e eu nem tenho investimento ainda. Isso parece feito para quem tem muito dinheiro; aprendo o básico de graça no YouTube.",
+  "objection": "Não sobra dinheiro para pagar alguém para me dizer que eu gasto demais, e ainda ia virar mais uma briga com meu marido.",
+  "would_change_my_mind": "Um plano bem mais barato, uns R$ 50 a 80 por mês, pensado para casal que está começando.",
+  "price_too_cheap": 15,
+  "price_cheap": 40,
+  "price_expensive": 90,
+  "price_too_expensive": 150
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P084",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Meu gerente e meu assessor já cuidam disso sem me cobrar nada por mês. Não vejo por que pagar mais uma pessoa para a mesma coisa.",
+  "objection": "Não sei o que um planejador de Porto Alegre faria melhor que o assessor da corretora que já conhece minha carteira inteira.",
+  "would_change_my_mind": "Ver, num raio-X, quanto meu banco realmente me cobra em taxas escondidas; se for muito, eu pagaria o diagnóstico.",
+  "price_too_cheap": 100,
+  "price_cheap": 200,
+  "price_expensive": 500,
+  "price_too_expensive": 1000
+}

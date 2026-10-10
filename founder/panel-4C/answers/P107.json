@@ -1,0 +1,13 @@
+{
+  "id": "P107",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Meu assessor e o gerente do banco já me ajudam com isso sem cobrar. Já pago assinatura demais para adicionar mais R$ 297 por mês.",
+  "objection": "O plano não fala da minha empresa, e minhas finanças pessoais e da PJ são misturadas; acho que seria genérico para o meu caso.",
+  "would_change_my_mind": "Mostrar que trata PF e PJ juntas e quanto eu estou perdendo hoje em taxas com o banco.",
+  "price_too_cheap": 100,
+  "price_cheap": 200,
+  "price_expensive": 400,
+  "price_too_expensive": 700
+}

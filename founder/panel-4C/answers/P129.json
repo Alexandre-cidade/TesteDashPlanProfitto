@@ -1,0 +1,13 @@
+{
+  "id": "P129",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Meu gerente e o assessor da corretora já cuidam disso sem mensalidade. E a oferta não fala nada da empresa nem de separar PF e PJ, que é onde está a minha bagunça.",
+  "objection": "Depois do diagnóstico e das primeiras reuniões, o que muda no mês seguinte que justifique pagar todo mês?",
+  "would_change_my_mind": "Um serviço que trate explicitamente a separação de PF e PJ, pró-labore e retirada da empresa.",
+  "price_too_cheap": 100,
+  "price_cheap": 250,
+  "price_expensive": 600,
+  "price_too_expensive": 1200
+}

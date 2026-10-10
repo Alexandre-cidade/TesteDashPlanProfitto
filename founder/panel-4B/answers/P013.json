@@ -1,0 +1,13 @@
+{
+  "id": "P013",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Eu me conheço: já baixei app, já assisti mil vídeos e larguei tudo. Pagar R$ 197 por um plano com 3 ações que eu vou ler e esquecer não vale.",
+  "objection": "Vou pagar e não vou usar, igual fiz com os apps; o conteúdo do YouTube já é de graça.",
+  "would_change_my_mind": "Algum tipo de garantia de resultado, ou ver gente da minha idade mostrando que funcionou de verdade.",
+  "price_too_cheap": 30,
+  "price_cheap": 60,
+  "price_expensive": 120,
+  "price_too_expensive": 200
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P065",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Faço minha planilha há anos e ela funciona; já testei app e abandonei. Para a compra do imóvel eu sei fazer as contas, não preciso de mensalidade.",
+  "objection": "Vou pagar, ter reunião de 30 minutos por mês e no fim continuar fazendo tudo na minha planilha do mesmo jeito.",
+  "would_change_my_mind": "Uma análise pontual só do financiamento do imóvel, com alguém que um colega meu já tenha usado.",
+  "price_too_cheap": 100,
+  "price_cheap": 200,
+  "price_expensive": 500,
+  "price_too_expensive": 1000
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P096",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Meu gerente e o assessor da corretora já cuidam disso há anos e não me cobram nada. Não vejo por que pagar para alguém me dizer para gastar menos.",
+  "objection": "R$ 297 por mês para uma reunião de 30 minutos, quando eu já tenho assessoria sem mensalidade, me parece pagar duas vezes pela mesma coisa.",
+  "would_change_my_mind": "Se o raio-X mostrasse em números que meu banco está me cobrando bem mais do que o serviço custa.",
+  "price_too_cheap": 100,
+  "price_cheap": 150,
+  "price_expensive": 300,
+  "price_too_expensive": 600
+}

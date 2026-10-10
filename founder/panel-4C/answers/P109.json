@@ -1,0 +1,13 @@
+{
+  "id": "P109",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "R$ 197 é dinheiro para mim, e meu gerente do banco já me orienta sobre a aposentadoria sem cobrar nada. Para uma decisão pontual eu prefiro perguntar a ele.",
+  "objection": "Não sei se vale pagar por algo que acho que consigo de graça no banco.",
+  "would_change_my_mind": "Ver no raio-X das tarifas que o banco me cobra mais do que o diagnóstico custa.",
+  "price_too_cheap": 40,
+  "price_cheap": 80,
+  "price_expensive": 150,
+  "price_too_expensive": 250
+}

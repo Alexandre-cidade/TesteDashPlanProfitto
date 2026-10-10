@@ -1,0 +1,13 @@
+{
+  "id": "P156",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "quality",
+  "reason": "Meu problema é PF e PJ misturadas, e a oferta não fala nada de empresa; isso eu resolvo com meu contador. Investimento eu já faço sozinho pelo app, 30 minutos por mês não acrescentam.",
+  "objection": "Não vejo prova de que o planejador entende de empresário; parece feito para assalariado.",
+  "would_change_my_mind": "Uma versão para empresário que trate pró-labore, distribuição de lucros e separação PF/PJ.",
+  "price_too_cheap": 150,
+  "price_cheap": 300,
+  "price_expensive": 800,
+  "price_too_expensive": 1500
+}

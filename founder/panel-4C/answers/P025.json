@@ -1,0 +1,13 @@
+{
+  "id": "P025",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Não conheço essa empresa e não vou entregar todas as contas da família para um desconhecido de Porto Alegre. Além disso, convencer minha esposa a sentar junto já seria uma briga.",
+  "objection": "Expor dívidas, investimentos e extratos para uma empresa que eu nunca ouvi falar.",
+  "would_change_my_mind": "Indicação de alguém que eu conheço que já usou e saiu satisfeito.",
+  "price_too_cheap": 50,
+  "price_cheap": 120,
+  "price_expensive": 250,
+  "price_too_expensive": 400
+}

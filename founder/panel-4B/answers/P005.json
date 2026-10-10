@@ -1,0 +1,13 @@
+{
+  "id": "P005",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Só contrato quem alguém de confiança indicou, e pagar caro para alguém me dizer para cortar gastos não me convence. Meu problema não é falta de renda.",
+  "objection": "Não conheço ninguém que usou, e não vejo o que eles fariam que eu não consiga sozinha.",
+  "would_change_my_mind": "Um colega médico ou advogado me indicar dizendo que o planejador entende de renda de profissional liberal.",
+  "price_too_cheap": 100,
+  "price_cheap": 200,
+  "price_expensive": 500,
+  "price_too_expensive": 900
+}

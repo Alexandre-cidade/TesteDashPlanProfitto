@@ -1,0 +1,13 @@
+{
+  "id": "P163",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "Eu sei que preciso organizar, mas o consultório está cheio e agora não é o momento; vou deixar para o ano que vem, como sempre. O preço não é o problema.",
+  "objection": "Não tenho energia agora para juntar extratos, contas e investimentos para alguém analisar.",
+  "would_change_my_mind": "Alguém fazer todo o levantamento por mim, puxando os dados sem eu ter que juntar papel, com uma data marcada que eu não possa adiar.",
+  "price_too_cheap": 100,
+  "price_cheap": 250,
+  "price_expensive": 500,
+  "price_too_expensive": 900
+}

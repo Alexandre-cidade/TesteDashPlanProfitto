@@ -1,0 +1,13 @@
+{
+  "id": "P152",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Meu gerente do banco já me liga oferecendo ajuda com investimento sem cobrar nada; pagar R$ 490 para alguém me dizer onde foi meu aumento parece exagero. E eu sei que assino essas coisas no impulso e cancelo no mês seguinte.",
+  "objection": "Por que pagar se o banco faz de graça? Não vejo a diferença na prática.",
+  "would_change_my_mind": "Um diagnóstico bem mais barato, tipo R$ 150, ou um amigo dizendo que mudou a vida financeira dele.",
+  "price_too_cheap": 30,
+  "price_cheap": 80,
+  "price_expensive": 180,
+  "price_too_expensive": 350
+}

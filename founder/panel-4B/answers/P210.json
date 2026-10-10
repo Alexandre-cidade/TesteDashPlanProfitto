@@ -1,0 +1,13 @@
+{
+  "id": "P210",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Eu controlo tudo na planilha, então não preciso pagar alguém para organizar meus gastos. R$ 297 por mês com o meu salário parece coisa para quem tem muito dinheiro.",
+  "objection": "Já perdi dinheiro seguindo dica; não vou pagar caro por mais uma opinião sem saber se é boa.",
+  "would_change_my_mind": "Um serviço só de investimentos para iniciante, sem comissão, por bem menos de R$ 100 por mês.",
+  "price_too_cheap": 20,
+  "price_cheap": 50,
+  "price_expensive": 100,
+  "price_too_expensive": 180
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P207",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Ganho uns R$ 5 mil por mês; R$ 490 de entrada e R$ 297 por mês é dinheiro que eu deveria estar guardando para o apartamento. Isso é para quem já tem patrimônio, eu sigo aprendendo pelo YouTube.",
+  "objection": "Parece serviço para quem tem muito dinheiro, não para quem está começando.",
+  "would_change_my_mind": "Uma versão para quem está começando, por menos de R$ 100 por mês.",
+  "price_too_cheap": 20,
+  "price_cheap": 50,
+  "price_expensive": 100,
+  "price_too_expensive": 180
+}

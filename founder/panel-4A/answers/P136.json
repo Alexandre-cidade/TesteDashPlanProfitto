@@ -1,0 +1,13 @@
+{
+  "id": "P136",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Ninguém que eu confio me indicou, e eu só contrato assim. R$ 490 mais R$ 297 por mês pra alguém me dizer pra gastar menos depois do divórcio é caro.",
+  "objection": "Não conheço ninguém que usou; pode ser só alguém me mandando cortar gastos que eu já sei que preciso cortar.",
+  "would_change_my_mind": "Um amigo de confiança dizer que fez e que mudou a vida financeira dele.",
+  "price_too_cheap": 30,
+  "price_cheap": 90,
+  "price_expensive": 180,
+  "price_too_expensive": 300
+}

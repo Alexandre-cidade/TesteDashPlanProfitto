@@ -1,0 +1,13 @@
+{
+  "id": "P159",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Eu mesma invisto pela corretora e me considero bem informada. Não vou abrir a herança e todas as minhas contas para uma empresa que não conheço.",
+  "objection": "Expor um patrimônio grande para desconhecidos, e um planejador de mensalidade não saber mais que eu sobre investimento.",
+  "would_change_my_mind": "Um planejador com certificação reconhecida e referências sólidas, que trate de sucessão e da conversa com meu marido, não de controle de gastos.",
+  "price_too_cheap": 150,
+  "price_cheap": 400,
+  "price_expensive": 900,
+  "price_too_expensive": 1500
+}

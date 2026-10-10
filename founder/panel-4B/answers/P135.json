@@ -1,0 +1,13 @@
+{
+  "id": "P135",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Ganho uns R$ 4 mil por mês; R$ 197 já dói e R$ 297 por mês é quase o que quero guardar para o apartamento. Já larguei o Organizze, e o gerente do banco me ajuda de graça.",
+  "objection": "Meu gerente do banco já faz isso de graça, e eu sei que vou largar como larguei os apps.",
+  "would_change_my_mind": "Um diagnóstico bem mais barato, tipo R$ 50, focado só no meu objetivo do apê.",
+  "price_too_cheap": 15,
+  "price_cheap": 30,
+  "price_expensive": 70,
+  "price_too_expensive": 120
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P178",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Eu mesmo invisto pela corretora e controlo tudo; não vou pagar alguém para fazer o que uma planilha e eu já fazemos. A briga com minha esposa sobre dinheiro não se resolve com plataforma de gastos.",
+  "objection": "Duvido que um planejador saiba mais que eu sobre meus investimentos, e mensalidade fixa para isso não faz sentido.",
+  "would_change_my_mind": "Se fosse uma sessão pontual focada em alinhar metas do casal, como mediador neutro, eu até pensaria.",
+  "price_too_cheap": 50,
+  "price_cheap": 100,
+  "price_expensive": 250,
+  "price_too_expensive": 450
+}

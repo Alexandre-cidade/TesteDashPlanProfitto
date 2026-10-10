@@ -1,0 +1,13 @@
+{
+  "id": "P099",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Na minha idade não vou abrir tudo o que tenho para uma empresa que não conheço, por mais que digam que não vendem produto. Já ajudo meus pais todo mês e não quero mais um custo fixo.",
+  "objection": "Expor todas as minhas contas e investimentos para estranhos pela internet.",
+  "would_change_my_mind": "Conhecer o planejador pessoalmente antes de entregar qualquer informação e ver referências de outros aposentados.",
+  "price_too_cheap": 60,
+  "price_cheap": 120,
+  "price_expensive": 250,
+  "price_too_expensive": 400
+}

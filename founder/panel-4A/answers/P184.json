@@ -1,0 +1,13 @@
+{
+  "id": "P184",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Estou com cartão e cheque especial rodando; tirar R$ 490 agora é tirar do pagamento da dívida. E meu gerente do banco já me oferece renegociação sem cobrar nada.",
+  "objection": "Pagar para alguém me dizer que estou endividado quando o dinheiro já não fecha o mês.",
+  "would_change_my_mind": "Se o diagnóstico fosse bem mais barato ou só cobrado depois que eu economizasse pelo menos o valor dele em juros.",
+  "price_too_cheap": 20,
+  "price_cheap": 50,
+  "price_expensive": 120,
+  "price_too_expensive": 200
+}

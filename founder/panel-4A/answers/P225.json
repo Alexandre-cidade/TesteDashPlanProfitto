@@ -1,0 +1,13 @@
+{
+  "id": "P225",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "Dinheiro não é o problema, sei que preciso organizar, mas este mês está corrido e vou deixar para o mês que vem como sempre. E no fundo acho que uma planilha bem feita resolve sem pagar mensalidade.",
+  "objection": "Pagar R$ 297 todo mês por algo que eu mesmo poderia fazer numa planilha se tivesse tempo; e não quero mais um compromisso na agenda.",
+  "would_change_my_mind": "Um prazo real me forçando a agir, tipo uma decisão de aposentadoria ou sobre o sustento dos meus pais que não dê mais para adiar.",
+  "price_too_cheap": 100,
+  "price_cheap": 200,
+  "price_expensive": 500,
+  "price_too_expensive": 1000
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P189",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Minha conta PF e PJ estão misturadas e isso está travando a compra do imóvel; R$ 490 com prazo e devolução é um empurrão que eu, procrastinadora, preciso. Faço o diagnóstico e decido o mensal depois.",
+  "objection": "Depois das primeiras reuniões, o que muda no mês seguinte? Tenho medo de pagar R$ 297 por uma conversa de 30 minutos que vira rotina sem resultado.",
+  "would_change_my_mind": "Se o diagnóstico não tratar a separação entre empresa e pessoa física, eu não continuo.",
+  "price_too_cheap": 80,
+  "price_cheap": 200,
+  "price_expensive": 450,
+  "price_too_expensive": 800
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P173",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Meu gerente do banco e o assessor da corretora já cuidam disso e não me cobram nada. Pagar R$ 297 por mês para mais uma pessoa opinar sobre meu dinheiro não entra na minha cabeça.",
+  "objection": "Por que pagar mensalidade se o banco me dá assessoria de graça?",
+  "would_change_my_mind": "Alguém de confiança me mostrar que o assessor gratuito está me empurrando produto e que um planejador independente me faria economizar mais do que custa.",
+  "price_too_cheap": 40,
+  "price_cheap": 90,
+  "price_expensive": 180,
+  "price_too_expensive": 300
+}

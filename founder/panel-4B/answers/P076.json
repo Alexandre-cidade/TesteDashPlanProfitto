@@ -1,0 +1,13 @@
+{
+  "id": "P076",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Não vou abrir todas as minhas contas para uma empresa que acabei de conhecer. E R$ 297 por mês é muito para o que eu ganho; o básico eu aprendo de graça no YouTube.",
+  "objection": "Medo de expor meus dados para uma empresa desconhecida, e o preço mensal está fora da minha realidade.",
+  "would_change_my_mind": "Um influenciador que eu acompanho recomendando a Profitto e um plano bem mais barato para quem está começando.",
+  "price_too_cheap": 15,
+  "price_cheap": 40,
+  "price_expensive": 80,
+  "price_too_expensive": 150
+}

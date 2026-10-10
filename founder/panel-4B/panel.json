@@ -1,0 +1,186 @@
+{
+ "n": 225,
+ "seed": 4101,
+ "customer": {
+  "business": "Planejamento financeiro por assinatura (Profitto), Porto Alegre/RS + digital em todo o Brasil",
+  "target": "Pessoas e famílias brasileiras de 22 a 72 anos com renda própria, em situações financeiras muito diferentes, que em algum momento pensam em organizar o dinheiro. Todos os valores são em reais (R$); a renda é anual e os preços que você der são mensais, em R$",
+  "where": "Porto Alegre e região metropolitana, interior do RS e outras capitais (atendimento online)",
+  "age": [
+   22,
+   72
+  ],
+  "segments": [
+   {
+    "name": "Jovem profissional CLT, ainda sem investimentos",
+    "share": 0.16,
+    "income": [
+     48000,
+     120000
+    ]
+   },
+   {
+    "name": "Casal recém-casado ou planejando filhos",
+    "share": 0.1,
+    "income": [
+     96000,
+     220000
+    ]
+   },
+   {
+    "name": "Família de classe média com filhos",
+    "share": 0.18,
+    "income": [
+     120000,
+     300000
+    ]
+   },
+   {
+    "name": "Servidor público",
+    "share": 0.08,
+    "income": [
+     90000,
+     260000
+    ]
+   },
+   {
+    "name": "Autônomo ou MEI com renda variável",
+    "share": 0.1,
+    "income": [
+     50000,
+     180000
+    ]
+   },
+   {
+    "name": "Profissional liberal de alta renda (médico, advogado, dentista)",
+    "share": 0.14,
+    "income": [
+     300000,
+     800000
+    ]
+   },
+   {
+    "name": "Empresário de pequena ou média empresa, com PF e PJ misturadas",
+    "share": 0.1,
+    "income": [
+     200000,
+     900000
+    ]
+   },
+   {
+    "name": "Pré-aposentado ou aposentado",
+    "share": 0.08,
+    "income": [
+     80000,
+     400000
+    ]
+   },
+   {
+    "name": "Pessoa que acabou de receber um dinheiro grande (herança, venda de imóvel, rescisão)",
+    "share": 0.03,
+    "income": [
+     150000,
+     1000000
+    ]
+   },
+   {
+    "name": "Pessoa recém-divorciada reorganizando as finanças",
+    "share": 0.03,
+    "income": [
+     80000,
+     250000
+    ]
+   }
+  ],
+  "behaviours": [
+   {
+    "name": "Faz planilha sozinho",
+    "share": 0.12,
+    "how": "Controla tudo numa planilha e acha que não precisa de ajuda paga."
+   },
+   {
+    "name": "Confia no gerente ou assessor do banco",
+    "share": 0.12,
+    "how": "Deixa as decisões com o gerente ou o assessor da corretora, que não cobram mensalidade."
+   },
+   {
+    "name": "Já usou app e largou",
+    "share": 0.1,
+    "how": "Baixou Mobills ou Organizze, usou por um mês e abandonou."
+   },
+   {
+    "name": "Segue influenciador de finanças",
+    "share": 0.09,
+    "how": "Assiste a conteúdo de finanças no YouTube e Instagram e já viu ofertas de planejamento online."
+   },
+   {
+    "name": "Pesquisa no Reclame Aqui antes de comprar",
+    "share": 0.08,
+    "how": "Só contrata depois de ler reclamações e checar se o cancelamento é fácil."
+   },
+   {
+    "name": "Endividado buscando saída",
+    "share": 0.09,
+    "how": "Tem cartão ou cheque especial rodando e quer ajuda, mas o dinheiro está curto."
+   },
+   {
+    "name": "Contrata por indicação",
+    "share": 0.08,
+    "how": "Só contrata serviço que um amigo ou colega de confiança recomendou."
+   },
+   {
+    "name": "Investe sozinho por corretora digital",
+    "share": 0.08,
+    "how": "Compra ações, fundos e Tesouro pelo app e se considera bem informado."
+   },
+   {
+    "name": "O cônjuge é quem cuida do dinheiro",
+    "share": 0.06,
+    "how": "Não decide sozinho: qualquer gasto fixo passa pelo parceiro ou parceira."
+   },
+   {
+    "name": "Compra por impulso e se arrepende",
+    "share": 0.06,
+    "how": "Assina coisas no calor do momento e cancela depois."
+   },
+   {
+    "name": "Procrastinador",
+    "share": 0.07,
+    "how": "Sabe que precisa organizar, mas sempre deixa para o mês que vem."
+   },
+   {
+    "name": "Quer resolver rápido um problema específico",
+    "share": 0.05,
+    "how": "Tem uma decisão grande na mesa (imóvel, aposentadoria, dívida) e quer ajuda pontual."
+   }
+  ],
+  "objections": [
+   "Caro para alguém me dizer para gastar menos",
+   "Meu gerente do banco ou meu assessor já faz isso de graça",
+   "Já tentei app e larguei; vou pagar e não usar",
+   "E se eu quiser cancelar? Essas empresas complicam",
+   "Como sei que esse planejador é bom e não vai me empurrar produto?",
+   "Uma planilha resolve, não preciso pagar todo mês",
+   "Depois das primeiras reuniões, o que muda no mês seguinte?",
+   "Não tenho tempo para reuniões",
+   "Não quero expor todas as minhas contas para uma empresa que não conheço",
+   "Prefiro algo 100% online, sem precisar falar com ninguém",
+   "Isso parece coisa para quem tem muito dinheiro",
+   "Agora não é o momento, talvez no ano que vem"
+  ],
+  "habits": [
+   "você mora em Porto Alegre e trabalha das 9h às 18h",
+   "você mora em Canoas e vai de carro para o trabalho em Porto Alegre",
+   "você mora em Caxias do Sul e atende clientes o dia inteiro",
+   "você mora em Novo Hamburgo e trabalha em casa três dias por semana",
+   "você mora em São Paulo e só contrataria algo online",
+   "você mora em Curitiba e já fez reuniões de trabalho por vídeo a semana toda",
+   "você já perdeu dinheiro numa dica de investimento",
+   "você tem um objetivo concreto, como comprar um imóvel ou a escola dos filhos",
+   "você paga várias assinaturas, como streaming e academia",
+   "você conversa sobre dinheiro com o cônjuge e sempre termina em discussão",
+   "você recebeu um aumento recente e não sabe para onde foi o dinheiro",
+   "você ajuda financeiramente seus pais todo mês"
+  ]
+ },
+ "pitch": "Planejamento Financeiro Assistido, da Profitto, empresa de planejamento financeiro de Porto Alegre (atendimento online em todo o Brasil).\nComece pelo Diagnóstico Financeiro: R$ 197, pagamento único, sem assinatura. Em até 15 dias um planejador analisa suas contas, dívidas, investimentos e metas e entrega um plano por escrito com as 3 primeiras ações. Se o plano não for entregue no prazo, você recebe os R$ 197 de volta.\nSe quiser continuar: acompanhamento por R$ 297/mês, com os R$ 197 do diagnóstico abatidos das primeiras mensalidades. Inclui uma reunião mensal de 30 minutos marcada pelo planejador (vídeo ou presencial em Porto Alegre), resposta por WhatsApp em até 1 dia útil e uma plataforma online de controle de gastos e metas.\nSem fidelidade: cancele quando quiser, pelo site, sem multa.\nO planejador é remunerado só pela sua assinatura: não vende produtos financeiros e não recebe comissão."
+}

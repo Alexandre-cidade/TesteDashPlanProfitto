@@ -1,0 +1,13 @@
+{
+  "id": "P220",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Tenho a decisão do imóvel na mesa e quero uma análise pontual. O diagnóstico de R$ 490, pagamento único, com plano escrito em 15 dias, é exatamente isso; a mensalidade eu não vou assinar.",
+  "objection": "Depois do plano, a mensalidade parece pagar por reunião sem mudar nada no mês seguinte.",
+  "would_change_my_mind": "Se o plano fosse genérico e não tratasse a decisão do imóvel.",
+  "price_too_cheap": 80,
+  "price_cheap": 150,
+  "price_expensive": 280,
+  "price_too_expensive": 400
+}

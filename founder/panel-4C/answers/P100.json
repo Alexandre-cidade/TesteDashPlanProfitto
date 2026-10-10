@@ -1,0 +1,13 @@
+{
+  "id": "P100",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "Eu sei que preciso organizar, mas agora não é o momento; talvez no ano que vem, depois das festas.",
+  "objection": "Toda conversa de dinheiro com meu marido vira briga; sentar os dois com um planejador me dá mais receio do que alívio, e eu vou adiando.",
+  "would_change_my_mind": "Uma data-limite real, tipo vaga com desconto só até o fim do mês, e meu marido topar primeiro.",
+  "price_too_cheap": 50,
+  "price_cheap": 100,
+  "price_expensive": 200,
+  "price_too_expensive": 350
+}

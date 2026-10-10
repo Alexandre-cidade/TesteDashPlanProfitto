@@ -1,0 +1,13 @@
+{
+  "id": "P206",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Eu mesmo invisto pela corretora e não vou abrir conta da empresa e conta pessoal para uma firma que nunca ouvi falar. Já pago assinatura demais.",
+  "objection": "Não quero expor todas as minhas contas, PF e PJ, para uma empresa que não conheço.",
+  "would_change_my_mind": "Indicação do meu contador ou de outro empresário que já use e garanta a seriedade, e um foco claro em separar PF de PJ.",
+  "price_too_cheap": 150,
+  "price_cheap": 300,
+  "price_expensive": 800,
+  "price_too_expensive": 1500
+}

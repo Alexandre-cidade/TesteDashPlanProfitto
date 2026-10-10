@@ -1,0 +1,13 @@
+{
+  "id": "P116",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Não vou mandar extrato, dívida e investimento para uma empresa de Porto Alegre que eu nunca ouvi falar; e eu já invisto sozinha pelo app.",
+  "objection": "Não quero expor todas as minhas contas para uma empresa que não conheço, não sei quem vê meus dados nem o que fazem com eles.",
+  "would_change_my_mind": "Ver avaliações públicas de clientes reais e uma explicação clara de como meus dados são guardados e apagados.",
+  "price_too_cheap": 30,
+  "price_cheap": 60,
+  "price_expensive": 120,
+  "price_too_expensive": 200
+}

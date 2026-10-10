@@ -1,0 +1,13 @@
+{
+  "id": "P003",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Eu mesmo invisto pela corretora e acho que sei o que fazer com esse dinheiro. Talvez pense em algo assim ano que vem, agora não.",
+  "objection": "Não sei se um planejador vai saber mais do que eu já sei; acho que vou pagar para ouvir o óbvio.",
+  "would_change_my_mind": "Se o diagnóstico tratasse especificamente de sucessão e impostos sobre o dinheiro que recebi, com alguém de credencial reconhecida.",
+  "price_too_cheap": 100,
+  "price_cheap": 300,
+  "price_expensive": 800,
+  "price_too_expensive": 1500
+}

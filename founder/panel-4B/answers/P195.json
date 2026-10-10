@@ -1,0 +1,13 @@
+{
+  "id": "P195",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Estou com cartão e cheque especial rodando, não tenho R$ 297 sobrando por mês. Já perdi dinheiro com dica de investimento e não vou me comprometer com mais uma cobrança mensal agora.",
+  "objection": "Essas empresas dizem que é fácil cancelar e depois complicam; e cada real que eu pago aqui é um real que não vai para a dívida.",
+  "would_change_my_mind": "Se fosse só o diagnóstico focado em sair da dívida, e eu conhecesse alguém que usou e cancelou sem problema.",
+  "price_too_cheap": 30,
+  "price_cheap": 80,
+  "price_expensive": 150,
+  "price_too_expensive": 250
+}

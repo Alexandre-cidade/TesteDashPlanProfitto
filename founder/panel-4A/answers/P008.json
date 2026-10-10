@@ -1,0 +1,13 @@
+{
+  "id": "P008",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Minhas contas de pessoa física e da empresa estão misturadas e não sei para onde foi o aumento; app eu já larguei, preciso de gente me cobrando. R$ 490 com devolução se não entregar é pouco para testar, então faço o diagnóstico e decido depois.",
+  "objection": "Não sei se o planejador entende de separar PF e PJ, e depois das primeiras reuniões, o que muda no mês seguinte para justificar a mensalidade.",
+  "would_change_my_mind": "Se o plano do diagnóstico vier genérico, sem tratar da empresa, eu não continuo no acompanhamento.",
+  "price_too_cheap": 100,
+  "price_cheap": 250,
+  "price_expensive": 600,
+  "price_too_expensive": 1200
+}

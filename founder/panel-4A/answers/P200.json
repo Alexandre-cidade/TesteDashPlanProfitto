@@ -1,0 +1,13 @@
+{
+  "id": "P200",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Toda conversa de dinheiro com minha esposa vira briga e o app a gente largou em um mês; uma pessoa de fora com um plano por escrito pode acabar com a discussão. Pago o diagnóstico e decido o resto depois.",
+  "objection": "Não tenho tempo para reuniões, então o acompanhamento mensal provavelmente não pego.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 60,
+  "price_cheap": 120,
+  "price_expensive": 250,
+  "price_too_expensive": 400
+}

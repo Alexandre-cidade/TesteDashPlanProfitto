@@ -1,0 +1,13 @@
+{
+  "id": "P028",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "Sei que preciso me organizar, mas isso vai pra lista do mês que vem como tudo. E R$ 297 por mês parece coisa de quem tem sobra, não de família com filho.",
+  "objection": "Depois que perdi dinheiro numa dica, desconfio de quem diz que vai cuidar do meu dinheiro, e o mensal é caro.",
+  "would_change_my_mind": "Um prazo curto com desconto no diagnóstico que me obrigasse a decidir agora.",
+  "price_too_cheap": 30,
+  "price_cheap": 90,
+  "price_expensive": 180,
+  "price_too_expensive": 300
+}

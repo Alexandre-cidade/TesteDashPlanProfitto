@@ -1,0 +1,13 @@
+{
+  "id": "P014",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Eu me conheço: já larguei app e já vi um monte de oferta dessas no Instagram, e R$ 490 por três primeiras ações parece o que eu vejo de graça no YouTube. Vou acabar não seguindo o plano e muito menos pagando R$ 297 todo mês.",
+  "objection": "Vou pagar, receber um PDF bonito e não colocar nada em prática.",
+  "would_change_my_mind": "Ver resultado concreto de alguém parecido comigo, ou um acompanhamento que cobre de mim ativamente nas primeiras semanas antes de eu pagar a mensalidade.",
+  "price_too_cheap": 30,
+  "price_cheap": 90,
+  "price_expensive": 200,
+  "price_too_expensive": 350
+}

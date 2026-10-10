@@ -1,0 +1,13 @@
+{
+  "id": "P218",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Minha primeira reação foi deixar para o ano que vem, mas eu tenho a decisão do imóvel na mesa agora e o diagnóstico é pontual, sem assinatura. Pago os R$ 197 uma vez, a mensalidade eu não pego.",
+  "objection": "Com a ajuda que mando para meus pais todo mês, não sobra para R$ 297 mensais; e tenho medo de o plano escrito não responder exatamente a minha dúvida sobre o imóvel.",
+  "would_change_my_mind": "Se eu percebesse que o diagnóstico é genérico e não trata da compra do imóvel, desistiria.",
+  "price_too_cheap": 40,
+  "price_cheap": 100,
+  "price_expensive": 200,
+  "price_too_expensive": 300
+}

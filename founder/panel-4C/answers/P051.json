@@ -1,0 +1,13 @@
+{
+  "id": "P051",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Quem cuida disso pra mim é o gerente do banco e o assessor da corretora, e eles não me cobram nada. Pagar R$ 197 e depois R$ 297 por mês não entra na conta agora, talvez no ano que vem eu pense.",
+  "objection": "Por que eu pagaria todo mês por algo que meu gerente já faz sem cobrar mensalidade?",
+  "would_change_my_mind": "Ver no raio-X que o banco está me cobrando em tarifas e taxas mais do que o serviço custa.",
+  "price_too_cheap": 30,
+  "price_cheap": 60,
+  "price_expensive": 120,
+  "price_too_expensive": 200
+}

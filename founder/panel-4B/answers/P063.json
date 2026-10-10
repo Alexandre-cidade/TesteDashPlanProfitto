@@ -1,0 +1,13 @@
+{
+  "id": "P063",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Meu gerente do banco já me orienta de graça. Pagar R$ 297 por mês pra ter reunião com alguém não faz sentido pra mim, prefiro resolver tudo sozinha online.",
+  "objection": "Por que pagar mensalidade se o assessor da corretora não me cobra nada? E eu não quero ficar marcando reunião.",
+  "would_change_my_mind": "Uma versão 100% online e barata, só a plataforma e o plano por escrito, sem reunião.",
+  "price_too_cheap": 15,
+  "price_cheap": 30,
+  "price_expensive": 80,
+  "price_too_expensive": 150
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P153",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Meu gerente do banco já cuida dos investimentos e não me cobra mensalidade. Já paguei app antes e larguei, e não vejo por que agora seria diferente.",
+  "objection": "Pagar R$ 297 por mês por algo que o gerente faz de graça, e acabar não usando a plataforma.",
+  "would_change_my_mind": "Ver em números quanto o gerente está me custando em taxas comparado ao que eu pagaria aqui.",
+  "price_too_cheap": 40,
+  "price_cheap": 100,
+  "price_expensive": 200,
+  "price_too_expensive": 350
+}

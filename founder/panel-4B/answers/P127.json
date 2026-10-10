@@ -1,0 +1,13 @@
+{
+  "id": "P127",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Tenho meta concreta de imóvel e escola dos filhos e não tenho tempo para app; 197 para um plano escrito com prazo e devolução é irrelevante para mim, faço o diagnóstico para testar.",
+  "objection": "Já perdi dinheiro com dica; quero saber a formação e a experiência de quem vai analisar minhas contas, porque 'não recebe comissão' é só o que está escrito.",
+  "would_change_my_mind": "Se não me disserem quem é o planejador e a certificação dele antes de pagar, eu desisto.",
+  "price_too_cheap": 150,
+  "price_cheap": 300,
+  "price_expensive": 800,
+  "price_too_expensive": 1500
+}

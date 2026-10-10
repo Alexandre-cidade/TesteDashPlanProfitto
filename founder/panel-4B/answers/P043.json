@@ -1,0 +1,13 @@
+{
+  "id": "P043",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Minha planilha já controla tudo, inclusive a meta do imóvel. Não preciso pagar alguém pra me dizer o que já sei, e não tenho tempo pra reunião todo mês.",
+  "objection": "Reunião mensal marcada pelo planejador é justamente o que eu não quero na minha agenda.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 20,
+  "price_cheap": 50,
+  "price_expensive": 100,
+  "price_too_expensive": 200
+}

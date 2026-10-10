@@ -1,0 +1,13 @@
+{
+  "id": "P106",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "O cartão está rodando e o dinheiro está curto este mês; tirar R$ 197 agora parece mais uma conta. Talvez quando apertar menos.",
+  "objection": "Pagar para alguém me dizer que estou endividado, quando o que me falta é dinheiro, não diagnóstico.",
+  "would_change_my_mind": "Poder pagar o diagnóstico parcelado ou só depois de receber o plano de saída das dívidas.",
+  "price_too_cheap": 50,
+  "price_cheap": 100,
+  "price_expensive": 200,
+  "price_too_expensive": 300
+}

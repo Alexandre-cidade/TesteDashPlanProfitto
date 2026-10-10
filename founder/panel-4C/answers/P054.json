@@ -1,0 +1,13 @@
+{
+  "id": "P054",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Não me sinto à vontade de abrir todas as minhas contas para uma empresa que não conheço. E com o que mando para meus pais todo mês, R$ 197 já pesa, R$ 297 por mês nem pensar.",
+  "objection": "Entregar meus dados para estranhos e acabar largando como larguei o Mobills.",
+  "would_change_my_mind": "Uma amiga que já usou e me contasse que deu resultado de verdade.",
+  "price_too_cheap": 15,
+  "price_cheap": 40,
+  "price_expensive": 90,
+  "price_too_expensive": 150
+}

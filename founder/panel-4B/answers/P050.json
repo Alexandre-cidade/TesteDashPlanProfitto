@@ -1,0 +1,13 @@
+{
+  "id": "P050",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Já paguei app de finanças e larguei em duas semanas. Quem cuida do dinheiro lá em casa é meu marido, e eu não assino nada disso sem ele.",
+  "objection": "Vou pagar, não usar a plataforma e faltar nas reuniões, igual aconteceu com o app.",
+  "would_change_my_mind": "Se meu marido visse e quisesse fazer junto, principalmente pra separar as contas da empresa das nossas.",
+  "price_too_cheap": 80,
+  "price_cheap": 200,
+  "price_expensive": 500,
+  "price_too_expensive": 900
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P075",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Já baixei app, larguei, e R$ 490 mais R$ 297 por mês com dois filhos em casa parece coisa para quem tem muito dinheiro sobrando.",
+  "objection": "Vou pagar, ter uma reunião ou duas e largar igual larguei o app.",
+  "would_change_my_mind": "Um preço de entrada bem menor, tipo um diagnóstico de R$ 150, para eu testar se um humano me cobrando funciona melhor que app.",
+  "price_too_cheap": 40,
+  "price_cheap": 90,
+  "price_expensive": 180,
+  "price_too_expensive": 280
+}

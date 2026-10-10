@@ -1,0 +1,13 @@
+{
+  "id": "P021",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "R$ 490 pra alguém me dizer onde foi meu aumento? Já baixei Mobills e larguei, e o gerente do banco me dá conselho de graça. Não vou pagar por algo que não sei se vou seguir.",
+  "objection": "Medo de pagar caro e abandonar igual abandonei os apps, e achar que o banco já faz isso sem cobrar.",
+  "would_change_my_mind": "Um diagnóstico bem mais barato, tipo uns R$ 150, ou um amigo que fez e realmente mudou alguma coisa.",
+  "price_too_cheap": 30,
+  "price_cheap": 80,
+  "price_expensive": 180,
+  "price_too_expensive": 300
+}

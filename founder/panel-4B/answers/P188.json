@@ -1,0 +1,13 @@
+{
+  "id": "P188",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "convenience",
+  "reason": "Meu assessor da corretora já cuida da minha aposentadoria sem cobrar mensalidade. E isso tem reunião todo mês e WhatsApp, eu queria algo que eu fizesse sozinho, sem falar com ninguém.",
+  "objection": "Não quero ter que marcar reunião nem dar satisfação para um planejador; e pagar por algo que o banco me dá de graça não faz sentido.",
+  "would_change_my_mind": "Só a plataforma, sem reunião, por um preço baixo.",
+  "price_too_cheap": 20,
+  "price_cheap": 50,
+  "price_expensive": 100,
+  "price_too_expensive": 180
+}

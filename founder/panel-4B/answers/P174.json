@@ -1,0 +1,13 @@
+{
+  "id": "P174",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "App eu já larguei, mas R$ 197 uma vez só para alguém de fora olhar PF e PJ misturadas e me dar um plano escrito é pouco perto do que eu ganho, e talvez acabe com a briga em casa. Compro o diagnóstico; a mensalidade eu decido depois.",
+  "objection": "Depois do plano e das primeiras reuniões, o que muda no mês seguinte? Tenho medo de virar mais uma coisa que pago e abandono como os apps.",
+  "would_change_my_mind": "Se o plano escrito vier genérico, do tipo planilha de gastos, eu não sigo para o acompanhamento.",
+  "price_too_cheap": 60,
+  "price_cheap": 150,
+  "price_expensive": 450,
+  "price_too_expensive": 800
+}

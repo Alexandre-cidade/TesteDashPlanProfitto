@@ -1,0 +1,13 @@
+{
+  "id": "P079",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Meu assessor da corretora já cuida dos meus investimentos sem cobrar mensalidade. Não vejo por que pagar R$ 297 por mês por algo parecido.",
+  "objection": "Pagar por algo que meu gerente já faz, e o medo de não conseguir cancelar fácil.",
+  "would_change_my_mind": "Ver que o raio-X das tarifas mostra que meu banco me cobra muito mais do que os R$ 197.",
+  "price_too_cheap": 80,
+  "price_cheap": 150,
+  "price_expensive": 300,
+  "price_too_expensive": 500
+}

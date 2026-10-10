@@ -1,0 +1,13 @@
+{
+  "id": "P055",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Ganhei aumento e não sei para onde foi o dinheiro, e R$ 490 uma vez, sem assinatura e com devolução se atrasar, é pouco para mim. Faço o diagnóstico depois de dar uma olhada no Reclame Aqui; a mensalidade eu decido depois.",
+  "objection": "Depois das primeiras reuniões, o que muda no mês seguinte? Tenho medo de pagar R$ 297 por mês por uma reunião de 30 minutos repetindo a mesma coisa.",
+  "would_change_my_mind": "Se o Reclame Aqui mostrar reclamações sem resposta ou dificuldade de cancelamento, eu desisto.",
+  "price_too_cheap": 150,
+  "price_cheap": 250,
+  "price_expensive": 500,
+  "price_too_expensive": 900
+}

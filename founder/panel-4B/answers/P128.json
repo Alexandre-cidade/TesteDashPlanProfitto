@@ -1,0 +1,13 @@
+{
+  "id": "P128",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "297 por mês é caro para alguém me dizer para gastar menos; vejo isso de graça no YouTube todo dia.",
+  "objection": "Não sei o que uma reunião de 30 minutos por mês me dá que os vídeos que eu assisto já não dão.",
+  "would_change_my_mind": "Um preço perto de 100 por mês ou um influenciador que eu sigo mostrando o resultado de alguém parecido comigo.",
+  "price_too_cheap": 25,
+  "price_cheap": 60,
+  "price_expensive": 130,
+  "price_too_expensive": 200
+}

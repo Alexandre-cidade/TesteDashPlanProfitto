@@ -1,0 +1,13 @@
+{
+  "id": "P044",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Temos a escola dos filhos para resolver e toda conversa com meu marido vira briga; um terceiro neutro com um plano escrito pode acabar com isso. Pagamento único e devolução se atrasar, então pago o diagnóstico.",
+  "objection": "Eu assino as coisas no impulso e cancelo depois; o mensal de R$ 297 provavelmente não dura, e ainda tenho que convencer meu marido de que valeu.",
+  "would_change_my_mind": "Se meu marido vetar o gasto antes de eu pagar.",
+  "price_too_cheap": 50,
+  "price_cheap": 120,
+  "price_expensive": 300,
+  "price_too_expensive": 450
+}

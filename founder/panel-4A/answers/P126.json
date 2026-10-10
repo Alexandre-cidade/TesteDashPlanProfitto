@@ -1,0 +1,13 @@
+{
+  "id": "P126",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Dizer que não recebe comissão é fácil, mas não sei quem é esse planejador, que formação tem, nem se é bom. Já tenho o gerente do banco que não me cobra nada; com a renda variando, não assumo R$ 297 por mês no escuro.",
+  "objection": "Como sei que esse planejador é bom? O anúncio não fala de certificação, experiência nem mostra quem é a pessoa.",
+  "would_change_my_mind": "Saber o nome e a certificação do planejador (tipo CFP) e conversar com ele antes de pagar.",
+  "price_too_cheap": 40,
+  "price_cheap": 90,
+  "price_expensive": 180,
+  "price_too_expensive": 300
+}

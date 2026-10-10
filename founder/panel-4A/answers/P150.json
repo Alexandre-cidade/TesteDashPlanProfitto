@@ -1,0 +1,13 @@
+{
+  "id": "P150",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Ganho uns R$ 5 mil por mês e ainda ajudo meus pais; R$ 490 e depois R$ 297 todo mês não cabe. Uma planilha e os vídeos que eu já assisto resolvem.",
+  "objection": "Pagar todo mês por algo que uma planilha gratuita e o YouTube já me dão.",
+  "would_change_my_mind": "Um plano bem mais barato, uns R$ 50 por mês, só com a plataforma e o WhatsApp.",
+  "price_too_cheap": 15,
+  "price_cheap": 40,
+  "price_expensive": 90,
+  "price_too_expensive": 150
+}

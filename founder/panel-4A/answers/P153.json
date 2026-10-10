@@ -1,0 +1,13 @@
+{
+  "id": "P153",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Estou com cartão e cheque especial rodando; tirar R$ 490 agora é tirar do pagamento da dívida. E R$ 297 por mês depois é uma parcela a mais que eu não tenho.",
+  "objection": "Depois das primeiras reuniões, o que muda no mês seguinte? Plano escrito eu consigo, o difícil é ter dinheiro sobrando para seguir.",
+  "would_change_my_mind": "Um pacote focado só em sair da dívida, com preço menor ou pago depois que eu economizar o valor nos juros.",
+  "price_too_cheap": 20,
+  "price_cheap": 60,
+  "price_expensive": 130,
+  "price_too_expensive": 250
+}

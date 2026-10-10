@@ -1,0 +1,13 @@
+{
+  "id": "P063",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Ganho bem e mesmo assim o cartão e o cheque especial estão rodando, então alguma coisa está errada. Pagaria os R$ 490 do diagnóstico uma vez, porque é menos do que pago de juros num mês, mas a mensalidade eu só decido depois de ver o plano.",
+  "objection": "Meu gerente diz que me ajuda de graça, e pagar R$ 297 por mês justo agora que estou apertada parece contraditório.",
+  "would_change_my_mind": "Se o plano do diagnóstico vier genérico, do tipo 'gaste menos', eu não continuo.",
+  "price_too_cheap": 100,
+  "price_cheap": 200,
+  "price_expensive": 450,
+  "price_too_expensive": 900
+}

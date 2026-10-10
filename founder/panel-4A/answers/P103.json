@@ -1,0 +1,13 @@
+{
+  "id": "P103",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Estou com cartão e cheque especial rodando; pagar R$ 490 e depois R$ 297 por mês agora é mais uma conta. Uma planilha e cortar gasto resolvem.",
+  "objection": "Pagar todo mês por algo que eu acho que consigo fazer sozinho, e já me queimei com dica de investimento.",
+  "would_change_my_mind": "Um diagnóstico bem mais barato e focado só em sair das dívidas, pagando depois que eu sair do vermelho.",
+  "price_too_cheap": 30,
+  "price_cheap": 80,
+  "price_expensive": 150,
+  "price_too_expensive": 250
+}

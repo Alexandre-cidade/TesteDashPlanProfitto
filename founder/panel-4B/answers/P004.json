@@ -1,0 +1,13 @@
+{
+  "id": "P004",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Estou com cartão e cheque especial rodando e preciso de alguém que olhe tudo e me diga por onde começar. R$ 197 uma vez só, sem assinatura e sem comissão, eu arrisco; a mensalidade eu decido depois.",
+  "objection": "Se o plano vai ser genérico, e se R$ 297 por mês cabe no meu orçamento apertado depois.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 50,
+  "price_cheap": 150,
+  "price_expensive": 300,
+  "price_too_expensive": 450
+}

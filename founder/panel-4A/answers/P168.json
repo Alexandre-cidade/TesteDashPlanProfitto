@@ -1,0 +1,13 @@
+{
+  "id": "P168",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Minha planilha já faz o controle e eu sei quanto preciso juntar para o apartamento; não quero pagar R$ 297 por mês para ter reunião e falar com alguém. Prefiro algo 100% online.",
+  "objection": "Reunião mensal e planejador não são o que eu quero; eu só queria uma ferramenta.",
+  "would_change_my_mind": "Uma versão só digital, sem reunião, por um preço de aplicativo.",
+  "price_too_cheap": 10,
+  "price_cheap": 30,
+  "price_expensive": 70,
+  "price_too_expensive": 120
+}

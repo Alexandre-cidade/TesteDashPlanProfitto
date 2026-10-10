@@ -1,0 +1,13 @@
+{
+  "id": "P206",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Depois do divórcio e de ver o aumento sumir, preciso que alguém olhe tudo comigo. Já perdi dinheiro com dica de investimento, então o fato de não vender produto nem ganhar comissão pesa muito; faço o diagnóstico e decido depois sobre a mensalidade.",
+  "objection": "Não sei se o planejador é bom de verdade, só sei que não ganha comissão.",
+  "would_change_my_mind": "Ver reclamações sérias ou descobrir que no fim tentam vender algum investimento.",
+  "price_too_cheap": 60,
+  "price_cheap": 150,
+  "price_expensive": 250,
+  "price_too_expensive": 400
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P089",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "O cartão e o cheque especial estão me comendo e cada conversa com minha esposa vira briga; R$ 197 uma vez só, com alguém de fora olhando as dívidas, eu consigo pagar. A mensalidade de R$ 297 agora não cabe.",
+  "objection": "Tenho medo de pagar para alguém só me dizer para gastar menos, coisa que eu já sei, sem me dar um caminho real para sair das dívidas.",
+  "would_change_my_mind": "Se eu descobrir que o plano não fala de renegociar as dívidas e for só dica genérica de cortar gastos, eu não sigo.",
+  "price_too_cheap": 40,
+  "price_cheap": 100,
+  "price_expensive": 200,
+  "price_too_expensive": 300
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P004",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Meu gerente e o assessor da corretora já me orientam sem cobrar nada. Com renda variável de MEI, não vou assumir R$ 297 fixos por mês sem saber o que muda depois das primeiras reuniões.",
+  "objection": "Depois do diagnóstico e de umas duas reuniões, o que eu ganho no terceiro mês além de uma conversa de 30 minutos?",
+  "would_change_my_mind": "Ver um exemplo concreto de acompanhamento mês a mês para autônomo com renda variável, mostrando resultado em dinheiro.",
+  "price_too_cheap": 30,
+  "price_cheap": 70,
+  "price_expensive": 150,
+  "price_too_expensive": 220
+}

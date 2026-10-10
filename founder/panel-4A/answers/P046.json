@@ -1,0 +1,13 @@
+{
+  "id": "P046",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "R$ 490 mais R$ 297 por mês para alguém me dizer para gastar menos e parar de ajudar meus pais, isso eu não pago. Até me deu vontade no impulso, mas já me arrependi demais de assinatura.",
+  "objection": "Caro para ouvir o óbvio; e se eu levar o plano para casa, vira mais uma briga com minha esposa.",
+  "would_change_my_mind": "Se o diagnóstico custasse menos de R$ 200 ou mostrasse que vai me fazer economizar mais do que custa.",
+  "price_too_cheap": 30,
+  "price_cheap": 70,
+  "price_expensive": 150,
+  "price_too_expensive": 250
+}

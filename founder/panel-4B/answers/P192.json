@@ -1,0 +1,13 @@
+{
+  "id": "P192",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Ganhei aumento e o dinheiro sumiu, e R$ 197 uma vez só sem assinatura eu pago no impulso para alguém me mostrar para onde está indo. A mensalidade de R$ 297 provavelmente eu não seguiria.",
+  "objection": "Sei que eu assino as coisas no calor do momento e me arrependo; R$ 297 por mês no ano que vem eu não sei se faz sentido.",
+  "would_change_my_mind": "Se o diagnóstico exigisse muito trabalho meu para juntar documentos, eu deixaria para o ano que vem.",
+  "price_too_cheap": 50,
+  "price_cheap": 120,
+  "price_expensive": 250,
+  "price_too_expensive": 400
+}

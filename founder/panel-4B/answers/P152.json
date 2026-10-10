@@ -1,0 +1,13 @@
+{
+  "id": "P152",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "Sei que preciso me organizar, mas minha renda varia e sempre fica para o mês que vem. E mandar todas as minhas contas para uma empresa que eu nunca vi não me deixa à vontade.",
+  "objection": "Expor extrato, dívidas e tudo para uma empresa desconhecida, e pagar R$ 297 por mês num mês em que eu fature pouco.",
+  "would_change_my_mind": "Saber como meus dados são protegidos e um preço que acompanhe a renda variável de autônomo.",
+  "price_too_cheap": 30,
+  "price_cheap": 80,
+  "price_expensive": 180,
+  "price_too_expensive": 300
+}

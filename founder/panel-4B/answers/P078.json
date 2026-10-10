@@ -1,0 +1,13 @@
+{
+  "id": "P078",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Cuido das minhas finanças em planilha há décadas. Pagar R$ 297 por mês para alguém me dizer para gastar menos não faz sentido.",
+  "objection": "É caro para conselho que eu já sei.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 30,
+  "price_cheap": 60,
+  "price_expensive": 120,
+  "price_too_expensive": 200
+}

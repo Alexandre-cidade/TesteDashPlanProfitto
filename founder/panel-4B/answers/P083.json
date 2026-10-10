@@ -1,0 +1,13 @@
+{
+  "id": "P083",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Eu tenho uma decisão grande para tomar agora e o diagnóstico de R$ 197, pagamento único, é exatamente a ajuda pontual que eu quero. Compro o diagnóstico, mas a mensalidade eu não pretendo assinar.",
+  "objection": "Três ações num plano escrito pode ser pouco para uma decisão tão grande; e a mensalidade depois não faz sentido para mim, uma planilha resolve o dia a dia.",
+  "would_change_my_mind": "Se o diagnóstico for genérico e não tratar da minha decisão específica, eu desisto e não indico.",
+  "price_too_cheap": 50,
+  "price_cheap": 120,
+  "price_expensive": 250,
+  "price_too_expensive": 400
+}

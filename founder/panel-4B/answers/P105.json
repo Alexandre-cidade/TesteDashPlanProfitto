@@ -1,0 +1,13 @@
+{
+  "id": "P105",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Meu gerente do banco já me orienta e não me cobra nada, então R$ 297 por mês parece pagar por algo que eu tenho de graça. Com a ajuda aos meus pais todo mês, não sobra para mais uma mensalidade.",
+  "objection": "Depois do diagnóstico e das primeiras reuniões, não sei o que de fato muda no mês seguinte que justifique continuar pagando.",
+  "would_change_my_mind": "Uma explicação clara do que eu recebo de diferente do meu gerente mês a mês, com exemplo de resultado.",
+  "price_too_cheap": 50,
+  "price_cheap": 100,
+  "price_expensive": 200,
+  "price_too_expensive": 350
+}

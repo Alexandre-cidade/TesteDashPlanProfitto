@@ -1,0 +1,13 @@
+{
+  "id": "P124",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Meu gerente do banco já cuida dos investimentos e não me cobra nada; não vejo por que pagar R$ 297 por mês por alguém fazendo algo parecido. E app de controle de gastos eu já tentei e abandonei.",
+  "objection": "Pagar mensalidade por um serviço que hoje eu tenho de graça no banco, e no fim não usar a plataforma.",
+  "would_change_my_mind": "Ver em números quanto o gerente está me custando em taxas e produtos ruins comparado com a mensalidade.",
+  "price_too_cheap": 30,
+  "price_cheap": 60,
+  "price_expensive": 120,
+  "price_too_expensive": 200
+}

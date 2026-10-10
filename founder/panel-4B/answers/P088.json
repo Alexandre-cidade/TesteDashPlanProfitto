@@ -1,0 +1,13 @@
+{
+  "id": "P088",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Eu mesmo invisto pela corretora e sei o que estou fazendo; R$ 297 por mês é muito para alguém me dizer para cortar streaming. A briga com minha esposa sobre dinheiro não se resolve com planilha.",
+  "objection": "Caro para alguém me dizer para gastar menos, e eu provavelmente sei mais de investimento que o planejador.",
+  "would_change_my_mind": "Se fosse claramente uma sessão para o casal sentar junto com alguém neutro e acertar as metas, eu talvez pagasse o diagnóstico uma vez.",
+  "price_too_cheap": 30,
+  "price_cheap": 80,
+  "price_expensive": 150,
+  "price_too_expensive": 250
+}

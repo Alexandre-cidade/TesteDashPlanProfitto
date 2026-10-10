@@ -1,0 +1,13 @@
+{
+  "id": "P113",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Eu já controlo tudo numa planilha, não vou pagar R$ 297 por mês para alguém me dizer o que eu já sei. E plataforma online eu já larguei antes.",
+  "objection": "Pagar e não usar, como aconteceu com o app. Nosso problema em casa é a briga com o cônjuge, não falta de controle.",
+  "would_change_my_mind": "Se fosse uma sessão avulsa para mediar a conversa sobre dinheiro com meu cônjuge, sem mensalidade.",
+  "price_too_cheap": 40,
+  "price_cheap": 80,
+  "price_expensive": 150,
+  "price_too_expensive": 250
+}

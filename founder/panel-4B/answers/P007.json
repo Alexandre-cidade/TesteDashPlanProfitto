@@ -1,0 +1,13 @@
+{
+  "id": "P007",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Estou endividado e minha renda varia, R$ 197 agora faz falta e R$ 297 por mês é impossível. E já larguei app antes, a plataforma não me anima.",
+  "objection": "Pagar e não conseguir seguir o plano, e o dinheiro já está curto.",
+  "would_change_my_mind": "Um preço bem menor ou parcelado, tipo R$ 50 a R$ 80, focado só em sair das dívidas.",
+  "price_too_cheap": 15,
+  "price_cheap": 40,
+  "price_expensive": 90,
+  "price_too_expensive": 150
+}

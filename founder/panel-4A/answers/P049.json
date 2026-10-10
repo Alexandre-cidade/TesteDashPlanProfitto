@@ -1,0 +1,13 @@
+{
+  "id": "P049",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "O preço eu consigo pagar e faz sentido para uma família como a minha, mas não é agora; fim de ano, filhos, trabalho. Vou deixar para o ano que vem, como sempre.",
+  "objection": "Sei que vou adiar o envio dos documentos e as reuniões, e no fim vou pagar por algo que não andou.",
+  "would_change_my_mind": "Uma condição com prazo, tipo começar em janeiro com o diagnóstico mais barato se eu fechar agora.",
+  "price_too_cheap": 60,
+  "price_cheap": 150,
+  "price_expensive": 350,
+  "price_too_expensive": 550
+}

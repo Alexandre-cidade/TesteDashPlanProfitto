@@ -1,0 +1,13 @@
+{
+  "id": "P025",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "Sei que preciso organizar, mas não é agora; vou deixar para o mês que vem como sempre. E não tenho tempo para reunião todo mês.",
+  "objection": "Não tenho tempo para reuniões e mandar todas as contas para alguém analisar dá trabalho.",
+  "would_change_my_mind": "Se eles puxassem tudo sozinhos do meu banco e eu só recebesse o plano pronto, sem reunião.",
+  "price_too_cheap": 30,
+  "price_cheap": 70,
+  "price_expensive": 150,
+  "price_too_expensive": 250
+}

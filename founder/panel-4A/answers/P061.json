@@ -1,0 +1,13 @@
+{
+  "id": "P061",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "other",
+  "reason": "Quem cuida do dinheiro lá em casa é minha esposa, e eu não vou fechar um gasto mensal sem ela. E sinceramente, pagar para alguém me dizer para gastar menos me soa caro.",
+  "objection": "Minha bagunça é PF misturada com PJ da empresa; não está claro se um planejador de pessoa física resolve isso ou só vai me mandar cortar o cafezinho.",
+  "would_change_my_mind": "Se minha esposa visse a proposta e quisesse fazer o diagnóstico, e ficasse claro que eles separam as contas da empresa das da família.",
+  "price_too_cheap": 80,
+  "price_cheap": 150,
+  "price_expensive": 400,
+  "price_too_expensive": 800
+}

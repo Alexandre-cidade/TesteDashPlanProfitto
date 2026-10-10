@@ -1,0 +1,13 @@
+{
+  "id": "P151",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Acabei de receber um valor grande e toda conversa com meu marido sobre isso vira briga; R$ 490 por um plano escrito de alguém que não vende produto é barato perto do que está em jogo. Faço o diagnóstico, a mensalidade eu decido depois.",
+  "objection": "Eu já invisto sozinha e me acho bem informada; tenho medo de pagar para ouvir o óbvio e, depois das primeiras reuniões, nada mudar no mês seguinte.",
+  "would_change_my_mind": "Se o plano de diagnóstico vier genérico, sem tratar o dinheiro novo e a nossa situação de casal, não continuo no acompanhamento.",
+  "price_too_cheap": 90,
+  "price_cheap": 200,
+  "price_expensive": 600,
+  "price_too_expensive": 1200
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P108",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "Passei a semana inteira em reunião por vídeo, a última coisa que quero é mais uma. Sei que o aumento sumiu, mas isso fica para o ano que vem.",
+  "objection": "Mais uma reunião por vídeo; e acho que dá para resolver com o conteúdo que já assisto de graça.",
+  "would_change_my_mind": "Uma versão sem reunião, só o plano por escrito, ou minha esposa insistir em fazer a sessão do casal.",
+  "price_too_cheap": 80,
+  "price_cheap": 150,
+  "price_expensive": 300,
+  "price_too_expensive": 500
+}

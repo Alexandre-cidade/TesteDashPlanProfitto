@@ -1,0 +1,13 @@
+{
+  "id": "P178",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Eu tenho minha planilha e consigo me organizar sozinho; R$ 297 por mês é dinheiro que vai para a escola das crianças. Isso parece serviço para quem tem muito dinheiro.",
+  "objection": "Pagar alguém para fazer o que minha planilha já faz.",
+  "would_change_my_mind": "Se eu continuar sem entender para onde foi o aumento, talvez pague só o diagnóstico, mas nunca a mensalidade.",
+  "price_too_cheap": 20,
+  "price_cheap": 50,
+  "price_expensive": 100,
+  "price_too_expensive": 180
+}

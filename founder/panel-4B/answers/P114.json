@@ -1,0 +1,13 @@
+{
+  "id": "P114",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Quem me orienta é o gerente do banco e ele não cobra nada. Comecei a trabalhar agora, ainda não tenho investimento, e gastar R$ 197 para depois ouvir que tenho que pagar R$ 297 por mês não cabe para mim.",
+  "objection": "Mesmo dizendo que cancela pelo site, essas empresas sempre dão um jeito de complicar, e R$ 297 por mês pesa muito no meu salário.",
+  "would_change_my_mind": "Um plano mais barato, focado só no meu objetivo de comprar o imóvel, por menos de R$ 100.",
+  "price_too_cheap": 20,
+  "price_cheap": 50,
+  "price_expensive": 120,
+  "price_too_expensive": 200
+}

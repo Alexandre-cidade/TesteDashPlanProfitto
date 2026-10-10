@@ -166,6 +166,15 @@ select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid var(--lin
           <label class="tog"><input type="checkbox" id="dividas"><span>Trilha para sair das dívidas</span></label>
           <label class="tog"><input type="checkbox" id="tributario"><span>Módulo tributário, PJ e sucessão</span></label>
         </fieldset>
+        <fieldset><legend>Canais alternativos</legend>
+          <div class="ctl"><div class="row"><label for="pleads">Interessados por mês via indicadores</label><output id="o-pleads"></output></div><input type="range" id="pleads" min="0" max="300" step="5"></div>
+          <p class="muted" style="font-size:.75rem;margin:-4px 0 0">Influenciadores, vendedores de outros serviços, parceiros. Chegam indicados, então confiam mais.</p>
+          <div class="ctl"><div class="row"><label for="pcom">Percentual do indicador</label><output id="o-pcom"></output></div><input type="range" id="pcom" min="0" max="50" step="1"></div>
+          <div class="ctl"><div class="row"><label for="pdur">Indicador recebe por</label><output id="o-pdur"></output></div><input type="range" id="pdur" min="1" max="60" step="1"></div>
+          <div class="ctl"><div class="row"><label for="aleads">Interessados por mês da base dos assessores</label><output id="o-aleads"></output></div><input type="range" id="aleads" min="0" max="300" step="5"></div>
+          <div class="ctl"><div class="row"><label for="acom">Percentual do assessor</label><output id="o-acom"></output></div><input type="range" id="acom" min="0" max="50" step="1"></div>
+          <div class="ctl"><div class="row"><label for="adur">Assessor recebe por</label><output id="o-adur"></output></div><input type="range" id="adur" min="1" max="60" step="1"></div>
+        </fieldset>
         <fieldset><legend>Vendas</legend>
           <div class="ctl"><div class="row"><label for="rede">Contatos da rede por mês</label><output id="o-rede"></output></div><input type="range" id="rede" min="0" max="200" step="5"></div>
           <div class="ctl"><div class="row"><label for="mkt">Marketing por mês</label><output id="o-mkt"></output></div><input type="range" id="mkt" min="0" max="15000" step="500"></div>
@@ -220,6 +229,10 @@ select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid var(--lin
           <div class="flexbetween"><h3>Para onde vai cada R$ 100 da receita</h3><select id="split-year" aria-label="Ano"><option value="0">Ano 1</option><option value="1">Ano 2</option><option value="2">Ano 3</option><option value="3">Ano 4</option><option value="4" selected>Ano 5</option></select></div>
           <p class="muted" style="font-size:.8rem;margin:4px 0 10px">Divisão da receita do ano escolhido. A última linha é o que fica para a empresa depois de tudo.</p>
           <div class="bars" id="split"></div>
+        </div>
+        <div class="card">
+          <div class="flexbetween"><h3>Canais de aquisição</h3><span class="muted" id="ch-note" style="font-size:.8rem"></span></div>
+          <div class="tbl" style="margin-top:8px"><table id="tbl-ch"></table></div>
         </div>
         <div class="grid2">
           <div class="card">
@@ -383,7 +396,7 @@ const BAR2LEV={cancel:'cancel',comissao:'comissao',cfp:'cfp',indicacao:'prova',a
 const BARNAME={cancel:'Medo de não conseguir cancelar',comissao:'Desconfiança de comissão',cfp:'Quer planejador certificado',indicacao:'Só compra por indicação',avaliacoes:'Quer avaliações reais',exemplo:'Quer ver um plano exemplo',garantia_qual:'Garantia só cobre atraso',casal:'Briga com o cônjuge',dividas:'Dívida rodando',parcelado:'Quer parcelar',tributario:'Quer tributário / sucessão',raiox:'Acha que o gerente faz de graça',checkin:'Já largou app',diag_barato:'Quer diagnóstico barato ou 1ª conversa grátis'};
 
 const PRESETS={
- atual:{m:297,diag:true,dprice:490,parcelado:false,cancel:true,comissao:true,cfp:false,garantia:false,exemplo:false,prova:false,checkin:true,casal:false,raiox:false,dividas:false,tributario:false,rede:25,mkt:3000,cpl:40,real:50,conv:50,churn:3,ceo1:10000,ceo2:10000,plan:20,tax:11,pmt:5000,cash:100000,cap:120,pfix:0,span:6,lead:5,perprof:300,other:900,growth:25},
+ atual:{m:297,diag:true,dprice:490,parcelado:false,cancel:true,comissao:true,cfp:false,garantia:false,exemplo:false,prova:false,checkin:true,casal:false,raiox:false,dividas:false,tributario:false,rede:25,mkt:3000,cpl:40,real:50,conv:50,churn:3,ceo1:10000,ceo2:10000,plan:20,tax:11,pmt:5000,cash:100000,cap:120,pfix:0,span:6,lead:5,perprof:300,other:900,growth:25,pleads:0,pcom:10,pdur:12,aleads:0,acom:15,adur:12},
 };
 PRESETS.v1=Object.assign({},PRESETS.atual,{m:350,diag:false,dprice:0,cancel:false,comissao:false,checkin:false});
 PRESETS.rec=Object.assign({},PRESETS.atual,{dprice:197,garantia:true,exemplo:true,casal:true,raiox:true,dividas:true,ceo1:5000});
@@ -408,25 +421,33 @@ function team(clients,c){const planners=Math.max(1,Math.ceil(clients/Math.max(1,
 function teamCost(tm,c){return tm.planners*c.pfix+(tm.planners+tm.leaders)*c.perprof}
 function leadShare(tm,c){return tm.leaders>0?Math.min(1,tm.leaders*c.span/tm.planners):0}
 function platformCost(clients,c){return c.pmt+Math.max(0,clients-400)*20}
+const CH=['dir','ind','ase'];
 function simulate(c){
   const rate=panelRate(c)*c.real/100;
-  const unitVar=(c.plan+c.tax+3.5)/100;
-  const contrib=c.m*(1-unitVar);
-  const months=[];let clients=0,cash=c.cash-15000,beMonth=null,minCash=cash,outMonth=null;
+  const warm=Object.assign({},c,{prova:true});const rateWarm=panelRate(warm)*c.real/100; // quem chega indicado já confia mais
+  const months=[];let cash=c.cash-15000,beMonth=null,minCash=cash,outMonth=null;
+  const coh={dir:[],ind:[],ase:[]};const dur={dir:0,ind:c.pdur,ase:c.adur},com={dir:0,ind:c.pcom/100,ase:c.acom/100};
   for(let mo=1;mo<=HZ;mo++){
     const ramp=mo===1?0.5:mo===2?0.75:1;
     const g=Math.pow(1+c.growth/100,Math.floor((mo-1)/12));
-    const leads=(c.rede+(c.cpl>0?c.mkt/c.cpl:0))*ramp*g;
-    const buyers=leads*rate;
-    const diags=c.diag?buyers:0;
-    const newSubs=c.diag?buyers*c.conv/100:buyers;
-    const lost=clients*c.churn/100;
-    clients=clients-lost+newSubs;
-    const rev=clients*c.m+diags*c.dprice;
+    const L={dir:(c.rede+(c.cpl>0?c.mkt/c.cpl:0))*ramp*g,ind:c.pleads*ramp*g,ase:c.aleads*ramp*g};
+    const R={dir:rate,ind:rateWarm,ase:rateWarm};
+    let leads=0,diags=0,newSubs=0,lost=0,clients=0,rev=0,comm={ind:0,ase:0},byCh={};
+    CH.forEach(k=>{
+      const buyers=L[k]*R[k];const d=c.diag?buyers:0;const ns=c.diag?buyers*c.conv/100:buyers;
+      coh[k].forEach(x=>{const l=x.n*c.churn/100;lost+=l;x.n-=l;x.age++});
+      coh[k].push({n:ns,age:0});
+      const n=coh[k].reduce((a,x)=>a+x.n,0);
+      const nCom=coh[k].reduce((a,x)=>a+(x.age<dur[k]?x.n:0),0);
+      const r=n*c.m+d*c.dprice;
+      if(k!=='dir')comm[k]=(nCom*c.m+d*c.dprice)*com[k];
+      leads+=L[k];diags+=d;newSubs+=ns;clients+=n;rev+=r;byCh[k]={n,rev:r,newSubs:ns};
+    });
     const tm=team(clients,c);
     const leadVar=rev*c.lead/100*leadShare(tm,c);
     const planVar=rev*c.plan/100, taxFee=rev*(c.tax+3.5)/100;
-    const varCost=planVar+taxFee+leadVar;
+    const commVar=comm.ind+comm.ase;
+    const varCost=planVar+taxFee+leadVar+commVar;
     const tcost=teamCost(tm,c);
     const ceo=beMonth===null?c.ceo1:c.ceo2;
     const platform=platformCost(clients,c);
@@ -435,15 +456,20 @@ function simulate(c){
     if(beMonth===null&&profit>=0)beMonth=mo;
     cash+=profit;minCash=Math.min(minCash,cash);
     if(outMonth===null&&cash<0)outMonth=mo;
-    months.push({mo,leads,diags,newSubs,lost,clients,rev,varCost,planVar,leadVar,taxFee,tcost,platform,ceo,mkt:c.mkt*g,fixed,profit,cash,planners:tm.planners,leaders:tm.leaders});
+    months.push({mo,leads,diags,newSubs,lost,clients,rev,varCost,planVar,leadVar,taxFee,indVar:comm.ind,aseVar:comm.ase,tcost,platform,ceo,mkt:c.mkt*g,fixed,profit,cash,planners:tm.planners,leaders:tm.leaders,
+      cDir:byCh.dir.n,cInd:byCh.ind.n,cAse:byCh.ase.n,rDir:byCh.dir.rev,rInd:byCh.ind.rev,rAse:byCh.ase.rev,nDir:byCh.dir.newSubs,nInd:byCh.ind.newSubs,nAse:byCh.ase.newSubs});
   }
-  // break-even em clientes com a equipe escalando (CEO antes do break-even, marketing do ano 1)
+  // break-even em clientes, com a equipe escalando e o peso médio das comissões do último ano
+  const ly=months.slice(48);const lrev=ly.reduce((a,x)=>a+x.rev,0)||1;const commShare=ly.reduce((a,x)=>a+x.indVar+x.aseVar,0)/lrev;
+  const unitVar=(c.plan+c.tax+3.5)/100+commShare;
+  const contrib=c.m*(1-unitVar);
   let beClients=Infinity;
   for(let n=1;n<=20000;n++){const tm=team(n,c);const pr=n*c.m*(1-unitVar-c.lead/100*leadShare(tm,c))-(platformCost(n,c)+c.mkt+c.other+c.ceo1+teamCost(tm,c));if(pr>=0){beClients=n;break}}
-  const years=[];for(let y=0;y<HZ/12;y++){const ms=months.slice(y*12,y*12+12);const s=k=>ms.reduce((a,x)=>a+x[k],0);const e=ms[11];
-    years.push({y:y+1,rev:s('rev'),profit:s('profit'),varCost:s('varCost'),planVar:s('planVar'),leadVar:s('leadVar'),taxFee:s('taxFee'),tcost:s('tcost'),platform:s('platform'),ceo:s('ceo'),mkt:s('mkt'),newSubs:s('newSubs'),diags:s('diags'),clients:e.clients,planners:e.planners,leaders:e.leaders,cash:e.cash,mrr:e.clients*c.m})}
+  const keys=['rev','profit','varCost','planVar','leadVar','taxFee','indVar','aseVar','tcost','platform','ceo','mkt','newSubs','diags','rDir','rInd','rAse','nDir','nInd','nAse'];
+  const years=[];for(let y=0;y<HZ/12;y++){const ms=months.slice(y*12,y*12+12);const e=ms[11];const o={y:y+1};keys.forEach(k=>o[k]=ms.reduce((a,x)=>a+x[k],0));
+    Object.assign(o,{clients:e.clients,planners:e.planners,leaders:e.leaders,cash:e.cash,mrr:e.clients*c.m,cDir:e.cDir,cInd:e.cInd,cAse:e.cAse});years.push(o)}
   const y1=years[0].profit;
-  return {rate,months,years,contrib,beClients,beMonth,minCash,outMonth,y1,panel:panelRate(c)};
+  return {rate,rateWarm,months,years,contrib,beClients,beMonth,minCash,outMonth,y1,panel:panelRate(c)};
 }
 
 // ---- estado ----
@@ -455,7 +481,7 @@ try{const s=localStorage.getItem('profitto-cur');if(s)cur=Object.assign({},PRESE
 if(cur.lead>20)cur.lead=PRESETS.atual.lead;
 write(cur);
 
-const FMT={cap:v=>v+' clientes',pfix:v=>BRL(v),span:v=>v+' planejadores',lead:v=>String(v).replace('.',',')+'%',perprof:v=>BRL(v),other:v=>BRL(v),growth:v=>v+'%',m:v=>BRL(v)+'/mês',dprice:v=>v==0?'grátis':BRL(v),rede:v=>v+' pessoas',mkt:v=>BRL(v),cpl:v=>BRL(v),real:v=>v+'%',conv:v=>v+'%',churn:v=>String(v).replace('.',',')+'%',ceo1:v=>BRL(v),ceo2:v=>BRL(v),plan:v=>v+'%',tax:v=>String(v).replace('.',',')+'%',pmt:v=>BRL(v),cash:v=>BRL(v)};
+const FMT={pleads:v=>v+' pessoas',pcom:v=>v+'% da receita',pdur:v=>v==60?'60 meses (sempre)':v+' meses',aleads:v=>v+' pessoas',acom:v=>v+'% da receita',adur:v=>v==60?'60 meses (sempre)':v+' meses',cap:v=>v+' clientes',pfix:v=>BRL(v),span:v=>v+' planejadores',lead:v=>String(v).replace('.',',')+'%',perprof:v=>BRL(v),other:v=>BRL(v),growth:v=>v+'%',m:v=>BRL(v)+'/mês',dprice:v=>v==0?'grátis':BRL(v),rede:v=>v+' pessoas',mkt:v=>BRL(v),cpl:v=>BRL(v),real:v=>v+'%',conv:v=>v+'%',churn:v=>String(v).replace('.',',')+'%',ceo1:v=>BRL(v),ceo2:v=>BRL(v),plan:v=>v+'%',tax:v=>String(v).replace('.',',')+'%',pmt:v=>BRL(v),cash:v=>BRL(v)};
 
 function delta(a,b,higherBetter,fmt){
   const d=a-b; const eps=Math.max(Math.abs(b)*0.005,0.0001);
@@ -576,11 +602,14 @@ function yearsChart(r,R){
   const row=(lab,f,cls)=>`<tr><td>${lab}</td>${ys.map((yy,i)=>`<td class="n"${cls?` style="color:${cls(yy)}"`:''}>${f(yy,i)}</td>`).join('')}</tr>`;
   $('tbl-years').innerHTML='<tr><th></th>'+ys.map(yy=>`<th class="n">Ano ${yy.y}</th>`).join('')+'</tr>'+
    row('Clientes no fim do ano',yy=>Math.round(yy.clients).toLocaleString('pt-BR'))+
+   row('· diretos / indicados / assessores',yy=>Math.round(yy.cDir)+' / '+Math.round(yy.cInd)+' / '+Math.round(yy.cAse))+
    row('Novos assinantes no ano',yy=>Math.round(yy.newSubs).toLocaleString('pt-BR'))+
    row('MRR no fim do ano',yy=>BRL(yy.mrr))+
    row('Receita',yy=>BRL(yy.rev))+
    row('Planejadores ('+cur.plan+'% da receita)',yy=>BRL(-yy.planVar))+
    row('Líderes de time ('+String(cur.lead).replace('.',',')+'% da receita do time)',yy=>BRL(-yy.leadVar))+
+   row('Indicadores ('+cur.pcom+'% por '+cur.pdur+' meses)',yy=>BRL(-yy.indVar))+
+   row('Assessores ('+cur.acom+'% por '+cur.adur+' meses)',yy=>BRL(-yy.aseVar))+
    row('Imposto + cobrança',yy=>BRL(-yy.taxFee))+
    row('<b>Fica para a empresa antes dos fixos</b>',yy=>BRL(yy.rev-yy.varCost)+' ('+pct(keepV(yy))+')')+
    row('Equipe fixa (fixo por planejador, custo por profissional)',yy=>BRL(-yy.tcost))+
@@ -595,13 +624,20 @@ function yearsChart(r,R){
 let lastR=null;
 function split(r){
   lastR=r;const yy=r.years[+$('split-year').value];const R=yy.rev||1;
-  const parts=[['Planejadores',yy.planVar],['Líderes de time',yy.leadVar],['Imposto + cobrança',yy.taxFee],['Equipe fixa',yy.tcost],['Plataforma',yy.platform],['Marketing',yy.mkt],['CEO',yy.ceo],['Outros fixos',cur.other*12]];
+  const parts=[['Planejadores',yy.planVar],['Líderes de time',yy.leadVar],['Indicadores',yy.indVar],['Assessores',yy.aseVar],['Imposto + cobrança',yy.taxFee],['Equipe fixa',yy.tcost],['Plataforma',yy.platform],['Marketing',yy.mkt],['CEO',yy.ceo],['Outros fixos',cur.other*12]];
   const used=parts.reduce((a,p)=>a+p[1],0);const left=yy.rev-used;
   const mx=Math.max(R,used);
   $('split').innerHTML=parts.map(([n,v])=>`<div class="bar"><div class="t"><div class="flexbetween"><span>${n}</span><span class="muted num">${BRL(v)}</span></div><div class="track"><div class="fill" style="width:${Math.min(100,v/mx*100)}%;background:var(--brand-2)"></div></div></div><span class="val">${(v/R*100).toFixed(0)}</span></div>`).join('')+
    `<div class="bar"><div class="t"><div class="flexbetween"><b>${left>=0?'Fica para a empresa':'Falta para fechar a conta'}</b><span class="num" style="color:${left>=0?'var(--good)':'var(--bad)'}">${BRL(left)}</span></div><div class="track"><div class="fill" style="width:${Math.min(100,Math.abs(left)/mx*100)}%;background:${left>=0?'var(--good)':'var(--bad)'}"></div></div></div><span class="val" style="color:${left>=0?'var(--good)':'var(--bad)'}">${(left/R*100).toFixed(0)}</span></div>`;
 }
 $('split-year').addEventListener('change',()=>lastR&&split(lastR));
+function channels(r){
+  const y=r.years[+$('split-year').value];
+  const rows=[['Direto (rede + marketing)',y.nDir,y.cDir,y.rDir,0,r.rate],['Indicadores',y.nInd,y.cInd,y.rInd,y.indVar,r.rateWarm],['Assessores',y.nAse,y.cAse,y.rAse,y.aseVar,r.rateWarm]];
+  $('ch-note').textContent='Ano '+y.y+' · conversão do painel: direto '+(r.rate*100).toFixed(1).replace('.',',')+'%, indicado '+(r.rateWarm*100).toFixed(1).replace('.',',')+'%';
+  $('tbl-ch').innerHTML='<tr><th>Canal</th><th class="n">Novos assinantes no ano</th><th class="n">Clientes no fim do ano</th><th class="n">Receita no ano</th><th class="n">Percentual pago</th><th class="n">Fica para a empresa</th></tr>'+rows.map(([n,ns,cl,rv,cm])=>`<tr><td>${n}</td><td class="n">${Math.round(ns)}</td><td class="n">${Math.round(cl)}</td><td class="n">${BRL(rv)}</td><td class="n">${BRL(cm)}</td><td class="n">${rv>0?pct((rv-cm-rv*(cur.plan+cur.tax+3.5)/100)/rv):'—'}</td></tr>`).join('');
+}
+$('split-year').addEventListener('change',()=>lastR&&channels(lastR));
 function monthTable(r){
   const rows=r.months.filter(m=>[1,2,3,6,9,12,18,24,36,48,60].includes(m.mo));
   $('tbl-month').innerHTML='<tr><th>Mês</th><th class="n">Interessados</th><th class="n">Diagnósticos</th><th class="n">Novos</th><th class="n">Clientes</th><th class="n">Equipe</th><th class="n">Receita</th><th class="n">Resultado</th><th class="n">Caixa</th></tr>'+rows.map(m=>`<tr><td>${m.mo}</td><td class="n">${Math.round(m.leads)}</td><td class="n">${m.diags.toFixed(1)}</td><td class="n">${m.newSubs.toFixed(1)}</td><td class="n">${Math.round(m.clients)}</td><td class="n">${m.planners}+${m.leaders}</td><td class="n">${BRL(m.rev)}</td><td class="n" style="color:${m.profit<0?'var(--bad)':'var(--good)'}">${BRL(m.profit)}</td><td class="n" style="color:${m.cash<0?'var(--bad)':'inherit'}">${BRL(m.cash)}</td></tr>`).join('');
@@ -615,7 +651,7 @@ function update(){
   kpis(r,R,c);
   lineChart($('ch-clients'),r.months.map(m=>m.clients),R.months.map(m=>m.clients),{ref:r.beClients,fmt:v=>Math.round(v),fmtTip:v=>Math.round(v)+' clientes'});
   lineChart($('ch-cash'),r.months.map(m=>m.cash),R.months.map(m=>m.cash),{fmt:BRLk,fmtTip:BRL});
-  yearsChart(r,R);split(r);dots(c);leverRank(c);renderPick(c);monthTable(r);
+  yearsChart(r,R);split(r);channels(r);dots(c);leverRank(c);renderPick(c);monthTable(r);
 }
 document.querySelectorAll('aside input').forEach(el=>el.addEventListener('input',()=>{$('preset').value='';update()}));
 $('preset').addEventListener('change',e=>{if(!e.target.value)return;write(PRESETS[e.target.value]);update()});

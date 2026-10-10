@@ -1,0 +1,13 @@
+{
+  "id": "P028",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "Atendo cliente o dia todo e vou deixando para depois. Quando penso no imóvel, pergunto para o gerente do banco, que não me cobra nada.",
+  "objection": "Meu gerente já faz isso de graça, por que eu pagaria?",
+  "would_change_my_mind": "Um plano específico para o imóvel com prazo e valor, mostrando quanto eu ganharia em relação ao que o banco me oferece.",
+  "price_too_cheap": 50,
+  "price_cheap": 100,
+  "price_expensive": 220,
+  "price_too_expensive": 350
+}

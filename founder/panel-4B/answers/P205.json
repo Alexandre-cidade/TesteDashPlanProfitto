@@ -1,0 +1,13 @@
+{
+  "id": "P205",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Minha planilha já mostra tudo e eu sei quanto preciso guardar para o apartamento. Não vejo o que um plano com '3 primeiras ações' vai me dizer que eu já não sei.",
+  "objection": "Dizer que não recebe comissão é fácil; não tenho como saber se o planejador é bom, e com renda variável R$ 297 todo mês pesa.",
+  "would_change_my_mind": "Ver um exemplo real de plano entregue para um autônomo com renda variável e objetivo de imóvel, mostrando algo que a planilha não mostra.",
+  "price_too_cheap": 40,
+  "price_cheap": 100,
+  "price_expensive": 200,
+  "price_too_expensive": 350
+}

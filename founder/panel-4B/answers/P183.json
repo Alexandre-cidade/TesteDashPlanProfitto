@@ -1,0 +1,13 @@
+{
+  "id": "P183",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Não vou abrir todas as minhas contas, dívidas e investimentos para uma empresa de Porto Alegre que eu nunca ouvi falar. Já perdi dinheiro confiando em dica e já larguei aplicativo depois de um mês.",
+  "objection": "Não conheço a Profitto nem quem é o planejador; não sei quem vai ver meus dados nem que certificação essa pessoa tem.",
+  "would_change_my_mind": "Indicação de um colega médico ou advogado que já usa, e o nome e a certificação do planejador antes de pagar.",
+  "price_too_cheap": 100,
+  "price_cheap": 250,
+  "price_expensive": 700,
+  "price_too_expensive": 1500
+}

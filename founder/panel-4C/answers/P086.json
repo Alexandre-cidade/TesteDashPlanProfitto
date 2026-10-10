@@ -1,0 +1,13 @@
+{
+  "id": "P086",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Já paguei app e larguei, então não entro em nada sem ver o Reclame Aqui antes, e essa empresa eu não conheço. Por enquanto, não.",
+  "objection": "Medo de pagar e não usar de novo, e de não ter histórico nenhum de reclamação para eu conferir se a garantia funciona.",
+  "would_change_my_mind": "Encontrar a empresa bem avaliada no Reclame Aqui, com cancelamento e reembolso confirmados por outros clientes.",
+  "price_too_cheap": 50,
+  "price_cheap": 120,
+  "price_expensive": 250,
+  "price_too_expensive": 400
+}

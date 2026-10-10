@@ -1,0 +1,13 @@
+{
+  "id": "P159",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Com cartão rodando e o mês já apertado, não vou somar mais uma mensalidade às assinaturas que já pago. Uma planilha resolve.",
+  "objection": "Não preciso pagar todo mês para alguém me dizer que estou gastando demais.",
+  "would_change_my_mind": "Um diagnóstico bem mais barato e focado em negociar a dívida.",
+  "price_too_cheap": 20,
+  "price_cheap": 50,
+  "price_expensive": 120,
+  "price_too_expensive": 200
+}

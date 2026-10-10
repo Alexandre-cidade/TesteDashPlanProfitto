@@ -1,0 +1,13 @@
+{
+  "id": "P144",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "Eu já invisto sozinho pelo app e todo mês ajudo meus pais, então agora não sobra para pagar planejador. Talvez no ano que vem, se eu sentir que travei.",
+  "objection": "Acho que sei o básico sozinho; pagar R$ 297 por mês come uma parte grande do que eu consigo investir.",
+  "would_change_my_mind": "Se sobrasse mais dinheiro no mês ou se eu tivesse um objetivo grande que eu não soubesse planejar sozinho.",
+  "price_too_cheap": 30,
+  "price_cheap": 79,
+  "price_expensive": 150,
+  "price_too_expensive": 250
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P130",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "trust",
+  "reason": "O que me afastava era o medo de alguém me empurrar produto, e aqui eles dizem que não vendem nem ganham comissão. Depois de checar o Reclame Aqui e ver o plano de exemplo no site, eu pagaria o diagnóstico, que tem garantia.",
+  "objection": "Como sei que esse planejador é bom de verdade e que a promessa de não vender produto é cumprida?",
+  "would_change_my_mind": "Reclamações no Reclame Aqui sobre reembolso negado ou venda de produto me fariam desistir.",
+  "price_too_cheap": 50,
+  "price_cheap": 120,
+  "price_expensive": 280,
+  "price_too_expensive": 450
+}

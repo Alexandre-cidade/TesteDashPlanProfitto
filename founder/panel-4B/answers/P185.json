@@ -1,0 +1,13 @@
+{
+  "id": "P185",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "other",
+  "reason": "Quem cuida do dinheiro lá em casa é meu marido, e eu não pago nada fixo sem falar com ele. Pelo jeito isso é para quem tem muito dinheiro sobrando, não para quem ainda ajuda os pais.",
+  "objection": "R$ 297 por mês é uma conta fixa a mais, e meu marido vai perguntar por que pagar alguém se ele já cuida disso.",
+  "would_change_my_mind": "Se meu marido visse e quisesse fazer o diagnóstico junto comigo.",
+  "price_too_cheap": 30,
+  "price_cheap": 80,
+  "price_expensive": 150,
+  "price_too_expensive": 250
+}

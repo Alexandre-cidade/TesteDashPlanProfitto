@@ -1,0 +1,13 @@
+{
+  "id": "P213",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Eu já controlo tudo na minha planilha, sei exatamente para onde vai o dinheiro. Pagar alguém para me dizer as 3 primeiras ações que eu já sei não faz sentido.",
+  "objection": "Não vejo o que um planejador me daria que a minha planilha não dá; e mais uma plataforma de controle de gastos eu já sei que vou abandonar.",
+  "would_change_my_mind": "Se servisse como mediação neutra com minha esposa, uma sessão para nós dois alinharmos as metas, talvez eu pagasse pelo diagnóstico.",
+  "price_too_cheap": 50,
+  "price_cheap": 100,
+  "price_expensive": 200,
+  "price_too_expensive": 350
+}

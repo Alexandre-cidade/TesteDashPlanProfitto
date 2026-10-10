@@ -1,0 +1,13 @@
+{
+  "id": "P118",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "convenience",
+  "reason": "Meu gerente já cuida dos investimentos sem mensalidade, e esse serviço é baseado em reunião e WhatsApp com uma pessoa. Eu queria algo que eu fizesse sozinha, online.",
+  "objection": "Ter que conversar todo mês com alguém sobre minha vida financeira, e ainda pagar por isso.",
+  "would_change_my_mind": "Uma versão só pela plataforma, sem reuniões, bem mais barata.",
+  "price_too_cheap": 20,
+  "price_cheap": 50,
+  "price_expensive": 100,
+  "price_too_expensive": 180
+}

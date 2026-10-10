@@ -1,0 +1,13 @@
+{
+  "id": "P038",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Estou com cartão e cheque especial rodando; tirar R$ 490 agora é piorar o buraco. Primeiro quero apagar o incêndio, talvez ano que vem.",
+  "objection": "Gastar com planejamento quando o dinheiro do mês já não fecha, e ter que mostrar a bagunça das minhas dívidas.",
+  "would_change_my_mind": "Poder pagar o diagnóstico parcelado ou só depois de ver o plano para sair das dívidas.",
+  "price_too_cheap": 50,
+  "price_cheap": 100,
+  "price_expensive": 250,
+  "price_too_expensive": 400
+}

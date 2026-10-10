@@ -1,0 +1,13 @@
+{
+  "id": "P014",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Sou servidor, meu salário cai certinho todo mês e não tenho dívida; não vejo por que pagar R$ 197 por um plano. Depois da dica furada que me fez perder dinheiro eu só parei de mexer em investimento.",
+  "objection": "Meu gerente me atende sem cobrar nada, então pagar para alguém me dizer o que fazer parece dinheiro jogado fora.",
+  "would_change_my_mind": "Um amigo de confiança me mostrando quanto economizou de verdade com isso.",
+  "price_too_cheap": 30,
+  "price_cheap": 80,
+  "price_expensive": 150,
+  "price_too_expensive": 250
+}

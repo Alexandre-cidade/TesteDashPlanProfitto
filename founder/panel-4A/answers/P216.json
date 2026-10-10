@@ -1,0 +1,13 @@
+{
+  "id": "P216",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "R$ 490 mais R$ 297 por mês pra alguém me mandar cortar gastos é caro. Tenho um objetivo concreto, mas antes de qualquer coisa vou ver no Reclame Aqui, e nem conheço essa empresa.",
+  "objection": "Pagar caro pra ouvir 'gaste menos', coisa que eu já sei.",
+  "would_change_my_mind": "Um plano voltado ao meu objetivo (imóvel, escola) com números concretos, e uma reputação limpa no Reclame Aqui.",
+  "price_too_cheap": 50,
+  "price_cheap": 100,
+  "price_expensive": 200,
+  "price_too_expensive": 300
+}

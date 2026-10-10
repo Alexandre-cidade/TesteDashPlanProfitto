@@ -1,0 +1,13 @@
+{
+  "id": "P185",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "R$ 490 para eu tem pouco peso, é pagamento único e é o planejador que marca, então não depende de eu lembrar de abrir um app. Quero alguém de fora olhando a ajuda aos meus pais junto com meus investimentos; o mensal eu só decido depois de ver o plano.",
+  "objection": "Tenho medo de o plano ser genérico demais para quem já investe sozinho e de eu pagar a mensalidade e largar como larguei os apps.",
+  "would_change_my_mind": "Se o plano vier raso, com coisa que eu já sei, não continuo no acompanhamento.",
+  "price_too_cheap": 100,
+  "price_cheap": 250,
+  "price_expensive": 600,
+  "price_too_expensive": 1000
+}

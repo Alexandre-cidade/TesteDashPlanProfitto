@@ -1,0 +1,13 @@
+{
+  "id": "P034",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "Tenho uma decisão grande de aposentadoria pela frente, mas não vou resolver isso agora; talvez no ano que vem. E um plano com 'as 3 primeiras ações' parece coisa de iniciante, não de quem precisa de uma análise específica.",
+  "objection": "Já perdi dinheiro seguindo conselho de quem eu não conhecia. Um planejador desconhecido, online, preço baixo demais para o tamanho do problema que eu tenho: desconfio da profundidade.",
+  "would_change_my_mind": "Uma consulta pontual focada na minha decisão de aposentadoria, com um planejador de credencial e experiência que eu possa verificar.",
+  "price_too_cheap": 300,
+  "price_cheap": 800,
+  "price_expensive": 2500,
+  "price_too_expensive": 5000
+}

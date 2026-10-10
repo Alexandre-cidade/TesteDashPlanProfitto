@@ -1,0 +1,13 @@
+{
+  "id": "P053",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Não vou entregar todas as minhas contas, dívidas e investimentos para uma empresa que eu não conheço só porque o anúncio é bonito. E já larguei app de controle antes, essa plataforma de gastos não me convence.",
+  "objection": "Expor toda a minha vida financeira para estranhos, sem saber o que fazem com esses dados.",
+  "would_change_my_mind": "Indicação de alguém que eu conheço que já usou, e clareza sobre como protegem meus dados.",
+  "price_too_cheap": 80,
+  "price_cheap": 150,
+  "price_expensive": 250,
+  "price_too_expensive": 400
+}

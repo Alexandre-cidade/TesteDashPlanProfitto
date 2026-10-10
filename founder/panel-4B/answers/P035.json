@@ -1,0 +1,13 @@
+{
+  "id": "P035",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "O cartão e o cheque especial estão rodando e toda conversa com minha esposa vira briga; alguém de fora, que não quer me vender nada, pode ajudar. Faço só o diagnóstico de R$ 197, que é pagamento único, e a mensalidade fica para depois.",
+  "objection": "Meu gerente do banco diz que faz isso de graça, e R$ 297 por mês agora, endividado, é difícil de justificar.",
+  "would_change_my_mind": "Se o diagnóstico vier genérico, do tipo 'gaste menos', não continuo para a mensalidade.",
+  "price_too_cheap": 50,
+  "price_cheap": 100,
+  "price_expensive": 200,
+  "price_too_expensive": 350
+}

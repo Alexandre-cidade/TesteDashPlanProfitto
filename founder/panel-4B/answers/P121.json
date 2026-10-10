@@ -1,0 +1,13 @@
+{
+  "id": "P121",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "Sei que preciso, e 197 nem é muito, mas eu e meu marido brigamos toda vez que falamos de dinheiro e não vou abrir esse assunto agora; vou deixar para depois das férias das crianças, como sempre.",
+  "objection": "Depois do diagnóstico e das primeiras reuniões, o que muda de verdade no mês seguinte se a gente continuar gastando igual e brigando igual?",
+  "would_change_my_mind": "Uma data marcada por eles, com a reunião já agendada para nós dois juntos, sem eu ter que tomar a iniciativa.",
+  "price_too_cheap": 60,
+  "price_cheap": 150,
+  "price_expensive": 300,
+  "price_too_expensive": 500
+}

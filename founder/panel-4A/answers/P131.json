@@ -1,0 +1,13 @@
+{
+  "id": "P131",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Meu gerente do banco já cuida disso e não me cobra nada. Com renda variável, pagar R$ 490 de cara e depois R$ 297 todo mês não faz sentido pra mim.",
+  "objection": "Tem reunião, WhatsApp, planejador marcando horário... eu queria algo 100% online que eu usasse sozinha, e ainda assim pago caro por algo que o banco me dá de graça.",
+  "would_change_my_mind": "Uma versão só online, sem reunião, por um valor mensal bem menor.",
+  "price_too_cheap": 15,
+  "price_cheap": 40,
+  "price_expensive": 90,
+  "price_too_expensive": 150
+}

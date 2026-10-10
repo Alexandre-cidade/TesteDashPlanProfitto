@@ -1,0 +1,13 @@
+{
+  "id": "P184",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "Eu sei que preciso, o aumento sumiu e eu não sei para onde, mas vou deixar para o mês que vem como sempre. E nada aqui me mostra que esse planejador é bom.",
+  "objection": "Dizer que não recebe comissão é fácil; como eu sei que ele é competente e não só mais um vendedor?",
+  "would_change_my_mind": "Ver a formação ou certificação do planejador e alguém que eu conheço dizendo que funcionou; aí talvez eu pagasse o diagnóstico.",
+  "price_too_cheap": 50,
+  "price_cheap": 120,
+  "price_expensive": 250,
+  "price_too_expensive": 400
+}

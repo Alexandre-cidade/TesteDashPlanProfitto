@@ -1,0 +1,13 @@
+{
+  "id": "P134",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Meu assessor da corretora já está cuidando do dinheiro que entrou e não me cobra mensalidade. Não vou abrir minha vida financeira para mais uma pessoa nem arrumar horário para reunião.",
+  "objection": "Não tenho tempo para reuniões e não vejo o que um planejador de Porto Alegre faria que meu assessor não faz.",
+  "would_change_my_mind": "Descobrir que meu assessor está me empurrando produto com comissão alta.",
+  "price_too_cheap": 150,
+  "price_cheap": 300,
+  "price_expensive": 700,
+  "price_too_expensive": 1500
+}
