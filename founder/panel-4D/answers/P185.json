@@ -1,0 +1,13 @@
+{
+  "id": "P185",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Estou com cartão e cheque especial rodando; R$ 297 agora é dinheiro que falta, e R$ 390 por mês está fora de cogitação.",
+  "objection": "Pagar para alguém me dizer que estou gastando demais, quando eu já sei disso.",
+  "would_change_my_mind": "Uma versão bem mais barata focada só em sair das dívidas.",
+  "price_too_cheap": 30,
+  "price_cheap": 80,
+  "price_expensive": 150,
+  "price_too_expensive": 250
+}

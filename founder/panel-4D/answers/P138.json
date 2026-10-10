@@ -1,0 +1,13 @@
+{
+  "id": "P138",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Vejo várias ofertas desse tipo no Instagram e não conheço essa empresa. Não vou abrir todas as contas da família para um desconhecido, e convencer minha esposa a pagar R$ 390 por mês já seria mais uma briga.",
+  "objection": "Não quero expor todas as minhas contas para uma empresa que não conheço.",
+  "would_change_my_mind": "Um influenciador de finanças que eu acompanho indicando a Profitto, ou uma primeira conversa gratuita com o casal para ver se ajuda a parar as brigas.",
+  "price_too_cheap": 50,
+  "price_cheap": 120,
+  "price_expensive": 250,
+  "price_too_expensive": 400
+}

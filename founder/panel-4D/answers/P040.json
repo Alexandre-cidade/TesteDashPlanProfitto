@@ -1,0 +1,13 @@
+{
+  "id": "P040",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Tenho um objetivo concreto e quero alguém que olhe tudo de uma vez; o diagnóstico é pagamento único e online, então faço esse e depois sigo na minha planilha.",
+  "objection": "Não vou pagar R$ 390 todo mês pra algo que uma planilha resolve depois que eu tiver o plano.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 80,
+  "price_cheap": 150,
+  "price_expensive": 300,
+  "price_too_expensive": 500
+}

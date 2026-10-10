@@ -1,0 +1,13 @@
+{
+  "id": "P053",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Acabei de receber um dinheiro grande e não vou abrir isso pra uma empresa que vi num anúncio. Só contrato quem algum amigo já usou e recomendou.",
+  "objection": "Ninguém que eu conheço indicou a Profitto; não sei se o planejador é bom com esse tamanho de patrimônio.",
+  "would_change_my_mind": "Um amigo ou colega de confiança dizer que usou e que valeu a pena.",
+  "price_too_cheap": 150,
+  "price_cheap": 300,
+  "price_expensive": 900,
+  "price_too_expensive": 2000
+}

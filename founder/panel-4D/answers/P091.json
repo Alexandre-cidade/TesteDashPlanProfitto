@@ -1,0 +1,13 @@
+{
+  "id": "P091",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Já baixei app de controle e larguei em duas semanas, e quem cuida do meu dinheiro é o gerente do banco, que não me cobra nada. Com renda variável, R$ 297 num mês fraco faz falta.",
+  "objection": "Vou pagar, receber um plano bonito e não seguir, igual fiz com os apps; e ainda vai virar mais uma briga com minha esposa.",
+  "would_change_my_mind": "Uma primeira conversa grátis mostrando quanto eu economizaria de imposto no MEI.",
+  "price_too_cheap": 30,
+  "price_cheap": 80,
+  "price_expensive": 180,
+  "price_too_expensive": 300
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P154",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Eu já invisto sozinho pela corretora e sei o que estou fazendo; pagar R$ 197 para alguém me dizer para cortar streaming e academia não faz sentido, e R$ 297 por mês é dinheiro que eu colocaria no Tesouro ou mandaria para meus pais.",
+  "objection": "Caro para alguém me dizer para gastar menos. Não vejo o que um planejador sabe que eu não descubro sozinho.",
+  "would_change_my_mind": "Se o raio-X de tarifas mostrasse antes, de graça, que estou perdendo mais que R$ 197 por ano em taxas.",
+  "price_too_cheap": 30,
+  "price_cheap": 60,
+  "price_expensive": 120,
+  "price_too_expensive": 200
+}

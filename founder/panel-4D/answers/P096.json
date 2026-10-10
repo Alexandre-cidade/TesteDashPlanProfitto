@@ -1,0 +1,13 @@
+{
+  "id": "P096",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Meu gerente e meu assessor já fazem isso de graça, e já me queimei uma vez seguindo dica de investimento. Não vou pagar mensalidade para mais uma pessoa me dar opinião.",
+  "objection": "Não sei a formação nem o histórico desse planejador; depois de perder dinheiro, desconfio de qualquer um que diga que sabe o que fazer com o meu.",
+  "would_change_my_mind": "Ver o planejador com certificação reconhecida e casos reais de clientes do meu perfil.",
+  "price_too_cheap": 100,
+  "price_cheap": 200,
+  "price_expensive": 500,
+  "price_too_expensive": 900
+}

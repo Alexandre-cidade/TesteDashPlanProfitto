@@ -1,0 +1,13 @@
+{
+  "id": "P169",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Não compro nada sem olhar o Reclame Aqui, e não conheço essa empresa. E já sei como eu sou: pago, uso um mês e largo.",
+  "objection": "R$ 197 é muito para o meu salário se eu acabar não seguindo o plano, e não sei se a devolução funciona na prática.",
+  "would_change_my_mind": "Boa reputação no Reclame Aqui, com reclamações resolvidas e gente confirmando que recebeu o reembolso.",
+  "price_too_cheap": 15,
+  "price_cheap": 40,
+  "price_expensive": 90,
+  "price_too_expensive": 150
+}

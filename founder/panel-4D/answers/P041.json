@@ -1,0 +1,13 @@
+{
+  "id": "P041",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Eu já tenho o gerente do banco e o assessor da corretora que cuidam disso sem cobrar nada. Pagar R$ 390 por mês para mais uma coisa que eu sei que vou largar, como larguei o app, não faz sentido.",
+  "objection": "Vou pagar, ir em duas reuniões e depois esquecer, igual aconteceu com o aplicativo e com a academia.",
+  "would_change_my_mind": "Se meu gerente me dissesse que não consegue me ajudar com o planejamento para o imóvel e me indicasse um planejador independente.",
+  "price_too_cheap": 50,
+  "price_cheap": 100,
+  "price_expensive": 200,
+  "price_too_expensive": 350
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P131",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Quem cuida do dinheiro em casa é meu cônjuge, e eu não assino nada fixo sem passar por ele. Ainda por cima já tenho a ajuda mensal dos meus pais e o dia corrido entre Canoas e Porto Alegre, não vou encaixar reunião mensal.",
+  "objection": "Não tenho tempo para reuniões e não sou eu quem decide gasto fixo em casa.",
+  "would_change_my_mind": "Se meu cônjuge visse e quisesse fazer o diagnóstico junto comigo.",
+  "price_too_cheap": 80,
+  "price_cheap": 150,
+  "price_expensive": 300,
+  "price_too_expensive": 450
+}

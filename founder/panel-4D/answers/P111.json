@@ -1,0 +1,13 @@
+{
+  "id": "P111",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Eu mesmo cuido dos meus investimentos pela corretora há anos e me viro bem. Já paguei por app de controle e larguei; não vou pagar R$ 297 para alguém me dizer o que eu já sei e depois esquecer a plataforma.",
+  "objection": "Vou pagar, olhar o plano uma vez e não usar. E duvido que um planejador que não conheço saiba mais de investimento do que eu.",
+  "would_change_my_mind": "Um diagnóstico focado só em sucessão e herança, que é o que eu de fato não domino, por um preço menor.",
+  "price_too_cheap": 80,
+  "price_cheap": 150,
+  "price_expensive": 300,
+  "price_too_expensive": 450
+}

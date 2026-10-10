@@ -1,0 +1,13 @@
+{
+  "id": "P194",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "convenience",
+  "reason": "Já consumo muito conteúdo de finanças de graça e não tenho tempo para reunião todo mês. R$ 390 por mês é caro para mim.",
+  "objection": "Não ter tempo para reuniões e pagar caro por algo que os influenciadores ensinam de graça.",
+  "would_change_my_mind": "Um diagnóstico sem reuniões e um mensal bem mais barato.",
+  "price_too_cheap": 40,
+  "price_cheap": 100,
+  "price_expensive": 200,
+  "price_too_expensive": 350
+}

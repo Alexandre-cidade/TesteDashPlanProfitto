@@ -1,0 +1,13 @@
+{
+  "id": "P215",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Vejo tudo isso de graça no YouTube; pagar R$ 390 por mês para alguém me dizer onde foi meu aumento parece coisa de quem tem muito mais dinheiro que eu.",
+  "objection": "Não sei se entrega algo que os influenciadores já não ensinam de graça.",
+  "would_change_my_mind": "Um preço mensal bem menor, na faixa de R$ 100, ou ver resultados concretos de clientes parecidos comigo.",
+  "price_too_cheap": 40,
+  "price_cheap": 100,
+  "price_expensive": 200,
+  "price_too_expensive": 350
+}

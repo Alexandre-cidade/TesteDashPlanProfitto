@@ -1,0 +1,13 @@
+{
+  "id": "P116",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Depois do divórcio minhas contas viraram uma bagunça e ainda ajudo meus pais; um plano por escrito com as primeiras ações é o que eu preciso. Como é pagamento único e o cancelamento é pelo site, eu arrisco o diagnóstico.",
+  "objection": "R$ 390 por mês pesa no meu orçamento agora, e já me queimei com dica de investimento; não sei se vou manter.",
+  "would_change_my_mind": "Se descobrisse que cancelar não é tão simples quanto dizem, eu desistiria.",
+  "price_too_cheap": 50,
+  "price_cheap": 120,
+  "price_expensive": 250,
+  "price_too_expensive": 350
+}

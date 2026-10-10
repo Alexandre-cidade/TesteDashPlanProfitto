@@ -1,0 +1,13 @@
+{
+  "id": "P143",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "convenience",
+  "reason": "Passo a semana inteira em reunião por vídeo, a última coisa que quero é mais uma reunião, ainda mais sobre dinheiro, que em casa já vira briga. Quero algo que eu resolva sozinha na tela.",
+  "objection": "Ter que falar com planejador e provavelmente arrastar meu marido para reunião, o que só vai gerar mais discussão.",
+  "would_change_my_mind": "Uma versão só com o diagnóstico escrito e a plataforma, sem reunião nenhuma, por um preço menor.",
+  "price_too_cheap": 30,
+  "price_cheap": 80,
+  "price_expensive": 200,
+  "price_too_expensive": 350
+}

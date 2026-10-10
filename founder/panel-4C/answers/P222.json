@@ -1,0 +1,13 @@
+{
+  "id": "P222",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Meu gerente e meu assessor da corretora já cuidam do meu dinheiro sem me cobrar nada. Não vejo por que pagar uma empresa de Porto Alegre que eu nunca ouvi falar para fazer o que já tenho.",
+  "objection": "Meu gerente do banco ou meu assessor já faz isso de graça, e eu confio neles há anos.",
+  "would_change_my_mind": "Ver, com números do meu próprio caso, quanto o banco e a corretora me cobram em taxas e produtos ruins, de forma que o raio-X mostrasse que o 'de graça' sai caro.",
+  "price_too_cheap": 100,
+  "price_cheap": 200,
+  "price_expensive": 500,
+  "price_too_expensive": 1000
+}

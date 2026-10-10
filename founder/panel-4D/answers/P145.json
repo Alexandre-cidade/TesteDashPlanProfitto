@@ -1,0 +1,13 @@
+{
+  "id": "P145",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Meu gerente cuida dos meus investimentos há anos e não me cobra nada. Já pago assinatura demais, não vou somar mais R$ 390 por mês para alguém que não conheço me dizer o que fazer.",
+  "objection": "Pagar mensalidade por algo que o banco já faz de graça, e não ter como saber se esse planejador é melhor que meu gerente.",
+  "would_change_my_mind": "Alguém me mostrar, com números, quanto meu gerente está me custando em taxas e produtos ruins.",
+  "price_too_cheap": 50,
+  "price_cheap": 150,
+  "price_expensive": 300,
+  "price_too_expensive": 500
+}

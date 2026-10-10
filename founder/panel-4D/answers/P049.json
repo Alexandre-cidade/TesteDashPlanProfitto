@@ -1,0 +1,13 @@
+{
+  "id": "P049",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Meu gerente e meu assessor já me orientam sem cobrar, e eu mesma cuido dos meus investimentos. Não vejo motivo para pagar R$ 390 por mês por algo que tenho de graça.",
+  "objection": "Por que pagar por planejamento se o banco me dá isso sem custo?",
+  "would_change_my_mind": "Alguém me mostrar, com números, quanto estou perdendo em taxas ou impostos por seguir o gerente.",
+  "price_too_cheap": 30,
+  "price_cheap": 80,
+  "price_expensive": 180,
+  "price_too_expensive": 300
+}

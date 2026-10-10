@@ -1,0 +1,13 @@
+{
+  "id": "P134",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Eu só contrato quem um colega de confiança me indicou, e ninguém me falou dessa Profitto. Não vou entregar minhas contas de PF e PJ para alguém que conheci num anúncio.",
+  "objection": "Sem indicação de alguém que eu respeite, não sei se o planejador tem nível para a minha situação; e pagar para ouvir que devo gastar menos não me interessa.",
+  "would_change_my_mind": "Um colega médico ou advogado de confiança dizer que usa e que o planejador resolveu algo concreto de tributação ou sucessão para ele.",
+  "price_too_cheap": 200,
+  "price_cheap": 400,
+  "price_expensive": 1200,
+  "price_too_expensive": 2500
+}

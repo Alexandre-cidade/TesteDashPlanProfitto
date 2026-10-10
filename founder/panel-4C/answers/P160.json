@@ -1,0 +1,13 @@
+{
+  "id": "P160",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Eu só contrato o que alguém de confiança me indicou, e não conheço ninguém que usou a Profitto. Gostei de não receberem comissão, mas isso é o que eles dizem; sem indicação eu não fecho.",
+  "objection": "Como sei que esse planejador é bom? O site diz quem paga ele, mas não diz quem ele é, que formação tem ou quanta experiência.",
+  "would_change_my_mind": "Indicação de um amigo ou colega que tenha feito o diagnóstico e gostado.",
+  "price_too_cheap": 60,
+  "price_cheap": 150,
+  "price_expensive": 300,
+  "price_too_expensive": 500
+}

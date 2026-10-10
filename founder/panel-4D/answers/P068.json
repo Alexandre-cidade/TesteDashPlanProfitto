@@ -1,0 +1,13 @@
+{
+  "id": "P068",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "quality",
+  "reason": "Já pago um monte de assinatura e vejo conteúdo de finanças de graça; não está claro o que muda depois das primeiras reuniões que justifique R$ 390 todo mês. Talvez fizesse o diagnóstico um dia, mas não esta semana.",
+  "objection": "Depois do plano inicial, a reunião de 30 minutos por mês vira rotina e eu continuo pagando sem ver diferença.",
+  "would_change_my_mind": "Exemplos reais de clientes com quanto economizaram ou juntaram nos meses seguintes.",
+  "price_too_cheap": 40,
+  "price_cheap": 100,
+  "price_expensive": 220,
+  "price_too_expensive": 350
+}

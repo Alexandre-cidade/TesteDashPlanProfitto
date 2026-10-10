@@ -1,0 +1,13 @@
+{
+  "id": "P223",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Acho que planilha resolve, mas minhas contas PF e PJ estão misturadas e ninguém nunca revisou meu pró-labore. R$ 297 é nada para ver o que um planejador acha; a mensalidade eu decido depois.",
+  "objection": "Não quero pagar todo mês por algo que talvez eu e meu contador resolvamos numa planilha.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 150,
+  "price_cheap": 300,
+  "price_expensive": 900,
+  "price_too_expensive": 2000
+}

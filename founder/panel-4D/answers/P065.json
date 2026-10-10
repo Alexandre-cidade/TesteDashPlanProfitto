@@ -1,0 +1,13 @@
+{
+  "id": "P065",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Eu sei que preciso sair do cheque especial, mas não vou abrir todas as minhas contas, PF e dívidas para uma empresa que acabei de conhecer num anúncio. Isso me expõe demais.",
+  "objection": "Expor minha situação de dívida para desconhecidos, sem saber quem é o planejador e o que fazem com meus dados.",
+  "would_change_my_mind": "Indicação de um colega de profissão que já usou, e saber quem é o planejador e sua certificação.",
+  "price_too_cheap": 80,
+  "price_cheap": 200,
+  "price_expensive": 450,
+  "price_too_expensive": 800
+}

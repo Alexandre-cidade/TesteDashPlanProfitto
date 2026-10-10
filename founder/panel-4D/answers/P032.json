@@ -1,0 +1,13 @@
+{
+  "id": "P032",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Tenho uma decisão grande pra tomar e quero alguém que olhe tudo uma vez, sem me empurrar produto. O diagnóstico é pagamento único e tem devolução se atrasar, então dá pra testar sem assinar nada.",
+  "objection": "Medo de receber um PDF genérico e depois ser pressionada a assinar o mensal que eu não vou usar.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 80,
+  "price_cheap": 150,
+  "price_expensive": 350,
+  "price_too_expensive": 550
+}

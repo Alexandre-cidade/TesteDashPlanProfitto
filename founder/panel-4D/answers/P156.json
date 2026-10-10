@@ -1,0 +1,13 @@
+{
+  "id": "P156",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Depois do divórcio e do aumento que sumiu, preciso de alguém olhando minhas contas; o diagnóstico é pagamento único, então não corro o risco de pagar mensalidade e largar. Compro o diagnóstico, a mensalidade fica para depois.",
+  "objection": "R$ 390 por mês é muito para mim e tenho medo de largar como larguei os apps.",
+  "would_change_my_mind": "Se eu achasse conteúdo gratuito de influenciador que resolvesse o mesmo, ou se o diagnóstico parecesse genérico.",
+  "price_too_cheap": 50,
+  "price_cheap": 150,
+  "price_expensive": 300,
+  "price_too_expensive": 500
+}

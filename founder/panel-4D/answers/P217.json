@@ -1,0 +1,13 @@
+{
+  "id": "P217",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "Trabalho das 9 às 18 e não quero mais reunião; e qualquer conversa sobre dinheiro em casa vira briga, então vou empurrando.",
+  "objection": "Não vou ter tempo para as reuniões nem para fazer o que o plano pedir.",
+  "would_change_my_mind": "Se meu cônjuge tomasse a iniciativa e o planejador servisse de mediador neutro.",
+  "price_too_cheap": 80,
+  "price_cheap": 200,
+  "price_expensive": 400,
+  "price_too_expensive": 700
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P146",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Meu assessor da corretora e o gerente cuidam disso sem mensalidade, e já paguei app de controle que larguei em duas semanas. Mais uma plataforma e mais uma reunião por vídeo na semana não vão acontecer.",
+  "objection": "Vou pagar, fazer o diagnóstico e depois não seguir nada, como foi com o app.",
+  "would_change_my_mind": "Alguém que execute as ações por mim, não só me diga o que fazer.",
+  "price_too_cheap": 50,
+  "price_cheap": 100,
+  "price_expensive": 300,
+  "price_too_expensive": 600
+}

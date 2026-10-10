@@ -1,0 +1,13 @@
+{
+  "id": "P007",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "convenience",
+  "reason": "Eu queria algo totalmente online, sem reunião, e isso aqui tem reunião todo mês e WhatsApp com planejador. Além disso, qualquer gasto fixo passa pela minha esposa, e dinheiro já é assunto de briga em casa; não vou abrir essa discussão por causa de um anúncio.",
+  "objection": "Ter que conversar com alguém todo mês e ainda convencer minha esposa de que vale a pena.",
+  "would_change_my_mind": "Uma versão só pela plataforma, sem reunião, que eu pudesse mostrar para minha esposa com os números da empresa e de casa separados.",
+  "price_too_cheap": 100,
+  "price_cheap": 200,
+  "price_expensive": 500,
+  "price_too_expensive": 900
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P219",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Uma planilha resolve, não preciso pagar todo mês. O problema em casa é a briga com meu cônjuge, não falta de informação.",
+  "objection": "R$ 390 por mês é caro para algo que eu acho que consigo fazer sozinho.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 30,
+  "price_cheap": 80,
+  "price_expensive": 180,
+  "price_too_expensive": 300
+}

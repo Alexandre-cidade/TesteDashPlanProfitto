@@ -1,0 +1,13 @@
+{
+  "id": "P153",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Meu assessor da corretora já cuida disso sem me cobrar mensalidade, e eu não vou mandar todas as minhas contas para uma empresa que não conheço. Já me queimei com dica de investimento uma vez.",
+  "objection": "Não conheço a Profitto e não quero expor meus dados financeiros a desconhecidos.",
+  "would_change_my_mind": "Uma amiga médica ou colega que já usou e mostrasse resultado concreto.",
+  "price_too_cheap": 50,
+  "price_cheap": 150,
+  "price_expensive": 350,
+  "price_too_expensive": 600
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P030",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "Até acho que faria sentido para nós dois, mas agora não é o momento. Talvez no ano que vem, quando a vida assentar.",
+  "objection": "Dá trabalho reunir tudo e marcar reunião, e eu sempre empurro isso para o mês seguinte.",
+  "would_change_my_mind": "Algo que me obrigasse a decidir agora, como uma condição especial com data para acabar.",
+  "price_too_cheap": 60,
+  "price_cheap": 140,
+  "price_expensive": 280,
+  "price_too_expensive": 450
+}

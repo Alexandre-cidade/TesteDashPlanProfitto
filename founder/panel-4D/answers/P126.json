@@ -1,0 +1,13 @@
+{
+  "id": "P126",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "O gerente do banco já cuida dos meus investimentos sem cobrar nada, e o controle de gastos eu faço numa planilha. Não vejo por que pagar mensalidade por isso.",
+  "objection": "Pagar todo mês por algo que o banco me dá de graça e uma planilha resolve.",
+  "would_change_my_mind": "Ver em números quanto eu perco em imposto e pró-labore mal feito na empresa, maior que a mensalidade.",
+  "price_too_cheap": 80,
+  "price_cheap": 150,
+  "price_expensive": 300,
+  "price_too_expensive": 500
+}

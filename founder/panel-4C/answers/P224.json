@@ -1,0 +1,13 @@
+{
+  "id": "P224",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Eu controlo tudo na minha planilha e já paguei app que larguei em duas semanas. Não vou pagar alguém para me dizer o que eu mesma posso descobrir sentando com a planilha.",
+  "objection": "Já tentei app e larguei; vou pagar e não usar. E depois de perder dinheiro em dica de investimento, desconfio de quem vem me orientar.",
+  "would_change_my_mind": "Se trabalhassem em cima da minha própria planilha, sem me obrigar a usar outra plataforma, e me mostrassem para onde foi o dinheiro do aumento.",
+  "price_too_cheap": 50,
+  "price_cheap": 90,
+  "price_expensive": 180,
+  "price_too_expensive": 300
+}

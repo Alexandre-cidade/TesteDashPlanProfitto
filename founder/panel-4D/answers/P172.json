@@ -1,0 +1,13 @@
+{
+  "id": "P172",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Ganho bem e mesmo assim o cheque especial está rodando todo mês, então sozinho não estou resolvendo. R$ 297 uma vez só, com dinheiro de volta se não entregarem, eu pago para ver o diagnóstico; a mensalidade decido depois.",
+  "objection": "Abrir todas as minhas contas, inclusive as dívidas, para uma empresa que eu não conheço, e ainda acabar com mais uma assinatura de R$ 390 quando o dinheiro já está curto.",
+  "would_change_my_mind": "Ver reclamações ou relatos de vazamento de dados sobre a empresa.",
+  "price_too_cheap": 100,
+  "price_cheap": 200,
+  "price_expensive": 390,
+  "price_too_expensive": 600
+}

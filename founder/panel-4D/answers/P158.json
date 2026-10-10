@@ -1,0 +1,13 @@
+{
+  "id": "P158",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "convenience",
+  "reason": "Não tenho tempo para reunião mensal nem para juntar papelada de PF, dívidas e impostos. Meu gerente resolve o que preciso sem mensalidade, e já tenho assinatura demais.",
+  "objection": "Mais uma assinatura e mais uma reunião na agenda que eu não vou conseguir encaixar.",
+  "would_change_my_mind": "Se eles fizessem tudo sem eu precisar participar, só puxando os dados e me mandando o que fazer.",
+  "price_too_cheap": 60,
+  "price_cheap": 150,
+  "price_expensive": 400,
+  "price_too_expensive": 700
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P069",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "Dinheiro não é o problema, eu sei que preciso organizar, principalmente com a ajuda aos meus pais, mas vou deixar para o mês que vem como sempre. Já paguei app e larguei.",
+  "objection": "Vou pagar, juntar documentos dá trabalho, e acabo não usando.",
+  "would_change_my_mind": "Se o planejador fizesse quase tudo por mim, puxando os dados sem eu ter que montar nada.",
+  "price_too_cheap": 100,
+  "price_cheap": 250,
+  "price_expensive": 600,
+  "price_too_expensive": 1000
+}

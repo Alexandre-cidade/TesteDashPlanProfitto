@@ -1,0 +1,13 @@
+{
+  "id": "P028",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Minhas contas da empresa e as pessoais estão misturadas e já passou da hora de pensar em sucessão; R$ 297 não pesa e o planejador não ganha comissão. Mas só fecho depois de ver o Reclame Aqui da Profitto.",
+  "objection": "Como sei que esse planejador é bom de verdade? Se tiver reclamação de cancelamento ou de cobrança no Reclame Aqui, desisto.",
+  "would_change_my_mind": "Reclamações sem resposta no Reclame Aqui ou nota ruim.",
+  "price_too_cheap": 150,
+  "price_cheap": 300,
+  "price_expensive": 800,
+  "price_too_expensive": 1500
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P021",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Eu já controlo tudo na minha planilha, PF e PJ juntas, e funciona. Pagar R$ 390 todo mês para alguém me dizer o que eu já vejo nas minhas colunas não faz sentido.",
+  "objection": "Uma planilha resolve, não preciso pagar todo mês por reunião de 30 minutos.",
+  "would_change_my_mind": "Mostrar quanto de imposto eu deixaria de pagar com a revisão de pró-labore, em número concreto, antes de eu pagar.",
+  "price_too_cheap": 50,
+  "price_cheap": 120,
+  "price_expensive": 250,
+  "price_too_expensive": 400
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P179",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Minha planilha já faz o controle de gastos e metas que essa plataforma promete. Depois das primeiras reuniões, não vejo o que mudaria no mês seguinte que justifique R$ 390 todo mês.",
+  "objection": "Passado o plano inicial, a reunião de 30 minutos vira conversa repetida e eu continuo pagando.",
+  "would_change_my_mind": "Ver, mês a mês, o que é entregue de novo, com resultado em reais que eu consiga medir.",
+  "price_too_cheap": 50,
+  "price_cheap": 100,
+  "price_expensive": 200,
+  "price_too_expensive": 300
+}

@@ -1,0 +1,439 @@
+{
+ "business": "Planejamento financeiro por assinatura (Profitto), Porto Alegre/RS + digital em todo o Brasil",
+ "seed": 4102,
+ "dealt": 225,
+ "answered": 225,
+ "skipped": [],
+ "buys": 56,
+ "passes": 169,
+ "buy_rate": 0.24888888888888888,
+ "by_segment": [
+  [
+   "Pessoa que acabou de receber um dinheiro grande (herança, venda de imóvel, rescisão)",
+   7,
+   0.7142857142857143
+  ],
+  [
+   "Casal recém-casado ou planejando filhos",
+   23,
+   0.391304347826087
+  ],
+  [
+   "Pré-aposentado ou aposentado",
+   18,
+   0.3333333333333333
+  ],
+  [
+   "Profissional liberal de alta renda (médico, advogado, dentista)",
+   32,
+   0.3125
+  ],
+  [
+   "Pessoa recém-divorciada reorganizando as finanças",
+   7,
+   0.2857142857142857
+  ],
+  [
+   "Empresário de pequena ou média empresa, com PF e PJ misturadas",
+   22,
+   0.2727272727272727
+  ],
+  [
+   "Família de classe média com filhos",
+   40,
+   0.225
+  ],
+  [
+   "Jovem profissional CLT, ainda sem investimentos",
+   36,
+   0.1388888888888889
+  ],
+  [
+   "Servidor público",
+   18,
+   0.1111111111111111
+  ],
+  [
+   "Autônomo ou MEI com renda variável",
+   22,
+   0.09090909090909091
+  ]
+ ],
+ "by_behaviour": [
+  [
+   "Compra por impulso e se arrepende",
+   13,
+   0.9230769230769231
+  ],
+  [
+   "Endividado buscando saída",
+   20,
+   0.6
+  ],
+  [
+   "Quer resolver rápido um problema específico",
+   11,
+   0.5454545454545454
+  ],
+  [
+   "Já usou app e largou",
+   23,
+   0.5217391304347826
+  ],
+  [
+   "Segue influenciador de finanças",
+   20,
+   0.4
+  ],
+  [
+   "Pesquisa no Reclame Aqui antes de comprar",
+   18,
+   0.1111111111111111
+  ],
+  [
+   "Investe sozinho por corretora digital",
+   18,
+   0.1111111111111111
+  ],
+  [
+   "O cônjuge é quem cuida do dinheiro",
+   14,
+   0.07142857142857142
+  ],
+  [
+   "Faz planilha sozinho",
+   27,
+   0.037037037037037035
+  ],
+  [
+   "Procrastinador",
+   16,
+   0.0
+  ],
+  [
+   "Confia no gerente ou assessor do banco",
+   27,
+   0.0
+  ],
+  [
+   "Contrata por indicação",
+   18,
+   0.0
+  ]
+ ],
+ "by_income": [
+  [
+   "$285,000 and up",
+   75,
+   0.32
+  ],
+  [
+   "$144,000 to $285,000",
+   76,
+   0.2631578947368421
+  ],
+  [
+   "under $144,000",
+   74,
+   0.16216216216216217
+  ]
+ ],
+ "why_not": [
+  [
+   "trust",
+   50,
+   [
+    "Meu gerente do banco me orienta e não cobra nada; não vejo por que pagar alguém de fora, ainda mais com o dinheiro que mando para meus pais todo mês.",
+    "Não conheço ninguém que tenha usado; já perdi dinheiro com dica e só contrato o que um amigo de confiança indicou."
+   ],
+   [
+    "P003",
+    "P005"
+   ]
+  ],
+  [
+   "habit",
+   32,
+   [
+    "Deixo as decisões com meu gerente e com o assessor da corretora, que não cobram nada, e atendo cliente o dia inteiro. Não vou abrir minhas contas para mais alguém.",
+    "Eu já controlo tudo na minha planilha e sei quanto preciso juntar pro apartamento. Não tenho tempo pra reunião no meio do dia de atendimento e não vou pagar alguém pra repetir o que eu já sei."
+   ],
+   [
+    "P017",
+    "P043"
+   ]
+  ],
+  [
+   "timing",
+   27,
+   [
+    "O preço nem é problema e a sessão com o casal até me chamou atenção, mas eu me conheço: vou salvar o link e deixar para o mês que vem, como sempre.",
+    "Sei que preciso organizar, mas vou deixar para o mês que vem como sempre; e meu gerente já me ajuda sem custo. Agora não é prioridade."
+   ],
+   [
+    "P001",
+    "P018"
+   ]
+  ],
+  [
+   "price",
+   21,
+   [
+    "R$ 197 pesa no meu salário e R$ 297 por mês nem pensar; já larguei app de graça, imagina um pago.",
+    "Já pago assinatura demais e invisto sozinho pelo app; mais R$ 297 por mês com meu salário não cabe, e app de controle eu já larguei."
+   ],
+   [
+    "P004",
+    "P010"
+   ]
+  ],
+  [
+   "need",
+   18,
+   [
+    "Eu mesmo invisto e acompanho minhas contas; pagar R$ 297 por mês para alguém me mandar gastar menos não faz sentido.",
+    "Sou servidor, meu salário cai certinho todo mês e não tenho dívida; não vejo por que pagar R$ 197 por um plano. Depois da dica furada que me fez perder dinheiro eu só parei de mexer em investimento."
+   ],
+   [
+    "P007",
+    "P014"
+   ]
+  ],
+  [
+   "convenience",
+   14,
+   [
+    "Meu problema é PF e PJ misturadas e a oferta não fala disso; além disso é tudo baseado em reunião e WhatsApp, e eu queria algo online sem precisar falar com ninguém.",
+    "Passei a semana inteira em videochamada e a última coisa que quero é mais reunião com alguém olhando minhas dívidas. Se fosse um plano que eu fizesse sozinha online, talvez; com sessão e reunião de entrega, eu adio."
+   ],
+   [
+    "P008",
+    "P021"
+   ]
+  ],
+  [
+   "other",
+   5,
+   [
+    "Gasto assim quem decide é meu marido, e só de propor já vai virar discussão. Também já paguei app e larguei, não quero mais uma assinatura.",
+    "Quem cuida do dinheiro em casa é minha esposa; eu mandaria o link para ela, mas não fecho nada sozinho, ainda mais com esse dinheiro grande que acabou de entrar."
+   ],
+   [
+    "P076",
+    "P095"
+   ]
+  ],
+  [
+   "quality",
+   2,
+   [
+    "Meu problema é PF e PJ misturadas, e a oferta não fala nada de empresa. Investimento eu já faço sozinho; não sei quem é esse planejador nem que formação ele tem.",
+    "Meu problema é PF e PJ misturadas, e a oferta não fala nada de empresa; investimento eu já faço sozinho pela corretora. Não vejo o que muda no segundo mês além de uma reunião de 30 minutos."
+   ],
+   [
+    "P026",
+    "P168"
+   ]
+  ]
+ ],
+ "why_yes": [
+  [
+   "need",
+   53,
+   [
+    "Tenho uma decisão grande na mesa e quero ajuda pontual; R$ 197 uma vez, com plano por escrito e garantia, resolve sem me prender a mensalidade.",
+    "R$ 197 é nada perto do que ganho e app eu já provei que não uso; um planejador humano olhando tudo para o meu objetivo, com garantia, vale testar."
+   ],
+   [
+    "P002",
+    "P009"
+   ]
+  ],
+  [
+   "trust",
+   2,
+   [
+    "Já perdi dinheiro com dica de quem queria me vender produto; um planejador que não ganha comissão, com plano de exemplo no site e devolução se for genérico, por R$ 197 vale o teste.",
+    "O que me afastava era o medo de alguém me empurrar produto, e aqui eles dizem que não vendem nem ganham comissão. Depois de checar o Reclame Aqui e ver o plano de exemplo no site, eu pagaria o diagnóstico, que tem garantia."
+   ],
+   [
+    "P118",
+    "P130"
+   ]
+  ],
+  [
+   "habit",
+   1,
+   [
+    "Honestamente, eu vendo 'R$ 197 uma vez, com devolução' e compro na hora, é o que eu sempre faço. A mensalidade eu provavelmente não pego, ou pego e cancelo no segundo mês."
+   ],
+   [
+    "P157"
+   ]
+  ]
+ ],
+ "flip": [
+  "Meu marido topar e alguém marcar a primeira sessão por nós com data fechada esta semana.",
+  "Ver claramente quanto o banco me cobra de tarifas e que isso supera o custo do serviço.",
+  "Uma versão bem mais barata do diagnóstico com a sessão do casal incluída.",
+  "Um amigo ou colega me indicar dizendo que funcionou para ele.",
+  "Boa nota no Reclame Aqui com reclamações respondidas e cancelamento comprovadamente fácil.",
+  "Algo pontual e barato focado em otimização de impostos e carteira, não em controle de gastos.",
+  "Uma ferramenta 100% online que separe PF e PJ, com boa reputação comprovada.",
+  "Um diagnóstico bem mais barato, tipo R$ 50, focado só em investimento.",
+  "Um amigo de confiança me mostrando quanto economizou de verdade com isso.",
+  "Se mostrasse claramente que trata de PF e PJ juntas, com pouca exigência de reunião.",
+  "Descobrir que meu gerente está me empurrando produto ruim ou cobrando taxa escondida.",
+  "Alguém fazendo tudo por mim com data marcada, sem eu precisar juntar papelada.",
+  "Indicação de alguém próximo e saber exatamente como meus dados são guardados.",
+  "Ficha limpa no Reclame Aqui e depoimentos de clientes que ficaram meses e mostraram resultado.",
+  "Uma versão só por formulário e plano escrito, sem reunião, com o plano datado de saída do cartão.",
+  "Algo voltado a sucessão, previdência e planejamento tributário de profissional liberal, com o custo de ajudar meus pais incluído.",
+  "Ver no raio-X quanto o banco me cobra de tarifa e descobrir que é mais que R$ 197 por ano.",
+  "Indicação de alguém que eu conheço que já usou e saiu satisfeito.",
+  "Certificação do planejador visível e um diagnóstico que trate da separação entre PF e PJ.",
+  "Um prazo curto com desconto no diagnóstico que me obrigasse a decidir agora.",
+  "Só o diagnóstico mais barato, sem nenhuma pressão para assinar depois.",
+  "Se vendessem só a sessão de casal com mediador, mais barata, talvez eu topasse para parar as brigas.",
+  "Uma consulta pontual focada na minha decisão de aposentadoria, com um planejador de credencial e experiência que eu possa verificar.",
+  "Uma consulta curta e mais barata só para a decisão que eu tenho agora, sem pacote.",
+  "Reputação boa e verificável no Reclame Aqui e credencial do planejador visível.",
+  "Uma revisão pontual da minha planilha com sugestão concreta de investimento para começar, por um preço baixo.",
+  "Ver o plano de exemplo e perceber que ele mostra coisas que o banco nunca me mostraria, tipo as tarifas que estou pagando.",
+  "Meu marido topar e alguém conhecido indicar a Profitto; a sessão com o casal até me interessaria porque a gente sempre briga.",
+  "Saber o nome e a certificação (CFP) do planejador e como os dados são protegidos, ou uma indicação de alguém que eu sigo.",
+  "Um preço de entrada bem menor, tipo R$ 50 a R$ 80, só pro plano de sair do cartão.",
+  "Boa nota no Reclame Aqui com reclamações de cancelamento resolvidas, e só então eu pensaria no diagnóstico.",
+  "Ver no raio-X que o banco está me cobrando em tarifas e taxas mais do que o serviço custa.",
+  "Uma amiga que já usou e me contasse que deu resultado de verdade.",
+  "Se o diagnóstico fosse parcelado ou se só pagasse depois de ver o plano de saída da dívida.",
+  "Indicação de um amigo ou colega que fez o diagnóstico e gostou.",
+  "Um amigo de confiança dizer que a sessão do casal acabou com as brigas lá em casa.",
+  "Ver, num plano real, que o raio-X de tarifas acha uma economia maior do que o preço.",
+  "Uma versão bem mais barata, focada em quem ainda está começando e não tem investimento.",
+  "Um amigo ou colega de confiança me contar que usou e que ajudou.",
+  "Saber como meus dados são protegidos e ver avaliações de clientes reais e verificáveis.",
+  "Uma opção 100% online, sem reunião, só com o plano por escrito e o WhatsApp.",
+  "Ver que o plano dá um caminho concreto para o imóvel que eu não chegaria sozinha.",
+  "Que o planejador fizesse o acompanhamento por mim, sem eu ter que alimentar plataforma nenhuma.",
+  "Um colega indicar e confirmar que cancelou sem dor de cabeça.",
+  "Um plano só online, sem reunião, por uns R$ 50 por mês.",
+  "Se meu marido e eu tivéssemos uma meta grande, tipo comprar casa, e a planilha não desse conta.",
+  "Ver nota boa no Reclame Aqui e gente reclamando pouco, com reembolso de verdade.",
+  "Se meu marido visse o plano de exemplo e ele mesmo sugerisse fazer.",
+  "Um desconto ou uma condição para começar já, com foco só na compra do imóvel.",
+  "Ver que o raio-X das tarifas mostra que meu banco me cobra muito mais do que os R$ 197.",
+  "Saber o nome e a certificação do planejador e ver avaliações de clientes reais.",
+  "Se minha esposa insistisse em fazer a sessão do casal para destravar a compra do imóvel, eu toparia pagar o diagnóstico uma vez só.",
+  "Se o diagnóstico tratasse explicitamente a separação de PF e PJ e alguém me cobrasse para começar, talvez eu fizesse agora.",
+  "Ver, num raio-X, quanto meu banco realmente me cobra em taxas escondidas; se for muito, eu pagaria o diagnóstico.",
+  "Uma boa reputação no Reclame Aqui com reclamações respondidas e reembolsos feitos de verdade.",
+  "Encontrar a empresa bem avaliada no Reclame Aqui, com cancelamento e reembolso confirmados por outros clientes.",
+  "Ver o plano de exemplo e ele ter algo sobre aposentadoria que eu não acharia de graça no YouTube.",
+  "Se fosse só mandar os extratos e receber o plano pronto, sem reunião nenhuma.",
+  "Uma versão 100% online e assíncrona do raio-X das tarifas, sem sessão nenhuma.",
+  "Se o raio-X de tarifas mostrasse, de graça, que eu estou perdendo mais do que R$ 197 por ano no banco.",
+  "Uma página no Reclame Aqui com nota boa e reclamações de reembolso resolvidas rápido.",
+  "Minha esposa ver o plano de exemplo no site e achar que vale; aí a gente faria o diagnóstico juntos.",
+  "Se o raio-X mostrasse em números que meu banco está me cobrando bem mais do que o serviço custa.",
+  "Uma versão bem mais barata, tipo R$ 50 a 80 por mês, só com WhatsApp.",
+  "Um amigo ou colega dizer que fez e que o plano mudou algo concreto nas finanças dele.",
+  "Uma data-limite real, tipo vaga com desconto só até o fim do mês, e meu marido topar primeiro.",
+  "Ver reputação boa no Reclame Aqui, com reclamações respondidas e cancelamento comprovadamente fácil.",
+  "Uma indicação de um amigo da minha idade que tenha usado e gostado.",
+  "Minha esposa olhar e querer, e o plano tratar explicitamente da separação entre PF e PJ.",
+  "Uma oferta focada na decisão do imóvel, com resposta rápida, em poucos dias.",
+  "Poder pagar o diagnóstico parcelado ou só depois de receber o plano de saída das dívidas.",
+  "Mostrar que trata PF e PJ juntas e quanto eu estou perdendo hoje em taxas com o banco.",
+  "Uma versão sem reunião, só o plano por escrito, ou minha esposa insistir em fazer a sessão do casal.",
+  "Ver no raio-X das tarifas que o banco me cobra mais do que o diagnóstico custa.",
+  "Meu marido ver o plano de exemplo e propor a gente fazer junto.",
+  "Se desse para fazer tudo por WhatsApp, sem reunião, num horário depois das 20h.",
+  "Uma simulação concreta mostrando que o plano antecipa minha compra do imóvel em meses, não conselho genérico.",
+  "A sessão do casal resolver de fato as brigas com meu marido; se ele pedisse, eu talvez topasse o diagnóstico.",
+  "Ver avaliações públicas de clientes reais e uma explicação clara de como meus dados são guardados e apagados.",
+  "Alguém da Profitto me ligar e marcar tudo por mim, com data fixa, sem eu ter que juntar documento sozinha.",
+  "Um amigo empresário me dizer que fez e que resolveu a separação das contas da empresa e da pessoa física.",
+  "Minha esposa achar que o raio-X de tarifas mostra que o banco está nos cobrando mais do que os R$ 197.",
+  "Se a sessão do casal resolvesse de verdade as brigas sobre dinheiro com meu cônjuge, talvez eu pagasse só o diagnóstico, mas duvido.",
+  "Indicação de alguém próximo que já usou, e saber quem é o planejador e como os meus dados são protegidos.",
+  "Uma versão para alta renda, com planejador certificado tratando de investimentos, IR e aposentadoria de profissional liberal.",
+  "Ver a empresa no Reclame Aqui com boa nota e reclamações resolvidas, principalmente sobre cancelamento e reembolso.",
+  "Uma data limite real, tipo um desconto que acaba esta semana, ou meu marido propor que a gente faça juntos.",
+  "Um diagnóstico bem mais barato, uns R$ 50 a R$ 80, focado no meu objetivo de comprar o imóvel.",
+  "Boa reputação no Reclame Aqui com reembolsos e cancelamentos resolvidos rapidamente.",
+  "Um serviço que trate explicitamente a separação de PF e PJ, pró-labore e retirada da empresa.",
+  "Um amigo ou colega dizer que fez e que valeu a pena.",
+  "Se o diagnóstico fosse pago em parcelas pequenas ou só depois de mostrar quanto eu economizaria em juros e tarifas.",
+  "Indicação de um amigo de confiança que já tenha usado.",
+  "Uma versão 100% online, sem reuniões, que separe PF e PJ automaticamente.",
+  "Se meu parceiro visse e quisesse fazer o diagnóstico.",
+  "Ver o plano de exemplo e perceber algo muito específico que eu não acharia em vídeo, tipo reorganização pós-divórcio de verdade.",
+  "Um prazo real, como uma condição que acaba, ou alguém me empurrar a marcar na hora.",
+  "Indicação de um colega do serviço público que tenha feito e gostado.",
+  "Uma versão só digital, sem reunião, em que eu mando os dados e recebo o relatório escrito.",
+  "Saber quem é o planejador, se tem certificação reconhecida, e poder começar sem entregar todos os extratos de uma vez.",
+  "Algo bem mais barato e automático, que eu use sozinho pelo celular.",
+  "Um colega médico ou amigo próximo dizer que usou e que a vida financeira dele mudou.",
+  "Alguém que execute as ações por mim, não só me diga o que fazer.",
+  "Um plano específico para a meta do imóvel, com simulação de financiamento versus consórcio versus investir, por um preço único.",
+  "Um primeiro passo grátis ou bem barato que me obrigasse a começar agora, com alguém cobrando prazo.",
+  "Poder pagar o diagnóstico parcelado ou só depois de ver economia, tipo descontado do que o raio-X das tarifas me fizer economizar.",
+  "Uma página no Reclame Aqui com nota boa e reclamações de reembolso resolvidas rápido.",
+  "Se o raio-X de tarifas mostrasse antes, de graça, que estou perdendo mais que R$ 197 por ano em taxas.",
+  "Se eles pegassem os extratos direto do meu contador e separassem PF de PJ sem eu precisar fazer nada.",
+  "Um amigo ou colega empresário de confiança me dizendo que usou e que o plano ajudou de verdade.",
+  "Um diagnóstico bem mais barato, tipo R$ 50, ou uma versão grátis só com o raio-X das tarifas.",
+  "Poder fazer a sessão do casal sem entregar extratos completos, ou uma explicação clara de como os dados ficam protegidos e quem os vê.",
+  "Indicação de um amigo ou colega que tenha feito o diagnóstico e gostado.",
+  "Uma indicação de alguém de confiança que já usou, e minha esposa topar fazer junto.",
+  "Algum susto concreto, tipo uma conta de imposto ou um problema de caixa, que me obrigue a resolver agora.",
+  "Uma versão só online, sem reunião, que me entregasse o plano datado para sair do cartão por menos.",
+  "Um amigo ou colega de confiança dizer que usou e que foi sério.",
+  "Um prazo real, tipo um desconto que acaba, ou o planejador cuidar de juntar a papelada por mim.",
+  "Ajuda específica na transição para a aposentadoria, como renda mensal e sucessão, que minha planilha não resolve.",
+  "Ver que o planejador sabe separar pró-labore, retirada e gastos da empresa, com um exemplo de plano de empresário.",
+  "Boa reputação no Reclame Aqui, com reclamações resolvidas e gente confirmando que recebeu o reembolso.",
+  "Uma sessão só de casal, avulsa e mais barata, porque o problema real são as brigas com minha esposa sobre dinheiro, não os números.",
+  "Se meu marido visse o plano de exemplo no site e ele mesmo achasse que vale os R$ 197.",
+  "Se eu conseguisse só conectar minhas contas e o planejador fizesse tudo sozinho, sem eu ter que levantar papelada.",
+  "Uma amiga ou colega me contar que fez e que mudou alguma coisa de verdade em casa.",
+  "Reputação boa no Reclame Aqui com casos de reembolso e cancelamento resolvidos.",
+  "Se o raio-X mostrasse que o banco está me cobrando em taxas mais do que a assinatura custa.",
+  "Uma indicação de alguém de confiança que já usou, e minha esposa topar fazer junto.",
+  "Se o raio-X das tarifas mostrasse que eu economizo mais do que pago, aí eu pensaria.",
+  "Uma versão só com plataforma e plano por escrito, sem reunião, por bem menos.",
+  "Se fosse focado em aposentadoria e tudo pudesse ser resolvido por escrito e WhatsApp, sem horário marcado.",
+  "Uma comparação mostrando quanto o banco me cobra em taxas e que o plano me faria chegar mais rápido no objetivo da escola.",
+  "Um plano de reorganização pós-divórcio entregue por escrito, sem reunião obrigatória.",
+  "Um colega de trabalho de confiança dizer que fez e que mudou alguma coisa de verdade nas contas dele.",
+  "Ver que o planejador tem certificação e experiência com dono de empresa que mistura as contas da empresa com as pessoais.",
+  "Meu gerente me dar um mau conselho que custe dinheiro de verdade.",
+  "Minha esposa ver e dizer 'vamos fazer', ou alguma data limite que me obrigue a decidir agora.",
+  "Uma ajuda concreta para separar as contas da empresa das minhas, que meu gerente não faz.",
+  "Uma versão bem mais barata, tipo R$ 50, ou o raio-X das tarifas mostrar que eu economizaria mais do que pago.",
+  "Algum influenciador que eu sigo mostrar o próprio plano feito por eles, com resultado depois de alguns meses.",
+  "Uma análise específica de sucessão, aposentadoria e tributação dos meus investimentos, coisa que a planilha não resolve.",
+  "Uma versão só digital, sem reuniões, que categorize meus gastos e mostre para onde foi o aumento.",
+  "Saber a certificação do planejador e uma indicação de alguém que eu conheça que já usou.",
+  "Ver em números quanto o raio-X de tarifas economizaria por ano, se for mais do que o serviço custa.",
+  "Minha parceira querer fazer; se ela topar o diagnóstico avulso, eu vou junto.",
+  "Uma amiga ou colega de confiança dizer que fez e que ajudou de verdade.",
+  "Um serviço específico para separar PF e PJ de empresário, com alguém que entenda contabilidade da empresa.",
+  "Ter um dinheiro parado para investir e o gerente não dar conta; aí talvez faria só o diagnóstico.",
+  "Saber exatamente o que fazem com os meus dados e alguém conhecido que já tenha usado.",
+  "Se o raio-X das tarifas mostrasse que o banco me cobra mais do que o próprio diagnóstico custa.",
+  "Uma versão bem mais barata, tipo R$ 49 o diagnóstico, só para eu começar.",
+  "Ver o plano de exemplo e perceber algo concreto que eu nunca teria pensado sozinho, como economia real em tarifas.",
+  "Um amigo ou colega de confiança dizer que contratou e que valeu a pena.",
+  "Se o plano de exemplo mostrasse um caminho claro para meu objetivo do imóvel que eu não consigo montar sozinha.",
+  "Um foco em planejamento de longo prazo da família, como escola e aposentadoria, que eu admito deixar de lado.",
+  "Uma segunda opinião sobre o que o banco fez com o dinheiro que recebi, entregue por escrito sem eu precisar de reunião.",
+  "Um diagnóstico bem mais barato, focado só no plano para dar a entrada do imóvel.",
+  "Ver, com números do meu próprio caso, quanto o banco e a corretora me cobram em taxas e produtos ruins, de forma que o raio-X mostrasse que o 'de graça' sai caro.",
+  "Se trabalhassem em cima da minha própria planilha, sem me obrigar a usar outra plataforma, e me mostrassem para onde foi o dinheiro do aumento.",
+  "Uma boa reputação no Reclame Aqui, com reclamações respondidas e relatos de gente que cancelou e recebeu o reembolso sem briga."
+ ],
+ "purchases_first_month_per_buyer": 1.0,
+ "price_answers": 225
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P123",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Estou pagando juros de cheque especial que já passam de R$ 297 por mês, então um plano escrito para sair disso se paga. Faço só o diagnóstico, que não exige reunião; o mensal agora não cabe.",
+  "objection": "Não tenho tempo para reunião mensal nem para ficar juntando extrato de PF e PJ; se isso der muito trabalho para mim, eu largo.",
+  "would_change_my_mind": "Se o diagnóstico exigir várias reuniões ou muita papelada da minha parte, desisto.",
+  "price_too_cheap": 80,
+  "price_cheap": 180,
+  "price_expensive": 350,
+  "price_too_expensive": 550
+}

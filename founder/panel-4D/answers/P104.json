@@ -1,0 +1,13 @@
+{
+  "id": "P104",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "Eu sei que preciso organizar, mas vou salvar isso e deixar para o mês que vem, como sempre. E não tenho tempo para ficar mandando documento e marcando reunião agora.",
+  "objection": "Vou ter que juntar extrato, conta, tudo, e ainda falar disso com meu marido, o que sempre vira briga. Já perdi dinheiro com dica e desconfio de quem fala de investimento.",
+  "would_change_my_mind": "Se fosse muito fácil começar, tipo conectar a conta e pronto, e alguém conduzisse a conversa com meu marido para não virar briga.",
+  "price_too_cheap": 20,
+  "price_cheap": 60,
+  "price_expensive": 150,
+  "price_too_expensive": 250
+}

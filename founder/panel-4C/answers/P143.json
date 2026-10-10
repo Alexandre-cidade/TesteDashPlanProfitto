@@ -1,0 +1,13 @@
+{
+  "id": "P143",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Não vou abrir todas as minhas contas, dívidas e investimentos para uma empresa de Porto Alegre que eu nunca ouvi falar. A sessão de casal até me chamou atenção por causa das brigas em casa, mas não o suficiente.",
+  "objection": "Para onde vão os meus dados e quem garante que essa empresa é séria; não vi nada sobre registro, certificação ou quem são os planejadores.",
+  "would_change_my_mind": "Saber quem é o planejador, se tem certificação reconhecida, e poder começar sem entregar todos os extratos de uma vez.",
+  "price_too_cheap": 40,
+  "price_cheap": 90,
+  "price_expensive": 200,
+  "price_too_expensive": 350
+}

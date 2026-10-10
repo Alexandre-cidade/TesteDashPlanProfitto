@@ -1,0 +1,13 @@
+{
+  "id": "P168",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "quality",
+  "reason": "Meu problema é PF e PJ misturadas, e a oferta não fala nada de empresa; investimento eu já faço sozinho pela corretora. Não vejo o que muda no segundo mês além de uma reunião de 30 minutos.",
+  "objection": "Depois das primeiras reuniões, o que muda no mês seguinte? Parece app de gastos com uma call por mês.",
+  "would_change_my_mind": "Ver que o planejador sabe separar pró-labore, retirada e gastos da empresa, com um exemplo de plano de empresário.",
+  "price_too_cheap": 80,
+  "price_cheap": 150,
+  "price_expensive": 350,
+  "price_too_expensive": 600
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P164",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Nunca contratei nada assim sem um amigo me recomendar, e ninguém que eu conheço me falou da Profitto. Não vou abrir minhas contas para um anúncio.",
+  "objection": "Não conheço ninguém que tenha usado; um plano anonimizado no site não substitui a palavra de alguém de confiança.",
+  "would_change_my_mind": "Um amigo ou colega de confiança dizer que usou e que foi sério.",
+  "price_too_cheap": 80,
+  "price_cheap": 200,
+  "price_expensive": 400,
+  "price_too_expensive": 700
+}

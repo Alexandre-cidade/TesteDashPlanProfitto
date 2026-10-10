@@ -1,0 +1,13 @@
+{
+  "id": "P211",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "Meu gerente do banco já cuida dos investimentos e não me cobra nada. Com escola das crianças e as assinaturas todas, agora não é hora de mais um gasto; talvez ano que vem.",
+  "objection": "Por que pagar R$ 297 por mês se o gerente me atende de graça?",
+  "would_change_my_mind": "Se o raio-X das tarifas mostrasse que o banco me cobra mais do que o próprio diagnóstico custa.",
+  "price_too_cheap": 30,
+  "price_cheap": 80,
+  "price_expensive": 180,
+  "price_too_expensive": 300
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P195",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Meu gerente do banco cuida dos meus investimentos e não me cobra nada; pagar alguém para fazer isso não faz sentido para mim. E já paguei app e não usei.",
+  "objection": "Vou pagar e não usar, como aconteceu antes; e não vou arrastar meu marido para uma reunião que vai virar mais uma briga.",
+  "would_change_my_mind": "Meu gerente me dar um mau conselho que custe dinheiro de verdade.",
+  "price_too_cheap": 40,
+  "price_cheap": 80,
+  "price_expensive": 150,
+  "price_too_expensive": 250
+}

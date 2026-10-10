@@ -1,0 +1,13 @@
+{
+  "id": "P144",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Ganhei aumento e o dinheiro sumiu, e app eu já sei que não uso. R$ 297 uma vez, sem comissão e com devolução se atrasar, eu pago para ver o diagnóstico; a mensalidade decido depois.",
+  "objection": "Não saber se o planejador é bom de verdade; 'não recebe comissão' é o que eles dizem, quero ver isso na prática.",
+  "would_change_my_mind": "Se o diagnóstico vier genérico, tipo 'gaste menos e invista mais', não assino o acompanhamento.",
+  "price_too_cheap": 100,
+  "price_cheap": 250,
+  "price_expensive": 500,
+  "price_too_expensive": 900
+}

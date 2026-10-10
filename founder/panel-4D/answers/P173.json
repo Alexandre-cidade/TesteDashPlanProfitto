@@ -1,0 +1,13 @@
+{
+  "id": "P173",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Estou perto de me aposentar, já perdi dinheiro com dica de investimento, e um planejador que não vende produto nem ganha comissão é exatamente o que eu queria. Faço o diagnóstico de R$ 297 para olhar previdência e sucessão; se não gostar, não continuo.",
+  "objection": "Se eu entrar na mensalidade, cancelar vai ser mesmo só pelo site, sem ninguém me segurando no telefone? Já vi muita empresa prometer isso.",
+  "would_change_my_mind": "Descobrir que o cancelamento não é tão simples quanto dizem, ou reclamações sobre isso.",
+  "price_too_cheap": 100,
+  "price_cheap": 200,
+  "price_expensive": 400,
+  "price_too_expensive": 650
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P175",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Tenho tudo numa planilha e sei exatamente o que entra e o que sai. Não vejo motivo para abrir meu consultório e meus investimentos para uma empresa que não conheço.",
+  "objection": "Expor todas as minhas contas, PF e PJ, para gente que eu nunca vi.",
+  "would_change_my_mind": "Uma economia de imposto concreta mostrada por um contador que eu já conheço.",
+  "price_too_cheap": 100,
+  "price_cheap": 200,
+  "price_expensive": 350,
+  "price_too_expensive": 500
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P017",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Eu mesmo cuido dos meus investimentos pela corretora e sei o que estou fazendo. Pagar R$ 390 por mês para meia hora de conversa e um app de gastos não faz sentido para mim.",
+  "objection": "Caro para alguém me dizer para gastar menos; não sei se o planejador entende mais de investimento do que eu.",
+  "would_change_my_mind": "Um diagnóstico focado só em sucessão e tributação da aposentadoria, com um especialista de verdade, eu até consideraria.",
+  "price_too_cheap": 80,
+  "price_cheap": 150,
+  "price_expensive": 300,
+  "price_too_expensive": 500
+}

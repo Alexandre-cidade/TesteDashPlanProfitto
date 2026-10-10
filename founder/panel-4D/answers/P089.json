@@ -1,0 +1,13 @@
+{
+  "id": "P089",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "Agora não é o momento; talvez no ano que vem. Já assinei coisa no impulso e cancelei, e se eu aparecer com mais uma despesa a briga com minha esposa está garantida.",
+  "objection": "Vou assinar empolgado e cancelar em dois meses, como sempre faço.",
+  "would_change_my_mind": "Minha esposa querer fazer junto.",
+  "price_too_cheap": 50,
+  "price_cheap": 120,
+  "price_expensive": 280,
+  "price_too_expensive": 450
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P135",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "R$ 297 é muito dinheiro para mim agora e R$ 390 por mês é quase uma conta de luz e internet juntas. O gerente do banco já me orienta sem cobrar.",
+  "objection": "Caro demais para alguém me dizer para gastar menos.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 15,
+  "price_cheap": 30,
+  "price_expensive": 70,
+  "price_too_expensive": 120
+}

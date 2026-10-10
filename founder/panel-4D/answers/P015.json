@@ -1,0 +1,13 @@
+{
+  "id": "P015",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Não decido gasto assim sozinho, passa pela minha esposa, e não estou confortável em abrir todas as contas da clínica e pessoais para uma empresa que não conheço.",
+  "objection": "Expor todas as minhas contas PF e PJ para desconhecidos; não vi nada sobre sigilo e segurança dos dados.",
+  "would_change_my_mind": "Minha esposa olhar, gostar, e a empresa mostrar quem é o planejador, credenciais e como protege meus dados.",
+  "price_too_cheap": 100,
+  "price_cheap": 250,
+  "price_expensive": 600,
+  "price_too_expensive": 1000
+}

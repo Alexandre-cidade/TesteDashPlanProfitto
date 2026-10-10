@@ -1,0 +1,13 @@
+{
+  "id": "P159",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Meu gerente e o assessor já cuidam disso sem me cobrar mensalidade, e eu não vou abrir todas as minhas contas e dívidas para uma empresa de Porto Alegre que eu nunca ouvi falar.",
+  "objection": "Não quero expor todas as minhas contas para uma empresa que não conheço. Quem garante o que fazem com meus dados?",
+  "would_change_my_mind": "Poder fazer a sessão do casal sem entregar extratos completos, ou uma explicação clara de como os dados ficam protegidos e quem os vê.",
+  "price_too_cheap": 50,
+  "price_cheap": 100,
+  "price_expensive": 250,
+  "price_too_expensive": 450
+}

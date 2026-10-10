@@ -1,0 +1,13 @@
+{
+  "id": "P198",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Tenho minha planilha e sei para onde vai cada real. Não vejo por que pagar alguém para me dizer o que eu já sei.",
+  "objection": "Pagar por algo que eu faço sozinho de graça.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 80,
+  "price_cheap": 150,
+  "price_expensive": 300,
+  "price_too_expensive": 500
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P215",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Nunca ouvi falar da Profitto e ninguém que eu conheço indicou. Já perdi dinheiro seguindo conselho de quem eu não conhecia, então não contrato no escuro.",
+  "objection": "Quem são esses planejadores e quem me garante que sabem o que estão fazendo?",
+  "would_change_my_mind": "Um amigo ou colega de confiança dizer que contratou e que valeu a pena.",
+  "price_too_cheap": 50,
+  "price_cheap": 120,
+  "price_expensive": 250,
+  "price_too_expensive": 400
+}

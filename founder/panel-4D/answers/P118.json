@@ -1,0 +1,13 @@
+{
+  "id": "P118",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Estou com cartão e cheque especial rodando; R$ 297 agora é dinheiro que deveria ir para a dívida, e R$ 390 por mês está fora da minha realidade.",
+  "objection": "Já baixei app e larguei; vou pagar caro e não seguir, e o problema é falta de dinheiro, não de plano.",
+  "would_change_my_mind": "Um diagnóstico focado em sair das dívidas por uns R$ 100, ou pagar só depois de economizar.",
+  "price_too_cheap": 30,
+  "price_cheap": 60,
+  "price_expensive": 120,
+  "price_too_expensive": 200
+}

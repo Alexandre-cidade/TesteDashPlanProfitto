@@ -1,0 +1,13 @@
+{
+  "id": "P201",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Já perdi dinheiro seguindo dica e já larguei aplicativo. Uma empresa que nunca ouvi falar dizendo que não vende produto não basta para eu abrir minha vida financeira.",
+  "objection": "Como sei que esse planejador é bom de verdade? Dizer que não recebe comissão qualquer um diz.",
+  "would_change_my_mind": "Indicação de alguém conhecido que já usou, ou poder conversar com o planejador antes de pagar.",
+  "price_too_cheap": 80,
+  "price_cheap": 150,
+  "price_expensive": 300,
+  "price_too_expensive": 500
+}

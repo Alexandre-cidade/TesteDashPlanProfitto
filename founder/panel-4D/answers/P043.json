@@ -1,0 +1,13 @@
+{
+  "id": "P043",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "Ganho pouco, ainda nem tenho investimento e qualquer gasto fixo passa pelo meu parceiro, que com certeza ia dizer que R$ 390 por mês é muita coisa agora. Talvez no ano que vem.",
+  "objection": "R$ 390 por mês é uma parte grande do que sobra para a gente juntar para o apartamento.",
+  "would_change_my_mind": "Um plano bem mais barato pensado para quem está começando, que meu parceiro aceitasse junto.",
+  "price_too_cheap": 15,
+  "price_cheap": 40,
+  "price_expensive": 90,
+  "price_too_expensive": 150
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P142",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "convenience",
+  "reason": "Já controlo tudo na minha planilha e não quero agenda de reunião, sessão de casal nem WhatsApp com planejador. Se fosse uma ferramenta 100% online que eu uso sozinho, talvez olhasse.",
+  "objection": "O serviço gira em torno de reuniões com uma pessoa, e é exatamente isso que eu não quero.",
+  "would_change_my_mind": "Uma versão só digital, sem reunião, em que eu mando os dados e recebo o relatório escrito.",
+  "price_too_cheap": 30,
+  "price_cheap": 60,
+  "price_expensive": 150,
+  "price_too_expensive": 300
+}

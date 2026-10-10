@@ -1,0 +1,13 @@
+{
+  "id": "P045",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Minha planilha funciona e eu não vou abrir minhas contas pessoais e do MEI para uma empresa de Porto Alegre que nunca ouvi falar. Já perdi dinheiro confiando em dica de outros.",
+  "objection": "Não conheço ninguém que usou, e expor tudo, dívidas, impostos, investimentos, para estranhos me dá medo.",
+  "would_change_my_mind": "Indicação de alguém de confiança que já usou e teve resultado concreto.",
+  "price_too_cheap": 30,
+  "price_cheap": 60,
+  "price_expensive": 150,
+  "price_too_expensive": 250
+}

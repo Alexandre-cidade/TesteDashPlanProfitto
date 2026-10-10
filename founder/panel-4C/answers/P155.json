@@ -1,0 +1,13 @@
+{
+  "id": "P155",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "convenience",
+  "reason": "Meu problema é PF e PJ misturadas, e isso aqui parece planejamento de pessoa física; além disso eu não tenho tempo para reunião, e já larguei app de controle depois de um mês, então plataforma online não me anima.",
+  "objection": "Vou ter que juntar extrato de tudo, sentar em reunião e depois ninguém faz o trabalho por mim. Não tenho tempo para isso.",
+  "would_change_my_mind": "Se eles pegassem os extratos direto do meu contador e separassem PF de PJ sem eu precisar fazer nada.",
+  "price_too_cheap": 150,
+  "price_cheap": 300,
+  "price_expensive": 800,
+  "price_too_expensive": 1500
+}

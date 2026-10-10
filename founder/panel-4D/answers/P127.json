@@ -1,0 +1,13 @@
+{
+  "id": "P127",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Depois do divórcio eu preciso de ajuda, mas não contrato ninguém que eu vi num anúncio; ninguém que eu conheço indicou a Profitto. E R$ 390 por mês pesa no meu orçamento agora.",
+  "objection": "Depois do diagnóstico e das primeiras reuniões, não sei o que muda na prática no mês seguinte para justificar pagar todo mês.",
+  "would_change_my_mind": "Uma amiga de confiança me indicar e contar o que mudou nas finanças dela.",
+  "price_too_cheap": 60,
+  "price_cheap": 150,
+  "price_expensive": 280,
+  "price_too_expensive": 400
+}

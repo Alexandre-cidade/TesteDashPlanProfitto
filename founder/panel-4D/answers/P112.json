@@ -1,0 +1,13 @@
+{
+  "id": "P112",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Minha planilha resolve o controle e eu nem tenho investimento ainda, nem empresa, nem sucessão para planejar. Pagar R$ 297 e depois R$ 390 por mês é muito para o que eu preciso agora.",
+  "objection": "Não sei se esse planejador é bom de verdade; dizer que não recebe comissão é fácil, quero ver quem é a pessoa e resultados de clientes como eu.",
+  "would_change_my_mind": "Uma sessão para casal que ajude a parar as brigas sobre dinheiro com meu cônjuge, por um preço bem menor.",
+  "price_too_cheap": 50,
+  "price_cheap": 100,
+  "price_expensive": 200,
+  "price_too_expensive": 300
+}

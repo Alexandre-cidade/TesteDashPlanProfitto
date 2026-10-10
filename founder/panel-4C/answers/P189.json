@@ -1,0 +1,13 @@
+{
+  "id": "P189",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "Agora não é o momento; tenho a escola das crianças pra planejar e deixo os investimentos com meu gerente, que não me cobra nada. Talvez no ano que vem eu olhe isso com calma.",
+  "objection": "Já perdi dinheiro seguindo conselho e não sei se trocar o gerente que conheço por um planejador desconhecido vale a pena.",
+  "would_change_my_mind": "Uma comparação mostrando quanto o banco me cobra em taxas e que o plano me faria chegar mais rápido no objetivo da escola.",
+  "price_too_cheap": 40,
+  "price_cheap": 100,
+  "price_expensive": 220,
+  "price_too_expensive": 350
+}

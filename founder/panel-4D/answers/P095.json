@@ -1,0 +1,13 @@
+{
+  "id": "P095",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Eu tenho uma decisão específica para tomar e o diagnóstico promete só as 3 primeiras ações gerais, em até 15 dias. Para mim parece caro pagar R$ 297 para alguém me dizer para gastar menos.",
+  "objection": "Não fica claro se respondem a minha dúvida concreta (comprar ou não o apartamento); parece um pacote genérico pensado para quem tem empresa e sucessão.",
+  "would_change_my_mind": "Uma consultoria avulsa de uma hora sobre a minha decisão, por uns R$ 150.",
+  "price_too_cheap": 40,
+  "price_cheap": 100,
+  "price_expensive": 200,
+  "price_too_expensive": 300
+}

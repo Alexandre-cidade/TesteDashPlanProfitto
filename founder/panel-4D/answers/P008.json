@@ -1,0 +1,13 @@
+{
+  "id": "P008",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Tenho meta de comprar imóvel e já me queimei seguindo dica; um diagnóstico de R$ 297 sem assinatura e com devolução se atrasar é um risco pequeno para mim. Faço o diagnóstico e só depois penso se vale a mensalidade.",
+  "objection": "Já vi influenciador vendendo planejamento online mais barato, e tenho medo de na hora de cancelar a mensalidade virar novela.",
+  "would_change_my_mind": "Encontrar relatos de gente que teve dificuldade para cancelar ou que recebeu um plano genérico.",
+  "price_too_cheap": 90,
+  "price_cheap": 180,
+  "price_expensive": 350,
+  "price_too_expensive": 500
+}

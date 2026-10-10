@@ -1,0 +1,13 @@
+{
+  "id": "P204",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Estou com cartão rodando; gastar R$ 297 e depois R$ 390 por mês agora seria piorar a dívida. E eu preferia algo 100% online, sem reunião.",
+  "objection": "Pagar mensalidade quando o problema é justamente que falta dinheiro.",
+  "would_change_my_mind": "Um plano só de saída de dívidas, totalmente online, por menos de R$ 100.",
+  "price_too_cheap": 20,
+  "price_cheap": 50,
+  "price_expensive": 120,
+  "price_too_expensive": 200
+}

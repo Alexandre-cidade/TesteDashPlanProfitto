@@ -1,0 +1,13 @@
+{
+  "id": "P199",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "R$ 197 é caro para alguém me dizer para gastar menos, e quando preciso de alguma coisa pergunto ao gerente do banco, que não cobra.",
+  "objection": "Ganho pouco, não tenho investimento; acho que vão me falar o óbvio.",
+  "would_change_my_mind": "Uma versão bem mais barata, tipo R$ 50, ou o raio-X das tarifas mostrar que eu economizaria mais do que pago.",
+  "price_too_cheap": 15,
+  "price_cheap": 40,
+  "price_expensive": 80,
+  "price_too_expensive": 150
+}

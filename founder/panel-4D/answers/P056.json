@@ -1,0 +1,13 @@
+{
+  "id": "P056",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Isso parece coisa pra quem tem empresa, herança e previdência pra planejar. Eu só quero entender onde foi parar meu aumento, e R$ 297 pesa no meu mês.",
+  "objection": "Não tenho tempo pra reunião e a mensalidade de R$ 390 está fora da minha realidade.",
+  "would_change_my_mind": "Uma versão simples pra CLT, tipo R$ 50 a 80, tudo por app sem reunião.",
+  "price_too_cheap": 15,
+  "price_cheap": 40,
+  "price_expensive": 90,
+  "price_too_expensive": 150
+}

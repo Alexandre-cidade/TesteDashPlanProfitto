@@ -160,6 +160,7 @@ select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid var(--lin
           <label class="tog"><input type="checkbox" id="prova"><span>Prova social<small>Indicações e avaliações reais. Só existe depois do piloto.</small></span></label>
         </fieldset>
         <fieldset><legend>Entregas</legend>
+          <label class="tog"><input type="checkbox" id="online"><span>Opção 100% online, sem reuniões<small>Não testada com compradores: o efeito vem das objeções.</small></span></label>
           <label class="tog"><input type="checkbox" id="checkin"><span>Check-in mensal marcado pelo planejador</span></label>
           <label class="tog"><input type="checkbox" id="casal"><span>Sessão do casal</span></label>
           <label class="tog"><input type="checkbox" id="raiox"><span>Raio-X das tarifas do banco</span></label>
@@ -208,7 +209,7 @@ select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid var(--lin
       </aside>
 
       <div class="stack">
-        <div class="note" id="honesty">São 1.000 compradores simulados: 100 agentes de IA que responderam às ofertas e 900 perfis derivados deles, sorteados nas proporções do cliente-alvo. Cada perfil derivado herda a faixa de preço (±15%) e as barreiras de um agente real com o mesmo segmento e comportamento. A página não roda agentes a cada mudança: ela usa um modelo calibrado nas respostas reais. Com a oferta atual, o modelo prevê cerca de 8%, e os agentes reais compraram 6–10%. Mudanças que nenhum agente viu, como ligar tudo, são extrapolação. Confirme com a pré-venda.</div>
+        <div class="note" id="honesty">São 1.000 compradores simulados, todos agentes de IA com perfil próprio: 50 viram o pitch original, 50 a oferta atual e 900 (10 segmentos, 12 comportamentos, várias cidades) viram uma de 4 ofertas, 225 em cada. A página não roda agentes a cada mudança: usa um modelo calibrado nas 1.020 respostas reais (incluindo 20 do re-teste). Real × modelo: oferta atual 17% × 12%, diagnóstico R$ 197 21% × 23%, oferta completa 25% × 25%, Profissional R$ 390 19% × 20%. Todos os que compraram levaram só o diagnóstico. Combinações que nenhum agente viu são extrapolação. Confirme com a pré-venda.</div>
         <div class="kpis" id="kpis"></div>
         <div class="grid2">
           <div class="card">
@@ -239,7 +240,7 @@ select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid var(--lin
             <div class="flexbetween"><h3>Quem compraria agora</h3><span class="muted num" id="dots-sum"></span></div>
             <div class="scale" style="margin-block:8px 10px"><span><b style="background:var(--dot3)"></b>provável (≥50%)</span><span><b style="background:var(--dot2)"></b>talvez (25–50%)</span><span><b style="background:var(--dot1)"></b>difícil (10–25%)</span><span><b style="background:var(--dot0)"></b>não (&lt;10%)</span></div>
             <div class="dots" id="dots"></div>
-            <p class="muted" style="font-size:.75rem;margin:10px 0 0">Bolinha com contorno = agente real (os 100). Toque numa bolinha para ver a pessoa.</p>
+            <p class="muted" style="font-size:.75rem;margin:10px 0 0">Bolinha com contorno = comprou de verdade no painel. Toque numa bolinha para ver a pessoa.</p>
           </div>
           <div class="card">
             <h3>O que mais moveria os compradores</h3>
@@ -260,8 +261,8 @@ select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid var(--lin
   <section id="p-people" role="tabpanel" aria-labelledby="t-people" hidden>
     <div class="stack">
       <div class="flexbetween">
-        <div><h2>Os 1.000 compradores</h2><p class="muted" style="margin:4px 0 0">100 agentes reais: 50 viram o pitch original (v1, 0 compraram) e 50 viram a oferta atual (v3, 3 compraram o diagnóstico). Mais 900 perfis derivados deles. Os 20 do re-teste v2 (2 compraram) entraram só na calibração.</p></div>
-        <div class="btns"><select id="f-seg" aria-label="Filtrar por segmento"><option value="">Todos os segmentos</option></select><select id="f-ver" aria-label="Filtrar por versão"><option value="real">Agentes reais (100)</option><option value="">Todos (1.000)</option><option value="v1">Só v1</option><option value="v3">Só v3</option><option value="der">Só derivados (900)</option></select></div>
+        <div><h2>Os 1.000 compradores</h2><p class="muted" style="margin:4px 0 0">Todos reais (agentes de IA), cada um com perfil próprio. v1: pitch original (0 de 50). v3: oferta atual (3 de 50). A–D: 225 cada, perfis diversificados: A oferta atual (39), B diagnóstico R$ 197 (48), C oferta completa (56), D Profissional R$ 390 (43).</p></div>
+        <div class="btns"><select id="f-seg" aria-label="Filtrar por segmento"><option value="">Todos os segmentos</option></select><select id="f-ver" aria-label="Filtrar por versão"><option value="">Todos (1.000)</option><option value="v1">v1 · pitch original</option><option value="v3">v3 · oferta atual</option><option value="A">A · oferta atual</option><option value="B">B · diagnóstico R$ 197</option><option value="C">C · oferta completa</option><option value="D">D · Profissional R$ 390</option></select></div>
       </div>
       <div class="grid2" id="seg-summary"></div>
       <div class="card"><h3>Por que passam (respostas reais)</h3><div class="bars" id="reasons" style="margin-top:10px"></div></div>
@@ -391,12 +392,12 @@ const BRL=v=>(v<0?'−':'')+'R$ '+Math.round(Math.abs(v)).toLocaleString('pt-BR'
 const BRLk=v=>{const a=Math.abs(v);const s=a>=1000?(a/1000).toLocaleString('pt-BR',{maximumFractionDigits:a>=100000?0:1})+' mil':Math.round(a)+'';return (v<0?'−':'')+'R$ '+s};
 const pct=v=>Math.round(v*100)+'%';
 
-const LEVERS={cancel:'Cancelamento livre',comissao:'Sem comissão',cfp:'Planejador CFP',garantia:'Garantia de qualidade',exemplo:'Plano exemplo',prova:'Prova social',checkin:'Check-in ativo',casal:'Sessão do casal',raiox:'Raio-X do banco',dividas:'Trilha de dívidas',tributario:'Módulo tributário',parcelado:'Diagnóstico em 3x'};
-const BAR2LEV={cancel:'cancel',comissao:'comissao',cfp:'cfp',indicacao:'prova',avaliacoes:'prova',exemplo:'exemplo',garantia_qual:'garantia',casal:'casal',dividas:'dividas',parcelado:'parcelado',tributario:'tributario',raiox:'raiox',checkin:'checkin'};
-const BARNAME={cancel:'Medo de não conseguir cancelar',comissao:'Desconfiança de comissão',cfp:'Quer planejador certificado',indicacao:'Só compra por indicação',avaliacoes:'Quer avaliações reais',exemplo:'Quer ver um plano exemplo',garantia_qual:'Garantia só cobre atraso',casal:'Briga com o cônjuge',dividas:'Dívida rodando',parcelado:'Quer parcelar',tributario:'Quer tributário / sucessão',raiox:'Acha que o gerente faz de graça',checkin:'Já largou app',diag_barato:'Quer diagnóstico barato ou 1ª conversa grátis'};
+const LEVERS={online:'Opção 100% online',cancel:'Cancelamento livre',comissao:'Sem comissão',cfp:'Planejador CFP',garantia:'Garantia de qualidade',exemplo:'Plano exemplo',prova:'Prova social',checkin:'Check-in ativo',casal:'Sessão do casal',raiox:'Raio-X do banco',dividas:'Trilha de dívidas',tributario:'Módulo tributário',parcelado:'Diagnóstico em 3x'};
+const BAR2LEV={online:'online',timing:'__never',cancel:'cancel',comissao:'comissao',cfp:'cfp',indicacao:'prova',avaliacoes:'prova',exemplo:'exemplo',garantia_qual:'garantia',casal:'casal',dividas:'dividas',parcelado:'parcelado',tributario:'tributario',raiox:'raiox',checkin:'checkin'};
+const BARNAME={online:'Quer algo 100% online, sem reuniões',timing:'Agora não é o momento',cancel:'Medo de não conseguir cancelar',comissao:'Desconfiança de comissão',cfp:'Quer planejador certificado',indicacao:'Só compra por indicação',avaliacoes:'Quer avaliações reais',exemplo:'Quer ver um plano exemplo',garantia_qual:'Garantia só cobre atraso',casal:'Briga com o cônjuge',dividas:'Dívida rodando',parcelado:'Quer parcelar',tributario:'Quer tributário / sucessão',raiox:'Acha que o gerente faz de graça',checkin:'Já largou app',diag_barato:'Quer diagnóstico barato ou 1ª conversa grátis'};
 
 const PRESETS={
- atual:{m:297,diag:true,dprice:490,parcelado:false,cancel:true,comissao:true,cfp:false,garantia:false,exemplo:false,prova:false,checkin:true,casal:false,raiox:false,dividas:false,tributario:false,rede:25,mkt:3000,cpl:40,real:50,conv:50,churn:3,ceo1:10000,ceo2:10000,plan:20,tax:11,pmt:5000,cash:100000,cap:120,pfix:0,span:6,lead:5,perprof:300,other:900,growth:25,pleads:0,pcom:10,pdur:12,aleads:0,acom:15,adur:12},
+ atual:{m:297,diag:true,dprice:490,parcelado:false,cancel:true,comissao:true,cfp:false,garantia:false,exemplo:false,prova:false,checkin:true,casal:false,raiox:false,dividas:false,tributario:false,rede:25,mkt:3000,cpl:40,real:50,conv:50,churn:3,ceo1:10000,ceo2:10000,plan:20,tax:11,pmt:5000,cash:100000,cap:120,pfix:0,span:6,lead:5,perprof:300,other:900,growth:25,online:false,pleads:0,pcom:10,pdur:12,aleads:0,acom:15,adur:12},
 };
 PRESETS.v1=Object.assign({},PRESETS.atual,{m:350,diag:false,dprice:0,cancel:false,comissao:false,checkin:false});
 PRESETS.rec=Object.assign({},PRESETS.atual,{dprice:197,garantia:true,exemplo:true,casal:true,raiox:true,dividas:true,ceo1:5000});
@@ -564,7 +565,7 @@ function renderPick(c){
   const p=P[selected];const u=unresolved(p,c);const src=p.v==='der'?BYU[p.d]:p;
   const pills=p.B.map(b=>`<span class="pill ${u.includes(b)?'off':'on'}">${u.includes(b)?'✕':'✓'} ${BARNAME[b]||b}</span>`).join('');
   card.hidden=false;
-  card.innerHTML=`<div class="pcard"><div class="flexbetween"><h3>${p.n}, ${p.a} anos</h3><span class="pill">${p.v==='der'?'perfil derivado de '+src.n:(p.v==='v1'?'agente real · viu o pitch original':'agente real · viu a oferta atual')+' · '+(p.y?'COMPROU':'não comprou')}</span></div>
+  card.innerHTML=`<div class="pcard"><div class="flexbetween"><h3>${p.n}, ${p.a} anos</h3><span class="pill">${p.v==='der'?'perfil derivado de '+src.n:({v1:'viu o pitch original',v3:'viu a oferta atual',A:'viu a oferta A (atual)',B:'viu a oferta B (diagnóstico R$ 197)',C:'viu a oferta C (completa)',D:'viu a oferta D (Profissional R$ 390)'}[p.v]||p.v)+' · '+(p.y?'COMPROU':'não comprou')}</span></div>
   <span class="muted">${p.s} · ${p.b} · renda ~${BRL(p.i)}/ano</span>
   <div><span class="eyebrow">Chance de comprar com as alavancas atuais</span><div class="kpi" style="border:0;padding:4px 0"><span class="v">${pct(prob(p,c))}</span></div></div>
   <div><span class="eyebrow">Barreiras (verde = resolvida agora)</span><div class="pills" style="margin-top:6px">${pills||'<span class="pill">nenhuma barreira citada</span>'}</div></div>
@@ -682,7 +683,7 @@ function people(){
   $('barriers').innerHTML=Object.entries(bc).sort((a,b)=>b[1]-a[1]).map(([k,v])=>`<div class="bar"><div class="t"><span>${BARNAME[k]||k}</span><div class="track"><div class="fill" style="width:${v/mb*100}%"></div></div></div><span class="val">${v}</span></div>`).join('');
   $('tbl-people').innerHTML='<tr><th>Pessoa</th><th>Segmento</th><th>Comportamento</th><th>Viu</th><th>Comprou</th><th>Por quê (nas palavras dela)</th><th class="n">Caro a partir de</th></tr>'+L.map(p=>`<tr><td><b>${p.n}</b>, ${p.a}</td><td>${p.s}</td><td>${p.b}</td><td>${p.v}</td><td>${p.y?'<span class="sev l">sim</span>':'não'}</td><td style="min-width:260px">${p.v==='der'?'<span class="muted">derivado de '+(BYU[p.d]?BYU[p.d].n:'')+'</span>':p.r}</td><td class="n">R$ ${p.p[2]}</td></tr>`).join('');
 }
-$('f-ver').value='real';$('f-seg').addEventListener('change',people);$('f-ver').addEventListener('change',people);people();
+$('f-seg').addEventListener('change',people);$('f-ver').addEventListener('change',people);people();
 
 // ---- preço (régua) ----
 (function(){const svg=$('ch-price'),Wd=760,l=20,r=20,y0=120,mx=800;const x=v=>l+(Wd-l-r)*v/mx;

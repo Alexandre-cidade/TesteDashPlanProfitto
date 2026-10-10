@@ -1,0 +1,13 @@
+{
+  "id": "P207",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "other",
+  "reason": "Gasto fixo passa pelo meu marido, e ele vai dizer que o gerente do banco já faz isso de graça. Com a ajuda aos meus pais, não cabe.",
+  "objection": "Pagar por algo que o gerente já faz sem cobrar.",
+  "would_change_my_mind": "Se meu marido visse e achasse que vale a pena.",
+  "price_too_cheap": 50,
+  "price_cheap": 100,
+  "price_expensive": 200,
+  "price_too_expensive": 350
+}

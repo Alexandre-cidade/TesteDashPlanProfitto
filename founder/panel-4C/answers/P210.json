@@ -1,0 +1,13 @@
+{
+  "id": "P210",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Não vou entregar todas as minhas contas para uma empresa de Porto Alegre que eu nunca ouvi falar. E com renda variável, R$ 297 por mês fixo meu marido nem aceitaria.",
+  "objection": "Não quero expor todas as minhas contas para uma empresa que não conheço; não diz nada sobre como cuidam dos meus dados.",
+  "would_change_my_mind": "Saber exatamente o que fazem com os meus dados e alguém conhecido que já tenha usado.",
+  "price_too_cheap": 20,
+  "price_cheap": 50,
+  "price_expensive": 120,
+  "price_too_expensive": 200
+}

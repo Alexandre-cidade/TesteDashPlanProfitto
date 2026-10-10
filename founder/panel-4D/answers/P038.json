@@ -1,0 +1,13 @@
+{
+  "id": "P038",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "Acabei de me divorciar e as contas ainda tão bagunçadas e no vermelho; agora não é hora de assumir mais um gasto fixo.",
+  "objection": "Assinar algo no meio do caos e não conseguir manter as reuniões nem os pagamentos.",
+  "would_change_my_mind": "Se primeiro me ajudassem a sair do cheque especial antes de qualquer mensalidade.",
+  "price_too_cheap": 100,
+  "price_cheap": 200,
+  "price_expensive": 450,
+  "price_too_expensive": 700
+}

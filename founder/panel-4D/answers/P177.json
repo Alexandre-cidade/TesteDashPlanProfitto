@@ -1,0 +1,13 @@
+{
+  "id": "P177",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Entre ajudar meus pais e as assinaturas, R$ 390 por mês é muito, e boa parte do que oferecem (empresa, sucessão) não tem nada a ver comigo agora. O que aprendo nos vídeos de finanças por enquanto me serve.",
+  "objection": "Parece coisa para quem tem muito dinheiro e patrimônio para organizar, não para um casal começando.",
+  "would_change_my_mind": "Um plano para casal jovem, focado em orçamento e em ter filhos, por menos de R$ 150 por mês.",
+  "price_too_cheap": 40,
+  "price_cheap": 90,
+  "price_expensive": 180,
+  "price_too_expensive": 280
+}

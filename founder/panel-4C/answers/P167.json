@@ -1,0 +1,13 @@
+{
+  "id": "P167",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Assinatura mensal eu não pago, mas R$ 197 uma vez, com garantia e com alguém que não ganha comissão, eu pago para ver; já larguei app e já perdi dinheiro com dica, então um plano por escrito pode valer.",
+  "objection": "Depois do diagnóstico, os R$ 297 por mês me parecem caros para uma reunião de 30 minutos e um app que eu provavelmente vou largar igual larguei os outros.",
+  "would_change_my_mind": "Se o plano vier genérico na reunião de entrega, peço o dinheiro de volta e não continuo.",
+  "price_too_cheap": 50,
+  "price_cheap": 150,
+  "price_expensive": 350,
+  "price_too_expensive": 600
+}

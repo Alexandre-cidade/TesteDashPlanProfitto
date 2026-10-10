@@ -1,0 +1,13 @@
+{
+  "id": "P115",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Ajudo meus pais todo mês e sinto que o dinheiro não sobra; R$ 297 uma vez só, online, com devolução se atrasar, eu pago na hora. A mensalidade eu vejo depois, provavelmente não continuo.",
+  "objection": "Não sei se o planejador é bom e se não vai tentar me empurrar alguma coisa; e eu sei que costumo assinar no impulso e me arrepender.",
+  "would_change_my_mind": "Se o plano entregue for genérico, não continuo no acompanhamento.",
+  "price_too_cheap": 60,
+  "price_cheap": 150,
+  "price_expensive": 290,
+  "price_too_expensive": 420
+}

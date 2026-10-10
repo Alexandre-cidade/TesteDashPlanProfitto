@@ -1,0 +1,13 @@
+{
+  "id": "P054",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Não vou mandar extrato, salário e o que dou pros meus pais pra uma empresa de Porto Alegre que nunca ouvi falar. E R$ 297 de cara é bastante pra mim agora.",
+  "objection": "Expor todas as minhas contas pra desconhecidos, sem ninguém de confiança que já tenha usado.",
+  "would_change_my_mind": "Indicação de uma amiga ou colega que usou e gostou.",
+  "price_too_cheap": 40,
+  "price_cheap": 100,
+  "price_expensive": 200,
+  "price_too_expensive": 350
+}

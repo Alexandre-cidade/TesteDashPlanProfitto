@@ -1,0 +1,13 @@
+{
+  "id": "P004",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "Sei que minha PF e PJ estão uma bagunça e o preço nem é o problema, mas vou deixar para depois do fechamento do mês, como sempre. E no fundo acho que uma planilha bem feita resolve.",
+  "objection": "Pagar todo mês por algo que eu acho que consigo fazer numa planilha quando tiver tempo.",
+  "would_change_my_mind": "Meu contador ou alguém mostrar quanto eu estou perdendo em imposto e pró-labore mal feito; aí eu faço o diagnóstico na hora.",
+  "price_too_cheap": 150,
+  "price_cheap": 300,
+  "price_expensive": 700,
+  "price_too_expensive": 1200
+}

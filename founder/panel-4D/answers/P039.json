@@ -1,0 +1,13 @@
+{
+  "id": "P039",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "convenience",
+  "reason": "Trabalho das 9 às 18 e não tenho tempo pra reunião todo mês; já larguei app de controle depois de um mês, ia acontecer igual.",
+  "objection": "Pagar por reunião que eu vou ficar remarcando e uma plataforma que eu não vou abrir.",
+  "would_change_my_mind": "Algo que funcionasse sem reunião, só por mensagem quando eu precisasse.",
+  "price_too_cheap": 50,
+  "price_cheap": 120,
+  "price_expensive": 250,
+  "price_too_expensive": 400
+}

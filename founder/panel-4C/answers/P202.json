@@ -1,0 +1,13 @@
+{
+  "id": "P202",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "convenience",
+  "reason": "Tem reunião de entrega, sessão de casal e reunião mensal; eu queria algo 100% online sem falar com ninguém. Depois do divórcio, sessão de casal nem faz sentido para mim.",
+  "objection": "Não quero ficar marcando reunião por vídeo; prefiro um app ou relatório que eu leia sozinho.",
+  "would_change_my_mind": "Uma versão só digital, sem reuniões, que categorize meus gastos e mostre para onde foi o aumento.",
+  "price_too_cheap": 15,
+  "price_cheap": 40,
+  "price_expensive": 100,
+  "price_too_expensive": 200
+}

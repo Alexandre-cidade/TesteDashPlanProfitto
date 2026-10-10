@@ -1,0 +1,13 @@
+{
+  "id": "P182",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "Qualquer gasto fixo passa pela minha esposa e já me queimei com dica de investimento. Agora não é o momento, talvez ano que vem.",
+  "objection": "Mais uma mensalidade que eu teria que justificar em casa, para algo que não sei se dá resultado.",
+  "would_change_my_mind": "Se minha esposa visse e quisesse fazer junto.",
+  "price_too_cheap": 50,
+  "price_cheap": 120,
+  "price_expensive": 250,
+  "price_too_expensive": 400
+}

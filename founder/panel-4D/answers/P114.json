@@ -1,0 +1,13 @@
+{
+  "id": "P114",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Não decido isso sozinha, meu marido cuida das finanças e eu não fecho nada sem ele. E, honestamente, não conheço a Profitto nem o planejador.",
+  "objection": "Como vou saber se o planejador é bom? Não ter comissão ajuda, mas não vejo nome, certificação nem avaliação de clientes.",
+  "would_change_my_mind": "Ver quem é o planejador, com certificação e depoimentos, e meu marido concordar em fazer o diagnóstico.",
+  "price_too_cheap": 60,
+  "price_cheap": 150,
+  "price_expensive": 300,
+  "price_too_expensive": 450
+}

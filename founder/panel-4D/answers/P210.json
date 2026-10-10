@@ -1,0 +1,13 @@
+{
+  "id": "P210",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "R$ 390 por mês é caro para alguém me dizer para gastar menos; o que eu preciso aprendo de graça no YouTube.",
+  "objection": "Pagar caro por conselho que influenciador dá de graça.",
+  "would_change_my_mind": "Um preço de uns R$ 50 a R$ 80 por mês focado no meu objetivo de comprar um imóvel.",
+  "price_too_cheap": 20,
+  "price_cheap": 50,
+  "price_expensive": 120,
+  "price_too_expensive": 200
+}

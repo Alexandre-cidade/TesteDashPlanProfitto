@@ -1,0 +1,13 @@
+{
+  "id": "P197",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "Meu gerente e o assessor já cuidam disso sem mensalidade, e agora estou afogada na empresa; talvez no ano que vem eu olhe.",
+  "objection": "Mais uma reunião por vídeo numa semana que já é só reunião; não vejo o que ganho além do que meu gerente faz de graça.",
+  "would_change_my_mind": "Uma ajuda concreta para separar as contas da empresa das minhas, que meu gerente não faz.",
+  "price_too_cheap": 80,
+  "price_cheap": 150,
+  "price_expensive": 300,
+  "price_too_expensive": 600
+}

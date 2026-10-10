@@ -1,0 +1,13 @@
+{
+  "id": "P016",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Estou com cartão rodando e ainda ajudo meus pais; R$ 297 agora é uma fatura a mais. Isso de PJ, sucessão e previdência é para quem tem dinheiro sobrando.",
+  "objection": "Pagar para ouvir que preciso cortar gastos enquanto os juros continuam correndo.",
+  "would_change_my_mind": "Uma versão focada só em sair das dívidas, por menos de R$ 100, ou parcelada sem juros.",
+  "price_too_cheap": 20,
+  "price_cheap": 50,
+  "price_expensive": 120,
+  "price_too_expensive": 200
+}

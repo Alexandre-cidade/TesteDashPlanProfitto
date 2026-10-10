@@ -1,0 +1,13 @@
+{
+  "id": "P155",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Nenhum amigo me indicou, então não contrato. Já perdi dinheiro com dica e já larguei app; não vou pagar por mais uma coisa que vi passando.",
+  "objection": "Pagar e não usar, como aconteceu com o app, e não ter ninguém de confiança que tenha testado.",
+  "would_change_my_mind": "Uma amiga próxima dizer que fez o diagnóstico e que mudou algo de verdade nas contas dela.",
+  "price_too_cheap": 40,
+  "price_cheap": 120,
+  "price_expensive": 250,
+  "price_too_expensive": 400
+}

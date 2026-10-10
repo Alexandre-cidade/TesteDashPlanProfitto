@@ -1,0 +1,13 @@
+{
+  "id": "P082",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Meu gerente e o assessor da corretora cuidam disso sem me cobrar nada. Já paguei coisa que não usei; não vou pagar mensalidade pra mais uma.",
+  "objection": "Pagar e não usar, igual aconteceu com os apps, só que agora mais caro.",
+  "would_change_my_mind": "Alguém mostrar no papel quanto o meu gerente está me custando em taxas e produtos ruins, sobretudo agora com a partilha do divórcio.",
+  "price_too_cheap": 50,
+  "price_cheap": 120,
+  "price_expensive": 250,
+  "price_too_expensive": 400
+}

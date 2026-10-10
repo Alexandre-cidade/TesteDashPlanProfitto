@@ -1,0 +1,13 @@
+{
+  "id": "P101",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Tenho 24 anos, sou CLT, não tenho empresa nem investimentos nem sucessão para planejar. Minha planilha já mostra para onde vai meu salário; pagar R$ 297 e depois R$ 390 por mês para isso não faz sentido.",
+  "objection": "Metade do que está no pacote (PJ, pró-labore, sucessão) não serve para mim, então eu estaria pagando por coisa que não uso. O cancelamento pelo site sem multa ajuda, mas não muda isso.",
+  "would_change_my_mind": "Um plano mais simples e barato para quem está começando, focado em começar a investir, por uns R$ 50 a 80 por mês.",
+  "price_too_cheap": 15,
+  "price_cheap": 40,
+  "price_expensive": 90,
+  "price_too_expensive": 150
+}

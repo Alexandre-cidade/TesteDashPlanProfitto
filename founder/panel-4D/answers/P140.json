@@ -1,0 +1,13 @@
+{
+  "id": "P140",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Estou com cartão e cheque especial rodando, cada real está comprometido. Não faz sentido gastar R$ 297 e depois R$ 390 por mês quando o que eu preciso é cortar e pagar dívida; uma planilha eu faço.",
+  "objection": "Uma planilha resolve, não preciso pagar todo mês com o dinheiro que já está curto.",
+  "would_change_my_mind": "Um diagnóstico focado só em renegociar as dívidas, mais barato ou pago depois que eu economizar com os juros.",
+  "price_too_cheap": 30,
+  "price_cheap": 60,
+  "price_expensive": 120,
+  "price_too_expensive": 200
+}

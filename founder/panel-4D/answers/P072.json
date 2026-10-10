@@ -1,0 +1,13 @@
+{
+  "id": "P072",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Tenho uma decisão grande na mesa e minhas contas PF e PJ estão misturadas; R$ 297 por um diagnóstico com plano por escrito é pouco para mim. Compro o diagnóstico, mas o acompanhamento mensal fica para depois, se é que fica.",
+  "objection": "Não quero cair numa assinatura que não preciso; quero só resolver essa decisão e pronto.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 150,
+  "price_cheap": 300,
+  "price_expensive": 700,
+  "price_too_expensive": 1200
+}

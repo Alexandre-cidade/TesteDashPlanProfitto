@@ -1,0 +1,13 @@
+{
+  "id": "P219",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Estamos juntando para o apartamento e cada real conta. Pagar R$ 197, e depois R$ 297 por mês, para alguém me dizer para gastar menos não faz sentido quando minha planilha já faz isso.",
+  "objection": "Já perdi dinheiro com dica de investimento; não quero pagar por mais conselho.",
+  "would_change_my_mind": "Um diagnóstico bem mais barato, focado só no plano para dar a entrada do imóvel.",
+  "price_too_cheap": 20,
+  "price_cheap": 50,
+  "price_expensive": 100,
+  "price_too_expensive": 180
+}

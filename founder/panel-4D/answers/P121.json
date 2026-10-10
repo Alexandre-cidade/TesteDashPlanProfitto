@@ -1,0 +1,13 @@
+{
+  "id": "P121",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "Gostei de não venderem produto nem ganharem comissão, isso responde minha desconfiança. Mas conheço a mim mesma: vou salvar o link e deixar para o mês que vem, depois de juntar os papéis.",
+  "objection": "Já perdi dinheiro confiando em quem dizia entender do assunto; não sei quem é esse planejador nem que formação tem.",
+  "would_change_my_mind": "Alguém da minha idade que eu conheço ter usado e me mostrar o plano que recebeu, ou uma data-limite que me obrigasse a decidir.",
+  "price_too_cheap": 100,
+  "price_cheap": 250,
+  "price_expensive": 500,
+  "price_too_expensive": 800
+}

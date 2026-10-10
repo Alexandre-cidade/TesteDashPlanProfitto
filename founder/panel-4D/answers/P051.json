@@ -1,0 +1,13 @@
+{
+  "id": "P051",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Com o cheque especial rodando, R$ 297 agora é dinheiro que falta pra fatura. E o anúncio fala de empresa, sucessão, previdência... eu preciso é sair da dívida, não parece feito pra mim.",
+  "objection": "Pagar pra alguém me dizer que eu tenho que cortar gastos, sendo que o problema é o juro do cartão. E depois ainda vem a mensalidade de R$ 390 que eu não tenho.",
+  "would_change_my_mind": "Um diagnóstico focado só em dívida, 100% por escrito, mais barato ou com pagamento parcelado, mostrando como renegociar.",
+  "price_too_cheap": 30,
+  "price_cheap": 80,
+  "price_expensive": 150,
+  "price_too_expensive": 250
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P198",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Depois do divórcio estou no cartão e no cheque especial e quero comprar meu apartamento; um plano datado para sair das dívidas vale os R$ 197, ainda mais com devolução se for genérico. Não ganhar comissão me tranquiliza.",
+  "objection": "Como sei que o planejador é bom de verdade? Quero ver o plano de exemplo antes de pagar.",
+  "would_change_my_mind": "Se o plano de exemplo no site parecer raso, genérico, eu desisto.",
+  "price_too_cheap": 50,
+  "price_cheap": 120,
+  "price_expensive": 250,
+  "price_too_expensive": 400
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P193",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "Sei que preciso organizar, mas vai ficar para o mês que vem, como sempre. E toda conversa de dinheiro com meu marido vira briga.",
+  "objection": "Como sei que esse planejador é bom e não vai empurrar produto; a promessa de não ter comissão é só palavra.",
+  "would_change_my_mind": "Um prazo ou motivo concreto para fazer agora.",
+  "price_too_cheap": 50,
+  "price_cheap": 130,
+  "price_expensive": 300,
+  "price_too_expensive": 500
+}

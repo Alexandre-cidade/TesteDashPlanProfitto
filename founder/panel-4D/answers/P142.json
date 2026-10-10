@@ -1,0 +1,13 @@
+{
+  "id": "P142",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "Parece sério e o preço não pesa para mim, mas agora estou atolado no trabalho e não vou parar para juntar documento de PF e PJ. Talvez no ano que vem, quando as coisas acalmarem.",
+  "objection": "Não ter tempo de verdade para participar e acabar pagando por um plano que vai ficar na gaveta.",
+  "would_change_my_mind": "Um gatilho concreto, tipo a declaração de IR ou uma mudança societária, que me obrigue a resolver agora.",
+  "price_too_cheap": 150,
+  "price_cheap": 300,
+  "price_expensive": 900,
+  "price_too_expensive": 1800
+}

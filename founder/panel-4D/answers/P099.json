@@ -1,0 +1,13 @@
+{
+  "id": "P099",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Faço tudo na minha planilha há anos e funciona; não vejo o que um planejador vai descobrir que eu não sei. Mais uma assinatura na lista eu não quero.",
+  "objection": "Não conheço esse planejador; sem comissão é um ponto a favor, mas não me diz se ele é competente.",
+  "would_change_my_mind": "Garantia de que o diagnóstico acha pelo menos o valor dele em economia de imposto, senão devolve.",
+  "price_too_cheap": 50,
+  "price_cheap": 120,
+  "price_expensive": 250,
+  "price_too_expensive": 400
+}
