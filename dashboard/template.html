@@ -80,11 +80,11 @@ input[type=range]{width:100%;accent-color:var(--accent-fill)}
 .legend{display:flex;gap:14px;flex-wrap:wrap;font-size:.8rem;color:var(--muted)}
 .legend i{display:inline-block;width:14px;height:2px;vertical-align:middle;margin-right:6px}
 .tip{position:fixed;pointer-events:none;background:var(--ink);color:var(--bg);padding:8px 10px;border-radius:8px;font-size:.8rem;line-height:1.4;max-width:320px;z-index:20;box-shadow:0 6px 24px rgba(0,0,0,.18)}
-.dots{display:grid;grid-template-columns:repeat(20,minmax(0,1fr));gap:5px}
-@media (max-width:600px){.dots{grid-template-columns:repeat(10,minmax(0,1fr))}}
+.dots{display:grid;grid-template-columns:repeat(40,minmax(0,1fr));gap:2px}
+@media (max-width:600px){.dots{grid-template-columns:repeat(25,minmax(0,1fr))}}
 .dot{aspect-ratio:1;border-radius:50%;border:0;padding:0;cursor:pointer;background:var(--dot0);position:relative}
-.dot.real::after{content:"";position:absolute;inset:30%;border-radius:50%;background:var(--surface)}
-.dot.sel{outline:2px solid var(--ink);outline-offset:2px}
+.dot.real{box-shadow:inset 0 0 0 2px var(--ink)}
+.dot.sel{outline:2px solid var(--accent-fill);outline-offset:1px}
 .scale{display:flex;gap:12px;flex-wrap:wrap;font-size:.78rem;color:var(--muted);align-items:center}
 .scale span{display:inline-flex;align-items:center;gap:6px}
 .scale b{width:10px;height:10px;border-radius:50%;display:inline-block}
@@ -133,7 +133,7 @@ select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid var(--lin
 
   <nav class="tabs" role="tablist" aria-label="Seções">
     <button role="tab" aria-selected="true" data-tab="sim" id="t-sim">Simulador</button>
-    <button role="tab" aria-selected="false" data-tab="people" id="t-people">Os 100 compradores</button>
+    <button role="tab" aria-selected="false" data-tab="people" id="t-people">Os 1.000 compradores</button>
     <button role="tab" aria-selected="false" data-tab="market" id="t-market">Mercado e preço</button>
     <button role="tab" aria-selected="false" data-tab="offer" id="t-offer">Oferta e marca</button>
     <button role="tab" aria-selected="false" data-tab="ops" id="t-ops">Operação e lançamento</button>
@@ -199,7 +199,7 @@ select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid var(--lin
       </aside>
 
       <div class="stack">
-        <div class="note" id="honesty">Os 100 compradores são agentes de IA que responderam às ofertas. A página não roda os agentes de novo a cada mudança: ela usa um modelo calibrado nas respostas deles (preço que cada um aceita e as barreiras que cada um citou). Com a oferta atual, o modelo prevê cerca de 8%, e os agentes reais compraram 6–10%. Mudanças que nenhum agente viu, como ligar tudo, são extrapolação. Confirme com a pré-venda.</div>
+        <div class="note" id="honesty">São 1.000 compradores simulados: 100 agentes de IA que responderam às ofertas e 900 perfis derivados deles, sorteados nas proporções do cliente-alvo. Cada perfil derivado herda a faixa de preço (±15%) e as barreiras de um agente real com o mesmo segmento e comportamento. A página não roda agentes a cada mudança: ela usa um modelo calibrado nas respostas reais. Com a oferta atual, o modelo prevê cerca de 8%, e os agentes reais compraram 6–10%. Mudanças que nenhum agente viu, como ligar tudo, são extrapolação. Confirme com a pré-venda.</div>
         <div class="kpis" id="kpis"></div>
         <div class="grid2">
           <div class="card">
@@ -216,11 +216,11 @@ select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid var(--lin
             <div class="flexbetween"><h3>Quem compraria agora</h3><span class="muted num" id="dots-sum"></span></div>
             <div class="scale" style="margin-block:8px 10px"><span><b style="background:var(--dot3)"></b>provável (≥50%)</span><span><b style="background:var(--dot2)"></b>talvez (25–50%)</span><span><b style="background:var(--dot1)"></b>difícil (10–25%)</span><span><b style="background:var(--dot0)"></b>não (&lt;10%)</span></div>
             <div class="dots" id="dots"></div>
-            <p class="muted" style="font-size:.75rem;margin:10px 0 0">Bolinha vazada = comprou de verdade no painel. Toque numa bolinha para ver a pessoa.</p>
+            <p class="muted" style="font-size:.75rem;margin:10px 0 0">Bolinha com contorno = agente real (os 100). Toque numa bolinha para ver a pessoa.</p>
           </div>
           <div class="card">
             <h3>O que mais moveria os compradores</h3>
-            <p class="muted" style="font-size:.8rem;margin:4px 0 10px">Ganho de compradores (de 100) se você ligar cada alavanca que está desligada.</p>
+            <p class="muted" style="font-size:.8rem;margin:4px 0 10px">Ganho de compradores (de 1.000) se você ligar cada alavanca que está desligada.</p>
             <div class="bars" id="levers-rank"></div>
           </div>
         </div>
@@ -237,8 +237,8 @@ select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid var(--lin
   <section id="p-people" role="tabpanel" aria-labelledby="t-people" hidden>
     <div class="stack">
       <div class="flexbetween">
-        <div><h2>Os 100 compradores</h2><p class="muted" style="margin:4px 0 0">50 viram o pitch original (v1, 0 compraram). 50 viram a oferta atual (v3, 3 compraram o diagnóstico). Mais 20 do re-teste (v2, 2 compraram) entraram só na calibração.</p></div>
-        <div class="btns"><select id="f-seg" aria-label="Filtrar por segmento"><option value="">Todos os segmentos</option></select><select id="f-ver" aria-label="Filtrar por versão"><option value="">v1 e v3</option><option value="v1">Só v1</option><option value="v3">Só v3</option></select></div>
+        <div><h2>Os 1.000 compradores</h2><p class="muted" style="margin:4px 0 0">100 agentes reais: 50 viram o pitch original (v1, 0 compraram) e 50 viram a oferta atual (v3, 3 compraram o diagnóstico). Mais 900 perfis derivados deles. Os 20 do re-teste v2 (2 compraram) entraram só na calibração.</p></div>
+        <div class="btns"><select id="f-seg" aria-label="Filtrar por segmento"><option value="">Todos os segmentos</option></select><select id="f-ver" aria-label="Filtrar por versão"><option value="real">Agentes reais (100)</option><option value="">Todos (1.000)</option><option value="v1">Só v1</option><option value="v3">Só v3</option><option value="der">Só derivados (900)</option></select></div>
       </div>
       <div class="grid2" id="seg-summary"></div>
       <div class="card"><h3>Por que passam (respostas reais)</h3><div class="bars" id="reasons" style="margin-top:10px"></div></div>
@@ -363,7 +363,7 @@ select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid var(--lin
 <script>
 (function(){
 const D=JSON.parse(document.getElementById('data').textContent);
-const P=D.personas, K=D.k, W=D.w;
+const P=D.personas, K=D.k, W=D.w;const BYU={};P.forEach(p=>BYU[p.u]=p);
 const $=id=>document.getElementById(id);
 const BRL=v=>(v<0?'−':'')+'R$ '+Math.round(Math.abs(v)).toLocaleString('pt-BR');
 const BRLk=v=>{const a=Math.abs(v);const s=a>=1000?(a/1000).toLocaleString('pt-BR',{maximumFractionDigits:a>=100000?0:1})+' mil':Math.round(a)+'';return (v<0?'−':'')+'R$ '+s};
@@ -446,7 +446,7 @@ function delta(a,b,higherBetter,fmt){
 function kpis(r,R,c){
   const last=r.months[11],Rl=R.months[11];
   const items=[
-   ['Compradores no painel',Math.round(r.panel*100)+' de 100',delta(r.panel*100,R.panel*100,true,v=>v.toFixed(1)),'probabilidade somada dos 100'],
+   ['Compradores no painel',Math.round(r.panel*1000).toLocaleString('pt-BR')+' de 1.000',delta(r.panel*1000,R.panel*1000,true,v=>Math.round(v)),'probabilidade somada dos 1.000'],
    [c.diag?'Diagnósticos por mês':'Assinaturas novas por mês',(c.diag?r.months[5].diags:r.months[5].newSubs).toFixed(1).replace('.',','),delta(c.diag?r.months[5].diags:r.months[5].newSubs,(R.months[5].diags||R.months[5].newSubs),true,v=>v.toFixed(1)),'mês 6, depois do desconto de realismo'],
    ['Clientes ativos no mês 12',Math.round(last.clients),delta(last.clients,Rl.clients,true,v=>Math.round(v)),'break-even: '+(isFinite(r.beClients)?Math.ceil(r.beClients):'∞')+' clientes'],
    ['Receita no mês 12',BRLk(last.rev),delta(last.rev,Rl.rev,true,BRLk),'assinaturas + diagnósticos'],
@@ -502,29 +502,30 @@ function dots(c){
     el.addEventListener('pointerover',e=>{const b=e.target.closest('.dot');if(!b)return;const p=P[+b.dataset.i];showTip(e,`<b>${p.n}, ${p.a}</b> · ${p.s}<br>${p.b}<br>Chance agora: ${pct(prob(p,read()))}`)});
     el.addEventListener('pointerout',hideTip)}
   let sum=0;[...el.children].forEach((b,i)=>{const v=prob(P[i],c);sum+=v;b.style.background=dotColor(v);b.classList.toggle('sel',i===selected)});
-  $('dots-sum').textContent='≈ '+Math.round(sum)+' de 100';
+  $('dots-sum').textContent='≈ '+Math.round(sum)+' de 1.000';
 }
 function renderPick(c){
   const card=$('pick-card');if(selected===null){card.hidden=true;return}
-  const p=P[selected];const u=unresolved(p,c);
+  const p=P[selected];const u=unresolved(p,c);const src=p.v==='der'?BYU[p.d]:p;
   const pills=p.B.map(b=>`<span class="pill ${u.includes(b)?'off':'on'}">${u.includes(b)?'✕':'✓'} ${BARNAME[b]||b}</span>`).join('');
   card.hidden=false;
-  card.innerHTML=`<div class="pcard"><div class="flexbetween"><h3>${p.n}, ${p.a} anos</h3><span class="pill">${p.v==='v1'?'viu o pitch original':'viu a oferta atual'} · ${p.y?'COMPROU':'não comprou'}</span></div>
+  card.innerHTML=`<div class="pcard"><div class="flexbetween"><h3>${p.n}, ${p.a} anos</h3><span class="pill">${p.v==='der'?'perfil derivado de '+src.n:(p.v==='v1'?'agente real · viu o pitch original':'agente real · viu a oferta atual')+' · '+(p.y?'COMPROU':'não comprou')}</span></div>
   <span class="muted">${p.s} · ${p.b} · renda ~${BRL(p.i)}/ano</span>
   <div><span class="eyebrow">Chance de comprar com as alavancas atuais</span><div class="kpi" style="border:0;padding:4px 0"><span class="v">${pct(prob(p,c))}</span></div></div>
   <div><span class="eyebrow">Barreiras (verde = resolvida agora)</span><div class="pills" style="margin-top:6px">${pills||'<span class="pill">nenhuma barreira citada</span>'}</div></div>
   <div><span class="eyebrow">Preço mensal que aceita</span><p class="num" style="margin:4px 0 0">barato demais R$ ${p.p[0]} · barganha R$ ${p.p[1]} · começa a ficar caro R$ ${p.p[2]} · caro demais R$ ${p.p[3]}</p></div>
-  <blockquote>"${p.r}"</blockquote>
-  <p style="margin:0"><b>O que mudaria:</b> ${p.w||'—'}</p>
+  ${p.v==='der'?'<span class="eyebrow">Resposta do agente-base ('+src.n+', '+src.a+')</span>':''}
+  <blockquote>"${src.r}"</blockquote>
+  <p style="margin:0"><b>O que mudaria:</b> ${src.w||'—'}</p>
   <p class="muted" style="margin:0;font-size:.75rem">Fala de um comprador simulado. Pesquisa, não depoimento.</p></div>`;
 }
 function leverRank(c){
-  const base=panelRate(c)*100;const rows=[];
-  Object.keys(LEVERS).forEach(k=>{if(c[k])return;const c2=Object.assign({},c,{[k]:true});rows.push([k,LEVERS[k],panelRate(c2)*100-base])});
-  if(!c.diag||c.dprice>200){const c2=Object.assign({},c,{diag:true,dprice:197});rows.push(['__d','Diagnóstico a R$ 197',panelRate(c2)*100-base])}
+  const base=panelRate(c)*1000;const rows=[];
+  Object.keys(LEVERS).forEach(k=>{if(c[k])return;const c2=Object.assign({},c,{[k]:true});rows.push([k,LEVERS[k],panelRate(c2)*1000-base])});
+  if(!c.diag||c.dprice>200){const c2=Object.assign({},c,{diag:true,dprice:197});rows.push(['__d','Diagnóstico a R$ 197',panelRate(c2)*1000-base])}
   rows.sort((a,b)=>b[2]-a[2]);
   const mx=Math.max(1,...rows.map(r=>r[2]));
-  $('levers-rank').innerHTML=rows.length?rows.slice(0,8).map(([k,n,v])=>`<div class="bar"><div class="t"><div class="flexbetween"><span>${n}</span><button data-k="${k}">ligar</button></div><div class="track"><div class="fill" style="width:${Math.max(2,v/mx*100)}%"></div></div></div><span class="val">+${v.toFixed(1).replace('.',',')}</span></div>`).join(''):'<p class="muted">Todas as alavancas já estão ligadas.</p>';
+  $('levers-rank').innerHTML=rows.length?rows.slice(0,8).map(([k,n,v])=>`<div class="bar"><div class="t"><div class="flexbetween"><span>${n}</span><button data-k="${k}">ligar</button></div><div class="track"><div class="fill" style="width:${Math.max(2,v/mx*100)}%"></div></div></div><span class="val">+${Math.round(v)}</span></div>`).join(''):'<p class="muted">Todas as alavancas já estão ligadas.</p>';
 }
 $('levers-rank').addEventListener('click',e=>{const b=e.target.closest('button[data-k]');if(!b)return;const k=b.dataset.k;if(k==='__d'){$('diag').checked=true;$('dprice').value=197}else $(k).checked=true;update()});
 
@@ -562,18 +563,18 @@ $('f-seg').innerHTML+=segs.map(s=>`<option>${s}</option>`).join('');
 const RC={trust:'Confiança',habit:'Hábito (planilha, gerente)',price:'Preço',need:'Não vê necessidade',other:'Outro'};
 function people(){
   const fs=$('f-seg').value,fv=$('f-ver').value;
-  const L=P.filter(p=>(!fs||p.s===fs)&&(!fv||p.v===fv));
+  const L=P.filter(p=>(!fs||p.s===fs)&&(!fv||(fv==='real'?p.v!=='der':p.v===fv)));const LR=L.filter(p=>p.v!=='der');
   const bySeg={};P.forEach(p=>{(bySeg[p.s]=bySeg[p.s]||[]).push(p)});
-  $('seg-summary').innerHTML=segs.map(s=>{const g=bySeg[s];const med=a=>{const x=a.slice().sort((p,q)=>p-q);return x[Math.floor(x.length/2)]};return `<div class="card"><span class="eyebrow">${s}</span><div class="flexbetween" style="margin-top:6px"><span><b class="num">${g.length}</b> pessoas · <b class="num">${g.filter(p=>p.y).length}</b> compraram</span><span class="num muted">caro a partir de R$ ${med(g.map(p=>p.p[2]))}</span></div></div>`}).join('');
-  const rc={};L.filter(p=>!p.y).forEach(p=>rc[p.rc]=(rc[p.rc]||0)+1);
+  $('seg-summary').innerHTML=segs.map(s=>{const g=bySeg[s];const med=a=>{const x=a.slice().sort((p,q)=>p-q);return x[Math.floor(x.length/2)]};return `<div class="card"><span class="eyebrow">${s}</span><div class="flexbetween" style="margin-top:6px"><span><b class="num">${g.length}</b> pessoas · <b class="num">${g.filter(p=>p.v!=='der').length}</b> agentes reais · <b class="num">${g.filter(p=>p.y).length}</b> compraram</span><span class="num muted">caro a partir de R$ ${med(g.map(p=>p.p[2]))}</span></div></div>`}).join('');
+  const rc={};LR.filter(p=>!p.y).forEach(p=>rc[p.rc]=(rc[p.rc]||0)+1);
   const mx=Math.max(1,...Object.values(rc));
   $('reasons').innerHTML=Object.entries(rc).sort((a,b)=>b[1]-a[1]).map(([k,v])=>`<div class="bar"><div class="t"><span>${RC[k]||k}</span><div class="track"><div class="fill" style="width:${v/mx*100}%"></div></div></div><span class="val">${v}</span></div>`).join('');
   const bc={};L.forEach(p=>p.B.forEach(b=>bc[b]=(bc[b]||0)+1));
   const mb=Math.max(1,...Object.values(bc));
   $('barriers').innerHTML=Object.entries(bc).sort((a,b)=>b[1]-a[1]).map(([k,v])=>`<div class="bar"><div class="t"><span>${BARNAME[k]||k}</span><div class="track"><div class="fill" style="width:${v/mb*100}%"></div></div></div><span class="val">${v}</span></div>`).join('');
-  $('tbl-people').innerHTML='<tr><th>Pessoa</th><th>Segmento</th><th>Comportamento</th><th>Viu</th><th>Comprou</th><th>Por quê (nas palavras dela)</th><th class="n">Caro a partir de</th></tr>'+L.map(p=>`<tr><td><b>${p.n}</b>, ${p.a}</td><td>${p.s}</td><td>${p.b}</td><td>${p.v}</td><td>${p.y?'<span class="sev l">sim</span>':'não'}</td><td style="min-width:260px">${p.r}</td><td class="n">R$ ${p.p[2]}</td></tr>`).join('');
+  $('tbl-people').innerHTML='<tr><th>Pessoa</th><th>Segmento</th><th>Comportamento</th><th>Viu</th><th>Comprou</th><th>Por quê (nas palavras dela)</th><th class="n">Caro a partir de</th></tr>'+L.map(p=>`<tr><td><b>${p.n}</b>, ${p.a}</td><td>${p.s}</td><td>${p.b}</td><td>${p.v}</td><td>${p.y?'<span class="sev l">sim</span>':'não'}</td><td style="min-width:260px">${p.v==='der'?'<span class="muted">derivado de '+(BYU[p.d]?BYU[p.d].n:'')+'</span>':p.r}</td><td class="n">R$ ${p.p[2]}</td></tr>`).join('');
 }
-$('f-seg').addEventListener('change',people);$('f-ver').addEventListener('change',people);people();
+$('f-ver').value='real';$('f-seg').addEventListener('change',people);$('f-ver').addEventListener('change',people);people();
 
 // ---- preço (régua) ----
 (function(){const svg=$('ch-price'),Wd=760,l=20,r=20,y0=120,mx=800;const x=v=>l+(Wd-l-r)*v/mx;
