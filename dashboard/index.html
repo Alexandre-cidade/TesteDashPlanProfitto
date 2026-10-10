@@ -1,35 +1,25 @@
-<title>Simulador Lastro</title>
+<title>Simulador Profitto</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
 <style>
 /* Layout: painel de alavancas fixo à esquerda + resultados ao vivo à direita; abas para os outros lados do negócio. */
 :root{
-  --bg:#F6F2EA; --surface:#FFFDF8; --sunk:#EEE8DC; --ink:#14323A; --muted:#566A6D; --line:#DDD5C6;
-  --accent:#8A5A12; --accent-fill:#C9862A; --on-accent:#FFFFFF;
+  /* Cores da marca Profitto: troque --brand e --brand-2 pelos códigos oficiais */
+  --brand:#0B5FFF; --brand-2:#0A2540;
+  --bg:#FFFFFF; --surface:#FFFFFF; --sunk:#F4F6F9; --ink:#0A2540; --muted:#5A6B7F; --line:#E3E8EF;
+  --accent:var(--brand); --accent-fill:var(--brand); --on-accent:#FFFFFF;
   --s1:#2a78d6; --s2:#eb6834;
-  --good:#1E7A46; --good-bg:#E3F1E8; --warn:#9A5B00; --warn-bg:#F7ECD6; --bad:#B3261E; --bad-bg:#F8E1DE;
-  --dot0:#D9D2C4; --dot1:#E9C27A; --dot2:#C9862A; --dot3:#1E7A46;
-  --f-display:"Fraunces", Georgia, "Times New Roman", serif;
-  --f-body:"Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  --r:10px;
+  --good:#167A3E; --good-bg:#E4F4EA; --warn:#9A5B00; --warn-bg:#FBEFD9; --bad:#B3261E; --bad-bg:#FBE4E1;
+  --dot0:#E3E8EF; --dot1:#B9CCF5; --dot2:#5B8DEF; --dot3:#167A3E;
+  --f-display:"Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --f-body:"Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --r:10px; color-scheme:light;
 }
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --bg:#0F1E22; --surface:#15282D; --sunk:#0B171A; --ink:#E8F0EE; --muted:#9BB0B2; --line:#28423F;
-  --accent:#E8AE4F; --accent-fill:#C9862A; --on-accent:#14110A;
-  --s1:#3987e5; --s2:#d95926;
-  --good:#5CC48A; --good-bg:#16352A; --warn:#E9AE4B; --warn-bg:#3A2E14; --bad:#F2806F; --bad-bg:#3D1F1C;
-  --dot0:#2C4447; --dot1:#7A6332; --dot2:#C9862A; --dot3:#4CB97A; color-scheme:dark}}
-:root[data-theme="dark"]{
-  --bg:#0F1E22; --surface:#15282D; --sunk:#0B171A; --ink:#E8F0EE; --muted:#9BB0B2; --line:#28423F;
-  --accent:#E8AE4F; --accent-fill:#C9862A; --on-accent:#14110A;
-  --s1:#3987e5; --s2:#d95926;
-  --good:#5CC48A; --good-bg:#16352A; --warn:#E9AE4B; --warn-bg:#3A2E14; --bad:#F2806F; --bad-bg:#3D1F1C;
-  --dot0:#2C4447; --dot1:#7A6332; --dot2:#C9862A; --dot3:#4CB97A; color-scheme:dark}
 *{box-sizing:border-box}
 body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:14px;line-height:1.5}
 .wrap{max-width:1280px;margin:0 auto;padding-inline:20px;padding-block:20px 48px}
-h1,h2,h3{font-family:var(--f-display);font-weight:650;text-wrap:balance;margin:0;letter-spacing:-.01em}
+h1,h2,h3{font-family:var(--f-display);font-weight:700;text-wrap:balance;margin:0;letter-spacing:-.01em}
 h1{font-size:1.9rem}h2{font-size:1.35rem}h3{font-size:1.05rem}
 .eyebrow{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
 .muted{color:var(--muted)}
@@ -63,9 +53,10 @@ input[type=range]{width:100%;accent-color:var(--accent-fill)}
 .btn:hover{border-color:var(--accent-fill)}
 .btn.primary{background:var(--accent-fill);border-color:var(--accent-fill);color:var(--on-accent);font-weight:600}
 .kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.kpis .sep{grid-column:1/-1;margin-top:4px}
 @media (max-width:1100px){.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .kpi{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:12px 14px;display:grid;gap:2px;min-width:0}
-.kpi .v{font-family:var(--f-display);font-size:1.5rem;font-weight:650;font-variant-numeric:tabular-nums;line-height:1.15}
+.kpi .v{font-family:var(--f-display);font-size:1.45rem;font-weight:700;font-variant-numeric:tabular-nums;line-height:1.15}
 .kpi .l{font-size:.78rem;color:var(--muted)}
 .delta{font-size:.78rem;font-weight:600;font-variant-numeric:tabular-nums}
 .delta.up{color:var(--good)}.delta.down{color:var(--bad)}.delta.eq{color:var(--muted)}
@@ -122,7 +113,7 @@ select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid var(--lin
 <div class="wrap">
   <header class="top">
     <div style="display:grid;gap:6px">
-      <span class="eyebrow">Planejamento financeiro por assinatura · Porto Alegre · nome provisório: Lastro</span>
+      <span class="eyebrow">Profitto · Planejamento financeiro por assinatura · Porto Alegre</span>
       <h1>Simulador do negócio</h1>
     </div>
     <div style="display:grid;gap:6px;justify-items:end">
@@ -183,6 +174,15 @@ select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid var(--lin
           <div class="ctl"><div class="row"><label for="conv">Diagnóstico que vira assinatura</label><output id="o-conv"></output></div><input type="range" id="conv" min="0" max="100" step="5"></div>
           <div class="ctl"><div class="row"><label for="churn">Cancelamentos por mês</label><output id="o-churn"></output></div><input type="range" id="churn" min="0" max="15" step="0.5"></div>
         </fieldset>
+        <fieldset><legend>Equipe</legend>
+          <div class="ctl"><div class="row"><label for="cap">Clientes por planejador</label><output id="o-cap"></output></div><input type="range" id="cap" min="20" max="300" step="5"></div>
+          <div class="ctl"><div class="row"><label for="pfix">Fixo por planejador</label><output id="o-pfix"></output></div><input type="range" id="pfix" min="0" max="10000" step="250"></div>
+          <div class="ctl"><div class="row"><label for="span">Planejadores por líder</label><output id="o-span"></output></div><input type="range" id="span" min="2" max="15" step="1"></div>
+          <div class="ctl"><div class="row"><label for="lead">Custo do líder de time</label><output id="o-lead"></output></div><input type="range" id="lead" min="0" max="25000" step="500"></div>
+          <div class="ctl"><div class="row"><label for="perprof">Custo fixo por profissional</label><output id="o-perprof"></output></div><input type="range" id="perprof" min="0" max="2000" step="50"></div>
+          <div class="ctl"><div class="row"><label for="other">Outros fixos (contador, sistemas)</label><output id="o-other"></output></div><input type="range" id="other" min="0" max="10000" step="100"></div>
+          <div class="ctl"><div class="row"><label for="growth">Crescimento anual de interessados</label><output id="o-growth"></output></div><input type="range" id="growth" min="0" max="150" step="5"></div>
+        </fieldset>
         <fieldset><legend>Custos</legend>
           <div class="ctl"><div class="row"><label for="ceo1">CEO antes do break-even</label><output id="o-ceo1"></output></div><input type="range" id="ceo1" min="0" max="15000" step="500"></div>
           <div class="ctl"><div class="row"><label for="ceo2">CEO depois do break-even</label><output id="o-ceo2"></output></div><input type="range" id="ceo2" min="0" max="20000" step="500"></div>
@@ -204,12 +204,17 @@ select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid var(--lin
         <div class="grid2">
           <div class="card">
             <div class="flexbetween"><h3>Clientes ativos</h3><div class="legend"><span><i style="background:var(--s1)"></i>Cenário</span><span><i style="background:var(--s2)"></i>Referência</span><span><i style="background:var(--muted);height:0;border-top:1px dashed var(--muted)"></i>Break-even</span></div></div>
-            <svg class="chart" id="ch-clients" viewBox="0 0 560 240" role="img" aria-label="Clientes ativos por mês"></svg>
+            <svg class="chart" id="ch-clients" viewBox="0 0 560 240" role="img" aria-label="Clientes ativos por mês, 5 anos"></svg>
           </div>
           <div class="card">
             <div class="flexbetween"><h3>Caixa acumulado</h3><div class="legend"><span><i style="background:var(--s1)"></i>Cenário</span><span><i style="background:var(--s2)"></i>Referência</span></div></div>
-            <svg class="chart" id="ch-cash" viewBox="0 0 560 240" role="img" aria-label="Caixa acumulado por mês"></svg>
+            <svg class="chart" id="ch-cash" viewBox="0 0 560 240" role="img" aria-label="Caixa acumulado por mês, 5 anos"></svg>
           </div>
+        </div>
+        <div class="card">
+          <div class="flexbetween"><h3>Escala: ano a ano</h3><div class="legend"><span><i style="background:var(--s1);height:8px;border-radius:2px"></i>Receita</span><span><i style="background:var(--s2);height:8px;border-radius:2px"></i>Resultado</span></div></div>
+          <svg class="chart" id="ch-years" viewBox="0 0 760 260" role="img" aria-label="Receita e resultado por ano, anos 1 a 5"></svg>
+          <div class="tbl" style="margin-top:10px"><table id="tbl-years"></table></div>
         </div>
         <div class="grid2">
           <div class="card">
@@ -226,7 +231,7 @@ select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid var(--lin
         </div>
         <div class="card" id="pick-card" hidden></div>
         <div class="card">
-          <h3>Mês a mês</h3>
+          <h3>Mês a mês (5 anos)</h3>
           <div class="tbl" style="margin-top:8px"><table id="tbl-month"></table></div>
         </div>
       </div>
@@ -304,15 +309,14 @@ select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid var(--lin
         </div>
       </div>
       <div class="card stack">
-        <div class="flexbetween"><h3>Marca: Lastro <span class="muted" style="font:500 .85rem var(--f-body)">(recomendado; checar INPI classe 36 e registro.br)</span></h3><span class="pill">Alternativas: Pila · Contas Claras</span></div>
-        <p style="font-family:var(--f-display);font-size:1.4rem;margin:0">Contas claras. Plano escrito.</p>
-        <div class="cols3" style="grid-template-columns:repeat(4,minmax(0,1fr))">
-          <div class="swatch" style="background:#14323A;color:#F6F2EA">Tinta #14323A</div>
-          <div class="swatch" style="background:#F6F2EA;color:#14323A;border:1px solid var(--line)">Papel #F6F2EA</div>
-          <div class="swatch" style="background:#C9862A;color:#14323A">Âmbar #C9862A</div>
-          <div class="swatch" style="background:#8A5A12;color:#FFFFFF">Âmbar escuro #8A5A12</div>
+        <div class="flexbetween"><h3>Marca: Profitto</h3><span class="pill">Checar INPI classe 36 e registro.br</span></div>
+        <p style="font-family:var(--f-display);font-size:1.3rem;font-weight:700;margin:0">Contas claras. Plano escrito.</p>
+        <div class="cols3" style="grid-template-columns:repeat(3,minmax(0,1fr))">
+          <div class="swatch" style="background:var(--brand);color:#FFFFFF">Cor principal (provisória)</div>
+          <div class="swatch" style="background:var(--brand-2);color:#FFFFFF">Cor de apoio (provisória)</div>
+          <div class="swatch" style="background:#FFFFFF;color:var(--ink);border:1px solid var(--line)">Fundo branco</div>
         </div>
-        <p class="muted" style="margin:0;font-size:.85rem">Voz: direta, calma, honesta. Fontes: Fraunces (títulos) e Inter (texto).</p>
+        <p class="muted" style="margin:0;font-size:.85rem">Voz: direta, calma, honesta. As cores acima são provisórias até receber a paleta oficial da Profitto.</p>
       </div>
     </div>
   </section>
@@ -374,7 +378,7 @@ const BAR2LEV={cancel:'cancel',comissao:'comissao',cfp:'cfp',indicacao:'prova',a
 const BARNAME={cancel:'Medo de não conseguir cancelar',comissao:'Desconfiança de comissão',cfp:'Quer planejador certificado',indicacao:'Só compra por indicação',avaliacoes:'Quer avaliações reais',exemplo:'Quer ver um plano exemplo',garantia_qual:'Garantia só cobre atraso',casal:'Briga com o cônjuge',dividas:'Dívida rodando',parcelado:'Quer parcelar',tributario:'Quer tributário / sucessão',raiox:'Acha que o gerente faz de graça',checkin:'Já largou app',diag_barato:'Quer diagnóstico barato ou 1ª conversa grátis'};
 
 const PRESETS={
- atual:{m:297,diag:true,dprice:490,parcelado:false,cancel:true,comissao:true,cfp:false,garantia:false,exemplo:false,prova:false,checkin:true,casal:false,raiox:false,dividas:false,tributario:false,rede:25,mkt:3000,cpl:40,real:50,conv:50,churn:3,ceo1:10000,ceo2:10000,plan:20,tax:11,pmt:5000,cash:100000},
+ atual:{m:297,diag:true,dprice:490,parcelado:false,cancel:true,comissao:true,cfp:false,garantia:false,exemplo:false,prova:false,checkin:true,casal:false,raiox:false,dividas:false,tributario:false,rede:25,mkt:3000,cpl:40,real:50,conv:50,churn:3,ceo1:10000,ceo2:10000,plan:20,tax:11,pmt:5000,cash:100000,cap:120,pfix:0,span:6,lead:9000,perprof:300,other:900,growth:25},
 };
 PRESETS.v1=Object.assign({},PRESETS.atual,{m:350,diag:false,dprice:0,cancel:false,comissao:false,checkin:false});
 PRESETS.rec=Object.assign({},PRESETS.atual,{dprice:197,garantia:true,exemplo:true,casal:true,raiox:true,dividas:true,ceo1:5000});
@@ -394,46 +398,55 @@ function prob(p,c){const u=unresolved(p,c).length;const pen=Math.pow(W,u);
 function panelRate(c){let s=0;P.forEach(p=>s+=prob(p,c));return s/P.length}
 
 // ---- modelo do negócio ----
+const HZ=60;
+function team(clients,c){const planners=Math.max(1,Math.ceil(clients/Math.max(1,c.cap)));const leaders=Math.floor(planners/Math.max(1,c.span));return {planners,leaders}}
+function teamCost(tm,c){return tm.planners*c.pfix+tm.leaders*c.lead+(tm.planners+tm.leaders)*c.perprof}
+function platformCost(clients,c){return c.pmt+Math.max(0,clients-400)*20}
 function simulate(c){
   const rate=panelRate(c)*c.real/100;
-  const months=[];let clients=0,cash=c.cash-15000,beMonth=null,minCash=cash,outMonth=null;
   const unitVar=(c.plan+c.tax+3.5)/100;
   const contrib=c.m*(1-unitVar);
-  for(let mo=1;mo<=24;mo++){
+  const months=[];let clients=0,cash=c.cash-15000,beMonth=null,minCash=cash,outMonth=null;
+  for(let mo=1;mo<=HZ;mo++){
     const ramp=mo===1?0.5:mo===2?0.75:1;
-    const leads=(c.rede+(c.cpl>0?c.mkt/c.cpl:0))*ramp;
+    const g=Math.pow(1+c.growth/100,Math.floor((mo-1)/12));
+    const leads=(c.rede+(c.cpl>0?c.mkt/c.cpl:0))*ramp*g;
     const buyers=leads*rate;
     const diags=c.diag?buyers:0;
     const newSubs=c.diag?buyers*c.conv/100:buyers;
-    clients=clients*(1-c.churn/100)+newSubs;
-    const revSubs=clients*c.m, revDiag=diags*c.dprice;
-    const rev=revSubs+revDiag;
-    const varCost=rev*unitVar;
-    const platform=c.pmt+Math.max(0,clients-400)*20;
-    const preBE=beMonth===null;
-    const ceo=preBE?c.ceo1:c.ceo2;
-    const fixed=platform+c.mkt+900+ceo;
+    const lost=clients*c.churn/100;
+    clients=clients-lost+newSubs;
+    const rev=clients*c.m+diags*c.dprice;
+    const varCost=rev*unitVar, planVar=rev*c.plan/100;
+    const tm=team(clients,c);
+    const tcost=teamCost(tm,c);
+    const ceo=beMonth===null?c.ceo1:c.ceo2;
+    const platform=platformCost(clients,c);
+    const fixed=platform+c.mkt*g+c.other+ceo+tcost;
     const profit=rev-varCost-fixed;
     if(beMonth===null&&profit>=0)beMonth=mo;
     cash+=profit;minCash=Math.min(minCash,cash);
     if(outMonth===null&&cash<0)outMonth=mo;
-    months.push({mo,leads,diags,newSubs,clients,rev,varCost,fixed,profit,cash});
+    months.push({mo,leads,diags,newSubs,lost,clients,rev,varCost,planVar,tcost,platform,ceo,mkt:c.mkt*g,fixed,profit,cash,planners:tm.planners,leaders:tm.leaders});
   }
-  const fixedRef=c.pmt+c.mkt+900+c.ceo1;
-  const beClients=contrib>0?fixedRef/contrib:Infinity;
-  const y1=months.slice(0,12).reduce((a,x)=>a+x.profit,0);
-  return {rate,months,contrib,beClients,beMonth,minCash,outMonth,y1,panel:panelRate(c)};
+  // break-even em clientes com a equipe escalando (CEO antes do break-even, marketing do ano 1)
+  let beClients=Infinity;
+  for(let n=1;n<=20000;n++){const tm=team(n,c);const pr=n*contrib-(platformCost(n,c)+c.mkt+c.other+c.ceo1+teamCost(tm,c));if(pr>=0){beClients=n;break}}
+  const years=[];for(let y=0;y<HZ/12;y++){const ms=months.slice(y*12,y*12+12);const s=k=>ms.reduce((a,x)=>a+x[k],0);const e=ms[11];
+    years.push({y:y+1,rev:s('rev'),profit:s('profit'),varCost:s('varCost'),planVar:s('planVar'),tcost:s('tcost'),platform:s('platform'),ceo:s('ceo'),mkt:s('mkt'),newSubs:s('newSubs'),diags:s('diags'),clients:e.clients,planners:e.planners,leaders:e.leaders,cash:e.cash,mrr:e.clients*c.m})}
+  const y1=years[0].profit;
+  return {rate,months,years,contrib,beClients,beMonth,minCash,outMonth,y1,panel:panelRate(c)};
 }
 
 // ---- estado ----
 let ref=null;
-try{const s=localStorage.getItem('lastro-ref');if(s)ref=JSON.parse(s)}catch(e){}
-if(!ref)ref=Object.assign({},PRESETS.atual);
+try{const s=localStorage.getItem('profitto-ref');if(s)ref=JSON.parse(s)}catch(e){}
+ref=Object.assign({},PRESETS.atual,ref||{});
 let cur=Object.assign({},PRESETS.atual);
-try{const s=localStorage.getItem('lastro-cur');if(s)cur=Object.assign({},PRESETS.atual,JSON.parse(s))}catch(e){}
+try{const s=localStorage.getItem('profitto-cur');if(s)cur=Object.assign({},PRESETS.atual,JSON.parse(s))}catch(e){}
 write(cur);
 
-const FMT={m:v=>BRL(v)+'/mês',dprice:v=>v==0?'grátis':BRL(v),rede:v=>v+' pessoas',mkt:v=>BRL(v),cpl:v=>BRL(v),real:v=>v+'%',conv:v=>v+'%',churn:v=>String(v).replace('.',',')+'%',ceo1:v=>BRL(v),ceo2:v=>BRL(v),plan:v=>v+'%',tax:v=>String(v).replace('.',',')+'%',pmt:v=>BRL(v),cash:v=>BRL(v)};
+const FMT={cap:v=>v+' clientes',pfix:v=>BRL(v),span:v=>v+' planejadores',lead:v=>BRL(v),perprof:v=>BRL(v),other:v=>BRL(v),growth:v=>v+'%',m:v=>BRL(v)+'/mês',dprice:v=>v==0?'grátis':BRL(v),rede:v=>v+' pessoas',mkt:v=>BRL(v),cpl:v=>BRL(v),real:v=>v+'%',conv:v=>v+'%',churn:v=>String(v).replace('.',',')+'%',ceo1:v=>BRL(v),ceo2:v=>BRL(v),plan:v=>v+'%',tax:v=>String(v).replace('.',',')+'%',pmt:v=>BRL(v),cash:v=>BRL(v)};
 
 function delta(a,b,higherBetter,fmt){
   const d=a-b; const eps=Math.max(Math.abs(b)*0.005,0.0001);
@@ -448,16 +461,21 @@ function kpis(r,R,c){
   const items=[
    ['Compradores no painel',Math.round(r.panel*1000).toLocaleString('pt-BR')+' de 1.000',delta(r.panel*1000,R.panel*1000,true,v=>Math.round(v)),'probabilidade somada dos 1.000'],
    [c.diag?'Diagnósticos por mês':'Assinaturas novas por mês',(c.diag?r.months[5].diags:r.months[5].newSubs).toFixed(1).replace('.',','),delta(c.diag?r.months[5].diags:r.months[5].newSubs,(R.months[5].diags||R.months[5].newSubs),true,v=>v.toFixed(1)),'mês 6, depois do desconto de realismo'],
-   ['Clientes ativos no mês 12',Math.round(last.clients),delta(last.clients,Rl.clients,true,v=>Math.round(v)),'break-even: '+(isFinite(r.beClients)?Math.ceil(r.beClients):'∞')+' clientes'],
+   ['Clientes ativos no mês 12',Math.round(last.clients),delta(last.clients,Rl.clients,true,v=>Math.round(v)),'break-even: '+(isFinite(r.beClients)?r.beClients:'∞')+' clientes, com a equipe'],
    ['Receita no mês 12',BRLk(last.rev),delta(last.rev,Rl.rev,true,BRLk),'assinaturas + diagnósticos'],
    ['Margem por cliente',BRL(r.contrib)+' ('+pct(r.contrib/c.m)+')',delta(r.contrib,R.contrib,true,BRL),'depois de planejador, imposto e cobrança'],
    ['Resultado do ano 1',BRLk(r.y1),delta(r.y1,R.y1,true,BRLk),'operacional, sem o investimento inicial'],
-   ['Ponto mais baixo do caixa',BRLk(r.minCash),delta(r.minCash,R.minCash,true,BRLk),r.outMonth?'caixa fica negativo no mês '+r.outMonth:'o caixa nunca zera em 24 meses'],
-   ['Mês do primeiro lucro',r.beMonth?'mês '+r.beMonth:'depois do mês 24',delta(r.beMonth||25,R.beMonth||25,false,v=>Math.round(v)+' meses'),'primeiro mês com resultado ≥ 0'],
+   ['Ponto mais baixo do caixa',BRLk(r.minCash),delta(r.minCash,R.minCash,true,BRLk),r.outMonth?'caixa fica negativo no mês '+r.outMonth:'o caixa nunca zera em 5 anos'],
+   ['Mês do primeiro lucro',r.beMonth?'mês '+r.beMonth:'depois do mês 60',delta(r.beMonth||61,R.beMonth||61,false,v=>Math.round(v)+' meses'),'primeiro mês com resultado ≥ 0'],
+   ['Clientes no fim do ano 5',Math.round(r.years[4].clients).toLocaleString('pt-BR'),delta(r.years[4].clients,R.years[4].clients,true,v=>Math.round(v)),'MRR '+BRLk(r.years[4].mrr)+' por mês'],
+   ['Receita do ano 5',BRLk(r.years[4].rev),delta(r.years[4].rev,R.years[4].rev,true,BRLk),'assinaturas + diagnósticos'],
+   ['Resultado do ano 5',BRLk(r.years[4].profit),delta(r.years[4].profit,R.years[4].profit,true,BRLk),'margem '+(r.years[4].rev>0?pct(r.years[4].profit/r.years[4].rev):'—')+' da receita'],
+   ['Equipe no fim do ano 5',r.years[4].planners+' + '+r.years[4].leaders,delta(r.years[4].planners+r.years[4].leaders,R.years[4].planners+R.years[4].leaders,false,v=>Math.round(v)+' pessoas'),'planejadores + líderes de time'],
   ];
   $('kpis').innerHTML=items.map(([l,v,d,s])=>`<div class="kpi"><span class="l">${l}</span><span class="v">${v}</span>${d}<span class="l">${s}</span></div>`).join('');
   const st=$('verdict');
   if(r.outMonth){st.className='verdict bad';st.textContent='Cenário: caixa acaba no mês '+r.outMonth}
+  else if(r.years[4].profit>=0&&r.y1<0){st.className='verdict yes';st.textContent='Cenário: lucro a partir do ano '+(r.years.findIndex(y=>y.profit>=0)+1)}
   else if(r.y1>=0){st.className='verdict yes';st.textContent='Cenário: lucro no ano 1'}
   else {st.className='verdict no';st.textContent='Cenário: prejuízo no ano 1, caixa aguenta'}
 }
@@ -477,7 +495,7 @@ function lineChart(svg,seriesA,seriesB,opts){
   let g='<g class="grid">';
   for(let v=mn;v<=mx+step/2;v+=step){g+=`<line x1="${l}" x2="${Wd-r}" y1="${y(v)}" y2="${y(v)}"/><text x="${l-6}" y="${y(v)+4}" text-anchor="end">${opts.fmt(Math.abs(v)<step/1000?0:v)}</text>`}
   g+='</g>';
-  let xl='';[1,6,12,18,24].forEach(m=>{xl+=`<text x="${x(m-1)}" y="${H-8}" text-anchor="middle">${m===1?'mês 1':m}</text>`});
+  let xl='';[1,12,24,36,48,60].forEach(m=>{xl+=`<text x="${x(m-1)}" y="${H-8}" text-anchor="middle">${m===1?'mês 1':'ano '+(m/12)}</text>`});
   const path=s=>s.map((v,i)=>(i?'L':'M')+x(i).toFixed(1)+' '+y(v).toFixed(1)).join(' ');
   let refl='';if(opts.ref!=null&&isFinite(opts.ref)&&opts.ref<=mx)refl=`<line class="ref" x1="${l}" x2="${Wd-r}" y1="${y(opts.ref)}" y2="${y(opts.ref)}"/><text x="${Wd-r}" y="${y(opts.ref)-5}" text-anchor="end">break-even ${Math.ceil(opts.ref)}</text>`;
   let zero=mn<0?`<line class="zero" x1="${l}" x2="${Wd-r}" y1="${y(0)}" y2="${y(0)}"/>`:'';
@@ -529,32 +547,62 @@ function leverRank(c){
 }
 $('levers-rank').addEventListener('click',e=>{const b=e.target.closest('button[data-k]');if(!b)return;const k=b.dataset.k;if(k==='__d'){$('diag').checked=true;$('dprice').value=197}else $(k).checked=true;update()});
 
-function monthTable(r){
-  const rows=r.months.filter(m=>[1,2,3,6,9,12,18,24].includes(m.mo));
-  $('tbl-month').innerHTML='<tr><th>Mês</th><th class="n">Interessados</th><th class="n">Diagnósticos</th><th class="n">Novos assinantes</th><th class="n">Clientes</th><th class="n">Receita</th><th class="n">Resultado</th><th class="n">Caixa</th></tr>'+rows.map(m=>`<tr><td>${m.mo}</td><td class="n">${Math.round(m.leads)}</td><td class="n">${m.diags.toFixed(1)}</td><td class="n">${m.newSubs.toFixed(1)}</td><td class="n">${Math.round(m.clients)}</td><td class="n">${BRL(m.rev)}</td><td class="n" style="color:${m.profit<0?'var(--bad)':'var(--good)'}">${BRL(m.profit)}</td><td class="n" style="color:${m.cash<0?'var(--bad)':'inherit'}">${BRL(m.cash)}</td></tr>`).join('');
+function yearsChart(r,R){
+  const svg=$('ch-years'),Wd=760,H=260,l=78,rr=14,tp=14,bt=30,iw=Wd-l-rr,ih=H-tp-bt;
+  const ys=r.years;const vals=ys.flatMap(y=>[y.rev,y.profit]);
+  let lo=Math.min(0,...vals),hi=Math.max(1,...vals);
+  const raw=(hi-lo)/5,pw=Math.pow(10,Math.floor(Math.log10(raw))),nn=raw/pw,step=(nn<=1?1:nn<=2?2:nn<=2.5?2.5:nn<=5?5:10)*pw;
+  const mn=Math.floor(lo/step)*step,mx=Math.ceil(hi/step)*step;const y=v=>tp+ih*(1-(v-mn)/(mx-mn||1));
+  let s='<g class="grid">';for(let v=mn;v<=mx+step/2;v+=step){s+=`<line x1="${l}" x2="${Wd-rr}" y1="${y(v)}" y2="${y(v)}"/><text x="${l-6}" y="${y(v)+4}" text-anchor="end">${BRLk(Math.abs(v)<step/1000?0:v)}</text>`}s+='</g>';
+  const gw=iw/ys.length,bw=Math.min(46,gw*0.32);
+  ys.forEach((yy,i)=>{const cx=l+gw*i+gw/2;
+    [[yy.rev,'var(--s1)',-1,'Receita'],[yy.profit,'var(--s2)',1,'Resultado']].forEach(([v,col,side,lab])=>{const x0=cx+(side<0?-bw-1:1);const y0=y(Math.max(0,v)),y1=y(Math.min(0,v));const h=Math.max(1,y1-y0);
+      s+=`<rect x="${x0}" y="${y0}" width="${bw}" height="${h}" rx="3" fill="${col}" data-t="Ano ${yy.y} · ${lab}: ${BRL(v)}"/>`});
+    s+=`<text x="${cx}" y="${H-10}" text-anchor="middle">ano ${yy.y}</text>`});
+  if(mn<0)s+=`<line x1="${l}" x2="${Wd-rr}" y1="${y(0)}" y2="${y(0)}" stroke="var(--muted)" stroke-width="1"/>`;
+  svg.innerHTML=s;
+  svg.onpointermove=e=>{const t=e.target.getAttribute&&e.target.getAttribute('data-t');if(t)showTip(e,t);else hideTip()};svg.onpointerleave=hideTip;
+  const row=(lab,f,cls)=>`<tr><td>${lab}</td>${ys.map((yy,i)=>`<td class="n"${cls?` style="color:${cls(yy)}"`:''}>${f(yy,i)}</td>`).join('')}</tr>`;
+  $('tbl-years').innerHTML='<tr><th></th>'+ys.map(yy=>`<th class="n">Ano ${yy.y}</th>`).join('')+'</tr>'+
+   row('Clientes no fim do ano',yy=>Math.round(yy.clients).toLocaleString('pt-BR'))+
+   row('Novos assinantes no ano',yy=>Math.round(yy.newSubs).toLocaleString('pt-BR'))+
+   row('MRR no fim do ano',yy=>BRL(yy.mrr))+
+   row('Receita',yy=>BRL(yy.rev))+
+   row('Planejadores (20%) + imposto + cobrança',yy=>BRL(-yy.varCost))+
+   row('Equipe fixa (fixo, líderes, por profissional)',yy=>BRL(-yy.tcost))+
+   row('Plataforma',yy=>BRL(-yy.platform))+
+   row('Marketing',yy=>BRL(-yy.mkt))+
+   row('CEO',yy=>BRL(-yy.ceo))+
+   row('Resultado',yy=>BRL(yy.profit),yy=>yy.profit<0?'var(--bad)':'var(--good)')+
+   row('Margem',yy=>yy.rev>0?pct(yy.profit/yy.rev):'—')+
+   row('Planejadores / líderes',yy=>yy.planners+' / '+yy.leaders)+
+   row('Caixa no fim do ano',yy=>BRL(yy.cash),yy=>yy.cash<0?'var(--bad)':'inherit');
 }
-
+function monthTable(r){
+  const rows=r.months.filter(m=>[1,2,3,6,9,12,18,24,36,48,60].includes(m.mo));
+  $('tbl-month').innerHTML='<tr><th>Mês</th><th class="n">Interessados</th><th class="n">Diagnósticos</th><th class="n">Novos</th><th class="n">Clientes</th><th class="n">Equipe</th><th class="n">Receita</th><th class="n">Resultado</th><th class="n">Caixa</th></tr>'+rows.map(m=>`<tr><td>${m.mo}</td><td class="n">${Math.round(m.leads)}</td><td class="n">${m.diags.toFixed(1)}</td><td class="n">${m.newSubs.toFixed(1)}</td><td class="n">${Math.round(m.clients)}</td><td class="n">${m.planners}+${m.leaders}</td><td class="n">${BRL(m.rev)}</td><td class="n" style="color:${m.profit<0?'var(--bad)':'var(--good)'}">${BRL(m.profit)}</td><td class="n" style="color:${m.cash<0?'var(--bad)':'inherit'}">${BRL(m.cash)}</td></tr>`).join('');
+}
 function update(){
   const c=read();cur=c;
-  try{localStorage.setItem('lastro-cur',JSON.stringify(c))}catch(e){}
+  try{localStorage.setItem('profitto-cur',JSON.stringify(c))}catch(e){}
   Object.keys(FMT).forEach(k=>{$('o-'+k).textContent=FMT[k](c[k])});
   $('dprice-wrap').style.opacity=c.diag?1:.4;$('dprice').disabled=!c.diag;
   const r=simulate(c),R=simulate(ref);
   kpis(r,R,c);
   lineChart($('ch-clients'),r.months.map(m=>m.clients),R.months.map(m=>m.clients),{ref:r.beClients,fmt:v=>Math.round(v),fmtTip:v=>Math.round(v)+' clientes'});
   lineChart($('ch-cash'),r.months.map(m=>m.cash),R.months.map(m=>m.cash),{fmt:BRLk,fmtTip:BRL});
-  dots(c);leverRank(c);renderPick(c);monthTable(r);
+  yearsChart(r,R);dots(c);leverRank(c);renderPick(c);monthTable(r);
 }
 document.querySelectorAll('aside input').forEach(el=>el.addEventListener('input',()=>{$('preset').value='';update()}));
 $('preset').addEventListener('change',e=>{if(!e.target.value)return;write(PRESETS[e.target.value]);update()});
-$('save').addEventListener('click',()=>{ref=read();try{localStorage.setItem('lastro-ref',JSON.stringify(ref))}catch(e){}$('save').textContent='Referência salva';setTimeout(()=>$('save').textContent='Salvar como referência',1500);update()});
-$('reset').addEventListener('click',()=>{write(PRESETS.atual);ref=Object.assign({},PRESETS.atual);try{localStorage.setItem('lastro-ref',JSON.stringify(ref))}catch(e){}update()});
+$('save').addEventListener('click',()=>{ref=read();try{localStorage.setItem('profitto-ref',JSON.stringify(ref))}catch(e){}$('save').textContent='Referência salva';setTimeout(()=>$('save').textContent='Salvar como referência',1500);update()});
+$('reset').addEventListener('click',()=>{write(PRESETS.atual);ref=Object.assign({},PRESETS.atual);try{localStorage.setItem('profitto-ref',JSON.stringify(ref))}catch(e){}update()});
 
 // ---- abas ----
 const tabs=[...document.querySelectorAll('nav.tabs button')];
-function showTab(id){tabs.forEach(b=>{const on=b.dataset.tab===id;b.setAttribute('aria-selected',on);$('p-'+b.dataset.tab).hidden=!on});try{localStorage.setItem('lastro-tab',id)}catch(e){}}
+function showTab(id){tabs.forEach(b=>{const on=b.dataset.tab===id;b.setAttribute('aria-selected',on);$('p-'+b.dataset.tab).hidden=!on});try{localStorage.setItem('profitto-tab',id)}catch(e){}}
 tabs.forEach(b=>b.addEventListener('click',()=>showTab(b.dataset.tab)));
-let startTab=(location.hash||'').slice(1);if(!tabs.some(b=>b.dataset.tab===startTab)){try{startTab=localStorage.getItem('lastro-tab')||'sim'}catch(e){startTab='sim'}}
+let startTab=(location.hash||'').slice(1);if(!tabs.some(b=>b.dataset.tab===startTab)){try{startTab=localStorage.getItem('profitto-tab')||'sim'}catch(e){startTab='sim'}}
 showTab(tabs.some(b=>b.dataset.tab===startTab)?startTab:'sim');
 
 // ---- aba pessoas ----
