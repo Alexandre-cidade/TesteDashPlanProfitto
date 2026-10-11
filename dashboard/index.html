@@ -66,6 +66,26 @@ input[type=range]{width:100%;accent-color:var(--accent-fill)}
 .frec .fc{background:var(--sunk);border-radius:8px;padding:10px 12px}
 .frec .fc b{display:block;font-size:1.05rem}
 .ogrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;align-items:end}
+.mx{border-collapse:separate;border-spacing:0;font-size:.82rem;min-width:100%}
+.mx th,.mx td{padding:5px 6px;border-bottom:1px solid var(--line);vertical-align:middle}
+.mx .mx-l{position:sticky;left:0;background:var(--surface);z-index:1;min-width:190px;max-width:240px;color:var(--ink)}
+.mx th.mx-l{z-index:2}
+.mx .mx-c{min-width:128px;text-align:center}
+.mx .mx-c.off{opacity:.5}
+.mx thead th{text-transform:none;letter-spacing:0;vertical-align:top;color:var(--ink);font-size:.82rem}
+.mx-h{display:flex;align-items:center;gap:6px}.mx-h .sw{flex:none;margin:0}
+.mx-on{display:flex;gap:6px;align-items:center;justify-content:center;font-weight:500;margin-top:4px}
+.mx-act{display:flex;gap:10px;justify-content:center;margin-top:2px}
+.lnk{all:unset;cursor:pointer;color:var(--accent);font-size:.75rem;font-weight:600}
+.lnk:focus-visible{outline:2px solid var(--accent-fill)}
+.mi{width:100%;font:500 .82rem var(--f-body);padding:4px 6px;border:1px solid var(--line);border-radius:6px;background:var(--surface);color:var(--ink);text-align:right;font-variant-numeric:tabular-nums}
+.mi:disabled{opacity:.4}
+select.mi{text-align:left}.mx-name{text-align:left;font-weight:600}
+.mx tr.mx-sec td{background:var(--sunk);position:static}
+.mx tr.mx-sec .lnk{color:var(--ink);font-size:.74rem;text-transform:uppercase;letter-spacing:.06em}
+.mx tr.mx-b td{font-weight:600}
+.mx td.n{text-align:right;font-variant-numeric:tabular-nums}
+.mx input[type=checkbox],.mx input[type=radio]{accent-color:var(--accent-fill);width:16px;height:16px}
 .help{font-size:.76rem;color:var(--muted);line-height:1.4;margin:-2px 0 0}
 .pbox{background:var(--sunk);border-radius:8px;padding:10px 12px;display:grid;gap:6px}
 .pbox .ttl{font-size:.74rem;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
@@ -160,9 +180,9 @@ select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid var(--lin
     <div class="sim">
       <aside class="panel levers" aria-label="Alavancas">
         <div class="flexbetween" style="margin-bottom:10px">
-          <h3>Produtos e alavancas</h3>
+          <h3>Empresa e canal</h3>
           <select id="preset" aria-label="Cenários prontos">
-            <option value="">Cenários prontos…</option>
+            <option value="">Ofertas prontas (Assistido)…</option>
             <option value="v1">Pitch original (v1)</option>
             <option value="atual">Oferta atual (v2)</option>
             <option value="rec">Recomendado</option>
@@ -170,64 +190,6 @@ select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid var(--lin
             <option value="tres">Ligar os 3 produtos</option>
           </select>
         </div>
-        <div class="pedit">
-          <span class="eyebrow">Produto em edição</span>
-          <div class="ptabs" id="ptabs"></div>
-          <div class="prow"><input type="text" id="pname" class="tin" aria-label="Nome do produto" maxlength="40"><label class="tog"><input type="checkbox" id="pon"><span>Vender este produto</span></label></div>
-          <div class="ctl"><label for="pkind">Como calcular quem compra</label><select id="pkind"><option value="modelo">Modelo dos 1.000 compradores (calibrado no Assistido)</option><option value="painel">Taxa medida no teste deste produto</option></select></div>
-          <div class="ctl" id="pbase-wrap"><div class="row"><label for="pbase">Compram no teste do produto</label><output id="o-pbase"></output></div><input type="range" id="pbase" min="0" max="50" step="0.1"></div>
-          <div class="btns"><button class="btn" id="pnew">+ Novo produto</button><button class="btn" id="pdup">Duplicar</button><button class="btn" id="pdel">Remover</button></div>
-          <p class="help" id="pinfo"></p>
-        </div>
-        <p class="help" style="margin:10px 0 4px">Tudo daqui até <b>Empresa</b> vale só para o produto em edição.</p>
-        <fieldset><legend>Preço</legend>
-          <div class="ctl"><div class="row"><label for="m">Acompanhamento</label><output id="o-m"></output></div><input type="range" id="m" min="97" max="797" step="10"></div>
-          <label class="tog"><input type="checkbox" id="diag"><span>Diagnóstico como porta de entrada<small>O cliente compra um diagnóstico avulso antes de assinar.</small></span></label>
-          <div class="ctl" id="dprice-wrap"><div class="row"><label for="dprice">Preço do diagnóstico</label><output id="o-dprice"></output></div><input type="range" id="dprice" min="0" max="790" step="10"></div>
-          <label class="tog"><input type="checkbox" id="parcelado"><span>Diagnóstico em 3x sem juros</span></label>
-        </fieldset>
-        <fieldset><legend>Confiança</legend>
-          <label class="tog"><input type="checkbox" id="cancel"><span>Cancelamento livre, por escrito<small>Sem fidelidade, pelo site, sem multa.</small></span></label>
-          <label class="tog"><input type="checkbox" id="comissao"><span>Sem comissão<small>Só ligue se for verdade.</small></span></label>
-          <label class="tog"><input type="checkbox" id="cfp"><span>Planejador CFP identificado</span></label>
-          <label class="tog"><input type="checkbox" id="garantia"><span>Garantia de qualidade<small>Devolve o diagnóstico se o plano for genérico.</small></span></label>
-          <label class="tog"><input type="checkbox" id="exemplo"><span>Plano exemplo publicado</span></label>
-          <label class="tog"><input type="checkbox" id="prova"><span>Prova social<small>Indicações e avaliações reais. Só existe depois do piloto.</small></span></label>
-        </fieldset>
-        <fieldset><legend>Entregas</legend>
-          <label class="tog"><input type="checkbox" id="online"><span>Opção 100% online, sem reuniões<small>Para o produto 100% self-service testado de verdade, ligue o Digital no quadro Produtos.</small></span></label>
-          <label class="tog"><input type="checkbox" id="checkin"><span>Check-in mensal marcado pelo planejador</span></label>
-          <label class="tog"><input type="checkbox" id="casal"><span>Sessão do casal</span></label>
-          <label class="tog"><input type="checkbox" id="raiox"><span>Raio-X das tarifas do banco</span></label>
-          <label class="tog"><input type="checkbox" id="dividas"><span>Trilha para sair das dívidas</span></label>
-          <label class="tog"><input type="checkbox" id="tributario"><span>Módulo tributário, PJ e sucessão</span></label>
-        </fieldset>
-        <fieldset><legend>Aquisição deste produto</legend>
-          <div class="ctl"><div class="row"><label for="orgw">Peso no canal do Neto</label><output id="o-orgw"></output></div><input type="range" id="orgw" min="0" max="100" step="5"></div>
-          <div class="ctl"><div class="row"><label for="rede">Contatos da rede por mês</label><output id="o-rede"></output></div><input type="range" id="rede" min="0" max="200" step="5"></div>
-          <div class="ctl"><div class="row"><label for="mkt">Marketing por mês</label><output id="o-mkt"></output></div><input type="range" id="mkt" min="0" max="15000" step="500"></div>
-          <div class="ctl"><div class="row"><label for="cpl">Custo por pessoa interessada</label><output id="o-cpl"></output></div><input type="range" id="cpl" min="10" max="150" step="5"></div>
-          <div class="ctl"><div class="row"><label for="growth">Crescimento anual de interessados</label><output id="o-growth"></output></div><input type="range" id="growth" min="0" max="150" step="5"></div>
-          <div class="ctl"><div class="row"><label for="real">Desconto de realismo do painel</label><output id="o-real"></output></div><input type="range" id="real" min="10" max="100" step="5"></div>
-          <div class="ctl"><div class="row"><label for="conv">Diagnóstico que vira assinatura</label><output id="o-conv"></output></div><input type="range" id="conv" min="0" max="100" step="5"></div>
-          <div class="ctl"><div class="row"><label for="churn">Cancelamentos por mês</label><output id="o-churn"></output></div><input type="range" id="churn" min="0" max="15" step="0.5"></div>
-        </fieldset>
-        <fieldset><legend>Indicações e assessores deste produto</legend>
-          <div class="ctl"><div class="row"><label for="pleads">Interessados por mês via indicadores</label><output id="o-pleads"></output></div><input type="range" id="pleads" min="0" max="300" step="5"></div>
-          <p class="muted" style="font-size:.75rem;margin:-4px 0 0">Influenciadores, vendedores de outros serviços, parceiros. Chegam indicados, então confiam mais.</p>
-          <div class="ctl"><div class="row"><label for="pcom">Percentual do indicador</label><output id="o-pcom"></output></div><input type="range" id="pcom" min="0" max="50" step="1"></div>
-          <div class="ctl"><div class="row"><label for="pdur">Indicador recebe por</label><output id="o-pdur"></output></div><input type="range" id="pdur" min="1" max="60" step="1"></div>
-          <div class="ctl"><div class="row"><label for="aleads">Interessados por mês da base dos assessores</label><output id="o-aleads"></output></div><input type="range" id="aleads" min="0" max="300" step="5"></div>
-          <div class="ctl"><div class="row"><label for="acom">Percentual do assessor</label><output id="o-acom"></output></div><input type="range" id="acom" min="0" max="50" step="1"></div>
-          <div class="ctl"><div class="row"><label for="adur">Assessor recebe por</label><output id="o-adur"></output></div><input type="range" id="adur" min="1" max="60" step="1"></div>
-        </fieldset>
-        <fieldset><legend>Equipe e entrega deste produto</legend>
-          <div class="ctl"><div class="row"><label for="plan">Planejador (% da receita)</label><output id="o-plan"></output></div><input type="range" id="plan" min="0" max="60" step="1"></div>
-          <div class="ctl"><div class="row"><label for="cap">Clientes por planejador</label><output id="o-cap"></output></div><input type="range" id="cap" min="20" max="300" step="5"></div>
-          <div class="ctl"><div class="row"><label for="pfix">Fixo por planejador</label><output id="o-pfix"></output></div><input type="range" id="pfix" min="0" max="10000" step="250"></div>
-          <div class="ctl"><div class="row"><label for="deliv">Custo de entrega por cliente/mês</label><output id="o-deliv"></output></div><input type="range" id="deliv" min="0" max="300" step="5"></div>
-          <p class="help">Planejador a 0% = produto sem planejador (self-service). Custo de entrega: app, IA, material, horas extras.</p>
-        </fieldset>
         <fieldset id="fs-org"><legend>Canal do Neto (orgânico)</legend>
           <div class="ctl"><label for="ytsubs">Inscritos hoje</label><input type="number" id="ytsubs" class="tin" min="0" step="100" inputmode="numeric"></div>
           <div class="ctl"><label for="ytviews">Visualizações por mês (todos os vídeos)</label><input type="number" id="ytviews" class="tin" min="0" step="500" inputmode="numeric"></div>
@@ -269,18 +231,19 @@ select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid var(--lin
       <div class="stack">
         <div class="note" id="honesty">São 1.000 compradores simulados, todos agentes de IA com perfil próprio: 50 viram o pitch original, 50 a oferta atual e 900 (10 segmentos, 12 comportamentos, várias cidades) viram uma de 4 ofertas, 225 em cada. A página não roda agentes a cada mudança: usa um modelo calibrado nas 1.020 respostas reais (incluindo 20 do re-teste). Real × modelo: oferta atual 17% × 12%, diagnóstico R$ 197 21% × 23%, oferta completa 25% × 25%, Profissional R$ 390 19% × 20%. Todos os que compraram levaram só o diagnóstico. Combinações que nenhum agente viu são extrapolação. Confirme com a pré-venda. Mais 450 para os produtos: Digital R$ 49 sozinho, 18% pagariam; cardápio com 3 produtos, 26% compram algo (Digital 10%, diagnóstico do Assistido 16%, Private 0,4%). No cardápio, só 1 dos 36 que compraram o diagnóstico seguiria para os R$ 297/mês.</div>
         <div class="kpis" id="kpis"></div>
+        <div class="card" id="focus-card">
+          <div class="flexbetween"><h3>Produtos</h3><span class="muted" style="font-size:.8rem">cada coluna é um produto · mude qualquer número e tudo recalcula</span></div>
+          <p class="muted" style="font-size:.8rem;margin:4px 0 0">Preço, entregas, aquisição, indicações e equipe de cada produto, lado a lado. Embaixo, o resultado de cada um no cenário completo e rodando <b>sozinho</b> (a empresa vendendo só ele, pagando plataforma, CEO e outros fixos), para decidir por onde começar.</p>
+          <div id="focus-rec" class="frec"></div>
+          <div class="tbl mx-wrap" style="margin-top:12px"><table id="mx-in" class="mx"></table></div>
+          <p class="help" style="margin-top:8px">Desmarque "vender" para tirar um produto do cenário sem apagar. Base da conversão: "Modelo dos 1.000" usa os compradores simulados (calibrado no Assistido); "Taxa do teste" parte da taxa medida no teste daquele produto, e preço e entregas mudam essa taxa conforme a reação dos compradores. Contribuição = preço menos planejador, imposto, cobrança e custo de entrega.</p>
+        </div>
         <div class="card" id="scen-card">
           <div class="flexbetween"><h3>Cenários dos sócios</h3><span class="muted" id="scen-status" style="font-size:.8rem">conectando…</span></div>
           <p class="muted" style="font-size:.8rem;margin:4px 0 10px">Ajuste os produtos e alavancas, dê um nome e salve. Todos que abrirem esta página veem os cenários salvos, podem abrir qualquer um para ver os números e marcar vários para comparar lado a lado.</p>
           <div class="prow"><input type="text" id="scen-name" class="tin" maxlength="60" placeholder="Ex.: Alexandre – foco no Digital primeiro" aria-label="Nome do cenário"><button class="btn primary" id="scen-save">Salvar meu cenário</button></div>
           <div class="tbl" style="margin-top:10px"><table id="tbl-scen"></table></div>
           <div id="scen-cmp-wrap" hidden style="margin-top:14px"><h3 style="font-size:.95rem">Comparação</h3><div class="tbl" style="margin-top:6px"><table id="tbl-scen-cmp"></table></div></div>
-        </div>
-        <div class="card" id="focus-card">
-          <div class="flexbetween"><h3>Em qual produto focar primeiro</h3><span class="muted" style="font-size:.8rem">cada produto rodado sozinho, com os custos da empresa</span></div>
-          <div id="focus-rec" class="frec"></div>
-          <div class="tbl" style="margin-top:10px"><table id="tbl-focus"></table></div>
-          <p class="help" style="margin-top:8px">Sozinho = a empresa vendendo só aquele produto, pagando plataforma, CEO e outros fixos. Contribuição por cliente = preço menos planejador, imposto, cobrança e custo de entrega. Retorno do marketing = meses de contribuição para pagar o custo de marketing de um cliente novo.</p>
         </div>
         <div class="card" id="org-card">
           <div class="flexbetween"><h3>Marketing orgânico: canal do Neto</h3><span class="muted" id="org-note" style="font-size:.8rem"></span></div>
@@ -598,8 +561,8 @@ function mkProd(id,name,ci,base,extra){const p=Object.assign({id,name,ci,on:true
 const BASEP=Object.assign({},PRESETS.atual,{deliv:0,pbase:25,orgw:100,ytsubs:0,ytviews:0,ytg1:0,ytg2:0,ytg3:0,ytg4:0,ytg5:0,ytctr:1,ytlead:30,yttrust:true,orgcost:0,orgother:0});
 function defaultProds(){return [
   mkProd('as','Assistido',0,BASEP,{menuF:'as',mr:[97,797,10]}),
-  mkProd('dg','Digital (self-service)',1,BASEP,{on:false,kind:'painel',menuF:'dg',mr:[9,199,1],orgw:60,pbase:MIX.E*100,vw:[10,20,50,80],tm:49,m:49,diag:false,dprice:0,parcelado:false,cancel:true,comissao:true,cfp:false,garantia:false,exemplo:false,prova:false,online:true,checkin:false,casal:false,raiox:false,dividas:true,tributario:false,rede:10,mkt:2000,cpl:15,churn:6,conv:100,plan:0,cap:120,pfix:0,deliv:0,pleads:0,aleads:0}),
-  mkProd('pv','Private',2,BASEP,{on:false,kind:'painel',menuF:'pv',mr:[500,5000,100],orgw:20,pbase:MIX.PVHI*100,vw:[400,800,1500,2500],tm:1500,m:1500,diag:false,dprice:0,parcelado:false,cancel:true,comissao:true,cfp:true,garantia:false,exemplo:false,prova:false,online:false,checkin:true,casal:true,raiox:true,dividas:false,tributario:true,rede:10,mkt:0,cpl:40,churn:2,conv:100,plan:30,cap:25,pfix:0,deliv:0,pleads:0,aleads:20,acom:15})]}
+  mkProd('dg','Digital (self-service)',1,BASEP,{on:false,kind:'painel',menuF:'dg',mr:[9,199,1],orgw:60,pbase:Math.round(MIX.E*1000)/10,vw:[10,20,50,80],tm:49,m:49,diag:false,dprice:0,parcelado:false,cancel:true,comissao:true,cfp:false,garantia:false,exemplo:false,prova:false,online:true,checkin:false,casal:false,raiox:false,dividas:true,tributario:false,rede:10,mkt:2000,cpl:15,churn:6,conv:100,plan:0,cap:120,pfix:0,deliv:0,pleads:0,aleads:0}),
+  mkProd('pv','Private',2,BASEP,{on:false,kind:'painel',menuF:'pv',mr:[500,5000,100],orgw:20,pbase:Math.round(MIX.PVHI*1000)/10,vw:[400,800,1500,2500],tm:1500,m:1500,diag:false,dprice:0,parcelado:false,cancel:true,comissao:true,cfp:true,garantia:false,exemplo:false,prova:false,online:false,checkin:true,casal:true,raiox:true,dividas:false,tributario:true,rede:10,mkt:0,cpl:40,churn:2,conv:100,plan:30,cap:25,pfix:0,deliv:0,pleads:0,aleads:20,acom:15})]}
 function defaultState(){return {company:Object.assign(pick(BASEP,CK),{menu:false}),list:defaultProds(),sel:'as'}}
 function migrate(x){ // estados antigos (planos) viram o novo formato
   if(!x)return null;if(x.list&&x.company){if(x.company.ytgrow!==undefined&&x.company.ytg1===undefined)[1,2,3,4,5].forEach(i=>x.company['ytg'+i]=x.company.ytgrow);CK.forEach(k=>{if(x.company[k]===undefined)x.company[k]=BASEP[k]});x.list.forEach(p=>PK.forEach(k=>{if(p[k]===undefined)p[k]=(k==='orgw'?(p.id==='dg'?60:p.id==='pv'?20:100):BASEP[k])}));return x}
@@ -608,27 +571,19 @@ let STATE=defaultState();
 const selP=()=>STATE.list.find(p=>p.id===STATE.sel)||STATE.list[0];
 function snapshot(){return clone({company:STATE.company,list:STATE.list,sel:STATE.sel})}
 function syncInputs(){
-  const p=selP(),co=STATE.company;
-  const mr=p.mr||[Math.max(9,Math.round(p.m*0.2)),Math.max(200,Math.round(p.m*3)),p.m<200?1:10];$('m').min=mr[0];$('m').max=mr[1];$('m').step=mr[2];
-  IDS.forEach(k=>{const el=$(k);if(!el)return;const v=PK.includes(k)?p[k]:co[k];if(el.type==='checkbox')el.checked=!!v;else if(v!==undefined)el.value=v});
-  $('pname').value=p.name;$('pon').checked=!!p.on;$('pkind').value=p.kind;
-  $('pbase-wrap').hidden=p.kind!=='painel';
-  renderTabs();
+  const co=STATE.company;
+  CK.forEach(k=>{const el=$(k);if(!el)return;const v=co[k];if(el.type==='checkbox')el.checked=!!v;else if(v!==undefined)el.value=v});
+  renderMatrix();
 }
 function readInputs(){
-  const p=selP(),co=STATE.company;
-  IDS.forEach(k=>{const el=$(k);if(!el)return;const v=el.type==='checkbox'?el.checked:+el.value;if(PK.includes(k))p[k]=v;else co[k]=v});
-  p.name=$('pname').value.trim()||'Sem nome';if(!p.mr)p.mr=[+$('m').min,+$('m').max,+$('m').step];p.on=$('pon').checked;p.kind=$('pkind').value;
-  if(p.kind==='painel'&&!p.tcfg){p.tcfg=pick(p,LEVK.concat(['diag','dprice']));p.tm=p.tm||p.m;p.vw=p.vw||[p.m*0.3,p.m*0.6,p.m*1.2,p.m*1.8]}
-  $('pbase-wrap').hidden=p.kind!=='painel';
+  const co=STATE.company;
+  CK.forEach(k=>{const el=$(k);if(!el)return;co[k]=el.type==='checkbox'?el.checked:+el.value});
 }
-function renderTabs(){
-  $('ptabs').innerHTML=STATE.list.map(p=>`<button class="ptab${p.on?'':' off'}" aria-pressed="${p.id===STATE.sel}" data-id="${p.id}"><i class="sw" style="background:${PALX[p.ci%PALX.length]};margin:0"></i>${p.name.replace(/</g,'&lt;')}</button>`).join('');
-}
+function renderTabs(){}
 function read(){readInputs();return snapshot()}
 function write(x){ // x: estado completo ou um cenário pronto (plano)
   if(x&&x.list){STATE=clone(migrate(x));if(!STATE.list.some(p=>p.id===STATE.sel))STATE.sel=STATE.list[0].id}
-  else if(x){Object.assign(selP(),pick(x,PK));Object.assign(STATE.company,pick(x,CK))}
+  else if(x){Object.assign(STATE.list.find(p=>p.id==='as')||selP(),pick(x,PK.filter(k=>k!=='orgw')));Object.assign(STATE.company,pick(x,CK))}
   syncInputs();
 }
 function flatOf(st){const s=st||STATE;const p=(s.list.find(q=>q.id===s.sel)||s.list[0]);return Object.assign({},s.company,p)}
@@ -638,7 +593,7 @@ let ref=null,cur=null;
 try{ref=migrate(JSON.parse(localStorage.getItem('profitto-ref')||'null'))}catch(e){}
 if(!ref)ref=defaultState();
 try{const sv=JSON.parse(localStorage.getItem('profitto-cur')||'null');if(sv)STATE=migrate(sv)}catch(e){}
-write(STATE);cur=flatOf();
+STATE=clone(migrate(STATE));cur=flatOf();
 
 const FMT={orgw:v=>v+'',ytg1:v=>(v>0?'+':'')+String(v).replace('.',',')+'%',ytg2:v=>(v>0?'+':'')+String(v).replace('.',',')+'%',ytg3:v=>(v>0?'+':'')+String(v).replace('.',',')+'%',ytg4:v=>(v>0?'+':'')+String(v).replace('.',',')+'%',ytg5:v=>(v>0?'+':'')+String(v).replace('.',',')+'%',ytctr:v=>String(v).replace('.',',')+'%',ytlead:v=>v+'%',orgother:v=>v+' pessoas',orgcost:v=>v?BRL(v):'sem custo',deliv:v=>v?BRL(v):'sem custo',pbase:v=>String(v).replace('.',',')+'%',pleads:v=>v+' pessoas',pcom:v=>v+'% da receita',pdur:v=>v==60?'60 meses (sempre)':v+' meses',aleads:v=>v+' pessoas',acom:v=>v+'% da receita',adur:v=>v==60?'60 meses (sempre)':v+' meses',cap:v=>v+' clientes',pfix:v=>BRL(v),span:v=>v+' planejadores',lead:v=>String(v).replace('.',',')+'%',perprof:v=>BRL(v),other:v=>BRL(v),growth:v=>v+'%',m:v=>BRL(v)+'/mês',dprice:v=>v==0?'grátis':BRL(v),rede:v=>v+' pessoas',mkt:v=>BRL(v),cpl:v=>BRL(v),real:v=>v+'%',conv:v=>v+'%',churn:v=>String(v).replace('.',',')+'%',ceo1:v=>BRL(v),ceo2:v=>BRL(v),plan:v=>v?v+'%':'sem planejador',tax:v=>String(v).replace('.',',')+'%',pmt:v=>BRL(v),cash:v=>BRL(v)};
 
@@ -748,7 +703,7 @@ function leverRank(c){
   const mx=Math.max(1,...rows.map(r=>r[2]));
   $('levers-rank').innerHTML=rows.length?rows.slice(0,8).map(([k,n,v])=>`<div class="bar"><div class="t"><div class="flexbetween"><span>${n}</span><button data-k="${k}">ligar</button></div><div class="track"><div class="fill" style="width:${Math.max(2,v/mx*100)}%"></div></div></div><span class="val">+${Math.round(v)}</span></div>`).join(''):'<p class="muted">Todas as alavancas já estão ligadas.</p>';
 }
-$('levers-rank').addEventListener('click',e=>{const b=e.target.closest('button[data-k]');if(!b)return;const k=b.dataset.k;if(k==='__d'){$('diag').checked=true;$('dprice').value=197}else $(k).checked=true;update()});
+$('levers-rank').addEventListener('click',e=>{const b=e.target.closest('button[data-k]');if(!b)return;const k=b.dataset.k;const p=selP();if(k==='__d'){p.diag=true;p.dprice=197}else p[k]=true;renderMatrix();update()});
 
 function yearsChart(r,R){
   const svg=$('ch-years'),Wd=760,H=260,l=78,rr=14,tp=14,bt=30,iw=Wd-l-rr,ih=H-tp-bt;
@@ -823,8 +778,8 @@ function multiLine(svg,series,cols,fmtTip){
   hit.addEventListener('pointermove',e=>{const pt=svg.getBoundingClientRect();const sx=(e.clientX-pt.left)/pt.width*Wd;const i=Math.max(0,Math.min(N-1,Math.round((sx-l)/iw*(N-1))));cross.setAttribute('x1',x(i));cross.setAttribute('x2',x(i));cross.setAttribute('opacity','.5');showTip(e,fmtTip(i))});
   hit.addEventListener('pointerleave',()=>{cross.setAttribute('opacity','0');hideTip()});
 }
-const colOf=p=>PALX[p.ci%PALX.length];
-const esc=t=>String(t).replace(/[&<>"]/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[ch]));
+function colOf(p){return PALX[p.ci%PALX.length]}
+function esc(t){return String(t).replace(/[&<>"]/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[ch]))}
 function products(r){
   const act=r.prods;
   $('prod-note').textContent=act.length+' produto(s) à venda'+(STATE.company.menu&&act.length>1?' · cardápio ligado':'');
@@ -849,38 +804,6 @@ function products(r){
   });
   $('tbl-prod').innerHTML='<tr><th>Produto</th><th></th>'+ys.map(y=>`<th class="n">Ano ${y.y}</th>`).join('')+'</tr>'+body+
     '<tr><td colspan="2"><b>Consolidado</b> (contribuição de todos − plataforma, CEO, outros fixos e líderes)</td>'+ys.map(y=>`<td class="n"><b style="color:${y.profit<0?'var(--bad)':'var(--good)'}">${BRL(y.profit)}</b></td>`).join('')+'</tr>';
-}
-function focus(st){
-  const rows=st.list.map(p=>{const r=simulate(aloneOf(st,p.id));const o=r.prods[0];
-    const tf=(st.company.tax+3.5)/100;
-    const unit=p.m*(1-p.plan/100-tf)-p.deliv;
-    const y1=o.years[0];const cac=y1.ns>0?y1.mk/y1.ns:0;
-    const life=p.churn>0?100/p.churn:120;
-    return {p,r,o,unit,cac,ltv:unit*Math.min(life,120),pay:unit>0&&cac>0?cac/unit:0}});
-  const name=x=>`<i class="sw" style="background:${colOf(x.p)}"></i>${esc(x.p.name)}${x.p.on?'':' <span class="muted">(desligado)</span>'}`;
-  const ok=rows.filter(x=>x.r.years[4].profit>0);
-  const start=(ok.length?ok:rows).slice().sort((a,b)=>b.r.minCash-a.r.minCash)[0];
-  const pot=rows.slice().sort((a,b)=>b.r.years[4].profit-a.r.years[4].profit)[0];
-  const fast=rows.filter(x=>x.r.beMonth).sort((a,b)=>a.r.beMonth-b.r.beMonth)[0];
-  $('focus-rec').innerHTML=
-    `<div class="fc"><span class="eyebrow">Começar por</span><b>${esc(start.p.name)}</b><span class="muted" style="font-size:.8rem">menos caixa no pior momento: ${BRLk(start.r.minCash)}</span></div>`+
-    `<div class="fc"><span class="eyebrow">Maior lucro no ano 5</span><b>${esc(pot.p.name)}</b><span class="muted" style="font-size:.8rem">${BRLk(pot.r.years[4].profit)} sozinho</span></div>`+
-    `<div class="fc"><span class="eyebrow">Lucro mais rápido</span><b>${fast?esc(fast.p.name):'nenhum em 5 anos'}</b><span class="muted" style="font-size:.8rem">${fast?'primeiro lucro no mês '+fast.r.beMonth:'nenhum produto sozinho chega ao lucro'}</span></div>`;
-  const R=(lab,f)=>`<tr><td>${lab}</td>${rows.map(x=>`<td class="n">${f(x)}</td>`).join('')}</tr>`;
-  const cl=v=>`<span style="color:${v<0?'var(--bad)':'var(--good)'}">${BRLk(v)}</span>`;
-  $('tbl-focus').innerHTML='<tr><th></th>'+rows.map(x=>`<th class="n" style="text-transform:none">${name(x)}</th>`).join('')+'</tr>'+
-    R('Preço',x=>BRL(x.p.m)+'/mês'+(x.p.diag?' + diag. '+BRL(x.p.dprice):''))+
-    R('Compram (direto)',x=>(x.o.rate*100).toFixed(1).replace('.',',')+'%')+
-    R('Contribuição por cliente/mês',x=>BRL(x.unit))+
-    R('Custo de marketing por cliente novo (ano 1)',x=>x.cac?BRL(x.cac):'—')+
-    R('Retorno do marketing',x=>x.pay?(x.pay<1?'< 1 mês':x.pay.toFixed(1).replace('.',',')+' meses'):'—')+
-    R('Valor de um cliente (vida toda)',x=>BRL(x.ltv))+
-    R('Clientes no ano 5',x=>Math.round(x.o.years[4].n).toLocaleString('pt-BR'))+
-    R('Planejadores no ano 5',x=>x.p.plan>0?x.o.years[4].pl:'—')+
-    R('Resultado ano 1 (sozinho)',x=>cl(x.r.years[0].profit))+
-    R('Resultado ano 5 (sozinho)',x=>cl(x.r.years[4].profit))+
-    R('Caixa no pior momento (sozinho)',x=>cl(x.r.minCash))+
-    R('Primeiro mês de lucro (sozinho)',x=>x.r.beMonth?'mês '+x.r.beMonth:'—');
 }
 function orgPanel(r,R,c){
   const ys=r.years,ms=r.months;
@@ -916,28 +839,104 @@ function orgPanel(r,R,c){
     row('Custo por cliente orgânico',y=>cpcO(y))+
     row('Custo por cliente do marketing pago',y=>cpcP(y));
 }
+// ---- tabela de produtos (cada produto = uma coluna) ----
+const MXS=[
+ ['Preço',[['m','Mensalidade (R$)','num',1],['diag','Diagnóstico de entrada','chk'],['dprice','Preço do diagnóstico (R$)','num',10],['parcelado','Diagnóstico em 3x sem juros','chk'],['conv','Diagnóstico que vira assinatura (%)','num',5]]],
+ ['Entregas e confiança',['online','cancel','comissao','cfp','garantia','exemplo','prova','checkin','casal','raiox','dividas','tributario'].map(k=>[k,LEVERS[k],'chk'])],
+ ['Aquisição',[['rede','Contatos da rede por mês','num',5],['mkt','Marketing pago por mês (R$)','num',500],['cpl','Custo por interessado (R$)','num',5],['orgw','Peso no canal do Neto','num',5],['growth','Crescimento de interessados por ano (%)','num',5],['real','Desconto de realismo do painel (%)','num',5],['churn','Cancelamentos por mês (%)','num',0.5]]],
+ ['Indicações e assessores',[['pleads','Interessados por indicadores / mês','num',5],['pcom','Percentual do indicador (%)','num',1],['pdur','Indicador recebe por (meses)','num',1],['aleads','Interessados da base de assessores / mês','num',5],['acom','Percentual do assessor (%)','num',1],['adur','Assessor recebe por (meses)','num',1]]],
+ ['Equipe e entrega',[['plan','Planejador (% da receita, 0 = sem planejador)','num',1],['cap','Clientes por planejador','num',5],['pfix','Fixo por planejador (R$)','num',250],['deliv','Custo de entrega por cliente/mês (R$)','num',5]]],
+ ['Como calcular quem compra',[['kind','Base da conversão','kind'],['pbase','Compram no teste do produto (%)','num',0.1]]]];
+let MXC=new Set();try{MXC=new Set(JSON.parse(localStorage.getItem('profitto-mxcol')||'[]'))}catch(e){}
+function mxCell(p,[k,lab,t,step]){
+  const a=`data-pid="${p.id}" data-k="${k}" aria-label="${esc(lab)} – ${esc(p.name)}"`;
+  if(t==='chk')return `<input type="checkbox" ${a} ${p[k]?'checked':''}>`;
+  if(t==='kind')return `<select class="mi" ${a}><option value="modelo"${p.kind==='modelo'?' selected':''}>Modelo dos 1.000</option><option value="painel"${p.kind==='painel'?' selected':''}>Taxa do teste</option></select>`;
+  const dis=(k==='pbase'&&p.kind!=='painel')||(k==='dprice'&&!p.diag)||(k==='conv'&&!p.diag)||((k==='cap'||k==='pfix')&&!(p.plan>0));
+  return `<input type="number" class="mi" ${a} step="${step}" min="0" value="${typeof p[k]==='number'?Math.round(p[k]*100)/100:p[k]}"${dis?' disabled':''}>`;
+}
+function renderMatrix(){
+  const L=STATE.list;
+  const head='<tr><th class="mx-l"></th>'+L.map(p=>`<th class="mx-c${p.on?'':' off'}"><div class="mx-h"><span class="sw" style="background:${colOf(p)}"></span><input type="text" class="mi mx-name" data-pid="${p.id}" data-k="name" value="${esc(p.name)}" maxlength="40" aria-label="Nome do produto"></div>
+    <label class="mx-on"><input type="checkbox" data-pid="${p.id}" data-k="on" ${p.on?'checked':''}> vender</label>
+    <div class="mx-act"><button class="lnk" data-act="dup" data-pid="${p.id}">duplicar</button>${L.length>1?`<button class="lnk" data-act="del" data-pid="${p.id}">remover</button>`:''}</div></th>`).join('')+
+    '<th class="mx-c mx-add"><button class="btn" data-act="new">+ Novo produto</button></th></tr>';
+  let body='';
+  MXS.forEach(([sec,rows])=>{const col=MXC.has(sec);
+    body+=`<tr class="mx-sec"><td colspan="${L.length+2}"><button class="lnk" data-sec="${esc(sec)}" aria-expanded="${!col}">${col?'▸':'▾'} ${esc(sec)}</button></td></tr>`;
+    if(!col)rows.forEach(r=>{body+=`<tr><td class="mx-l">${esc(r[1])}</td>${L.map(p=>`<td class="mx-c${p.on?'':' off'}">${mxCell(p,r)}</td>`).join('')}<td></td></tr>`});
+  });
+  body+=`<tr class="mx-sec"><td colspan="${L.length+2}"><span class="eyebrow">Resultado de cada produto</span></td></tr>`;
+  $('mx-in').innerHTML='<thead>'+head+'</thead><tbody>'+body+'</tbody><tbody id="mx-res"></tbody>';
+}
+function focus(st){
+  const L=STATE.list;const tf=(st.company.tax+3.5)/100;
+  const rows=L.map(p=>{const r=simulate(aloneOf(st,p.id));const o=r.prods[0];
+    const unit=p.m*(1-p.plan/100-tf)-p.deliv;const y1=o.years[0];const cac=y1.ns>0?y1.mk/y1.ns:0;
+    const life=p.churn>0?100/p.churn:120;
+    return {p,r,o,unit,cac,ltv:unit*Math.min(life,120),pay:unit>0&&cac>0?cac/unit:0}});
+  const C=lastCons;const inC=id=>C&&C.prods.find(o=>o.p.id===id);
+  const cl=v=>`<span style="color:${v<0?'var(--bad)':'var(--good)'}">${BRLk(v)}</span>`;
+  const pc=v=>(v*100).toFixed(1).replace('.',',')+'%';
+  const R=(lab,f,b)=>`<tr${b?' class="mx-b"':''}><td class="mx-l">${lab}</td>${rows.map(x=>`<td class="mx-c n${x.p.on?'':' off'}">${f(x)}</td>`).join('')}<td></td></tr>`;
+  $('mx-res').innerHTML=
+    R('Compram (direto / indicado)',x=>pc(x.o.rate)+' / '+pc(x.o.rate*x.o.warm))+
+    R('Contribuição por cliente/mês',x=>BRL(x.unit))+
+    R('Marketing por cliente novo (ano 1)',x=>x.cac?BRL(x.cac):'—')+
+    R('Meses para pagar o marketing',x=>x.pay?(x.pay<1?'< 1':x.pay.toFixed(1).replace('.',',')):'—')+
+    R('Valor de um cliente (vida toda)',x=>BRL(x.ltv))+
+    R('<b>No cenário completo</b>: clientes ano 5',x=>{const o=inC(x.p.id);return o?Math.round(o.years[4].n).toLocaleString('pt-BR'):'não vende'})+
+    R('No cenário completo: receita ano 5',x=>{const o=inC(x.p.id);return o?BRLk(o.years[4].rev):'—'})+
+    R('No cenário completo: contribuição ano 5',x=>{const o=inC(x.p.id);return o?cl(o.years[4].k):'—'})+
+    R('<b>Sozinho</b>: resultado ano 1',x=>cl(x.r.years[0].profit))+
+    R('Sozinho: resultado ano 5',x=>cl(x.r.years[4].profit),true)+
+    R('Sozinho: caixa no pior momento',x=>cl(x.r.minCash),true)+
+    R('Sozinho: primeiro mês de lucro',x=>x.r.beMonth?'mês '+x.r.beMonth:'—',true)+
+    `<tr><td class="mx-l">Compradores analisados mais abaixo</td>${rows.map(x=>`<td class="mx-c"><input type="radio" name="mxsel" data-act="sel" data-pid="${x.p.id}" ${x.p.id===STATE.sel?'checked':''} aria-label="Analisar ${esc(x.p.name)}"></td>`).join('')}<td></td></tr>`;
+  const ok=rows.filter(x=>x.r.years[4].profit>0);
+  const start=(ok.length?ok:rows).slice().sort((a,b)=>b.r.minCash-a.r.minCash)[0];
+  const pot=rows.slice().sort((a,b)=>b.r.years[4].profit-a.r.years[4].profit)[0];
+  const fast=rows.filter(x=>x.r.beMonth).sort((a,b)=>a.r.beMonth-b.r.beMonth)[0];
+  $('focus-rec').innerHTML=
+    `<div class="fc"><span class="eyebrow">Começar por</span><b>${esc(start.p.name)}</b><span class="muted" style="font-size:.8rem">precisa de menos caixa: pior momento ${BRLk(start.r.minCash)}</span></div>`+
+    `<div class="fc"><span class="eyebrow">Maior lucro no ano 5</span><b>${esc(pot.p.name)}</b><span class="muted" style="font-size:.8rem">${BRLk(pot.r.years[4].profit)} sozinho</span></div>`+
+    `<div class="fc"><span class="eyebrow">Lucro mais rápido</span><b>${fast?esc(fast.p.name):'nenhum em 5 anos'}</b><span class="muted" style="font-size:.8rem">${fast?'primeiro lucro no mês '+fast.r.beMonth:'nenhum produto sozinho chega ao lucro'}</span></div>`;
+}
+let lastCons=null;
+$('mx-in').addEventListener('input',e=>{
+  const t=e.target,pid=t.dataset&&t.dataset.pid,k=t.dataset&&t.dataset.k;if(!pid||!k)return;
+  const p=STATE.list.find(x=>x.id===pid);if(!p)return;
+  if(t.type==='checkbox')p[k]=t.checked;
+  else if(k==='name')p.name=t.value.trim()||'Sem nome';
+  else if(k==='kind'){p.kind=t.value;if(p.kind==='painel'&&!p.tcfg){p.tcfg=pick(p,LEVK.concat(['diag','dprice']));p.tm=p.m;p.vw=p.vw||[p.m*0.3,p.m*0.6,p.m*1.2,p.m*1.8];if(!(p.pbase>0))p.pbase=10}}
+  else{if(t.value==='')return;p[k]=+t.value}
+  $('preset').value='';
+  if(t.type==='checkbox'||k==='kind'||k==='plan')renderMatrix();
+  update();
+});
+$('mx-in').addEventListener('click',e=>{
+  const s=e.target.closest('[data-sec]');if(s){const k=s.dataset.sec;if(MXC.has(k))MXC.delete(k);else MXC.add(k);try{localStorage.setItem('profitto-mxcol',JSON.stringify([...MXC]))}catch(_){}renderMatrix();update();return}
+  const b=e.target.closest('[data-act]');if(!b)return;const act=b.dataset.act,pid=b.dataset.pid;const p=STATE.list.find(x=>x.id===pid);
+  if(act==='new'){const n=mkProd(newId(),'Novo produto '+(STATE.list.length+1),nextCi(),BASEP,{});STATE.list.push(n);renderMatrix();update();const el=document.querySelector(`.mx-name[data-pid="${n.id}"]`);if(el)el.select()}
+  if(act==='dup'&&p){const n=Object.assign(clone(p),{id:newId(),ci:nextCi(),name:p.name+' (cópia)'});STATE.list.splice(STATE.list.indexOf(p)+1,0,n);renderMatrix();update()}
+  if(act==='del'&&p&&STATE.list.length>1&&confirm('Remover o produto "'+p.name+'"?')){STATE.list=STATE.list.filter(x=>x.id!==pid);if(STATE.sel===pid)STATE.sel=STATE.list[0].id;renderMatrix();update()}
+  if(act==='sel'&&p){STATE.sel=pid;update()}
+});
 function update(){
   const c=read();cur=flatOf(c);
   try{localStorage.setItem('profitto-cur',JSON.stringify(c))}catch(e){}
   Object.keys(FMT).forEach(k=>{const o=$('o-'+k);if(o)o.textContent=FMT[k](cur[k])});
-  $('dprice-wrap').style.opacity=cur.diag?1:.4;$('dprice').disabled=!cur.diag;
-  const sp=selP();$('pinfo').textContent=(sp.id==='pv'?'Private: no teste do cardápio só 1 de 225 comprou; entre profissionais de alta renda foi 1 de 32 (3%), que é a taxa usada. Os interessados vêm da base dos assessores. Confirme com um teste só com esse público. ':'')+(sp.kind==='painel'?('Taxa medida: '+String(sp.pbase).replace('.',',')+'% a '+BRL(sp.tm||sp.m)+'. Preço e entregas mudam essa taxa conforme a reação dos compradores (faixa de preço do teste: '+(sp.vw||[]).map(v=>BRL(v)).join(' / ')+').'):(sp.id==='pv'?'':'')+'Usa o modelo dos 1.000 compradores: preço, diagnóstico e entregas mudam quem compra.');
-  const r=simulate(c),R=simulate(ref);
+  const r=simulate(c),R=simulate(ref);lastCons=r;
   kpis(r,R,cur);plannerBox(r,cur);products(r);focus(c);orgPanel(r,R,c.company);renderTabs();
   lineChart($('ch-clients'),r.months.map(m=>m.clients),R.months.map(m=>m.clients),{ref:r.beClients,fmt:v=>Math.round(v),fmtTip:v=>Math.round(v)+' clientes'});
   lineChart($('ch-cash'),r.months.map(m=>m.cash),R.months.map(m=>m.cash),{fmt:BRLk,fmtTip:BRL});
   yearsChart(r,R);split(r);channels(r);dots(cur);leverRank(cur);renderPick(cur);monthTable(r);
 }
 document.querySelectorAll('aside input, aside select:not(#preset)').forEach(el=>el.addEventListener('input',()=>{$('preset').value='';update()}));
-$('pkind').addEventListener('change',()=>{update()});
 $('ytg-same').addEventListener('click',()=>{const v=$('ytg1').value;[2,3,4,5].forEach(i=>$('ytg'+i).value=v);update()});
 $('org-edit').addEventListener('click',()=>{const f=$('fs-org');f.scrollIntoView({behavior:'smooth',block:'start'});$('ytsubs').focus({preventScroll:true})});
-$('ptabs').addEventListener('click',e=>{const b=e.target.closest('button[data-id]');if(!b)return;readInputs();STATE.sel=b.dataset.id;syncInputs();update()});
 function newId(){let i=1;while(STATE.list.some(p=>p.id==='p'+i))i++;return 'p'+i}
 function nextCi(){const used=STATE.list.map(p=>p.ci);let i=0;while(used.includes(i))i++;return i}
-$('pnew').addEventListener('click',()=>{readInputs();const n=mkProd(newId(),'Novo produto '+(STATE.list.length+1),nextCi(),BASEP,{});STATE.list.push(n);STATE.sel=n.id;syncInputs();update();$('pname').select()});
-$('pdup').addEventListener('click',()=>{readInputs();const n=Object.assign(clone(selP()),{id:newId(),ci:nextCi(),name:selP().name+' (cópia)'});STATE.list.push(n);STATE.sel=n.id;syncInputs();update()});
-$('pdel').addEventListener('click',()=>{if(STATE.list.length<2)return;if(!confirm('Remover o produto "'+selP().name+'"?'))return;STATE.list=STATE.list.filter(p=>p.id!==STATE.sel);STATE.sel=STATE.list[0].id;syncInputs();update()});
 $('preset').addEventListener('change',e=>{const v=e.target.value;if(!v)return;readInputs();if(v==='tres'){defaultProds().forEach(d=>{if(!STATE.list.some(p=>p.id===d.id))STATE.list.push(d)});STATE.list.forEach(p=>{if(['as','dg','pv'].includes(p.id))p.on=true});syncInputs()}else write(PRESETS[v]);update()});
 $('save').addEventListener('click',()=>{ref=read();try{localStorage.setItem('profitto-ref',JSON.stringify(ref))}catch(e){}$('save').textContent='Referência salva';setTimeout(()=>$('save').textContent='Salvar como referência',1500);update()});
 $('reset').addEventListener('click',()=>{STATE=defaultState();write(STATE);ref=snapshot();try{localStorage.setItem('profitto-ref',JSON.stringify(ref))}catch(e){}update()});
@@ -1049,6 +1048,6 @@ $('value-eq').innerHTML=[['Resultado dos sonhos',6,7],['Probabilidade percebida'
 const COND=[['Escolher um segmento inicial','em andamento','Profissionais liberais e casais (marketing.md)'],['Promessa em uma frase + resultado em 90 dias','feito','"Plano Claro em 15 Dias"'],['Unit economics positiva','feito','R$ 194,53 por cliente-mês (65%)'],['Garantia que o caixa aguente','feito','Diagnóstico a partir de R$ 197'],['Paga os fixos no ano 1','não','Depende do ritmo de clientes: use o simulador'],['Caixa suficiente','não na rampa base','Pré-venda + CEO a R$ 5 mil até o break-even'],['Custo por cliente medido','aberto','Pré-venda de 12/10 a 08/11'],['Enquadramento CVM e comissão','aberto','Decidir até 16/10'],['Vantagem durável declarada','aberto','Nicho + método + marca'],['Piloto pago com resultados','aberto','Meta: ≥ 20 diagnósticos pagos']];
 $('tbl-cond').innerHTML='<tr><th>Condição</th><th>Status</th><th>Como</th></tr>'+COND.map(([a,b,c])=>`<tr><td>${a}</td><td><span class="sev ${b==='feito'?'l':b==='aberto'||b==='em andamento'?'m':'h'}">${b}</span></td><td>${c}</td></tr>`).join('');
 
-update();
+syncInputs();update();
 })();
 </script>
