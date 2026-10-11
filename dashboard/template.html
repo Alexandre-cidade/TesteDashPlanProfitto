@@ -17,8 +17,8 @@
   --r:10px; color-scheme:light;
 }
 *{box-sizing:border-box}
-body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:14px;line-height:1.5}
-.wrap{max-width:1880px;margin:0 auto;padding-inline:20px;padding-block:20px 48px}
+body{background:#EEF1F1;color:var(--ink);font-family:var(--f-body);font-size:14px;line-height:1.5}
+.wrap{max-width:1640px;margin:0 auto;padding-inline:20px;padding-block:20px 48px}
 h1,h2,h3{font-family:var(--f-display);font-weight:400;text-wrap:balance;margin:0;letter-spacing:-.01em}
 h1{font-size:1.9rem}h2{font-size:1.35rem}h3{font-size:1.05rem}
 .eyebrow{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
@@ -92,13 +92,15 @@ select.mi{text-align:left}.mx-name{text-align:left;font-weight:600}
 .blk{margin-top:14px;display:grid;gap:2px}.blk h2{font-size:1.3rem}.blk p{margin:0;font-size:.85rem}
 .tag{justify-self:start;font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:2px 8px;border-radius:999px}
 .tag.ti{background:#E3EEFB;color:#1d5aa6}.tag.te{background:#E4EEF0;color:var(--brand-2)}.tag.tr{background:#E4F4EA;color:var(--good)}
-.cols4{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:14px;align-items:start}
+.cols4{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;align-items:start}
 @media (max-width:1180px){.cols4{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:640px){.cols4{grid-template-columns:minmax(0,1fr)}}
 .cocard{border-top:3px solid var(--brand-2)}
 .cofs{display:grid;gap:10px}
-#fs-org .cofs{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:18px;align-items:start}
+#fs-org{grid-column:1/-1}
+#fs-org .cofs{grid-template-columns:repeat(4,minmax(0,1fr));column-gap:18px;align-items:start}
 #fs-org .cofs>.help,#fs-org .cofs>button{grid-column:1/-1}
+@media (max-width:1300px){#fs-org .cofs{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:640px){#fs-org .cofs{grid-template-columns:minmax(0,1fr)}}
 .live{position:sticky;top:12px;align-self:start;max-height:calc(100vh - 24px);overflow:auto;background:var(--surface);border:1px solid var(--line);border-top:4px solid var(--brand);border-radius:var(--r);padding:14px 16px;display:grid;gap:12px;box-shadow:0 6px 24px rgba(0,0,0,.06)}
 .live .verdict{font-size:.72rem;padding:3px 8px}
@@ -115,6 +117,19 @@ select.mi{text-align:left}.mx-name{text-align:left;font-weight:600}
 .lt{font-size:.75rem;margin-top:6px}.lt th,.lt td{padding:4px 4px}.lt th{font-size:.66rem}
 @media (max-width:1100px){.sim{grid-template-columns:minmax(0,1fr)}.live{display:none}}
 @media (min-width:1101px){.sbar{display:none}}
+.secnav{position:sticky;top:0;z-index:4;display:flex;flex-wrap:wrap;gap:4px;background:rgba(238,241,241,.92);backdrop-filter:blur(6px);padding:6px 0;margin:-4px 0}
+.secnav a{color:var(--ink);text-decoration:none;font-weight:600;font-size:.85rem;padding:6px 12px;border-radius:999px;background:var(--surface);border:1px solid var(--line)}
+.secnav a:hover{border-color:var(--brand-2)}.secnav a b{color:var(--brand-2);margin-right:4px}
+.blk{scroll-margin-top:56px;margin-top:22px;padding-top:4px}
+.blk h2 .num{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--brand);color:#fff;font:700 .9rem var(--f-body);margin-right:8px;vertical-align:3px}
+.tag.ts{background:#FBEFD9;color:var(--warn)}
+details.note{max-width:none}details.note summary{cursor:pointer;font-weight:600;color:var(--ink)}
+.mx{width:auto;min-width:0}
+.mx .mx-l{width:320px;min-width:260px;max-width:340px}
+.mx .mx-c{width:170px;min-width:150px}
+.mx .ml{display:block;font-weight:500}.mx .md{display:block;font-size:.72rem;color:var(--muted);line-height:1.3;margin-top:1px}
+.mx tbody tr:not(.mx-sec):hover td{background:#F7FAFA}
+.mx tbody tr:not(.mx-sec):hover td.mx-l{background:#F7FAFA}
 .help{font-size:.76rem;color:var(--muted);line-height:1.4;margin:-2px 0 0}
 .pbox{background:var(--sunk);border-radius:8px;padding:10px 12px;display:grid;gap:6px}
 .pbox .ttl{font-size:.74rem;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
@@ -221,21 +236,20 @@ select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid var(--lin
           <span class="muted" style="font-size:.75rem">As setas comparam com a referência salva. Ao abrir, a referência é a oferta atual.</span>
         </div>
         <div class="sbar" id="sbar" aria-live="polite"></div>
-        <div class="note" id="honesty">São 1.000 compradores simulados, todos agentes de IA com perfil próprio: 50 viram o pitch original, 50 a oferta atual e 900 (10 segmentos, 12 comportamentos, várias cidades) viram uma de 4 ofertas, 225 em cada. A página não roda agentes a cada mudança: usa um modelo calibrado nas 1.020 respostas reais (incluindo 20 do re-teste). Real × modelo: oferta atual 17% × 12%, diagnóstico R$ 197 21% × 23%, oferta completa 25% × 25%, Profissional R$ 390 19% × 20%. Todos os que compraram levaram só o diagnóstico. Combinações que nenhum agente viu são extrapolação. Confirme com a pré-venda. Mais 450 para os produtos: Digital R$ 49 sozinho, 18% pagariam; cardápio com 3 produtos, 26% compram algo (Digital 10%, diagnóstico do Assistido 16%, Private 0,4%). No cardápio, só 1 dos 36 que compraram o diagnóstico seguiria para os R$ 297/mês.</div>
-        <div class="kpis" id="kpis"></div>
-        <div class="blk"><span class="tag ti">Individual</span><h2>Por produto</h2><p class="muted">O que muda de um produto para outro: preço, entregas, aquisição, indicações e equipe.</p></div>
+        <nav class="secnav" aria-label="Seções"><a href="#sec-prod"><b>1</b> Produtos</a><a href="#sec-emp"><b>2</b> Empresa</a><a href="#sec-scen"><b>3</b> Cenários dos sócios</a><a href="#sec-res"><b>4</b> Resultados</a></nav>
+        <div class="blk" id="sec-prod"><span class="tag ti">Individual · cada produto</span><h2><span class="num">1</span> Produtos</h2><p class="muted">Cada coluna é um produto. Preço, entregas, como chegam os clientes e atendimento de cada um.</p></div>
         <div class="card" id="focus-card">
-          <div class="flexbetween"><h3>Produtos</h3><span class="muted" style="font-size:.8rem">cada coluna é um produto · mude qualquer número e tudo recalcula</span></div>
-          <p class="muted" style="font-size:.8rem;margin:4px 0 0">Preço, entregas, aquisição, indicações e equipe de cada produto, lado a lado. Embaixo, o resultado de cada um no cenário completo e rodando <b>sozinho</b> (a empresa vendendo só ele, pagando plataforma, CEO e outros fixos), para decidir por onde começar.</p>
+          <div class="flexbetween"><h3>Por onde começar</h3><span class="muted" style="font-size:.8rem">mude qualquer número e o painel da direita recalcula</span></div>
+          
           <div id="focus-rec" class="frec"></div>
           <div class="tbl mx-wrap" style="margin-top:12px"><table id="mx-in" class="mx"></table></div>
-          <p class="help" style="margin-top:8px">Desmarque "vender" para tirar um produto do cenário sem apagar. Base da conversão: "Modelo dos 1.000" usa os compradores simulados (calibrado no Assistido); "Taxa do teste" parte da taxa medida no teste daquele produto, e preço e entregas mudam essa taxa conforme a reação dos compradores. Contribuição = preço menos planejador, imposto, cobrança e custo de entrega.</p>
+          <p class="help" style="margin-top:8px">Desmarque "vender" para tirar um produto do cenário sem apagar. "Sozinho" = a empresa vendendo só aquele produto, pagando plataforma, CEO e outros custos fixos. Clique no nome de uma seção para abrir ou fechar.</p>
         </div>
-        <div class="blk"><span class="tag te">Empresa</span><h2>Empresa como um todo</h2><p class="muted">Vale para todos os produtos ao mesmo tempo.</p></div>
+        <div class="blk" id="sec-emp"><span class="tag te">Empresa · vale para todos</span><h2><span class="num">2</span> Empresa</h2><p class="muted">Canal do Neto, equipe, custos fixos e caixa: valem para todos os produtos ao mesmo tempo.</p></div>
         <div class="cols4" id="co-block">
           <div class="card cocard" id="fs-org"><h3>Aquisição da empresa</h3><p class="help" style="margin:2px 0 10px">Canal do Neto e orgânico. Marketing pago, rede e indicações de cada produto ficam na tabela acima.</p><div class="cofs">
-            <div class="ctl"><label for="ytsubs">Inscritos hoje</label><input type="number" id="ytsubs" class="tin" min="0" step="100" inputmode="numeric"></div>
-          <div class="ctl"><label for="ytviews">Visualizações por mês (todos os vídeos)</label><input type="number" id="ytviews" class="tin" min="0" step="500" inputmode="numeric"></div>
+            <div class="ctl"><label for="ytsubs">Inscritos no canal hoje</label><input type="number" id="ytsubs" class="tin" min="0" step="100" inputmode="numeric"></div>
+          <div class="ctl"><label for="ytviews">Visualizações por mês (somando todos os vídeos)</label><input type="number" id="ytviews" class="tin" min="0" step="500" inputmode="numeric"></div>
           <div class="ctl"><div class="row"><label for="ytg1">Crescimento por mês no ano 1</label><output id="o-ytg1"></output></div><input type="range" id="ytg1" min="-5" max="20" step="0.5"></div>
           <div class="ctl"><div class="row"><label for="ytg2">Crescimento por mês no ano 2</label><output id="o-ytg2"></output></div><input type="range" id="ytg2" min="-5" max="20" step="0.5"></div>
           <div class="ctl"><div class="row"><label for="ytg3">Crescimento por mês no ano 3</label><output id="o-ytg3"></output></div><input type="range" id="ytg3" min="-5" max="20" step="0.5"></div>
@@ -243,23 +257,23 @@ select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid var(--lin
           <div class="ctl"><div class="row"><label for="ytg5">Crescimento por mês no ano 5</label><output id="o-ytg5"></output></div><input type="range" id="ytg5" min="-5" max="20" step="0.5"></div>
           <button class="btn" id="ytg-same" type="button">Usar o crescimento do ano 1 em todos os anos</button>
           <p class="help">Inscritos e visualizações crescem juntos, mês a mês, no ritmo de cada ano.</p>
-          <div class="ctl"><div class="row"><label for="ytctr">Quem assiste e clica no link</label><output id="o-ytctr"></output></div><input type="range" id="ytctr" min="0" max="5" step="0.1"></div>
-          <div class="ctl"><div class="row"><label for="ytlead">Quem clica e vira interessado</label><output id="o-ytlead"></output></div><input type="range" id="ytlead" min="0" max="100" step="5"></div>
-          <div class="ctl"><div class="row"><label for="orgother">Outros orgânicos (Instagram, boca a boca, Google) por mês</label><output id="o-orgother"></output></div><input type="range" id="orgother" min="0" max="500" step="5"></div>
-          <div class="ctl"><div class="row"><label for="orgcost">Custo mensal do orgânico (roteiro, edição)</label><output id="o-orgcost"></output></div><input type="range" id="orgcost" min="0" max="20000" step="250"></div>
+          <div class="ctl"><div class="row"><label for="ytctr">De cada 100 visualizações, quantas clicam no link</label><output id="o-ytctr"></output></div><input type="range" id="ytctr" min="0" max="5" step="0.1"></div>
+          <div class="ctl"><div class="row"><label for="ytlead">De cada 100 cliques, quantos deixam contato</label><output id="o-ytlead"></output></div><input type="range" id="ytlead" min="0" max="100" step="5"></div>
+          <div class="ctl"><div class="row"><label for="orgother">Interessados por mês de outros orgânicos (Instagram, boca a boca, Google)</label><output id="o-orgother"></output></div><input type="range" id="orgother" min="0" max="500" step="5"></div>
+          <div class="ctl"><div class="row"><label for="orgcost">Custo mensal para produzir o conteúdo</label><output id="o-orgcost"></output></div><input type="range" id="orgcost" min="0" max="20000" step="250"></div>
           <label class="tog"><input type="checkbox" id="yttrust"><span>A audiência confia no Neto<small>Quem vem do canal compra como quem chega indicado.</small></span></label>
-            <label class="tog"><input type="checkbox" id="menu"><span>Mostrar todos os produtos juntos (cardápio)<small>Quem chega vê todos os produtos ligados. Usa a escolha real do teste do cardápio: um produto tira vendas do outro.</small></span></label>
+            <label class="tog"><input type="checkbox" id="menu"><span>Oferecer todos os produtos juntos (cardápio)<small>Quem chega vê todos os produtos ligados. Usa a escolha real do teste do cardápio: um produto tira vendas do outro.</small></span></label>
           </div></div>
           <div class="card cocard"><h3>Atendimento e equipe</h3><p class="help" style="margin:2px 0 10px">Liderança e custos que valem para todos os planejadores. Capacidade e % de cada planejador ficam por produto.</p><div class="cofs">
             <div class="pbox" aria-live="polite"><span class="ttl">Planejadores necessários (informativo)</span><div class="grid6" id="pbox"></div><p class="help" id="pbox-note"></p></div>
-            <div class="ctl"><div class="row"><label for="span">Planejadores por líder</label><output id="o-span"></output></div><input type="range" id="span" min="2" max="15" step="1"></div>
-            <div class="ctl"><div class="row"><label for="lead">Líder de time (% da receita do time)</label><output id="o-lead"></output></div><input type="range" id="lead" min="0" max="20" step="0.5"></div>
-            <div class="ctl"><div class="row"><label for="perprof">Custo fixo por profissional</label><output id="o-perprof"></output></div><input type="range" id="perprof" min="0" max="2000" step="50"></div>
+            <div class="ctl"><div class="row"><label for="span">Planejadores por líder de time</label><output id="o-span"></output></div><input type="range" id="span" min="2" max="15" step="1"></div>
+            <div class="ctl"><div class="row"><label for="lead">Quanto o líder recebe (% da receita do time)</label><output id="o-lead"></output></div><input type="range" id="lead" min="0" max="20" step="0.5"></div>
+            <div class="ctl"><div class="row"><label for="perprof">Custo fixo por pessoa da equipe, por mês</label><output id="o-perprof"></output></div><input type="range" id="perprof" min="0" max="2000" step="50"></div>
           </div></div>
           <div class="card cocard"><h3>Custos fixos</h3><p class="help" style="margin:2px 0 10px">Custos da empresa que não dependem do produto.</p><div class="cofs">
-            <div class="ctl"><div class="row"><label for="pmt">PMT da plataforma (até 400 acessos)</label><output id="o-pmt"></output></div><input type="range" id="pmt" min="0" max="10000" step="250"></div>
-            <div class="ctl"><div class="row"><label for="other">Outros fixos (contador, sistemas)</label><output id="o-other"></output></div><input type="range" id="other" min="0" max="10000" step="100"></div>
-            <div class="ctl"><div class="row"><label for="tax">Imposto sobre receita</label><output id="o-tax"></output></div><input type="range" id="tax" min="6" max="20" step="0.5"></div>
+            <div class="ctl"><div class="row"><label for="pmt">Plataforma Dashplan por mês (até 400 clientes)</label><output id="o-pmt"></output></div><input type="range" id="pmt" min="0" max="10000" step="250"></div>
+            <div class="ctl"><div class="row"><label for="other">Outros custos fixos (contador, sistemas)</label><output id="o-other"></output></div><input type="range" id="other" min="0" max="10000" step="100"></div>
+            <div class="ctl"><div class="row"><label for="tax">Imposto sobre a receita</label><output id="o-tax"></output></div><input type="range" id="tax" min="6" max="20" step="0.5"></div>
           </div></div>
           <div class="card cocard"><h3>Sócios e caixa</h3><p class="help" style="margin:2px 0 10px">Retirada do CEO e caixa para começar.</p><div class="cofs">
             <div class="ctl"><div class="row"><label for="ceo1">Retirada do CEO até a empresa dar lucro</label><output id="o-ceo1"></output></div><input type="range" id="ceo1" min="0" max="15000" step="500"></div>
@@ -269,14 +283,17 @@ select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid var(--lin
             <div class="ctl"><div class="row"><label for="cash">Caixa inicial</label><output id="o-cash"></output></div><input type="range" id="cash" min="20000" max="300000" step="5000"></div>
           </div></div>
         </div>
+        <div class="blk" id="sec-scen"><span class="tag ts">Compartilhado</span><h2><span class="num">3</span> Cenários dos sócios</h2><p class="muted">Salve sua visão com um nome e compare com a dos outros sócios.</p></div>
         <div class="card" id="scen-card">
-          <div class="flexbetween"><h3>Cenários dos sócios</h3><span class="muted" id="scen-status" style="font-size:.8rem">conectando…</span></div>
+          <div class="flexbetween"><h3>Salvar e comparar</h3><span class="muted" id="scen-status" style="font-size:.8rem">conectando…</span></div>
           <p class="muted" style="font-size:.8rem;margin:4px 0 10px">Ajuste os produtos e alavancas, dê um nome e salve. Todos que abrirem esta página veem os cenários salvos, podem abrir qualquer um para ver os números e marcar vários para comparar lado a lado.</p>
           <div class="prow"><input type="text" id="scen-name" class="tin" maxlength="60" placeholder="Ex.: Alexandre – foco no Digital primeiro" aria-label="Nome do cenário"><button class="btn primary" id="scen-save">Salvar meu cenário</button></div>
           <div class="tbl" style="margin-top:10px"><table id="tbl-scen"></table></div>
           <div id="scen-cmp-wrap" hidden style="margin-top:14px"><h3 style="font-size:.95rem">Comparação</h3><div class="tbl" style="margin-top:6px"><table id="tbl-scen-cmp"></table></div></div>
         </div>
-        <div class="blk"><span class="tag tr">Resultado</span><h2>Resultados consolidados</h2><p class="muted">A empresa inteira somando todos os produtos à venda.</p></div>
+        <div class="blk" id="sec-res"><span class="tag tr">Resultado</span><h2><span class="num">4</span> Resultados</h2><p class="muted">A empresa inteira, somando todos os produtos à venda.</p></div>
+        <details class="note" id="honesty"><summary>De onde vêm os números</summary>São 1.000 compradores simulados, todos agentes de IA com perfil próprio: 50 viram o pitch original, 50 a oferta atual e 900 (10 segmentos, 12 comportamentos, várias cidades) viram uma de 4 ofertas, 225 em cada. A página não roda agentes a cada mudança: usa um modelo calibrado nas 1.020 respostas reais (incluindo 20 do re-teste). Real × modelo: oferta atual 17% × 12%, diagnóstico R$ 197 21% × 23%, oferta completa 25% × 25%, Profissional R$ 390 19% × 20%. Todos os que compraram levaram só o diagnóstico. Combinações que nenhum agente viu são extrapolação. Confirme com a pré-venda. Mais 450 para os produtos: Digital R$ 49 sozinho, 18% pagariam; cardápio com 3 produtos, 26% compram algo (Digital 10%, diagnóstico do Assistido 16%, Private 0,4%). No cardápio, só 1 dos 36 que compraram o diagnóstico seguiria para os R$ 297/mês.</details>
+        <div class="kpis" id="kpis"></div>
         <div class="card" id="org-card">
           <div class="flexbetween"><h3>Resultado do orgânico (canal do Neto)</h3><span class="muted" id="org-note" style="font-size:.8rem"></span></div>
           <p class="muted" style="font-size:.8rem;margin:4px 0 10px">O Neto é a cara da Profitto e o canal dele vira um funil: quem assiste clica no link, deixa o contato e decide comprar como quem chega indicado, porque já confia nele. No painel, quem "segue influenciador de finanças" comprou 2 a 5 vezes mais que a média. Preencha com os números do YouTube Studio do canal. Em cada produto, o "peso no canal do Neto" (em Aquisição, à esquerda) diz para onde vão os interessados.</p>
@@ -482,7 +499,7 @@ const BRL=v=>(v<0?'−':'')+'R$ '+Math.round(Math.abs(v)).toLocaleString('pt-BR'
 const BRLk=v=>{const a=Math.abs(v);const s=a>=1000?(a/1000).toLocaleString('pt-BR',{maximumFractionDigits:a>=100000?0:1})+' mil':Math.round(a)+'';return (v<0?'−':'')+'R$ '+s};
 const pct=v=>Math.round(v*100)+'%';
 
-const LEVERS={online:'Opção 100% online',cancel:'Cancelamento livre',comissao:'Sem comissão',cfp:'Planejador CFP',garantia:'Garantia de qualidade',exemplo:'Plano exemplo',prova:'Prova social',checkin:'Check-in ativo',casal:'Sessão do casal',raiox:'Raio-X do banco',dividas:'Trilha de dívidas',tributario:'Módulo tributário',parcelado:'Diagnóstico em 3x'};
+const LEVERS={online:'100% online, sem reuniões',cancel:'Cancela quando quiser, sem multa',comissao:'Diz que não ganha comissão',cfp:'Planejador com certificação CFP',garantia:'Devolve se o plano for genérico',exemplo:'Plano de exemplo no site',prova:'Depoimentos de clientes',checkin:'Planejador procura o cliente todo mês',casal:'Sessão com o casal',raiox:'Raio-X das tarifas do banco',dividas:'Plano para sair das dívidas',tributario:'Imposto, empresa e sucessão',parcelado:'Diagnóstico em 3x'};
 const BAR2LEV={online:'online',timing:'__never',cancel:'cancel',comissao:'comissao',cfp:'cfp',indicacao:'prova',avaliacoes:'prova',exemplo:'exemplo',garantia_qual:'garantia',casal:'casal',dividas:'dividas',parcelado:'parcelado',tributario:'tributario',raiox:'raiox',checkin:'checkin'};
 const BARNAME={online:'Quer algo 100% online, sem reuniões',timing:'Agora não é o momento',cancel:'Medo de não conseguir cancelar',comissao:'Desconfiança de comissão',cfp:'Quer planejador certificado',indicacao:'Só compra por indicação',avaliacoes:'Quer avaliações reais',exemplo:'Quer ver um plano exemplo',garantia_qual:'Garantia só cobre atraso',casal:'Briga com o cônjuge',dividas:'Dívida rodando',parcelado:'Quer parcelar',tributario:'Quer tributário / sucessão',raiox:'Acha que o gerente faz de graça',checkin:'Já largou app',diag_barato:'Quer diagnóstico barato ou 1ª conversa grátis'};
 
@@ -881,17 +898,54 @@ function orgPanel(r,R,c){
 }
 // ---- tabela de produtos (cada produto = uma coluna) ----
 const MXS=[
- ['Preço',[['m','Mensalidade (R$)','num',1],['diag','Diagnóstico de entrada','chk'],['dprice','Preço do diagnóstico (R$)','num',10],['parcelado','Diagnóstico em 3x sem juros','chk'],['conv','Diagnóstico que vira assinatura (%)','num',5]]],
- ['Entregas e confiança',['online','cancel','comissao','cfp','garantia','exemplo','prova','checkin','casal','raiox','dividas','tributario'].map(k=>[k,LEVERS[k],'chk'])],
- ['Aquisição',[['rede','Contatos da rede por mês','num',5],['mkt','Marketing pago por mês (R$)','num',500],['cpl','Custo por interessado (R$)','num',5],['orgw','Peso no canal do Neto','num',5],['growth','Crescimento de interessados por ano (%)','num',5],['real','Desconto de realismo do painel (%)','num',5],['churn','Cancelamentos por mês (%)','num',0.5]]],
- ['Indicações e assessores',[['pleads','Interessados por indicadores / mês','num',5],['pcom','Percentual do indicador (%)','num',1],['pdur','Indicador recebe por (meses)','num',1],['aleads','Interessados da base de assessores / mês','num',5],['acom','Percentual do assessor (%)','num',1],['adur','Assessor recebe por (meses)','num',1]]],
- ['Equipe e entrega',[['plan','Planejador (% da receita, 0 = sem planejador)','num',1],['cap','Clientes por planejador','num',5],['pfix','Fixo por planejador (R$)','num',250],['deliv','Custo de entrega por cliente/mês (R$)','num',5]]],
- ['Como calcular quem compra',[['kind','Base da conversão','kind'],['pbase','Compram no teste do produto (%)','num',0.1]]]];
+ ['Preço',[
+  ['m','Mensalidade','num',1,'Quanto o cliente paga por mês, em R$.'],
+  ['diag','Começa com um diagnóstico pago?','chk',0,'O cliente compra primeiro um diagnóstico avulso e depois decide se assina.'],
+  ['dprice','Preço do diagnóstico','num',10,'Pagamento único, em R$.'],
+  ['parcelado','Diagnóstico pode ser parcelado em 3x?','chk',0,'Sem juros.'],
+  ['conv','De cada 100 que compram o diagnóstico, quantos assinam?','num',5,'Em %. O teste com compradores indicou poucos seguindo na hora: valide com clientes reais.']]],
+ ['O que o produto entrega',[
+  ['checkin','Planejador procura o cliente todo mês','chk',0,'O planejador marca uma conversa mensal, em vez de esperar o cliente pedir.'],
+  ['casal','Sessão com o casal','chk',0,'Uma reunião com os dois juntos, com o planejador como mediador.'],
+  ['raiox','Raio-X das tarifas do banco','chk',0,'Mostra quanto o banco já cobra do cliente em tarifas e taxas.'],
+  ['dividas','Plano para sair das dívidas','chk',0,'Passo a passo com datas para quitar cartão e cheque especial.'],
+  ['tributario','Imposto, empresa e sucessão','chk',0,'Inclui imposto de renda, separação PF/PJ e planejamento sucessório.'],
+  ['online','100% online, sem reuniões','chk',0,'O cliente faz tudo sozinho pelo app ou site.']]],
+ ['Garantias e confiança',[
+  ['cancel','Cancela quando quiser, sem multa','chk',0,'Sem fidelidade, pelo site.'],
+  ['comissao','Diz que não ganha comissão','chk',0,'Só marque se for verdade.'],
+  ['cfp','Planejador com certificação CFP','chk',0,'Mostrar a certificação no site e na proposta.'],
+  ['garantia','Devolve o dinheiro se o plano for genérico','chk',0,'Garantia de qualidade do diagnóstico.'],
+  ['exemplo','Plano de exemplo no site','chk',0,'Um plano real, anonimizado, para o cliente ver antes de comprar.'],
+  ['prova','Depoimentos e avaliações de clientes','chk',0,'Só existe depois dos primeiros clientes.']]],
+ ['Como chegam os clientes',[
+  ['rede','Contatos da rede pessoal por mês','num',5,'Pessoas conhecidas que recebem a oferta diretamente.'],
+  ['mkt','Verba de anúncios por mês','num',500,'Em R$.'],
+  ['cpl','Custo para gerar um interessado','num',5,'Em R$: quanto de anúncio custa cada pessoa que deixa contato.'],
+  ['orgw','Parte do público do Neto que vai para este produto','num',5,'Divida 100 entre os produtos à venda. Se a soma passar de 100, a página reparte na proporção.'],
+  ['growth','Crescimento dos interessados por ano','num',5,'Em %: quanto a rede e os anúncios crescem de um ano para o outro.'],
+  ['real','Quanto confiar no teste com compradores','num',5,'Em %: 50 = considera metade das compras do teste. Use para ser mais ou menos conservador.'],
+  ['churn','Clientes que cancelam por mês','num',0.5,'Em % da base de clientes.']]],
+ ['Indicações e assessores',[
+  ['pleads','Interessados por mês vindos de indicadores','num',5,'Influenciadores, parceiros e vendedores de outros serviços.'],
+  ['pcom','Comissão do indicador','num',1,'Em % do que o cliente pagar.'],
+  ['pdur','Por quantos meses o indicador recebe','num',1,''],
+  ['aleads','Interessados por mês da base de assessores','num',5,'Clientes de assessores de investimento.'],
+  ['acom','Comissão do assessor','num',1,'Em % do que o cliente pagar.'],
+  ['adur','Por quantos meses o assessor recebe','num',1,'']]],
+ ['Atendimento',[
+  ['plan','Quanto o planejador recebe','num',1,'Em % da receita do produto. 0 = produto sem planejador (self-service).'],
+  ['cap','Clientes que um planejador atende','num',5,'Define quantos planejadores serão necessários.'],
+  ['pfix','Salário fixo por planejador','num',250,'Em R$ por mês, além da porcentagem.'],
+  ['deliv','Outros custos por cliente por mês','num',5,'Em R$: app, IA, material, horas extras.']]],
+ ['Quantos compram',[
+  ['kind','De onde vem a taxa de compra','kind',0,'"Simulada" usa os 1.000 compradores e muda com preço e entregas. "Medida" usa o resultado do teste deste produto.'],
+  ['pbase','Taxa de compra medida no teste','num',0.1,'Em %: de cada 100 interessados, quantos compraram no teste. Preço e entregas ainda ajustam esse número.']]]];
 let MXC=new Set();try{MXC=new Set(JSON.parse(localStorage.getItem('profitto-mxcol')||'[]'))}catch(e){}
-function mxCell(p,[k,lab,t,step]){
+function mxCell(p,[k,lab,t,step,desc]){
   const a=`data-pid="${p.id}" data-k="${k}" aria-label="${esc(lab)} – ${esc(p.name)}"`;
   if(t==='chk')return `<input type="checkbox" ${a} ${p[k]?'checked':''}>`;
-  if(t==='kind')return `<select class="mi" ${a}><option value="modelo"${p.kind==='modelo'?' selected':''}>Modelo dos 1.000</option><option value="painel"${p.kind==='painel'?' selected':''}>Taxa do teste</option></select>`;
+  if(t==='kind')return `<select class="mi" ${a}><option value="modelo"${p.kind==='modelo'?' selected':''}>Simulada (1.000 compradores)</option><option value="painel"${p.kind==='painel'?' selected':''}>Medida no teste</option></select>`;
   const dis=(k==='pbase'&&p.kind!=='painel')||(k==='dprice'&&!p.diag)||(k==='conv'&&!p.diag)||((k==='cap'||k==='pfix')&&!(p.plan>0));
   return `<input type="number" class="mi" ${a} step="${step}" min="0" value="${typeof p[k]==='number'?Math.round(p[k]*100)/100:p[k]}"${dis?' disabled':''}>`;
 }
@@ -904,7 +958,7 @@ function renderMatrix(){
   let body='';
   MXS.forEach(([sec,rows])=>{const col=MXC.has(sec);
     body+=`<tr class="mx-sec"><td colspan="${L.length+2}"><button class="lnk" data-sec="${esc(sec)}" aria-expanded="${!col}">${col?'▸':'▾'} ${esc(sec)}</button></td></tr>`;
-    if(!col)rows.forEach(r=>{body+=`<tr><td class="mx-l">${esc(r[1])}</td>${L.map(p=>`<td class="mx-c${p.on?'':' off'}">${mxCell(p,r)}</td>`).join('')}<td></td></tr>`});
+    if(!col)rows.forEach(r=>{body+=`<tr><td class="mx-l"><span class="ml">${esc(r[1])}</span>${r[4]?`<span class="md">${esc(r[4])}</span>`:''}</td>${L.map(p=>`<td class="mx-c${p.on?'':' off'}">${mxCell(p,r)}</td>`).join('')}<td></td></tr>`});
   });
   body+=`<tr class="mx-sec"><td colspan="${L.length+2}"><span class="eyebrow">Resultado de cada produto</span></td></tr>`;
   $('mx-in').innerHTML='<thead>'+head+'</thead><tbody>'+body+'</tbody><tbody id="mx-res"></tbody>';
@@ -920,11 +974,12 @@ function focus(st){
   const pc=v=>(v*100).toFixed(1).replace('.',',')+'%';
   const R=(lab,f,b)=>`<tr${b?' class="mx-b"':''}><td class="mx-l">${lab}</td>${rows.map(x=>`<td class="mx-c n${x.p.on?'':' off'}">${f(x)}</td>`).join('')}<td></td></tr>`;
   $('mx-res').innerHTML=
-    R('Compram (direto / indicado)',x=>pc(x.o.rate)+' / '+pc(x.o.rate*x.o.warm))+
-    R('Contribuição por cliente/mês',x=>BRL(x.unit))+
-    R('Marketing por cliente novo (ano 1)',x=>x.cac?BRL(x.cac):'—')+
-    R('Meses para pagar o marketing',x=>x.pay?(x.pay<1?'< 1':x.pay.toFixed(1).replace('.',',')):'—')+
-    R('Valor de um cliente (vida toda)',x=>BRL(x.ltv))+
+    R('De cada 100 interessados, compram',x=>pc(x.o.rate)+(x.o.warm>1.01?' <span class="muted">(indicados: '+pc(x.o.rate*x.o.warm)+')</span>':''))+
+    R('Recebe do público do Neto',x=>{if(!x.p.on)return '—';const on=L.filter(q=>q.on);const sw=on.reduce((a,q)=>a+(+q.orgw||0),0);const sh=sw>0?(+x.p.orgw||0)/sw:0;const n=C?C.months[11].orgLeads*sh:0;return pct(sh)+(n>0?' <span class="muted">≈ '+Math.round(n)+'/mês</span>':'')})+
+    R('Sobra por cliente por mês',x=>BRL(x.unit))+
+    R('Anúncio gasto por cliente novo (ano 1)',x=>x.cac?BRL(x.cac):'—')+
+    R('Meses para recuperar esse gasto',x=>x.pay?(x.pay<1?'< 1':x.pay.toFixed(1).replace('.',',')):'—')+
+    R('Quanto um cliente deixa no total',x=>BRL(x.ltv))+
     R('<b>No cenário completo</b>: clientes ano 5',x=>{const o=inC(x.p.id);return o?Math.round(o.years[4].n).toLocaleString('pt-BR'):'não vende'})+
     R('No cenário completo: receita ano 5',x=>{const o=inC(x.p.id);return o?BRLk(o.years[4].rev):'—'})+
     R('No cenário completo: contribuição ano 5',x=>{const o=inC(x.p.id);return o?cl(o.years[4].k):'—'})+
@@ -932,7 +987,7 @@ function focus(st){
     R('Sozinho: resultado ano 5',x=>cl(x.r.years[4].profit),true)+
     R('Sozinho: caixa no pior momento',x=>cl(x.r.minCash),true)+
     R('Sozinho: primeiro mês de lucro',x=>x.r.beMonth?'mês '+x.r.beMonth:'—',true)+
-    `<tr><td class="mx-l">Compradores analisados mais abaixo</td>${rows.map(x=>`<td class="mx-c"><input type="radio" name="mxsel" data-act="sel" data-pid="${x.p.id}" ${x.p.id===STATE.sel?'checked':''} aria-label="Analisar ${esc(x.p.name)}"></td>`).join('')}<td></td></tr>`;
+    `<tr><td class="mx-l">Ver estes compradores na análise do fim da página</td>${rows.map(x=>`<td class="mx-c"><input type="radio" name="mxsel" data-act="sel" data-pid="${x.p.id}" ${x.p.id===STATE.sel?'checked':''} aria-label="Analisar ${esc(x.p.name)}"></td>`).join('')}<td></td></tr>`;
   const ok=rows.filter(x=>x.r.years[4].profit>0);
   const start=(ok.length?ok:rows).slice().sort((a,b)=>b.r.minCash-a.r.minCash)[0];
   const pot=rows.slice().sort((a,b)=>b.r.years[4].profit-a.r.years[4].profit)[0];
