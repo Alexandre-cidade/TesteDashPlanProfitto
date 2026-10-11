@@ -32,7 +32,7 @@ nav.tabs{display:flex;gap:4px;overflow-x:auto;margin-block:16px;border-bottom:1p
 nav.tabs button{background:none;border:0;border-bottom:2px solid transparent;padding:10px 14px;color:var(--muted);font:600 .9rem var(--f-body);cursor:pointer;white-space:nowrap}
 nav.tabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--accent-fill)}
 nav.tabs button:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--accent-fill);outline-offset:2px}
-.sim{display:grid;grid-template-columns:330px minmax(0,1fr);gap:20px;align-items:start}
+.sim{display:grid;grid-template-columns:minmax(0,1fr);gap:20px;align-items:start}
 @media (max-width:900px){.sim{grid-template-columns:minmax(0,1fr)}}
 .panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px}
 aside.levers{position:sticky;top:calc(env(safe-area-inset-top,0px) + 8px);max-height:calc(100vh - 16px);overflow:auto}
@@ -86,6 +86,20 @@ select.mi{text-align:left}.mx-name{text-align:left;font-weight:600}
 .mx tr.mx-b td{font-weight:600}
 .mx td.n{text-align:right;font-variant-numeric:tabular-nums}
 .mx input[type=checkbox],.mx input[type=radio]{accent-color:var(--accent-fill);width:16px;height:16px}
+.toolbar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px;padding:10px 14px}
+.sbar{position:sticky;top:0;z-index:5;display:flex;flex-wrap:wrap;gap:6px 18px;background:var(--brand);color:#fff;border-radius:var(--r);padding:8px 14px;font-size:.82rem;box-shadow:0 4px 16px rgba(0,0,0,.08)}
+.sbar b{font-variant-numeric:tabular-nums}.sbar .neg{color:#ffb4ab}.sbar .pos{color:#a8e6b8}
+.blk{margin-top:14px;display:grid;gap:2px}.blk h2{font-size:1.3rem}.blk p{margin:0;font-size:.85rem}
+.tag{justify-self:start;font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:2px 8px;border-radius:999px}
+.tag.ti{background:#E3EEFB;color:#1d5aa6}.tag.te{background:#E4EEF0;color:var(--brand-2)}.tag.tr{background:#E4F4EA;color:var(--good)}
+.cols4{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:14px;align-items:start}
+@media (max-width:1180px){.cols4{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:640px){.cols4{grid-template-columns:minmax(0,1fr)}}
+.cocard{border-top:3px solid var(--brand-2)}
+.cofs{display:grid;gap:10px}
+#fs-org .cofs{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:18px;align-items:start}
+#fs-org .cofs>.help,#fs-org .cofs>button{grid-column:1/-1}
+@media (max-width:640px){#fs-org .cofs{grid-template-columns:minmax(0,1fr)}}
 .help{font-size:.76rem;color:var(--muted);line-height:1.4;margin:-2px 0 0}
 .pbox{background:var(--sunk);border-radius:8px;padding:10px 12px;display:grid;gap:6px}
 .pbox .ttl{font-size:.74rem;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
@@ -178,20 +192,34 @@ select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid var(--lin
   <!-- SIMULADOR -->
   <section id="p-sim" role="tabpanel" aria-labelledby="t-sim">
     <div class="sim">
-      <aside class="panel levers" aria-label="Alavancas">
-        <div class="flexbetween" style="margin-bottom:10px">
-          <h3>Empresa e canal</h3>
-          <select id="preset" aria-label="Cenários prontos">
+
+      <div class="stack">
+        <div class="toolbar card">
+          <div class="prow" style="gap:8px"><select id="preset" aria-label="Cenários prontos">
             <option value="">Ofertas prontas (Assistido)…</option>
             <option value="v1">Pitch original (v1)</option>
             <option value="atual">Oferta atual (v2)</option>
             <option value="rec">Recomendado</option>
             <option value="tudo">Tudo ligado</option>
             <option value="tres">Ligar os 3 produtos</option>
-          </select>
+          </select><button class="btn primary" id="save">Salvar como referência</button><button class="btn" id="reset">Voltar ao início</button></div>
+          <span class="muted" style="font-size:.75rem">As setas comparam com a referência salva. Ao abrir, a referência é a oferta atual.</span>
         </div>
-        <fieldset id="fs-org"><legend>Canal do Neto (orgânico)</legend>
-          <div class="ctl"><label for="ytsubs">Inscritos hoje</label><input type="number" id="ytsubs" class="tin" min="0" step="100" inputmode="numeric"></div>
+        <div class="sbar" id="sbar" aria-live="polite"></div>
+        <div class="note" id="honesty">São 1.000 compradores simulados, todos agentes de IA com perfil próprio: 50 viram o pitch original, 50 a oferta atual e 900 (10 segmentos, 12 comportamentos, várias cidades) viram uma de 4 ofertas, 225 em cada. A página não roda agentes a cada mudança: usa um modelo calibrado nas 1.020 respostas reais (incluindo 20 do re-teste). Real × modelo: oferta atual 17% × 12%, diagnóstico R$ 197 21% × 23%, oferta completa 25% × 25%, Profissional R$ 390 19% × 20%. Todos os que compraram levaram só o diagnóstico. Combinações que nenhum agente viu são extrapolação. Confirme com a pré-venda. Mais 450 para os produtos: Digital R$ 49 sozinho, 18% pagariam; cardápio com 3 produtos, 26% compram algo (Digital 10%, diagnóstico do Assistido 16%, Private 0,4%). No cardápio, só 1 dos 36 que compraram o diagnóstico seguiria para os R$ 297/mês.</div>
+        <div class="kpis" id="kpis"></div>
+        <div class="blk"><span class="tag ti">Individual</span><h2>Por produto</h2><p class="muted">O que muda de um produto para outro: preço, entregas, aquisição, indicações e equipe.</p></div>
+        <div class="card" id="focus-card">
+          <div class="flexbetween"><h3>Produtos</h3><span class="muted" style="font-size:.8rem">cada coluna é um produto · mude qualquer número e tudo recalcula</span></div>
+          <p class="muted" style="font-size:.8rem;margin:4px 0 0">Preço, entregas, aquisição, indicações e equipe de cada produto, lado a lado. Embaixo, o resultado de cada um no cenário completo e rodando <b>sozinho</b> (a empresa vendendo só ele, pagando plataforma, CEO e outros fixos), para decidir por onde começar.</p>
+          <div id="focus-rec" class="frec"></div>
+          <div class="tbl mx-wrap" style="margin-top:12px"><table id="mx-in" class="mx"></table></div>
+          <p class="help" style="margin-top:8px">Desmarque "vender" para tirar um produto do cenário sem apagar. Base da conversão: "Modelo dos 1.000" usa os compradores simulados (calibrado no Assistido); "Taxa do teste" parte da taxa medida no teste daquele produto, e preço e entregas mudam essa taxa conforme a reação dos compradores. Contribuição = preço menos planejador, imposto, cobrança e custo de entrega.</p>
+        </div>
+        <div class="blk"><span class="tag te">Empresa</span><h2>Empresa como um todo</h2><p class="muted">Vale para todos os produtos ao mesmo tempo.</p></div>
+        <div class="cols4" id="co-block">
+          <div class="card cocard" id="fs-org"><h3>Aquisição da empresa</h3><p class="help" style="margin:2px 0 10px">Canal do Neto e orgânico. Marketing pago, rede e indicações de cada produto ficam na tabela acima.</p><div class="cofs">
+            <div class="ctl"><label for="ytsubs">Inscritos hoje</label><input type="number" id="ytsubs" class="tin" min="0" step="100" inputmode="numeric"></div>
           <div class="ctl"><label for="ytviews">Visualizações por mês (todos os vídeos)</label><input type="number" id="ytviews" class="tin" min="0" step="500" inputmode="numeric"></div>
           <div class="ctl"><div class="row"><label for="ytg1">Crescimento por mês no ano 1</label><output id="o-ytg1"></output></div><input type="range" id="ytg1" min="-5" max="20" step="0.5"></div>
           <div class="ctl"><div class="row"><label for="ytg2">Crescimento por mês no ano 2</label><output id="o-ytg2"></output></div><input type="range" id="ytg2" min="-5" max="20" step="0.5"></div>
@@ -205,38 +233,26 @@ select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid var(--lin
           <div class="ctl"><div class="row"><label for="orgother">Outros orgânicos (Instagram, boca a boca, Google) por mês</label><output id="o-orgother"></output></div><input type="range" id="orgother" min="0" max="500" step="5"></div>
           <div class="ctl"><div class="row"><label for="orgcost">Custo mensal do orgânico (roteiro, edição)</label><output id="o-orgcost"></output></div><input type="range" id="orgcost" min="0" max="20000" step="250"></div>
           <label class="tog"><input type="checkbox" id="yttrust"><span>A audiência confia no Neto<small>Quem vem do canal compra como quem chega indicado.</small></span></label>
-        </fieldset>
-        <fieldset><legend>Empresa (vale para todos os produtos)</legend>
-          <div class="pbox" aria-live="polite"><span class="ttl">Planejadores necessários (informativo)</span><div class="grid6" id="pbox"></div><p class="help" id="pbox-note"></p></div>
-          <label class="tog"><input type="checkbox" id="menu"><span>Mostrar todos os produtos juntos (cardápio)<small>Quem chega vê todos os produtos ligados. Usa a escolha real do teste do cardápio: um produto tira vendas do outro.</small></span></label>
-          <div class="ctl"><div class="row"><label for="span">Planejadores por líder</label><output id="o-span"></output></div><input type="range" id="span" min="2" max="15" step="1"></div>
-          <div class="ctl"><div class="row"><label for="lead">Líder de time (% da receita do time)</label><output id="o-lead"></output></div><input type="range" id="lead" min="0" max="20" step="0.5"></div>
-          <div class="ctl"><div class="row"><label for="perprof">Custo fixo por profissional</label><output id="o-perprof"></output></div><input type="range" id="perprof" min="0" max="2000" step="50"></div>
-          <div class="ctl"><div class="row"><label for="other">Outros fixos (contador, sistemas)</label><output id="o-other"></output></div><input type="range" id="other" min="0" max="10000" step="100"></div>
-          <div class="ctl"><div class="row"><label for="ceo1">Retirada do CEO até a empresa dar lucro</label><output id="o-ceo1"></output></div><input type="range" id="ceo1" min="0" max="15000" step="500"></div>
-          <p class="help">Quanto o CEO retira por mês enquanto a empresa ainda tem prejuízo, ou seja, o adiantamento de lucro pago com o caixa inicial. Baixar este valor faz o caixa durar mais.</p>
-          <div class="ctl"><div class="row"><label for="ceo2">Retirada do CEO depois do 1º mês de lucro</label><output id="o-ceo2"></output></div><input type="range" id="ceo2" min="0" max="20000" step="500"></div>
-          <p class="help" id="ceo-note">A partir do primeiro mês em que receita ≥ todos os custos, a retirada muda para este valor e é paga pelo próprio lucro.</p>
-          <div class="ctl"><div class="row"><label for="tax">Imposto sobre receita</label><output id="o-tax"></output></div><input type="range" id="tax" min="6" max="20" step="0.5"></div>
-          <div class="ctl"><div class="row"><label for="pmt">PMT da plataforma (até 400 acessos)</label><output id="o-pmt"></output></div><input type="range" id="pmt" min="0" max="10000" step="250"></div>
-          <div class="ctl"><div class="row"><label for="cash">Caixa inicial</label><output id="o-cash"></output></div><input type="range" id="cash" min="20000" max="300000" step="5000"></div>
-        </fieldset>
-        <div class="btns" style="margin-top:16px">
-          <button class="btn primary" id="save">Salvar como referência</button>
-          <button class="btn" id="reset">Voltar ao início</button>
-        </div>
-        <p class="muted" style="font-size:.75rem;margin:8px 0 0">As setas comparam com a referência salva. Ao abrir, a referência é a oferta atual.</p>
-      </aside>
-
-      <div class="stack">
-        <div class="note" id="honesty">São 1.000 compradores simulados, todos agentes de IA com perfil próprio: 50 viram o pitch original, 50 a oferta atual e 900 (10 segmentos, 12 comportamentos, várias cidades) viram uma de 4 ofertas, 225 em cada. A página não roda agentes a cada mudança: usa um modelo calibrado nas 1.020 respostas reais (incluindo 20 do re-teste). Real × modelo: oferta atual 17% × 12%, diagnóstico R$ 197 21% × 23%, oferta completa 25% × 25%, Profissional R$ 390 19% × 20%. Todos os que compraram levaram só o diagnóstico. Combinações que nenhum agente viu são extrapolação. Confirme com a pré-venda. Mais 450 para os produtos: Digital R$ 49 sozinho, 18% pagariam; cardápio com 3 produtos, 26% compram algo (Digital 10%, diagnóstico do Assistido 16%, Private 0,4%). No cardápio, só 1 dos 36 que compraram o diagnóstico seguiria para os R$ 297/mês.</div>
-        <div class="kpis" id="kpis"></div>
-        <div class="card" id="focus-card">
-          <div class="flexbetween"><h3>Produtos</h3><span class="muted" style="font-size:.8rem">cada coluna é um produto · mude qualquer número e tudo recalcula</span></div>
-          <p class="muted" style="font-size:.8rem;margin:4px 0 0">Preço, entregas, aquisição, indicações e equipe de cada produto, lado a lado. Embaixo, o resultado de cada um no cenário completo e rodando <b>sozinho</b> (a empresa vendendo só ele, pagando plataforma, CEO e outros fixos), para decidir por onde começar.</p>
-          <div id="focus-rec" class="frec"></div>
-          <div class="tbl mx-wrap" style="margin-top:12px"><table id="mx-in" class="mx"></table></div>
-          <p class="help" style="margin-top:8px">Desmarque "vender" para tirar um produto do cenário sem apagar. Base da conversão: "Modelo dos 1.000" usa os compradores simulados (calibrado no Assistido); "Taxa do teste" parte da taxa medida no teste daquele produto, e preço e entregas mudam essa taxa conforme a reação dos compradores. Contribuição = preço menos planejador, imposto, cobrança e custo de entrega.</p>
+            <label class="tog"><input type="checkbox" id="menu"><span>Mostrar todos os produtos juntos (cardápio)<small>Quem chega vê todos os produtos ligados. Usa a escolha real do teste do cardápio: um produto tira vendas do outro.</small></span></label>
+          </div></div>
+          <div class="card cocard"><h3>Atendimento e equipe</h3><p class="help" style="margin:2px 0 10px">Liderança e custos que valem para todos os planejadores. Capacidade e % de cada planejador ficam por produto.</p><div class="cofs">
+            <div class="pbox" aria-live="polite"><span class="ttl">Planejadores necessários (informativo)</span><div class="grid6" id="pbox"></div><p class="help" id="pbox-note"></p></div>
+            <div class="ctl"><div class="row"><label for="span">Planejadores por líder</label><output id="o-span"></output></div><input type="range" id="span" min="2" max="15" step="1"></div>
+            <div class="ctl"><div class="row"><label for="lead">Líder de time (% da receita do time)</label><output id="o-lead"></output></div><input type="range" id="lead" min="0" max="20" step="0.5"></div>
+            <div class="ctl"><div class="row"><label for="perprof">Custo fixo por profissional</label><output id="o-perprof"></output></div><input type="range" id="perprof" min="0" max="2000" step="50"></div>
+          </div></div>
+          <div class="card cocard"><h3>Custos fixos</h3><p class="help" style="margin:2px 0 10px">Custos da empresa que não dependem do produto.</p><div class="cofs">
+            <div class="ctl"><div class="row"><label for="pmt">PMT da plataforma (até 400 acessos)</label><output id="o-pmt"></output></div><input type="range" id="pmt" min="0" max="10000" step="250"></div>
+            <div class="ctl"><div class="row"><label for="other">Outros fixos (contador, sistemas)</label><output id="o-other"></output></div><input type="range" id="other" min="0" max="10000" step="100"></div>
+            <div class="ctl"><div class="row"><label for="tax">Imposto sobre receita</label><output id="o-tax"></output></div><input type="range" id="tax" min="6" max="20" step="0.5"></div>
+          </div></div>
+          <div class="card cocard"><h3>Sócios e caixa</h3><p class="help" style="margin:2px 0 10px">Retirada do CEO e caixa para começar.</p><div class="cofs">
+            <div class="ctl"><div class="row"><label for="ceo1">Retirada do CEO até a empresa dar lucro</label><output id="o-ceo1"></output></div><input type="range" id="ceo1" min="0" max="15000" step="500"></div>
+            <p class="help">Quanto o CEO retira por mês enquanto a empresa ainda tem prejuízo, ou seja, o adiantamento de lucro pago com o caixa inicial. Baixar este valor faz o caixa durar mais.</p>
+            <div class="ctl"><div class="row"><label for="ceo2">Retirada do CEO depois do 1º mês de lucro</label><output id="o-ceo2"></output></div><input type="range" id="ceo2" min="0" max="20000" step="500"></div>
+            <p class="help" id="ceo-note">A partir do primeiro mês em que receita ≥ todos os custos, a retirada muda para este valor e é paga pelo próprio lucro.</p>
+            <div class="ctl"><div class="row"><label for="cash">Caixa inicial</label><output id="o-cash"></output></div><input type="range" id="cash" min="20000" max="300000" step="5000"></div>
+          </div></div>
         </div>
         <div class="card" id="scen-card">
           <div class="flexbetween"><h3>Cenários dos sócios</h3><span class="muted" id="scen-status" style="font-size:.8rem">conectando…</span></div>
@@ -245,10 +261,11 @@ select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid var(--lin
           <div class="tbl" style="margin-top:10px"><table id="tbl-scen"></table></div>
           <div id="scen-cmp-wrap" hidden style="margin-top:14px"><h3 style="font-size:.95rem">Comparação</h3><div class="tbl" style="margin-top:6px"><table id="tbl-scen-cmp"></table></div></div>
         </div>
+        <div class="blk"><span class="tag tr">Resultado</span><h2>Resultados consolidados</h2><p class="muted">A empresa inteira somando todos os produtos à venda.</p></div>
         <div class="card" id="org-card">
-          <div class="flexbetween"><h3>Marketing orgânico: canal do Neto</h3><span class="muted" id="org-note" style="font-size:.8rem"></span></div>
+          <div class="flexbetween"><h3>Resultado do orgânico (canal do Neto)</h3><span class="muted" id="org-note" style="font-size:.8rem"></span></div>
           <p class="muted" style="font-size:.8rem;margin:4px 0 10px">O Neto é a cara da Profitto e o canal dele vira um funil: quem assiste clica no link, deixa o contato e decide comprar como quem chega indicado, porque já confia nele. No painel, quem "segue influenciador de finanças" comprou 2 a 5 vezes mais que a média. Preencha com os números do YouTube Studio do canal. Em cada produto, o "peso no canal do Neto" (em Aquisição, à esquerda) diz para onde vão os interessados.</p>
-          <p class="help" id="org-sum"></p><button class="btn" id="org-edit" type="button">Ajustar o canal no painel</button>
+          <p class="help" id="org-sum"></p><button class="btn" id="org-edit" type="button">Ajustar o canal</button>
           <p class="help" id="org-warn"></p>
           <div class="kpis" id="org-kpis" style="margin-top:10px"></div>
           <div class="flexbetween" style="margin-top:14px"><h3 style="font-size:.95rem">Clientes novos por mês, por canal</h3><div class="legend" id="org-legend"></div></div>
@@ -617,7 +634,7 @@ function plannerBox(r,c){
 function kpis(r,R,c){
   const last=r.months[11],Rl=R.months[11];
   const items=[
-   ['Compram: '+esc(r.selName),(r.panel*100).toFixed(1).replace('.',',')+'%',delta(r.panel*1000,R.panel*1000,true,v=>(v/10).toFixed(1).replace('.',',')+' p.p.'),'produto em edição, antes do desconto de realismo'],
+   ['Compram: '+esc(r.selName),(r.panel*100).toFixed(1).replace('.',',')+'%',delta(r.panel*1000,R.panel*1000,true,v=>(v/10).toFixed(1).replace('.',',')+' p.p.'),'produto analisado (escolha na tabela), antes do desconto de realismo'],
    [c.diag?'Diagnósticos por mês':'Assinaturas novas por mês',(c.diag?r.months[5].diags:r.months[5].newSubs).toFixed(1).replace('.',','),delta(c.diag?r.months[5].diags:r.months[5].newSubs,(R.months[5].diags||R.months[5].newSubs),true,v=>v.toFixed(1)),'mês 6, depois do desconto de realismo'],
    ['Clientes ativos no mês 12',Math.round(last.clients),delta(last.clients,Rl.clients,true,v=>Math.round(v)),'break-even: '+(isFinite(r.beClients)?r.beClients:'∞')+' clientes, com a equipe'],
    ['Receita no mês 12',BRLk(last.rev),delta(last.rev,Rl.rev,true,BRLk),'assinaturas + diagnósticos'],
@@ -927,12 +944,14 @@ function update(){
   try{localStorage.setItem('profitto-cur',JSON.stringify(c))}catch(e){}
   Object.keys(FMT).forEach(k=>{const o=$('o-'+k);if(o)o.textContent=FMT[k](cur[k])});
   const r=simulate(c),R=simulate(ref);lastCons=r;
+  const sb=(l,v,cls)=>`<span>${l} <b class="${cls||''}">${v}</b></span>`;const y5=r.years[4];
+  $('sbar').innerHTML=sb('À venda:',r.prods.map(o=>esc(o.p.name)).join(', ')||'nada')+sb('Resultado ano 1:',BRLk(r.years[0].profit),r.years[0].profit<0?'neg':'pos')+sb('Ano 5:',BRLk(y5.profit),y5.profit<0?'neg':'pos')+sb('Pior caixa:',BRLk(r.minCash),r.minCash<0?'neg':'pos')+sb('1º lucro:',r.beMonth?'mês '+r.beMonth:'—')+sb('Clientes ano 5:',Math.round(y5.clients).toLocaleString('pt-BR'));
   kpis(r,R,cur);plannerBox(r,cur);products(r);focus(c);orgPanel(r,R,c.company);renderTabs();
   lineChart($('ch-clients'),r.months.map(m=>m.clients),R.months.map(m=>m.clients),{ref:r.beClients,fmt:v=>Math.round(v),fmtTip:v=>Math.round(v)+' clientes'});
   lineChart($('ch-cash'),r.months.map(m=>m.cash),R.months.map(m=>m.cash),{fmt:BRLk,fmtTip:BRL});
   yearsChart(r,R);split(r);channels(r);dots(cur);leverRank(cur);renderPick(cur);monthTable(r);
 }
-document.querySelectorAll('aside input, aside select:not(#preset)').forEach(el=>el.addEventListener('input',()=>{$('preset').value='';update()}));
+document.querySelectorAll('#co-block input, #co-block select').forEach(el=>el.addEventListener('input',()=>{$('preset').value='';update()}));
 $('ytg-same').addEventListener('click',()=>{const v=$('ytg1').value;[2,3,4,5].forEach(i=>$('ytg'+i).value=v);update()});
 $('org-edit').addEventListener('click',()=>{const f=$('fs-org');f.scrollIntoView({behavior:'smooth',block:'start'});$('ytsubs').focus({preventScroll:true})});
 function newId(){let i=1;while(STATE.list.some(p=>p.id==='p'+i))i++;return 'p'+i}
