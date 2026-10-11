@@ -48,6 +48,12 @@ input[type=range]{width:100%;accent-color:var(--accent-fill)}
 .tog{display:flex;align-items:flex-start;gap:10px;cursor:pointer}
 .tog input{margin-top:3px;accent-color:var(--accent-fill);width:16px;height:16px;flex:none}
 .tog small{display:block;color:var(--muted);font-size:.78rem;line-height:1.35}
+.help{font-size:.76rem;color:var(--muted);line-height:1.4;margin:-2px 0 0}
+.pbox{background:var(--sunk);border-radius:8px;padding:10px 12px;display:grid;gap:6px}
+.pbox .ttl{font-size:.74rem;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.pbox .grid6{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:4px;text-align:center}
+.pbox .grid6 b{display:block;font-size:1.05rem;font-variant-numeric:tabular-nums}
+.pbox .grid6 span{font-size:.7rem;color:var(--muted)}
 .btns{display:flex;flex-wrap:wrap;gap:6px}
 .btn{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:8px;padding:6px 10px;font:500 .82rem var(--f-body);cursor:pointer}
 .btn:hover{border-color:var(--accent-fill)}
@@ -186,6 +192,7 @@ select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid var(--lin
         </fieldset>
         <fieldset><legend>Equipe</legend>
           <div class="ctl"><div class="row"><label for="cap">Clientes por planejador</label><output id="o-cap"></output></div><input type="range" id="cap" min="20" max="300" step="5"></div>
+          <div class="pbox" aria-live="polite"><span class="ttl">Planejadores necessários (informativo)</span><div class="grid6" id="pbox"></div><p class="help" id="pbox-note"></p></div>
           <div class="ctl"><div class="row"><label for="pfix">Fixo por planejador</label><output id="o-pfix"></output></div><input type="range" id="pfix" min="0" max="10000" step="250"></div>
           <div class="ctl"><div class="row"><label for="span">Planejadores por líder</label><output id="o-span"></output></div><input type="range" id="span" min="2" max="15" step="1"></div>
           <div class="ctl"><div class="row"><label for="lead">Líder de time (% da receita do time)</label><output id="o-lead"></output></div><input type="range" id="lead" min="0" max="20" step="0.5"></div>
@@ -194,8 +201,10 @@ select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid var(--lin
           <div class="ctl"><div class="row"><label for="growth">Crescimento anual de interessados</label><output id="o-growth"></output></div><input type="range" id="growth" min="0" max="150" step="5"></div>
         </fieldset>
         <fieldset><legend>Custos</legend>
-          <div class="ctl"><div class="row"><label for="ceo1">CEO antes do break-even</label><output id="o-ceo1"></output></div><input type="range" id="ceo1" min="0" max="15000" step="500"></div>
-          <div class="ctl"><div class="row"><label for="ceo2">CEO depois do break-even</label><output id="o-ceo2"></output></div><input type="range" id="ceo2" min="0" max="20000" step="500"></div>
+          <div class="ctl"><div class="row"><label for="ceo1">Retirada do CEO até a empresa dar lucro</label><output id="o-ceo1"></output></div><input type="range" id="ceo1" min="0" max="15000" step="500"></div>
+          <p class="help">Quanto o CEO retira por mês enquanto a empresa ainda tem prejuízo, ou seja, o adiantamento de lucro pago com o caixa inicial. Baixar este valor faz o caixa durar mais.</p>
+          <div class="ctl"><div class="row"><label for="ceo2">Retirada do CEO depois do 1º mês de lucro</label><output id="o-ceo2"></output></div><input type="range" id="ceo2" min="0" max="20000" step="500"></div>
+          <p class="help" id="ceo-note">A partir do primeiro mês em que receita ≥ todos os custos, a retirada muda para este valor e é paga pelo próprio lucro.</p>
           <div class="ctl"><div class="row"><label for="plan">Planejador (% da receita)</label><output id="o-plan"></output></div><input type="range" id="plan" min="10" max="40" step="1"></div>
           <div class="ctl"><div class="row"><label for="tax">Imposto sobre receita</label><output id="o-tax"></output></div><input type="range" id="tax" min="6" max="20" step="0.5"></div>
           <div class="ctl"><div class="row"><label for="pmt">PMT da plataforma (até 400 acessos)</label><output id="o-pmt"></output></div><input type="range" id="pmt" min="0" max="10000" step="250"></div>
@@ -494,6 +503,13 @@ function delta(a,b,higherBetter,fmt){
 
 function keepV(y){return y.rev>0?(y.rev-y.varCost)/y.rev:0}
 function keep(y){return 'R$ '+(keepV(y)*100).toFixed(0)+' de R$ 100'}
+function plannerBox(r,c){
+  const pts=[[1,'mês 1'],[12,'mês 12'],[24,'ano 2'],[36,'ano 3'],[48,'ano 4'],[60,'ano 5']];
+  $('pbox').innerHTML=pts.map(([m,l])=>{const x=r.months[m-1];return `<div><b>${x.planners}</b><span>${l}</span></div>`}).join('');
+  const x=r.months[59];
+  $('pbox-note').textContent='Arredondado para cima: clientes ativos ÷ '+c.cap+'. No ano 5: '+Math.round(x.clients).toLocaleString('pt-BR')+' clientes, '+x.planners+' planejador(es) e '+x.leaders+' líder(es).';
+  $('ceo-note').textContent=r.beMonth?'Neste cenário a troca acontece no mês '+r.beMonth+', o primeiro com receita ≥ todos os custos. Daí em diante a retirada é paga pelo lucro.':'Neste cenário a empresa não chega a dar lucro em 60 meses, então só vale a retirada de cima.';
+}
 function kpis(r,R,c){
   const last=r.months[11],Rl=R.months[11];
   const items=[
@@ -508,7 +524,7 @@ function kpis(r,R,c){
    ['Clientes no fim do ano 5',Math.round(r.years[4].clients).toLocaleString('pt-BR'),delta(r.years[4].clients,R.years[4].clients,true,v=>Math.round(v)),'MRR '+BRLk(r.years[4].mrr)+' por mês'],
    ['Receita do ano 5',BRLk(r.years[4].rev),delta(r.years[4].rev,R.years[4].rev,true,BRLk),'assinaturas + diagnósticos'],
    ['Resultado do ano 5',BRLk(r.years[4].profit),delta(r.years[4].profit,R.years[4].profit,true,BRLk),'margem '+(r.years[4].rev>0?pct(r.years[4].profit/r.years[4].rev):'—')+' da receita'],
-   ['Equipe no fim do ano 5',r.years[4].planners+' + '+r.years[4].leaders,delta(r.years[4].planners+r.years[4].leaders,R.years[4].planners+R.years[4].leaders,false,v=>Math.round(v)+' pessoas'),'planejadores + líderes de time'],
+   ['Planejadores: mês 12 → ano 5',last.planners+' → '+r.years[4].planners,delta(r.years[4].planners,R.years[4].planners,false,v=>Math.round(v)+' no ano 5'),'+ '+r.years[4].leaders+' líder(es) no ano 5 · '+c.cap+' clientes por planejador'],
   ];
   $('kpis').innerHTML=items.map(([l,v,d,s])=>`<div class="kpi"><span class="l">${l}</span><span class="v">${v}</span>${d}<span class="l">${s}</span></div>`).join('');
   const st=$('verdict');
@@ -649,7 +665,7 @@ function update(){
   Object.keys(FMT).forEach(k=>{$('o-'+k).textContent=FMT[k](c[k])});
   $('dprice-wrap').style.opacity=c.diag?1:.4;$('dprice').disabled=!c.diag;
   const r=simulate(c),R=simulate(ref);
-  kpis(r,R,c);
+  kpis(r,R,c);plannerBox(r,c);
   lineChart($('ch-clients'),r.months.map(m=>m.clients),R.months.map(m=>m.clients),{ref:r.beClients,fmt:v=>Math.round(v),fmtTip:v=>Math.round(v)+' clientes'});
   lineChart($('ch-cash'),r.months.map(m=>m.cash),R.months.map(m=>m.cash),{fmt:BRLk,fmtTip:BRL});
   yearsChart(r,R);split(r);channels(r);dots(c);leverRank(c);renderPick(c);monthTable(r);
