@@ -18,7 +18,7 @@
 }
 *{box-sizing:border-box}
 body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:14px;line-height:1.5}
-.wrap{max-width:1280px;margin:0 auto;padding-inline:20px;padding-block:20px 48px}
+.wrap{max-width:1880px;margin:0 auto;padding-inline:20px;padding-block:20px 48px}
 h1,h2,h3{font-family:var(--f-display);font-weight:400;text-wrap:balance;margin:0;letter-spacing:-.01em}
 h1{font-size:1.9rem}h2{font-size:1.35rem}h3{font-size:1.05rem}
 .eyebrow{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
@@ -32,7 +32,7 @@ nav.tabs{display:flex;gap:4px;overflow-x:auto;margin-block:16px;border-bottom:1p
 nav.tabs button{background:none;border:0;border-bottom:2px solid transparent;padding:10px 14px;color:var(--muted);font:600 .9rem var(--f-body);cursor:pointer;white-space:nowrap}
 nav.tabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--accent-fill)}
 nav.tabs button:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--accent-fill);outline-offset:2px}
-.sim{display:grid;grid-template-columns:minmax(0,1fr);gap:20px;align-items:start}
+.sim{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:20px;align-items:start}
 @media (max-width:900px){.sim{grid-template-columns:minmax(0,1fr)}}
 .panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px}
 aside.levers{position:sticky;top:calc(env(safe-area-inset-top,0px) + 8px);max-height:calc(100vh - 16px);overflow:auto}
@@ -100,6 +100,21 @@ select.mi{text-align:left}.mx-name{text-align:left;font-weight:600}
 #fs-org .cofs{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:18px;align-items:start}
 #fs-org .cofs>.help,#fs-org .cofs>button{grid-column:1/-1}
 @media (max-width:640px){#fs-org .cofs{grid-template-columns:minmax(0,1fr)}}
+.live{position:sticky;top:12px;align-self:start;max-height:calc(100vh - 24px);overflow:auto;background:var(--surface);border:1px solid var(--line);border-top:4px solid var(--brand);border-radius:var(--r);padding:14px 16px;display:grid;gap:12px;box-shadow:0 6px 24px rgba(0,0,0,.06)}
+.live .verdict{font-size:.72rem;padding:3px 8px}
+.lv-chg{margin:0;font-size:.8rem;color:var(--muted);background:var(--sunk);border-radius:8px;padding:6px 10px}
+.lv-chg b.pos,.live .pos{color:var(--good)}.lv-chg b.neg,.live .neg{color:var(--bad)}
+.lv-chg.flash{animation:fl 1.2s ease}
+@keyframes fl{0%{background:#FFF3C4}100%{background:var(--sunk)}}
+.lv-met{display:grid;gap:2px}
+.lm{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:8px;align-items:baseline;padding:4px 0;border-bottom:1px solid var(--line)}
+.lm span{font-size:.8rem;color:var(--muted)}.lm b{font-size:1.02rem;font-variant-numeric:tabular-nums;text-align:right}
+.lm small{grid-column:2;text-align:right;font-size:.72rem;font-weight:600}.lm small.up{color:var(--good)}.lm small.down{color:var(--bad)}.lm small.eq{color:var(--muted)}
+.lv-blk{display:grid;gap:4px}
+.spark{width:100%;height:64px;display:block;background:var(--sunk);border-radius:6px}
+.lt{font-size:.75rem;margin-top:6px}.lt th,.lt td{padding:4px 4px}.lt th{font-size:.66rem}
+@media (max-width:1100px){.sim{grid-template-columns:minmax(0,1fr)}.live{display:none}}
+@media (min-width:1101px){.sbar{display:none}}
 .help{font-size:.76rem;color:var(--muted);line-height:1.4;margin:-2px 0 0}
 .pbox{background:var(--sunk);border-radius:8px;padding:10px 12px;display:grid;gap:6px}
 .pbox .ttl{font-size:.74rem;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
@@ -110,7 +125,7 @@ select.mi{text-align:left}.mx-name{text-align:left;font-weight:600}
 .btn{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:8px;padding:6px 10px;font:500 .82rem var(--f-body);cursor:pointer}
 .btn:hover{border-color:var(--accent-fill)}
 .btn.primary{background:var(--brand);border-color:var(--brand);color:var(--on-accent);font-weight:600}
-.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:10px}
 .kpis .sep{grid-column:1/-1;margin-top:4px}
 @media (max-width:1100px){.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .kpi{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:12px 14px;display:grid;gap:2px;min-width:0}
@@ -321,6 +336,14 @@ select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid var(--lin
           <div class="tbl" style="margin-top:8px"><table id="tbl-month"></table></div>
         </div>
       </div>
+      <aside class="live" id="live" aria-label="Resultado ao vivo">
+        <div class="flexbetween"><h3>Resultado ao vivo</h3><span class="verdict" id="lv-verdict"></span></div>
+        <p class="lv-chg" id="lv-chg" aria-live="polite"></p>
+        <div class="lv-met" id="lv-met"></div>
+        <div class="lv-blk"><div class="flexbetween"><span class="eyebrow">Caixa em 5 anos</span><span class="legend"><span><i style="background:var(--s1)"></i>cenário</span><span><i style="background:var(--s2)"></i>ref.</span></span></div><div id="lv-cash"></div></div>
+        <div class="lv-blk"><span class="eyebrow">Clientes por produto</span><div id="lv-prod"></div></div>
+        <p class="help">▲▼ = diferença para a referência salva. Salve um cenário para comparar com os sócios.</p>
+      </aside>
     </div>
   </section>
 
@@ -939,6 +962,43 @@ $('mx-in').addEventListener('click',e=>{
   if(act==='del'&&p&&STATE.list.length>1&&confirm('Remover o produto "'+p.name+'"?')){STATE.list=STATE.list.filter(x=>x.id!==pid);if(STATE.sel===pid)STATE.sel=STATE.list[0].id;renderMatrix();update()}
   if(act==='sel'&&p){STATE.sel=pid;update()}
 });
+// ---- painel de resultado ao vivo ----
+let prevLive=null;
+function spark(vals,cols,w,h,zero){
+  const all=vals.flat();let lo=Math.min(0,...all),hi=Math.max(1,...all);if(hi===lo)hi=lo+1;
+  const N=vals[0].length,x=i=>2+(w-4)*i/(N-1),y=v=>2+(h-4)*(1-(v-lo)/(hi-lo));
+  let s='';if(zero&&lo<0)s+=`<line x1="0" x2="${w}" y1="${y(0)}" y2="${y(0)}" stroke="var(--bad)" stroke-dasharray="3 3" opacity=".6"/>`;
+  vals.forEach((v,j)=>{s+=`<path d="${v.map((a,i)=>(i?'L':'M')+x(i).toFixed(1)+' '+y(a).toFixed(1)).join(' ')}" fill="none" stroke="${cols[j]}" stroke-width="2"/>`});
+  return `<svg viewBox="0 0 ${w} ${h}" class="spark" preserveAspectRatio="none">${s}</svg>`;
+}
+function live(r,R){
+  const y1=r.years[0],y5=r.years[4];
+  const met=[
+    ['Resultado ano 1',y1.profit,R.years[0].profit,BRLk,true,'p1'],
+    ['Resultado ano 5',y5.profit,R.years[4].profit,BRLk,true,'p5'],
+    ['Pior momento do caixa',r.minCash,R.minCash,BRLk,true,'mc'],
+    ['Primeiro mês de lucro',r.beMonth||61,R.beMonth||61,v=>v>60?'—':'mês '+v,false,'be'],
+    ['Receita ano 5',y5.rev,R.years[4].rev,BRLk,true,'rv'],
+    ['Clientes no ano 5',y5.clients,R.years[4].clients,v=>Math.round(v).toLocaleString('pt-BR'),true,'cl'],
+    ['Planejadores no ano 5',y5.planners,R.years[4].planners,v=>v,null,'pl']];
+  const now={};met.forEach(m=>now[m[5]]=m[1]);
+  let chg='';
+  if(prevLive){const d5=now.p5-prevLive.p5,dc=now.mc-prevLive.mc,db=(now.be>60?61:now.be)-(prevLive.be>60?61:prevLive.be);
+    const parts=[];if(Math.abs(d5)>=500)parts.push(`ano 5 <b class="${d5>0?'pos':'neg'}">${d5>0?'+':'−'}${BRLk(Math.abs(d5)).replace('R$ ','R$ ')}</b>`);
+    if(Math.abs(dc)>=500)parts.push(`caixa <b class="${dc>0?'pos':'neg'}">${dc>0?'+':'−'}${BRLk(Math.abs(dc))}</b>`);
+    if(db)parts.push(`1º lucro <b class="${db<0?'pos':'neg'}">${db<0?'':'+'}${db} meses</b>`);
+    if(parts.length)chg=parts.join(' · ');}
+  if(chg){$('lv-chg').innerHTML='Última alteração: '+chg;$('lv-chg').classList.remove('flash');void $('lv-chg').offsetWidth;$('lv-chg').classList.add('flash')}
+  else if(!prevLive)$('lv-chg').innerHTML='Mude qualquer número e veja o efeito aqui.';
+  prevLive=now;
+  $('lv-verdict').className=$('verdict').className;$('lv-verdict').textContent=$('verdict').textContent;
+  $('lv-met').innerHTML=met.map(([l,v,rv,f,hb])=>{const d=v-rv;const same=Math.abs(d)<Math.max(Math.abs(rv)*0.005,0.5);const good=hb===null?null:hb?d>0:d<0;
+    return `<div class="lm"><span>${l}</span><b class="${(l.startsWith('Resultado')||l.startsWith('Pior'))?(v<0?'neg':'pos'):''}">${f(v)}</b><small class="${same||good===null?'eq':good?'up':'down'}">${same?'= ref.':(good===null?(d>0?'+':'−'):(good?'▲ ':'▼ '))+(f===BRLk?BRLk(Math.abs(d)):Math.round(Math.abs(d)).toLocaleString('pt-BR'))}</small></div>`}).join('');
+  $('lv-cash').innerHTML=spark([r.months.map(m=>m.cash),R.months.map(m=>m.cash)],['var(--s1)','var(--s2)'],320,70,true);
+  const act=r.prods;
+  $('lv-prod').innerHTML=act.length?spark(act.map(o=>o.months.map(m=>m.n)),act.map(o=>colOf(o.p)),320,60,false)+
+    '<table class="lt"><tr><th></th><th class="n">Clientes a5</th><th class="n">Receita a5</th><th class="n">Contrib. a5</th></tr>'+act.map(o=>`<tr><td><i class="sw" style="background:${colOf(o.p)}"></i>${esc(o.p.name)}</td><td class="n">${Math.round(o.years[4].n).toLocaleString('pt-BR')}</td><td class="n">${BRLk(o.years[4].rev)}</td><td class="n ${o.years[4].k<0?'neg':''}">${BRLk(o.years[4].k)}</td></tr>`).join('')+'</table>':'<p class="muted">Nenhum produto à venda.</p>';
+}
 function update(){
   const c=read();cur=flatOf(c);
   try{localStorage.setItem('profitto-cur',JSON.stringify(c))}catch(e){}
@@ -946,7 +1006,7 @@ function update(){
   const r=simulate(c),R=simulate(ref);lastCons=r;
   const sb=(l,v,cls)=>`<span>${l} <b class="${cls||''}">${v}</b></span>`;const y5=r.years[4];
   $('sbar').innerHTML=sb('À venda:',r.prods.map(o=>esc(o.p.name)).join(', ')||'nada')+sb('Resultado ano 1:',BRLk(r.years[0].profit),r.years[0].profit<0?'neg':'pos')+sb('Ano 5:',BRLk(y5.profit),y5.profit<0?'neg':'pos')+sb('Pior caixa:',BRLk(r.minCash),r.minCash<0?'neg':'pos')+sb('1º lucro:',r.beMonth?'mês '+r.beMonth:'—')+sb('Clientes ano 5:',Math.round(y5.clients).toLocaleString('pt-BR'));
-  kpis(r,R,cur);plannerBox(r,cur);products(r);focus(c);orgPanel(r,R,c.company);renderTabs();
+  kpis(r,R,cur);live(r,R);plannerBox(r,cur);products(r);focus(c);orgPanel(r,R,c.company);renderTabs();
   lineChart($('ch-clients'),r.months.map(m=>m.clients),R.months.map(m=>m.clients),{ref:r.beClients,fmt:v=>Math.round(v),fmtTip:v=>Math.round(v)+' clientes'});
   lineChart($('ch-cash'),r.months.map(m=>m.cash),R.months.map(m=>m.cash),{fmt:BRLk,fmtTip:BRL});
   yearsChart(r,R);split(r);channels(r);dots(cur);leverRank(cur);renderPick(cur);monthTable(r);
