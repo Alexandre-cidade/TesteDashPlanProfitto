@@ -65,6 +65,7 @@ input[type=range]{width:100%;accent-color:var(--accent-fill)}
 .frec{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin-top:10px}
 .frec .fc{background:var(--sunk);border-radius:8px;padding:10px 12px}
 .frec .fc b{display:block;font-size:1.05rem}
+.ogrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;align-items:end}
 .help{font-size:.76rem;color:var(--muted);line-height:1.4;margin:-2px 0 0}
 .pbox{background:var(--sunk);border-radius:8px;padding:10px 12px;display:grid;gap:6px}
 .pbox .ttl{font-size:.74rem;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
@@ -202,6 +203,7 @@ select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid var(--lin
           <label class="tog"><input type="checkbox" id="tributario"><span>Módulo tributário, PJ e sucessão</span></label>
         </fieldset>
         <fieldset><legend>Aquisição deste produto</legend>
+          <div class="ctl"><div class="row"><label for="orgw">Peso no canal do Neto</label><output id="o-orgw"></output></div><input type="range" id="orgw" min="0" max="100" step="5"></div>
           <div class="ctl"><div class="row"><label for="rede">Contatos da rede por mês</label><output id="o-rede"></output></div><input type="range" id="rede" min="0" max="200" step="5"></div>
           <div class="ctl"><div class="row"><label for="mkt">Marketing por mês</label><output id="o-mkt"></output></div><input type="range" id="mkt" min="0" max="15000" step="500"></div>
           <div class="ctl"><div class="row"><label for="cpl">Custo por pessoa interessada</label><output id="o-cpl"></output></div><input type="range" id="cpl" min="10" max="150" step="5"></div>
@@ -263,6 +265,25 @@ select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid var(--lin
           <div id="focus-rec" class="frec"></div>
           <div class="tbl" style="margin-top:10px"><table id="tbl-focus"></table></div>
           <p class="help" style="margin-top:8px">Sozinho = a empresa vendendo só aquele produto, pagando plataforma, CEO e outros fixos. Contribuição por cliente = preço menos planejador, imposto, cobrança e custo de entrega. Retorno do marketing = meses de contribuição para pagar o custo de marketing de um cliente novo.</p>
+        </div>
+        <div class="card" id="org-card">
+          <div class="flexbetween"><h3>Marketing orgânico: canal do Neto</h3><span class="muted" id="org-note" style="font-size:.8rem"></span></div>
+          <p class="muted" style="font-size:.8rem;margin:4px 0 10px">O Neto é a cara da Profitto e o canal dele vira um funil: quem assiste clica no link, deixa o contato e decide comprar como quem chega indicado, porque já confia nele. No painel, quem "segue influenciador de finanças" comprou 2 a 5 vezes mais que a média. Preencha com os números do YouTube Studio do canal. Em cada produto, o "peso no canal do Neto" (em Aquisição, à esquerda) diz para onde vão os interessados.</p>
+          <div class="ogrid">
+            <div class="ctl"><label for="ytsubs">Inscritos hoje</label><input type="number" id="ytsubs" class="tin" min="0" step="100" inputmode="numeric"></div>
+            <div class="ctl"><label for="ytviews">Visualizações por mês (todos os vídeos)</label><input type="number" id="ytviews" class="tin" min="0" step="500" inputmode="numeric"></div>
+            <div class="ctl"><div class="row"><label for="ytgrow">Crescimento do canal por mês</label><output id="o-ytgrow"></output></div><input type="range" id="ytgrow" min="-5" max="20" step="0.5"></div>
+            <div class="ctl"><div class="row"><label for="ytctr">Quem assiste e clica no link</label><output id="o-ytctr"></output></div><input type="range" id="ytctr" min="0" max="5" step="0.1"></div>
+            <div class="ctl"><div class="row"><label for="ytlead">Quem clica e vira interessado</label><output id="o-ytlead"></output></div><input type="range" id="ytlead" min="0" max="100" step="5"></div>
+            <div class="ctl"><div class="row"><label for="orgother">Outros orgânicos (Instagram, boca a boca, Google) por mês</label><output id="o-orgother"></output></div><input type="range" id="orgother" min="0" max="500" step="5"></div>
+            <div class="ctl"><div class="row"><label for="orgcost">Custo mensal do orgânico (roteiro, edição)</label><output id="o-orgcost"></output></div><input type="range" id="orgcost" min="0" max="20000" step="250"></div>
+            <label class="tog"><input type="checkbox" id="yttrust"><span>A audiência confia no Neto<small>Quem vem do canal compra como quem chega indicado.</small></span></label>
+          </div>
+          <p class="help" id="org-warn"></p>
+          <div class="kpis" id="org-kpis" style="margin-top:10px"></div>
+          <div class="flexbetween" style="margin-top:14px"><h3 style="font-size:.95rem">Clientes novos por mês, por canal</h3><div class="legend" id="org-legend"></div></div>
+          <svg class="chart" id="ch-org" viewBox="0 0 760 240" role="img" aria-label="Clientes novos por mês, por canal"></svg>
+          <div class="tbl" style="margin-top:10px"><table id="tbl-org"></table></div>
         </div>
         <div class="card" id="prod-card">
           <div class="flexbetween"><h3>Resultado de cada produto (cenário consolidado)</h3><span class="muted" id="prod-note" style="font-size:.8rem"></span></div>
@@ -478,7 +499,7 @@ function team(clients,c){const planners=Math.max(1,Math.ceil(clients/Math.max(1,
 function teamCost(tm,c){return tm.planners*c.pfix+(tm.planners+tm.leaders)*c.perprof}
 function leadShare(tm,c){return tm.leaders>0?Math.min(1,tm.leaders*c.span/tm.planners):0}
 function platformCost(clients,c){return c.pmt+Math.max(0,clients-400)*20}
-const CH=['dir','ind','ase'];
+const CH=['dir','pag','ind','ase','org'];
 const MIX=__MIX__;
 const PRODS=null;
 function barrierRate(cfg){let s=0;P.forEach(p=>s+=Math.pow(W,unresolved(p,cfg).length));return s/P.length}
@@ -493,32 +514,35 @@ function menuFactor(p,st,list){if(!st.company.menu||list.length<2||!p.menuF)retu
 function simulate(st){
   st=migrate(st);const c=st.company;const list=st.list.filter(p=>p.on);
   const tf=(c.tax+3.5)/100;
-  const L0=list.map(p=>{const r=baseRate(p)*p.real/100*menuFactor(p,st,list);return {p,rate:r,warm:warmOf(p),coh:{dir:[],ind:[],ase:[]},months:[]}});
+  const L0=list.map(p=>{const r=baseRate(p)*p.real/100*menuFactor(p,st,list);return {p,rate:r,warm:warmOf(p),coh:{dir:[],pag:[],ind:[],ase:[],org:[]},months:[]}});
+  const sumW=list.reduce((a,p)=>a+(+p.orgw||0),0);
   const months=[];let cash=c.cash-15000,beMonth=null,minCash=cash,outMonth=null;
   for(let mo=1;mo<=HZ;mo++){
     const ramp=mo===1?0.5:mo===2?0.75:1, yi=Math.floor((mo-1)/12);
+    const yg=Math.pow(1+(c.ytgrow||0)/100,mo-1);const ytSubs=(c.ytsubs||0)*yg,ytViews=(c.ytviews||0)*yg;
+    const orgL=(ytViews*(c.ytctr||0)/100*(c.ytlead||0)/100+(c.orgother||0))*ramp;
     let leads=0,diags=0,newSubs=0,lost=0,clients=0,rev=0,comm={ind:0,ase:0},planVar=0,deliv=0,mkt=0,served=0,planners=0,pfixC=0,mrr=0;
-    const byCh={dir:{n:0,rev:0,newSubs:0},ind:{n:0,rev:0,newSubs:0},ase:{n:0,rev:0,newSubs:0}};
+    const byCh={};CH.forEach(k=>byCh[k]={n:0,rev:0,newSubs:0});
     L0.forEach(o=>{const p=o.p;const g=Math.pow(1+p.growth/100,yi);
-      const L={dir:(p.rede+(p.cpl>0?p.mkt/p.cpl:0))*ramp*g,ind:p.pleads*ramp*g,ase:p.aleads*ramp*g};
-      const dur={dir:0,ind:p.pdur,ase:p.adur},com={dir:0,ind:p.pcom/100,ase:p.acom/100};
-      let pn=0,pr=0,pns=0,pc=0,pd=0;
+      const L={dir:p.rede*ramp*g,pag:(p.cpl>0?p.mkt/p.cpl:0)*ramp*g,ind:p.pleads*ramp*g,ase:p.aleads*ramp*g,org:sumW>0?orgL*(+p.orgw||0)/sumW:0};
+      const dur={dir:0,pag:0,ind:p.pdur,ase:p.adur,org:0},com={dir:0,pag:0,ind:p.pcom/100,ase:p.acom/100,org:0};
+      let pn=0,pr=0,pns=0,pc=0,pd=0,pnsOrg=0;
       CH.forEach(k=>{
-        const buyers=L[k]*o.rate*(k==='dir'?1:o.warm);
+        const buyers=L[k]*o.rate*((k==='ind'||k==='ase'||(k==='org'&&c.yttrust))?o.warm:1);
         const d=p.diag?buyers:0;const ns=p.diag?buyers*p.conv/100:buyers;
         const C=o.coh[k];C.forEach(x=>{const l=x.n*p.churn/100;lost+=l;x.n-=l;x.age++});C.push({n:ns,age:0});
         const n=C.reduce((a,x)=>a+x.n,0);const nCom=C.reduce((a,x)=>a+(x.age<dur[k]?x.n:0),0);
         const r=n*p.m+d*(p.diag?p.dprice:0);
-        const cm=k==='dir'?0:(nCom*p.m+d*(p.diag?p.dprice:0))*com[k];
-        if(k!=='dir')comm[k]+=cm;
-        pn+=n;pr+=r;pns+=ns;pc+=cm;pd+=d;leads+=L[k];
+        const cm=com[k]?(nCom*p.m+d*(p.diag?p.dprice:0))*com[k]:0;
+        if(com[k])comm[k]+=cm;
+        pn+=n;pr+=r;pns+=ns;pc+=cm;pd+=d;leads+=L[k];if(k==='org')pnsOrg+=ns;
         byCh[k].n+=n;byCh[k].rev+=r;byCh[k].newSubs+=ns;
       });
       const pl=p.plan>0?Math.ceil(pn/Math.max(1,p.cap)):0;
       const pv=pr*p.plan/100, dv=pn*p.deliv, mk=p.mkt*g;
       planVar+=pv;deliv+=dv;mkt+=mk;planners+=pl;pfixC+=pl*p.pfix;if(p.plan>0)served+=pr;
       diags+=pd;newSubs+=pns;clients+=pn;rev+=pr;mrr+=pn*p.m;
-      o.months.push({n:pn,rev:pr,ns:pns,comm:pc,diags:pd,pl,pv,dv,mk,tax:pr*tf});
+      o.months.push({nsOrg:pnsOrg,n:pn,rev:pr,ns:pns,comm:pc,diags:pd,pl,pv,dv,mk,tax:pr*tf});
     });
     const tm={planners,leaders:Math.floor(planners/Math.max(1,c.span))};
     const leadVar=planners>0?served*c.lead/100*leadShare(tm,c):0;
@@ -527,23 +551,24 @@ function simulate(st){
     const tcost=pfixC+(tm.planners+tm.leaders)*c.perprof;
     const ceo=beMonth===null?c.ceo1:c.ceo2;
     const platform=platformCost(clients,c);
-    const fixed=platform+mkt+c.other+ceo+tcost;
+    const orgCost=c.orgcost||0;const fixed=platform+mkt+c.other+ceo+tcost+orgCost;
     const profit=rev-varCost-fixed;
     if(beMonth===null&&profit>=0)beMonth=mo;
     cash+=profit;minCash=Math.min(minCash,cash);if(outMonth===null&&cash<0)outMonth=mo;
     L0.forEach(o=>{const x=o.months[mo-1];const lv=served>0&&o.p.plan>0?leadVar*x.rev/served:0;x.lv=lv;
       x.k=x.rev-x.pv-x.tax-x.comm-x.dv-lv-x.mk-x.pl*(o.p.pfix+c.perprof)});
     months.push({mo,leads,diags,newSubs,lost,clients,rev,varCost,planVar,leadVar,taxFee,deliv,indVar:comm.ind,aseVar:comm.ase,tcost,platform,ceo,mkt,fixed,profit,cash,planners:tm.planners,leaders:tm.leaders,mrr,
-      cDir:byCh.dir.n,cInd:byCh.ind.n,cAse:byCh.ase.n,rDir:byCh.dir.rev,rInd:byCh.ind.rev,rAse:byCh.ase.rev,nDir:byCh.dir.newSubs,nInd:byCh.ind.newSubs,nAse:byCh.ase.newSubs});
+      cDir:byCh.dir.n+byCh.pag.n,cInd:byCh.ind.n,cAse:byCh.ase.n,rDir:byCh.dir.rev+byCh.pag.rev,rInd:byCh.ind.rev,rAse:byCh.ase.rev,nDir:byCh.dir.newSubs+byCh.pag.newSubs,nInd:byCh.ind.newSubs,nAse:byCh.ase.newSubs,
+      cRede:byCh.dir.n,cPag:byCh.pag.n,cOrg:byCh.org.n,rRede:byCh.dir.rev,rPag:byCh.pag.rev,rOrg:byCh.org.rev,nRede:byCh.dir.newSubs,nPag:byCh.pag.newSubs,nOrg:byCh.org.newSubs,ytSubs,ytViews,orgLeads:orgL,orgCost});
   }
   const ly=months.slice(48);const lrev=ly.reduce((a,x)=>a+x.rev,0)||1;const lcl=ly.reduce((a,x)=>a+x.clients,0)||1;
   const arpu=lrev/lcl, unitVar=ly.reduce((a,x)=>a+x.varCost,0)/lrev, plPer=ly.reduce((a,x)=>a+x.planners,0)/lcl, mk=ly.reduce((a,x)=>a+x.mkt,0)/12;
   const contrib=arpu*(1-unitVar);
   let beClients=Infinity;
   if(lcl>1)for(let n=1;n<=40000;n++){const pl=Math.ceil(n*plPer);const tm={planners:pl,leaders:Math.floor(pl/Math.max(1,c.span))};const pp=n*contrib-(platformCost(n,c)+mk+c.other+c.ceo1+tm.planners*0+(tm.planners+tm.leaders)*c.perprof);if(pp>=0){beClients=n;break}}
-  const keys=['rev','profit','varCost','planVar','leadVar','taxFee','deliv','indVar','aseVar','tcost','platform','ceo','mkt','newSubs','diags','rDir','rInd','rAse','nDir','nInd','nAse'];
+  const keys=['rev','profit','varCost','planVar','leadVar','taxFee','deliv','indVar','aseVar','tcost','platform','ceo','mkt','newSubs','diags','rDir','rInd','rAse','nDir','nInd','nAse','rRede','rPag','rOrg','nRede','nPag','nOrg','ytViews','orgLeads','orgCost'];
   const years=[];for(let y=0;y<HZ/12;y++){const ms=months.slice(y*12,y*12+12);const e=ms[11];const o={y:y+1};keys.forEach(k=>o[k]=ms.reduce((a,x)=>a+x[k],0));
-    Object.assign(o,{clients:e.clients,planners:e.planners,leaders:e.leaders,cash:e.cash,mrr:e.mrr,cDir:e.cDir,cInd:e.cInd,cAse:e.cAse});years.push(o)}
+    Object.assign(o,{clients:e.clients,planners:e.planners,leaders:e.leaders,cash:e.cash,mrr:e.mrr,cDir:e.cDir,cInd:e.cInd,cAse:e.cAse,cRede:e.cRede,cPag:e.cPag,cOrg:e.cOrg,ytSubs:e.ytSubs});years.push(o)}
   const prods=L0.map(o=>{const ys=[];for(let y=0;y<5;y++){const ms=o.months.slice(y*12,y*12+12);const e=ms[11];const s=k=>ms.reduce((a,x)=>a+x[k],0);
       ys.push({y:y+1,n:e.n,pl:e.pl,rev:s('rev'),ns:s('ns'),k:s('k'),mk:s('mk'),comm:s('comm'),diags:s('diags')})}
     return {p:o.p,rate:o.rate,warm:o.warm,months:o.months,years:ys}});
@@ -555,22 +580,22 @@ function simulate(st){
 function aloneOf(st,id){const s=clone(migrate(st));s.list.forEach(p=>p.on=p.id===id);s.company.menu=false;s.sel=id;return s}
 
 // ---- produtos e estado ----
-const PK=['m','diag','dprice','parcelado','cancel','comissao','cfp','garantia','exemplo','prova','online','checkin','casal','raiox','dividas','tributario','rede','mkt','cpl','real','conv','churn','growth','pleads','pcom','pdur','aleads','acom','adur','cap','pfix','plan','deliv','pbase'];
-const CK=['span','lead','perprof','other','ceo1','ceo2','tax','pmt','cash','menu'];
+const PK=['orgw','m','diag','dprice','parcelado','cancel','comissao','cfp','garantia','exemplo','prova','online','checkin','casal','raiox','dividas','tributario','rede','mkt','cpl','real','conv','churn','growth','pleads','pcom','pdur','aleads','acom','adur','cap','pfix','plan','deliv','pbase'];
+const CK=['ytsubs','ytviews','ytgrow','ytctr','ytlead','yttrust','orgcost','orgother','span','lead','perprof','other','ceo1','ceo2','tax','pmt','cash','menu'];
 const IDS=PK.concat(CK);
 const PALX=['var(--s1)','var(--s3)','var(--s2)','#eda100','#e87ba4','#6250d6','#008300','#7a5c3e'];
 const pick=(o,ks)=>{const r={};ks.forEach(k=>{if(o[k]!==undefined)r[k]=o[k]});return r};
 const clone=o=>JSON.parse(JSON.stringify(o));
 const LEVK=Object.keys(LEVERS);
 function mkProd(id,name,ci,base,extra){const p=Object.assign({id,name,ci,on:true,kind:'modelo',menuF:null,vw:null,tm:0,tcfg:null},pick(base,PK),extra||{});if(p.kind==='painel'&&!p.tcfg)p.tcfg=pick(p,LEVK.concat(['diag','dprice']));return p}
-const BASEP=Object.assign({},PRESETS.atual,{deliv:0,pbase:25});
+const BASEP=Object.assign({},PRESETS.atual,{deliv:0,pbase:25,orgw:100,ytsubs:0,ytviews:0,ytgrow:0,ytctr:1,ytlead:30,yttrust:true,orgcost:0,orgother:0});
 function defaultProds(){return [
   mkProd('as','Assistido',0,BASEP,{menuF:'as',mr:[97,797,10]}),
-  mkProd('dg','Digital (self-service)',1,BASEP,{on:false,kind:'painel',menuF:'dg',mr:[9,199,1],pbase:MIX.E*100,vw:[10,20,50,80],tm:49,m:49,diag:false,dprice:0,parcelado:false,cancel:true,comissao:true,cfp:false,garantia:false,exemplo:false,prova:false,online:true,checkin:false,casal:false,raiox:false,dividas:true,tributario:false,rede:10,mkt:2000,cpl:15,churn:6,conv:100,plan:0,cap:120,pfix:0,deliv:0,pleads:0,aleads:0}),
-  mkProd('pv','Private',2,BASEP,{on:false,kind:'painel',menuF:'pv',mr:[500,5000,100],pbase:MIX.PVHI*100,vw:[400,800,1500,2500],tm:1500,m:1500,diag:false,dprice:0,parcelado:false,cancel:true,comissao:true,cfp:true,garantia:false,exemplo:false,prova:false,online:false,checkin:true,casal:true,raiox:true,dividas:false,tributario:true,rede:10,mkt:0,cpl:40,churn:2,conv:100,plan:30,cap:25,pfix:0,deliv:0,pleads:0,aleads:20,acom:15})]}
+  mkProd('dg','Digital (self-service)',1,BASEP,{on:false,kind:'painel',menuF:'dg',mr:[9,199,1],orgw:60,pbase:MIX.E*100,vw:[10,20,50,80],tm:49,m:49,diag:false,dprice:0,parcelado:false,cancel:true,comissao:true,cfp:false,garantia:false,exemplo:false,prova:false,online:true,checkin:false,casal:false,raiox:false,dividas:true,tributario:false,rede:10,mkt:2000,cpl:15,churn:6,conv:100,plan:0,cap:120,pfix:0,deliv:0,pleads:0,aleads:0}),
+  mkProd('pv','Private',2,BASEP,{on:false,kind:'painel',menuF:'pv',mr:[500,5000,100],orgw:20,pbase:MIX.PVHI*100,vw:[400,800,1500,2500],tm:1500,m:1500,diag:false,dprice:0,parcelado:false,cancel:true,comissao:true,cfp:true,garantia:false,exemplo:false,prova:false,online:false,checkin:true,casal:true,raiox:true,dividas:false,tributario:true,rede:10,mkt:0,cpl:40,churn:2,conv:100,plan:30,cap:25,pfix:0,deliv:0,pleads:0,aleads:20,acom:15})]}
 function defaultState(){return {company:Object.assign(pick(BASEP,CK),{menu:false}),list:defaultProds(),sel:'as'}}
 function migrate(x){ // estados antigos (planos) viram o novo formato
-  if(!x)return null;if(x.list&&x.company)return x;
+  if(!x)return null;if(x.list&&x.company){CK.forEach(k=>{if(x.company[k]===undefined)x.company[k]=BASEP[k]});x.list.forEach(p=>PK.forEach(k=>{if(p[k]===undefined)p[k]=(k==='orgw'?(p.id==='dg'?60:p.id==='pv'?20:100):BASEP[k])}));return x}
   const st=defaultState();Object.assign(st.company,pick(x,CK));Object.assign(st.list[0],pick(x,PK));return st}
 let STATE=defaultState();
 const selP=()=>STATE.list.find(p=>p.id===STATE.sel)||STATE.list[0];
@@ -608,7 +633,7 @@ if(!ref)ref=defaultState();
 try{const sv=JSON.parse(localStorage.getItem('profitto-cur')||'null');if(sv)STATE=migrate(sv)}catch(e){}
 write(STATE);cur=flatOf();
 
-const FMT={deliv:v=>v?BRL(v):'sem custo',pbase:v=>String(v).replace('.',',')+'%',pleads:v=>v+' pessoas',pcom:v=>v+'% da receita',pdur:v=>v==60?'60 meses (sempre)':v+' meses',aleads:v=>v+' pessoas',acom:v=>v+'% da receita',adur:v=>v==60?'60 meses (sempre)':v+' meses',cap:v=>v+' clientes',pfix:v=>BRL(v),span:v=>v+' planejadores',lead:v=>String(v).replace('.',',')+'%',perprof:v=>BRL(v),other:v=>BRL(v),growth:v=>v+'%',m:v=>BRL(v)+'/mês',dprice:v=>v==0?'grátis':BRL(v),rede:v=>v+' pessoas',mkt:v=>BRL(v),cpl:v=>BRL(v),real:v=>v+'%',conv:v=>v+'%',churn:v=>String(v).replace('.',',')+'%',ceo1:v=>BRL(v),ceo2:v=>BRL(v),plan:v=>v?v+'%':'sem planejador',tax:v=>String(v).replace('.',',')+'%',pmt:v=>BRL(v),cash:v=>BRL(v)};
+const FMT={orgw:v=>v+'',ytgrow:v=>(v>0?'+':'')+String(v).replace('.',',')+'%',ytctr:v=>String(v).replace('.',',')+'%',ytlead:v=>v+'%',orgother:v=>v+' pessoas',orgcost:v=>v?BRL(v):'sem custo',deliv:v=>v?BRL(v):'sem custo',pbase:v=>String(v).replace('.',',')+'%',pleads:v=>v+' pessoas',pcom:v=>v+'% da receita',pdur:v=>v==60?'60 meses (sempre)':v+' meses',aleads:v=>v+' pessoas',acom:v=>v+'% da receita',adur:v=>v==60?'60 meses (sempre)':v+' meses',cap:v=>v+' clientes',pfix:v=>BRL(v),span:v=>v+' planejadores',lead:v=>String(v).replace('.',',')+'%',perprof:v=>BRL(v),other:v=>BRL(v),growth:v=>v+'%',m:v=>BRL(v)+'/mês',dprice:v=>v==0?'grátis':BRL(v),rede:v=>v+' pessoas',mkt:v=>BRL(v),cpl:v=>BRL(v),real:v=>v+'%',conv:v=>v+'%',churn:v=>String(v).replace('.',',')+'%',ceo1:v=>BRL(v),ceo2:v=>BRL(v),plan:v=>v?v+'%':'sem planejador',tax:v=>String(v).replace('.',',')+'%',pmt:v=>BRL(v),cash:v=>BRL(v)};
 
 function delta(a,b,higherBetter,fmt){
   const d=a-b; const eps=Math.max(Math.abs(b)*0.005,0.0001);
@@ -736,7 +761,7 @@ function yearsChart(r,R){
   const row=(lab,f,cls)=>`<tr><td>${lab}</td>${ys.map((yy,i)=>`<td class="n"${cls?` style="color:${cls(yy)}"`:''}>${f(yy,i)}</td>`).join('')}</tr>`;
   $('tbl-years').innerHTML='<tr><th></th>'+ys.map(yy=>`<th class="n">Ano ${yy.y}</th>`).join('')+'</tr>'+
    row('Clientes no fim do ano',yy=>Math.round(yy.clients).toLocaleString('pt-BR'))+
-   row('· diretos / indicados / assessores',yy=>Math.round(yy.cDir)+' / '+Math.round(yy.cInd)+' / '+Math.round(yy.cAse))+
+   row('· rede + pago / orgânico / indicados / assessores',yy=>Math.round(yy.cDir)+' / '+Math.round(yy.cOrg)+' / '+Math.round(yy.cInd)+' / '+Math.round(yy.cAse))+
    row('Novos assinantes no ano',yy=>Math.round(yy.newSubs).toLocaleString('pt-BR'))+
    row('MRR no fim do ano',yy=>BRL(yy.mrr))+
    row('Receita',yy=>BRL(yy.rev))+
@@ -749,7 +774,8 @@ function yearsChart(r,R){
    row('<b>Fica para a empresa antes dos fixos</b>',yy=>BRL(yy.rev-yy.varCost)+' ('+pct(keepV(yy))+')')+
    row('Equipe fixa (fixo por planejador, custo por profissional)',yy=>BRL(-yy.tcost))+
    row('Plataforma',yy=>BRL(-yy.platform))+
-   row('Marketing',yy=>BRL(-yy.mkt))+
+   row('Marketing pago',yy=>BRL(-yy.mkt))+
+   row('Marketing orgânico (produção)',yy=>BRL(-yy.orgCost))+
    row('CEO',yy=>BRL(-yy.ceo))+
    row('Resultado',yy=>BRL(yy.profit),yy=>yy.profit<0?'var(--bad)':'var(--good)')+
    row('<b>Fica para a empresa no fim (margem)</b>',yy=>yy.rev>0?pct(yy.profit/yy.rev):'—',yy=>yy.profit<0?'var(--bad)':'var(--good)')+
@@ -759,7 +785,7 @@ function yearsChart(r,R){
 let lastR=null;
 function split(r){
   lastR=r;const yy=r.years[+$('split-year').value];const R=yy.rev||1;
-  const parts=[['Planejadores',yy.planVar],['Líderes de time',yy.leadVar],['Indicadores',yy.indVar],['Assessores',yy.aseVar],['Imposto + cobrança',yy.taxFee],['Custo de entrega',yy.deliv],['Equipe fixa',yy.tcost],['Plataforma',yy.platform],['Marketing',yy.mkt],['CEO',yy.ceo],['Outros fixos',cur.other*12]];
+  const parts=[['Planejadores',yy.planVar],['Líderes de time',yy.leadVar],['Indicadores',yy.indVar],['Assessores',yy.aseVar],['Imposto + cobrança',yy.taxFee],['Custo de entrega',yy.deliv],['Equipe fixa',yy.tcost],['Plataforma',yy.platform],['Marketing pago',yy.mkt],['Orgânico (produção)',yy.orgCost],['CEO',yy.ceo],['Outros fixos',cur.other*12]];
   const used=parts.reduce((a,p)=>a+p[1],0);const left=yy.rev-used;
   const mx=Math.max(R,used);
   $('split').innerHTML=parts.map(([n,v])=>`<div class="bar"><div class="t"><div class="flexbetween"><span>${n}</span><span class="muted num">${BRL(v)}</span></div><div class="track"><div class="fill" style="width:${Math.min(100,v/mx*100)}%;background:var(--brand-2)"></div></div></div><span class="val">${(v/R*100).toFixed(0)}</span></div>`).join('')+
@@ -768,7 +794,7 @@ function split(r){
 $('split-year').addEventListener('change',()=>lastR&&split(lastR));
 function channels(r){
   const y=r.years[+$('split-year').value];
-  const rows=[['Direto (rede + marketing)',y.nDir,y.cDir,y.rDir,0,r.rate],['Indicadores',y.nInd,y.cInd,y.rInd,y.indVar,r.rateWarm],['Assessores',y.nAse,y.cAse,y.rAse,y.aseVar,r.rateWarm]];
+  const rows=[['Rede (contatos)',y.nRede,y.cRede,y.rRede,0],['Marketing pago',y.nPag,y.cPag,y.rPag,0],['Canal do Neto + orgânico',y.nOrg,y.cOrg,y.rOrg,0],['Indicadores',y.nInd,y.cInd,y.rInd,y.indVar,r.rateWarm],['Assessores',y.nAse,y.cAse,y.rAse,y.aseVar,r.rateWarm]];
   $('ch-note').textContent='Ano '+y.y+' · '+esc(r.selName)+': direto '+(r.rate*100).toFixed(1).replace('.',',')+'%, indicado '+(r.rateWarm*100).toFixed(1).replace('.',',')+'%';
   $('tbl-ch').innerHTML='<tr><th>Canal</th><th class="n">Novos assinantes no ano</th><th class="n">Clientes no fim do ano</th><th class="n">Receita no ano</th><th class="n">Percentual pago</th><th class="n">Fica para a empresa</th></tr>'+rows.map(([n,ns,cl,rv,cm])=>`<tr><td>${n}</td><td class="n">${Math.round(ns)}</td><td class="n">${Math.round(cl)}</td><td class="n">${BRL(rv)}</td><td class="n">${BRL(cm)}</td><td class="n">${rv>0&&y.rev>0?pct((rv-cm-rv*(y.planVar+y.leadVar+y.taxFee)/y.rev)/rv):'—'}</td></tr>`).join('');
 }
@@ -849,6 +875,38 @@ function focus(st){
     R('Caixa no pior momento (sozinho)',x=>cl(x.r.minCash))+
     R('Primeiro mês de lucro (sozinho)',x=>x.r.beMonth?'mês '+x.r.beMonth:'—');
 }
+function orgPanel(r,R,c){
+  const ys=r.years,ms=r.months;
+  const noData=!(c.ytsubs>0||c.ytviews>0);
+  $('org-warn').innerHTML=noData?'<b>Preencha inscritos e visualizações por mês do canal</b> (YouTube Studio → Análises). Sem esses números o canal não gera interessados. Clique no link e interessado são premissas iniciais: troque pelos números reais quando tiver.':'Clique no link e interessado são premissas: troque pelos números reais do canal quando tiver (cliques no link da descrição / formulário).';
+  $('org-note').textContent=noData?'sem números do canal':Math.round(ms[11].orgLeads).toLocaleString('pt-BR')+' interessados/mês no mês 12';
+  const y1=ys[0],y5=ys[4];
+  const share=y=>y.newSubs>0?pct(y.nOrg/y.newSubs):'—';
+  const cpcO=y=>y.nOrg>0?BRL(y.orgCost/y.nOrg):(y.orgCost>0?'—':'R$ 0');
+  const cpcP=y=>y.nPag>0?BRL(y.mkt/y.nPag):'—';
+  const items=[
+    ['Interessados do orgânico no ano 1',Math.round(y1.orgLeads).toLocaleString('pt-BR'),delta(y1.orgLeads,R.years[0].orgLeads,true,v=>Math.round(v)),'canal do Neto + outros orgânicos'],
+    ['Clientes novos do orgânico (ano 1)',Math.round(y1.nOrg).toLocaleString('pt-BR'),delta(y1.nOrg,R.years[0].nOrg,true,v=>Math.round(v)),share(y1)+' de todos os clientes novos'],
+    ['Receita de clientes orgânicos (ano 5)',BRLk(y5.rOrg),delta(y5.rOrg,R.years[4].rOrg,true,BRLk),y5.rev>0?pct(y5.rOrg/y5.rev)+' da receita':'—'],
+    ['Custo por cliente: orgânico × pago',cpcO(y1)+' × '+cpcP(y1),'<span class="delta eq">ano 1</span>','produção do conteúdo ÷ clientes orgânicos; verba paga ÷ clientes pagos']];
+  $('org-kpis').innerHTML=items.map(([l,v,d,s])=>`<div class="kpi"><span class="l">${l}</span><span class="v">${v}</span>${d}<span class="l">${s}</span></div>`).join('');
+  const ser=[['Rede','nRede','var(--brand-2)'],['Marketing pago','nPag','var(--s2)'],['Canal do Neto + orgânico','nOrg','var(--s3)'],['Indicadores','nInd','#eda100'],['Assessores','nAse','#6250d6']];
+  const act=ser.filter(s=>ms.some(m=>m[s[1]]>0.01));
+  $('org-legend').innerHTML=act.map(s=>`<span><i style="background:${s[2]}"></i>${s[0]}</span>`).join('');
+  multiLine($('ch-org'),act.map(s=>ms.map(m=>m[s[1]])),act.map(s=>s[2]),i=>`<b>Mês ${i+1}</b>`+act.map(s=>`<br>${s[0]}: ${ms[i][s[1]].toFixed(1).replace('.',',')} clientes novos`).join(''));
+  const row=(lab,f)=>`<tr><td>${lab}</td>${ys.map((y,i)=>`<td class="n">${f(y,i)}</td>`).join('')}</tr>`;
+  $('tbl-org').innerHTML='<tr><th></th>'+ys.map(y=>`<th class="n">Ano ${y.y}</th>`).join('')+'</tr>'+
+    row('Inscritos no fim do ano',y=>Math.round(y.ytSubs).toLocaleString('pt-BR'))+
+    row('Visualizações no ano',y=>Math.round(y.ytViews).toLocaleString('pt-BR'))+
+    row('Interessados do orgânico',y=>Math.round(y.orgLeads).toLocaleString('pt-BR'))+
+    row('Clientes novos do orgânico',y=>Math.round(y.nOrg).toLocaleString('pt-BR'))+
+    row('Parte dos clientes novos',y=>share(y))+
+    row('Clientes orgânicos ativos no fim do ano',y=>Math.round(y.cOrg).toLocaleString('pt-BR'))+
+    row('Receita de clientes orgânicos',y=>BRL(y.rOrg))+
+    row('Custo do orgânico (produção)',y=>BRL(-y.orgCost))+
+    row('Custo por cliente orgânico',y=>cpcO(y))+
+    row('Custo por cliente do marketing pago',y=>cpcP(y));
+}
 function update(){
   const c=read();cur=flatOf(c);
   try{localStorage.setItem('profitto-cur',JSON.stringify(c))}catch(e){}
@@ -856,12 +914,12 @@ function update(){
   $('dprice-wrap').style.opacity=cur.diag?1:.4;$('dprice').disabled=!cur.diag;
   const sp=selP();$('pinfo').textContent=(sp.id==='pv'?'Private: no teste do cardápio só 1 de 225 comprou; entre profissionais de alta renda foi 1 de 32 (3%), que é a taxa usada. Os interessados vêm da base dos assessores. Confirme com um teste só com esse público. ':'')+(sp.kind==='painel'?('Taxa medida: '+String(sp.pbase).replace('.',',')+'% a '+BRL(sp.tm||sp.m)+'. Preço e entregas mudam essa taxa conforme a reação dos compradores (faixa de preço do teste: '+(sp.vw||[]).map(v=>BRL(v)).join(' / ')+').'):(sp.id==='pv'?'':'')+'Usa o modelo dos 1.000 compradores: preço, diagnóstico e entregas mudam quem compra.');
   const r=simulate(c),R=simulate(ref);
-  kpis(r,R,cur);plannerBox(r,cur);products(r);focus(c);renderTabs();
+  kpis(r,R,cur);plannerBox(r,cur);products(r);focus(c);orgPanel(r,R,c.company);renderTabs();
   lineChart($('ch-clients'),r.months.map(m=>m.clients),R.months.map(m=>m.clients),{ref:r.beClients,fmt:v=>Math.round(v),fmtTip:v=>Math.round(v)+' clientes'});
   lineChart($('ch-cash'),r.months.map(m=>m.cash),R.months.map(m=>m.cash),{fmt:BRLk,fmtTip:BRL});
   yearsChart(r,R);split(r);channels(r);dots(cur);leverRank(cur);renderPick(cur);monthTable(r);
 }
-document.querySelectorAll('aside input, aside select:not(#preset)').forEach(el=>el.addEventListener('input',()=>{$('preset').value='';update()}));
+document.querySelectorAll('aside input, aside select:not(#preset), #org-card input').forEach(el=>el.addEventListener('input',()=>{$('preset').value='';update()}));
 $('pkind').addEventListener('change',()=>{update()});
 $('ptabs').addEventListener('click',e=>{const b=e.target.closest('button[data-id]');if(!b)return;readInputs();STATE.sel=b.dataset.id;syncInputs();update()});
 function newId(){let i=1;while(STATE.list.some(p=>p.id==='p'+i))i++;return 'p'+i}
