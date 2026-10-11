@@ -9,7 +9,7 @@
   --brand:#231F20; --brand-2:#4C6971;
   --bg:#FFFFFF; --surface:#FFFFFF; --sunk:#F3F5F5; --ink:#231F20; --muted:#5E6B6E; --line:#E2E6E7;
   --accent:var(--brand-2); --accent-fill:var(--brand-2); --on-accent:#FFFFFF;
-  --s1:#2a78d6; --s2:#eb6834;
+  --s1:#2a78d6; --s2:#eb6834; --s3:#1baf7a;
   --good:#167A3E; --good-bg:#E4F4EA; --warn:#9A5B00; --warn-bg:#FBEFD9; --bad:#B3261E; --bad-bg:#FBE4E1;
   --dot0:#E2E6E7; --dot1:#BFCED1; --dot2:#4C6971; --dot3:#167A3E;
   --f-display:"Marcellus", "Optima", "Candara", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
@@ -48,6 +48,10 @@ input[type=range]{width:100%;accent-color:var(--accent-fill)}
 .tog{display:flex;align-items:flex-start;gap:10px;cursor:pointer}
 .tog input{margin-top:3px;accent-color:var(--accent-fill);width:16px;height:16px;flex:none}
 .tog small{display:block;color:var(--muted);font-size:.78rem;line-height:1.35}
+.prods{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+@media (max-width:1100px){.prods{grid-template-columns:minmax(0,1fr)}}
+.pcol{background:var(--sunk);border-radius:8px;padding:12px;display:grid;gap:10px;align-content:start}
+.sw{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;vertical-align:0}
 .help{font-size:.76rem;color:var(--muted);line-height:1.4;margin:-2px 0 0}
 .pbox{background:var(--sunk);border-radius:8px;padding:10px 12px;display:grid;gap:6px}
 .pbox .ttl{font-size:.74rem;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
@@ -149,6 +153,7 @@ select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid var(--lin
             <option value="atual">Oferta atual (v2)</option>
             <option value="rec">Recomendado</option>
             <option value="tudo">Tudo ligado</option>
+            <option value="tres">3 produtos (Digital + Assistido + Private)</option>
           </select>
         </div>
         <fieldset><legend>Preço</legend>
@@ -166,7 +171,7 @@ select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid var(--lin
           <label class="tog"><input type="checkbox" id="prova"><span>Prova social<small>Indicações e avaliações reais. Só existe depois do piloto.</small></span></label>
         </fieldset>
         <fieldset><legend>Entregas</legend>
-          <label class="tog"><input type="checkbox" id="online"><span>Opção 100% online, sem reuniões<small>Não testada com compradores: o efeito vem das objeções.</small></span></label>
+          <label class="tog"><input type="checkbox" id="online"><span>Opção 100% online, sem reuniões<small>Para o produto 100% self-service testado de verdade, ligue o Digital no quadro Produtos.</small></span></label>
           <label class="tog"><input type="checkbox" id="checkin"><span>Check-in mensal marcado pelo planejador</span></label>
           <label class="tog"><input type="checkbox" id="casal"><span>Sessão do casal</span></label>
           <label class="tog"><input type="checkbox" id="raiox"><span>Raio-X das tarifas do banco</span></label>
@@ -218,8 +223,34 @@ select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid var(--lin
       </aside>
 
       <div class="stack">
-        <div class="note" id="honesty">São 1.000 compradores simulados, todos agentes de IA com perfil próprio: 50 viram o pitch original, 50 a oferta atual e 900 (10 segmentos, 12 comportamentos, várias cidades) viram uma de 4 ofertas, 225 em cada. A página não roda agentes a cada mudança: usa um modelo calibrado nas 1.020 respostas reais (incluindo 20 do re-teste). Real × modelo: oferta atual 17% × 12%, diagnóstico R$ 197 21% × 23%, oferta completa 25% × 25%, Profissional R$ 390 19% × 20%. Todos os que compraram levaram só o diagnóstico. Combinações que nenhum agente viu são extrapolação. Confirme com a pré-venda.</div>
+        <div class="note" id="honesty">São 1.000 compradores simulados, todos agentes de IA com perfil próprio: 50 viram o pitch original, 50 a oferta atual e 900 (10 segmentos, 12 comportamentos, várias cidades) viram uma de 4 ofertas, 225 em cada. A página não roda agentes a cada mudança: usa um modelo calibrado nas 1.020 respostas reais (incluindo 20 do re-teste). Real × modelo: oferta atual 17% × 12%, diagnóstico R$ 197 21% × 23%, oferta completa 25% × 25%, Profissional R$ 390 19% × 20%. Todos os que compraram levaram só o diagnóstico. Combinações que nenhum agente viu são extrapolação. Confirme com a pré-venda. Mais 450 para os produtos: Digital R$ 49 sozinho, 18% pagariam; cardápio com 3 produtos, 26% compram algo (Digital 10%, diagnóstico do Assistido 16%, Private 0,4%). No cardápio, só 1 dos 36 que compraram o diagnóstico seguiria para os R$ 297/mês.</div>
         <div class="kpis" id="kpis"></div>
+        <div class="card" id="prod-card">
+          <div class="flexbetween"><h3>Produtos</h3><span class="muted" id="prod-note" style="font-size:.8rem"></span></div>
+          <p class="muted" style="font-size:.8rem;margin:4px 0 12px">Ligue os produtos que quer vender. A conversão de cada um vem dos compradores reais: o Digital foi testado sozinho com 225 pessoas, e o cardápio com os 3 produtos com outras 225. Quando mais de um produto está ligado, a página usa a escolha real do cardápio, então um produto rouba vendas do outro. O crescimento extra de cada produto soma ao crescimento geral de interessados.</p>
+          <div class="prods">
+            <div class="pcol"><label class="tog"><input type="checkbox" id="dgon"><span><b><i class="sw" style="background:var(--s3)"></i>Digital (self-service)</b><small>Sem planejador: app, plano automático e trilhas.</small></span></label>
+              <div class="ctl"><div class="row"><label for="dgm">Preço</label><output id="o-dgm"></output></div><input type="range" id="dgm" min="9" max="199" step="5"></div>
+              <div class="ctl"><div class="row"><label for="dgconv">Compram (painel, sozinho)</label><output id="o-dgconv"></output></div><input type="range" id="dgconv" min="0" max="50" step="0.5"></div>
+              <div class="ctl"><div class="row"><label for="dgchurn">Cancelamentos por mês</label><output id="o-dgchurn"></output></div><input type="range" id="dgchurn" min="0" max="25" step="0.5"></div>
+              <div class="ctl"><div class="row"><label for="dggr">Crescimento extra por ano</label><output id="o-dggr"></output></div><input type="range" id="dggr" min="-50" max="200" step="5"></div>
+              <p class="help" id="dg-info"></p></div>
+            <div class="pcol"><label class="tog"><input type="checkbox" id="aon"><span><b><i class="sw" style="background:var(--s1)"></i>Assistido</b><small>Preço, diagnóstico, alavancas e capacidade ficam no painel à esquerda.</small></span></label>
+              <div class="ctl"><div class="row"><label for="agr">Crescimento extra por ano</label><output id="o-agr"></output></div><input type="range" id="agr" min="-50" max="200" step="5"></div>
+              <p class="help" id="as-info"></p></div>
+            <div class="pcol"><label class="tog"><input type="checkbox" id="pvon"><span><b><i class="sw" style="background:var(--s2)"></i>Private</b><small>Planejador sênior dedicado, patrimônio, sucessão e imposto.</small></span></label>
+              <div class="ctl"><div class="row"><label for="pvm">Preço</label><output id="o-pvm"></output></div><input type="range" id="pvm" min="500" max="5000" step="100"></div>
+              <div class="ctl"><div class="row"><label for="pvconv">Compram (painel, cardápio)</label><output id="o-pvconv"></output></div><input type="range" id="pvconv" min="0" max="20" step="0.5"></div>
+              <div class="ctl"><div class="row"><label for="pvchurn">Cancelamentos por mês</label><output id="o-pvchurn"></output></div><input type="range" id="pvchurn" min="0" max="15" step="0.5"></div>
+              <div class="ctl"><div class="row"><label for="pvplan">Planejador sênior (% da receita)</label><output id="o-pvplan"></output></div><input type="range" id="pvplan" min="10" max="60" step="1"></div>
+              <div class="ctl"><div class="row"><label for="pvcap">Clientes por planejador sênior</label><output id="o-pvcap"></output></div><input type="range" id="pvcap" min="5" max="80" step="1"></div>
+              <div class="ctl"><div class="row"><label for="pvgr">Crescimento extra por ano</label><output id="o-pvgr"></output></div><input type="range" id="pvgr" min="-50" max="200" step="5"></div>
+              <p class="help" id="pv-info"></p></div>
+          </div>
+          <div class="flexbetween" style="margin-top:16px"><h3 style="font-size:.95rem">Clientes ativos por produto</h3><div class="legend"><span><i style="background:var(--s3)"></i>Digital</span><span><i style="background:var(--s1)"></i>Assistido</span><span><i style="background:var(--s2)"></i>Private</span></div></div>
+          <svg class="chart" id="ch-prod" viewBox="0 0 760 240" role="img" aria-label="Clientes ativos por produto, 5 anos"></svg>
+          <div class="tbl" style="margin-top:10px"><table id="tbl-prod"></table></div>
+        </div>
         <div class="grid2">
           <div class="card">
             <div class="flexbetween"><h3>Clientes ativos</h3><div class="legend"><span><i style="background:var(--s1)"></i>Cenário</span><span><i style="background:var(--s2)"></i>Referência</span><span><i style="background:var(--muted);height:0;border-top:1px dashed var(--muted)"></i>Break-even</span></div></div>
@@ -406,10 +437,11 @@ const BAR2LEV={online:'online',timing:'__never',cancel:'cancel',comissao:'comiss
 const BARNAME={online:'Quer algo 100% online, sem reuniões',timing:'Agora não é o momento',cancel:'Medo de não conseguir cancelar',comissao:'Desconfiança de comissão',cfp:'Quer planejador certificado',indicacao:'Só compra por indicação',avaliacoes:'Quer avaliações reais',exemplo:'Quer ver um plano exemplo',garantia_qual:'Garantia só cobre atraso',casal:'Briga com o cônjuge',dividas:'Dívida rodando',parcelado:'Quer parcelar',tributario:'Quer tributário / sucessão',raiox:'Acha que o gerente faz de graça',checkin:'Já largou app',diag_barato:'Quer diagnóstico barato ou 1ª conversa grátis'};
 
 const PRESETS={
- atual:{m:297,diag:true,dprice:490,parcelado:false,cancel:true,comissao:true,cfp:false,garantia:false,exemplo:false,prova:false,checkin:true,casal:false,raiox:false,dividas:false,tributario:false,rede:25,mkt:3000,cpl:40,real:50,conv:50,churn:3,ceo1:10000,ceo2:10000,plan:20,tax:11,pmt:5000,cash:100000,cap:120,pfix:0,span:6,lead:5,perprof:300,other:900,growth:25,online:false,pleads:0,pcom:10,pdur:12,aleads:0,acom:15,adur:12},
+ atual:{m:297,diag:true,dprice:490,parcelado:false,cancel:true,comissao:true,cfp:false,garantia:false,exemplo:false,prova:false,checkin:true,casal:false,raiox:false,dividas:false,tributario:false,rede:25,mkt:3000,cpl:40,real:50,conv:50,churn:3,ceo1:10000,ceo2:10000,plan:20,tax:11,pmt:5000,cash:100000,cap:120,pfix:0,span:6,lead:5,perprof:300,other:900,growth:25,online:false,dgon:false,dgm:49,dgconv:__DGCONV__,dgchurn:6,dggr:0,aon:true,agr:0,pvon:false,pvm:1500,pvconv:__PVCONV__,pvchurn:2,pvplan:30,pvcap:25,pvgr:0,pleads:0,pcom:10,pdur:12,aleads:0,acom:15,adur:12},
 };
 PRESETS.v1=Object.assign({},PRESETS.atual,{m:350,diag:false,dprice:0,cancel:false,comissao:false,checkin:false});
 PRESETS.rec=Object.assign({},PRESETS.atual,{dprice:197,garantia:true,exemplo:true,casal:true,raiox:true,dividas:true,ceo1:5000});
+PRESETS.tres=Object.assign({},PRESETS.rec,{dgon:true,pvon:true});
 PRESETS.tudo=Object.assign({},PRESETS.rec,{cfp:true,prova:true,tributario:true,parcelado:true});
 
 const IDS=Object.keys(PRESETS.atual);
@@ -432,30 +464,63 @@ function teamCost(tm,c){return tm.planners*c.pfix+(tm.planners+tm.leaders)*c.per
 function leadShare(tm,c){return tm.leaders>0?Math.min(1,tm.leaders*c.span/tm.planners):0}
 function platformCost(clients,c){return c.pmt+Math.max(0,clients-400)*20}
 const CH=['dir','ind','ase'];
+const PRODS=['dg','as','pv'];
+const PNAME={dg:'Digital (self-service)',as:'Assistido',pv:'Private'};
+const PCOL={dg:'var(--s3)',as:'var(--s1)',pv:'var(--s2)'};
+// Resultados reais dos painéis: E = Digital sozinho, C = Assistido sozinho (oferta completa), F = cardápio com os 3 (parte de quem escolhe cada um)
+const MIX=__MIX__;
+function prodRates(c){
+  const on={dg:!!c.dgon,as:!!c.aon,pv:!!c.pvon};
+  const menu=PRODS.filter(k=>on[k]).length>=2;
+  const re=c.real/100;
+  const base=panelRate(c);
+  const r={dg:0,as:0,pv:0};
+  if(on.as)r.as=base*(menu?MIX.F.as/MIX.C:1)*re;
+  if(on.dg)r.dg=c.dgconv/100*(menu&&on.as?MIX.F.dg/MIX.E:1)*re;
+  if(on.pv)r.pv=c.pvconv/100*re;
+  const warm=base>0?panelRate(Object.assign({},c,{prova:true}))/base:1; // quem chega indicado já confia mais
+  return {on,menu,r,warm};
+}
 function simulate(c){
-  const rate=panelRate(c)*c.real/100;
-  const warm=Object.assign({},c,{prova:true});const rateWarm=panelRate(warm)*c.real/100; // quem chega indicado já confia mais
+  const pr=prodRates(c);
+  const rate=pr.r.dg+pr.r.as+pr.r.pv, rateWarm=rate*pr.warm;
   const months=[];let cash=c.cash-15000,beMonth=null,minCash=cash,outMonth=null;
-  const coh={dir:[],ind:[],ase:[]};const dur={dir:0,ind:c.pdur,ase:c.adur},com={dir:0,ind:c.pcom/100,ase:c.acom/100};
+  const coh={};CH.forEach(k=>PRODS.forEach(p=>coh[k+p]=[]));
+  const dur={dir:0,ind:c.pdur,ase:c.adur},com={dir:0,ind:c.pcom/100,ase:c.acom/100};
+  const price={dg:c.dgm,as:c.m,pv:c.pvm},churn={dg:c.dgchurn,as:c.churn,pv:c.pvchurn},gr={dg:c.dggr,as:c.agr,pv:c.pvgr},plan={dg:0,as:c.plan,pv:c.pvplan};
   for(let mo=1;mo<=HZ;mo++){
-    const ramp=mo===1?0.5:mo===2?0.75:1;
-    const g=Math.pow(1+c.growth/100,Math.floor((mo-1)/12));
+    const ramp=mo===1?0.5:mo===2?0.75:1, yi=Math.floor((mo-1)/12);
+    const g=Math.pow(1+c.growth/100,yi);
     const L={dir:(c.rede+(c.cpl>0?c.mkt/c.cpl:0))*ramp*g,ind:c.pleads*ramp*g,ase:c.aleads*ramp*g};
-    const R={dir:rate,ind:rateWarm,ase:rateWarm};
     let leads=0,diags=0,newSubs=0,lost=0,clients=0,rev=0,comm={ind:0,ase:0},byCh={};
+    const P={};PRODS.forEach(p=>P[p]={n:0,rev:0,ns:0,comm:0,diags:0});
     CH.forEach(k=>{
-      const buyers=L[k]*R[k];const d=c.diag?buyers:0;const ns=c.diag?buyers*c.conv/100:buyers;
-      coh[k].forEach(x=>{const l=x.n*c.churn/100;lost+=l;x.n-=l;x.age++});
-      coh[k].push({n:ns,age:0});
-      const n=coh[k].reduce((a,x)=>a+x.n,0);
-      const nCom=coh[k].reduce((a,x)=>a+(x.age<dur[k]?x.n:0),0);
-      const r=n*c.m+d*c.dprice;
-      if(k!=='dir')comm[k]=(nCom*c.m+d*c.dprice)*com[k];
-      leads+=L[k];diags+=d;newSubs+=ns;clients+=n;rev+=r;byCh[k]={n,rev:r,newSubs:ns};
+      let cn=0,cr=0,cns=0;
+      PRODS.forEach(p=>{
+        const rr=pr.r[p]*(k==='dir'?1:pr.warm)*Math.pow(1+gr[p]/100,yi);
+        const buyers=L[k]*rr;const isDiag=p==='as'&&c.diag;
+        const d=isDiag?buyers:0;const ns=isDiag?buyers*c.conv/100:buyers;
+        const C=coh[k+p];
+        C.forEach(x=>{const l=x.n*churn[p]/100;lost+=l;x.n-=l;x.age++});
+        C.push({n:ns,age:0});
+        const n=C.reduce((a,x)=>a+x.n,0);
+        const nCom=C.reduce((a,x)=>a+(x.age<dur[k]?x.n:0),0);
+        const r=n*price[p]+d*(isDiag?c.dprice:0);
+        const cm=k==='dir'?0:(nCom*price[p]+d*(isDiag?c.dprice:0))*com[k];
+        if(k!=='dir')comm[k]+=cm;
+        P[p].n+=n;P[p].rev+=r;P[p].ns+=ns;P[p].comm+=cm;P[p].diags+=d;
+        cn+=n;cr+=r;cns+=ns;diags+=d;newSubs+=ns;clients+=n;rev+=r;
+      });
+      leads+=L[k];byCh[k]={n:cn,rev:cr,newSubs:cns};
     });
-    const tm=team(clients,c);
-    const leadVar=rev*c.lead/100*leadShare(tm,c);
-    const planVar=rev*c.plan/100, taxFee=rev*(c.tax+3.5)/100;
+    const plAs=pr.on.as?Math.ceil(P.as.n/Math.max(1,c.cap)):0, plPv=pr.on.pv?Math.ceil(P.pv.n/Math.max(1,c.pvcap)):0;
+    const planners=Math.max(pr.on.as||pr.on.pv?1:0,plAs+plPv);
+    const tm={planners,leaders:Math.floor(planners/Math.max(1,c.span))};
+    const served=P.as.rev+P.pv.rev;
+    const ls=tm.planners>0?leadShare(tm,c):0;
+    const leadVar=served*c.lead/100*ls;
+    const tf=(c.tax+3.5)/100;
+    const planVar=P.as.rev*plan.as/100+P.pv.rev*plan.pv/100, taxFee=rev*tf;
     const commVar=comm.ind+comm.ase;
     const varCost=planVar+taxFee+leadVar+commVar;
     const tcost=teamCost(tm,c);
@@ -466,20 +531,26 @@ function simulate(c){
     if(beMonth===null&&profit>=0)beMonth=mo;
     cash+=profit;minCash=Math.min(minCash,cash);
     if(outMonth===null&&cash<0)outMonth=mo;
-    months.push({mo,leads,diags,newSubs,lost,clients,rev,varCost,planVar,leadVar,taxFee,indVar:comm.ind,aseVar:comm.ase,tcost,platform,ceo,mkt:c.mkt*g,fixed,profit,cash,planners:tm.planners,leaders:tm.leaders,
-      cDir:byCh.dir.n,cInd:byCh.ind.n,cAse:byCh.ase.n,rDir:byCh.dir.rev,rInd:byCh.ind.rev,rAse:byCh.ase.rev,nDir:byCh.dir.newSubs,nInd:byCh.ind.newSubs,nAse:byCh.ase.newSubs});
+    const m={mo,leads,diags,newSubs,lost,clients,rev,varCost,planVar,leadVar,taxFee,indVar:comm.ind,aseVar:comm.ase,tcost,platform,ceo,mkt:c.mkt*g,fixed,profit,cash,planners:tm.planners,leaders:tm.leaders,plAs,plPv,
+      mrr:PRODS.reduce((a,p)=>a+P[p].n*price[p],0),
+      cDir:byCh.dir.n,cInd:byCh.ind.n,cAse:byCh.ase.n,rDir:byCh.dir.rev,rInd:byCh.ind.rev,rAse:byCh.ase.rev,nDir:byCh.dir.newSubs,nInd:byCh.ind.newSubs,nAse:byCh.ase.newSubs};
+    PRODS.forEach(p=>{const lv=served>0&&p!=='dg'?leadVar*P[p].rev/served:0;
+      m['n_'+p]=P[p].n;m['r_'+p]=P[p].rev;m['ns_'+p]=P[p].ns;
+      m['k_'+p]=P[p].rev-P[p].rev*plan[p]/100-P[p].rev*tf-P[p].comm-lv;});
+    months.push(m);
   }
-  // break-even em clientes, com a equipe escalando e o peso médio das comissões do último ano
-  const ly=months.slice(48);const lrev=ly.reduce((a,x)=>a+x.rev,0)||1;const commShare=ly.reduce((a,x)=>a+x.indVar+x.aseVar,0)/lrev;
-  const unitVar=(c.plan+c.tax+3.5)/100+commShare;
-  const contrib=c.m*(1-unitVar);
+  // break-even em clientes, com o mix e a equipe do último ano
+  const ly=months.slice(48);const lrev=ly.reduce((a,x)=>a+x.rev,0)||1;const lcl=ly.reduce((a,x)=>a+x.clients,0)||1;
+  const arpu=lrev/lcl, unitVar=ly.reduce((a,x)=>a+x.varCost,0)/lrev, plPer=ly.reduce((a,x)=>a+x.planners,0)/lcl;
+  const contrib=arpu*(1-unitVar);
   let beClients=Infinity;
-  for(let n=1;n<=20000;n++){const tm=team(n,c);const pr=n*c.m*(1-unitVar-c.lead/100*leadShare(tm,c))-(platformCost(n,c)+c.mkt+c.other+c.ceo1+teamCost(tm,c));if(pr>=0){beClients=n;break}}
+  for(let n=1;n<=40000;n++){const pl=Math.max(1,Math.ceil(n*plPer));const tm={planners:pl,leaders:Math.floor(pl/Math.max(1,c.span))};const p=n*contrib-(platformCost(n,c)+c.mkt+c.other+c.ceo1+teamCost(tm,c));if(p>=0){beClients=n;break}}
   const keys=['rev','profit','varCost','planVar','leadVar','taxFee','indVar','aseVar','tcost','platform','ceo','mkt','newSubs','diags','rDir','rInd','rAse','nDir','nInd','nAse'];
+  PRODS.forEach(p=>keys.push('r_'+p,'ns_'+p,'k_'+p));
   const years=[];for(let y=0;y<HZ/12;y++){const ms=months.slice(y*12,y*12+12);const e=ms[11];const o={y:y+1};keys.forEach(k=>o[k]=ms.reduce((a,x)=>a+x[k],0));
-    Object.assign(o,{clients:e.clients,planners:e.planners,leaders:e.leaders,cash:e.cash,mrr:e.clients*c.m,cDir:e.cDir,cInd:e.cInd,cAse:e.cAse});years.push(o)}
+    Object.assign(o,{clients:e.clients,planners:e.planners,leaders:e.leaders,plAs:e.plAs,plPv:e.plPv,cash:e.cash,mrr:e.mrr,cDir:e.cDir,cInd:e.cInd,cAse:e.cAse,n_dg:e.n_dg,n_as:e.n_as,n_pv:e.n_pv});years.push(o)}
   const y1=years[0].profit;
-  return {rate,rateWarm,months,years,contrib,beClients,beMonth,minCash,outMonth,y1,panel:panelRate(c)};
+  return {rate,rateWarm,pr,months,years,contrib,beClients,beMonth,minCash,outMonth,y1,panel:panelRate(c)};
 }
 
 // ---- estado ----
@@ -491,7 +562,7 @@ try{const s=localStorage.getItem('profitto-cur');if(s)cur=Object.assign({},PRESE
 if(cur.lead>20)cur.lead=PRESETS.atual.lead;
 write(cur);
 
-const FMT={pleads:v=>v+' pessoas',pcom:v=>v+'% da receita',pdur:v=>v==60?'60 meses (sempre)':v+' meses',aleads:v=>v+' pessoas',acom:v=>v+'% da receita',adur:v=>v==60?'60 meses (sempre)':v+' meses',cap:v=>v+' clientes',pfix:v=>BRL(v),span:v=>v+' planejadores',lead:v=>String(v).replace('.',',')+'%',perprof:v=>BRL(v),other:v=>BRL(v),growth:v=>v+'%',m:v=>BRL(v)+'/mês',dprice:v=>v==0?'grátis':BRL(v),rede:v=>v+' pessoas',mkt:v=>BRL(v),cpl:v=>BRL(v),real:v=>v+'%',conv:v=>v+'%',churn:v=>String(v).replace('.',',')+'%',ceo1:v=>BRL(v),ceo2:v=>BRL(v),plan:v=>v+'%',tax:v=>String(v).replace('.',',')+'%',pmt:v=>BRL(v),cash:v=>BRL(v)};
+const FMT={dgm:v=>BRL(v)+'/mês',dgconv:v=>String(v).replace('.',',')+'%',dgchurn:v=>String(v).replace('.',',')+'%',dggr:v=>(v>0?'+':'')+v+'%',agr:v=>(v>0?'+':'')+v+'%',pvm:v=>BRL(v)+'/mês',pvconv:v=>String(v).replace('.',',')+'%',pvchurn:v=>String(v).replace('.',',')+'%',pvplan:v=>v+'%',pvcap:v=>v+' clientes',pvgr:v=>(v>0?'+':'')+v+'%',pleads:v=>v+' pessoas',pcom:v=>v+'% da receita',pdur:v=>v==60?'60 meses (sempre)':v+' meses',aleads:v=>v+' pessoas',acom:v=>v+'% da receita',adur:v=>v==60?'60 meses (sempre)':v+' meses',cap:v=>v+' clientes',pfix:v=>BRL(v),span:v=>v+' planejadores',lead:v=>String(v).replace('.',',')+'%',perprof:v=>BRL(v),other:v=>BRL(v),growth:v=>v+'%',m:v=>BRL(v)+'/mês',dprice:v=>v==0?'grátis':BRL(v),rede:v=>v+' pessoas',mkt:v=>BRL(v),cpl:v=>BRL(v),real:v=>v+'%',conv:v=>v+'%',churn:v=>String(v).replace('.',',')+'%',ceo1:v=>BRL(v),ceo2:v=>BRL(v),plan:v=>v+'%',tax:v=>String(v).replace('.',',')+'%',pmt:v=>BRL(v),cash:v=>BRL(v)};
 
 function delta(a,b,higherBetter,fmt){
   const d=a-b; const eps=Math.max(Math.abs(b)*0.005,0.0001);
@@ -507,7 +578,7 @@ function plannerBox(r,c){
   const pts=[[1,'mês 1'],[12,'mês 12'],[24,'ano 2'],[36,'ano 3'],[48,'ano 4'],[60,'ano 5']];
   $('pbox').innerHTML=pts.map(([m,l])=>{const x=r.months[m-1];return `<div><b>${x.planners}</b><span>${l}</span></div>`}).join('');
   const x=r.months[59];
-  $('pbox-note').textContent='Arredondado para cima: clientes ativos ÷ '+c.cap+'. No ano 5: '+Math.round(x.clients).toLocaleString('pt-BR')+' clientes, '+x.planners+' planejador(es) e '+x.leaders+' líder(es).';
+  $('pbox-note').textContent='Arredondado para cima: clientes do Assistido ÷ '+c.cap+(c.pvon?' + clientes do Private ÷ '+c.pvcap:'')+'. O Digital não usa planejador. No ano 5: '+Math.round(x.clients).toLocaleString('pt-BR')+' clientes, '+x.planners+' planejador(es) e '+x.leaders+' líder(es).';
   $('ceo-note').textContent=r.beMonth?'Neste cenário a troca acontece no mês '+r.beMonth+', o primeiro com receita ≥ todos os custos. Daí em diante a retirada é paga pelo lucro.':'Neste cenário a empresa não chega a dar lucro em 60 meses, então só vale a retirada de cima.';
 }
 function kpis(r,R,c){
@@ -623,7 +694,7 @@ function yearsChart(r,R){
    row('Novos assinantes no ano',yy=>Math.round(yy.newSubs).toLocaleString('pt-BR'))+
    row('MRR no fim do ano',yy=>BRL(yy.mrr))+
    row('Receita',yy=>BRL(yy.rev))+
-   row('Planejadores ('+cur.plan+'% da receita)',yy=>BRL(-yy.planVar))+
+   row('Planejadores (Assistido '+cur.plan+'%'+(cur.pvon?', Private '+cur.pvplan+'%':'')+' da receita)',yy=>BRL(-yy.planVar))+
    row('Líderes de time ('+String(cur.lead).replace('.',',')+'% da receita do time)',yy=>BRL(-yy.leadVar))+
    row('Indicadores ('+cur.pcom+'% por '+cur.pdur+' meses)',yy=>BRL(-yy.indVar))+
    row('Assessores ('+cur.acom+'% por '+cur.adur+' meses)',yy=>BRL(-yy.aseVar))+
@@ -652,12 +723,52 @@ function channels(r){
   const y=r.years[+$('split-year').value];
   const rows=[['Direto (rede + marketing)',y.nDir,y.cDir,y.rDir,0,r.rate],['Indicadores',y.nInd,y.cInd,y.rInd,y.indVar,r.rateWarm],['Assessores',y.nAse,y.cAse,y.rAse,y.aseVar,r.rateWarm]];
   $('ch-note').textContent='Ano '+y.y+' · conversão do painel: direto '+(r.rate*100).toFixed(1).replace('.',',')+'%, indicado '+(r.rateWarm*100).toFixed(1).replace('.',',')+'%';
-  $('tbl-ch').innerHTML='<tr><th>Canal</th><th class="n">Novos assinantes no ano</th><th class="n">Clientes no fim do ano</th><th class="n">Receita no ano</th><th class="n">Percentual pago</th><th class="n">Fica para a empresa</th></tr>'+rows.map(([n,ns,cl,rv,cm])=>`<tr><td>${n}</td><td class="n">${Math.round(ns)}</td><td class="n">${Math.round(cl)}</td><td class="n">${BRL(rv)}</td><td class="n">${BRL(cm)}</td><td class="n">${rv>0?pct((rv-cm-rv*(cur.plan+cur.tax+3.5)/100)/rv):'—'}</td></tr>`).join('');
+  $('tbl-ch').innerHTML='<tr><th>Canal</th><th class="n">Novos assinantes no ano</th><th class="n">Clientes no fim do ano</th><th class="n">Receita no ano</th><th class="n">Percentual pago</th><th class="n">Fica para a empresa</th></tr>'+rows.map(([n,ns,cl,rv,cm])=>`<tr><td>${n}</td><td class="n">${Math.round(ns)}</td><td class="n">${Math.round(cl)}</td><td class="n">${BRL(rv)}</td><td class="n">${BRL(cm)}</td><td class="n">${rv>0&&y.rev>0?pct((rv-cm-rv*(y.planVar+y.leadVar+y.taxFee)/y.rev)/rv):'—'}</td></tr>`).join('');
 }
 $('split-year').addEventListener('change',()=>lastR&&channels(lastR));
 function monthTable(r){
   const rows=r.months.filter(m=>[1,2,3,6,9,12,18,24,36,48,60].includes(m.mo));
   $('tbl-month').innerHTML='<tr><th>Mês</th><th class="n">Interessados</th><th class="n">Diagnósticos</th><th class="n">Novos</th><th class="n">Clientes</th><th class="n">Equipe</th><th class="n">Receita</th><th class="n">Resultado</th><th class="n">Caixa</th></tr>'+rows.map(m=>`<tr><td>${m.mo}</td><td class="n">${Math.round(m.leads)}</td><td class="n">${m.diags.toFixed(1)}</td><td class="n">${m.newSubs.toFixed(1)}</td><td class="n">${Math.round(m.clients)}</td><td class="n">${m.planners}+${m.leaders}</td><td class="n">${BRL(m.rev)}</td><td class="n" style="color:${m.profit<0?'var(--bad)':'var(--good)'}">${BRL(m.profit)}</td><td class="n" style="color:${m.cash<0?'var(--bad)':'inherit'}">${BRL(m.cash)}</td></tr>`).join('');
+}
+function multiLine(svg,series,cols,fmtTip){
+  const Wd=760,H=240,l=60,r=14,t=12,b=26,iw=Wd-l-r,ih=H-t-b;const N=HZ;
+  const hi=Math.max(1,...series.flat());const raw=hi/5,pw=Math.pow(10,Math.floor(Math.log10(raw))),nn=raw/pw,step=(nn<=1?1:nn<=2?2:nn<=2.5?2.5:nn<=5?5:10)*pw;const mx=Math.ceil(hi/step)*step;
+  const x=i=>l+iw*i/(N-1),y=v=>t+ih*(1-v/mx);
+  let s='<g class="grid">';for(let v=0;v<=mx+step/2;v+=step)s+=`<line x1="${l}" x2="${Wd-r}" y1="${y(v)}" y2="${y(v)}"/><text x="${l-6}" y="${y(v)+4}" text-anchor="end">${Math.round(v).toLocaleString('pt-BR')}</text>`;s+='</g>';
+  [1,12,24,36,48,60].forEach(m=>{s+=`<text x="${x(m-1)}" y="${H-8}" text-anchor="middle">${m===1?'mês 1':'ano '+(m/12)}</text>`});
+  series.forEach((sr,j)=>{if(!sr.some(v=>v>0))return;s+=`<path d="${sr.map((v,i)=>(i?'L':'M')+x(i).toFixed(1)+' '+y(v).toFixed(1)).join(' ')}" fill="none" stroke="${cols[j]}" stroke-width="2"/><circle cx="${x(N-1)}" cy="${y(sr[N-1])}" r="4" fill="${cols[j]}" stroke="var(--surface)" stroke-width="2"/>`});
+  s+=`<line id="${svg.id}-x" y1="${t}" y2="${t+ih}" stroke="var(--muted)" stroke-width="1" opacity="0"/><rect x="${l}" y="${t}" width="${iw}" height="${ih}" fill="transparent" id="${svg.id}-hit"/>`;
+  svg.innerHTML=s;
+  const hit=svg.querySelector('#'+svg.id+'-hit'),cross=svg.querySelector('#'+svg.id+'-x');
+  hit.addEventListener('pointermove',e=>{const pt=svg.getBoundingClientRect();const sx=(e.clientX-pt.left)/pt.width*Wd;const i=Math.max(0,Math.min(N-1,Math.round((sx-l)/iw*(N-1))));cross.setAttribute('x1',x(i));cross.setAttribute('x2',x(i));cross.setAttribute('opacity','.5');showTip(e,fmtTip(i))});
+  hit.addEventListener('pointerleave',()=>{cross.setAttribute('opacity','0');hideTip()});
+}
+function products(r,c){
+  const pr=r.pr,on=pr.on;
+  const pc=v=>(v*100).toFixed(1).replace('.',',')+'%';
+  $('prod-note').textContent=pr.menu?'Cardápio: '+PRODS.filter(p=>on[p]).length+' produtos ligados':'Um produto só';
+  $('dg-info').textContent=on.dg?'Converte '+pc(pr.r.dg)+' dos interessados diretos, já com o desconto de realismo'+(pr.menu&&on.as?' e a escolha do cardápio.':'.'):'Desligado.';
+  $('as-info').textContent=on.as?'Converte '+pc(pr.r.as)+' (modelo dos 1.000 compradores com as alavancas'+(pr.menu?' × escolha do cardápio':'')+', com desconto de realismo).':'Desligado.';
+  $('pv-info').textContent=on.pv?'Converte '+pc(pr.r.pv)+' dos interessados, com desconto de realismo. Planejadores sênior no ano 5: '+r.years[4].plPv+'.':'Desligado.';
+  const ms=r.months;
+  multiLine($('ch-prod'),PRODS.map(p=>ms.map(m=>m['n_'+p])),PRODS.map(p=>PCOL[p]),i=>`<b>Mês ${i+1}</b>`+PRODS.filter(p=>on[p]).map(p=>`<br>${PNAME[p]}: ${Math.round(ms[i]['n_'+p])} clientes · ${BRL(ms[i]['r_'+p])}/mês`).join(''));
+  const ys=r.years;const act=PRODS.filter(p=>on[p]);
+  const hd='<tr><th>Produto</th><th></th>'+ys.map(y=>`<th class="n">Ano ${y.y}</th>`).join('')+'</tr>';
+  const gr=(a,b)=>b>0?((a/b-1)*100).toFixed(0)+'%':'—';
+  let body='';
+  act.forEach(p=>{
+    const rows=[
+      ['Clientes no fim do ano',y=>Math.round(y['n_'+p]).toLocaleString('pt-BR')],
+      ['Novos clientes no ano',y=>Math.round(y['ns_'+p]).toLocaleString('pt-BR')],
+      ['Receita no ano',y=>BRL(y['r_'+p])],
+      ['Crescimento da receita',(y,i)=>i?gr(y['r_'+p],ys[i-1]['r_'+p]):'—'],
+      ['Contribuição (depois de planejador, líder, comissões e impostos)',y=>BRL(y['k_'+p])+(y['r_'+p]>0?' ('+pct(y['k_'+p]/y['r_'+p])+')':'')],
+      ['Parte da receita total',y=>y.rev>0?pct(y['r_'+p]/y.rev):'—']];
+    if(p==='as')rows.push(['Planejadores',y=>y.plAs]);
+    if(p==='pv')rows.push(['Planejadores sênior',y=>y.plPv]);
+    body+=rows.map(([lab,f],j)=>`<tr>${j===0?`<td rowspan="${rows.length}" style="border-left:3px solid ${PCOL[p]}"><b>${PNAME[p]}</b></td>`:''}<td>${lab}</td>${ys.map((y,i)=>`<td class="n">${f(y,i)}</td>`).join('')}</tr>`).join('');
+  });
+  $('tbl-prod').innerHTML=act.length?hd+body:'<tr><td>Nenhum produto ligado.</td></tr>';
 }
 function update(){
   const c=read();cur=c;
@@ -665,12 +776,12 @@ function update(){
   Object.keys(FMT).forEach(k=>{$('o-'+k).textContent=FMT[k](c[k])});
   $('dprice-wrap').style.opacity=c.diag?1:.4;$('dprice').disabled=!c.diag;
   const r=simulate(c),R=simulate(ref);
-  kpis(r,R,c);plannerBox(r,c);
+  kpis(r,R,c);plannerBox(r,c);products(r,c);
   lineChart($('ch-clients'),r.months.map(m=>m.clients),R.months.map(m=>m.clients),{ref:r.beClients,fmt:v=>Math.round(v),fmtTip:v=>Math.round(v)+' clientes'});
   lineChart($('ch-cash'),r.months.map(m=>m.cash),R.months.map(m=>m.cash),{fmt:BRLk,fmtTip:BRL});
   yearsChart(r,R);split(r);channels(r);dots(c);leverRank(c);renderPick(c);monthTable(r);
 }
-document.querySelectorAll('aside input').forEach(el=>el.addEventListener('input',()=>{$('preset').value='';update()}));
+document.querySelectorAll('aside input, #prod-card input').forEach(el=>el.addEventListener('input',()=>{$('preset').value='';update()}));
 $('preset').addEventListener('change',e=>{if(!e.target.value)return;write(PRESETS[e.target.value]);update()});
 $('save').addEventListener('click',()=>{ref=read();try{localStorage.setItem('profitto-ref',JSON.stringify(ref))}catch(e){}$('save').textContent='Referência salva';setTimeout(()=>$('save').textContent='Salvar como referência',1500);update()});
 $('reset').addEventListener('click',()=>{write(PRESETS.atual);ref=Object.assign({},PRESETS.atual);try{localStorage.setItem('profitto-ref',JSON.stringify(ref))}catch(e){}update()});

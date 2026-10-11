@@ -1,0 +1,16 @@
+{
+  "id": "P080",
+  "buys": true,
+  "product": "assistido",
+  "assistido_continua": false,
+  "product_priced": "assistido",
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Ajudo meus pais todo mês e com 67 anos preciso pensar em sucessão e no que sobra; os influenciadores que eu sigo vivem dizendo que o gerente do banco empurra produto. R$ 197 para uma opinião independente é pouco, depois vejo se continuo.",
+  "objection": "Meu gerente já me atende de graça; não sei se vale pagar mensalidade depois do diagnóstico.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 100,
+  "price_cheap": 197,
+  "price_expensive": 600,
+  "price_too_expensive": 1500
+}

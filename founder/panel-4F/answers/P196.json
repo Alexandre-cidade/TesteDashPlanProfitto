@@ -1,0 +1,16 @@
+{
+  "id": "P196",
+  "buys": false,
+  "product": "nenhum",
+  "assistido_continua": false,
+  "product_priced": "assistido",
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "Até acho o diagnóstico interessante para organizar a aposentadoria, mas esse mês está corrido; vou salvar o link e ver no mês que vem, como sempre.",
+  "objection": "Depois do diagnóstico e das primeiras reuniões, não sei o que muda no mês seguinte que justifique R$ 297 todo mês.",
+  "would_change_my_mind": "Um prazo real, tipo vaga limitada ou desconto que acaba esta semana, e o planejador já marcando a primeira conversa por mim.",
+  "price_too_cheap": 60,
+  "price_cheap": 150,
+  "price_expensive": 300,
+  "price_too_expensive": 500
+}

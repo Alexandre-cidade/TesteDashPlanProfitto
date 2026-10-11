@@ -1,0 +1,13 @@
+{
+  "id": "P164",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Gosto que eles não vendem produto nem ganham comissão, e o controle de assinaturas e compras por impulso é justamente meu problema. Eu provavelmente assino no embalo e pago pelo menos o primeiro mês, mesmo que depois cancele.",
+  "objection": "Tenho medo de virar mais uma assinatura que eu pago e esqueço, justamente o que eu quero cortar.",
+  "would_change_my_mind": "Se no período grátis o app pedir muita coisa trabalhosa para lançar gasto, eu desisto antes de pagar.",
+  "price_too_cheap": 9,
+  "price_cheap": 25,
+  "price_expensive": 49,
+  "price_too_expensive": 79
+}

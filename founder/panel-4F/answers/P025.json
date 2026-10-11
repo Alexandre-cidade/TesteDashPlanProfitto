@@ -1,0 +1,16 @@
+{
+  "id": "P025",
+  "buys": false,
+  "product": "nenhum",
+  "assistido_continua": false,
+  "product_priced": "assistido",
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "Sei que eu e meu marido precisamos organizar, a sessão com o casal até chamou atenção, mas vou deixar para o mês que vem como sempre. E meu gerente já me dá umas dicas de graça.",
+  "objection": "Pagar e virar mais uma briga em casa sobre dinheiro, e achar que o gerente do banco já resolve isso sem custo.",
+  "would_change_my_mind": "Uma data limite real, tipo uma promoção que acaba, ou meu cônjuge propor contratar junto.",
+  "price_too_cheap": 60,
+  "price_cheap": 120,
+  "price_expensive": 250,
+  "price_too_expensive": 400
+}

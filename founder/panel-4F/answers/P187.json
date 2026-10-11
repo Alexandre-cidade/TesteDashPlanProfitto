@@ -1,0 +1,16 @@
+{
+  "id": "P187",
+  "buys": false,
+  "product": "nenhum",
+  "assistido_continua": false,
+  "product_priced": "digital",
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Não conheço ninguém que use, e só contrato por indicação; além disso parece coisa para quem tem muito dinheiro, e eu não aguento mais reunião por vídeo.",
+  "objection": "Não sei se vale para uma família normal como a minha ou se é só para rico.",
+  "would_change_my_mind": "Um amigo ou colega com filhos me indicar e dizer que valeu a pena.",
+  "price_too_cheap": 15,
+  "price_cheap": 30,
+  "price_expensive": 60,
+  "price_too_expensive": 100
+}

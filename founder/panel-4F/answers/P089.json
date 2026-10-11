@@ -1,0 +1,16 @@
+{
+  "id": "P089",
+  "buys": false,
+  "product": "nenhum",
+  "assistido_continua": false,
+  "product_priced": "assistido",
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Meu gerente do banco já me orienta há anos e não cobra nada. Não vejo por que pagar uma empresa que eu não conheço pra fazer a mesma coisa.",
+  "objection": "Meu gerente já faz isso de graça.",
+  "would_change_my_mind": "Descobrir que o gerente me empurrou produto ruim e cheio de taxa; aí o raio-X das tarifas poderia valer.",
+  "price_too_cheap": 50,
+  "price_cheap": 90,
+  "price_expensive": 150,
+  "price_too_expensive": 250
+}

@@ -1,0 +1,16 @@
+{
+  "id": "P135",
+  "buys": false,
+  "product": "nenhum",
+  "assistido_continua": false,
+  "product_priced": "digital",
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Não tenho tempo para reunião nenhuma, então só o Digital faria sentido, mas já existem apps de controle de gastos de graça ou por R$ 10. R$ 49 por mês é caro para um app.",
+  "objection": "Não vejo diferença clara entre esse app e os gratuitos que já existem.",
+  "would_change_my_mind": "Se o Digital custasse até uns R$ 20 por mês, eu testaria depois dos 7 dias grátis.",
+  "price_too_cheap": 9,
+  "price_cheap": 19,
+  "price_expensive": 35,
+  "price_too_expensive": 59
+}

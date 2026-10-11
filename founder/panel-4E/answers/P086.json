@@ -1,0 +1,13 @@
+{
+  "id": "P086",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Eu já invisto sozinho pela corretora e vídeo sobre reserva e Tesouro é coisa que eu já sei. Com renda variável, pagar R$ 49 fixo todo mês por um app de gastos não faz sentido para mim.",
+  "objection": "Parece feito para quem tem salário fixo e está começando, não para MEI que já se vira.",
+  "would_change_my_mind": "Uma parte específica para renda variável de autônomo, tipo separar quanto tirar por mês e quanto guardar para os meses fracos.",
+  "price_too_cheap": 8,
+  "price_cheap": 15,
+  "price_expensive": 35,
+  "price_too_expensive": 55
+}

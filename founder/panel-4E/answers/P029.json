@@ -1,0 +1,13 @@
+{
+  "id": "P029",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Uma planilha resolve o que eu preciso, não vou pagar mensalidade para isso. E só contrato o que alguém de confiança me indicou, o que não é o caso.",
+  "objection": "Pagar todo mês por algo que eu faço de graça na planilha, de uma empresa que ninguém me recomendou.",
+  "would_change_my_mind": "Uma amiga de confiança me mostrando que usa e que ganhou algo que a planilha não dá.",
+  "price_too_cheap": 9,
+  "price_cheap": 19,
+  "price_expensive": 39,
+  "price_too_expensive": 69
+}

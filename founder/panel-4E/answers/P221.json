@@ -1,0 +1,13 @@
+{
+  "id": "P221",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Tenho uma decisão grande para resolver agora e quero ajuda pontual, não uma assinatura de controle de gastos. Para o resto, minha planilha resolve.",
+  "objection": "Não preciso de mais uma mensalidade, preciso de uma resposta para uma decisão específica.",
+  "would_change_my_mind": "Uma consulta avulsa sobre a decisão, paga uma vez.",
+  "price_too_cheap": 19,
+  "price_cheap": 39,
+  "price_expensive": 99,
+  "price_too_expensive": 200
+}

@@ -1,0 +1,16 @@
+{
+  "id": "P085",
+  "buys": false,
+  "product": "nenhum",
+  "assistido_continua": false,
+  "product_priced": "assistido",
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "A sessão com o casal até chamou minha atenção, porque a gente sempre briga por dinheiro, mas ninguém me indicou e eu não contrato assim. E acho caro pagar pra ouvir que temos que gastar menos.",
+  "objection": "Não conheço ninguém que fez, e meu marido vai dizer que é dinheiro jogado fora.",
+  "would_change_my_mind": "Um casal amigo contar que fez o diagnóstico e parou de brigar por dinheiro.",
+  "price_too_cheap": 50,
+  "price_cheap": 100,
+  "price_expensive": 197,
+  "price_too_expensive": 300
+}

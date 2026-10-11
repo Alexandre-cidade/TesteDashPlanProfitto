@@ -1,0 +1,13 @@
+{
+  "id": "P212",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Meu problema é a mistura de PF e PJ e o dinheiro que mando para os meus pais, e isso aqui é um app de controle de gastos pessoal com vídeos que eu já vejo de graça no YouTube.",
+  "objection": "Não vejo nada sobre empresa, pró-labore ou separar as contas, então não resolve o que me aperta.",
+  "would_change_my_mind": "Uma trilha ou ferramenta específica para separar PF e PJ e definir pró-labore.",
+  "price_too_cheap": 15,
+  "price_cheap": 39,
+  "price_expensive": 99,
+  "price_too_expensive": 150
+}

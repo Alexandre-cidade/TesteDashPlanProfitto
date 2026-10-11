@@ -1,0 +1,16 @@
+{
+  "id": "P130",
+  "buys": false,
+  "product": "nenhum",
+  "assistido_continua": false,
+  "product_priced": "assistido",
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Uma planilha resolve, e qualquer gasto fixo passa pela minha mulher, que cuida do dinheiro e não vai querer mais uma mensalidade. Não decido isso sozinho numa semana normal.",
+  "objection": "Pagar todo mês por algo que meu contador e uma planilha já fazem, mesmo com PF e PJ meio misturadas.",
+  "would_change_my_mind": "Se minha mulher visse valor e propusesse, talvez começando só pelo diagnóstico online para separar PF e PJ.",
+  "price_too_cheap": 100,
+  "price_cheap": 197,
+  "price_expensive": 500,
+  "price_too_expensive": 1000
+}

@@ -1,0 +1,16 @@
+{
+  "id": "P049",
+  "buys": false,
+  "product": "nenhum",
+  "assistido_continua": false,
+  "product_priced": "private",
+  "purchases_first_month": 0,
+  "reason_code": "convenience",
+  "reason": "Sucessão e previdência me interessam, mas reunião quinzenal é a última coisa que eu quero depois de uma semana inteira de vídeo. E app eu já larguei.",
+  "objection": "Não tenho tempo nem paciência para mais reuniões, e não conheço essa empresa de Porto Alegre.",
+  "would_change_my_mind": "Uma versão só de sucessão e imposto, resolvida por escrito com poucas reuniões e alguém recomendado pelo meu contador.",
+  "price_too_cheap": 300,
+  "price_cheap": 600,
+  "price_expensive": 1200,
+  "price_too_expensive": 2000
+}

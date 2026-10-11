@@ -1,0 +1,16 @@
+{
+  "id": "P096",
+  "buys": true,
+  "product": "digital",
+  "assistido_continua": false,
+  "product_priced": "digital",
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "O cheque especial está rodando e eu nem sei para onde foi o aumento, preciso enxergar isso. R$ 197 ou R$ 297 para alguém me dizer para gastar menos eu não pago agora, mas R$ 49 com trilha de dívidas eu testo.",
+  "objection": "Medo de pagar mais uma assinatura quando o problema é justamente assinatura e cartão demais.",
+  "would_change_my_mind": "Se nos 7 dias grátis eu não sentir que a trilha de dívidas me dá um plano concreto, cancelo.",
+  "price_too_cheap": 10,
+  "price_cheap": 25,
+  "price_expensive": 49,
+  "price_too_expensive": 79
+}

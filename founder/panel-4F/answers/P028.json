@@ -1,0 +1,16 @@
+{
+  "id": "P028",
+  "buys": false,
+  "product": "nenhum",
+  "assistido_continua": false,
+  "product_priced": "private",
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Controlo tudo na minha planilha há anos e não preciso pagar alguém para isso. A parte de sucessão e previdência até interessa, mas R$ 1.500 por mês é muito para o que eu já faço sozinho.",
+  "objection": "Como sei que o planejador é bom? E colocar um terceiro no meio das conversas com minha esposa pode piorar as discussões.",
+  "would_change_my_mind": "Um planejador indicado por alguém que eu conheço, com proposta só de sucessão e previdência, pontual e não mensal.",
+  "price_too_cheap": 400,
+  "price_cheap": 700,
+  "price_expensive": 1200,
+  "price_too_expensive": 2000
+}

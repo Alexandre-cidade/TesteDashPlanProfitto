@@ -1,0 +1,16 @@
+{
+  "id": "P001",
+  "buys": false,
+  "product": "nenhum",
+  "assistido_continua": false,
+  "product_priced": "digital",
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Nunca ouvi falar da Profitto e não vou colocar todas as minhas contas num app de uma empresa de Porto Alegre que não conheço. E já larguei o Mobills, que era de graça; pagar R$ 49 por mais um app parece dinheiro jogado fora.",
+  "objection": "Não sei quem está por trás nem o que fazem com os meus dados bancários, e provavelmente eu largaria em um mês igual fiz com os outros apps.",
+  "would_change_my_mind": "Uma amiga que usa e confia, e saber claramente que não preciso conectar a minha conta do banco.",
+  "price_too_cheap": 9,
+  "price_cheap": 19,
+  "price_expensive": 39,
+  "price_too_expensive": 59
+}

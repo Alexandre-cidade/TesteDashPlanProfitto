@@ -1,0 +1,16 @@
+{
+  "id": "P007",
+  "buys": true,
+  "product": "assistido",
+  "assistido_continua": false,
+  "product_priced": "assistido",
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Tenho um objetivo concreto e já sei que app eu largo, mas aqui é uma pessoa que analisa e me entrega o plano escrito. R$ 197 com devolução é barato para ver se presta.",
+  "objection": "Medo de pagar a mensalidade e não seguir; por isso só faço o diagnóstico e decido depois de ver o plano.",
+  "would_change_my_mind": "Para seguir nos R$ 297: o plano ser específico para o meu objetivo e o planejador cobrar de mim, não eu ter que lembrar.",
+  "price_too_cheap": 120,
+  "price_cheap": 200,
+  "price_expensive": 450,
+  "price_too_expensive": 900
+}

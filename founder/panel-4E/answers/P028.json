@@ -1,0 +1,13 @@
+{
+  "id": "P028",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "convenience",
+  "reason": "Finalmente algo 100% online sem eu ter que falar com ninguém, e com renda variável de MEI eu preciso de metas e alerta por mês. Se o Reclame Aqui não mostrar nada grave e o cancelamento pelo app for de verdade, pago o primeiro mês para ver.",
+  "objection": "Se no Reclame Aqui aparecer gente reclamando de cobrança depois de cancelar, eu nem começo o teste.",
+  "would_change_my_mind": "Reclamações no Reclame Aqui de cobrança indevida ou cancelamento travado.",
+  "price_too_cheap": 12,
+  "price_cheap": 29,
+  "price_expensive": 69,
+  "price_too_expensive": 99
+}

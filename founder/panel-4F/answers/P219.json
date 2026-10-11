@@ -1,0 +1,16 @@
+{
+  "id": "P219",
+  "buys": true,
+  "product": "assistido",
+  "assistido_continua": false,
+  "product_priced": "assistido",
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Acabei de me divorciar e preciso reorganizar tudo rápido com alguém que não me venda produto; já perdi dinheiro com dica. O diagnóstico de R$ 197 com plano por escrito resolve o que eu preciso agora.",
+  "objection": "Não quero ficar preso numa mensalidade depois; quero só o plano e seguir sozinho.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 80,
+  "price_cheap": 150,
+  "price_expensive": 300,
+  "price_too_expensive": 500
+}

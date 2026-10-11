@@ -1,0 +1,16 @@
+{
+  "id": "P225",
+  "buys": false,
+  "product": "nenhum",
+  "assistido_continua": false,
+  "product_priced": "digital",
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Deixo as decisões com meu gerente, que não me cobra nada. Com renda variável, não quero mais uma mensalidade.",
+  "objection": "Depois do começo, o que muda de verdade no mês seguinte? Pra mim parece que vira só mais um gasto fixo.",
+  "would_change_my_mind": "Ver de forma concreta onde foi parar o dinheiro do aumento, logo no primeiro uso grátis.",
+  "price_too_cheap": 9,
+  "price_cheap": 19,
+  "price_expensive": 39,
+  "price_too_expensive": 59
+}

@@ -1,0 +1,16 @@
+{
+  "id": "P097",
+  "buys": true,
+  "product": "assistido",
+  "assistido_continua": false,
+  "product_priced": "assistido",
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Tenho uma decisão grande para tomar agora e quero alguém de fora olhando tudo uma vez. Pagamento único, sem comissão e com devolução se vier genérico, isso eu aceito; mensalidade eu não quero.",
+  "objection": "Tenho medo de que no fim o diagnóstico vire uma conversa para me empurrar a mensalidade de R$ 297.",
+  "would_change_my_mind": "Se na primeira conversa eu sentir que estão me vendendo produto ou plano mensal, peço o dinheiro de volta.",
+  "price_too_cheap": 80,
+  "price_cheap": 150,
+  "price_expensive": 300,
+  "price_too_expensive": 500
+}

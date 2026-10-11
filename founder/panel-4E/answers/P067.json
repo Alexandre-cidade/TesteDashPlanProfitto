@@ -1,0 +1,13 @@
+{
+  "id": "P067",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Estou com cartão e cheque especial rodando, R$ 49 por mês agora é dinheiro que falta. A trilha para sair da dívida parece boa, mas vou tentar renegociar com o gerente primeiro.",
+  "objection": "Pagar mais uma mensalidade justo quando o dinheiro está curto.",
+  "would_change_my_mind": "Um preço bem menor, tipo R$ 19, ou só pagar depois de sair do vermelho.",
+  "price_too_cheap": 5,
+  "price_cheap": 15,
+  "price_expensive": 30,
+  "price_too_expensive": 49
+}

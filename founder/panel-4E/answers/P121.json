@@ -1,0 +1,13 @@
+{
+  "id": "P121",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Quem cuida do meu dinheiro é meu gerente e meu assessor, não cobram nada e eu não tenho tempo de ficar mexendo em app entre um paciente e outro.",
+  "objection": "Pagar todo mês para fazer sozinha uma coisa que já fazem por mim de graça.",
+  "would_change_my_mind": "Se meu assessor ou um colega médico me mostrasse que o plano dele me fez ganhar algo que o banco não fez.",
+  "price_too_cheap": 10,
+  "price_cheap": 29,
+  "price_expensive": 99,
+  "price_too_expensive": 150
+}

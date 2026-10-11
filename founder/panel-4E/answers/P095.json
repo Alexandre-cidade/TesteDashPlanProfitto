@@ -1,0 +1,13 @@
+{
+  "id": "P095",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Minha planilha já faz isso e eu sei onde está cada real. O meu problema é PF e PJ misturadas, e isso aí não fala nada de empresa.",
+  "objection": "Ia pagar e não usar, como já aconteceu com app antes; e não resolve a parte da empresa.",
+  "would_change_my_mind": "Se separasse e organizasse PF e PJ juntas, com pró-labore e retirada.",
+  "price_too_cheap": 15,
+  "price_cheap": 30,
+  "price_expensive": 70,
+  "price_too_expensive": 120
+}

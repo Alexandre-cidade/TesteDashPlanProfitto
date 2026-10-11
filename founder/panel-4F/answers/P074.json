@@ -1,0 +1,16 @@
+{
+  "id": "P074",
+  "buys": true,
+  "product": "assistido",
+  "assistido_continua": false,
+  "product_priced": "assistido",
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Depois de perder dinheiro numa dica de investimento e com a gente planejando filhos, um diagnóstico de R$ 197 com sessão para o casal, sem ninguém vendendo produto e com devolução se for genérico, vale o risco. Mensalidade de R$ 297 já acho caro demais.",
+  "objection": "Pagar caro para alguém só me dizer para gastar menos; se o plano vier com obviedades, vou pedir o dinheiro de volta.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 60,
+  "price_cheap": 120,
+  "price_expensive": 250,
+  "price_too_expensive": 400
+}

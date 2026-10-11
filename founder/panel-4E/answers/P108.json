@@ -1,0 +1,13 @@
+{
+  "id": "P108",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "convenience",
+  "reason": "Na hora eu assinaria, gosto da ideia de um plano escrito e de alertas de gastos. Provavelmente esqueço de cancelar nos 7 dias e pago o primeiro mês, depois vejo se continuo.",
+  "objection": "Meu gerente já me orienta de graça, então acho que vou acabar cancelando depois do primeiro mês.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 15,
+  "price_cheap": 29,
+  "price_expensive": 79,
+  "price_too_expensive": 150
+}

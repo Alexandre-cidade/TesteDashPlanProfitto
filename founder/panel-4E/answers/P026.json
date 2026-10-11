@@ -1,0 +1,13 @@
+{
+  "id": "P026",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Para o controle de gastos funcionar eu teria que botar todas as minhas contas na mão de uma empresa que nunca ouvi falar, e ninguém de confiança me indicou. Não faço isso.",
+  "objection": "Não sei quem está por trás, como guardam meus dados, e não tenho nenhum colega que use para me garantir.",
+  "would_change_my_mind": "Indicação de um colega de confiança que já use, mais clareza sobre como meus dados são protegidos.",
+  "price_too_cheap": 10,
+  "price_cheap": 25,
+  "price_expensive": 59,
+  "price_too_expensive": 99
+}

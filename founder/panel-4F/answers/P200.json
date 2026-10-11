@@ -1,0 +1,16 @@
+{
+  "id": "P200",
+  "buys": false,
+  "product": "nenhum",
+  "assistido_continua": false,
+  "product_priced": "digital",
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Eu já invisto sozinho pela corretora, tenho estabilidade de servidor e acompanho meus gastos no app do banco. Trilha em vídeo e plano de 3 ações é básico demais pra mim.",
+  "objection": "Não tem nada aqui que eu não ache de graça no YouTube ou no app da corretora, e não quero mais uma assinatura que depois dá trabalho pra cancelar.",
+  "would_change_my_mind": "Um plano de uns R$ 20 focado em imposto de renda e alocação de carteira, cancelável direto no app.",
+  "price_too_cheap": 5,
+  "price_cheap": 15,
+  "price_expensive": 30,
+  "price_too_expensive": 50
+}

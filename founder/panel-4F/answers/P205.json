@@ -1,0 +1,16 @@
+{
+  "id": "P205",
+  "buys": false,
+  "product": "nenhum",
+  "assistido_continua": false,
+  "product_priced": "assistido",
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "Ganho bem e sei que deveria planejar melhor, mas este ano está corrido demais no consultório. Talvez no ano que vem.",
+  "objection": "Pagar R$ 297 por mês para uma reunião de 30 minutos parece pouco para o preço, e não sei se vou ter tempo de seguir o plano.",
+  "would_change_my_mind": "Um momento mais calmo, ou uma data fixa como o imposto de renda me forçando a começar.",
+  "price_too_cheap": 100,
+  "price_cheap": 200,
+  "price_expensive": 400,
+  "price_too_expensive": 700
+}

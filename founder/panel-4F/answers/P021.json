@@ -1,0 +1,16 @@
+{
+  "id": "P021",
+  "buys": false,
+  "product": "nenhum",
+  "assistido_continua": false,
+  "product_priced": "private",
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Eu só contrato quem alguém de confiança me indicou, e ninguém me falou dessa Profitto. Pode até ser bom, mas não vou entregar minha vida financeira para uma empresa que vi passando.",
+  "objection": "Não conheço ninguém que use; e pagar R$ 1.500 por mês para alguém me dizer onde foi meu aumento parece caro.",
+  "would_change_my_mind": "Um colega médico ou advogado de confiança me dizer que usa e que valeu a pena.",
+  "price_too_cheap": 300,
+  "price_cheap": 800,
+  "price_expensive": 1500,
+  "price_too_expensive": 2500
+}

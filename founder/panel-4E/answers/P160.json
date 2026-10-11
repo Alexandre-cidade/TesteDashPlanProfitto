@@ -1,0 +1,13 @@
+{
+  "id": "P160",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Acabei de receber um valor grande e minha dúvida é onde colocar esse dinheiro e como usar no imóvel. Controle de delivery e trilha para sair do cheque especial não têm nada a ver comigo agora.",
+  "objection": "É um produto para quem está apertado no mês, não para quem precisa decidir o que fazer com um montante grande. Vídeos curtos não resolvem isso.",
+  "would_change_my_mind": "Um módulo específico para quem recebeu um dinheiro grande, com um plano concreto de alocação para o meu objetivo, ainda sem reunião.",
+  "price_too_cheap": 20,
+  "price_cheap": 49,
+  "price_expensive": 200,
+  "price_too_expensive": 500
+}

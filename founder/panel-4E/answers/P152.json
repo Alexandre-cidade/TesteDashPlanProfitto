@@ -1,0 +1,13 @@
+{
+  "id": "P152",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Nunca ouvi falar da Profitto e ninguém que eu conheço usa. Não coloco meus números financeiros num app que vi passando por aí; e um controle de delivery não é o meu problema.",
+  "objection": "Ninguém de confiança me indicou, e um app genérico de R$ 49 não foi feito para a realidade de quem tem consultório, PJ e patrimônio para organizar.",
+  "would_change_my_mind": "Um colega médico ou advogado em quem eu confio me dizer que usa e que mudou alguma coisa de verdade para ele.",
+  "price_too_cheap": 20,
+  "price_cheap": 49,
+  "price_expensive": 150,
+  "price_too_expensive": 400
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P205",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Eu tenho uma decisão concreta pra tomar agora e preciso de alguém que olhe o meu caso, não de trilha em vídeo e controle de gastos. Com renda que varia todo mês, mensalidade fixa por algo genérico não faz sentido.",
+  "objection": "Questionário de 20 minutos não entende renda de MEI que muda todo mês nem a minha decisão específica.",
+  "would_change_my_mind": "Uma consulta avulsa, paga uma vez só, com alguém que analise a minha decisão.",
+  "price_too_cheap": 9,
+  "price_cheap": 19,
+  "price_expensive": 35,
+  "price_too_expensive": 49
+}

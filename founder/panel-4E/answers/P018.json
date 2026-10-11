@@ -1,0 +1,13 @@
+{
+  "id": "P018",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "convenience",
+  "reason": "R$ 49 não é nada para mim e eu assino essas coisas na hora; vou fazer o questionário, esquecer o teste grátis e pagar o primeiro mês. Mas provavelmente cancelo depois, porque minha bagunça é a PF misturada com a empresa e isso o app não resolve.",
+  "objection": "No fundo uma planilha resolveria, e o meu problema real é separar o dinheiro da empresa do pessoal, o que não está na oferta.",
+  "would_change_my_mind": "Se eu lembrasse de cancelar dentro dos 7 dias eu não pagaria; algo que tratasse PF e PJ juntos me faria ficar.",
+  "price_too_cheap": 15,
+  "price_cheap": 30,
+  "price_expensive": 99,
+  "price_too_expensive": 199
+}

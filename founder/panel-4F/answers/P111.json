@@ -1,0 +1,16 @@
+{
+  "id": "P111",
+  "buys": false,
+  "product": "nenhum",
+  "assistido_continua": false,
+  "product_priced": "assistido",
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Nunca ouvi falar da Profitto e ninguém que eu conheço usou. Eu só contrato quem um amigo de confiança indicou, e propaganda dizendo que não vende produto não basta.",
+  "objection": "Não tenho nenhuma indicação; qualquer um pode dizer que não ganha comissão.",
+  "would_change_my_mind": "Uma amiga ou colega de confiança me dizer que fez o diagnóstico e que o planejador foi bom.",
+  "price_too_cheap": 80,
+  "price_cheap": 150,
+  "price_expensive": 350,
+  "price_too_expensive": 600
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P014",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Tenho 65 anos, meu gerente cuida dos investimentos sem cobrar e as contas de casa e a ajuda aos meus pais eu anoto numa planilha. Não vou pagar mensalidade para fazer sozinho num aplicativo.",
+  "objection": "Uma planilha resolve; pagar todo mês por isso é dinheiro que vai para os meus pais.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 5,
+  "price_cheap": 10,
+  "price_expensive": 20,
+  "price_too_expensive": 35
+}

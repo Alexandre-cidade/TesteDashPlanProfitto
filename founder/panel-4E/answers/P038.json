@@ -1,0 +1,13 @@
+{
+  "id": "P038",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Gosto de não terem comissão, mas meu problema é PF e PJ misturadas, e nada aí fala de empresa. Para controlar gasto pessoal, minha planilha já faz.",
+  "objection": "Não resolve separar as contas da empresa das minhas, que é onde eu realmente me perco.",
+  "would_change_my_mind": "Um módulo para separar pró-labore, retirada e despesas da empresa das pessoais.",
+  "price_too_cheap": 15,
+  "price_cheap": 40,
+  "price_expensive": 150,
+  "price_too_expensive": 400
+}

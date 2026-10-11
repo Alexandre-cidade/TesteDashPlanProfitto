@@ -1,0 +1,13 @@
+{
+  "id": "P097",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Eu já invisto sozinha e sei o básico de reserva e aposentadoria; pagar R$ 49 por mês por vídeos e controle de gastos que app gratuito faz não vale.",
+  "objection": "É caro para alguém me dizer para gastar menos; os vídeos de investimento não me ensinam nada novo.",
+  "would_change_my_mind": "Um preço bem menor, perto de R$ 15, ou algo que realmente ajudasse no orçamento da família com filhos.",
+  "price_too_cheap": 5,
+  "price_cheap": 15,
+  "price_expensive": 30,
+  "price_too_expensive": 50
+}

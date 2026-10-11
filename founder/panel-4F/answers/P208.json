@@ -1,0 +1,16 @@
+{
+  "id": "P208",
+  "buys": false,
+  "product": "nenhum",
+  "assistido_continua": false,
+  "product_priced": "digital",
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Não vou colocar todas as minhas contas e as da minha esposa num app de uma empresa de Porto Alegre que nunca ouvi falar. E já larguei app antes.",
+  "objection": "Segurança dos meus dados: não conheço a empresa nem sei onde ficam minhas informações.",
+  "would_change_my_mind": "Saber que posso usar sem conectar minhas contas bancárias e ver avaliações reais de clientes.",
+  "price_too_cheap": 10,
+  "price_cheap": 25,
+  "price_expensive": 50,
+  "price_too_expensive": 90
+}

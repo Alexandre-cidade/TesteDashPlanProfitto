@@ -1,0 +1,16 @@
+{
+  "id": "P212",
+  "buys": true,
+  "product": "digital",
+  "assistido_continua": false,
+  "product_priced": "digital",
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "O cartão está rodando e eu preciso de um caminho pra sair. R$ 49 com trilha de dívidas e controle de assinaturas eu consigo pagar, e não tenho que mostrar minhas contas pra uma pessoa.",
+  "objection": "Ainda tenho receio de colocar meus dados bancários numa empresa que eu nunca ouvi falar.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 15,
+  "price_cheap": 29,
+  "price_expensive": 69,
+  "price_too_expensive": 99
+}

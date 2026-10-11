@@ -1,0 +1,16 @@
+{
+  "id": "P030",
+  "buys": false,
+  "product": "nenhum",
+  "assistido_continua": false,
+  "product_priced": "private",
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Invisto sozinho e meu assessor e gerente me atendem sem cobrar mensalidade. Misturo PF e PJ, sei que não é o ideal, mas não pago R$ 1.500 por mês por isso.",
+  "objection": "Meu gerente e meu assessor já fazem isso de graça; não vejo o que justificaria o preço.",
+  "would_change_my_mind": "Mostrarem em números quanto eu economizaria em imposto separando PF e PJ, maior que a mensalidade.",
+  "price_too_cheap": 500,
+  "price_cheap": 900,
+  "price_expensive": 1500,
+  "price_too_expensive": 2500
+}

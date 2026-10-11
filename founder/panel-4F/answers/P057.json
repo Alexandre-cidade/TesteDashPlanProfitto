@@ -1,0 +1,16 @@
+{
+  "id": "P057",
+  "buys": false,
+  "product": "nenhum",
+  "assistido_continua": false,
+  "product_priced": "assistido",
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Eu tenho minha planilha e o problema do aumento sumir e eu sentar e lancar as coisas, nao contratar alguem. Ja paguei app e larguei, nao vou repetir.",
+  "objection": "Vou pagar, nao vou abrir e em tres meses cancelo.",
+  "would_change_my_mind": "Um diagnostico que pegasse minha planilha e me mostrasse em uma folha para onde o dinheiro foi, sem eu ter que fazer nada.",
+  "price_too_cheap": 80,
+  "price_cheap": 150,
+  "price_expensive": 350,
+  "price_too_expensive": 600
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P033",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Já vi um monte dessas ofertas no Instagram e o conteúdo gratuito do YouTube me dá quase o mesmo. Com renda variável, R$ 49 todo mês para colocar meus dados numa empresa que eu não conheço não me convence.",
+  "objection": "Não sei quem é a Profitto nem o que eles fazem com os meus dados financeiros.",
+  "would_change_my_mind": "Um influenciador que eu sigo mostrar o app por dentro e explicar como os dados são protegidos.",
+  "price_too_cheap": 9,
+  "price_cheap": 19,
+  "price_expensive": 39,
+  "price_too_expensive": 70
+}

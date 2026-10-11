@@ -1,0 +1,13 @@
+{
+  "id": "P015",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "Até testaria os 7 dias grátis, mas o conteúdo de reserva e investimento eu já vejo de graça no YouTube. Agora não é o momento de colocar mais R$ 49 por mês no meu orçamento; talvez ano que vem.",
+  "objection": "Os vídeos que eles oferecem eu já assisto de graça com os influenciadores que sigo.",
+  "would_change_my_mind": "Um preço de entrada bem menor, tipo R$ 19, ou um influenciador que eu sigo mostrando o resultado real usando.",
+  "price_too_cheap": 5,
+  "price_cheap": 15,
+  "price_expensive": 30,
+  "price_too_expensive": 50
+}

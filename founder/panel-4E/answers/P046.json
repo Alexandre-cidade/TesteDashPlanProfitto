@@ -1,0 +1,13 @@
+{
+  "id": "P046",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Minha planilha já faz o controle de gastos e metas, de graça. Não vejo por que pagar R$ 49 por algo que eu já faço sozinha.",
+  "objection": "Pagar por algo que repete o que minha planilha já faz.",
+  "would_change_my_mind": "Se ele importasse automaticamente meus extratos e me poupasse trabalho de verdade.",
+  "price_too_cheap": 5,
+  "price_cheap": 15,
+  "price_expensive": 30,
+  "price_too_expensive": 45
+}

@@ -1,0 +1,16 @@
+{
+  "id": "P026",
+  "buys": true,
+  "product": "digital",
+  "assistido_continua": false,
+  "product_priced": "digital",
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Recebi aumento e o dinheiro sumiu, provavelmente em delivery e assinatura. O Digital é 100% online, sem falar com ninguém, e tem 7 dias grátis; começo o teste e acabo pagando os R$ 49.",
+  "objection": "Ser procrastinador: começar animado e largar o app no segundo mês.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 10,
+  "price_cheap": 20,
+  "price_expensive": 49,
+  "price_too_expensive": 79
+}

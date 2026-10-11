@@ -1,0 +1,13 @@
+{
+  "id": "P035",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "Até gostei da trilha de reserva de emergência, mas agora não é o momento. Talvez no ano que vem, quando sobrar mais.",
+  "objection": "R$ 49 por mês agora pesa, e o que eu aprendo de graça no YouTube já serve por enquanto.",
+  "would_change_my_mind": "Um preço bem menor, tipo R$ 19, ou um plano anual com desconto grande.",
+  "price_too_cheap": 5,
+  "price_cheap": 15,
+  "price_expensive": 35,
+  "price_too_expensive": 60
+}

@@ -1,0 +1,16 @@
+{
+  "id": "P027",
+  "buys": true,
+  "product": "assistido",
+  "assistido_continua": false,
+  "product_priced": "assistido",
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Estou com cartão e cheque especial rodando, apesar de ganhar bem, porque ajudo meus pais todo mês. R$ 197 com devolução se o plano for genérico é um risco pequeno para ter um plano datado para as dívidas, e o planejador não ganha comissão.",
+  "objection": "Como saber se esse planejador é bom de verdade; os R$ 297 por mês depois pesam enquanto o dinheiro está curto.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 97,
+  "price_cheap": 150,
+  "price_expensive": 297,
+  "price_too_expensive": 500
+}

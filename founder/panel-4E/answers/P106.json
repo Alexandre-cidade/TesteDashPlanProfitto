@@ -1,0 +1,13 @@
+{
+  "id": "P106",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Quem cuida das minhas decisões é o gerente do banco, que não me cobra nada, e o meu dinheiro já está apertado ajudando meus pais. Não conheço essa empresa e tenho medo de não conseguir cancelar.",
+  "objection": "Assinar uma coisa online de uma empresa que nunca ouvi falar e depois ficar presa na cobrança.",
+  "would_change_my_mind": "Uma indicação de alguém de confiança que já tenha cancelado sem problema.",
+  "price_too_cheap": 5,
+  "price_cheap": 15,
+  "price_expensive": 29,
+  "price_too_expensive": 49
+}

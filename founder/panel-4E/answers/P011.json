@@ -1,0 +1,13 @@
+{
+  "id": "P011",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Já invisto sozinho pelo app da corretora e me viro bem; não vou abrir meus gastos e minhas contas para uma empresa de Porto Alegre que eu nunca ouvi falar só para receber trilha em vídeo de reserva de emergência.",
+  "objection": "Não sei o que eles fazem com os meus dados financeiros nem como o controle de gastos puxa as informações; não quero expor tudo para uma empresa desconhecida.",
+  "would_change_my_mind": "Poder usar sem conectar banco nenhum, com política de dados clara e alguma reputação verificável da empresa.",
+  "price_too_cheap": 5,
+  "price_cheap": 15,
+  "price_expensive": 29,
+  "price_too_expensive": 49
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P034",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "R$ 49 não pesa nada para mim, mas eu não preciso de app para me dizer para gastar menos em delivery. Meu assunto é patrimônio e aposentadoria, e isso eu só confio a alguém indicado.",
+  "objection": "É um produto para quem está apertado no cartão, não para alguém na minha situação.",
+  "would_change_my_mind": "Um colega médico ou advogado me recomendar o plano com planejador e dizer que vale a pena.",
+  "price_too_cheap": 20,
+  "price_cheap": 50,
+  "price_expensive": 300,
+  "price_too_expensive": 800
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P016",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Só contrato o que um colega de confiança indicou, e ninguém me falou dessa Profitto. Já perdi dinheiro com dica de investimento e não vou entregar meu planejamento para um app que vi passando.",
+  "objection": "Depois do questionário e das 3 primeiras ações, o que muda nos meses seguintes que justifique pagar todo mês?",
+  "would_change_my_mind": "Um colega do serviço público me dizer que usa há meses e que fez diferença.",
+  "price_too_cheap": 9,
+  "price_cheap": 19,
+  "price_expensive": 35,
+  "price_too_expensive": 55
+}

@@ -1,0 +1,16 @@
+{
+  "id": "P204",
+  "buys": false,
+  "product": "nenhum",
+  "assistido_continua": false,
+  "product_priced": "assistido",
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "Sei que preciso organizar, mas vou deixar para o mês que vem como sempre. E não conheço esse planejador; não sei se é bom.",
+  "objection": "Como saber que o planejador é competente? Não tem nenhuma prova de resultado ali.",
+  "would_change_my_mind": "Uma indicação de alguém de confiança que já fez o diagnóstico e gostou.",
+  "price_too_cheap": 50,
+  "price_cheap": 120,
+  "price_expensive": 220,
+  "price_too_expensive": 350
+}

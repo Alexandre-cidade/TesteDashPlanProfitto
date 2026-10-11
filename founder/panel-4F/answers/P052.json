@@ -1,0 +1,16 @@
+{
+  "id": "P052",
+  "buys": true,
+  "product": "assistido",
+  "assistido_continua": true,
+  "product_priced": "assistido",
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Entrou um dinheiro grande e eu tenho um objetivo concreto, nao quero decidir isso sozinha com base em video de influenciador. R$ 197 com devolucao se for generico e sem fidelidade e um risco pequeno perto do valor que esta em jogo.",
+  "objection": "Medo de que o cancelamento seja complicado na pratica e que o plano seja um modelo pronto igual ao de todo mundo.",
+  "would_change_my_mind": "Se o diagnostico vier generico ou se ficarem enrolando para devolver, eu paro na hora.",
+  "price_too_cheap": 80,
+  "price_cheap": 150,
+  "price_expensive": 400,
+  "price_too_expensive": 700
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P081",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Não tenho tempo nem vontade de ficar preenchendo questionário e categorizando gasto. Meu gerente cuida do meu dinheiro e não me cobra nada por isso.",
+  "objection": "Eu teria que fazer tudo sozinho, e o que eu quero é justamente não pensar nisso.",
+  "would_change_my_mind": "Se meu gerente ou um colega de profissão recomendasse e o app puxasse tudo sozinho do banco, sem eu digitar nada.",
+  "price_too_cheap": 10,
+  "price_cheap": 25,
+  "price_expensive": 80,
+  "price_too_expensive": 150
+}

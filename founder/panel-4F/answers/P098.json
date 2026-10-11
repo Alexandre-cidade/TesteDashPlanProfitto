@@ -1,0 +1,16 @@
+{
+  "id": "P098",
+  "buys": false,
+  "product": "nenhum",
+  "assistido_continua": false,
+  "product_priced": "private",
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "Eu sei que deveria organizar patrimônio e imposto, mas esse mês está corrido no consultório e vou deixar para depois. R$ 1.500 por mês só para alguém me dizer para gastar menos ainda me parece muito.",
+  "objection": "Não sei se vale R$ 18 mil por ano; meu contador já resolve o imposto de renda.",
+  "would_change_my_mind": "Se me mostrassem quanto eu economizaria em imposto e previdência no primeiro ano, com valor, e alguém marcasse tudo por mim.",
+  "price_too_cheap": 300,
+  "price_cheap": 600,
+  "price_expensive": 1000,
+  "price_too_expensive": 1800
+}

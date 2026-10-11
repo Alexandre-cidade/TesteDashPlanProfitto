@@ -1,0 +1,16 @@
+{
+  "id": "P141",
+  "buys": false,
+  "product": "nenhum",
+  "assistido_continua": false,
+  "product_priced": "digital",
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Com o que eu ganho, pagar R$ 49 por mês para um app me mandar gastar menos não faz sentido. Já baixei o Organizze, usei um mês e larguei; ia acontecer de novo.",
+  "objection": "Pagar todo mês por algo que eu vou abandonar e que não resolve as brigas com meu marido sobre dinheiro.",
+  "would_change_my_mind": "Se fosse de graça ou bem mais barato, e meu marido usasse junto comigo.",
+  "price_too_cheap": 5,
+  "price_cheap": 15,
+  "price_expensive": 29,
+  "price_too_expensive": 49
+}

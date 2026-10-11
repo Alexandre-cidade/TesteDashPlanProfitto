@@ -1,0 +1,13 @@
+{
+  "id": "P050",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Antes de assinar qualquer coisa eu olho o Reclame Aqui, e de uma empresa nova não sei nada. Além disso, não estou em aperto; um app que eu faço sozinha não resolve o que eu precisaria.",
+  "objection": "Não tenho como checar a reputação nem se o cancelamento funciona mesmo como dizem.",
+  "would_change_my_mind": "Ver nota boa no Reclame Aqui e relatos de cancelamento sem problema.",
+  "price_too_cheap": 20,
+  "price_cheap": 39,
+  "price_expensive": 99,
+  "price_too_expensive": 199
+}

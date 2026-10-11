@@ -1,0 +1,16 @@
+{
+  "id": "P106",
+  "buys": true,
+  "product": "digital",
+  "assistido_continua": false,
+  "product_priced": "digital",
+  "purchases_first_month": 1,
+  "reason_code": "convenience",
+  "reason": "É 100% online, sem precisar falar com ninguém, e R$ 49 não pesa. Assino agora e vejo se uso.",
+  "objection": "Assino tudo no calor do momento e cancelo depois; pode ser só mais um app parado.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 15,
+  "price_cheap": 29,
+  "price_expensive": 89,
+  "price_too_expensive": 150
+}

@@ -1,0 +1,16 @@
+{
+  "id": "P153",
+  "buys": true,
+  "product": "digital",
+  "assistido_continua": false,
+  "product_priced": "digital",
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "O cheque especial está me comendo e eu preciso de um plano para sair. R$ 49 com 7 dias grátis e sem multa eu consigo encaixar; os R$ 197 agora não dá.",
+  "objection": "Medo de ser só mais um app de planilha e eu continuar no vermelho pagando mais uma assinatura.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 10,
+  "price_cheap": 25,
+  "price_expensive": 50,
+  "price_too_expensive": 80
+}

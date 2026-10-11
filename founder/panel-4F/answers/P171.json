@@ -1,0 +1,16 @@
+{
+  "id": "P171",
+  "buys": false,
+  "product": "nenhum",
+  "assistido_continua": false,
+  "product_priced": "assistido",
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Eu já tenho minha planilha e quem cuida do dinheiro em casa é meu marido; não vou chegar com mais uma conta para pagar e começar outra discussão.",
+  "objection": "Uma planilha resolve, não preciso pagar alguém todo mês para me dizer o que eu já sei.",
+  "would_change_my_mind": "Se o meu cônjuge visse a oferta e quisesse fazer o diagnóstico junto comigo, eu aceitaria.",
+  "price_too_cheap": 50,
+  "price_cheap": 120,
+  "price_expensive": 250,
+  "price_too_expensive": 400
+}

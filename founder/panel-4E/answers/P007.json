@@ -1,0 +1,13 @@
+{
+  "id": "P007",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Já assinei app de finanças e larguei em duas semanas, e esse é igual: depende de eu fazer tudo sozinho. Antes de pagar eu olharia o Reclame Aqui, e uma marca que eu não conheço sem histórico lá eu não arrisco.",
+  "objection": "Vou pagar e não usar, como da última vez.",
+  "would_change_my_mind": "Boa nota no Reclame Aqui com cancelamento confirmado fácil, e algo que me cobre se eu sumir do app.",
+  "price_too_cheap": 7,
+  "price_cheap": 19,
+  "price_expensive": 35,
+  "price_too_expensive": 55
+}

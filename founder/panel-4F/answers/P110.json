@@ -1,0 +1,16 @@
+{
+  "id": "P110",
+  "buys": true,
+  "product": "assistido",
+  "assistido_continua": false,
+  "product_priced": "assistido",
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Recebi um valor grande e não sei bem o que fazer com ele; R$ 197 uma vez por um plano escrito, com devolução se for genérico, eu pago na hora.",
+  "objection": "Depois que eu tiver o plano, uma planilha resolve; não vejo motivo para pagar todo mês.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 100,
+  "price_cheap": 197,
+  "price_expensive": 500,
+  "price_too_expensive": 1000
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P047",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Tenho minha planilha e funciona. Não vou colocar todas as contas da família numa empresa que nunca ouvi falar.",
+  "objection": "Expor meus dados financeiros para uma empresa desconhecida.",
+  "would_change_my_mind": "Indicação de alguém de confiança aqui de Caxias que já use.",
+  "price_too_cheap": 10,
+  "price_cheap": 20,
+  "price_expensive": 40,
+  "price_too_expensive": 70
+}

@@ -1,0 +1,16 @@
+{
+  "id": "P193",
+  "buys": false,
+  "product": "nenhum",
+  "assistido_continua": false,
+  "product_priced": "assistido",
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Eu já controlo tudo na minha planilha há anos; o problema lá em casa não é falta de plano, é meu marido não seguir. Não vou pagar um estranho para me dizer o que eu já sei.",
+  "objection": "Não tenho como saber se esse planejador é bom; dizer que não recebe comissão é fácil, mas não vejo certificação, nome ou resultado de ninguém.",
+  "would_change_my_mind": "Saber o nome e a certificação do planejador e ver um exemplo real de plano entregue, para eu ver se vai além da minha planilha.",
+  "price_too_cheap": 80,
+  "price_cheap": 150,
+  "price_expensive": 250,
+  "price_too_expensive": 400
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P128",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Uma planilha resolve o controle de gastos, e eu só contrato o que alguém de confiança recomendou; nenhum dos dois é o caso aqui.",
+  "objection": "Pagar todo mês por algo que faço numa planilha de graça.",
+  "would_change_my_mind": "Um amigo me mostrar que o app fez algo que a planilha dele não fazia.",
+  "price_too_cheap": 5,
+  "price_cheap": 19,
+  "price_expensive": 39,
+  "price_too_expensive": 69
+}

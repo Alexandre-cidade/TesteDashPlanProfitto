@@ -1,0 +1,16 @@
+{
+  "id": "P063",
+  "buys": true,
+  "product": "assistido",
+  "assistido_continua": false,
+  "product_priced": "assistido",
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Tenho uma decisão grande na mesa e quero uma análise pontual de alguém que não ganha comissão. R$ 197 com devolução se for genérico é um risco pequeno para mim.",
+  "objection": "Como sei que esse planejador tem experiência com empresário que mistura PF e PJ, e não vai me entregar um plano de manual?",
+  "would_change_my_mind": "",
+  "price_too_cheap": 90,
+  "price_cheap": 150,
+  "price_expensive": 400,
+  "price_too_expensive": 700
+}

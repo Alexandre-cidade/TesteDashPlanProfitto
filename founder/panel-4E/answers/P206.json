@@ -1,0 +1,13 @@
+{
+  "id": "P206",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Estou decidindo a minha aposentadoria e isso eu não vou resolver com vídeo curto e app sozinho. Controle de gasto e sair do cheque especial não é o meu problema.",
+  "objection": "Para uma decisão desse tamanho eu quero uma pessoa olhando os meus números, não um questionário.",
+  "would_change_my_mind": "Uma sessão pontual com planejador para a decisão da aposentadoria, sem precisar assinar mensal.",
+  "price_too_cheap": 15,
+  "price_cheap": 29,
+  "price_expensive": 59,
+  "price_too_expensive": 99
+}

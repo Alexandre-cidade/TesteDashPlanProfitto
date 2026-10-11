@@ -1,0 +1,16 @@
+{
+  "id": "P138",
+  "buys": true,
+  "product": "assistido",
+  "assistido_continua": false,
+  "product_priced": "assistido",
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Estou com cartão e cheque especial rodando e não consigo sair sozinho; um plano datado para as dívidas por R$ 197 pagos uma vez só, com dinheiro de volta se for genérico, vale a tentativa. A mensalidade de R$ 297 não cabe agora.",
+  "objection": "Medo de pagar e receber um plano genérico que eu mesmo faria numa planilha.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 50,
+  "price_cheap": 120,
+  "price_expensive": 250,
+  "price_too_expensive": 400
+}

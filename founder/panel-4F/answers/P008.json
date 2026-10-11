@@ -1,0 +1,16 @@
+{
+  "id": "P008",
+  "buys": false,
+  "product": "nenhum",
+  "assistido_continua": false,
+  "product_priced": "assistido",
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Na minha idade já vi muito golpe. Não entrego minhas contas e minha aposentadoria para uma empresa que eu não conheço sem antes ver o que dizem dela no Reclame Aqui.",
+  "objection": "Abrir toda a minha vida financeira para estranhos pela internet.",
+  "would_change_my_mind": "Boa reputação no Reclame Aqui e poder conhecer o planejador pessoalmente antes de mostrar qualquer conta.",
+  "price_too_cheap": 80,
+  "price_cheap": 150,
+  "price_expensive": 300,
+  "price_too_expensive": 450
+}

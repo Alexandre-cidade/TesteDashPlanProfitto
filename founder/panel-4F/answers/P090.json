@@ -1,0 +1,16 @@
+{
+  "id": "P090",
+  "buys": true,
+  "product": "assistido",
+  "assistido_continua": false,
+  "product_priced": "assistido",
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "App eu já larguei, mas o diagnóstico é uma vez só e alguém de fora faz o trabalho. Uma sessão com o casal pode acabar com a briga sobre a aposentadoria; os investimentos eu continuo cuidando sozinha.",
+  "objection": "Medo de que meu marido não leve a sério e o plano vire mais um papel na gaveta.",
+  "would_change_my_mind": "Se a sessão com o casal não puder ser marcada num horário pros dois, eu não compro.",
+  "price_too_cheap": 70,
+  "price_cheap": 150,
+  "price_expensive": 300,
+  "price_too_expensive": 500
+}

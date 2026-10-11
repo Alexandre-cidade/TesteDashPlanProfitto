@@ -1,0 +1,13 @@
+{
+  "id": "P185",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "A trilha para sair do cartão me chamou atenção, mas eu já baixei app de finanças e larguei em duas semanas. Com o dinheiro curto, R$ 49 por mês é exatamente o tipo de gasto que eu deveria cortar.",
+  "objection": "Vou pagar e parar de usar, como sempre, e ainda vai virar mais uma briga em casa sobre dinheiro jogado fora.",
+  "would_change_my_mind": "Um preço bem menor, tipo R$ 15, ou só cobrar depois que eu tiver de fato reduzido a dívida.",
+  "price_too_cheap": 5,
+  "price_cheap": 12,
+  "price_expensive": 25,
+  "price_too_expensive": 40
+}

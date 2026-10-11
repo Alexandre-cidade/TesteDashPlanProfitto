@@ -1,0 +1,443 @@
+{
+ "business": "Planejamento financeiro por assinatura (Profitto), Porto Alegre/RS + digital em todo o Brasil",
+ "seed": 4104,
+ "dealt": 225,
+ "answered": 225,
+ "skipped": [],
+ "buys": 40,
+ "passes": 185,
+ "buy_rate": 0.17777777777777778,
+ "by_segment": [
+  [
+   "Pré-aposentado ou aposentado",
+   18,
+   0.2777777777777778
+  ],
+  [
+   "Servidor público",
+   18,
+   0.2222222222222222
+  ],
+  [
+   "Jovem profissional CLT, ainda sem investimentos",
+   36,
+   0.19444444444444445
+  ],
+  [
+   "Profissional liberal de alta renda (médico, advogado, dentista)",
+   32,
+   0.1875
+  ],
+  [
+   "Autônomo ou MEI com renda variável",
+   22,
+   0.18181818181818182
+  ],
+  [
+   "Família de classe média com filhos",
+   40,
+   0.175
+  ],
+  [
+   "Pessoa que acabou de receber um dinheiro grande (herança, venda de imóvel, rescisão)",
+   7,
+   0.14285714285714285
+  ],
+  [
+   "Pessoa recém-divorciada reorganizando as finanças",
+   7,
+   0.14285714285714285
+  ],
+  [
+   "Casal recém-casado ou planejando filhos",
+   23,
+   0.13043478260869565
+  ],
+  [
+   "Empresário de pequena ou média empresa, com PF e PJ misturadas",
+   22,
+   0.09090909090909091
+  ]
+ ],
+ "by_behaviour": [
+  [
+   "Compra por impulso e se arrepende",
+   13,
+   1.0
+  ],
+  [
+   "Endividado buscando saída",
+   20,
+   0.5
+  ],
+  [
+   "Segue influenciador de finanças",
+   20,
+   0.45
+  ],
+  [
+   "Pesquisa no Reclame Aqui antes de comprar",
+   18,
+   0.1111111111111111
+  ],
+  [
+   "Quer resolver rápido um problema específico",
+   11,
+   0.09090909090909091
+  ],
+  [
+   "Confia no gerente ou assessor do banco",
+   27,
+   0.07407407407407407
+  ],
+  [
+   "Investe sozinho por corretora digital",
+   18,
+   0.05555555555555555
+  ],
+  [
+   "Já usou app e largou",
+   23,
+   0.043478260869565216
+  ],
+  [
+   "Faz planilha sozinho",
+   27,
+   0.037037037037037035
+  ],
+  [
+   "Contrata por indicação",
+   18,
+   0.0
+  ],
+  [
+   "O cônjuge é quem cuida do dinheiro",
+   14,
+   0.0
+  ],
+  [
+   "Procrastinador",
+   16,
+   0.0
+  ]
+ ],
+ "by_income": [
+  [
+   "$141,000 to $278,000",
+   74,
+   0.24324324324324326
+  ],
+  [
+   "under $141,000",
+   75,
+   0.14666666666666667
+  ],
+  [
+   "$278,000 and up",
+   76,
+   0.14473684210526316
+  ]
+ ],
+ "why_not": [
+  [
+   "habit",
+   52,
+   [
+    "Já assinei app de finanças e larguei em duas semanas, e esse é igual: depende de eu fazer tudo sozinho. Antes de pagar eu olharia o Reclame Aqui, e uma marca que eu não conheço sem histórico lá eu não arrisco.",
+    "Para o apartamento a gente já conversa com o gerente do banco, que não cobra nada. Pagar R$ 49 por mês para fazer tudo sozinho num app não faz sentido para mim."
+   ],
+   [
+    "P007",
+    "P012"
+   ]
+  ],
+  [
+   "need",
+   42,
+   [
+    "Gosto de não ter comissão, mas controle de gastos com delivery e trilha de cartão é para quem está começando; minha questão é tributação de PJ, previdência e patrimônio, e um questionário de 20 minutos não resolve isso. Se for pagar, quero um planejador de verdade e com credenciais.",
+    "Minha planilha já controla tudo e já sei quanto preciso juntar para o meu objetivo. Depois do questionário e do plano inicial, não vejo o que muda no mês seguinte que justifique pagar todo mês."
+   ],
+   [
+    "P003",
+    "P010"
+   ]
+  ],
+  [
+   "trust",
+   38,
+   [
+    "Minhas decisões de dinheiro eu deixo com a gerente do banco, que não me cobra nada. Fazer tudo sozinha num app de uma empresa de Porto Alegre que eu nunca ouvi falar não é para mim.",
+    "Ninguém que eu conheço usa ou recomendou a Profitto, e eu não vou colocar meus gastos e minha vida financeira num app de uma empresa desconhecida. O preço é irrelevante para mim; o problema é confiança."
+   ],
+   [
+    "P004",
+    "P009"
+   ]
+  ],
+  [
+   "price",
+   22,
+   [
+    "Estou com cartão e cheque especial rodando e a renda varia todo mês; até usaria os 7 dias grátis pela trilha de sair do cartão, mas pagar mais R$ 49 por mês agora é mais uma conta. Uma planilha e cortar gasto eu faço sozinho.",
+    "Já ajudo meus pais todo mês e controlo tudo numa planilha que funciona. Não vejo motivo para pagar R$ 588 por ano por uma coisa que eu faço de graça."
+   ],
+   [
+    "P001",
+    "P008"
+   ]
+  ],
+  [
+   "timing",
+   20,
+   [
+    "Eu mesmo invisto pela corretora e não preciso de vídeo sobre Tesouro e reserva de emergência. Já perdi dinheiro com dica, então desconfio de mais uma voz me dizendo o que fazer; talvez no ano que vem, se a família crescer, eu pense.",
+    "Até testaria os 7 dias grátis, mas o conteúdo de reserva e investimento eu já vejo de graça no YouTube. Agora não é o momento de colocar mais R$ 49 por mês no meu orçamento; talvez ano que vem."
+   ],
+   [
+    "P005",
+    "P015"
+   ]
+  ],
+  [
+   "other",
+   9,
+   [
+    "Quem cuida do dinheiro lá em casa é meu marido, e uma mensalidade nova eu não assino sem falar com ele. E pagar R$ 49 por mês para um app me dizer para gastar menos não me convence.",
+    "Gasto fixo aqui em casa passa pelo meu marido, e ele não vai querer mais uma assinatura além das que já pagamos. Eu nem testaria sem falar com ele."
+   ],
+   [
+    "P024",
+    "P043"
+   ]
+  ],
+  [
+   "quality",
+   2,
+   [
+    "Gosto que não vendem produto nem ganham comissão, isso conta. Mas trilhas curtas sobre reserva e aposentadoria eu já vejo de graça no YouTube todo dia, e para a minha aposentadoria eu quero alguém olhando meu caso, não um app.",
+    "Recebi um valor grande e já invisto sozinha; o que eu preciso é de planejamento sério para esse dinheiro, não de controle de delivery e vídeo básico."
+   ],
+   [
+    "P139",
+    "P224"
+   ]
+  ]
+ ],
+ "why_yes": [
+  [
+   "need",
+   24,
+   [
+    "Ser tudo online, sem falar com ninguém, é exatamente o que eu prefiro. Minha planilha controla os gastos, mas nunca me disse o que fazer para a aposentadoria sem investimento nenhum, e o plano escrito com as 3 ações vale um mês para testar.",
+    "O cartão está rodando e a trilha para sair do cartão e do cheque especial é exatamente o que eu preciso; R$ 49 não pesa no meu salário, então pago o primeiro mês para ver se dessa vez eu sigo."
+   ],
+   [
+    "P040",
+    "P041"
+   ]
+  ],
+  [
+   "convenience",
+   13,
+   [
+    "Ia assinar na hora pelo app, achando que agora eu me organizo, e conhecendo eu mesmo vou esquecer de cancelar antes dos 7 dias e pagar pelo menos o primeiro mês. Provavelmente cancelo depois, porque meu gerente já me dá umas dicas de graça.",
+    "É exatamente o que eu queria: 100% online, sem reunião, e sem empurrar produto. Com renda de MEI que varia, um plano escrito e o relatório mensal valem os R$ 49, e se não gostar cancelo pelo app."
+   ],
+   [
+    "P002",
+    "P006"
+   ]
+  ],
+  [
+   "habit",
+   2,
+   [
+    "Eu me conheço: vejo isso, acho lindo, assino na hora e esqueço de cancelar nos 7 dias. Vou pagar pelo menos o primeiro mês, mesmo sabendo que provavelmente vou largar.",
+    "Tenho meta de comprar o apartamento e esse tipo de coisa me pega no impulso; R$ 49 nem sinto. Provavelmente assino, pago o primeiro mês e vejo se mantenho."
+   ],
+   [
+    "P131",
+    "P209"
+   ]
+  ],
+  [
+   "trust",
+   1,
+   [
+    "R$ 49 não pesa no nosso orçamento, e gostei de não venderem produto nem ganharem comissão, porque foi exatamente isso que me fez perder dinheiro antes. Testo os 7 dias e, se o plano e o controle de gastos da família funcionarem, pago pelo menos o primeiro mês."
+   ],
+   [
+    "P054"
+   ]
+  ]
+ ],
+ "flip": [
+  "Se a trilha do cartão me mostrasse na primeira semana uma economia concreta maior que os R$ 49, tipo renegociar juros.",
+  "Ver quem são os planejadores (certificação CFP) e um plano de exemplo para alguém com o meu perfil.",
+  "Se tivesse algo específico para planejar a vida do casal com filhos e aposentadoria, com números meus.",
+  "Boa nota no Reclame Aqui com cancelamento confirmado fácil, e algo que me cobre se eu sumir do app.",
+  "Um pagamento único pelo plano escrito, sem mensalidade.",
+  "Indicação de um colega de confiança que usa.",
+  "Se o plano mostrasse um caminho mais rápido para o meu objetivo que eu não tinha visto.",
+  "Poder usar sem conectar banco nenhum, com política de dados clara e alguma reputação verificável da empresa.",
+  "Um plano concreto para o meu objetivo do imóvel que mostre algo que o gerente não me mostra, e alguém de confiança dizendo que cancelou sem dor de cabeça.",
+  "Uma versão para casal, em que nós dois vemos as mesmas metas e o plano, sem precisar discutir números na mesa.",
+  "Um preço de entrada bem menor, tipo R$ 19, ou um influenciador que eu sigo mostrando o resultado real usando.",
+  "Um colega do serviço público me dizer que usa há meses e que fez diferença.",
+  "Boa nota no Reclame Aqui com reclamações respondidas, principalmente sobre cancelamento.",
+  "Ser bem mais barato, uns R$ 15 por mês, ou ter versão gratuita com o controle de gastos.",
+  "Uma amiga que usa e cancelou ou manteve sem problema me recomendar.",
+  "Uma análise de verdade da minha carteira e da aposentadoria, sem conflito de interesse, que me ajudasse a não repetir o erro da dica que me fez perder dinheiro.",
+  "Um amigo ou colega de confiança dizendo que usou e que fez diferença no objetivo dele.",
+  "Se meu marido visse e quisesse usar, ou se fosse um plano para o casal usar junto e o valor fosse mais baixo.",
+  "Indicação de um colega de confiança que já use, mais clareza sobre como meus dados são protegidos.",
+  "Uma página no Reclame Aqui com nota boa e reclamações de cancelamento resolvidas, e o controle de gastos puxando os dados sozinho sem eu digitar nada.",
+  "Uma amiga de confiança me mostrando que usa e que ganhou algo que a planilha não dá.",
+  "Um amigo de confiança me dizer que usou e que o plano ajudou de verdade a decidir o que fazer com um dinheiro grande.",
+  "Um colega ou amigo próximo me indicar e contar que usou com segurança.",
+  "Um influenciador que eu sigo mostrar o app por dentro e explicar como os dados são protegidos.",
+  "Um colega médico ou advogado me recomendar o plano com planejador e dizer que vale a pena.",
+  "Um preço bem menor, tipo R$ 19, ou um plano anual com desconto grande.",
+  "Uma função específica de planejar a meta do imóvel, com prazo e valor mensal, que a planilha não faça.",
+  "Um módulo para separar pró-labore, retirada e despesas da empresa das pessoais.",
+  "Se tivesse alguém de verdade me ajudando com a divisão do divórcio por um preço parecido, aí eu pensaria.",
+  "Se meu marido visse e achasse útil para nós dois.",
+  "Um preço bem menor, tipo R$ 19, ou só pagar depois de sair do cartão.",
+  "Se ele importasse automaticamente meus extratos e me poupasse trabalho de verdade.",
+  "Indicação de alguém de confiança aqui de Caxias que já use.",
+  "Algo mais barato que me cobrasse de verdade a fazer, tipo um lembrete no WhatsApp.",
+  "Ver nota boa no Reclame Aqui e relatos de cancelamento sem problema.",
+  "Um amigo ou colega de confiança me dizer que usa e que valeu a pena.",
+  "Minha esposa olhar o app, gostar e querer usar ela mesma.",
+  "Ver reputação boa no Reclame Aqui, com reclamações de cancelamento resolvidas.",
+  "Ter uma parte para separar pró-labore, retirada e contas da empresa.",
+  "Ele decidir que quer usar e me pedir para assinar.",
+  "Um preço bem menor, tipo R$ 15, ou ficar de graça enquanto estiver saindo da dívida.",
+  "Meu gerente me recomendar o app.",
+  "Um preço bem mais baixo, uns R$ 15, ou uma ferramenta de investimento que eu não ache de graça.",
+  "Se meu gerente ou alguém de confiança me indicasse e garantisse a segurança dos dados.",
+  "Ter alguém de verdade acompanhando e me cobrando, mas aí já é o plano de R$ 297, que eu teria que avaliar.",
+  "Ver uma boa reputação no Reclame Aqui com cancelamento realmente fácil, e um preço perto de R$ 25.",
+  "Um preço bem menor, tipo R$ 19, ou só pagar depois de sair do vermelho.",
+  "Se o app trouxesse algo avançado de verdade, tipo análise da minha carteira e simulação de aposentadoria com meus números reais.",
+  "Ver nota boa no Reclame Aqui com reclamações respondidas e relatos de cancelamento sem enrolação.",
+  "Um preço bem menor, tipo R$ 15 a R$ 19, ou eu perceber que estou realmente perdendo dinheiro sem controle.",
+  "Se ajudasse de verdade a separar as contas da empresa das pessoais, com alguém fazendo por mim.",
+  "Uma análise pontual, 100% online, focada na minha decisão (imóvel ou dívida), com preço fechado de uma vez só.",
+  "Se alguém me cobrasse e lembrasse das tarefas, mas aí já é o plano de R$ 297, que é caro demais.",
+  "Se o plano fosse montado direto em cima do meu objetivo, com prazo e valor mês a mês, e me cutucasse até eu agir.",
+  "Um app gratuito ou bem barato que importasse meus gastos automaticamente sem eu digitar nada.",
+  "Um preço bem mais baixo, perto de R$ 15, ou um plano gratuito com o básico.",
+  "Se meu gerente ou um colega de profissão recomendasse e o app puxasse tudo sozinho do banco, sem eu digitar nada.",
+  "Ver que o plano me mostra de forma concreta quanto guardar por mês para chegar no imóvel e quando eu chego lá.",
+  "Boa reputação no Reclame Aqui com cancelamentos resolvidos, e um preço mais perto de R$ 20.",
+  "Uma parte específica para renda variável de autônomo, tipo separar quanto tirar por mês e quanto guardar para os meses fracos.",
+  "Se tivesse um módulo de separar PF e PJ e definir pró-labore.",
+  "Se ele mesmo se interessasse e quiséssemos usar juntos.",
+  "Se ele conectasse automático às minhas contas e me desse um plano de aposentadoria com números meus, não só vídeos.",
+  "Se meu marido olhasse e quisesse usar junto, com acesso para os dois.",
+  "Algo que fizesse o trabalho sozinho, puxando os gastos do banco sem eu lançar nada.",
+  "Se me mostrassem que o banco está me empurrando produto ruim e quanto isso me custa.",
+  "Uma boa reputação no Reclame Aqui com cancelamento comprovadamente fácil e um preço bem menor, tipo R$ 19.",
+  "Se separasse e organizasse PF e PJ juntas, com pró-labore e retirada.",
+  "Se meu gerente ou meu contador me recomendasse.",
+  "Um preço bem menor, perto de R$ 15, ou algo que realmente ajudasse no orçamento da família com filhos.",
+  "Algo que eu não faço na planilha, tipo planejamento tributário de profissional liberal ou PJ.",
+  "Uma consulta avulsa com planejador para a minha decisão, com preço fechado.",
+  "Se ele puxasse os gastos sozinho do banco e do cartão, sem eu ter que lançar nada.",
+  "Se custasse perto de R$ 15 e eu visse alguém próximo usando de verdade por meses.",
+  "Se a minha esposa visse e quisesse usar junto comigo.",
+  "Uma consulta avulsa com planejador, paga uma vez só, a preço acessível.",
+  "Uma indicação de alguém de confiança que já tenha cancelado sem problema.",
+  "Um diagnóstico de aposentadoria pontual que minha planilha não consegue fazer.",
+  "Ver uma boa reputação no Reclame Aqui com reclamações de cancelamento resolvidas.",
+  "Se minha esposa visse e quisesse usar, e se o preço fosse bem menor nos meses de renda baixa.",
+  "Se meu marido já estivesse procurando algo assim e propusesse usarmos juntos.",
+  "Um preço perto de R$ 15 e que o app puxasse os gastos sozinho, sem eu ter que lançar nada.",
+  "Se meu gerente me decepcionasse feio de novo, ou se meus filhos montassem tudo pra mim.",
+  "Uma política clara de dados, com certificação de segurança, e alguém que eu conheço usando há um tempo.",
+  "A indicação de um amigo ou colega aqui de Caxias que use e confie.",
+  "Se ele lesse meus gastos do banco automaticamente e me mandasse só um resumo, sem eu ter que fazer nada.",
+  "Um empurrão com prazo, tipo um desconto no primeiro mês que acaba essa semana, ou alguém do trabalho começando junto.",
+  "Se meu assessor ou um colega médico me mostrasse que o plano dele me fez ganhar algo que o banco não fez.",
+  "Se meu marido topasse fazer junto e a gente tivesse um dia marcado para começar.",
+  "Se a trilha de sair do cartão fosse grátis ou custasse uns R$ 15 até eu quitar a dívida.",
+  "Uma consultoria pontual com alguém de confiança, por indicação, para a decisão específica.",
+  "Uma amiga ou colega de confiança me dizer que usou e funcionou.",
+  "Um amigo me mostrar que o app fez algo que a planilha dele não fazia.",
+  "Ver alguém parecido comigo usando há meses e com resultado real.",
+  "Um preço bem menor enquanto eu estiver endividado, ou pagar só pela trilha de sair da dívida uma vez.",
+  "Uma sessão avulsa e rápida com um planejador, online, sem ter que assinar R$ 297 todo mês.",
+  "Se ele puxasse os gastos sozinho do banco, sem eu ter que lançar nada, e mostrasse para onde foi o aumento.",
+  "Alguém fazendo o trabalho por mim de forma assíncrona, sem reunião, com prazo marcado.",
+  "Um produto avulso, pagamento único, que analise a minha decisão específica.",
+  "Se custasse uns R$ 15 ou tivesse uma ajuda pontual para a minha decisão incluída.",
+  "Ver quem está por trás, com certificação, e um plano de aposentadoria que realmente use os meus números.",
+  "Um empurrão concreto, tipo um desafio de 30 dias com resultado garantido ou dinheiro de volta.",
+  "Pagar só depois de ver a dívida do cartão diminuir de verdade, ou um preço bem menor enquanto estou endividada.",
+  "Algo que registre os gastos sozinho, sem eu ter que lançar nada.",
+  "Boa nota no Reclame Aqui com reclamações respondidas e relatos de cancelamento sem dor de cabeça.",
+  "Algo que organize o orçamento da família inteira automaticamente, puxando dos bancos, sem eu digitar.",
+  "Se minha esposa testar e quiser usar, e se separasse PF e PJ.",
+  "Uma versão para alta renda, com planejamento tributário e sucessório, ainda sem reunião.",
+  "Se meu marido e eu pudéssemos usar juntos na mesma conta, com os gastos entrando sozinhos do banco, sem eu ter que digitar nada.",
+  "Um colega médico ou advogado em quem eu confio me dizer que usa e que mudou alguma coisa de verdade para ele.",
+  "Se meu marido visse e achasse útil para a aposentadoria da gente; aí eu concordaria.",
+  "Algo voltado para quem já tem patrimônio: planejamento da aposentadoria com números reais, sucessão e imposto, sem reunião.",
+  "Ver, com o meu objetivo, um plano que mostrasse quanto guardar por mês e em quanto tempo eu chego no imóvel, melhor do que o gerente me mostra.",
+  "Se os gastos entrassem sozinhos do banco e do cartão e alguém me cobrasse quando eu saísse do plano.",
+  "Um preço bem menor, tipo R$ 15, ou o primeiro mês de graça inteiro em vez de 7 dias.",
+  "Se tivesse algum acompanhamento humano barato, tipo uma conversa por mês, sem ter que pagar R$ 297.",
+  "Um módulo específico para quem recebeu um dinheiro grande, com um plano concreto de alocação para o meu objetivo, ainda sem reunião.",
+  "Um módulo sério de planejamento de aposentadoria e sucessão para profissional liberal, com simulações sobre a minha carteira real.",
+  "Um lembrete ou alguém me cobrando de verdade, ou um pagamento único em vez de mensalidade.",
+  "Ver que o plano escrito realmente me mostra para onde foi o aumento sem eu ter que lançar tudo na mão.",
+  "Um amigo empresário me dizendo que usa e que ajudou a separar PF de PJ.",
+  "Garantia clara de segurança e privacidade dos dados, sem precisar conectar conta bancária.",
+  "Um preço bem menor, tipo R$ 15, ou algo que eu realmente não consigo fazer sozinha, como consolidar automaticamente minhas contas e investimentos.",
+  "Se minha esposa olhasse, gostasse e quisesse usar junto, com nós dois vendo o mesmo controle.",
+  "Uma parte específica para empresário separar as contas da empresa e as pessoais, com alguém de contabilidade por trás.",
+  "Se importasse minha planilha e fizesse automaticamente o que eu faço na mão, por uns R$ 15 a 20.",
+  "Uma simulação séria do meu objetivo (imóvel, escola dos filhos) com cenários de prazo e aporte que fosse melhor que minha planilha.",
+  "Se fosse grátis ou uns R$ 10, ou se meu gerente indicasse.",
+  "Um colega médico ou dentista de confiança dizer que usa e que valeu a pena.",
+  "Se fosse gratuito, ou se ajudasse de verdade a renegociar a dívida com o banco.",
+  "Ver um influenciador de finanças que eu sigo recomendar e explicar como funciona a segurança dos dados.",
+  "Um colega do trabalho que eu confio dizer que usa há meses e que ajudou de verdade.",
+  "Ver a Profitto no Reclame Aqui com nota boa e reclamações de cancelamento resolvidas rápido.",
+  "Uma ferramenta que separe claramente as contas da empresa das minhas, com relatório que eu possa mostrar ao contador.",
+  "Importar meu extrato e separar sozinho PF e PJ, poupando horas de planilha por mês.",
+  "Um preço bem menor, tipo R$ 15, ou só cobrar depois que eu tiver de fato reduzido a dívida.",
+  "Garantia clara de privacidade e uso sem conectar contas, com algo além do básico para quem já investe.",
+  "Alguém me ajudando a começar, de fato, num momento em que eu sentir que perdi o controle.",
+  "Uma função específica para separar PF e PJ, com alguém me lembrando de fazer na hora certa.",
+  "Uma simulação específica da compra do imóvel que minha planilha não consegue fazer.",
+  "Se meu assessor recomendasse.",
+  "Se tivesse algo para separar as contas da empresa das pessoais e minha esposa topasse.",
+  "Um preço tipo R$ 15 ou alguém me cobrando de verdade para eu não abandonar.",
+  "Um lembrete forte ou alguém fazendo comigo; sozinha eu não começo.",
+  "Se minha esposa testasse e quisesse.",
+  "Se importasse minha planilha e fizesse projeções de aposentadoria melhores que a minha.",
+  "Se puxasse os gastos sozinho do banco e do cartão, sem eu ter que digitar nada.",
+  "Um colega de repartição que eu confio usar e me recomendar.",
+  "Uma consulta avulsa, paga uma vez só, com alguém que analise a minha decisão.",
+  "Uma sessão pontual com planejador para a decisão da aposentadoria, sem precisar assinar mensal.",
+  "Um preço perto de R$ 19 ou um plano anual bem mais barato.",
+  "Uma conversa com um planejador sobre esse dinheiro, que eu e meu marido fizéssemos juntos.",
+  "Ver nota boa no Reclame Aqui com reclamações respondidas e uma explicação clara de como meus dados são guardados.",
+  "Uma trilha ou ferramenta específica para separar PF e PJ e definir pró-labore.",
+  "Reputação limpa no Reclame Aqui e algo voltado para quem mistura PF e PJ.",
+  "Algum acompanhamento que me cobre de verdade sem ter que ir a reunião.",
+  "Um preço perto de R$ 15 a 20.",
+  "Ferramentas de planejamento de aposentadoria mais avançadas, como simulação de renda e sucessão.",
+  "Algum check-in mensal com alguém que olhe meu caso sem ter que pagar R$ 297.",
+  "Alguém me ligando ou cobrando prazo para fazer o plano.",
+  "Uma consulta avulsa sobre a decisão, paga uma vez.",
+  "Uma análise feita para a minha decisão específica dentro do plano de R$ 49.",
+  "Uma ferramenta específica para planejar o uso de um dinheiro grande, com simulações de alocação.",
+  "Algo pensado para o casal usar junto, com metas compartilhadas, e para separar o dinheiro da empresa."
+ ],
+ "purchases_first_month_per_buyer": 1.0,
+ "price_answers": 225
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P163",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "Eu sei que deveria organizar, mas sendo honesta eu ia baixar, fazer metade do questionário e esquecer. Não vou começar a pagar mensalidade agora; fica para o mês que vem, como sempre.",
+  "objection": "Parece coisa para quem tem disciplina e muito dinheiro para administrar; eu ia pagar e não usar.",
+  "would_change_my_mind": "Um lembrete ou alguém me cobrando de verdade, ou um pagamento único em vez de mensalidade.",
+  "price_too_cheap": 9,
+  "price_cheap": 19,
+  "price_expensive": 39,
+  "price_too_expensive": 69
+}

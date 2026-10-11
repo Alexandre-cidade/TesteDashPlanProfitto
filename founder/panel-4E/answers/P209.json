@@ -1,0 +1,13 @@
+{
+  "id": "P209",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "habit",
+  "reason": "Tenho meta de comprar o apartamento e esse tipo de coisa me pega no impulso; R$ 49 nem sinto. Provavelmente assino, pago o primeiro mês e vejo se mantenho.",
+  "objection": "Depois do plano inicial, o que muda no mês seguinte? Se for só relatório automático, eu cancelo no segundo mês.",
+  "would_change_my_mind": "Se o plano não tratar da meta do imóvel de forma concreta, com valor e prazo, eu desisto ainda no teste.",
+  "price_too_cheap": 19,
+  "price_cheap": 35,
+  "price_expensive": 99,
+  "price_too_expensive": 199
+}

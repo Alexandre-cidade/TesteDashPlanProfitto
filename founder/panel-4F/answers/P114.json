@@ -1,0 +1,16 @@
+{
+  "id": "P114",
+  "buys": false,
+  "product": "nenhum",
+  "assistido_continua": false,
+  "product_priced": "assistido",
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "Sei que preciso organizar e a sessão com o casal até me interessa, mas não é este mês. Vou deixar para depois, como sempre.",
+  "objection": "Pagar caro para alguém me dizer para gastar menos e virar mais uma discussão com meu marido.",
+  "would_change_my_mind": "Um prazo real, tipo uma condição que acaba, ou meu cônjuge marcar a sessão por mim.",
+  "price_too_cheap": 100,
+  "price_cheap": 197,
+  "price_expensive": 450,
+  "price_too_expensive": 900
+}

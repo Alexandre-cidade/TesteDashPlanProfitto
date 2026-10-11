@@ -1,0 +1,13 @@
+{
+  "id": "P202",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Já baixei app de controle e larguei em poucas semanas; com filho pequeno e 2 horas de carro por dia entre Canoas e Porto Alegre, não vou lançar gasto. Pagar R$ 49 pra ficar parado no celular é jogar dinheiro fora.",
+  "objection": "Eu sei que vou pagar e não usar, o problema sou eu e não a ferramenta.",
+  "would_change_my_mind": "Se puxasse os gastos sozinho do banco e do cartão, sem eu ter que digitar nada.",
+  "price_too_cheap": 9,
+  "price_cheap": 19,
+  "price_expensive": 39,
+  "price_too_expensive": 59
+}

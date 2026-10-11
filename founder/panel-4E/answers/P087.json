@@ -1,0 +1,13 @@
+{
+  "id": "P087",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Meu problema é a empresa e a pessoa física misturadas, e isso aqui não fala nada de PJ. Não vou pagar um app para me dizer para pedir menos delivery; o resto meu gerente resolve.",
+  "objection": "Não separa o dinheiro da empresa do meu, que é o que realmente bagunça minhas contas.",
+  "would_change_my_mind": "Se tivesse um módulo de separar PF e PJ e definir pró-labore.",
+  "price_too_cheap": 15,
+  "price_cheap": 40,
+  "price_expensive": 120,
+  "price_too_expensive": 250
+}

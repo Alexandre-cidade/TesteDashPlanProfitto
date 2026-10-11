@@ -1,0 +1,13 @@
+{
+  "id": "P146",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Já vejo muito conteúdo de finanças de graça no YouTube e controlo tudo numa planilha; vídeo curto sobre reserva e aposentadoria eu já tenho de sobra. Não é o dinheiro, é que não acrescenta.",
+  "objection": "O que tem aqui que uma planilha e os influenciadores que eu sigo não me dão de graça?",
+  "would_change_my_mind": "Algo que organize o orçamento da família inteira automaticamente, puxando dos bancos, sem eu digitar.",
+  "price_too_cheap": 10,
+  "price_cheap": 20,
+  "price_expensive": 49,
+  "price_too_expensive": 89
+}

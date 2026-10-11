@@ -1,0 +1,16 @@
+{
+  "id": "P201",
+  "buys": false,
+  "product": "nenhum",
+  "assistido_continua": false,
+  "product_priced": "assistido",
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "Minha empresa e minhas contas pessoais estão misturadas e sei que preciso arrumar isso, mas agora estou no meio de muita coisa; isso fica para o ano que vem. Já larguei app antes, não quero pagar por mais uma coisa que vou abandonar.",
+  "objection": "Não é a hora, e não sei se um planejador de pessoa física entende de verdade a bagunça entre PF e PJ.",
+  "would_change_my_mind": "Se o diagnóstico separasse claramente PF e PJ junto com meu contador, eu fecharia agora.",
+  "price_too_cheap": 80,
+  "price_cheap": 150,
+  "price_expensive": 350,
+  "price_too_expensive": 600
+}

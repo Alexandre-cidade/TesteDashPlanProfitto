@@ -1,0 +1,13 @@
+{
+  "id": "P123",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "Sei que preciso, mas vou deixar para o mês que vem como sempre; e fazer sozinha não resolve as brigas com meu marido sobre dinheiro.",
+  "objection": "Começar uma coisa sozinha que eu sei que vou abandonar, e que não põe nós dois na mesma página.",
+  "would_change_my_mind": "Se meu marido topasse fazer junto e a gente tivesse um dia marcado para começar.",
+  "price_too_cheap": 15,
+  "price_cheap": 30,
+  "price_expensive": 70,
+  "price_too_expensive": 120
+}

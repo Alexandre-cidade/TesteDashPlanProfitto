@@ -1,0 +1,16 @@
+{
+  "id": "P145",
+  "buys": false,
+  "product": "nenhum",
+  "assistido_continua": false,
+  "product_priced": "assistido",
+  "purchases_first_month": 0,
+  "reason_code": "quality",
+  "reason": "Vejo conteúdo de finanças todo dia de graça no YouTube e no Instagram. Pagar alguém para me dizer para gastar menos não me convence.",
+  "objection": "Não sei se um planejador vai me dizer algo além do que os influenciadores já falam de graça.",
+  "would_change_my_mind": "Indicação de um colega médico que tenha tido um resultado concreto com eles.",
+  "price_too_cheap": 90,
+  "price_cheap": 150,
+  "price_expensive": 350,
+  "price_too_expensive": 600
+}

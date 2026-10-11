@@ -1,0 +1,13 @@
+{
+  "id": "P183",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Quem cuida do meu dinheiro é meu gerente e meu assessor, e eles não me cobram nada. Meu problema é a empresa e a pessoa física misturadas, e esse app fala de delivery e cheque especial, não disso.",
+  "objection": "Não vejo nada para separar PF de PJ, que é o que me aperta; o resto meu gerente já resolve de graça.",
+  "would_change_my_mind": "Uma ferramenta que separe claramente as contas da empresa das minhas, com relatório que eu possa mostrar ao contador.",
+  "price_too_cheap": 15,
+  "price_cheap": 29,
+  "price_expensive": 99,
+  "price_too_expensive": 200
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P216",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "R$ 49 por mês pesa no meu salário, e já larguei um app de controle de graça. Pagar por algo parecido não faz sentido para mim agora.",
+  "objection": "Medo de pagar e abandonar no segundo mês como fiz com o Mobills.",
+  "would_change_my_mind": "Um preço perto de R$ 15 a 20.",
+  "price_too_cheap": 5,
+  "price_cheap": 15,
+  "price_expensive": 35,
+  "price_too_expensive": 50
+}

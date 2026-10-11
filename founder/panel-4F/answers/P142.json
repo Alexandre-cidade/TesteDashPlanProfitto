@@ -1,0 +1,16 @@
+{
+  "id": "P142",
+  "buys": false,
+  "product": "nenhum",
+  "assistido_continua": false,
+  "product_priced": "digital",
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "Sei que preciso organizar, mas agora não é o momento. Vou deixar para o ano que vem, como sempre.",
+  "objection": "Pagar e não ter tempo de mexer nisso com o dia cheio de clientes.",
+  "would_change_my_mind": "Algum aperto real no fim do mês que me obrigasse a agir agora.",
+  "price_too_cheap": 9,
+  "price_cheap": 19,
+  "price_expensive": 39,
+  "price_too_expensive": 69
+}

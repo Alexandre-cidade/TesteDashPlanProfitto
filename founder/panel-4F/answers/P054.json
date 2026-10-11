@@ -1,0 +1,16 @@
+{
+  "id": "P054",
+  "buys": false,
+  "product": "nenhum",
+  "assistido_continua": false,
+  "product_priced": "private",
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Eu so contrato quem algum colega de confianca indicou, e ninguem que eu conheco usa essa empresa. Dizer que nao recebe comissao e bom, mas qualquer um escreve isso num anuncio.",
+  "objection": "Como vou saber que esse planejador e bom de verdade? Nao tenho nenhuma referencia de alguem que eu conheca.",
+  "would_change_my_mind": "Um colega medico ou advogado me dizer que usa e que gostou.",
+  "price_too_cheap": 400,
+  "price_cheap": 800,
+  "price_expensive": 1500,
+  "price_too_expensive": 2500
+}

@@ -1,0 +1,16 @@
+{
+  "id": "P041",
+  "buys": true,
+  "product": "assistido",
+  "assistido_continua": false,
+  "product_priced": "assistido",
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "R$ 197 uma vez só, com sessão do casal e devolução se vier genérico, é pouco pra mim e pode acabar com as brigas sobre dinheiro em casa. Mensalidade não: depois do plano eu toco numa planilha.",
+  "objection": "Pagar todo mês por algo que uma planilha resolve; já larguei app e não quero mais uma assinatura.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 80,
+  "price_cheap": 150,
+  "price_expensive": 400,
+  "price_too_expensive": 800
+}

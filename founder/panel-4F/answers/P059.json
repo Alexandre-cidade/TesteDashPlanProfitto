@@ -1,0 +1,16 @@
+{
+  "id": "P059",
+  "buys": true,
+  "product": "digital",
+  "assistido_continua": false,
+  "product_priced": "digital",
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Quero juntar para o meu apartamento e R$ 49 com 7 dias gratis eu assino na hora. No digital nao tem planejador vendo minhas contas, entao me sinto menos exposta.",
+  "objection": "Nao quero entregar todos os meus dados bancarios para uma empresa que eu nao conheco; e provavel que eu cancele depois de um ou dois meses.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 10,
+  "price_cheap": 25,
+  "price_expensive": 49,
+  "price_too_expensive": 80
+}

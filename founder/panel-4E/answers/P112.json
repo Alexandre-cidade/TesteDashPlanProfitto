@@ -1,0 +1,13 @@
+{
+  "id": "P112",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "O valor não pesa nada pra mim, mas agora não tenho cabeça pra mais uma tela e mais um app depois de uma semana inteira de videochamada. Meu marido cuida das finanças e isso fica pra depois, talvez no ano que vem.",
+  "objection": "Não tenho tempo nem energia pra ficar lançando gasto por categoria; e um app self-service parece feito pra quem está apertado, não pra nossa situação.",
+  "would_change_my_mind": "Se meu marido já estivesse procurando algo assim e propusesse usarmos juntos.",
+  "price_too_cheap": 15,
+  "price_cheap": 30,
+  "price_expensive": 90,
+  "price_too_expensive": 200
+}

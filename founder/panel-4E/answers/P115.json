@@ -1,0 +1,13 @@
+{
+  "id": "P115",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Meu gerente do banco já me orienta sem cobrar nada, e sinceramente eu deixaria esse questionário de 20 minutos pro mês que vem, como faço com tudo de organização financeira.",
+  "objection": "Por que pagar por algo que o banco já me dá de graça? E depois da dica que me fez perder dinheiro, desconfio de conselho financeiro em geral.",
+  "would_change_my_mind": "Se meu gerente me decepcionasse feio de novo, ou se meus filhos montassem tudo pra mim.",
+  "price_too_cheap": 10,
+  "price_cheap": 20,
+  "price_expensive": 60,
+  "price_too_expensive": 120
+}

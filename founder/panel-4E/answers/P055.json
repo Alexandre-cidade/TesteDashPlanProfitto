@@ -1,0 +1,13 @@
+{
+  "id": "P055",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Meu problema é a mistura da conta da empresa com a pessoal, e o app não fala nada de PJ. Para controle de gasto de delivery eu não preciso pagar.",
+  "objection": "Não resolve PF e PJ juntas, que é o que bagunça meu dinheiro.",
+  "would_change_my_mind": "Ter uma parte para separar pró-labore, retirada e contas da empresa.",
+  "price_too_cheap": 19,
+  "price_cheap": 39,
+  "price_expensive": 99,
+  "price_too_expensive": 199
+}

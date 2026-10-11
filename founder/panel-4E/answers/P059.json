@@ -1,0 +1,13 @@
+{
+  "id": "P059",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Quem cuida das minhas decisões é meu gerente do banco, que não me cobra nada. Pagar mensalidade para fazer tudo sozinha num app não faz sentido para mim.",
+  "objection": "Por que pagar se o gerente já me orienta de graça?",
+  "would_change_my_mind": "Meu gerente me recomendar o app.",
+  "price_too_cheap": 9,
+  "price_cheap": 19,
+  "price_expensive": 39,
+  "price_too_expensive": 59
+}

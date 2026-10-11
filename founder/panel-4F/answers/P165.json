@@ -1,0 +1,16 @@
+{
+  "id": "P165",
+  "buys": false,
+  "product": "nenhum",
+  "assistido_continua": false,
+  "product_priced": "private",
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Meu gerente e o assessor da corretora já cuidam disso e não me cobram nada. Não vejo por que pagar R$ 1.500 por mês.",
+  "objection": "Não tenho como saber se esse planejador é bom; dizer que não vende produto não prova competência.",
+  "would_change_my_mind": "Ver o planejador apontar, nos meus números, o que o meu gerente está me custando em tarifas e produtos.",
+  "price_too_cheap": 400,
+  "price_cheap": 800,
+  "price_expensive": 1500,
+  "price_too_expensive": 2500
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P182",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Antes de pagar qualquer coisa eu vou no Reclame Aqui, e uma empresa regional que eu nunca ouvi falar provavelmente não tem histórico nenhum lá. Sem ver como tratam reclamação, eu não passo o cartão, mesmo sendo R$ 49.",
+  "objection": "Não consigo checar a reputação nem confirmar que o cancelamento é fácil mesmo na prática; e o upsell para o plano de R$ 297 me faz pensar que o app é porta de entrada para vender mais.",
+  "would_change_my_mind": "Ver a Profitto no Reclame Aqui com nota boa e reclamações de cancelamento resolvidas rápido.",
+  "price_too_cheap": 10,
+  "price_cheap": 25,
+  "price_expensive": 80,
+  "price_too_expensive": 150
+}

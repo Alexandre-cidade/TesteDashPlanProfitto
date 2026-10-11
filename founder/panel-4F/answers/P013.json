@@ -1,0 +1,16 @@
+{
+  "id": "P013",
+  "buys": true,
+  "product": "assistido",
+  "assistido_continua": false,
+  "product_priced": "assistido",
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Tenho uma decisão grande na mesa e toda conversa de dinheiro com minha esposa vira briga; um diagnóstico pontual com sessão do casal e devolução se vier genérico eu pago. Mensalidade depois, não.",
+  "objection": "Depois do plano entregue, não vejo o que justificaria R$ 297 todo mês.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 80,
+  "price_cheap": 150,
+  "price_expensive": 350,
+  "price_too_expensive": 600
+}

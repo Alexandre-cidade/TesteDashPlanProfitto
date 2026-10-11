@@ -1,0 +1,13 @@
+{
+  "id": "P191",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Já controlo tudo na minha planilha e para a meta do imóvel isso basta. Pagar R$ 49 por mês para fazer sozinha o que já faço não faz sentido.",
+  "objection": "Meu gerente do banco já me orienta de graça, e o app não faz nada que minha planilha não faça.",
+  "would_change_my_mind": "Uma simulação específica da compra do imóvel que minha planilha não consegue fazer.",
+  "price_too_cheap": 9,
+  "price_cheap": 19,
+  "price_expensive": 39,
+  "price_too_expensive": 59
+}

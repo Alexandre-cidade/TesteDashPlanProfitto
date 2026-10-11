@@ -1,0 +1,16 @@
+{
+  "id": "P087",
+  "buys": true,
+  "product": "assistido",
+  "assistido_continua": false,
+  "product_priced": "assistido",
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Tenho uma decisão grande pra tomar agora e quero alguém olhando os números uma vez. R$ 197 pagos uma vez, com devolução se for genérico, eu pago; mensalidade de R$ 297 não.",
+  "objection": "Medo de receber um PDF genérico dizendo pra gastar menos em vez de uma resposta pra minha decisão.",
+  "would_change_my_mind": "Se ficar claro que o diagnóstico não responde a minha decisão específica, eu não compro.",
+  "price_too_cheap": 50,
+  "price_cheap": 120,
+  "price_expensive": 250,
+  "price_too_expensive": 400
+}

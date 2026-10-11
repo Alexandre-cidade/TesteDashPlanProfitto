@@ -1,0 +1,16 @@
+{
+  "id": "P144",
+  "buys": false,
+  "product": "nenhum",
+  "assistido_continua": false,
+  "product_priced": "assistido",
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Já controlo tudo na minha planilha. Depois das primeiras reuniões, não vejo o que mudaria no mês seguinte que justifique R$ 297 por mês.",
+  "objection": "Pagar mensalidade para ouvir o que eu já sei, sem resolver a mistura de PF e PJ de forma prática.",
+  "would_change_my_mind": "Se o diagnóstico mostrasse ganho concreto em imposto ou na separação PF/PJ maior que o custo.",
+  "price_too_cheap": 100,
+  "price_cheap": 180,
+  "price_expensive": 300,
+  "price_too_expensive": 450
+}

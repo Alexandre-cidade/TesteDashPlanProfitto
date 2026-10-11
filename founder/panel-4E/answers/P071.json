@@ -1,0 +1,13 @@
+{
+  "id": "P071",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Eu já invisto sozinho pelo app da corretora e me viro bem; mais uma assinatura de R$ 49 para trilhas em vídeo e controle de gastos não acrescenta nada para mim.",
+  "objection": "Parece feito para quem está começando; não vejo o que um questionário de 20 minutos me ensinaria que eu já não sei.",
+  "would_change_my_mind": "Se o app trouxesse algo avançado de verdade, tipo análise da minha carteira e simulação de aposentadoria com meus números reais.",
+  "price_too_cheap": 5,
+  "price_cheap": 15,
+  "price_expensive": 30,
+  "price_too_expensive": 50
+}

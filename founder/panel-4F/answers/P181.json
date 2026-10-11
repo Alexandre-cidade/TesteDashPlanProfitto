@@ -1,0 +1,16 @@
+{
+  "id": "P181",
+  "buys": false,
+  "product": "nenhum",
+  "assistido_continua": false,
+  "product_priced": "assistido",
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Quem cuida do dinheiro lá em casa é meu marido; não assino nada fixo sem passar por ele, e essa semana eu não ia puxar esse assunto só por causa de um anúncio.",
+  "objection": "Mesmo dizendo sem fidelidade, tenho medo de virar mais uma mensalidade que a gente esquece e depois dá trabalho cancelar.",
+  "would_change_my_mind": "Meu marido ver a oferta e topar fazer o diagnóstico junto comigo.",
+  "price_too_cheap": 60,
+  "price_cheap": 150,
+  "price_expensive": 300,
+  "price_too_expensive": 500
+}

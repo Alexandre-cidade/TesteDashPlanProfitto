@@ -1,0 +1,16 @@
+{
+  "id": "P125",
+  "buys": false,
+  "product": "nenhum",
+  "assistido_continua": false,
+  "product_priced": "assistido",
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "O dinheiro está curto com o cartão rodando e não tenho R$ 197 sobrando agora, muito menos R$ 297 por mês. E essas empresas sempre dizem que é fácil cancelar até a hora de cancelar.",
+  "objection": "Pagar por um plano e depois não conseguir sair, ou receber um papel bonito que não resolve a dívida.",
+  "would_change_my_mind": "Poder pagar o diagnóstico parcelado e ver alguém de confiança aqui da região que cancelou sem problema.",
+  "price_too_cheap": 50,
+  "price_cheap": 97,
+  "price_expensive": 197,
+  "price_too_expensive": 297
+}

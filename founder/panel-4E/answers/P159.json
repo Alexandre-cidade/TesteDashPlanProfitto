@@ -1,0 +1,13 @@
+{
+  "id": "P159",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Já tentei app e larguei; conheço meu padrão. Vou baixar empolgada depois de um vídeo, usar dois dias e depois pagar sem abrir.",
+  "objection": "Fazer tudo sozinha é justamente o que não funciona comigo. Sem alguém acompanhando, eu não sigo plano nenhum.",
+  "would_change_my_mind": "Se tivesse algum acompanhamento humano barato, tipo uma conversa por mês, sem ter que pagar R$ 297.",
+  "price_too_cheap": 10,
+  "price_cheap": 25,
+  "price_expensive": 50,
+  "price_too_expensive": 100
+}

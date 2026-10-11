@@ -1,0 +1,13 @@
+{
+  "id": "P105",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Eu tenho uma decisão grande pra resolver agora e preciso de alguém pra me orientar nisso, não de um app pra fazer sozinho. Com renda variável, R$ 49 por mês pesa.",
+  "objection": "Um plano de 20 minutos de questionário não resolve a minha dúvida específica, e o planejador de R$ 297 é caro pra mim.",
+  "would_change_my_mind": "Uma consulta avulsa com planejador, paga uma vez só, a preço acessível.",
+  "price_too_cheap": 10,
+  "price_cheap": 19,
+  "price_expensive": 39,
+  "price_too_expensive": 60
+}

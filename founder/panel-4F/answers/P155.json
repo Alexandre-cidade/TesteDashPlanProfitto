@@ -1,0 +1,16 @@
+{
+  "id": "P155",
+  "buys": false,
+  "product": "nenhum",
+  "assistido_continua": false,
+  "product_priced": "assistido",
+  "purchases_first_month": 0,
+  "reason_code": "other",
+  "reason": "Quem cuida do dinheiro em casa é meu marido; eu levaria a ideia para ele, mas não contrato nada sozinha. Numa semana normal isso fica na conversa e não vira compra.",
+  "objection": "Ele vai dizer que já tem tudo sob controle e que não precisamos pagar alguém para olhar nossas contas.",
+  "would_change_my_mind": "Se ele mesmo se interessasse pela sessão com o casal e pelo raio-X das tarifas do banco.",
+  "price_too_cheap": 80,
+  "price_cheap": 200,
+  "price_expensive": 500,
+  "price_too_expensive": 1000
+}

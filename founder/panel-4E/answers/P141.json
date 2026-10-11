@@ -1,0 +1,13 @@
+{
+  "id": "P141",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Estou com cartão e cheque especial rodando; pagar R$ 49 por mês para um app me dizer para cortar gastos é mais uma conta. Faria os 7 dias grátis, pegaria a trilha do cartão e cancelaria.",
+  "objection": "Já perdi dinheiro seguindo dica; não sei se isso resolve ou se é só mais uma mensalidade em cima da dívida.",
+  "would_change_my_mind": "Pagar só depois de ver a dívida do cartão diminuir de verdade, ou um preço bem menor enquanto estou endividada.",
+  "price_too_cheap": 5,
+  "price_cheap": 15,
+  "price_expensive": 29,
+  "price_too_expensive": 49
+}

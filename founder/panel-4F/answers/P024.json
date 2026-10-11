@@ -1,0 +1,16 @@
+{
+  "id": "P024",
+  "buys": false,
+  "product": "nenhum",
+  "assistido_continua": false,
+  "product_priced": "digital",
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "Tenho 25 anos, ganho bem e invisto sozinho pela corretora; agora não é o momento, talvez no ano que vem quando a vida estiver mais estável.",
+  "objection": "Não sinto que preciso disso agora, e mais uma tela depois de uma semana inteira de vídeo é a última coisa que eu quero.",
+  "would_change_my_mind": "Algum evento concreto, como comprar um imóvel ou abrir minha própria clínica, que me fizesse precisar de um plano.",
+  "price_too_cheap": 10,
+  "price_cheap": 25,
+  "price_expensive": 49,
+  "price_too_expensive": 80
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P075",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Eu tenho uma decisão grande na mesa e quero uma resposta para ela, não trilhas em vídeo e controle de delivery. Faria os 7 dias grátis, pegaria o plano escrito e cancelaria antes da cobrança.",
+  "objection": "Um questionário genérico de 20 minutos não resolve a minha decisão específica, ainda mais com PF e PJ misturadas.",
+  "would_change_my_mind": "Uma análise pontual, 100% online, focada na minha decisão (imóvel ou dívida), com preço fechado de uma vez só.",
+  "price_too_cheap": 10,
+  "price_cheap": 29,
+  "price_expensive": 99,
+  "price_too_expensive": 250
+}

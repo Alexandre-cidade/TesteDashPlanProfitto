@@ -1,0 +1,13 @@
+{
+  "id": "P190",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Eu pago um monte de assinatura e nem sei quanto vai embora por mês; esse controle de assinaturas é bem a minha dor. Assino no impulso e acabo pagando pelo menos o primeiro mês.",
+  "objection": "Parece coisa para quem tem muito dinheiro, e R$ 49 é mais uma assinatura em cima das que eu já quero cortar.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 9,
+  "price_cheap": 19,
+  "price_expensive": 39,
+  "price_too_expensive": 59
+}

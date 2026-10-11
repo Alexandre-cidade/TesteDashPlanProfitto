@@ -1,0 +1,16 @@
+{
+  "id": "P099",
+  "buys": false,
+  "product": "nenhum",
+  "assistido_continua": false,
+  "product_priced": "assistido",
+  "purchases_first_month": 0,
+  "reason_code": "convenience",
+  "reason": "Já fiz videochamada a semana toda e não quero mais uma reunião, nem mensal. Já vi várias ofertas de planejamento nos canais que sigo e essa não me diz por que seria melhor do que as outras.",
+  "objection": "Vou pagar para ouvir o mesmo que os influenciadores já falam de graça sobre aposentadoria.",
+  "would_change_my_mind": "Um plano de aposentadoria por escrito sem reunião obrigatória, ou alguém em quem eu confio recomendando.",
+  "price_too_cheap": 50,
+  "price_cheap": 120,
+  "price_expensive": 250,
+  "price_too_expensive": 400
+}

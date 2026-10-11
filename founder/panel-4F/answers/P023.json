@@ -1,0 +1,16 @@
+{
+  "id": "P023",
+  "buys": false,
+  "product": "nenhum",
+  "assistido_continua": false,
+  "product_priced": "assistido",
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Meu gerente do banco cuida disso e não me cobra nada. Já perdi dinheiro com dica e não vou pagar mensalidade para mais alguém opinar.",
+  "objection": "Por que pagar todo mês se o gerente faz de graça? E não sei se esse planejador é melhor do que a dica que me fez perder dinheiro.",
+  "would_change_my_mind": "Ver alguém próximo, servidor como eu, mostrar quanto economizou em tarifas e produtos ruins do banco depois do diagnóstico.",
+  "price_too_cheap": 50,
+  "price_cheap": 100,
+  "price_expensive": 200,
+  "price_too_expensive": 300
+}

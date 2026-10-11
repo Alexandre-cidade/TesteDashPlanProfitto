@@ -1,0 +1,16 @@
+{
+  "id": "P005",
+  "buys": false,
+  "product": "nenhum",
+  "assistido_continua": false,
+  "product_priced": "assistido",
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Antes de contratar qualquer coisa eu olho o Reclame Aqui, e de uma empresa pequena de Porto Alegre não vou achar histórico nenhum. Enquanto isso o assessor do banco me atende de graça com o dinheiro que recebi.",
+  "objection": "Não tem reputação que eu possa checar, e eu não sei se a devolução dos R$ 197 funciona na prática ou se vira briga.",
+  "would_change_my_mind": "Ver a empresa no Reclame Aqui com boa nota e reclamações resolvidas, principalmente de reembolso.",
+  "price_too_cheap": 100,
+  "price_cheap": 197,
+  "price_expensive": 400,
+  "price_too_expensive": 700
+}

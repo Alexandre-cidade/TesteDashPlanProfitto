@@ -1,0 +1,13 @@
+{
+  "id": "P130",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Estou com cheque especial rodando e renda que varia; R$ 49 todo mês é dinheiro que eu preciso pra juntar pro imóvel, e uma planilha faz o básico.",
+  "objection": "Mais uma mensalidade justo quando o dinheiro está curto.",
+  "would_change_my_mind": "Um preço bem menor enquanto eu estiver endividado, ou pagar só pela trilha de sair da dívida uma vez.",
+  "price_too_cheap": 5,
+  "price_cheap": 15,
+  "price_expensive": 35,
+  "price_too_expensive": 59
+}

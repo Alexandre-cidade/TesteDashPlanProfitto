@@ -1,0 +1,16 @@
+{
+  "id": "P076",
+  "buys": false,
+  "product": "nenhum",
+  "assistido_continua": false,
+  "product_priced": "assistido",
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Meu gerente e o assessor da corretora cuidam disso sem mensalidade, e eu atendo cliente o dia inteiro em Caxias, não tenho tempo para juntar documento para um planejador que não conheço.",
+  "objection": "Como saber se esse planejador é bom de verdade; dizer que não recebe comissão é fácil, quero ver quem já usou.",
+  "would_change_my_mind": "Indicação de alguém de confiança aqui de Caxias que tenha feito o diagnóstico e gostado.",
+  "price_too_cheap": 80,
+  "price_cheap": 150,
+  "price_expensive": 300,
+  "price_too_expensive": 500
+}

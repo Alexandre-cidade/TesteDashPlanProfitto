@@ -1,0 +1,13 @@
+{
+  "id": "P023",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Ninguém que eu conheço me indicou a Profitto, e meu gerente do banco já me ajuda com o planejamento do imóvel sem cobrar nada. Não vou pagar um app que vi passando no feed.",
+  "objection": "Não conheço ninguém que use, e um app genérico não vai entender meu objetivo de comprar o apartamento melhor que o meu gerente.",
+  "would_change_my_mind": "Um amigo ou colega de confiança dizendo que usou e que fez diferença no objetivo dele.",
+  "price_too_cheap": 15,
+  "price_cheap": 29,
+  "price_expensive": 79,
+  "price_too_expensive": 129
+}

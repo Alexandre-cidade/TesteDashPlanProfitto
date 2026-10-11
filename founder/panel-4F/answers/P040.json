@@ -1,0 +1,16 @@
+{
+  "id": "P040",
+  "buys": false,
+  "product": "nenhum",
+  "assistido_continua": false,
+  "product_priced": "assistido",
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Já perdi dinheiro em dica de investimento e agora desconfio de tudo. Pagar R$ 197 e depois R$ 297 por mês para alguém me dizer para gastar menos é caro.",
+  "objection": "Caro para alguém me dizer para gastar menos; e se for mais um conselho que não dá certo?",
+  "would_change_my_mind": "Ver casos reais de famílias parecidas com a minha e o que mudou nas contas depois do diagnóstico.",
+  "price_too_cheap": 80,
+  "price_cheap": 150,
+  "price_expensive": 297,
+  "price_too_expensive": 450
+}

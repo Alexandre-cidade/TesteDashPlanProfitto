@@ -1,0 +1,16 @@
+{
+  "id": "P058",
+  "buys": false,
+  "product": "nenhum",
+  "assistido_continua": false,
+  "product_priced": "assistido",
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Ja baixei app e larguei em um mes; um plano escrito bonito vai ter o mesmo destino se ninguem me cobrar. E entre a casa, os filhos e a ajuda aos meus pais, nao sobra para mensalidade de R$ 297.",
+  "objection": "Depois do diagnostico, o que garante que eu vou mudar alguma coisa no mes seguinte?",
+  "would_change_my_mind": "Um acompanhamento mais barato que realmente me cobrasse todo mes, tipo um check-in por WhatsApp.",
+  "price_too_cheap": 50,
+  "price_cheap": 100,
+  "price_expensive": 200,
+  "price_too_expensive": 300
+}

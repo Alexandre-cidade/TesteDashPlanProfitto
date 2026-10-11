@@ -1,0 +1,13 @@
+{
+  "id": "P102",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "convenience",
+  "reason": "Gosto que é 100% online e sem falar com ninguém; R$ 49 eu pago pra ver um plano escrito que o gerente nunca me deu. Fico pelo menos o primeiro mês.",
+  "objection": "O gerente já me atende sem mensalidade, então o app tem que mostrar no primeiro mês que vale mais que isso.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 10,
+  "price_cheap": 25,
+  "price_expensive": 69,
+  "price_too_expensive": 120
+}

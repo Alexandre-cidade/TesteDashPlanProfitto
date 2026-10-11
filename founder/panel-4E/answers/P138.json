@@ -1,0 +1,13 @@
+{
+  "id": "P138",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "O cartão e o cheque especial estão me comendo vivo, e ainda ajudo meus pais todo mês. Se a trilha para sair do cartão funcionar nos 7 dias, R$ 49 é menos do que eu pago de juros numa semana.",
+  "objection": "Acho caro pagar para alguém me mandar gastar menos quando o dinheiro já está curto.",
+  "would_change_my_mind": "Se nos 7 dias grátis a trilha de dívida for só conselho genérico, eu cancelo.",
+  "price_too_cheap": 9,
+  "price_cheap": 20,
+  "price_expensive": 50,
+  "price_too_expensive": 80
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P118",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Só contrato o que alguém de confiança me indicou, e ninguém me falou dessa empresa. Colocar todas as contas da família num app desconhecido, na minha idade, não faço.",
+  "objection": "Não sei quem está por trás nem o que fazem com os meus dados.",
+  "would_change_my_mind": "A indicação de um amigo ou colega aqui de Caxias que use e confie.",
+  "price_too_cheap": 10,
+  "price_cheap": 20,
+  "price_expensive": 40,
+  "price_too_expensive": 70
+}

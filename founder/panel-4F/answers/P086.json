@@ -1,0 +1,16 @@
+{
+  "id": "P086",
+  "buys": false,
+  "product": "nenhum",
+  "assistido_continua": false,
+  "product_priced": "assistido",
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Eu mesma invisto pelo app e acompanho tudo; não preciso de alguém me dizendo onde pôr o dinheiro. Que não tenha fidelidade é bom, mas não muda o fato de que eu não preciso.",
+  "objection": "Não sei se um planejador vai saber mais do que eu sobre investimento a ponto de valer a mensalidade.",
+  "would_change_my_mind": "Uma ajuda pontual só com imposto e com o planejamento de ajudar meus pais sem comprometer o patrimônio.",
+  "price_too_cheap": 80,
+  "price_cheap": 150,
+  "price_expensive": 300,
+  "price_too_expensive": 500
+}

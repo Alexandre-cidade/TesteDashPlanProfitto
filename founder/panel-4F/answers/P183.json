@@ -1,0 +1,16 @@
+{
+  "id": "P183",
+  "buys": false,
+  "product": "nenhum",
+  "assistido_continua": false,
+  "product_priced": "private",
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Meu gerente do banco e o assessor da corretora já cuidam disso sem cobrar mensalidade; não vejo por que pagar R$ 1.500 por mês para um desconhecido.",
+  "objection": "Não sei quem é esse planejador nem se ele entende de empresa misturada com pessoa física; dizer que não recebe comissão é fácil.",
+  "would_change_my_mind": "Um colega empresário me contar que separou PF e PJ com eles e economizou mais do que pagou.",
+  "price_too_cheap": 300,
+  "price_cheap": 800,
+  "price_expensive": 2000,
+  "price_too_expensive": 3500
+}

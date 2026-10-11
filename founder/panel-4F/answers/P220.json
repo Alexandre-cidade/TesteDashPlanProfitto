@@ -1,0 +1,16 @@
+{
+  "id": "P220",
+  "buys": false,
+  "product": "nenhum",
+  "assistido_continua": false,
+  "product_priced": "assistido",
+  "purchases_first_month": 0,
+  "reason_code": "other",
+  "reason": "Quem cuida do dinheiro em casa é meu cônjuge; não fecho nada sem conversar, então neste mês eu não compraria.",
+  "objection": "Como vou saber se o planejador é bom de verdade e não vai acabar empurrando algum produto?",
+  "would_change_my_mind": "Meu cônjuge ver a proposta e topar, e saber a certificação do planejador.",
+  "price_too_cheap": 90,
+  "price_cheap": 150,
+  "price_expensive": 280,
+  "price_too_expensive": 400
+}

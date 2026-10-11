@@ -1,0 +1,13 @@
+{
+  "id": "P090",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Gosto de ser online e sem falar com ninguém, mas eu já larguei o Organizze depois de um mês e sei que faria o mesmo aqui, provavelmente antes do fim dos 7 dias. Para a aposentadoria, umas trilhas em vídeo não me dizem nada de novo.",
+  "objection": "Vai depender de eu lançar gasto e abrir o app todo mês, que é exatamente o que eu nunca mantenho.",
+  "would_change_my_mind": "Se ele conectasse automático às minhas contas e me desse um plano de aposentadoria com números meus, não só vídeos.",
+  "price_too_cheap": 10,
+  "price_cheap": 25,
+  "price_expensive": 60,
+  "price_too_expensive": 100
+}

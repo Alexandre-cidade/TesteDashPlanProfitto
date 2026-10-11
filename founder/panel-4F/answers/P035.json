@@ -1,0 +1,16 @@
+{
+  "id": "P035",
+  "buys": false,
+  "product": "nenhum",
+  "assistido_continua": false,
+  "product_priced": "assistido",
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Eu controlo tudo na minha planilha e não pago mensalidade para isso. Se o dinheiro do aumento sumiu, eu mesmo vou descobrir sentando com a planilha.",
+  "objection": "Uma planilha resolve, não preciso pagar todo mês por algo que eu sei fazer.",
+  "would_change_my_mind": "Se o diagnóstico separasse de verdade o que é da empresa e o que é meu, coisa que a planilha não está conseguindo.",
+  "price_too_cheap": 100,
+  "price_cheap": 200,
+  "price_expensive": 400,
+  "price_too_expensive": 700
+}

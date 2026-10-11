@@ -1,0 +1,13 @@
+{
+  "id": "P021",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "convenience",
+  "reason": "Sem reunião nenhuma e no meu tempo, era isso que eu queria. Eu ia assinar na hora pelo celular e, sendo sincero, ia esquecer de cancelar antes dos 7 dias, então os primeiros R$ 49 iam sair.",
+  "objection": "Eu conheço meu padrão: assino empolgado, uso duas semanas e largo. Não sei se vou abrir o app no segundo mês.",
+  "would_change_my_mind": "Se tivesse que colocar o cartão e confirmar a cobrança manualmente depois do teste, eu provavelmente pararia para pensar e desistiria.",
+  "price_too_cheap": 10,
+  "price_cheap": 25,
+  "price_expensive": 59,
+  "price_too_expensive": 89
+}

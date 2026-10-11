@@ -1,0 +1,16 @@
+{
+  "id": "P172",
+  "buys": false,
+  "product": "nenhum",
+  "assistido_continua": false,
+  "product_priced": "private",
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Nunca ouvi falar da Profitto e ninguém de confiança me indicou; além disso agora não é o momento, talvez ano que vem.",
+  "objection": "Não conheço ninguém que use, e não entrego meu patrimônio e minha sucessão para quem não veio indicado.",
+  "would_change_my_mind": "Uma indicação de um colega médico ou advogado que já usa o Private e está satisfeito.",
+  "price_too_cheap": 500,
+  "price_cheap": 900,
+  "price_expensive": 1800,
+  "price_too_expensive": 3000
+}

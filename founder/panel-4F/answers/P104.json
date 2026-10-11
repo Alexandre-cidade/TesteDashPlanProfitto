@@ -1,0 +1,16 @@
+{
+  "id": "P104",
+  "buys": true,
+  "product": "assistido",
+  "assistido_continua": false,
+  "product_priced": "assistido",
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Minhas contas PF e PJ estão misturadas e já perdi dinheiro com dica ruim; R$ 197 uma vez, com devolução se for genérico e sessão com o casal, dá para levar à minha esposa sem virar gasto fixo.",
+  "objection": "Os R$ 297 por mês viram gasto fixo e minha esposa vai querer ver resultado antes; não sei se o planejador entende de empresa.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 70,
+  "price_cheap": 150,
+  "price_expensive": 350,
+  "price_too_expensive": 600
+}

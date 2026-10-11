@@ -1,0 +1,16 @@
+{
+  "id": "P047",
+  "buys": false,
+  "product": "nenhum",
+  "assistido_continua": false,
+  "product_priced": "digital",
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Mais uma assinatura pra alguém me dizer pra cortar as outras assinaturas? Não. E ninguém que eu conheço indicou.",
+  "objection": "É caro pagar pra ouvir que eu tenho que gastar menos.",
+  "would_change_my_mind": "Uma amiga me mostrar quanto economizou usando.",
+  "price_too_cheap": 7,
+  "price_cheap": 15,
+  "price_expensive": 30,
+  "price_too_expensive": 50
+}

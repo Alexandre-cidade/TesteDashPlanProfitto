@@ -1,0 +1,13 @@
+{
+  "id": "P195",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Já paguei app e larguei, e qualquer gasto fixo passa pela minha esposa, que não vai aprovar mais uma assinatura. Além disso PF e PJ misturadas não parecem cobertas.",
+  "objection": "Vou pagar e não usar, como da última vez.",
+  "would_change_my_mind": "Se tivesse algo para separar as contas da empresa das pessoais e minha esposa topasse.",
+  "price_too_cheap": 10,
+  "price_cheap": 20,
+  "price_expensive": 50,
+  "price_too_expensive": 80
+}

@@ -1,0 +1,16 @@
+{
+  "id": "P140",
+  "buys": false,
+  "product": "nenhum",
+  "assistido_continua": false,
+  "product_priced": "assistido",
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Só contrato algo assim se alguém de confiança tiver usado e recomendado, e nunca ouvi falar da Profitto. Além disso, não tenho tempo para reuniões mensais.",
+  "objection": "Não conheço ninguém que tenha usado; entregar minhas contas a uma empresa desconhecida não dá.",
+  "would_change_my_mind": "Indicação de um amigo ou colega que tenha feito o diagnóstico e gostado.",
+  "price_too_cheap": 80,
+  "price_cheap": 150,
+  "price_expensive": 297,
+  "price_too_expensive": 450
+}

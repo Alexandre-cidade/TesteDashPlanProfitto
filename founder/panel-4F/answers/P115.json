@@ -1,0 +1,16 @@
+{
+  "id": "P115",
+  "buys": true,
+  "product": "assistido",
+  "assistido_continua": false,
+  "product_priced": "assistido",
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Minhas contas da empresa e de casa estão misturadas e isso vira briga em casa. R$ 197 uma vez, com devolução se for genérico, eu pago sem precisar pedir licença.",
+  "objection": "Virar gasto fixo de R$ 297 por mês, que aí precisa passar pelo meu marido, e ele vai achar caro.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 90,
+  "price_cheap": 197,
+  "price_expensive": 400,
+  "price_too_expensive": 800
+}

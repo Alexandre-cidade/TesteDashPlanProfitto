@@ -1,0 +1,13 @@
+{
+  "id": "P181",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Ninguém que eu conheço usa ou me indicou isso. Não contrato serviço de uma empresa de Porto Alegre que eu vi passando no feed, e pagar para um app me dizer para gastar menos ainda me parece estranho.",
+  "objection": "Sem indicação de alguém de confiança, não sei se funciona nem se vale os R$ 49 todo mês.",
+  "would_change_my_mind": "Um colega do trabalho que eu confio dizer que usa há meses e que ajudou de verdade.",
+  "price_too_cheap": 9,
+  "price_cheap": 19,
+  "price_expensive": 39,
+  "price_too_expensive": 69
+}

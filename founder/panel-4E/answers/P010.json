@@ -1,0 +1,13 @@
+{
+  "id": "P010",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Minha planilha já controla tudo e já sei quanto preciso juntar para o meu objetivo. Depois do questionário e do plano inicial, não vejo o que muda no mês seguinte que justifique pagar todo mês.",
+  "objection": "Depois do primeiro plano, o relatório automático é só o que a minha planilha já mostra.",
+  "would_change_my_mind": "Se o plano mostrasse um caminho mais rápido para o meu objetivo que eu não tinha visto.",
+  "price_too_cheap": 5,
+  "price_cheap": 15,
+  "price_expensive": 30,
+  "price_too_expensive": 50
+}

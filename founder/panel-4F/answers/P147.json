@@ -1,0 +1,16 @@
+{
+  "id": "P147",
+  "buys": false,
+  "product": "nenhum",
+  "assistido_continua": false,
+  "product_priced": "assistido",
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Meu gerente do banco já me orienta sem cobrar nada. R$ 197 já pesa, e R$ 297 por mês está fora da minha realidade.",
+  "objection": "Por que pagar se o banco me orienta de graça? E não sei se meu marido toparia sentar numa sessão.",
+  "would_change_my_mind": "Ver que a sessão com o casal realmente acaba com as brigas sobre dinheiro, com o preço bem menor.",
+  "price_too_cheap": 40,
+  "price_cheap": 80,
+  "price_expensive": 150,
+  "price_too_expensive": 250
+}

@@ -1,0 +1,16 @@
+{
+  "id": "P084",
+  "buys": false,
+  "product": "nenhum",
+  "assistido_continua": false,
+  "product_priced": "digital",
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Ganho pouco e o gerente do banco me orienta sem cobrar nada. Pagar todo mês pra alguém ou um app me dizer pra gastar menos não faz sentido pra mim.",
+  "objection": "É dinheiro todo mês por uma coisa que o banco já me dá de graça.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 5,
+  "price_cheap": 15,
+  "price_expensive": 30,
+  "price_too_expensive": 49
+}

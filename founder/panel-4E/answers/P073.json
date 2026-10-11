@@ -1,0 +1,13 @@
+{
+  "id": "P073",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Não ter reunião é ótimo, mas eu já compro Tesouro e fundos pelo app sozinho e acho que dou conta. R$ 49 todo mês pesa no meu salário para algo que eu acho que já sei fazer.",
+  "objection": "Pagar todo mês por conteúdo e controle que dá para achar de graça ou em app mais barato.",
+  "would_change_my_mind": "Um preço bem menor, tipo R$ 15 a R$ 19, ou eu perceber que estou realmente perdendo dinheiro sem controle.",
+  "price_too_cheap": 5,
+  "price_cheap": 15,
+  "price_expensive": 30,
+  "price_too_expensive": 45
+}

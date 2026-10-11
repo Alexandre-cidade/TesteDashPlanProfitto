@@ -1,0 +1,16 @@
+{
+  "id": "P108",
+  "buys": true,
+  "product": "digital",
+  "assistido_continua": false,
+  "product_priced": "digital",
+  "purchases_first_month": 1,
+  "reason_code": "convenience",
+  "reason": "Só contrato online e não quero falar com planejador; o Digital tem delivery e assinaturas, que é onde meu dinheiro some. Faço o teste e acabo pagando.",
+  "objection": "Sei que assino por impulso e depois esqueço; pode virar mais uma assinatura que eu mesmo vou ter que cortar.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 9,
+  "price_cheap": 25,
+  "price_expensive": 59,
+  "price_too_expensive": 99
+}

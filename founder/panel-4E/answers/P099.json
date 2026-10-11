@@ -1,0 +1,13 @@
+{
+  "id": "P099",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Já controlo tudo na minha planilha e ganho bem; não preciso de app pago para me dizer o que eu já sei.",
+  "objection": "Depois do primeiro mês, vira só mais uma assinatura de controle de gastos e uns vídeos. O que muda no mês seguinte?",
+  "would_change_my_mind": "Algo que eu não faço na planilha, tipo planejamento tributário de profissional liberal ou PJ.",
+  "price_too_cheap": 15,
+  "price_cheap": 25,
+  "price_expensive": 50,
+  "price_too_expensive": 90
+}

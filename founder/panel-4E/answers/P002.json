@@ -1,0 +1,13 @@
+{
+  "id": "P002",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "convenience",
+  "reason": "Ia assinar na hora pelo app, achando que agora eu me organizo, e conhecendo eu mesmo vou esquecer de cancelar antes dos 7 dias e pagar pelo menos o primeiro mês. Provavelmente cancelo depois, porque meu gerente já me dá umas dicas de graça.",
+  "objection": "Meu gerente do banco já me orienta sem cobrar, e é mais uma assinatura numa pilha de assinaturas que eu já não uso.",
+  "would_change_my_mind": "Se eu lembrasse de cancelar antes do sétimo dia, não pagaria.",
+  "price_too_cheap": 9,
+  "price_cheap": 25,
+  "price_expensive": 60,
+  "price_too_expensive": 100
+}
