@@ -228,6 +228,22 @@ select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid var(--lin
           <div class="ctl"><div class="row"><label for="deliv">Custo de entrega por cliente/mês</label><output id="o-deliv"></output></div><input type="range" id="deliv" min="0" max="300" step="5"></div>
           <p class="help">Planejador a 0% = produto sem planejador (self-service). Custo de entrega: app, IA, material, horas extras.</p>
         </fieldset>
+        <fieldset id="fs-org"><legend>Canal do Neto (orgânico)</legend>
+          <div class="ctl"><label for="ytsubs">Inscritos hoje</label><input type="number" id="ytsubs" class="tin" min="0" step="100" inputmode="numeric"></div>
+          <div class="ctl"><label for="ytviews">Visualizações por mês (todos os vídeos)</label><input type="number" id="ytviews" class="tin" min="0" step="500" inputmode="numeric"></div>
+          <div class="ctl"><div class="row"><label for="ytg1">Crescimento por mês no ano 1</label><output id="o-ytg1"></output></div><input type="range" id="ytg1" min="-5" max="20" step="0.5"></div>
+          <div class="ctl"><div class="row"><label for="ytg2">Crescimento por mês no ano 2</label><output id="o-ytg2"></output></div><input type="range" id="ytg2" min="-5" max="20" step="0.5"></div>
+          <div class="ctl"><div class="row"><label for="ytg3">Crescimento por mês no ano 3</label><output id="o-ytg3"></output></div><input type="range" id="ytg3" min="-5" max="20" step="0.5"></div>
+          <div class="ctl"><div class="row"><label for="ytg4">Crescimento por mês no ano 4</label><output id="o-ytg4"></output></div><input type="range" id="ytg4" min="-5" max="20" step="0.5"></div>
+          <div class="ctl"><div class="row"><label for="ytg5">Crescimento por mês no ano 5</label><output id="o-ytg5"></output></div><input type="range" id="ytg5" min="-5" max="20" step="0.5"></div>
+          <button class="btn" id="ytg-same" type="button">Usar o crescimento do ano 1 em todos os anos</button>
+          <p class="help">Inscritos e visualizações crescem juntos, mês a mês, no ritmo de cada ano.</p>
+          <div class="ctl"><div class="row"><label for="ytctr">Quem assiste e clica no link</label><output id="o-ytctr"></output></div><input type="range" id="ytctr" min="0" max="5" step="0.1"></div>
+          <div class="ctl"><div class="row"><label for="ytlead">Quem clica e vira interessado</label><output id="o-ytlead"></output></div><input type="range" id="ytlead" min="0" max="100" step="5"></div>
+          <div class="ctl"><div class="row"><label for="orgother">Outros orgânicos (Instagram, boca a boca, Google) por mês</label><output id="o-orgother"></output></div><input type="range" id="orgother" min="0" max="500" step="5"></div>
+          <div class="ctl"><div class="row"><label for="orgcost">Custo mensal do orgânico (roteiro, edição)</label><output id="o-orgcost"></output></div><input type="range" id="orgcost" min="0" max="20000" step="250"></div>
+          <label class="tog"><input type="checkbox" id="yttrust"><span>A audiência confia no Neto<small>Quem vem do canal compra como quem chega indicado.</small></span></label>
+        </fieldset>
         <fieldset><legend>Empresa (vale para todos os produtos)</legend>
           <div class="pbox" aria-live="polite"><span class="ttl">Planejadores necessários (informativo)</span><div class="grid6" id="pbox"></div><p class="help" id="pbox-note"></p></div>
           <label class="tog"><input type="checkbox" id="menu"><span>Mostrar todos os produtos juntos (cardápio)<small>Quem chega vê todos os produtos ligados. Usa a escolha real do teste do cardápio: um produto tira vendas do outro.</small></span></label>
@@ -269,16 +285,7 @@ select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid var(--lin
         <div class="card" id="org-card">
           <div class="flexbetween"><h3>Marketing orgânico: canal do Neto</h3><span class="muted" id="org-note" style="font-size:.8rem"></span></div>
           <p class="muted" style="font-size:.8rem;margin:4px 0 10px">O Neto é a cara da Profitto e o canal dele vira um funil: quem assiste clica no link, deixa o contato e decide comprar como quem chega indicado, porque já confia nele. No painel, quem "segue influenciador de finanças" comprou 2 a 5 vezes mais que a média. Preencha com os números do YouTube Studio do canal. Em cada produto, o "peso no canal do Neto" (em Aquisição, à esquerda) diz para onde vão os interessados.</p>
-          <div class="ogrid">
-            <div class="ctl"><label for="ytsubs">Inscritos hoje</label><input type="number" id="ytsubs" class="tin" min="0" step="100" inputmode="numeric"></div>
-            <div class="ctl"><label for="ytviews">Visualizações por mês (todos os vídeos)</label><input type="number" id="ytviews" class="tin" min="0" step="500" inputmode="numeric"></div>
-            <div class="ctl"><div class="row"><label for="ytgrow">Crescimento do canal por mês</label><output id="o-ytgrow"></output></div><input type="range" id="ytgrow" min="-5" max="20" step="0.5"></div>
-            <div class="ctl"><div class="row"><label for="ytctr">Quem assiste e clica no link</label><output id="o-ytctr"></output></div><input type="range" id="ytctr" min="0" max="5" step="0.1"></div>
-            <div class="ctl"><div class="row"><label for="ytlead">Quem clica e vira interessado</label><output id="o-ytlead"></output></div><input type="range" id="ytlead" min="0" max="100" step="5"></div>
-            <div class="ctl"><div class="row"><label for="orgother">Outros orgânicos (Instagram, boca a boca, Google) por mês</label><output id="o-orgother"></output></div><input type="range" id="orgother" min="0" max="500" step="5"></div>
-            <div class="ctl"><div class="row"><label for="orgcost">Custo mensal do orgânico (roteiro, edição)</label><output id="o-orgcost"></output></div><input type="range" id="orgcost" min="0" max="20000" step="250"></div>
-            <label class="tog"><input type="checkbox" id="yttrust"><span>A audiência confia no Neto<small>Quem vem do canal compra como quem chega indicado.</small></span></label>
-          </div>
+          <p class="help" id="org-sum"></p><button class="btn" id="org-edit" type="button">Ajustar o canal no painel</button>
           <p class="help" id="org-warn"></p>
           <div class="kpis" id="org-kpis" style="margin-top:10px"></div>
           <div class="flexbetween" style="margin-top:14px"><h3 style="font-size:.95rem">Clientes novos por mês, por canal</h3><div class="legend" id="org-legend"></div></div>
@@ -515,11 +522,11 @@ function simulate(st){
   st=migrate(st);const c=st.company;const list=st.list.filter(p=>p.on);
   const tf=(c.tax+3.5)/100;
   const L0=list.map(p=>{const r=baseRate(p)*p.real/100*menuFactor(p,st,list);return {p,rate:r,warm:warmOf(p),coh:{dir:[],pag:[],ind:[],ase:[],org:[]},months:[]}});
-  const sumW=list.reduce((a,p)=>a+(+p.orgw||0),0);
+  const sumW=list.reduce((a,p)=>a+(+p.orgw||0),0);let ytM=1;
   const months=[];let cash=c.cash-15000,beMonth=null,minCash=cash,outMonth=null;
   for(let mo=1;mo<=HZ;mo++){
     const ramp=mo===1?0.5:mo===2?0.75:1, yi=Math.floor((mo-1)/12);
-    const yg=Math.pow(1+(c.ytgrow||0)/100,mo-1);const ytSubs=(c.ytsubs||0)*yg,ytViews=(c.ytviews||0)*yg;
+    if(mo>1)ytM*=1+(c['ytg'+Math.min(5,yi+1)]||0)/100;const yg=ytM;const ytSubs=(c.ytsubs||0)*yg,ytViews=(c.ytviews||0)*yg;
     const orgL=(ytViews*(c.ytctr||0)/100*(c.ytlead||0)/100+(c.orgother||0))*ramp;
     let leads=0,diags=0,newSubs=0,lost=0,clients=0,rev=0,comm={ind:0,ase:0},planVar=0,deliv=0,mkt=0,served=0,planners=0,pfixC=0,mrr=0;
     const byCh={};CH.forEach(k=>byCh[k]={n:0,rev:0,newSubs:0});
@@ -581,21 +588,21 @@ function aloneOf(st,id){const s=clone(migrate(st));s.list.forEach(p=>p.on=p.id==
 
 // ---- produtos e estado ----
 const PK=['orgw','m','diag','dprice','parcelado','cancel','comissao','cfp','garantia','exemplo','prova','online','checkin','casal','raiox','dividas','tributario','rede','mkt','cpl','real','conv','churn','growth','pleads','pcom','pdur','aleads','acom','adur','cap','pfix','plan','deliv','pbase'];
-const CK=['ytsubs','ytviews','ytgrow','ytctr','ytlead','yttrust','orgcost','orgother','span','lead','perprof','other','ceo1','ceo2','tax','pmt','cash','menu'];
+const CK=['ytsubs','ytviews','ytg1','ytg2','ytg3','ytg4','ytg5','ytctr','ytlead','yttrust','orgcost','orgother','span','lead','perprof','other','ceo1','ceo2','tax','pmt','cash','menu'];
 const IDS=PK.concat(CK);
 const PALX=['var(--s1)','var(--s3)','var(--s2)','#eda100','#e87ba4','#6250d6','#008300','#7a5c3e'];
 const pick=(o,ks)=>{const r={};ks.forEach(k=>{if(o[k]!==undefined)r[k]=o[k]});return r};
 const clone=o=>JSON.parse(JSON.stringify(o));
 const LEVK=Object.keys(LEVERS);
 function mkProd(id,name,ci,base,extra){const p=Object.assign({id,name,ci,on:true,kind:'modelo',menuF:null,vw:null,tm:0,tcfg:null},pick(base,PK),extra||{});if(p.kind==='painel'&&!p.tcfg)p.tcfg=pick(p,LEVK.concat(['diag','dprice']));return p}
-const BASEP=Object.assign({},PRESETS.atual,{deliv:0,pbase:25,orgw:100,ytsubs:0,ytviews:0,ytgrow:0,ytctr:1,ytlead:30,yttrust:true,orgcost:0,orgother:0});
+const BASEP=Object.assign({},PRESETS.atual,{deliv:0,pbase:25,orgw:100,ytsubs:0,ytviews:0,ytg1:0,ytg2:0,ytg3:0,ytg4:0,ytg5:0,ytctr:1,ytlead:30,yttrust:true,orgcost:0,orgother:0});
 function defaultProds(){return [
   mkProd('as','Assistido',0,BASEP,{menuF:'as',mr:[97,797,10]}),
   mkProd('dg','Digital (self-service)',1,BASEP,{on:false,kind:'painel',menuF:'dg',mr:[9,199,1],orgw:60,pbase:MIX.E*100,vw:[10,20,50,80],tm:49,m:49,diag:false,dprice:0,parcelado:false,cancel:true,comissao:true,cfp:false,garantia:false,exemplo:false,prova:false,online:true,checkin:false,casal:false,raiox:false,dividas:true,tributario:false,rede:10,mkt:2000,cpl:15,churn:6,conv:100,plan:0,cap:120,pfix:0,deliv:0,pleads:0,aleads:0}),
   mkProd('pv','Private',2,BASEP,{on:false,kind:'painel',menuF:'pv',mr:[500,5000,100],orgw:20,pbase:MIX.PVHI*100,vw:[400,800,1500,2500],tm:1500,m:1500,diag:false,dprice:0,parcelado:false,cancel:true,comissao:true,cfp:true,garantia:false,exemplo:false,prova:false,online:false,checkin:true,casal:true,raiox:true,dividas:false,tributario:true,rede:10,mkt:0,cpl:40,churn:2,conv:100,plan:30,cap:25,pfix:0,deliv:0,pleads:0,aleads:20,acom:15})]}
 function defaultState(){return {company:Object.assign(pick(BASEP,CK),{menu:false}),list:defaultProds(),sel:'as'}}
 function migrate(x){ // estados antigos (planos) viram o novo formato
-  if(!x)return null;if(x.list&&x.company){CK.forEach(k=>{if(x.company[k]===undefined)x.company[k]=BASEP[k]});x.list.forEach(p=>PK.forEach(k=>{if(p[k]===undefined)p[k]=(k==='orgw'?(p.id==='dg'?60:p.id==='pv'?20:100):BASEP[k])}));return x}
+  if(!x)return null;if(x.list&&x.company){if(x.company.ytgrow!==undefined&&x.company.ytg1===undefined)[1,2,3,4,5].forEach(i=>x.company['ytg'+i]=x.company.ytgrow);CK.forEach(k=>{if(x.company[k]===undefined)x.company[k]=BASEP[k]});x.list.forEach(p=>PK.forEach(k=>{if(p[k]===undefined)p[k]=(k==='orgw'?(p.id==='dg'?60:p.id==='pv'?20:100):BASEP[k])}));return x}
   const st=defaultState();Object.assign(st.company,pick(x,CK));Object.assign(st.list[0],pick(x,PK));return st}
 let STATE=defaultState();
 const selP=()=>STATE.list.find(p=>p.id===STATE.sel)||STATE.list[0];
@@ -633,7 +640,7 @@ if(!ref)ref=defaultState();
 try{const sv=JSON.parse(localStorage.getItem('profitto-cur')||'null');if(sv)STATE=migrate(sv)}catch(e){}
 write(STATE);cur=flatOf();
 
-const FMT={orgw:v=>v+'',ytgrow:v=>(v>0?'+':'')+String(v).replace('.',',')+'%',ytctr:v=>String(v).replace('.',',')+'%',ytlead:v=>v+'%',orgother:v=>v+' pessoas',orgcost:v=>v?BRL(v):'sem custo',deliv:v=>v?BRL(v):'sem custo',pbase:v=>String(v).replace('.',',')+'%',pleads:v=>v+' pessoas',pcom:v=>v+'% da receita',pdur:v=>v==60?'60 meses (sempre)':v+' meses',aleads:v=>v+' pessoas',acom:v=>v+'% da receita',adur:v=>v==60?'60 meses (sempre)':v+' meses',cap:v=>v+' clientes',pfix:v=>BRL(v),span:v=>v+' planejadores',lead:v=>String(v).replace('.',',')+'%',perprof:v=>BRL(v),other:v=>BRL(v),growth:v=>v+'%',m:v=>BRL(v)+'/mês',dprice:v=>v==0?'grátis':BRL(v),rede:v=>v+' pessoas',mkt:v=>BRL(v),cpl:v=>BRL(v),real:v=>v+'%',conv:v=>v+'%',churn:v=>String(v).replace('.',',')+'%',ceo1:v=>BRL(v),ceo2:v=>BRL(v),plan:v=>v?v+'%':'sem planejador',tax:v=>String(v).replace('.',',')+'%',pmt:v=>BRL(v),cash:v=>BRL(v)};
+const FMT={orgw:v=>v+'',ytg1:v=>(v>0?'+':'')+String(v).replace('.',',')+'%',ytg2:v=>(v>0?'+':'')+String(v).replace('.',',')+'%',ytg3:v=>(v>0?'+':'')+String(v).replace('.',',')+'%',ytg4:v=>(v>0?'+':'')+String(v).replace('.',',')+'%',ytg5:v=>(v>0?'+':'')+String(v).replace('.',',')+'%',ytctr:v=>String(v).replace('.',',')+'%',ytlead:v=>v+'%',orgother:v=>v+' pessoas',orgcost:v=>v?BRL(v):'sem custo',deliv:v=>v?BRL(v):'sem custo',pbase:v=>String(v).replace('.',',')+'%',pleads:v=>v+' pessoas',pcom:v=>v+'% da receita',pdur:v=>v==60?'60 meses (sempre)':v+' meses',aleads:v=>v+' pessoas',acom:v=>v+'% da receita',adur:v=>v==60?'60 meses (sempre)':v+' meses',cap:v=>v+' clientes',pfix:v=>BRL(v),span:v=>v+' planejadores',lead:v=>String(v).replace('.',',')+'%',perprof:v=>BRL(v),other:v=>BRL(v),growth:v=>v+'%',m:v=>BRL(v)+'/mês',dprice:v=>v==0?'grátis':BRL(v),rede:v=>v+' pessoas',mkt:v=>BRL(v),cpl:v=>BRL(v),real:v=>v+'%',conv:v=>v+'%',churn:v=>String(v).replace('.',',')+'%',ceo1:v=>BRL(v),ceo2:v=>BRL(v),plan:v=>v?v+'%':'sem planejador',tax:v=>String(v).replace('.',',')+'%',pmt:v=>BRL(v),cash:v=>BRL(v)};
 
 function delta(a,b,higherBetter,fmt){
   const d=a-b; const eps=Math.max(Math.abs(b)*0.005,0.0001);
@@ -879,6 +886,8 @@ function orgPanel(r,R,c){
   const ys=r.years,ms=r.months;
   const noData=!(c.ytsubs>0||c.ytviews>0);
   $('org-warn').innerHTML=noData?'<b>Preencha inscritos e visualizações por mês do canal</b> (YouTube Studio → Análises). Sem esses números o canal não gera interessados. Clique no link e interessado são premissas iniciais: troque pelos números reais quando tiver.':'Clique no link e interessado são premissas: troque pelos números reais do canal quando tiver (cliques no link da descrição / formulário).';
+  const gtxt=[1,2,3,4,5].map(i=>(c['ytg'+i]>0?'+':'')+String(c['ytg'+i]).replace('.',',')+'%').join(' · ');
+  $('org-sum').textContent='Canal: '+(c.ytsubs||0).toLocaleString('pt-BR')+' inscritos, '+(c.ytviews||0).toLocaleString('pt-BR')+' visualizações/mês, crescimento por mês nos anos 1 a 5: '+gtxt+'. Clique no link '+String(c.ytctr).replace('.',',')+'%, vira interessado '+c.ytlead+'%'+(c.yttrust?', compra como indicado':'')+'.';
   $('org-note').textContent=noData?'sem números do canal':Math.round(ms[11].orgLeads).toLocaleString('pt-BR')+' interessados/mês no mês 12';
   const y1=ys[0],y5=ys[4];
   const share=y=>y.newSubs>0?pct(y.nOrg/y.newSubs):'—';
@@ -919,8 +928,10 @@ function update(){
   lineChart($('ch-cash'),r.months.map(m=>m.cash),R.months.map(m=>m.cash),{fmt:BRLk,fmtTip:BRL});
   yearsChart(r,R);split(r);channels(r);dots(cur);leverRank(cur);renderPick(cur);monthTable(r);
 }
-document.querySelectorAll('aside input, aside select:not(#preset), #org-card input').forEach(el=>el.addEventListener('input',()=>{$('preset').value='';update()}));
+document.querySelectorAll('aside input, aside select:not(#preset)').forEach(el=>el.addEventListener('input',()=>{$('preset').value='';update()}));
 $('pkind').addEventListener('change',()=>{update()});
+$('ytg-same').addEventListener('click',()=>{const v=$('ytg1').value;[2,3,4,5].forEach(i=>$('ytg'+i).value=v);update()});
+$('org-edit').addEventListener('click',()=>{const f=$('fs-org');f.scrollIntoView({behavior:'smooth',block:'start'});$('ytsubs').focus({preventScroll:true})});
 $('ptabs').addEventListener('click',e=>{const b=e.target.closest('button[data-id]');if(!b)return;readInputs();STATE.sel=b.dataset.id;syncInputs();update()});
 function newId(){let i=1;while(STATE.list.some(p=>p.id==='p'+i))i++;return 'p'+i}
 function nextCi(){const used=STATE.list.map(p=>p.ci);let i=0;while(used.includes(i))i++;return i}
