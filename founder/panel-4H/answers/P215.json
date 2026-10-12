@@ -1,0 +1,19 @@
+{
+  "id": "P215",
+  "buys": false,
+  "flips": [
+    "garantia",
+    "familia",
+    "primeira_gratis"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Já paguei consultoria que virou um relatório na gaveta, e não decido nada disso sem minha esposa. Sozinho, olhando um anúncio, não fecho.",
+  "objection": "Medo de pagar meses e no fim ter só mais um documento bonito que ninguém executa.",
+  "would_change_my_mind": "Um período de teste com devolução, para eu e minha esposa vermos se de fato sai do papel.",
+  "price_too_cheap": 400,
+  "price_cheap": 900,
+  "price_expensive": 2000,
+  "price_too_expensive": 3000
+}

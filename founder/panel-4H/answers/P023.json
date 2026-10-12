@@ -1,0 +1,19 @@
+{
+  "id": "P023",
+  "buys": false,
+  "flips": [
+    "equipe",
+    "holding",
+    "referencias"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Acabei de vender a empresa e a sucessão é o que mais me tira o sono, mas um planejador sozinho numa empresa pequena de Porto Alegre não me dá segurança para esse volume.",
+  "objection": "Uma empresa pequena aguentar a complexidade de um patrimônio recém-líquido e da sucessão para os filhos.",
+  "would_change_my_mind": "Ter advogado e contador na equipe e referências de clientes que também venderam empresa.",
+  "price_too_cheap": 1000,
+  "price_cheap": 2000,
+  "price_expensive": 5000,
+  "price_too_expensive": 8000
+}

@@ -1,0 +1,19 @@
+{
+  "id": "P029",
+  "buys": false,
+  "flips": [
+    "seguranca",
+    "avaliacoes",
+    "indicacao"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Não conheço a Profitto e não confio fácil em app com meus dados financeiros. Ver avaliações e uma indicação de alguém que eu sigo mudaria isso.",
+  "objection": "Não conheço essa marca e não sei o que fazem com meus dados.",
+  "would_change_my_mind": "Avaliações altas na loja e alguém em quem confio recomendando.",
+  "price_too_cheap": 9,
+  "price_cheap": 19,
+  "price_expensive": 39,
+  "price_too_expensive": 59
+}

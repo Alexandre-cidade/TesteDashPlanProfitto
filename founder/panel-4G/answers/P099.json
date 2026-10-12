@@ -1,0 +1,19 @@
+{
+  "id": "P099",
+  "buys": false,
+  "flips": [
+    "preco_menor",
+    "anual",
+    "seguranca"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Estou juntando para a entrada do apartamento e saindo do vermelho; R$ 49 por mês é dinheiro que vai pra fora da meta. E desconfio de app mexendo nos meus dados financeiros.",
+  "objection": "Gastar com assinatura justamente quando cada real vai pra entrada.",
+  "would_change_my_mind": "Um preço menor de verdade, perto de R$ 20, com privacidade clara.",
+  "price_too_cheap": 5,
+  "price_cheap": 15,
+  "price_expensive": 29,
+  "price_too_expensive": 45
+}

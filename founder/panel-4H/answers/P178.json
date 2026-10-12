@@ -1,0 +1,15 @@
+{
+  "id": "P178",
+  "buys": false,
+  "flips": [],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Eu mesmo escolho meus investimentos e acompanho o mercado; o que eu não sei, o banco me explica de graça. Não pago R$ 1.500 por mês para alguém me dizer o que eu já faço.",
+  "objection": "Não vejo o que um planejador faria que eu não faço sozinho.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 200,
+  "price_cheap": 400,
+  "price_expensive": 800,
+  "price_too_expensive": 1500
+}

@@ -1,0 +1,19 @@
+{
+  "id": "P140",
+  "buys": false,
+  "flips": [
+    "garantia",
+    "primeira_gratis",
+    "anual"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "R$ 1.500 por mês, R$ 18 mil por ano, só por conselho é muito. Não fica claro o que eu ganho de concreto.",
+  "objection": "Pagar caro todo mês por reuniões e conversas sem resultado que dê para medir.",
+  "would_change_my_mind": "Ver em reais quanto eles me fariam economizar de imposto, ou ganhar, num ano.",
+  "price_too_cheap": 300,
+  "price_cheap": 600,
+  "price_expensive": 1200,
+  "price_too_expensive": 2000
+}

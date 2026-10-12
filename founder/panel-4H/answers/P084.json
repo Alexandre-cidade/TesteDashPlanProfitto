@@ -1,0 +1,18 @@
+{
+  "id": "P084",
+  "buys": false,
+  "flips": [
+    "independente",
+    "primeira_gratis"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Eu mesma escolho meus investimentos e acompanho o mercado; não preciso de alguém me dizendo o que fazer a cada quinze dias. E nada aqui me garante que não vão empurrar produto.",
+  "objection": "Não sei como ganham dinheiro além da mensalidade, e não preciso de babá financeira.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 300,
+  "price_cheap": 600,
+  "price_expensive": 1200,
+  "price_too_expensive": 2000
+}

@@ -1,0 +1,18 @@
+{
+  "id": "P171",
+  "buys": false,
+  "flips": [
+    "desafio",
+    "humano"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Já baixei Mobills e o app do banco e larguei em poucas semanas; não tenho motivo para achar que com esse vai ser diferente, só que agora pagando.",
+  "objection": "Eu sei que vou largar depois de duas semanas e ficar pagando por nada.",
+  "would_change_my_mind": "Algo que me puxe de volta toda semana sem eu ter que lembrar de abrir.",
+  "price_too_cheap": 9,
+  "price_cheap": 19,
+  "price_expensive": 39,
+  "price_too_expensive": 69
+}

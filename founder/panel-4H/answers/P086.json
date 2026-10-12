@@ -1,0 +1,17 @@
+{
+  "id": "P086",
+  "buys": false,
+  "flips": [
+    "referencias"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Só contrato quem um amigo do meu nível já usou e aprovou. Anúncio de empresa de Porto Alegre não chega nem perto disso, e já vi consultoria virar relatório na gaveta.",
+  "objection": "Não conheço ninguém que use, e referência entregue pela própria empresa não vale o mesmo que indicação de amigo.",
+  "would_change_my_mind": "Um amigo próximo me contar que contratou e que mudou alguma coisa de verdade.",
+  "price_too_cheap": 500,
+  "price_cheap": 1000,
+  "price_expensive": 2500,
+  "price_too_expensive": 4000
+}

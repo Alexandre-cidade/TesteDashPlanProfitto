@@ -1,0 +1,19 @@
+{
+  "id": "P145",
+  "buys": false,
+  "flips": [
+    "preco_menor",
+    "anual",
+    "familia"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Já tenho dois cartões e contas da casa demais; mais R$ 49 todo mês não cabe na minha cabeça para um app que eu mesma tenho que alimentar.",
+  "objection": "O custo mensal por algo que eu consigo fazer numa planilha.",
+  "would_change_my_mind": "Ficar abaixo de R$ 20 por mês e servir para o casal.",
+  "price_too_cheap": 9,
+  "price_cheap": 19,
+  "price_expensive": 35,
+  "price_too_expensive": 55
+}

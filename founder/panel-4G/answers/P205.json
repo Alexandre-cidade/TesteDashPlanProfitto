@@ -1,0 +1,18 @@
+{
+  "id": "P205",
+  "buys": false,
+  "flips": [
+    "avaliacoes",
+    "anual"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Eu uso os 7 dias grátis e cancelo, sempre faço isso. Ajudo a família todo mês e assinatura de app não entra no meu orçamento quando tem opção grátis.",
+  "objection": "Medo de esquecer de cancelar e ser cobrada, e não ver valor que justifique pagar.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 5,
+  "price_cheap": 10,
+  "price_expensive": 25,
+  "price_too_expensive": 40
+}

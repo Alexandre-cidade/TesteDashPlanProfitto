@@ -1,0 +1,19 @@
+{
+  "id": "P053",
+  "buys": false,
+  "flips": [
+    "independente",
+    "referencias",
+    "holding"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Depois da venda tenho dinheiro parado e sei que preciso organizar, mas não vou entregar isso para quem não conheço quando o banco já me atende sem cobrar.",
+  "objection": "Entregar meu patrimônio para uma empresa que não conheço e que pode ter interesse escondido.",
+  "would_change_my_mind": "Ser independente de verdade e falar com clientes parecidos comigo.",
+  "price_too_cheap": 400,
+  "price_cheap": 800,
+  "price_expensive": 2000,
+  "price_too_expensive": 3500
+}

@@ -1,0 +1,19 @@
+{
+  "id": "P089",
+  "buys": false,
+  "flips": [
+    "referencias",
+    "independente",
+    "holding"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Acabei de vender minha empresa e não vou abrir meu patrimônio inteiro para uma empresa que conheci num anúncio. Meu private bank me conhece há anos e não cobra nada.",
+  "objection": "Entregar todos os meus números para estranhos.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 500,
+  "price_cheap": 1000,
+  "price_expensive": 3000,
+  "price_too_expensive": 6000
+}

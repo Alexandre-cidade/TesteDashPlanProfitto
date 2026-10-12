@@ -1,0 +1,19 @@
+{
+  "id": "P054",
+  "buys": false,
+  "flips": [
+    "equipe",
+    "holding",
+    "referencias"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "quality",
+  "reason": "Sucessão me preocupa, mas uma pessoa só não resolve consultório, negócios na Serra e herança dos filhos; isso precisa de advogado e contador juntos.",
+  "objection": "Uma empresa pequena de Porto Alegre com um planejador só não dá conta da minha complexidade.",
+  "would_change_my_mind": "Uma equipe com advogado que estruture a holding e a sucessão.",
+  "price_too_cheap": 500,
+  "price_cheap": 1000,
+  "price_expensive": 2500,
+  "price_too_expensive": 4000
+}

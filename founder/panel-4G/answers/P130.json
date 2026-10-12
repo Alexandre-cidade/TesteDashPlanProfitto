@@ -1,0 +1,19 @@
+{
+  "id": "P130",
+  "buys": false,
+  "flips": [
+    "familia",
+    "seguranca",
+    "avaliacoes"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Gosto que não precisa ligar com o banco e que eles não vendem produto, mas é uma empresa que eu não conheço e vou colocar meus dados financeiros lá. Com minha esposa e dois cartões, também precisaria funcionar para os dois.",
+  "objection": "O que eles fazem com meus dados e se é feito para casal.",
+  "would_change_my_mind": "Conta compartilhada com a minha esposa e garantia clara de privacidade.",
+  "price_too_cheap": 15,
+  "price_cheap": 29,
+  "price_expensive": 69,
+  "price_too_expensive": 119
+}

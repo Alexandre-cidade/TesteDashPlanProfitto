@@ -1,0 +1,19 @@
+{
+  "id": "P217",
+  "buys": false,
+  "flips": [
+    "referencias",
+    "primeira_gratis",
+    "independente"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Eu delegaria isso de bom grado, não tenho tempo nenhum, e eles estão aqui em Porto Alegre. Mas não abro meu patrimônio para quem não conheço.",
+  "objection": "Não conheço ninguém que use a Profitto; entregar todos os meus números a um estranho me incomoda.",
+  "would_change_my_mind": "Conversar com dois ou três clientes médicos como eu que usam o serviço.",
+  "price_too_cheap": 500,
+  "price_cheap": 1200,
+  "price_expensive": 3000,
+  "price_too_expensive": 5000
+}

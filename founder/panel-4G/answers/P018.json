@@ -1,0 +1,19 @@
+{
+  "id": "P018",
+  "buys": false,
+  "flips": [
+    "humano",
+    "preco_menor",
+    "desafio"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "R$ 49 pesa quando estou pagando o mínimo do cartão e tentando juntar para a entrada do apartamento. E sem ninguém me cobrando, eu largo o app em duas semanas.",
+  "objection": "Sem uma pessoa me cobrando eu não tenho disciplina, aí é mais uma conta para pagar sem resultado.",
+  "would_change_my_mind": "Uma pessoa por chat me acompanhando, por um preço menor.",
+  "price_too_cheap": 5,
+  "price_cheap": 15,
+  "price_expensive": 30,
+  "price_too_expensive": 45
+}

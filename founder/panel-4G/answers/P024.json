@@ -1,0 +1,18 @@
+{
+  "id": "P024",
+  "buys": false,
+  "flips": [
+    "open_finance",
+    "ia"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "convenience",
+  "reason": "R$ 49 não faz diferença para mim, mas não vou anotar gasto à mão, e o básico de investimento eu vejo de graça no YouTube.",
+  "objection": "Vai dar trabalho de lançar gasto e o conteúdo eu acho de graça.",
+  "would_change_my_mind": "Se puxasse tudo sozinho dos meus bancos e me avisasse quando eu exagerar no delivery.",
+  "price_too_cheap": 10,
+  "price_cheap": 25,
+  "price_expensive": 80,
+  "price_too_expensive": 150
+}

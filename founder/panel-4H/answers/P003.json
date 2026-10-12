@@ -1,0 +1,19 @@
+{
+  "id": "P003",
+  "buys": false,
+  "flips": [
+    "referencias",
+    "independente",
+    "presencial_casa"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Eu só contrato quem um amigo do meu nível indicou. Anúncio de empresa que eu não conheço não entra na minha casa.",
+  "objection": "Como sei que não vão me empurrar previdência e seguro com comissão por trás?",
+  "would_change_my_mind": "Um amigo empresário de confiança me dizer que usa e que vale a pena.",
+  "price_too_cheap": 400,
+  "price_cheap": 900,
+  "price_expensive": 2000,
+  "price_too_expensive": 4000
+}

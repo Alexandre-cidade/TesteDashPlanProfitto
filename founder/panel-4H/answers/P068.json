@@ -1,0 +1,15 @@
+{
+  "id": "P068",
+  "buys": true,
+  "flips": [],
+  "buys_if_flips": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Vendi a empresa, estou com liquidez e não tenho tempo de coordenar contador, advogado e banco. Alguém sênior que converse com todos eles e cancele quando eu quiser, por R$ 1.500, eu testo.",
+  "objection": "Virar mais uma pessoa me pedindo reunião sem tirar trabalho de cima de mim.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 500,
+  "price_cheap": 1000,
+  "price_expensive": 3000,
+  "price_too_expensive": 6000
+}

@@ -1,0 +1,19 @@
+{
+  "id": "P043",
+  "buys": false,
+  "flips": [
+    "independente",
+    "internacional",
+    "primeira_gratis"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Já tenho o private e desconfio de quem chega oferecendo planejamento; quase sempre termina em produto. E o que eu preciso agora é lidar com os filhos lá fora, que o anúncio não cobre.",
+  "objection": "Como sei que não vão me empurrar produto?",
+  "would_change_my_mind": "Garantia de independência e planejamento para o exterior, onde meus filhos estudam.",
+  "price_too_cheap": 400,
+  "price_cheap": 900,
+  "price_expensive": 2000,
+  "price_too_expensive": 3500
+}

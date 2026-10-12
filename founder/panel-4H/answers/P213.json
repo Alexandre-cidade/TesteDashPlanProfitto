@@ -1,0 +1,19 @@
+{
+  "id": "P213",
+  "buys": false,
+  "flips": [
+    "primeira_gratis",
+    "holding",
+    "internacional"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Já tenho contador e advogado e não vejo ainda onde esse planejador me faria pagar menos imposto. Se eu visse a economia em números, talvez valesse.",
+  "objection": "Não sei se ele vai trazer algo que meu contador já não faz; quero ver economia de imposto concreta, não teoria.",
+  "would_change_my_mind": "Um diagnóstico gratuito mostrando quanto eu economizaria de imposto na PF e no consultório.",
+  "price_too_cheap": 400,
+  "price_cheap": 1000,
+  "price_expensive": 2500,
+  "price_too_expensive": 4000
+}

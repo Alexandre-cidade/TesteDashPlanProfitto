@@ -1,0 +1,19 @@
+{
+  "id": "P219",
+  "buys": true,
+  "flips": [
+    "holding",
+    "familia",
+    "garantia"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Tenho filhos pequenos e uma indústria, e sucessão é o que me tira o sono. Como é mensal, sem fidelidade e com acompanhamento, não é só um relatório que vai para a gaveta; eu testo.",
+  "objection": "Medo de que, de novo, eles façam um plano bonito e ninguém execute nada.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 400,
+  "price_cheap": 1000,
+  "price_expensive": 2500,
+  "price_too_expensive": 4000
+}

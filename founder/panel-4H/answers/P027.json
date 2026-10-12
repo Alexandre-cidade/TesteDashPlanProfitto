@@ -1,0 +1,19 @@
+{
+  "id": "P027",
+  "buys": false,
+  "flips": [
+    "primeira_gratis",
+    "familia",
+    "presencial_casa"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "Gosto que seja um sênior com CFP, mas não decido sozinha; preciso levar ao meu marido e isso não sai nesta semana.",
+  "objection": "Se de fato será um sênior me atendendo sempre ou se vai passar para um júnior depois do primeiro mês.",
+  "would_change_my_mind": "Uma primeira reunião grátis com meu marido junto, com o próprio planejador sênior.",
+  "price_too_cheap": 500,
+  "price_cheap": 900,
+  "price_expensive": 1800,
+  "price_too_expensive": 2800
+}

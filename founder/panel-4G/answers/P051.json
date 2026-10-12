@@ -1,0 +1,15 @@
+{
+  "id": "P051",
+  "buys": false,
+  "flips": ["humano", "desafio", "garantia"],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Já larguei Mobills e Organizze, e isso aqui é a mesma coisa com vídeos e um relatório. Sem alguém me cobrando eu abandono, e o plano com pessoa custa R$ 297, que eu não tenho.",
+  "objection": "Eu não tenho disciplina sozinha, app nenhum resolveu isso até hoje.",
+  "would_change_my_mind": "Alguém de verdade me acompanhando por um preço perto desse.",
+  "price_too_cheap": 10,
+  "price_cheap": 25,
+  "price_expensive": 45,
+  "price_too_expensive": 80
+}

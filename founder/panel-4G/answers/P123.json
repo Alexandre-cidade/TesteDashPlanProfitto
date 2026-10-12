@@ -1,0 +1,19 @@
+{
+  "id": "P123",
+  "buys": false,
+  "flips": [
+    "garantia",
+    "open_finance",
+    "trial30"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Estou pagando o mínimo do cartão; mais R$ 49 por mês agora pesa, e tem app grátis para anotar gasto. A trilha para sair do cartão me chamou atenção, mas não sei se vale.",
+  "objection": "Pagar mais uma conta mensal quando já estou no vermelho, por algo que o app grátis meio que já faz.",
+  "would_change_my_mind": "Garantia de dinheiro de volta se eu não economizar pelo menos o valor da assinatura.",
+  "price_too_cheap": 9,
+  "price_cheap": 19,
+  "price_expensive": 35,
+  "price_too_expensive": 59
+}

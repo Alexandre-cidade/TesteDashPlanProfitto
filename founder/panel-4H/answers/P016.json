@@ -1,0 +1,19 @@
+{
+  "id": "P016",
+  "buys": false,
+  "flips": [
+    "garantia",
+    "primeira_gratis",
+    "referencias"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Já paguei consultoria que terminou num PDF bonito que ninguém abriu. E não fecho nada disso sem meu marido sentar junto e concordar.",
+  "objection": "Virar mais um relatório na gaveta, pagando R$ 1.500 todo mês por reunião que não muda nada na prática.",
+  "would_change_my_mind": "Três meses de teste com devolução, para eu e meu marido vermos se sai ação concreta.",
+  "price_too_cheap": 400,
+  "price_cheap": 800,
+  "price_expensive": 1500,
+  "price_too_expensive": 2500
+}

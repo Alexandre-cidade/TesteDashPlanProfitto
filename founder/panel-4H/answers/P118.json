@@ -1,0 +1,19 @@
+{
+  "id": "P118",
+  "buys": false,
+  "flips": [
+    "preco_menor",
+    "anual",
+    "primeira_gratis"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "R$ 1.500 por mês para conselho é caro; somado ao contador e ao assessor fica muito. Minha esposa nem consideraria.",
+  "objection": "O preço não se paga com conselhos que eu, em boa parte, já recebo.",
+  "would_change_my_mind": "Um preço bem menor, perto de R$ 600.",
+  "price_too_cheap": 200,
+  "price_cheap": 400,
+  "price_expensive": 800,
+  "price_too_expensive": 1200
+}

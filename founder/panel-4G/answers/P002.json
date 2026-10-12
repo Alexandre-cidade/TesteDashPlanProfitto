@@ -1,0 +1,19 @@
+{
+  "id": "P002",
+  "buys": false,
+  "flips": [
+    "open_finance",
+    "familia",
+    "avaliacoes"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Eu não pago assinatura de app, uso a versão grátis e pronto. E nunca ouvi falar da Profitto.",
+  "objection": "Marca desconhecida cobrando R$ 49 por algo que app grátis já faz.",
+  "would_change_my_mind": "Muitas avaliações boas e conectar sozinho com o banco, pra eu e minha namorada vermos juntos.",
+  "price_too_cheap": 5,
+  "price_cheap": 12,
+  "price_expensive": 25,
+  "price_too_expensive": 40
+}

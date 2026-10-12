@@ -1,0 +1,19 @@
+{
+  "id": "P033",
+  "buys": false,
+  "flips": [
+    "humano",
+    "indicacao",
+    "desafio"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Eu sei que preciso sair do vermelho, mas app que eu faço sozinho eu abandono; sem alguém me cobrando não vai.",
+  "objection": "Pagar por mais um app que vou ignorar depois de duas semanas, e nunca ouvi falar da Profitto nos canais que sigo.",
+  "would_change_my_mind": "Poder falar com uma pessoa por chat que me cobre, de preferência indicado por um influenciador que eu confio.",
+  "price_too_cheap": 15,
+  "price_cheap": 29,
+  "price_expensive": 59,
+  "price_too_expensive": 90
+}

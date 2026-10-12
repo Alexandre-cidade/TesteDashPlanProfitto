@@ -1,0 +1,19 @@
+{
+  "id": "P176",
+  "buys": false,
+  "flips": [
+    "equipe",
+    "referencias",
+    "relatorio"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Viajo toda semana e minha vida financeira tem muitas pontas; não sei se uma empresa pequena dá conta. E não contrato sem indicação de alguém que eu respeite.",
+  "objection": "Se o meu planejador sair ou ficar doente, quem segura tudo?",
+  "would_change_my_mind": "Um amigo do meu nível que use há tempo e confirme que eles aguentam a complexidade.",
+  "price_too_cheap": 400,
+  "price_cheap": 800,
+  "price_expensive": 1800,
+  "price_too_expensive": 3000
+}

@@ -1,0 +1,18 @@
+{
+  "id": "P129",
+  "buys": false,
+  "flips": [
+    "open_finance",
+    "garantia"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "convenience",
+  "reason": "Já faço planilha e o que me cansa é anotar tudo à mão; esse app continua sendo manual. Por R$ 49 eu quero que ele faça o trabalho por mim.",
+  "objection": "Pagar para continuar anotando gasto à mão.",
+  "would_change_my_mind": "Conectar com os meus bancos e puxar os gastos sozinho.",
+  "price_too_cheap": 9,
+  "price_cheap": 19,
+  "price_expensive": 39,
+  "price_too_expensive": 59
+}

@@ -1,0 +1,19 @@
+{
+  "id": "P116",
+  "buys": false,
+  "flips": [
+    "independente",
+    "holding",
+    "equipe"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Todo mundo que me oferece conselho financeiro acaba querendo vender alguma coisa, e a oferta não diz que eles não ganham comissão. Sem isso, nem levo para a minha esposa.",
+  "objection": "Desconfio que no fim vão empurrar previdência ou seguro com comissão.",
+  "would_change_my_mind": "Garantia por escrito de que não vendem produto nem recebem comissão.",
+  "price_too_cheap": 500,
+  "price_cheap": 1000,
+  "price_expensive": 3000,
+  "price_too_expensive": 5000
+}

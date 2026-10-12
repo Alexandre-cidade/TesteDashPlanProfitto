@@ -1,0 +1,18 @@
+{
+  "id": "P034",
+  "buys": false,
+  "flips": [
+    "preco_menor",
+    "open_finance"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Ganho pouco e ainda mando dinheiro pra família todo mês; R$ 49 é muito pra um app de marca que nunca vi.",
+  "objection": "Não conheço essa marca e já larguei app de finanças grátis, imagina um pago.",
+  "would_change_my_mind": "Um preço tipo R$ 10 por mês e alguma prova de que a empresa é séria.",
+  "price_too_cheap": 3,
+  "price_cheap": 9,
+  "price_expensive": 19,
+  "price_too_expensive": 30
+}

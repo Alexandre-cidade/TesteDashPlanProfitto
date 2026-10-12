@@ -1,0 +1,19 @@
+{
+  "id": "P222",
+  "buys": false,
+  "flips": [
+    "equipe",
+    "holding",
+    "primeira_gratis"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Misturar empresa, imóveis e família é exatamente o meu problema, mas uma pessoa só de Porto Alegre parece pouco. E eu não decido sem meu sócio e minha esposa.",
+  "objection": "Uma empresa pequena com um planejador só aguenta a complexidade de empresa, imóveis alugados e família?",
+  "would_change_my_mind": "Uma equipe com advogado e contador junto, não uma pessoa só.",
+  "price_too_cheap": 500,
+  "price_cheap": 1500,
+  "price_expensive": 3500,
+  "price_too_expensive": 6000
+}

@@ -1,0 +1,397 @@
+{
+ "business": "Profitto Private: planejamento financeiro e patrimonial dedicado para famílias de alta renda, Porto Alegre e online",
+ "seed": 4107,
+ "dealt": 225,
+ "answered": 225,
+ "skipped": [],
+ "buys": 14,
+ "passes": 211,
+ "buy_rate": 0.06222222222222222,
+ "by_segment": [
+  [
+   "Empresário de PME com finanças da empresa e da família misturadas",
+   45,
+   0.1111111111111111
+  ],
+  [
+   "Executivo de grande empresa",
+   32,
+   0.09375
+  ],
+  [
+   "Casal de alta renda com filhos pequenos",
+   32,
+   0.0625
+  ],
+  [
+   "Herdeiro ou quem vendeu uma empresa ou imóvel grande",
+   22,
+   0.045454545454545456
+  ],
+  [
+   "Advogado ou sócio de escritório",
+   22,
+   0.045454545454545456
+  ],
+  [
+   "Pré-aposentado com patrimônio construído",
+   32,
+   0.03125
+  ],
+  [
+   "Médico ou dentista com consultório próprio",
+   40,
+   0.025
+  ]
+ ],
+ "by_behaviour": [
+  [
+   "Quer pagar menos imposto",
+   18,
+   0.2222222222222222
+  ],
+  [
+   "Preocupado com sucessão e com os filhos",
+   22,
+   0.18181818181818182
+  ],
+  [
+   "Muito ocupado, delega tudo",
+   34,
+   0.14705882352941177
+  ],
+  [
+   "Tem assessor no private do banco",
+   45,
+   0.022222222222222223
+  ],
+  [
+   "Só contrata por indicação de amigos",
+   34,
+   0.0
+  ],
+  [
+   "Decide junto com o cônjuge ou sócio",
+   22,
+   0.0
+  ],
+  [
+   "Investe sozinho e acha que sabe",
+   27,
+   0.0
+  ],
+  [
+   "Desconfia de bancos e de quem vende produto",
+   23,
+   0.0
+  ]
+ ],
+ "by_income": [
+  [
+   "$1,340,000 and up",
+   75,
+   0.09333333333333334
+  ],
+  [
+   "under $838,000",
+   74,
+   0.05405405405405406
+  ],
+  [
+   "$838,000 to $1,340,000",
+   76,
+   0.039473684210526314
+  ]
+ ],
+ "why_not": [
+  [
+   "trust",
+   99,
+   [
+    "Acabei de vender a empresa e meu private já cuida do dinheiro. Não conheço essa Profitto, é de Porto Alegre e eu estou em Floripa.",
+    "O que eu quero é pagar menos imposto nos aluguéis e na PJ, e a oferta fala nisso de forma genérica. Não pago R$ 1.500 por mês sem ver primeiro que economizo mais do que isso."
+   ],
+   [
+    "P001",
+    "P002"
+   ]
+  ],
+  [
+   "price",
+   28,
+   [
+    "R$ 1.500 por mês é caro para conselho. Meu assessor do banco não cobra nada e eu viajo toda semana, então não ia ter tempo para reunião quinzenal.",
+    "Eu mesma escolho meus investimentos e acompanho o mercado. Pagar R$ 18 mil por ano para alguém me dar conselho não fecha a conta."
+   ],
+   [
+    "P012",
+    "P018"
+   ]
+  ],
+  [
+   "habit",
+   27,
+   [
+    "Meu gerente private já faz planejamento, previdência e sucessão sem cobrar mensalidade. Pagar R$ 18 mil por ano por algo que recebo de graça não faz sentido.",
+    "Meu private bank já me atende e não cobra. Não vou pagar mensalidade para mais uma pessoa opinar no meu patrimônio."
+   ],
+   [
+    "P004",
+    "P014"
+   ]
+  ],
+  [
+   "need",
+   26,
+   [
+    "Eu acompanho o mercado e cuido dos meus investimentos sozinho. Não vejo o que um planejador ia me trazer que valha R$ 1.500 por mês.",
+    "Meu private bank já me atende sem mensalidade, inclusive agora com o dinheiro da venda. Não vejo motivo para pagar à parte sem antes conversar com meu marido."
+   ],
+   [
+    "P009",
+    "P033"
+   ]
+  ],
+  [
+   "quality",
+   13,
+   [
+    "Eu mesmo escolho meus investimentos e minha vida tem PJ, escritório, imóveis. Um planejador sozinho de Porto Alegre não me parece dar conta disso.",
+    "Sucessão me preocupa, mas uma pessoa só não resolve consultório, negócios na Serra e herança dos filhos; isso precisa de advogado e contador juntos."
+   ],
+   [
+    "P007",
+    "P054"
+   ]
+  ],
+  [
+   "convenience",
+   7,
+   [
+    "Imposto me incomoda muito, mas reunião a cada quinze dias eu não tenho como encaixar. Um planejador sozinho não resolve PF, PJ e os aluguéis sem advogado e contador junto.",
+    "Tenho a indústria para tocar e minha esposa precisa estar junto em qualquer decisão. Reunião quinzenal não cabe na nossa agenda."
+   ],
+   [
+    "P017",
+    "P022"
+   ]
+  ],
+  [
+   "timing",
+   7,
+   [
+    "Gosto que seja um sênior com CFP, mas não decido sozinha; preciso levar ao meu marido e isso não sai nesta semana.",
+    "Me preocupa o que acontece com o patrimônio se eu faltar, mas não decido isso sem minha esposa, e uma pessoa só planejando sucessão me parece pouco."
+   ],
+   [
+    "P027",
+    "P035"
+   ]
+  ],
+  [
+   "other",
+   4,
+   [
+    "Talvez me interesse para organizar a herança, mas sozinho eu não decido. Precisaria levar minha esposa numa conversa antes.",
+    "Até pode fazer sentido para os imóveis e a aposentadoria, mas não fecho nada desses sem meu marido concordar, e o private do banco já não me cobra nada."
+   ],
+   [
+    "P010",
+    "P069"
+   ]
+  ]
+ ],
+ "why_yes": [
+  [
+   "need",
+   11,
+   [
+    "Minha PJ e minha PF estão misturadas e eu pago imposto demais nas duas. R$ 1.500 é pouco perto do que posso economizar, e prometem um planejador sênior com CFP.",
+    "Com 66 anos a sucessão já me preocupa e o banco não cuida disso. Mas reunião a cada quinze dias é muita coisa; se vierem até mim em Gramado e fizerem a holding, eu contrato."
+   ],
+   [
+    "P011",
+    "P021"
+   ]
+  ],
+  [
+   "convenience",
+   3,
+   [
+    "Viajo toda semana e não tenho cabeça para isso; reunião por vídeo e WhatsApp no mesmo dia resolvem meu problema, e posso ver presencialmente aqui em Porto Alegre. Como posso cancelar quando quiser, testo alguns meses.",
+    "Não tenho tempo nenhum e R$ 1.500 é pouco para mim; se alguém acompanha de verdade, fala com meu contador e não me larga um relatório, eu pago. Sem fidelidade, cancelo se virar gaveta de novo."
+   ],
+   [
+    "P081",
+    "P154"
+   ]
+  ]
+ ],
+ "flip": [
+  "Conversar com dois ou três clientes parecidos comigo, empresários que venderam empresa, e ver que estruturam a sucessão de verdade.",
+  "Um diagnóstico grátis mostrando quanto eu economizaria de imposto com uma holding para os imóveis.",
+  "Um amigo empresário de confiança me dizer que usa e que vale a pena.",
+  "Garantia por escrito de que não recebem comissão de nada, e alguém que entenda dos meus filhos morando fora.",
+  "Poder testar três meses e receber o dinheiro de volta se não sair do papel, com minha esposa participando das reuniões.",
+  "Uma declaração clara de que não vendem produto nem recebem comissão.",
+  "Uma primeira reunião sem custo com nós dois, na qual ela também visse valor.",
+  "Um preço bem menor, perto de R$ 500 por mês.",
+  "Holding e sucessão feitas com advogado parceiro, e uma conversa inicial para eu avaliar o planejador.",
+  "Garantia formal de independência: sem comissão, sem vínculo com banco, e uma equipe sênior.",
+  "Três meses de teste com devolução, para eu e meu marido vermos se sai ação concreta.",
+  "Estruturar uma holding para os imóveis com advogado parceiro, mostrando quanto de imposto eu deixaria de pagar.",
+  "Preço bem menor, perto de R$ 600 por mês.",
+  "Indicação de colegas médicos que já usem e confiem.",
+  "Uma equipe com advogado e contador que execute a separação PF/PJ e a holding, com teste de três meses.",
+  "Uma equipe completa que venha até Caxias e faça a holding com advogado.",
+  "Ter advogado e contador na equipe e referências de clientes que também venderam empresa.",
+  "Um colega de confiança que use há tempo e diga que vale.",
+  "Holding para os imóveis que mostre economia de imposto maior que o custo.",
+  "Uma primeira reunião grátis com meu marido junto, com o próprio planejador sênior.",
+  "Referências de famílias parecidas com a minha e garantia de que não recebem comissão.",
+  "Um amigo meu do mesmo nível ser cliente e me indicar.",
+  "Indicação de um amigo próximo que tenha resultado concreto com eles.",
+  "Se viessem até a minha casa ou empresa com poucas reuniões, e meu marido gostasse.",
+  "Um preço bem mais baixo, perto de R$ 500, e um diagnóstico grátis que mostrasse algo que eu não vi.",
+  "Uma garantia clara de que eles são independentes do banco, e um diagnóstico sem custo para levar ao meu marido.",
+  "Holding e sucessão com advogado parceiro incluídos, e minha esposa participando desde a primeira reunião.",
+  "Indicação de alguém do meu círculo que já seja cliente e esteja satisfeito.",
+  "Uma equipe que montasse a holding da família e viesse até a empresa.",
+  "Uma garantia por escrito de que não vendem produto, não recebem comissão e não têm ligação com banco.",
+  "Uma primeira conversa grátis com nós dois, mostrando como estruturariam a sucessão.",
+  "Um diagnóstico grátis mostrando quanto eu economizaria de imposto na PF e na PJ.",
+  "Estruturação de holding e sucessão com advogado, que o banco não faz direito.",
+  "Garantia de independência e planejamento para o exterior, onde meus filhos estudam.",
+  "Conversar com dois ou três empresários da Serra que já usam e ver o planejador vir até a fábrica.",
+  "Um compromisso por escrito de que não recebem comissão de ninguém.",
+  "Garantia de que não vendem produtos e alguém que venha até mim na Serra.",
+  "Um amigo do meu nível dizer que usa e confia.",
+  "Um preço bem menor, perto de R$ 600.",
+  "Ser independente de verdade e falar com clientes parecidos comigo.",
+  "Uma equipe com advogado que estruture a holding e a sucessão.",
+  "Ver que há uma equipe com advogado para a sucessão e poder sair sem custo se não funcionar.",
+  "Um preço bem menor, algo como R$ 500.",
+  "Garantia escrita de que não vendem produto nem recebem comissão, e uma primeira conversa grátis com minha esposa junto.",
+  "Um amigo próximo indicar.",
+  "Garantia por escrito de que não vendem produto nem recebem comissão de ninguém.",
+  "Indicação direta de um empresário da Serra que eu conheço e que use o serviço há anos.",
+  "Falar com dois ou três clientes com perfil parecido, executivos com imóveis, que confirmem o trabalho.",
+  "Um preço bem menor, perto de R$ 500 por mês.",
+  "Ter uma equipe de verdade, com advogado e contador, e não um planejador sozinho.",
+  "Uma primeira reunião sem custo em que meu marido possa participar e ver se vale.",
+  "Referências de outros médicos aqui de Porto Alegre que usam e recomendam.",
+  "Estruturação de holding e sucessão com advogado, feita de verdade, não só recomendação.",
+  "Garantia escrita de independência, sem comissão e sem ligação com banco.",
+  "Uma equipe com advogado e contador tributarista trabalhando junto com o planejador.",
+  "Poder testar três meses e ter o dinheiro de volta se nada acontecer de concreto.",
+  "Ouvir de dois ou três clientes com perfil parecido que eles resolvem tudo sem exigir minha presença.",
+  "Uma reunião sem custo aqui na Serra, com ela junto, mostrando como separar empresa e família e montar a holding.",
+  "Um preço bem menor, perto de R$ 500 por mês.",
+  "Uma equipe com planejador, advogado e contador que monte a holding e separe a empresa da família sem eu precisar coordenar.",
+  "Garantia escrita de que não recebem comissão nem estão ligados a banco, com três meses para testar e sair sem custo.",
+  "Uma equipe completa que monte a holding e a sucessão e venha até mim, em vez de eu ir até ela.",
+  "Um amigo próximo me contar que contratou e que mudou alguma coisa de verdade.",
+  "Uma primeira reunião sem custo com o próprio planejador e o contato de clientes parecidos comigo.",
+  "Um diagnóstico gratuito mostrando quanto de imposto dá para economizar, que eu possa levar para ele.",
+  "Um colega de profissão que eu respeito me dizer que usa e confia.",
+  "Garantia por escrito de que não vendem produto nem ganham comissão.",
+  "Se cuidassem de verdade dos meus filhos no exterior, com custo bem menor.",
+  "Um diagnóstico grátis mostrando quanto de imposto dá para economizar, para eu levar para ela.",
+  "Garantia de independência e um advogado junto para estruturar a sucessão de fato.",
+  "Testar sem custo por um tempo e ver se tiram trabalho de mim.",
+  "Só por um preço bem menor.",
+  "Conhecer pessoalmente alguém da família de amigos que já usa há anos.",
+  "Holding e sucessão feitas de verdade com advogado, por uma equipe.",
+  "A indicação de um amigo médico de São Paulo que já usa.",
+  "Garantia por escrito de independência e uma primeira conversa sem custo.",
+  "Algo que funcione quase sem reuniões.",
+  "Independência garantida e poder sair com o dinheiro de volta se não andar.",
+  "Diagnóstico sem custo mostrando o que o banco não está fazendo, para eu decidir com minha esposa.",
+  "Um amigo empresário do meu nível me dizer que usa e confia.",
+  "Clientes empresários parecidos comigo confirmando que funciona, com advogado e contador no time.",
+  "Uma amiga próxima indicar e ficar satisfeita há pelo menos um ano.",
+  "Amigos de São Paulo com perfil igual ao nosso usando e elogiando.",
+  "Alguém de confiança aqui de Curitiba ter usado e recomendado.",
+  "Incluir planejamento internacional e holding com advogado.",
+  "Alguém conhecido da região indicar e eles virem aqui na empresa conversar.",
+  "Garantia por escrito de que não vendem produto nem recebem comissão.",
+  "Um preço bem menor, perto de R$ 600.",
+  "Um preço bem menor.",
+  "Um colega de Caxias que eu respeito ter usado e me indicar.",
+  "Um amigo empresário dizendo que usa e que o planejador é bom.",
+  "Garantia por escrito de que não vendem produto, não recebem comissão e não têm ligação com banco.",
+  "Poder testar três meses e receber o dinheiro de volta se nada mudar na prática.",
+  "Preço bem menor, perto de R$ 500 por mês.",
+  "Um amigo indicar e eles se adaptarem a poucas reuniões por ano, perto de mim na Serra.",
+  "Um diagnóstico gratuito que me mostrasse um erro concreto que eu esteja cometendo.",
+  "Um diagnóstico gratuito que mostre em reais quanto eu deixaria de pagar de imposto.",
+  "Conhecer o planejador pessoalmente numa primeira reunião sem custo e falar com clientes parecidos comigo.",
+  "Ver na prática, numa primeira conversa sem custo, que separam a empresa da família e montam a holding, sem vender produto nenhum.",
+  "Um compromisso por escrito de que não vendem produto e não recebem comissão de ninguém.",
+  "Uma proposta de holding e sucessão com advogado parceiro que eu e minha esposa possamos avaliar juntos.",
+  "Um diagnóstico gratuito que mostre algo que meu banco nunca me mostrou.",
+  "Ver em reais quanto eles me fariam economizar de imposto, ou ganhar, num ano.",
+  "Uma indicação de alguém de confiança que já seja cliente.",
+  "Saber que por trás do planejador há uma equipe com advogado e contador.",
+  "A garantia de que não vendem produto, não recebem comissão e não são ligados a banco.",
+  "Planejamento internacional incluído, para os filhos estudando fora.",
+  "Independência garantida e 3 meses de teste com devolução se não sair do papel.",
+  "Um preço perto de R$ 700 a R$ 800 por mês com o mesmo planejador sênior.",
+  "Um serviço que resolva tudo com poucas reuniões, no máximo uma por trimestre, e relatórios.",
+  "Um amigo do meu nível dizer que usa e que vale a pena.",
+  "Um colega médico indicar e a holding dos imóveis vir junto.",
+  "Mostrar no diagnóstico gratuito quanto eu economizaria com holding e estrutura PF/PJ.",
+  "Garantia por escrito de que não vendem produto nem recebem comissão.",
+  "Prova clara de independência e uma primeira conversa sem custo para meu sócio ouvir junto.",
+  "Uma equipe com advogado e contador e referências de clientes com patrimônio parecido.",
+  "Conversar com clientes de perfil parecido e uma primeira reunião sem compromisso aqui em Porto Alegre.",
+  "Um preço perto de R$ 600 e um colega indicando.",
+  "Independência garantida e planejamento internacional para os filhos.",
+  "Ver que o private está me empurrando produto e me custando mais do que R$ 1.500 em taxas escondidas.",
+  "Garantia por escrito de que não vendem produto nem recebem comissão, e uma primeira conversa sem custo com meu marido junto.",
+  "Um amigo próximo me dizer que usa e que resolveu a vida dele.",
+  "Garantia clara de que são independentes, não vendem produto e não ganham comissão.",
+  "Compromisso por escrito de que não recebem nada de banco, seguradora ou corretora.",
+  "Um amigo que vendeu empresa também me indicar e contar como foi.",
+  "Um diagnóstico gratuito mostrando em reais quanto eu economizaria em imposto na PF e na PJ.",
+  "Uma equipe que venha até a empresa, faça o trabalho e só me chame para decidir.",
+  "Uma colega de confiança que use e me diga que vale mais que o private.",
+  "Um amigo do meu nível que use há tempo e confirme que eles aguentam a complexidade.",
+  "Estruturação de holding com advogado parceiro e uma reunião aqui em Caxias com meu marido.",
+  "Um amigo empresário que tenha montado a holding dos imóveis com eles e economizado de verdade.",
+  "Um empresário do meu porte em São Paulo me dizer que usa e resolve.",
+  "Garantia por escrito de que não vendem nada e não ganham comissão de ninguém.",
+  "Uma primeira reunião sem custo em que eu possa levar minha esposa.",
+  "Ter uma equipe com advogado e contador junto, e não só um planejador.",
+  "Conversar com outra família empresária daqui da região que já usa.",
+  "Um preço perto de R$ 600 ou 700 por mês.",
+  "Estruturação de holding com advogado incluída.",
+  "Uma amiga minha dizer que usa e gosta.",
+  "Garantia clara de que não vendem produto financeiro e não recebem comissão.",
+  "Uma primeira reunião gratuita com nós dois juntos.",
+  "Indicação de um colega que eu respeito.",
+  "Uma reunião de diagnóstico grátis em que me mostrem quanto de imposto eu deixaria de pagar, com números.",
+  "Garantia por escrito de que não recebem comissão nem são ligados a banco.",
+  "Um amigo meu dizer que é cliente e que vale a pena.",
+  "Uma primeira reunião sem custo com os dois juntos, para meu marido também avaliar a pessoa.",
+  "Indicação de um empresário amigo que tenha tido resultado concreto com eles.",
+  "Ver no diagnóstico grátis um problema concreto que eu não tinha enxergado e que custa mais que a mensalidade.",
+  "Compromisso por escrito de que não vendem produto nem ganham comissão, e uma holding bem feita com advogado.",
+  "Sucessão e holding feitas junto com um advogado parceiro, com referência de cliente parecido comigo.",
+  "Uma equipe com advogado e contador que estruture a holding de verdade.",
+  "Um colega de confiança me contar que a coisa saiu do papel com eles.",
+  "Um amigo próximo, do meu meio, me dizer que usa e confia.",
+  "Um preço bem menor, perto de R$ 500, com diagnóstico inicial gratuito para eu ver se acham algo que o banco não acha.",
+  "Um diagnóstico gratuito mostrando quanto eu economizaria de imposto na PF e no consultório.",
+  "Uma garantia por escrito de que não vendem produto nem recebem comissão de ninguém.",
+  "Um período de teste com devolução, para eu e minha esposa vermos se de fato sai do papel.",
+  "Conversar com dois ou três clientes médicos como eu que usam o serviço.",
+  "Referências de empresários da Serra que já são clientes.",
+  "Um colega médico de confiança me indicar pessoalmente.",
+  "Conhecer o planejador e ver que tem um advogado parceiro para estruturar holding.",
+  "Uma equipe com advogado e contador junto, não uma pessoa só.",
+  "Um preço menor e um diagnóstico gratuito para eu conhecer antes."
+ ],
+ "purchases_first_month_per_buyer": 1.0,
+ "price_answers": 225
+}

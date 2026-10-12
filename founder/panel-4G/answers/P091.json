@@ -1,0 +1,18 @@
+{
+  "id": "P091",
+  "buys": false,
+  "flips": [
+    "open_finance",
+    "desafio"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Já larguei Mobills e o app do banco em poucas semanas; pagar R$ 49 não muda o fato de que eu paro de anotar. O básico eu acho de graça no YouTube no ônibus.",
+  "objection": "Vou largar igual larguei os outros e o resto eu aprendo de graça.",
+  "would_change_my_mind": "Se conectasse sozinho com o banco, sem eu ter que lançar nada.",
+  "price_too_cheap": 9,
+  "price_cheap": 19,
+  "price_expensive": 45,
+  "price_too_expensive": 79
+}

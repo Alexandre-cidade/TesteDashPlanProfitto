@@ -1,0 +1,19 @@
+{
+  "id": "P099",
+  "buys": false,
+  "flips": [
+    "holding",
+    "equipe",
+    "garantia"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Pagar mensalidade para ouvir conselho não me convence; eu quero que alguém resolva a sucessão e a holding, não que converse comigo a cada 15 dias.",
+  "objection": "Que vire uma conversa cara sem entrega concreta.",
+  "would_change_my_mind": "Holding e sucessão feitas de verdade com advogado, por uma equipe.",
+  "price_too_cheap": 500,
+  "price_cheap": 1000,
+  "price_expensive": 2500,
+  "price_too_expensive": 4000
+}

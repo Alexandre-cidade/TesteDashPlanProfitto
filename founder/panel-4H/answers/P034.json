@@ -1,0 +1,19 @@
+{
+  "id": "P034",
+  "buys": true,
+  "flips": [
+    "equipe",
+    "referencias",
+    "presencial_casa"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Minhas contas da empresa e de casa estão misturadas e quero me aposentar em cinco anos; alguém em Porto Alegre que organize isso e fale com meu contador me tira um peso. Sem fidelidade, testo.",
+  "objection": "Já tenho contador e advogado; não sei se vai ser mais uma pessoa me pedindo coisas.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 500,
+  "price_cheap": 1000,
+  "price_expensive": 2500,
+  "price_too_expensive": 4000
+}

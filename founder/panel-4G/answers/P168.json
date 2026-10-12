@@ -1,0 +1,18 @@
+{
+  "id": "P168",
+  "buys": false,
+  "flips": [
+    "humano",
+    "seguranca"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Eu sei que sozinho eu não faço; um app sem ninguém me cobrando vai ficar parado no celular depois da primeira semana. E não gosto de colocar minha vida financeira num app que não conheço.",
+  "objection": "Sem uma pessoa me acompanhando eu não vou ter disciplina, e não sei o que fazem com meus dados.",
+  "would_change_my_mind": "Alguém de verdade me cobrando, mas aí já é outro produto.",
+  "price_too_cheap": 15,
+  "price_cheap": 29,
+  "price_expensive": 59,
+  "price_too_expensive": 99
+}

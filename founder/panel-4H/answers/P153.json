@@ -1,0 +1,19 @@
+{
+  "id": "P153",
+  "buys": false,
+  "flips": [
+    "holding",
+    "equipe",
+    "primeira_gratis"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Meu imposto é quase todo retido na fonte e já tenho contador e advogado; não vejo onde um planejador sozinho vai me fazer pagar menos.",
+  "objection": "Não está claro quanto de imposto isso economiza de verdade, e um planejador não é tributarista.",
+  "would_change_my_mind": "Mostrar no diagnóstico gratuito quanto eu economizaria com holding e estrutura PF/PJ.",
+  "price_too_cheap": 500,
+  "price_cheap": 1000,
+  "price_expensive": 2500,
+  "price_too_expensive": 5000
+}

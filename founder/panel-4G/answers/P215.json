@@ -1,0 +1,19 @@
+{
+  "id": "P215",
+  "buys": false,
+  "flips": [
+    "indicacao",
+    "garantia",
+    "seguranca"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "A trilha pra sair do cartão me interessa e gosto que não precisa dar acesso ao banco, mas nunca ouvi falar dessa Profitto e nenhum dos caras que eu sigo indicou.",
+  "objection": "Não conheço a marca, e sem alguém em quem eu confio falando bem eu não ponho meu cartão.",
+  "would_change_my_mind": "Um influenciador de finanças que eu acompanho recomendando.",
+  "price_too_cheap": 15,
+  "price_cheap": 29,
+  "price_expensive": 59,
+  "price_too_expensive": 89
+}

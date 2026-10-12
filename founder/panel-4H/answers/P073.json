@@ -1,0 +1,18 @@
+{
+  "id": "P073",
+  "buys": false,
+  "flips": [
+    "relatorio",
+    "primeira_gratis"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Sou advogado, cuido da parte jurídica e da sucessão eu mesmo, e meu private faz o resto sem cobrar. Não pago mensalidade por isso.",
+  "objection": "Não vejo o que justifica a mensalidade se o banco não cobra e eu entendo do assunto.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 400,
+  "price_cheap": 800,
+  "price_expensive": 1800,
+  "price_too_expensive": 3500
+}

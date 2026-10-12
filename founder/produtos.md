@@ -22,3 +22,9 @@ Painéis com 225 compradores cada (mesma população diversificada da v4, seeds 
 ## Ressalvas
 - A população não foi escolhida para o Private: poucos têm renda e patrimônio para R$ 1.500. O Private precisa de um canal próprio (assessores, base do BTG) e de um teste só com esse público.
 - Cada agente respondeu por 10 compradores; as taxas podem estar infladas em relação a um agente por comprador.
+
+## G e H: compradores com o perfil de cada produto (225 cada)
+Cada comprador disse se compraria e quais mudanças (até 3) o fariam comprar.
+- **Digital (perfil self-service, 20 a 45 anos):** 11% pagariam hoje; 48% comprariam com as mudanças que citaram. Mais pedidas: Open Finance (103), preço menor (72), desafio de 30 dias (64), garantia de economia (59), falar com uma pessoa (56), indicação (38).
+- **Private (alta renda e patrimônio):** 6% comprariam hoje; 52% com as mudanças. Mais pedidas: primeira reunião grátis (122), independência/sem comissão (94), referências de clientes parecidos (88), holding e sucessão (87), equipe com advogado e contador (57), período de teste (51).
+- O simulador usa esses compradores: ligar cada opção na tabela de produtos muda a conversão conforme o que eles disseram.

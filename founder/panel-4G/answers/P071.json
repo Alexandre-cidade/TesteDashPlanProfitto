@@ -1,0 +1,19 @@
+{
+  "id": "P071",
+  "buys": false,
+  "flips": [
+    "open_finance",
+    "ia",
+    "trial30"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "convenience",
+  "reason": "Já larguei app justamente porque cansei de lançar gasto; se não for automático, vou largar de novo.",
+  "objection": "Anotar gasto à mão dá muito trabalho, ainda mais com o dinheiro que mando pra família.",
+  "would_change_my_mind": "Puxar os gastos sozinho dos meus bancos.",
+  "price_too_cheap": 12,
+  "price_cheap": 25,
+  "price_expensive": 49,
+  "price_too_expensive": 80
+}

@@ -1,0 +1,18 @@
+{
+  "id": "P104",
+  "buys": false,
+  "flips": [
+    "avaliacoes",
+    "indicacao"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Nunca ouvi falar da Profitto; antes de colocar meu cartão eu quero ver nota na loja e alguém falando bem. Até assino coisas no impulso, mas marca desconhecida de finanças me trava.",
+  "objection": "Não conheço a empresa e não sei se é séria.",
+  "would_change_my_mind": "Nota alta na loja de apps com muitas avaliações.",
+  "price_too_cheap": 12,
+  "price_cheap": 25,
+  "price_expensive": 69,
+  "price_too_expensive": 120
+}

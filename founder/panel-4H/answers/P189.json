@@ -1,0 +1,19 @@
+{
+  "id": "P189",
+  "buys": false,
+  "flips": [
+    "relatorio",
+    "holding",
+    "primeira_gratis"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Meu assessor do private não me cobra nada e me liga quando precisa. Pagar R$ 1.500 todo mês por conselho não entra na minha conta.",
+  "objection": "Por que pagar se o banco faz sem mensalidade?",
+  "would_change_my_mind": "",
+  "price_too_cheap": 300,
+  "price_cheap": 600,
+  "price_expensive": 1200,
+  "price_too_expensive": 2000
+}

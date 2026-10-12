@@ -1,0 +1,18 @@
+{
+  "id": "P031",
+  "buys": false,
+  "flips": [
+    "open_finance",
+    "preco_menor"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Minha planilha já faz isso de graça e eu confio nela. Pagar R$ 49 por mês, sendo mãe solo, para refazer o que já faço não fecha a conta.",
+  "objection": "Já existe app grátis e eu já tenho a planilha; não vejo o que o plano escrito acrescenta de verdade.",
+  "would_change_my_mind": "Se puxasse os gastos sozinho dos bancos e custasse bem menos, talvez eu largasse a planilha.",
+  "price_too_cheap": 9,
+  "price_cheap": 19,
+  "price_expensive": 35,
+  "price_too_expensive": 50
+}

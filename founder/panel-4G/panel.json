@@ -1,0 +1,151 @@
+{
+ "n": 225,
+ "seed": 4106,
+ "customer": {
+  "business": "Profitto Digital: app de planejamento financeiro self-service por assinatura, para todo o Brasil",
+  "target": "Brasileiros de 20 a 45 anos, conectados, que usam o celular para tudo e querem organizar o dinheiro sem pagar caro. Todos os valores são em reais (R$); a renda é anual e os preços que você der são mensais, em R$",
+  "where": "Capitais e cidades médias de todo o Brasil (100% online)",
+  "age": [
+   20,
+   45
+  ],
+  "segments": [
+   {
+    "name": "Jovem CLT no primeiro ou segundo emprego",
+    "share": 0.22,
+    "income": [
+     30000,
+     80000
+    ]
+   },
+   {
+    "name": "Casal jovem dividindo as contas da casa",
+    "share": 0.14,
+    "income": [
+     70000,
+     160000
+    ]
+   },
+   {
+    "name": "Endividado de classe média tentando sair do vermelho",
+    "share": 0.14,
+    "income": [
+     40000,
+     110000
+    ]
+   },
+   {
+    "name": "Autônomo ou freelancer digital com renda variável",
+    "share": 0.12,
+    "income": [
+     40000,
+     140000
+    ]
+   },
+   {
+    "name": "Profissional de 30 a 45 anos que nunca organizou o dinheiro",
+    "share": 0.14,
+    "income": [
+     80000,
+     200000
+    ]
+   },
+   {
+    "name": "Universitário ou recém-formado com o primeiro salário",
+    "share": 0.1,
+    "income": [
+     20000,
+     45000
+    ]
+   },
+   {
+    "name": "Mãe ou pai solo cuidando das contas sozinho",
+    "share": 0.08,
+    "income": [
+     40000,
+     100000
+    ]
+   },
+   {
+    "name": "Servidor público jovem",
+    "share": 0.06,
+    "income": [
+     60000,
+     130000
+    ]
+   }
+  ],
+  "behaviours": [
+   {
+    "name": "Já baixou app de finanças e largou",
+    "share": 0.16,
+    "how": "Usou Mobills, Organizze ou o app do banco por algumas semanas e abandonou."
+   },
+   {
+    "name": "Só usa app grátis",
+    "share": 0.12,
+    "how": "Testa a versão grátis de tudo e quase nunca paga assinatura de app."
+   },
+   {
+    "name": "Segue influenciador de finanças",
+    "share": 0.14,
+    "how": "Assiste YouTube e Instagram de finanças e confia em quem acompanha."
+   },
+   {
+    "name": "Compra por impulso e se arrepende",
+    "share": 0.1,
+    "how": "Assina coisas no impulso e cancela depois."
+   },
+   {
+    "name": "Endividado no cartão",
+    "share": 0.12,
+    "how": "Paga o mínimo da fatura ou usa cheque especial todo mês."
+   },
+   {
+    "name": "Desconfiado com dados pessoais",
+    "share": 0.08,
+    "how": "Não gosta de dar acesso às contas bancárias para apps."
+   },
+   {
+    "name": "Sem tempo, quer tudo automático",
+    "share": 0.1,
+    "how": "Não tem paciência para anotar gastos à mão."
+   },
+   {
+    "name": "Procrastinador",
+    "share": 0.1,
+    "how": "Sabe que precisa organizar, mas sempre deixa para depois."
+   },
+   {
+    "name": "Faz planilha sozinho",
+    "share": 0.08,
+    "how": "Já controla tudo numa planilha no Excel ou Google."
+   }
+  ],
+  "objections": [
+   "Já existe app grátis que faz isso",
+   "Não quero dar acesso aos meus bancos",
+   "Vou pagar e não vou usar",
+   "R$ 49 por mês pesa no meu orçamento",
+   "Sem uma pessoa me cobrando eu não tenho disciplina",
+   "Não conheço essa marca",
+   "Anotar gasto à mão dá muito trabalho",
+   "Um app não entende a minha situação",
+   "Prefiro aprender de graça no YouTube",
+   "Tenho medo de não conseguir cancelar"
+  ],
+  "habits": [
+   "você mora em São Paulo e passa 2 horas por dia no transporte",
+   "você mora em Porto Alegre e divide apartamento",
+   "você mora em Recife e trabalha de casa",
+   "você mora em Belo Horizonte e usa o Nubank para tudo",
+   "você mora em Curitiba e tem dois cartões de crédito",
+   "você mora em Goiânia e recebe por Pix de vários clientes",
+   "você mora em Salvador e ajuda a família todo mês",
+   "você mora em Florianópolis e gasta muito com delivery",
+   "você mora no interior de SP e quer comprar um carro",
+   "você mora em Brasília e está juntando para a entrada de um apartamento"
+  ]
+ },
+ "pitch": "Profitto Digital, da Profitto, empresa de planejamento financeiro de Porto Alegre. 100% online e self-service, para todo o Brasil.\nR$ 49 por mês. Não tem planejador nem reunião: você faz tudo sozinho, no seu tempo, pelo app e pelo site.\nInclui: um questionário de 20 minutos que gera um plano financeiro escrito com as suas 3 primeiras ações; controle de gastos por categoria (inclusive delivery, assinaturas e compras por impulso), com metas e alertas por mês; uma trilha guiada para sair do cartão e do cheque especial; trilhas curtas em vídeo sobre reserva de emergência, investimentos e aposentadoria; e um relatório mensal automático mostrando se você está cumprindo o plano.\nOs 7 primeiros dias são grátis. Sem fidelidade: cancele quando quiser, pelo app, sem multa.\nSe um dia quiser falar com uma pessoa, pode trocar para o plano com planejador (R$ 297/mês) sem perder seus dados.\nA Profitto não vende produtos financeiros dentro do app e não recebe comissão pelo que você faz com o seu dinheiro."
+}

@@ -1,0 +1,19 @@
+{
+  "id": "P039",
+  "buys": false,
+  "flips": [
+    "independente",
+    "garantia",
+    "referencias"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Todo mundo que já me ofereceu conselho financeiro tinha algum produto para vender. Nada no anúncio diz que eles não ganham comissão.",
+  "objection": "Como sei que não vão me empurrar produto?",
+  "would_change_my_mind": "Uma garantia por escrito de que não vendem produto, não recebem comissão e não têm ligação com banco.",
+  "price_too_cheap": 300,
+  "price_cheap": 700,
+  "price_expensive": 1500,
+  "price_too_expensive": 2500
+}

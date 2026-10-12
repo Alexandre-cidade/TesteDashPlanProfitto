@@ -1,0 +1,19 @@
+{
+  "id": "P002",
+  "buys": false,
+  "flips": [
+    "holding",
+    "primeira_gratis",
+    "referencias"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "O que eu quero é pagar menos imposto nos aluguéis e na PJ, e a oferta fala nisso de forma genérica. Não pago R$ 1.500 por mês sem ver primeiro que economizo mais do que isso.",
+  "objection": "Não sei se esse planejador conhece estrutura de holding imobiliária ou se vai só repetir o que meu contador já diz.",
+  "would_change_my_mind": "Um diagnóstico grátis mostrando quanto eu economizaria de imposto com uma holding para os imóveis.",
+  "price_too_cheap": 300,
+  "price_cheap": 800,
+  "price_expensive": 2000,
+  "price_too_expensive": 3500
+}

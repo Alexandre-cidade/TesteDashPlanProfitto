@@ -1,0 +1,18 @@
+{
+  "id": "P195",
+  "buys": false,
+  "flips": [
+    "internacional",
+    "relatorio"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Eu mesmo cuido dos meus investimentos e dos meus imóveis, e cuido bem. Pagar R$ 1.500 por mês para alguém me dizer o que eu já sei não faz sentido.",
+  "objection": "Não preciso de alguém para fazer o que eu já faço.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 300,
+  "price_cheap": 700,
+  "price_expensive": 1500,
+  "price_too_expensive": 2500
+}

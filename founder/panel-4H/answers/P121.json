@@ -1,0 +1,19 @@
+{
+  "id": "P121",
+  "buys": false,
+  "flips": [
+    "referencias",
+    "primeira_gratis",
+    "equipe"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Preciso mesmo separar a empresa da família e o preço não me pesa, mas não contrato ninguém que nenhum amigo meu indicou. Anúncio não basta.",
+  "objection": "Não sei se esse 'sênior' é sênior de verdade nem quem mais do meu nível usa.",
+  "would_change_my_mind": "Um amigo empresário dizendo que usa e que o planejador é bom.",
+  "price_too_cheap": 500,
+  "price_cheap": 1000,
+  "price_expensive": 3000,
+  "price_too_expensive": 6000
+}

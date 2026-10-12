@@ -1,0 +1,19 @@
+{
+  "id": "P011",
+  "buys": true,
+  "flips": [
+    "holding",
+    "equipe",
+    "primeira_gratis"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Minha PJ e minha PF estão misturadas e eu pago imposto demais nas duas. R$ 1.500 é pouco perto do que posso economizar, e prometem um planejador sênior com CFP.",
+  "objection": "Se o tal sênior for mesmo sênior ou se depois do primeiro mês eu vou ser passado para um júnior.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 500,
+  "price_cheap": 1000,
+  "price_expensive": 3000,
+  "price_too_expensive": 6000
+}

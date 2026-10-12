@@ -1,0 +1,19 @@
+{
+  "id": "P030",
+  "buys": false,
+  "flips": [
+    "referencias",
+    "garantia",
+    "primeira_gratis"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Contrato por indicação de amigos e já tive consultoria que virou relatório parado. Faltam cinco anos para eu me aposentar e não vou arriscar com quem não conheço.",
+  "objection": "Pagar mensalidade e receber outro relatório que fica na gaveta.",
+  "would_change_my_mind": "Indicação de um amigo próximo que tenha resultado concreto com eles.",
+  "price_too_cheap": 300,
+  "price_cheap": 700,
+  "price_expensive": 1300,
+  "price_too_expensive": 2000
+}

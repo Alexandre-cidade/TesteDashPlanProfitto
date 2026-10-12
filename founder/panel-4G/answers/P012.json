@@ -1,0 +1,18 @@
+{
+  "id": "P012",
+  "buys": true,
+  "flips": [
+    "avaliacoes",
+    "open_finance"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 1,
+  "reason_code": "other",
+  "reason": "Não conheço a marca, mas eu assino essas coisas no impulso no ônibus e só cancelo depois de cobrar. Provavelmente pago o primeiro mês e desisto.",
+  "objection": "Não sei quem é a Profitto e se o app é bom.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 12,
+  "price_cheap": 25,
+  "price_expensive": 49,
+  "price_too_expensive": 79
+}

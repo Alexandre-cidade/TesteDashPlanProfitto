@@ -1,0 +1,19 @@
+{
+  "id": "P112",
+  "buys": true,
+  "flips": [
+    "independente",
+    "holding",
+    "primeira_gratis"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Acabei de vender a empresa e a sucessão dos meus filhos está em aberto; um CFP sênior que organize tudo e converse com meu contador vale R$ 1.500 por mês neste momento.",
+  "objection": "Quero ter certeza de que quem vai me atender é realmente sênior e não está me empurrando produto em cima desse dinheiro da venda.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 500,
+  "price_cheap": 1000,
+  "price_expensive": 2500,
+  "price_too_expensive": 4000
+}

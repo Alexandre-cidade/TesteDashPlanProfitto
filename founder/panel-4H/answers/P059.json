@@ -1,0 +1,19 @@
+{
+  "id": "P059",
+  "buys": false,
+  "flips": [
+    "independente",
+    "primeira_gratis",
+    "garantia"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Desconfio de todo mundo que fala de dinheiro e aqui não diz que eles não ganham comissão; além disso minha esposa decide junto comigo.",
+  "objection": "Achar que por trás da revisão de seguros e previdência tem alguém ganhando comissão.",
+  "would_change_my_mind": "Garantia escrita de que não vendem produto nem recebem comissão, e uma primeira conversa grátis com minha esposa junto.",
+  "price_too_cheap": 400,
+  "price_cheap": 800,
+  "price_expensive": 1800,
+  "price_too_expensive": 3000
+}

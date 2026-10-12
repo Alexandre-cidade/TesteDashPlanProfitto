@@ -1,0 +1,18 @@
+{
+  "id": "P196",
+  "buys": false,
+  "flips": [
+    "open_finance",
+    "trial30"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "convenience",
+  "reason": "Já larguei Mobills e Organizze justamente porque cansei de anotar gasto. Esse app não conecta no banco, então vou largar de novo e ainda pagando R$ 49.",
+  "objection": "Ter que lançar tudo à mão de novo; minha renda de freelancer entra picada e não vou ficar registrando cada coisa.",
+  "would_change_my_mind": "Se conectasse sozinho com meus bancos pelo Open Finance.",
+  "price_too_cheap": 10,
+  "price_cheap": 19,
+  "price_expensive": 39,
+  "price_too_expensive": 60
+}

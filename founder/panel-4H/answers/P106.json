@@ -1,0 +1,19 @@
+{
+  "id": "P106",
+  "buys": false,
+  "flips": [
+    "referencias",
+    "independente",
+    "primeira_gratis"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Nunca ouvi falar da Profitto e nenhum amigo meu usa. Não vou abrir empresa e família para um desconhecido que vi num anúncio.",
+  "objection": "Ninguém do meu círculo indicou; referência que a própria empresa escolhe não é o mesmo que um amigo me dizer que confia.",
+  "would_change_my_mind": "Um amigo empresário do meu nível me dizer que usa e confia.",
+  "price_too_cheap": 500,
+  "price_cheap": 1000,
+  "price_expensive": 2500,
+  "price_too_expensive": 5000
+}

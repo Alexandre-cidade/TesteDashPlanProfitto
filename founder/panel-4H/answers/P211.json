@@ -1,0 +1,19 @@
+{
+  "id": "P211",
+  "buys": false,
+  "flips": [
+    "referencias",
+    "equipe",
+    "presencial_casa"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Moro nos Jardins e só contrato quem amigos do meu nível indicaram. Uma empresa de Porto Alegre que eu nunca ouvi falar não entra na minha casa por anúncio.",
+  "objection": "Uma empresa pequena de Porto Alegre, com um planejador só, não dá conta das minhas empresas, imóveis e filhos pequenos.",
+  "would_change_my_mind": "Um amigo próximo, do meu meio, me dizer que usa e confia.",
+  "price_too_cheap": 500,
+  "price_cheap": 1500,
+  "price_expensive": 4000,
+  "price_too_expensive": 8000
+}

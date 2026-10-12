@@ -1,0 +1,19 @@
+{
+  "id": "P096",
+  "buys": false,
+  "flips": [
+    "indicacao",
+    "familia",
+    "desafio"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Nunca vi ninguém que eu sigo falar da Profitto, e conheço meu padrão: assino e não uso. Organizamos as contas em casal e o app parece individual.",
+  "objection": "Pagar todo mês por algo que vai ficar parado no celular.",
+  "would_change_my_mind": "Um influenciador de finanças que eu acompanho usando e recomendando de verdade.",
+  "price_too_cheap": 15,
+  "price_cheap": 29,
+  "price_expensive": 59,
+  "price_too_expensive": 99
+}

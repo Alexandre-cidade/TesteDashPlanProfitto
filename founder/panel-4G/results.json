@@ -1,0 +1,409 @@
+{
+ "business": "Profitto Digital: app de planejamento financeiro self-service por assinatura, para todo o Brasil",
+ "seed": 4106,
+ "dealt": 225,
+ "answered": 225,
+ "skipped": [],
+ "buys": 25,
+ "passes": 200,
+ "buy_rate": 0.1111111111111111,
+ "by_segment": [
+  [
+   "Profissional de 30 a 45 anos que nunca organizou o dinheiro",
+   32,
+   0.3125
+  ],
+  [
+   "Jovem CLT no primeiro ou segundo emprego",
+   49,
+   0.12244897959183673
+  ],
+  [
+   "Autônomo ou freelancer digital com renda variável",
+   27,
+   0.1111111111111111
+  ],
+  [
+   "Servidor público jovem",
+   13,
+   0.07692307692307693
+  ],
+  [
+   "Endividado de classe média tentando sair do vermelho",
+   32,
+   0.0625
+  ],
+  [
+   "Mãe ou pai solo cuidando das contas sozinho",
+   18,
+   0.05555555555555555
+  ],
+  [
+   "Universitário ou recém-formado com o primeiro salário",
+   22,
+   0.045454545454545456
+  ],
+  [
+   "Casal jovem dividindo as contas da casa",
+   32,
+   0.03125
+  ]
+ ],
+ "by_behaviour": [
+  [
+   "Compra por impulso e se arrepende",
+   23,
+   0.6521739130434783
+  ],
+  [
+   "Segue influenciador de finanças",
+   32,
+   0.125
+  ],
+  [
+   "Já baixou app de finanças e largou",
+   36,
+   0.05555555555555555
+  ],
+  [
+   "Desconfiado com dados pessoais",
+   18,
+   0.05555555555555555
+  ],
+  [
+   "Sem tempo, quer tudo automático",
+   22,
+   0.045454545454545456
+  ],
+  [
+   "Procrastinador",
+   22,
+   0.045454545454545456
+  ],
+  [
+   "Endividado no cartão",
+   27,
+   0.037037037037037035
+  ],
+  [
+   "Só usa app grátis",
+   27,
+   0.0
+  ],
+  [
+   "Faz planilha sozinho",
+   18,
+   0.0
+  ]
+ ],
+ "by_income": [
+  [
+   "$100,000 and up",
+   75,
+   0.2
+  ],
+  [
+   "under $66,000",
+   72,
+   0.06944444444444445
+  ],
+  [
+   "$66,000 to $100,000",
+   78,
+   0.0641025641025641
+  ]
+ ],
+ "why_not": [
+  [
+   "price",
+   60,
+   [
+    "Tô pagando o mínimo do cartão todo mês, não sobra R$ 49 pra um app me dizer o que eu já sei. O básico de sair das dívidas eu acho de graça no YouTube.",
+    "Minha situação é cartão no rotativo e juntar pra entrada do apê ao mesmo tempo, um questionário de 20 minutos não vai entender isso. E R$ 49 faz falta."
+   ],
+   [
+    "P001",
+    "P009"
+   ]
+  ],
+  [
+   "habit",
+   52,
+   [
+    "Eu não pago assinatura de app, uso a versão grátis e pronto. E nunca ouvi falar da Profitto.",
+    "Até gosto que dá pra cancelar pelo app, mas eu quase nunca pago app. Com renda variável, R$ 49 todo mês pesa nos meses fracos."
+   ],
+   [
+    "P002",
+    "P003"
+   ]
+  ],
+  [
+   "convenience",
+   30,
+   [
+    "Não vou anotar gasto na mão, não tenho tempo. Se não conecta com o banco, o app grátis do meu banco já faz o mesmo.",
+    "Anotar tudo à mão, com as contas da casa e o que mando pra família, não vou fazer. E nenhum dos perfis de finanças que sigo falou disso."
+   ],
+   [
+    "P004",
+    "P014"
+   ]
+  ],
+  [
+   "trust",
+   28,
+   [
+    "Não conheço essa empresa e não gosto de colocar minha vida financeira em app. Prefiro juntar pro carro do meu jeito.",
+    "Talvez eu entre nos 7 dias grátis no impulso, mas não conheço a marca e cancelo antes de cobrar. R$ 49 pesa no meu salário."
+   ],
+   [
+    "P013",
+    "P015"
+   ]
+  ],
+  [
+   "need",
+   20,
+   [
+    "Minha planilha já faz controle e metas do jeito que eu quero, e o resto aprendo de graça no YouTube. Não vejo o que ganho pagando.",
+    "Eu já controlo tudo numa planilha de graça. O que me falta é alguém me cobrando, e isso o plano de R$ 49 não tem."
+   ],
+   [
+    "P007",
+    "P023"
+   ]
+  ],
+  [
+   "quality",
+   6,
+   [
+    "Sem alguém me cobrando eu abandono em uma semana, e esse plano é justamente sem ninguém. E eu nem pago app normalmente.",
+    "Minha situação tem dívida no cartão, conta dividida com o parceiro e meta de carro; um questionário de 20 minutos não vai entender isso. Pagar R$ 297 pra falar com alguém é muito."
+   ],
+   [
+    "P010",
+    "P102"
+   ]
+  ],
+  [
+   "timing",
+   4,
+   [
+    "Renda de freelancer varia e eu sempre deixo organização pra depois; ia fazer o teste grátis, esquecer e cancelar. R$ 49 num mês fraco pesa.",
+    "Recebo Pix de um monte de cliente e sei que preciso organizar, mas vou deixar para quando tiver tempo. E não conheço essa marca."
+   ],
+   [
+    "P094",
+    "P147"
+   ]
+  ]
+ ],
+ "why_yes": [
+  [
+   "need",
+   14,
+   [
+    "Ganho bem e não tenho ideia pra onde vai o dinheiro, o delivery me come vivo. Gostei que não precisa dar acesso ao banco; assino no embalo e pelo menos o primeiro mês eu pago.",
+    "Tenho 40 anos e nunca organizei nada, um plano escrito com 3 ações já é mais do que eu fiz até hoje. Cancelar pelo app sem multa tira meu maior medo, então pago o primeiro mês pra ver."
+   ],
+   [
+    "P008",
+    "P049"
+   ]
+  ],
+  [
+   "other",
+   4,
+   [
+    "Não conheço a marca, mas eu assino essas coisas no impulso no ônibus e só cancelo depois de cobrar. Provavelmente pago o primeiro mês e desisto.",
+    "Do jeito que eu sou, assino no impulso achando que agora vai, e quando lembro de cancelar já cobraram o primeiro mês."
+   ],
+   [
+    "P012",
+    "P040"
+   ]
+  ],
+  [
+   "habit",
+   4,
+   [
+    "Eu assino no impulso: vou começar animada, esquecer de cancelar no sétimo dia e pagar o primeiro mês. Depois provavelmente cancelo.",
+    "Conheço meu padrão: vou assinar no embalo, esquecer de cancelar nos 7 dias e pagar pelo menos o primeiro mês, mesmo sabendo que tem app grátis."
+   ],
+   [
+    "P028",
+    "P077"
+   ]
+  ],
+  [
+   "convenience",
+   3,
+   [
+    "Eu assino no impulso, então provavelmente esqueço os 7 dias e pago o primeiro mês; com renda variável e dois cartões, um plano escrito até me atrai.",
+    "Eu assino no impulso, então provavelmente pago o primeiro mês. Mas se tiver que anotar gasto à mão, cancelo logo depois."
+   ],
+   [
+    "P062",
+    "P146"
+   ]
+  ]
+ ],
+ "flip": [
+  "Se fosse bem mais barato, uns R$ 15, talvez eu pagasse.",
+  "Muitas avaliações boas e conectar sozinho com o banco, pra eu e minha namorada vermos juntos.",
+  "Se puxasse meus gastos sozinho e devolvesse o dinheiro caso eu não economizasse, eu pagaria.",
+  "Conexão automática com os bancos via Open Finance.",
+  "Alguém me cobrando de verdade, uma pessoa, não só notificação.",
+  "Algo que funcione sem eu precisar fazer nada e custe bem menos.",
+  "Nada muito; talvez conteúdo avançado de verdade sobre investimento pra autônomo.",
+  "Poder falar com uma pessoa sem pagar R$ 297.",
+  "Um chat com uma pessoa quando eu travar, incluído nos R$ 49.",
+  "Automático e por menos de R$ 20.",
+  "Garantia clara de privacidade e uma marca que eu já ouvi falar.",
+  "Conectar com os bancos e alguém que eu sigo recomendar.",
+  "Ver muita gente falando bem e um preço menor.",
+  "Poder falar com uma pessoa que entenda meu caso, sem pagar R$ 297.",
+  "Uma pessoa por chat me acompanhando, por um preço menor.",
+  "Conectar sozinho com meus bancos e cartões, sem eu digitar nada.",
+  "Lançamento automático dos gastos pelo Open Finance, que é o que fazia eu largar os outros.",
+  "Um preço bem menor, tipo R$ 15.",
+  "Ter uma pessoa me acompanhando de verdade por um preço baixo.",
+  "Se puxasse tudo sozinho dos meus bancos e me avisasse quando eu exagerar no delivery.",
+  "Garantia de dinheiro de volta se eu não economizar o valor da assinatura.",
+  "Uma conta compartilhada com meu parceiro pelo mesmo preço.",
+  "Avaliações altas na loja e alguém em quem confio recomendando.",
+  "Se lançasse os gastos sozinho pelo Open Finance.",
+  "Se puxasse os gastos sozinho dos bancos e custasse bem menos, talvez eu largasse a planilha.",
+  "Conexão automática com meus bancos por Open Finance.",
+  "Poder falar com uma pessoa por chat que me cobre, de preferência indicado por um influenciador que eu confio.",
+  "Um preço tipo R$ 10 por mês e alguma prova de que a empresa é séria.",
+  "Se custasse uns R$ 15 e devolvessem o dinheiro se eu não economizasse.",
+  "Garantia clara de segurança e privacidade, mais boas avaliações de outros usuários.",
+  "Ser automático com meus bancos e custar uns R$ 20.",
+  "Um plano grátis decente ou algo bem mais barato, tipo R$ 15.",
+  "Um influenciador de finanças que eu acompanho recomendando, e poder chamar uma pessoa no chat.",
+  "Indicação de um influenciador de finanças em quem eu confio.",
+  "Se puxasse os gastos do Nubank sozinho, sem eu ter que anotar nada, talvez eu usasse de verdade.",
+  "Ver um influenciador de finanças que eu acompanho usando e recomendando de verdade.",
+  "Dinheiro de volta se eu não economizar pelo menos o valor da assinatura.",
+  "Conectar sozinho com meus bancos via Open Finance.",
+  "Alguém de verdade me acompanhando por um preço perto desse.",
+  "Uma garantia clara de segurança junto com conexão automática pelo Open Finance oficial.",
+  "Um preço tipo R$ 10 a R$ 15 e alguém que eu sigo indicando.",
+  "Uma forma de registrar gastos que não seja manual e não exija entregar acesso ao banco.",
+  "Recomendação de um influenciador de finanças que eu confio, de preferência com plano anual mais barato.",
+  "Um preço bem menor, perto de R$ 10.",
+  "Preço bem mais baixo, uns R$ 15.",
+  "Nota alta e muitas avaliações na loja de apps.",
+  "Chat com uma pessoa quando travar e uma conta compartilhada com minha esposa.",
+  "Alguém de verdade olhando meus números e me cobrando, sem eu pagar R$ 297.",
+  "Se custasse uns R$ 10 talvez eu pensasse.",
+  "Uma pessoa no chat para eu destravar quando eu sumir.",
+  "Ver nota alta na loja e alguém que eu confio usando.",
+  "Conectar com os bancos e poder usar junto com meu marido.",
+  "Puxar os gastos sozinho dos meus bancos.",
+  "Ter alguém no chat pra me puxar quando eu travar.",
+  "Conta compartilhada com meu parceiro e mais tempo grátis pra confiar.",
+  "Uma pessoa por chat acompanhando minha meta da entrada do apartamento.",
+  "Poder falar com uma pessoa de verdade quando travar, sem pagar R$ 297.",
+  "Dinheiro de volta se eu não economizar pelo menos o valor da assinatura.",
+  "Um preço bem menor, perto de R$ 10.",
+  "Conectar sozinho com meus bancos e custar menos.",
+  "Se puxasse sozinho os Pix das minhas contas e separasse o que é cliente do que é gasto.",
+  "Custar uns R$ 10 por mês.",
+  "Um influenciador que eu acompanho mostrando que usa e funciona.",
+  "Conectar sozinho com meus bancos e cartões via Open Finance.",
+  "Puxar os gastos dos meus dois cartões sozinho, sem eu anotar.",
+  "Se conectasse sozinho com o banco, sem eu ter que lançar nada.",
+  "Conexão automática com os bancos e cartões via Open Finance.",
+  "Garantia de dinheiro de volta se eu não economizar pelo menos a mensalidade.",
+  "Puxar os gastos dos bancos automaticamente, acabando com a digitação.",
+  "Um influenciador de finanças que eu acompanho usando e recomendando de verdade.",
+  "Preço bem menor, tipo R$ 15.",
+  "Um preço menor de verdade, perto de R$ 20, com privacidade clara.",
+  "Conta compartilhada com meu parceiro por um preço menor.",
+  "Poder tirar dúvidas com uma pessoa por chat dentro dos R$ 49.",
+  "Nota alta na loja de apps com muitas avaliações.",
+  "Uma pessoa acompanhando e cobrando, mas no preço de R$ 49.",
+  "Se puxasse os gastos sozinho dos meus bancos e algum influenciador que eu sigo recomendasse.",
+  "Um influenciador de finanças que eu acompanho recomendando.",
+  "Poder falar com uma pessoa de verdade quando travar, sem pagar R$ 297.",
+  "Um preço bem menor, tipo R$ 15 ou R$ 19.",
+  "Se conectasse sozinho com meus bancos e me alertasse do delivery automaticamente.",
+  "Conexão automática com os bancos e conta compartilhada com meu parceiro.",
+  "Se fosse grátis com uma parte paga opcional bem barata, aí talvez.",
+  "Se puxasse os gastos dos bancos sozinho, economizando o tempo da planilha.",
+  "Garantia de dinheiro de volta se eu não economizar pelo menos o valor da assinatura.",
+  "Um influenciador de finanças que eu acompanho recomendar.",
+  "Preço bem menor, tipo R$ 10.",
+  "Ter alguém de verdade acompanhando e me cobrando por um preço perto desse.",
+  "Conectar com os meus bancos e puxar os gastos sozinho.",
+  "Conta compartilhada com a minha esposa e garantia clara de privacidade.",
+  "Preço bem menor, perto de R$ 15.",
+  "Ver nota alta e depoimentos de quem saiu do vermelho com o app.",
+  "Uma pessoa real me cobrando as metas toda semana, não só um chat para quando eu travar.",
+  "Uma versão grátis de verdade, sem prazo.",
+  "Se os gastos entrassem sozinhos do banco e custasse bem menos.",
+  "Um influenciador de finanças em quem eu confio mostrando que usa e que cancelar é fácil mesmo.",
+  "Alguém, gente ou uma IA boa, que olhasse meus gastos reais e me dissesse algo específico.",
+  "Preço bem menor, perto de R$ 15, e alguém de verdade para me cobrar.",
+  "Muita avaliação boa na loja de gente com renda variável como eu.",
+  "Poder falar com uma pessoa sobre o meu caso sem pagar R$ 297.",
+  "Garantia de dinheiro de volta se eu não economizar pelo menos o valor da assinatura.",
+  "Ficar abaixo de R$ 20 por mês e servir para o casal.",
+  "Ler os Pix sozinho e alguém que eu conheço indicando.",
+  "Garantia de dinheiro de volta se eu não economizar o valor da assinatura.",
+  "Um influenciador de finanças que eu acompanho recomendando, e conta para o casal.",
+  "Um desafio de 30 dias com metas semanais junto com minha parceira, e dinheiro de volta se não funcionar.",
+  "Ver que em 30 dias de teste eu realmente consegui manter o controle sem esforço.",
+  "Dinheiro de volta garantido se eu não economizar pelo menos o valor da assinatura.",
+  "Uma influenciadora de finanças que eu sigo mostrando que usa e que funciona.",
+  "Poder falar com uma pessoa por chat quando eu travar, sem pagar os R$ 297.",
+  "Uma versão grátis de verdade com o controle de gastos, só pagando por coisas extras.",
+  "Custar uns R$ 15 e alguém que eu sigo recomendar.",
+  "Dinheiro de volta se eu não economizar pelo menos o valor da assinatura.",
+  "Uma garantia clara de privacidade e muita avaliação boa na loja de apps falando do cancelamento.",
+  "Um preço por volta de R$ 19.",
+  "Dinheiro de volta se eu não economizar o valor da assinatura, mas mesmo assim acho que eu largaria.",
+  "Puxar os gastos do Nubank sozinho, sem eu ter que digitar nada.",
+  "Um influenciador de finanças que eu acompanho mostrando que usa e que dá para cancelar fácil.",
+  "Se custasse uns R$ 10 a 15 por mês, talvez.",
+  "Alguém de verdade me cobrando, mas aí já é outro produto.",
+  "Conta compartilhada com meu marido e um desafio com metas semanais que nos obrigue a acompanhar.",
+  "Algo que me puxe de volta toda semana sem eu ter que lembrar de abrir.",
+  "Se garantirem meu dinheiro de volta caso eu não economize pelo menos o valor da assinatura.",
+  "Se conectasse sozinho no Nubank e tivesse nota alta na loja.",
+  "Se puxasse tudo dos bancos sozinho, sem eu fazer nada.",
+  "Um preço bem menor, tipo R$ 15.",
+  "Garantia de dinheiro de volta se eu não economizar pelo menos o valor da assinatura.",
+  "Se devolvessem o dinheiro caso eu não economizasse nem o valor da assinatura.",
+  "Conectar sozinho com meus bancos e ter alguém no chat pra me puxar quando eu travar.",
+  "Um preço bem menor, tipo R$ 15.",
+  "Se alguém que eu sigo recomendasse e o preço caísse pra uns R$ 19.",
+  "Poder falar com uma pessoa de verdade quando a situação foge do padrão.",
+  "Puxar os gastos sozinho dos meus bancos.",
+  "Conta compartilhada e conexão automática com os bancos.",
+  "Se conectasse sozinho com meus bancos pelo Open Finance.",
+  "Um preço bem menor e importação automática dos bancos, aí talvez trocasse a planilha.",
+  "Um preço perto de R$ 15 a 20 por mês.",
+  "Se alguém que eu acompanho no YouTube usasse e recomendasse, com dinheiro de volta se não funcionar.",
+  "Uma pessoa por chat me cutucando quando eu sumo.",
+  "Falar com alguém de verdade, mas o plano com planejador a R$ 297 é caro demais.",
+  "Open Finance puxando tudo sozinho.",
+  "Uma pessoa me acompanhando sem custar R$ 297.",
+  "Recomendação de um influenciador de finanças que eu sigo e poder usar junto com minha parceira.",
+  "Uma versão grátis ou bem barata, tipo R$ 10.",
+  "Dinheiro de volta se eu não economizar pelo menos o valor da assinatura.",
+  "Conexão automática com o banco e com os pedidos de delivery categorizados sozinhos.",
+  "Conectar com o Nubank sozinho e custar menos de R$ 20.",
+  "Se devolvessem o dinheiro caso eu não economizasse pelo menos a assinatura.",
+  "Conectar automático com os bancos via Open Finance e dividir com meu parceiro.",
+  "Um influenciador de finanças que eu acompanho recomendando.",
+  "Se conectasse sozinho com meus bancos e tivesse assistente com IA, aí seria diferente dos grátis.",
+  "Se puxasse meus gastos sozinho dos bancos e eu só olhasse o relatório.",
+  "Conectar com meus bancos automaticamente."
+ ],
+ "purchases_first_month_per_buyer": 1.0,
+ "price_answers": 225
+}

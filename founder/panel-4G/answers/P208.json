@@ -1,0 +1,18 @@
+{
+  "id": "P208",
+  "buys": false,
+  "flips": [
+    "open_finance",
+    "desafio"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "convenience",
+  "reason": "Gasto muito com delivery e sei disso, mas anotar cada pedido à mão eu não vou fazer. Vou deixar para depois e o teste acaba.",
+  "objection": "Esforço de lançar gasto manual; sem automático eu largo.",
+  "would_change_my_mind": "Conexão automática com o banco e com os pedidos de delivery categorizados sozinhos.",
+  "price_too_cheap": 15,
+  "price_cheap": 29,
+  "price_expensive": 59,
+  "price_too_expensive": 110
+}

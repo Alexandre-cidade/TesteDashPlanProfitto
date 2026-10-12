@@ -1,0 +1,15 @@
+{
+  "id": "P165",
+  "buys": false,
+  "flips": ["open_finance", "humano"],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "convenience",
+  "reason": "Eu faço tudo no Nubank e o próprio app já me mostra os gastos. Ficar anotando tudo na mão num app separado eu sei que não vou fazer.",
+  "objection": "Sem uma pessoa me cobrando eu não tenho disciplina, e aqui não tem ninguém.",
+  "would_change_my_mind": "Puxar os gastos do Nubank sozinho, sem eu ter que digitar nada.",
+  "price_too_cheap": 7,
+  "price_cheap": 19,
+  "price_expensive": 39,
+  "price_too_expensive": 60
+}

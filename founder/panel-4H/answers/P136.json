@@ -1,0 +1,19 @@
+{
+  "id": "P136",
+  "buys": false,
+  "flips": [
+    "independente",
+    "holding",
+    "primeira_gratis"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Meu gerente private já me atende sem cobrar nada, e eu não vou pagar R$ 1.500 por mês sem ver primeiro o que muda. A bagunça entre a empresa e as contas de casa é real, mas até hoje fui levando com o contador.",
+  "objection": "Pagar mensalidade para ouvir o que o banco me diz de graça, e não saber se essa gente não está ligada a algum banco.",
+  "would_change_my_mind": "Ver na prática, numa primeira conversa sem custo, que separam a empresa da família e montam a holding, sem vender produto nenhum.",
+  "price_too_cheap": 300,
+  "price_cheap": 800,
+  "price_expensive": 2500,
+  "price_too_expensive": 5000
+}

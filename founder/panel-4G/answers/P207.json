@@ -1,0 +1,19 @@
+{
+  "id": "P207",
+  "buys": false,
+  "flips": [
+    "garantia",
+    "seguranca",
+    "humano"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "A trilha para sair do cartão é exatamente o que eu preciso, mas com dois cartões estourados qualquer R$ 49 assusta, e tenho medo de cair numa cobrança que não consigo parar.",
+  "objection": "Medo de não conseguir cancelar e de virar mais uma cobrança na fatura.",
+  "would_change_my_mind": "Dinheiro de volta se eu não economizar pelo menos o valor da assinatura.",
+  "price_too_cheap": 9,
+  "price_cheap": 19,
+  "price_expensive": 39,
+  "price_too_expensive": 59
+}

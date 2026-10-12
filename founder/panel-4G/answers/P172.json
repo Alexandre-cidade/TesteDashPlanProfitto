@@ -1,0 +1,19 @@
+{
+  "id": "P172",
+  "buys": false,
+  "flips": [
+    "garantia",
+    "preco_menor",
+    "trial30"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Estou tentando sair do vermelho e juntar para o carro; pagar R$ 49 por mês para me dizer que eu gasto demais não faz sentido. Uso a versão grátis de tudo.",
+  "objection": "R$ 49 por mês pesa e não tenho certeza que vou economizar mais que isso.",
+  "would_change_my_mind": "Se garantirem meu dinheiro de volta caso eu não economize pelo menos o valor da assinatura.",
+  "price_too_cheap": 5,
+  "price_cheap": 15,
+  "price_expensive": 29,
+  "price_too_expensive": 49
+}

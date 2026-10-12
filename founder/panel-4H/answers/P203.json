@@ -1,0 +1,15 @@
+{
+  "id": "P203",
+  "buys": false,
+  "flips": [],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Já tenho contador, eu mesma sou advogada e o private cuida dos investimentos sem custo; não vejo o que sobra para essa pessoa fazer.",
+  "objection": "Seria pagar mais uma camada para coordenar gente que eu já coordeno.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 400,
+  "price_cheap": 800,
+  "price_expensive": 1500,
+  "price_too_expensive": 2500
+}

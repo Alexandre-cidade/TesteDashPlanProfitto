@@ -1,0 +1,15 @@
+{
+  "id": "P163",
+  "buys": true,
+  "flips": ["anual", "preco_menor"],
+  "buys_if_flips": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Tenho 44 anos e nunca organizei nada, isso me incomoda. Os vídeos curtos dá pra ver no trem, então eu assinaria no embalo, mas talvez cancele depois.",
+  "objection": "R$ 49 todo mês pesa, e eu tenho histórico de assinar e cancelar.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 9,
+  "price_cheap": 19,
+  "price_expensive": 45,
+  "price_too_expensive": 70
+}

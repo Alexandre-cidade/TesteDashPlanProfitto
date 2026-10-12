@@ -1,0 +1,19 @@
+{
+  "id": "P150",
+  "buys": false,
+  "flips": [
+    "desafio",
+    "familia",
+    "garantia"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 1,
+  "reason_code": "habit",
+  "reason": "Conheço meu padrão: assino animado, uso uma semana e esqueço. Dessa vez vou fazer os 7 dias e cancelar antes de cobrar.",
+  "objection": "Vou pagar e não vou usar, como academia e curso online.",
+  "would_change_my_mind": "Um desafio de 30 dias com metas semanais junto com minha parceira, e dinheiro de volta se não funcionar.",
+  "price_too_cheap": 10,
+  "price_cheap": 19,
+  "price_expensive": 39,
+  "price_too_expensive": 69
+}

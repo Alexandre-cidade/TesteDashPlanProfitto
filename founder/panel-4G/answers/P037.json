@@ -1,0 +1,19 @@
+{
+  "id": "P037",
+  "buys": false,
+  "flips": [
+    "open_finance",
+    "preco_menor",
+    "anual"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "R$ 49 pesa no meu orçamento e ainda teria que anotar tudo na mão, coisa que eu não tenho paciência pra fazer.",
+  "objection": "Pagar caro por algo que depende de eu lançar gasto manualmente.",
+  "would_change_my_mind": "Ser automático com meus bancos e custar uns R$ 20.",
+  "price_too_cheap": 8,
+  "price_cheap": 15,
+  "price_expensive": 29,
+  "price_too_expensive": 45
+}

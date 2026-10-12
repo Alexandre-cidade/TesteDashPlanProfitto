@@ -1,0 +1,19 @@
+{
+  "id": "P061",
+  "buys": false,
+  "flips": [
+    "independente",
+    "garantia",
+    "primeira_gratis"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Acabei de vender a empresa e todo mundo quer me vender alguma coisa. Ninguém me garante aqui que esse planejador não ganha comissão, e reunião a cada quinze dias eu não tenho como encaixar.",
+  "objection": "Quem paga esse planejador além de mim? Se tiver comissão escondida, o conselho não vale nada.",
+  "would_change_my_mind": "Garantia por escrito de que não vendem produto nem recebem comissão de ninguém.",
+  "price_too_cheap": 300,
+  "price_cheap": 800,
+  "price_expensive": 2500,
+  "price_too_expensive": 5000
+}

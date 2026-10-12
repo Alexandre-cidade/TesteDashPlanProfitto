@@ -1,0 +1,19 @@
+{
+  "id": "P083",
+  "buys": false,
+  "flips": [
+    "holding",
+    "familia",
+    "equipe"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Minha preocupação é sucessão, e para isso já tenho contador e advogado. Não vejo o que um planejador acrescenta pagando todo mês.",
+  "objection": "Pagar mais uma pessoa para fazer o que meu advogado e meu contador já fazem.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 400,
+  "price_cheap": 700,
+  "price_expensive": 1500,
+  "price_too_expensive": 2500
+}

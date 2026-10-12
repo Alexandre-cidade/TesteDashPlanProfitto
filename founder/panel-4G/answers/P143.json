@@ -1,0 +1,19 @@
+{
+  "id": "P143",
+  "buys": false,
+  "flips": [
+    "humano",
+    "garantia",
+    "desafio"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Minha dívida tem detalhes que app não resolve; preciso de alguém olhando meu caso. E eu sei que vou deixar para depois.",
+  "objection": "Um plano genérico para uma situação que não é genérica.",
+  "would_change_my_mind": "Poder falar com uma pessoa sobre o meu caso sem pagar R$ 297.",
+  "price_too_cheap": 15,
+  "price_cheap": 29,
+  "price_expensive": 59,
+  "price_too_expensive": 99
+}

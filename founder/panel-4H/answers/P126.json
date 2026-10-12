@@ -1,0 +1,19 @@
+{
+  "id": "P126",
+  "buys": false,
+  "flips": [
+    "referencias",
+    "presencial_casa",
+    "holding"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "convenience",
+  "reason": "Reunião a cada quinze dias é exatamente o que eu não tenho tempo de fazer, e ninguém do meu círculo me indicou essa empresa.",
+  "objection": "Não tenho tempo para reuniões e não conheço ninguém que use.",
+  "would_change_my_mind": "Um amigo indicar e eles se adaptarem a poucas reuniões por ano, perto de mim na Serra.",
+  "price_too_cheap": 500,
+  "price_cheap": 800,
+  "price_expensive": 2000,
+  "price_too_expensive": 3500
+}

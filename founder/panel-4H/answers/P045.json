@@ -1,0 +1,19 @@
+{
+  "id": "P045",
+  "buys": false,
+  "flips": [
+    "independente",
+    "primeira_gratis",
+    "preco_menor"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Cuido dos meus investimentos há anos e me saio bem. R$ 1.500 por mês até a aposentadoria é muito dinheiro para alguém me dizer o que eu já faço.",
+  "objection": "Como sei que não vão me empurrar produto? E acho que sei fazer isso sozinho.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 200,
+  "price_cheap": 500,
+  "price_expensive": 1000,
+  "price_too_expensive": 1600
+}

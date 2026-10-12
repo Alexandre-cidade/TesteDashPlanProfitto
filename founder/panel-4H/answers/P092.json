@@ -1,0 +1,19 @@
+{
+  "id": "P092",
+  "buys": false,
+  "flips": [
+    "independente",
+    "garantia",
+    "primeira_gratis"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Meu gerente private já cuida dos investimentos sem eu pagar nada, e não vejo motivo para trocar isso por uma mensalidade.",
+  "objection": "Como sei que no fim não vão me empurrar previdência ou seguro com comissão?",
+  "would_change_my_mind": "Garantia por escrito de que não vendem produto nem ganham comissão.",
+  "price_too_cheap": 400,
+  "price_cheap": 800,
+  "price_expensive": 1800,
+  "price_too_expensive": 2500
+}

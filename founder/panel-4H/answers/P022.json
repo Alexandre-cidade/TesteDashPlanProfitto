@@ -1,0 +1,19 @@
+{
+  "id": "P022",
+  "buys": false,
+  "flips": [
+    "equipe",
+    "holding",
+    "presencial_casa"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "convenience",
+  "reason": "Tenho a indústria para tocar e minha esposa precisa estar junto em qualquer decisão. Reunião quinzenal não cabe na nossa agenda.",
+  "objection": "Falta de tempo e um planejador só não ter fôlego para a complexidade da indústria e da família.",
+  "would_change_my_mind": "Uma equipe completa que venha até Caxias e faça a holding com advogado.",
+  "price_too_cheap": 600,
+  "price_cheap": 1200,
+  "price_expensive": 3000,
+  "price_too_expensive": 5000
+}

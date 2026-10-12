@@ -1,0 +1,18 @@
+{
+  "id": "P179",
+  "buys": false,
+  "flips": [
+    "garantia",
+    "relatorio"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "quality",
+  "reason": "Já paguei consultoria e virou relatório na gaveta. Cuido dos meus investimentos sozinha e não vejo motivo para repetir a experiência pagando todo mês.",
+  "objection": "Vai ser mais um diagnóstico bonito que ninguém executa.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 200,
+  "price_cheap": 400,
+  "price_expensive": 900,
+  "price_too_expensive": 1500
+}

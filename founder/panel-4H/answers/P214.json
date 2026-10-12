@@ -1,0 +1,19 @@
+{
+  "id": "P214",
+  "buys": false,
+  "flips": [
+    "independente",
+    "primeira_gratis",
+    "garantia"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Não está escrito em lugar nenhum que eles não ganham comissão. Todo conselho financeiro que já recebi tinha um produto escondido atrás.",
+  "objection": "Quem garante que esse planejador não vai me empurrar previdência ou seguro com comissão?",
+  "would_change_my_mind": "Uma garantia por escrito de que não vendem produto nem recebem comissão de ninguém.",
+  "price_too_cheap": 500,
+  "price_cheap": 1200,
+  "price_expensive": 2500,
+  "price_too_expensive": 4000
+}

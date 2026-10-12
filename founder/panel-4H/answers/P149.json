@@ -1,0 +1,19 @@
+{
+  "id": "P149",
+  "buys": false,
+  "flips": [
+    "presencial_casa",
+    "relatorio",
+    "equipe"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "convenience",
+  "reason": "Reunião a cada quinze dias é exatamente o que não cabe na minha agenda. Quero alguém que resolva sem me ocupar.",
+  "objection": "Não tenho tempo para reuniões, e o serviço parece girar em torno delas.",
+  "would_change_my_mind": "Um serviço que resolva tudo com poucas reuniões, no máximo uma por trimestre, e relatórios.",
+  "price_too_cheap": 400,
+  "price_cheap": 1000,
+  "price_expensive": 2500,
+  "price_too_expensive": 4500
+}

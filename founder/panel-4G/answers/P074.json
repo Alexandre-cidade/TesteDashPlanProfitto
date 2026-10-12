@@ -1,0 +1,19 @@
+{
+  "id": "P074",
+  "buys": false,
+  "flips": [
+    "familia",
+    "trial30",
+    "avaliacoes"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Já me ferrei com assinatura difícil de cancelar, então provavelmente cancelaria antes dos 7 dias por segurança; e pra casal precisaria ser conta compartilhada.",
+  "objection": "Tenho medo de não conseguir cancelar e ficar cobrando, mesmo que digam que é pelo app.",
+  "would_change_my_mind": "Conta compartilhada com meu parceiro e mais tempo grátis pra confiar.",
+  "price_too_cheap": 15,
+  "price_cheap": 29,
+  "price_expensive": 59,
+  "price_too_expensive": 99
+}

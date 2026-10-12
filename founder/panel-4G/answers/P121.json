@@ -1,0 +1,19 @@
+{
+  "id": "P121",
+  "buys": false,
+  "flips": [
+    "preco_menor",
+    "avaliacoes",
+    "open_finance"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Eu baixo tudo, uso o grátis e cancelo antes de cobrar. Não conheço essa Profitto e não vou pagar R$ 49 por mês por um app de gastos quando o Nubank já me mostra tudo.",
+  "objection": "Não conheço a marca e pagar assinatura de app não é coisa que eu faço.",
+  "would_change_my_mind": "Se fosse grátis com uma parte paga opcional bem barata, aí talvez.",
+  "price_too_cheap": 5,
+  "price_cheap": 15,
+  "price_expensive": 29,
+  "price_too_expensive": 45
+}

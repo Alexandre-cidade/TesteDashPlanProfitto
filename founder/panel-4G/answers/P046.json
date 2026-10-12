@@ -1,0 +1,15 @@
+{
+  "id": "P046",
+  "buys": false,
+  "flips": ["desafio", "open_finance", "garantia"],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Eu sei que ia baixar, fazer o questionário empolgado e largar na segunda semana. Pagar R$ 49 por mês pra um app que eu não abro é exatamente o que eu já faço com academia.",
+  "objection": "Vou pagar e não vou usar, igual tudo que eu assino pra me organizar.",
+  "would_change_my_mind": "Se puxasse os gastos do Nubank sozinho, sem eu ter que anotar nada, talvez eu usasse de verdade.",
+  "price_too_cheap": 9,
+  "price_cheap": 19,
+  "price_expensive": 35,
+  "price_too_expensive": 60
+}

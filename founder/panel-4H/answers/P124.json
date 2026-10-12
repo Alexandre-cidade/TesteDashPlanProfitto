@@ -1,0 +1,19 @@
+{
+  "id": "P124",
+  "buys": false,
+  "flips": [
+    "garantia",
+    "independente",
+    "internacional"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Já paguei consultoria e o que sobrou foi um PDF bonito na gaveta. E não sei se no fim vão querer me empurrar algum produto.",
+  "objection": "Daqui a três meses vira um relatório que ninguém executa.",
+  "would_change_my_mind": "Poder testar três meses e receber o dinheiro de volta se nada mudar na prática.",
+  "price_too_cheap": 500,
+  "price_cheap": 900,
+  "price_expensive": 2000,
+  "price_too_expensive": 4000
+}

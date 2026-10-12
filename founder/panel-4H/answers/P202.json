@@ -1,0 +1,19 @@
+{
+  "id": "P202",
+  "buys": false,
+  "flips": [
+    "primeira_gratis",
+    "garantia",
+    "preco_menor"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Sei que as contas da empresa e da casa estão misturadas, mas acho que resolvo com meu contador e eu mesmo, sem pagar R$ 1.500 por mês.",
+  "objection": "Pagar todo mês por algo que eu acho que consigo fazer sozinho com uma planilha e o contador.",
+  "would_change_my_mind": "Ver no diagnóstico grátis um problema concreto que eu não tinha enxergado e que custa mais que a mensalidade.",
+  "price_too_cheap": 300,
+  "price_cheap": 700,
+  "price_expensive": 1200,
+  "price_too_expensive": 2000
+}

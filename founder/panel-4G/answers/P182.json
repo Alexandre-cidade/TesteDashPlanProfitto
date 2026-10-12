@@ -1,0 +1,19 @@
+{
+  "id": "P182",
+  "buys": false,
+  "flips": [
+    "open_finance",
+    "humano",
+    "desafio"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "convenience",
+  "reason": "Recebo Pix de um monte de cliente e não vou ficar anotando gasto por gasto; sem ninguém me cobrando eu abandono em dias.",
+  "objection": "Sem uma pessoa me cobrando eu não tenho disciplina, e anotar à mão eu não faço.",
+  "would_change_my_mind": "Conectar sozinho com meus bancos e ter alguém no chat pra me puxar quando eu travar.",
+  "price_too_cheap": 10,
+  "price_cheap": 25,
+  "price_expensive": 49,
+  "price_too_expensive": 79
+}

@@ -1,0 +1,19 @@
+{
+  "id": "P142",
+  "buys": false,
+  "flips": [
+    "equipe",
+    "referencias",
+    "holding"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "quality",
+  "reason": "Minha vida tem empresa, escritório, imóveis e viagem toda semana; não sei se um planejador sozinho de uma empresa pequena dá conta disso.",
+  "objection": "Uma empresa pequena de Porto Alegre aguenta a complexidade da minha vida?",
+  "would_change_my_mind": "Saber que por trás do planejador há uma equipe com advogado e contador.",
+  "price_too_cheap": 500,
+  "price_cheap": 1000,
+  "price_expensive": 2500,
+  "price_too_expensive": 4000
+}

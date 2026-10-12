@@ -1,0 +1,19 @@
+{
+  "id": "P021",
+  "buys": true,
+  "flips": [
+    "presencial_casa",
+    "holding",
+    "familia"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Com 66 anos a sucessão já me preocupa e o banco não cuida disso. Mas reunião a cada quinze dias é muita coisa; se vierem até mim em Gramado e fizerem a holding, eu contrato.",
+  "objection": "Não tenho tempo nem paciência para ir a reuniões, e o gerente do banco já faz a parte dos investimentos sem mensalidade.",
+  "would_change_my_mind": "Reuniões aqui na Serra e a holding familiar feita com advogado.",
+  "price_too_cheap": 500,
+  "price_cheap": 1000,
+  "price_expensive": 2000,
+  "price_too_expensive": 3500
+}

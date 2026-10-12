@@ -1,0 +1,19 @@
+{
+  "id": "P028",
+  "buys": false,
+  "flips": [
+    "referencias",
+    "independente",
+    "equipe"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Delego tudo quando confio, e dinheiro não é o problema. Mas não entrego a herança para uma empresa que ninguém do meu meio conhece.",
+  "objection": "Não sei quem eles são nem se ganham por fora vendendo produto.",
+  "would_change_my_mind": "Referências de famílias parecidas com a minha e garantia de que não recebem comissão.",
+  "price_too_cheap": 800,
+  "price_cheap": 1500,
+  "price_expensive": 3500,
+  "price_too_expensive": 6000
+}

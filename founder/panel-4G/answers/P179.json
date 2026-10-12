@@ -1,0 +1,18 @@
+{
+  "id": "P179",
+  "buys": false,
+  "flips": [
+    "garantia",
+    "humano"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "A trilha para sair do cartão me interessa, mas tem muito conteúdo grátis sobre isso no YouTube e eu não sei se um app vai me fazer parar de pagar o mínimo.",
+  "objection": "Já sei a teoria de graça; o que eu não sei é se um app muda o meu comportamento.",
+  "would_change_my_mind": "Garantia de dinheiro de volta se eu não economizar pelo menos o valor da assinatura.",
+  "price_too_cheap": 15,
+  "price_cheap": 29,
+  "price_expensive": 69,
+  "price_too_expensive": 119
+}

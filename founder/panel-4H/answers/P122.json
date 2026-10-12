@@ -1,0 +1,19 @@
+{
+  "id": "P122",
+  "buys": false,
+  "flips": [
+    "independente",
+    "primeira_gratis",
+    "garantia"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Não diz em lugar nenhum que eles não vendem produto ou não ganham comissão. Se for mais um vendedor de previdência disfarçado, não quero.",
+  "objection": "Onde está a comissão escondida? Quem paga essa empresa além de mim?",
+  "would_change_my_mind": "Garantia por escrito de que não vendem produto, não recebem comissão e não têm ligação com banco.",
+  "price_too_cheap": 600,
+  "price_cheap": 1000,
+  "price_expensive": 2500,
+  "price_too_expensive": 5000
+}

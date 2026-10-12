@@ -1,0 +1,19 @@
+{
+  "id": "P141",
+  "buys": false,
+  "flips": [
+    "referencias",
+    "primeira_gratis",
+    "independente"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Não entrego meu patrimônio para quem não conheço, e uma decisão dessas eu tomo com meu marido, não por causa de um anúncio.",
+  "objection": "Não conheço ninguém que seja cliente deles.",
+  "would_change_my_mind": "Uma indicação de alguém de confiança que já seja cliente.",
+  "price_too_cheap": 400,
+  "price_cheap": 800,
+  "price_expensive": 1800,
+  "price_too_expensive": 3000
+}

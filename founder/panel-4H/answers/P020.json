@@ -1,0 +1,19 @@
+{
+  "id": "P020",
+  "buys": false,
+  "flips": [
+    "garantia",
+    "equipe",
+    "holding"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Meu private no banco não me cobra nada e já me atende. A bagunça entre empresa e família é real, mas consultoria para mim sempre acabou em relatório parado.",
+  "objection": "Pagar mensalidade por algo que o banco me dá de graça e que vira papel na gaveta.",
+  "would_change_my_mind": "Uma equipe com advogado e contador que execute a separação PF/PJ e a holding, com teste de três meses.",
+  "price_too_cheap": 500,
+  "price_cheap": 900,
+  "price_expensive": 1800,
+  "price_too_expensive": 3000
+}

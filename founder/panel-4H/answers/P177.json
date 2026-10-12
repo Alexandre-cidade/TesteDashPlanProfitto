@@ -1,0 +1,19 @@
+{
+  "id": "P177",
+  "buys": false,
+  "flips": [
+    "holding",
+    "equipe",
+    "presencial_casa"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "Sucessão da indústria e a mistura entre empresa e família são problemas reais para mim, e gosto que seja um sênior. Mas não decido sem meu marido e não vou fechar com quem vi pela primeira vez esta semana.",
+  "objection": "Uma pessoa só, mesmo sênior, consegue estruturar a sucessão de uma indústria sem advogado junto?",
+  "would_change_my_mind": "Estruturação de holding com advogado parceiro e uma reunião aqui em Caxias com meu marido.",
+  "price_too_cheap": 500,
+  "price_cheap": 1000,
+  "price_expensive": 3000,
+  "price_too_expensive": 5000
+}

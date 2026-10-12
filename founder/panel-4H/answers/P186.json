@@ -1,0 +1,19 @@
+{
+  "id": "P186",
+  "buys": false,
+  "flips": [
+    "referencias",
+    "holding",
+    "primeira_gratis"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Sucessão é o que me tira o sono e o serviço fala disso. Mas eu não abro o patrimônio da família para alguém que eu não conheço só por ver uma oferta.",
+  "objection": "Não conheço essas pessoas e vou ter que mostrar tudo, empresa e família.",
+  "would_change_my_mind": "Conversar com outra família empresária daqui da região que já usa.",
+  "price_too_cheap": 400,
+  "price_cheap": 900,
+  "price_expensive": 1800,
+  "price_too_expensive": 3000
+}

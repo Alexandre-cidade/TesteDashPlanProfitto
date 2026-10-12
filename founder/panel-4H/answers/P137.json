@@ -1,0 +1,19 @@
+{
+  "id": "P137",
+  "buys": false,
+  "flips": [
+    "independente",
+    "primeira_gratis",
+    "referencias"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Já tenho assessor no private e não vejo motivo para pagar por mais um conselho que pode terminar em venda de previdência ou seguro.",
+  "objection": "Como sei que não vão me empurrar produto? O anúncio não diz se recebem comissão.",
+  "would_change_my_mind": "Um compromisso por escrito de que não vendem produto e não recebem comissão de ninguém.",
+  "price_too_cheap": 400,
+  "price_cheap": 900,
+  "price_expensive": 2000,
+  "price_too_expensive": 3500
+}

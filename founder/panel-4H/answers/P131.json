@@ -1,0 +1,19 @@
+{
+  "id": "P131",
+  "buys": false,
+  "flips": [
+    "holding",
+    "relatorio",
+    "primeira_gratis"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Meus investimentos estão com o private do banco, sou advogada e resolvo a parte jurídica. Reunião a cada quinze dias não cabe na minha agenda.",
+  "objection": "Não tenho tempo nem vejo o que isso acrescenta ao que já tenho.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 500,
+  "price_cheap": 800,
+  "price_expensive": 1500,
+  "price_too_expensive": 2500
+}

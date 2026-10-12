@@ -1,0 +1,19 @@
+{
+  "id": "P180",
+  "buys": false,
+  "flips": [
+    "holding",
+    "referencias",
+    "independente"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Meu private já cuida dos investimentos sem mensalidade e eu só contrato por indicação. A estrutura dos imóveis alugados me interessa, mas isso eu resolvo com advogado quando decidir.",
+  "objection": "Pagar mensalidade todo mês por algo que o banco e meu contador já fazem.",
+  "would_change_my_mind": "Um amigo empresário que tenha montado a holding dos imóveis com eles e economizado de verdade.",
+  "price_too_cheap": 400,
+  "price_cheap": 800,
+  "price_expensive": 1800,
+  "price_too_expensive": 3000
+}

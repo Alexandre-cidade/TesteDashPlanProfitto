@@ -1,0 +1,19 @@
+{
+  "id": "P161",
+  "buys": false,
+  "flips": [
+    "independente",
+    "holding",
+    "equipe"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Meu private bank já faz planejamento sem mensalidade e eu só contrato quem amigos indicaram.",
+  "objection": "Não vejo o que eles fazem que o private não faça de graça.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 500,
+  "price_cheap": 1500,
+  "price_expensive": 4000,
+  "price_too_expensive": 8000
+}

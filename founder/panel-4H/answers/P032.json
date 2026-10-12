@@ -1,0 +1,19 @@
+{
+  "id": "P032",
+  "buys": false,
+  "flips": [
+    "preco_menor",
+    "primeira_gratis",
+    "independente"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Eu mesma cuido dos meus investimentos e dos aluguéis. Pagar R$ 18 mil por ano para alguém me dar conselho que eu acho que já sei não faz sentido.",
+  "objection": "R$ 1.500 por mês é caro para conselho; vou pagar para ouvir o que já sei.",
+  "would_change_my_mind": "Um preço bem mais baixo, perto de R$ 500, e um diagnóstico grátis que mostrasse algo que eu não vi.",
+  "price_too_cheap": 150,
+  "price_cheap": 400,
+  "price_expensive": 800,
+  "price_too_expensive": 1200
+}

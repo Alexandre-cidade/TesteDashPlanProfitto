@@ -1,0 +1,19 @@
+{
+  "id": "P052",
+  "buys": false,
+  "flips": [
+    "preco_menor",
+    "primeira_gratis",
+    "anual"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "R$ 1.500 todo mês é muito para conselho; meu contador já faz o imposto de renda e o resto eu resolvo de vez em quando.",
+  "objection": "O valor mensal para algo que não é concreto.",
+  "would_change_my_mind": "Um preço bem menor, perto de R$ 600.",
+  "price_too_cheap": 250,
+  "price_cheap": 500,
+  "price_expensive": 1000,
+  "price_too_expensive": 1800
+}

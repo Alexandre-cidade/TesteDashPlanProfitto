@@ -1,0 +1,15 @@
+{
+  "id": "P106",
+  "buys": false,
+  "flips": [],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Minha planilha já faz tudo isso de graça e do jeito que eu quero. Pagar R$ 49 por mês para anotar gasto num app em vez da planilha não faz sentido para quem está juntando para a entrada do apê.",
+  "objection": "Pagar por algo que eu já faço sozinho, e ainda ficar preso numa assinatura.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 10,
+  "price_cheap": 19,
+  "price_expensive": 39,
+  "price_too_expensive": 60
+}

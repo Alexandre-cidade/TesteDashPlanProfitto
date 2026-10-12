@@ -1,0 +1,15 @@
+{
+  "id": "P162",
+  "buys": false,
+  "flips": ["garantia", "desafio"],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Nunca organizei meu dinheiro e não acho que um app vá mudar isso. Prefiro guardar os R$ 49 direto na poupança do apartamento.",
+  "objection": "Vou pagar e não vou usar. E não sei o que uma empresa que eu não conheço faz com os meus dados.",
+  "would_change_my_mind": "Dinheiro de volta se eu não economizar o valor da assinatura, mas mesmo assim acho que eu largaria.",
+  "price_too_cheap": 8,
+  "price_cheap": 19,
+  "price_expensive": 39,
+  "price_too_expensive": 59
+}

@@ -1,0 +1,19 @@
+{
+  "id": "P143",
+  "buys": false,
+  "flips": [
+    "independente",
+    "familia",
+    "primeira_gratis"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Gosto que seja um planejador sênior com certificação CFP, mas o anúncio não diz como eles ganham dinheiro além da mensalidade, e acho que todo conselho financeiro esconde uma comissão.",
+  "objection": "Que a mensalidade seja só a porta de entrada para me vender seguro e previdência.",
+  "would_change_my_mind": "A garantia de que não vendem produto, não recebem comissão e não são ligados a banco.",
+  "price_too_cheap": 400,
+  "price_cheap": 900,
+  "price_expensive": 2000,
+  "price_too_expensive": 3500
+}

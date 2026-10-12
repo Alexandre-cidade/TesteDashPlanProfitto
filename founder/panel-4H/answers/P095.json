@@ -1,0 +1,19 @@
+{
+  "id": "P095",
+  "buys": false,
+  "flips": [
+    "independente",
+    "holding",
+    "familia"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Sucessão me preocupa de verdade, mas não sei se isso é consultoria ou porta de entrada para vender previdência e seguro.",
+  "objection": "Como sei que não vão me empurrar produto?",
+  "would_change_my_mind": "Garantia de independência e um advogado junto para estruturar a sucessão de fato.",
+  "price_too_cheap": 600,
+  "price_cheap": 1200,
+  "price_expensive": 2500,
+  "price_too_expensive": 4000
+}

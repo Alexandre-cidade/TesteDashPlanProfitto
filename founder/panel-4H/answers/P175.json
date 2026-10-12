@@ -1,0 +1,19 @@
+{
+  "id": "P175",
+  "buys": false,
+  "flips": [
+    "referencias",
+    "independente",
+    "primeira_gratis"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Meu private bank já me atende sem mensalidade e eu só contrato quem colegas médicos indicam. Não vou trocar por algo que vi uma vez.",
+  "objection": "Pagar mensalidade por algo que o banco já faz de graça.",
+  "would_change_my_mind": "Uma colega de confiança que use e me diga que vale mais que o private.",
+  "price_too_cheap": 300,
+  "price_cheap": 600,
+  "price_expensive": 1200,
+  "price_too_expensive": 2000
+}

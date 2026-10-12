@@ -1,0 +1,19 @@
+{
+  "id": "P062",
+  "buys": false,
+  "flips": [
+    "referencias",
+    "primeira_gratis",
+    "holding"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Meu private do banco cuida dos investimentos sem me cobrar mensalidade, e não vou abrir empresa e família para uma firma de Porto Alegre que nunca ouvi falar.",
+  "objection": "Não conheço essas pessoas e teria que mostrar tudo, empresa e família, para estranhos.",
+  "would_change_my_mind": "Indicação direta de um empresário da Serra que eu conheço e que use o serviço há anos.",
+  "price_too_cheap": 500,
+  "price_cheap": 1000,
+  "price_expensive": 3000,
+  "price_too_expensive": 6000
+}

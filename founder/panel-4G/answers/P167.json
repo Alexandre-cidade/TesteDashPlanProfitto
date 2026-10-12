@@ -1,0 +1,18 @@
+{
+  "id": "P167",
+  "buys": false,
+  "flips": [
+    "preco_menor",
+    "indicacao"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Com meu primeiro salário, R$ 49 por mês é dinheiro demais para coisa que eu aprendo de graça no YouTube. Controle de gastos eu faço em app grátis.",
+  "objection": "Pagar por conteúdo e planilha que já tem de graça em todo canto.",
+  "would_change_my_mind": "Se custasse uns R$ 10 a 15 por mês, talvez.",
+  "price_too_cheap": 4,
+  "price_cheap": 9,
+  "price_expensive": 19,
+  "price_too_expensive": 35
+}

@@ -1,0 +1,19 @@
+{
+  "id": "P056",
+  "buys": false,
+  "flips": [
+    "equipe",
+    "holding",
+    "garantia"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "quality",
+  "reason": "Penso muito no que acontece com meus filhos se eu faltar, mas não sei se uma empresa pequena e um planejador só seguram tudo isso.",
+  "objection": "Se o planejador sair ou a empresa fechar, quem continua cuidando da minha família?",
+  "would_change_my_mind": "Ver que há uma equipe com advogado para a sucessão e poder sair sem custo se não funcionar.",
+  "price_too_cheap": 300,
+  "price_cheap": 600,
+  "price_expensive": 1200,
+  "price_too_expensive": 2000
+}

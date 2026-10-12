@@ -1,0 +1,19 @@
+{
+  "id": "P193",
+  "buys": false,
+  "flips": [
+    "familia",
+    "primeira_gratis",
+    "referencias"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "Um sênior dedicado chama minha atenção. Mas eu não decido nada desse tamanho sem meu marido, e ele vai perguntar logo por que uma empresa de Porto Alegre.",
+  "objection": "Convencer meu marido de que vale a pena e de que o planejador é mesmo sênior.",
+  "would_change_my_mind": "Uma primeira reunião gratuita com nós dois juntos.",
+  "price_too_cheap": 600,
+  "price_cheap": 1200,
+  "price_expensive": 2500,
+  "price_too_expensive": 5000
+}

@@ -1,0 +1,19 @@
+{
+  "id": "P168",
+  "buys": false,
+  "flips": [
+    "referencias",
+    "equipe",
+    "holding"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Não contrato ninguém que algum amigo do meu nível não tenha usado. E minha vida tem empresa da família, filhos pequenos e patrimônio misturado; um planejador sozinho de uma empresa pequena não me convence.",
+  "objection": "Uma pessoa só de uma empresa pequena aguenta a complexidade da empresa da família e da sucessão?",
+  "would_change_my_mind": "Um amigo próximo me dizer que usa e que resolveu a vida dele.",
+  "price_too_cheap": 500,
+  "price_cheap": 1000,
+  "price_expensive": 2500,
+  "price_too_expensive": 4000
+}

@@ -1,0 +1,19 @@
+{
+  "id": "P010",
+  "buys": false,
+  "flips": [
+    "familia",
+    "primeira_gratis",
+    "holding"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "other",
+  "reason": "Talvez me interesse para organizar a herança, mas sozinho eu não decido. Precisaria levar minha esposa numa conversa antes.",
+  "objection": "Meu cônjuge precisa aprovar, e não sei se ela vai topar pagar mensalidade.",
+  "would_change_my_mind": "Uma primeira reunião sem custo com nós dois, na qual ela também visse valor.",
+  "price_too_cheap": 400,
+  "price_cheap": 1000,
+  "price_expensive": 2500,
+  "price_too_expensive": 4000
+}

@@ -1,0 +1,19 @@
+{
+  "id": "P110",
+  "buys": true,
+  "flips": [
+    "humano",
+    "open_finance",
+    "desafio"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "R$ 49 não pesa para mim e eu realmente nunca organizei nada, então vou deixar rodar pelo menos o primeiro mês para ver o plano. Mas sei que sem alguém me cobrando a chance de eu abandonar é alta.",
+  "objection": "Sem uma pessoa me cobrando eu paro de usar, como já fiz com outros apps.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 15,
+  "price_cheap": 29,
+  "price_expensive": 79,
+  "price_too_expensive": 150
+}

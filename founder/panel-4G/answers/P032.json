@@ -1,0 +1,19 @@
+{
+  "id": "P032",
+  "buys": false,
+  "flips": [
+    "open_finance",
+    "trial30",
+    "ia"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "convenience",
+  "reason": "Já larguei Mobills e Organizze porque anotar gasto à mão cansa, e com Pix de vários clientes entrando eu nunca ia manter isso em dia.",
+  "objection": "Ter que lançar cada gasto e cada Pix na mão; vou abandonar na segunda semana como sempre.",
+  "would_change_my_mind": "Conexão automática com meus bancos por Open Finance.",
+  "price_too_cheap": 10,
+  "price_cheap": 25,
+  "price_expensive": 45,
+  "price_too_expensive": 70
+}

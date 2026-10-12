@@ -1,0 +1,15 @@
+{
+  "id": "P049",
+  "buys": true,
+  "flips": ["indicacao", "avaliacoes", "seguranca"],
+  "buys_if_flips": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Tenho 40 anos e nunca organizei nada, um plano escrito com 3 ações já é mais do que eu fiz até hoje. Cancelar pelo app sem multa tira meu maior medo, então pago o primeiro mês pra ver.",
+  "objection": "Não conheço a Profitto e tenho receio de que o cancelamento não seja tão fácil quanto prometem.",
+  "would_change_my_mind": "Se eu visse reclamação de gente que não conseguiu cancelar, eu nem testaria.",
+  "price_too_cheap": 15,
+  "price_cheap": 29,
+  "price_expensive": 69,
+  "price_too_expensive": 120
+}

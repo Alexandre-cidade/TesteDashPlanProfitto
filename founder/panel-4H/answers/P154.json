@@ -1,0 +1,19 @@
+{
+  "id": "P154",
+  "buys": true,
+  "flips": [
+    "holding",
+    "equipe",
+    "presencial_casa"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 1,
+  "reason_code": "convenience",
+  "reason": "Não tenho tempo nenhum e R$ 1.500 é pouco para mim; se alguém acompanha de verdade, fala com meu contador e não me larga um relatório, eu pago. Sem fidelidade, cancelo se virar gaveta de novo.",
+  "objection": "Medo de ser mais uma consultoria que entrega um PDF bonito e some.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 500,
+  "price_cheap": 1200,
+  "price_expensive": 4000,
+  "price_too_expensive": 8000
+}

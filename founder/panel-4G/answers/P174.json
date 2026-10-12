@@ -1,0 +1,18 @@
+{
+  "id": "P174",
+  "buys": false,
+  "flips": [
+    "humano",
+    "preco_menor"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Ganho pouco, tenho dois cartões e já larguei app de finanças antes. R$ 49 é muito pra mim e um app genérico não vai entender minha situação.",
+  "objection": "Um app não entende o meu caso, e esse dinheiro faz falta.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 3,
+  "price_cheap": 9,
+  "price_expensive": 19,
+  "price_too_expensive": 29
+}

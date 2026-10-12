@@ -1,0 +1,19 @@
+{
+  "id": "P026",
+  "buys": false,
+  "flips": [
+    "garantia",
+    "preco_menor",
+    "open_finance"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Tô pagando o mínimo do cartão e minha renda varia; R$ 49 todo mês pesa, mesmo que a trilha de sair do cartão pareça útil.",
+  "objection": "Pagar mais uma assinatura enquanto estou endividado sem saber se vou economizar pelo menos isso.",
+  "would_change_my_mind": "Garantia de dinheiro de volta se eu não economizar o valor da assinatura.",
+  "price_too_cheap": 5,
+  "price_cheap": 15,
+  "price_expensive": 35,
+  "price_too_expensive": 60
+}

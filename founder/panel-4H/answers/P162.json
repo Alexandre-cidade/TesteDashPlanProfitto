@@ -1,0 +1,19 @@
+{
+  "id": "P162",
+  "buys": false,
+  "flips": [
+    "preco_menor",
+    "referencias",
+    "primeira_gratis"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "R$ 1.500 por mês, R$ 18 mil por ano, é muito para conselho, e não conheço ninguém que use.",
+  "objection": "Pagar todo mês sem ver retorno concreto.",
+  "would_change_my_mind": "Um preço perto de R$ 600 e um colega indicando.",
+  "price_too_cheap": 200,
+  "price_cheap": 500,
+  "price_expensive": 900,
+  "price_too_expensive": 1500
+}

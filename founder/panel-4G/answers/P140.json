@@ -1,0 +1,19 @@
+{
+  "id": "P140",
+  "buys": false,
+  "flips": [
+    "open_finance",
+    "ia",
+    "humano"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "quality",
+  "reason": "Já testei esses apps e é sempre a mesma coisa: categorias genéricas e anotar delivery na mão. Um questionário de 20 minutos não vai entender minha vida.",
+  "objection": "Um plano automático e genérico que não serve para a minha situação.",
+  "would_change_my_mind": "Alguém, gente ou uma IA boa, que olhasse meus gastos reais e me dissesse algo específico.",
+  "price_too_cheap": 9,
+  "price_cheap": 19,
+  "price_expensive": 39,
+  "price_too_expensive": 59
+}

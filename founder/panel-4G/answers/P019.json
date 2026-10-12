@@ -1,0 +1,19 @@
+{
+  "id": "P019",
+  "buys": false,
+  "flips": [
+    "open_finance",
+    "avaliacoes",
+    "ia"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "convenience",
+  "reason": "Dinheiro não é o problema, tempo é. Se eu tiver que anotar cada delivery à mão, desisto na primeira semana, e nunca ouvi falar da Profitto.",
+  "objection": "Não sei se o controle de gastos é automático ou se vou ter que lançar tudo à mão, e não conheço a marca.",
+  "would_change_my_mind": "Conectar sozinho com meus bancos e cartões, sem eu digitar nada.",
+  "price_too_cheap": 15,
+  "price_cheap": 29,
+  "price_expensive": 79,
+  "price_too_expensive": 150
+}

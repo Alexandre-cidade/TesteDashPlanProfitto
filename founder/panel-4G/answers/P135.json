@@ -1,0 +1,19 @@
+{
+  "id": "P135",
+  "buys": false,
+  "flips": [
+    "avaliacoes",
+    "garantia",
+    "open_finance"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "A trilha para sair do cartão é o que eu preciso, mas nunca ouvi falar dessa empresa e sei que vou deixar para depois. Não pago sem ver que outras pessoas usaram e funcionou.",
+  "objection": "Não conheço a marca e não sei se vale o dinheiro enquanto estou endividado.",
+  "would_change_my_mind": "Ver nota alta e depoimentos de quem saiu do vermelho com o app.",
+  "price_too_cheap": 9,
+  "price_cheap": 19,
+  "price_expensive": 39,
+  "price_too_expensive": 65
+}

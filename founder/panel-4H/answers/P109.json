@@ -1,0 +1,19 @@
+{
+  "id": "P109",
+  "buys": false,
+  "flips": [
+    "referencias",
+    "primeira_gratis",
+    "familia"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Só contratamos gente que amigos indicaram, e meu marido decide isso comigo. Vi isso pela primeira vez agora; não é assim que a gente escolhe.",
+  "objection": "Não tenho indicação de ninguém e precisaria convencer meu cônjuge de algo que eu mesma não conheço.",
+  "would_change_my_mind": "Uma amiga próxima indicar e ficar satisfeita há pelo menos um ano.",
+  "price_too_cheap": 500,
+  "price_cheap": 900,
+  "price_expensive": 2000,
+  "price_too_expensive": 3500
+}

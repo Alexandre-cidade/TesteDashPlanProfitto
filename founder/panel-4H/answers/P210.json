@@ -1,0 +1,18 @@
+{
+  "id": "P210",
+  "buys": false,
+  "flips": [
+    "garantia",
+    "referencias"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Já paguei consultoria que virou relatório na gaveta, e só contrato alguém se um colega médico indicar.",
+  "objection": "Que vire de novo um diagnóstico bonito no primeiro mês e nada mude depois.",
+  "would_change_my_mind": "Um colega de confiança me contar que a coisa saiu do papel com eles.",
+  "price_too_cheap": 400,
+  "price_cheap": 800,
+  "price_expensive": 1500,
+  "price_too_expensive": 2500
+}

@@ -1,0 +1,19 @@
+{
+  "id": "P057",
+  "buys": false,
+  "flips": [
+    "independente",
+    "relatorio",
+    "primeira_gratis"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Viajo toda semana, já tenho o private do banco e o contador; até gosto de ser sênior e CFP, mas não vou trocar o que funciona sem custo por mais uma mensalidade.",
+  "objection": "Não vejo ganho claro sobre o que o banco já me dá de graça.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 300,
+  "price_cheap": 700,
+  "price_expensive": 1500,
+  "price_too_expensive": 2500
+}

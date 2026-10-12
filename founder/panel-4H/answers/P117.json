@@ -1,0 +1,18 @@
+{
+  "id": "P117",
+  "buys": false,
+  "flips": [
+    "internacional",
+    "independente"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Meu private bank já faz planejamento sem mensalidade e conhece minha vida. Pagar R$ 18 mil por ano por algo parecido não convence a mim nem à minha esposa.",
+  "objection": "Por que pagar se o banco já entrega isso de graça?",
+  "would_change_my_mind": "",
+  "price_too_cheap": 300,
+  "price_cheap": 600,
+  "price_expensive": 1000,
+  "price_too_expensive": 1800
+}

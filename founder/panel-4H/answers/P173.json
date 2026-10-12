@@ -1,0 +1,19 @@
+{
+  "id": "P173",
+  "buys": false,
+  "flips": [
+    "primeira_gratis",
+    "holding",
+    "internacional"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "R$ 1.500 por mês é caro para conselho, a não ser que me mostrem quanto de imposto eu deixo de pagar. Se o diagnóstico mostrasse economia maior que o custo, eu pensaria.",
+  "objection": "Pagar R$ 18 mil por ano sem saber se vou economizar mais que isso em imposto.",
+  "would_change_my_mind": "Um diagnóstico gratuito mostrando em reais quanto eu economizaria em imposto na PF e na PJ.",
+  "price_too_cheap": 300,
+  "price_cheap": 600,
+  "price_expensive": 1200,
+  "price_too_expensive": 2000
+}

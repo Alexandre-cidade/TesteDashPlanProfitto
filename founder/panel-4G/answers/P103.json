@@ -1,0 +1,17 @@
+{
+  "id": "P103",
+  "buys": true,
+  "flips": [
+    "open_finance"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 1,
+  "reason_code": "habit",
+  "reason": "Sendo honesta, eu assino no impulso, esqueço do teste e pago pelo menos o primeiro mês. Mas anotar cada delivery à mão eu não vou fazer, então provavelmente cancelo depois.",
+  "objection": "Ter que lançar cada gasto à mão sendo mãe solo sem tempo.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 9,
+  "price_cheap": 19,
+  "price_expensive": 39,
+  "price_too_expensive": 59
+}

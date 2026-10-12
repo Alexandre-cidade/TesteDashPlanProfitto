@@ -1,0 +1,19 @@
+{
+  "id": "P108",
+  "buys": false,
+  "flips": [
+    "referencias",
+    "equipe",
+    "holding"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Eu pagaria sem pensar para alguém arrumar a bagunça entre empresa e família, mas não para quem eu nunca vi. Um planejador sozinho também me parece pouco para o tamanho do problema.",
+  "objection": "Não conheço ninguém que use, e uma pessoa só não dá conta de empresa, sucessão e jurídico juntos.",
+  "would_change_my_mind": "Clientes empresários parecidos comigo confirmando que funciona, com advogado e contador no time.",
+  "price_too_cheap": 600,
+  "price_cheap": 1200,
+  "price_expensive": 3000,
+  "price_too_expensive": 6000
+}

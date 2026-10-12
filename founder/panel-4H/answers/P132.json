@@ -1,0 +1,19 @@
+{
+  "id": "P132",
+  "buys": false,
+  "flips": [
+    "referencias",
+    "primeira_gratis",
+    "independente"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Preciso planejar a aposentadoria nos próximos cinco anos, mas não contrato quem eu não conheço e nenhum amigo me indicou.",
+  "objection": "Não sei quem eles são nem se dá para confiar.",
+  "would_change_my_mind": "Conhecer o planejador pessoalmente numa primeira reunião sem custo e falar com clientes parecidos comigo.",
+  "price_too_cheap": 400,
+  "price_cheap": 800,
+  "price_expensive": 1500,
+  "price_too_expensive": 2500
+}

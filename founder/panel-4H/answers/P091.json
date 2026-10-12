@@ -1,0 +1,18 @@
+{
+  "id": "P091",
+  "buys": false,
+  "flips": [
+    "referencias",
+    "primeira_gratis"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Não contrato ninguém que aparece em anúncio; só fecho com quem um colega médico do meu nível usa e recomenda.",
+  "objection": "Não sei se esse 'sênior' é sênior mesmo ou um júnior com certificado, e nenhum amigo meu conhece a Profitto.",
+  "would_change_my_mind": "Um colega de profissão que eu respeito me dizer que usa e confia.",
+  "price_too_cheap": 500,
+  "price_cheap": 1000,
+  "price_expensive": 2500,
+  "price_too_expensive": 4000
+}

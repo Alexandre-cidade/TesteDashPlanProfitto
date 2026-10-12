@@ -1,0 +1,19 @@
+{
+  "id": "P012",
+  "buys": false,
+  "flips": [
+    "preco_menor",
+    "primeira_gratis",
+    "garantia"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "R$ 1.500 por mês é caro para conselho. Meu assessor do banco não cobra nada e eu viajo toda semana, então não ia ter tempo para reunião quinzenal.",
+  "objection": "R$ 18 mil por ano é muito dinheiro para ouvir conselho.",
+  "would_change_my_mind": "Um preço bem menor, perto de R$ 500 por mês.",
+  "price_too_cheap": 150,
+  "price_cheap": 400,
+  "price_expensive": 800,
+  "price_too_expensive": 1200
+}

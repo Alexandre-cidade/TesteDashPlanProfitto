@@ -1,0 +1,19 @@
+{
+  "id": "P185",
+  "buys": false,
+  "flips": [
+    "equipe",
+    "holding",
+    "referencias"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Acabei de vender a empresa e a vida financeira ficou bem mais complicada. Um planejador sozinho, de uma empresa pequena de outra cidade, não parece suficiente para isso.",
+  "objection": "Uma pessoa só não cobre sucessão, tributação da venda e investimentos ao mesmo tempo.",
+  "would_change_my_mind": "Ter uma equipe com advogado e contador junto, e não só um planejador.",
+  "price_too_cheap": 600,
+  "price_cheap": 1200,
+  "price_expensive": 2500,
+  "price_too_expensive": 4500
+}

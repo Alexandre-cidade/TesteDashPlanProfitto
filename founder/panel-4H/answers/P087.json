@@ -1,0 +1,18 @@
+{
+  "id": "P087",
+  "buys": false,
+  "flips": [
+    "referencias",
+    "primeira_gratis"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "A aposentadoria em cinco anos é exatamente o que eu preciso planejar, e ser aqui em Porto Alegre ajuda. Mas eu só contrato por indicação, e quero ver na prática que o planejador é mesmo sênior.",
+  "objection": "Pode ser um júnior com certificação e um bom discurso; preciso conhecer a pessoa antes.",
+  "would_change_my_mind": "Uma primeira reunião sem custo com o próprio planejador e o contato de clientes parecidos comigo.",
+  "price_too_cheap": 500,
+  "price_cheap": 1000,
+  "price_expensive": 2200,
+  "price_too_expensive": 3500
+}

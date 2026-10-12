@@ -1,0 +1,19 @@
+{
+  "id": "P144",
+  "buys": false,
+  "flips": [
+    "garantia",
+    "preco_menor",
+    "humano"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 1,
+  "reason_code": "price",
+  "reason": "Pago o mínimo do cartão todo mês; colocar mais R$ 49 de assinatura agora parece aumentar o buraco. Faço os 7 dias e cancelo.",
+  "objection": "Gastar dinheiro que eu não tenho e no fim não sair do vermelho.",
+  "would_change_my_mind": "Garantia de dinheiro de volta se eu não economizar pelo menos o valor da assinatura.",
+  "price_too_cheap": 5,
+  "price_cheap": 15,
+  "price_expensive": 29,
+  "price_too_expensive": 45
+}

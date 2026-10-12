@@ -1,0 +1,19 @@
+{
+  "id": "P155",
+  "buys": false,
+  "flips": [
+    "independente",
+    "holding",
+    "garantia"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Preciso separar empresa e família, mas ninguém me garante aqui que não vão me empurrar previdência ou seguro no meio do caminho.",
+  "objection": "Planejador que revisa seguros e previdência pode ganhar comissão com isso; não está escrito que não ganha.",
+  "would_change_my_mind": "Garantia por escrito de que não vendem produto nem recebem comissão.",
+  "price_too_cheap": 400,
+  "price_cheap": 1000,
+  "price_expensive": 2500,
+  "price_too_expensive": 4500
+}

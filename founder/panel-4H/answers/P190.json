@@ -1,0 +1,19 @@
+{
+  "id": "P190",
+  "buys": false,
+  "flips": [
+    "holding",
+    "internacional",
+    "primeira_gratis"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Pago imposto demais e o planejamento de PF e PJ me interessa. Mas não vejo nada sobre holding nem estrutura, e meu private já me oferece algo parecido sem mensalidade.",
+  "objection": "Não sei se eles vão economizar em imposto mais do que custam.",
+  "would_change_my_mind": "Estruturação de holding com advogado incluída.",
+  "price_too_cheap": 500,
+  "price_cheap": 1000,
+  "price_expensive": 2500,
+  "price_too_expensive": 4000
+}

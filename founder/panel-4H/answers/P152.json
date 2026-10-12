@@ -1,0 +1,19 @@
+{
+  "id": "P152",
+  "buys": false,
+  "flips": [
+    "holding",
+    "referencias",
+    "primeira_gratis"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Não contrato planejador que vi por acaso, só por indicação, e minha esposa teria que concordar antes de pagar mensalidade.",
+  "objection": "Não sei quem são e não tenho como convencer minha esposa de algo que nenhum conhecido usou.",
+  "would_change_my_mind": "Um colega médico indicar e a holding dos imóveis vir junto.",
+  "price_too_cheap": 400,
+  "price_cheap": 1000,
+  "price_expensive": 2500,
+  "price_too_expensive": 4000
+}

@@ -1,0 +1,19 @@
+{
+  "id": "P211",
+  "buys": false,
+  "flips": [
+    "garantia",
+    "open_finance",
+    "trial30"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Tô pagando o mínimo do cartão todo mês e sozinho com as contas; pagar R$ 49 por algo que eu acho de graça no YouTube não entra agora.",
+  "objection": "Vou pagar mais uma conta mensal e continuar no vermelho do mesmo jeito.",
+  "would_change_my_mind": "Se devolvessem o dinheiro caso eu não economizasse pelo menos a assinatura.",
+  "price_too_cheap": 10,
+  "price_cheap": 19,
+  "price_expensive": 49,
+  "price_too_expensive": 70
+}

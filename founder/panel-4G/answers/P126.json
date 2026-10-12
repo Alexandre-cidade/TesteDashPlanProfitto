@@ -1,0 +1,18 @@
+{
+  "id": "P126",
+  "buys": true,
+  "flips": [
+    "indicacao",
+    "open_finance"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Quero comprar um carro e nunca organizei nada; R$ 49 é pouco para mim se me ajudar a juntar a entrada. O que me travava era cancelar, e cancelar pelo app sem multa resolve.",
+  "objection": "Se eu vou ter disciplina de anotar os gastos à mão todo mês.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 15,
+  "price_cheap": 29,
+  "price_expensive": 79,
+  "price_too_expensive": 129
+}

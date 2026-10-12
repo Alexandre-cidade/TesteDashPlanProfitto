@@ -1,0 +1,19 @@
+{
+  "id": "P165",
+  "buys": false,
+  "flips": [
+    "internacional",
+    "independente",
+    "referencias"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Tenho assessor no private sem mensalidade e não entrego minha vida financeira a uma empresa de Porto Alegre que nunca ouvi falar.",
+  "objection": "Quem são eles e por que confiar meu patrimônio a eles.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 500,
+  "price_cheap": 1200,
+  "price_expensive": 3000,
+  "price_too_expensive": 5000
+}

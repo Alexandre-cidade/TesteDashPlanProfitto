@@ -1,0 +1,19 @@
+{
+  "id": "P136",
+  "buys": false,
+  "flips": [
+    "humano",
+    "desafio",
+    "ia"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Dinheiro não é o problema, R$ 49 eu pago fácil. O problema é que app sozinho eu abro duas vezes e esqueço; sem ninguém me cobrando, não vai rolar.",
+  "objection": "Self-service puro: ninguém vai perceber se eu sumir do app depois da primeira semana.",
+  "would_change_my_mind": "Uma pessoa real me cobrando as metas toda semana, não só um chat para quando eu travar.",
+  "price_too_cheap": 15,
+  "price_cheap": 29,
+  "price_expensive": 79,
+  "price_too_expensive": 150
+}

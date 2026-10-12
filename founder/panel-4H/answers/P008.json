@@ -1,0 +1,19 @@
+{
+  "id": "P008",
+  "buys": false,
+  "flips": [
+    "independente",
+    "primeira_gratis",
+    "holding"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Tenho assessor no private sem mensalidade e não vejo na oferta nenhuma garantia de que eles não vendem produto. Acho que no fim vão tentar empurrar alguma coisa.",
+  "objection": "Como sei que não vão me empurrar produto?",
+  "would_change_my_mind": "Uma declaração clara de que não vendem produto nem recebem comissão.",
+  "price_too_cheap": 300,
+  "price_cheap": 800,
+  "price_expensive": 1800,
+  "price_too_expensive": 3000
+}

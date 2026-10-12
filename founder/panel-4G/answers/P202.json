@@ -1,0 +1,18 @@
+{
+  "id": "P202",
+  "buys": false,
+  "flips": [
+    "open_finance",
+    "ia"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "convenience",
+  "reason": "R$ 49 eu pago fácil, mas não vou anotar gasto à mão; já sei que deixo para depois e paro. Sem conexão automática com o banco não serve para mim.",
+  "objection": "Vou procrastinar o preenchimento e pagar por um app parado.",
+  "would_change_my_mind": "Open Finance puxando tudo sozinho.",
+  "price_too_cheap": 15,
+  "price_cheap": 30,
+  "price_expensive": 79,
+  "price_too_expensive": 150
+}

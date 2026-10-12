@@ -1,0 +1,15 @@
+{
+  "id": "P116",
+  "buys": false,
+  "flips": [],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Eu não pago assinatura de app, tem coisa grátis que faz o básico. R$ 49 por mês é muito para isso.",
+  "objection": "Pagar por algo que tem versão grátis por aí.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 3,
+  "price_cheap": 9,
+  "price_expensive": 19,
+  "price_too_expensive": 29
+}

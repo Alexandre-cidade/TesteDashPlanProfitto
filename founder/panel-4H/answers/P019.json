@@ -1,0 +1,19 @@
+{
+  "id": "P019",
+  "buys": false,
+  "flips": [
+    "referencias",
+    "independente",
+    "internacional"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Não conheço a Profitto, é de Porto Alegre e eu estou no Rio. Prefiro cuidar dos meus investimentos eu mesma a abrir tudo para um desconhecido.",
+  "objection": "Entregar o mapa inteiro do meu patrimônio para uma empresa que eu nunca ouvi falar.",
+  "would_change_my_mind": "Indicação de colegas médicos que já usem e confiem.",
+  "price_too_cheap": 300,
+  "price_cheap": 600,
+  "price_expensive": 1200,
+  "price_too_expensive": 2000
+}

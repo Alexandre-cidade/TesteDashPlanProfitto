@@ -1,0 +1,19 @@
+{
+  "id": "P113",
+  "buys": false,
+  "flips": [
+    "referencias",
+    "primeira_gratis",
+    "garantia"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Não conheço essa empresa e não vou abrir meus imóveis e meu consultório para estranhos. Além disso, decido essas coisas com meu marido, e ele vai torcer o nariz.",
+  "objection": "Entregar todas as informações do patrimônio para quem eu nunca vi.",
+  "would_change_my_mind": "Alguém de confiança aqui de Curitiba ter usado e recomendado.",
+  "price_too_cheap": 300,
+  "price_cheap": 700,
+  "price_expensive": 1300,
+  "price_too_expensive": 2000
+}

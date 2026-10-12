@@ -1,0 +1,19 @@
+{
+  "id": "P074",
+  "buys": false,
+  "flips": [
+    "equipe",
+    "holding",
+    "primeira_gratis"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "quality",
+  "reason": "Quero pagar menos imposto na PF e na PJ, e para isso preciso de tributarista e advogado, não só um planejador. Um CFP sozinho não me parece pesado o bastante para a indústria.",
+  "objection": "Se não tiver gente que entenda de tributário de indústria, é conselho genérico.",
+  "would_change_my_mind": "Uma equipe com advogado e contador tributarista trabalhando junto com o planejador.",
+  "price_too_cheap": 500,
+  "price_cheap": 1200,
+  "price_expensive": 3000,
+  "price_too_expensive": 6000
+}

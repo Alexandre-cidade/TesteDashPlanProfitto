@@ -1,0 +1,19 @@
+{
+  "id": "P103",
+  "buys": false,
+  "flips": [
+    "independente",
+    "garantia",
+    "relatorio"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Já paguei consultoria que virou relatório na gaveta, e não vejo nada aqui dizendo que eles não ganham comissão de alguém.",
+  "objection": "Que no fim tudo esconde uma comissão ou vire papel sem execução.",
+  "would_change_my_mind": "Independência garantida e poder sair com o dinheiro de volta se não andar.",
+  "price_too_cheap": 500,
+  "price_cheap": 1000,
+  "price_expensive": 2500,
+  "price_too_expensive": 4000
+}

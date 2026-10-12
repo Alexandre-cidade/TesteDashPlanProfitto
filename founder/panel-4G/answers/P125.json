@@ -1,0 +1,19 @@
+{
+  "id": "P125",
+  "buys": false,
+  "flips": [
+    "indicacao",
+    "avaliacoes",
+    "seguranca"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Nunca ouvi falar da Profitto em nenhum canal que eu sigo. Gosto que não precisa dar acesso ao banco e que não vendem produto, mas não pago sem alguém que eu confio falar bem.",
+  "objection": "Marca desconhecida; não sei se é sério.",
+  "would_change_my_mind": "Um influenciador de finanças que eu acompanho recomendar.",
+  "price_too_cheap": 15,
+  "price_cheap": 29,
+  "price_expensive": 59,
+  "price_too_expensive": 99
+}

@@ -1,0 +1,19 @@
+{
+  "id": "P216",
+  "buys": false,
+  "flips": [
+    "independente",
+    "referencias",
+    "primeira_gratis"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Meu private bank já faz planejamento sem cobrar mensalidade, e eu desconfio de todo mundo que vende conselho financeiro. Não vejo motivo para pagar R$ 1.500 por algo que já tenho.",
+  "objection": "Acho que tem comissão escondida em algum lugar, e o banco já me dá isso de graça.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 300,
+  "price_cheap": 700,
+  "price_expensive": 1500,
+  "price_too_expensive": 2500
+}

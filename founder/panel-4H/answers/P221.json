@@ -1,0 +1,19 @@
+{
+  "id": "P221",
+  "buys": false,
+  "flips": [
+    "holding",
+    "referencias",
+    "primeira_gratis"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Sucessão me preocupa, mas sou advogado e sei o quanto isso é técnico. Diz que é sênior, mas não sei quem é a pessoa, e ela está em Porto Alegre.",
+  "objection": "Dizer que é sênior é fácil; quero saber quem é, quantos anos de estrada tem e se entende de holding e sucessão de verdade.",
+  "would_change_my_mind": "Conhecer o planejador e ver que tem um advogado parceiro para estruturar holding.",
+  "price_too_cheap": 500,
+  "price_cheap": 1200,
+  "price_expensive": 2500,
+  "price_too_expensive": 4000
+}

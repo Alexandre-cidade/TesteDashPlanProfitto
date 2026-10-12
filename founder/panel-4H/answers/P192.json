@@ -1,0 +1,19 @@
+{
+  "id": "P192",
+  "buys": false,
+  "flips": [
+    "independente",
+    "garantia",
+    "primeira_gratis"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Gosto de ser um CFP sênior e aqui em Porto Alegre. Mas não diz se eles vendem produto ou recebem comissão, e eu parto do princípio de que recebem.",
+  "objection": "Não está escrito que eles são independentes de banco e de comissão.",
+  "would_change_my_mind": "Garantia clara de que não vendem produto financeiro e não recebem comissão.",
+  "price_too_cheap": 400,
+  "price_cheap": 800,
+  "price_expensive": 1500,
+  "price_too_expensive": 2500
+}

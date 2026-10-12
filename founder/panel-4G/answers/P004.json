@@ -1,0 +1,19 @@
+{
+  "id": "P004",
+  "buys": false,
+  "flips": [
+    "open_finance",
+    "ia",
+    "preco_menor"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "convenience",
+  "reason": "Não vou anotar gasto na mão, não tenho tempo. Se não conecta com o banco, o app grátis do meu banco já faz o mesmo.",
+  "objection": "Ter que lançar tudo manualmente, inclusive os Pix que entram.",
+  "would_change_my_mind": "Conexão automática com os bancos via Open Finance.",
+  "price_too_cheap": 10,
+  "price_cheap": 19,
+  "price_expensive": 39,
+  "price_too_expensive": 60
+}

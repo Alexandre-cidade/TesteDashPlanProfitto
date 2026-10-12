@@ -1,0 +1,19 @@
+{
+  "id": "P088",
+  "buys": false,
+  "flips": [
+    "primeira_gratis",
+    "equipe",
+    "garantia"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "other",
+  "reason": "Pago imposto demais no consultório e na pessoa física, e isso me interessa. Mas meu marido divide essas decisões comigo e não vai aceitar uma mensalidade sem ver resultado antes.",
+  "objection": "Meu marido vai perguntar quanto de imposto isso economiza de verdade antes de pagar R$ 1.500 por mês.",
+  "would_change_my_mind": "Um diagnóstico gratuito mostrando quanto de imposto dá para economizar, que eu possa levar para ele.",
+  "price_too_cheap": 500,
+  "price_cheap": 1000,
+  "price_expensive": 3000,
+  "price_too_expensive": 5000
+}

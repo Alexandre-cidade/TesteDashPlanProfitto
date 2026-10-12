@@ -1,0 +1,19 @@
+{
+  "id": "P029",
+  "buys": false,
+  "flips": [
+    "referencias",
+    "primeira_gratis",
+    "independente"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Só contrato quem meus amigos indicam. Um anúncio dizendo que é sênior não basta para mim.",
+  "objection": "Não ter nenhuma indicação de alguém do meu círculo.",
+  "would_change_my_mind": "Um amigo meu do mesmo nível ser cliente e me indicar.",
+  "price_too_cheap": 500,
+  "price_cheap": 1000,
+  "price_expensive": 2000,
+  "price_too_expensive": 3000
+}

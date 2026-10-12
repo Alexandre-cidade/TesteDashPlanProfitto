@@ -1,0 +1,133 @@
+{
+ "business": "Profitto Private: planejamento financeiro e patrimonial dedicado para famílias de alta renda, Porto Alegre e online",
+ "target": "Brasileiros de 35 a 70 anos com renda alta ou patrimônio relevante (acima de R$ 1 milhão), que já têm banco, assessor e contador, e pensam em proteger e organizar o patrimônio da família. Todos os valores são em reais (R$); a renda é anual e os preços que você der são mensais, em R$",
+ "where": "Porto Alegre, Serra Gaúcha, São Paulo e outras capitais",
+ "age": [
+  35,
+  70
+ ],
+ "segments": [
+  {
+   "name": "Médico ou dentista com consultório próprio",
+   "share": 0.18,
+   "income": [
+    400000,
+    1500000
+   ]
+  },
+  {
+   "name": "Empresário de PME com finanças da empresa e da família misturadas",
+   "share": 0.2,
+   "income": [
+    500000,
+    3000000
+   ]
+  },
+  {
+   "name": "Executivo de grande empresa",
+   "share": 0.14,
+   "income": [
+    600000,
+    2000000
+   ]
+  },
+  {
+   "name": "Herdeiro ou quem vendeu uma empresa ou imóvel grande",
+   "share": 0.1,
+   "income": [
+    300000,
+    2000000
+   ]
+  },
+  {
+   "name": "Pré-aposentado com patrimônio construído",
+   "share": 0.14,
+   "income": [
+    300000,
+    1000000
+   ]
+  },
+  {
+   "name": "Advogado ou sócio de escritório",
+   "share": 0.1,
+   "income": [
+    400000,
+    1500000
+   ]
+  },
+  {
+   "name": "Casal de alta renda com filhos pequenos",
+   "share": 0.14,
+   "income": [
+    500000,
+    1800000
+   ]
+  }
+ ],
+ "behaviours": [
+  {
+   "name": "Tem assessor no private do banco",
+   "share": 0.2,
+   "how": "Os investimentos ficam com o gerente private ou o assessor da corretora, sem mensalidade."
+  },
+  {
+   "name": "Desconfia de bancos e de quem vende produto",
+   "share": 0.1,
+   "how": "Acha que todo conselho financeiro esconde uma comissão."
+  },
+  {
+   "name": "Decide junto com o cônjuge ou sócio",
+   "share": 0.1,
+   "how": "Nada grande é decidido sem a outra pessoa."
+  },
+  {
+   "name": "Muito ocupado, delega tudo",
+   "share": 0.15,
+   "how": "Não tem tempo e paga para alguém resolver, se confiar."
+  },
+  {
+   "name": "Investe sozinho e acha que sabe",
+   "share": 0.12,
+   "how": "Acompanha o mercado e escolhe os próprios investimentos."
+  },
+  {
+   "name": "Só contrata por indicação de amigos",
+   "share": 0.15,
+   "how": "Contrata profissionais que amigos do mesmo nível indicaram."
+  },
+  {
+   "name": "Preocupado com sucessão e com os filhos",
+   "share": 0.1,
+   "how": "Pensa no que acontece com o patrimônio se faltar."
+  },
+  {
+   "name": "Quer pagar menos imposto",
+   "share": 0.08,
+   "how": "Acha que paga imposto demais na PF e na PJ."
+  }
+ ],
+ "objections": [
+  "Meu private bank já faz isso sem mensalidade",
+  "R$ 1.500 por mês é caro para conselho",
+  "Não entrego meu patrimônio para quem não conheço",
+  "Já tenho contador e advogado",
+  "Quero alguém sênior, não um júnior",
+  "Não tenho tempo para reuniões",
+  "Como sei que não vão me empurrar produto?",
+  "Uma empresa pequena de Porto Alegre aguenta a complexidade da minha vida?",
+  "Já tentei consultoria e virou relatório na gaveta",
+  "Meu cônjuge ou sócio precisa aprovar"
+ ],
+ "habits": [
+  "você mora no Moinhos de Vento, em Porto Alegre",
+  "você mora em Gramado e tem negócios na Serra",
+  "você mora em São Paulo, nos Jardins",
+  "você mora em Caxias do Sul e tem uma indústria",
+  "você mora em Porto Alegre e viaja toda semana a trabalho",
+  "você mora em Curitiba e tem imóveis alugados",
+  "você mora em Florianópolis e vendeu sua empresa há pouco tempo",
+  "você mora no Rio de Janeiro e tem filhos estudando fora",
+  "você mora em Novo Hamburgo e trabalha com a família",
+  "você mora em Porto Alegre e está planejando se aposentar em 5 anos"
+ ]
+}

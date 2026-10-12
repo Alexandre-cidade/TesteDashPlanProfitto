@@ -1,0 +1,18 @@
+{
+  "id": "P082",
+  "buys": false,
+  "flips": [
+    "independente",
+    "garantia"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Já paguei consultoria e recebi um relatório bonito que ninguém executou. E não vejo escrito em lugar nenhum que eles não ganham comissão de produto.",
+  "objection": "Que no fim isso seja uma porta de entrada para me vender previdência ou seguro.",
+  "would_change_my_mind": "Garantia escrita de que não recebem comissão nem estão ligados a banco, com três meses para testar e sair sem custo.",
+  "price_too_cheap": 500,
+  "price_cheap": 900,
+  "price_expensive": 2000,
+  "price_too_expensive": 3500
+}

@@ -1,0 +1,18 @@
+{
+  "id": "P150",
+  "buys": false,
+  "flips": [
+    "primeira_gratis",
+    "independente"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Já tenho contador, advogado e assessor no private; não vejo o buraco que isso preencheria por R$ 1.500 por mês.",
+  "objection": "Pagar por mais uma camada em cima de gente que já cuida de tudo.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 300,
+  "price_cheap": 700,
+  "price_expensive": 1500,
+  "price_too_expensive": 2500
+}

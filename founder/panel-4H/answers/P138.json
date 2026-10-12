@@ -1,0 +1,19 @@
+{
+  "id": "P138",
+  "buys": false,
+  "flips": [
+    "holding",
+    "familia",
+    "primeira_gratis"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "Vendi a empresa há pouco tempo, então o assunto é importante, mas já tenho contador e advogado e não decido nada disso sem minha esposa.",
+  "objection": "Ser mais uma pessoa no meio de contador e advogado que eu já conheço, e minha esposa não estar convencida.",
+  "would_change_my_mind": "Uma proposta de holding e sucessão com advogado parceiro que eu e minha esposa possamos avaliar juntos.",
+  "price_too_cheap": 500,
+  "price_cheap": 1000,
+  "price_expensive": 2500,
+  "price_too_expensive": 4500
+}

@@ -1,0 +1,18 @@
+{
+  "id": "P218",
+  "buys": false,
+  "flips": [
+    "preco_menor",
+    "anual"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Tô juntando cada real pra entrada do apê e não pago assinatura de app; o que preciso aprender tem de graça no YouTube.",
+  "objection": "Pagar R$ 49 todo mês vai contra justamente o que eu tô tentando fazer, que é guardar.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 5,
+  "price_cheap": 10,
+  "price_expensive": 20,
+  "price_too_expensive": 35
+}

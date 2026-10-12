@@ -1,0 +1,19 @@
+{
+  "id": "P071",
+  "buys": false,
+  "flips": [
+    "holding",
+    "independente",
+    "familia"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Penso muito no que acontece com meus filhos se eu faltar, mas meu private faz isso sem mensalidade. Só pagaria se ficasse claro que o conselho é melhor e isento.",
+  "objection": "O banco não cobra; preciso de um motivo forte para pagar por fora.",
+  "would_change_my_mind": "Estruturação de holding e sucessão com advogado, feita de verdade, não só recomendação.",
+  "price_too_cheap": 500,
+  "price_cheap": 1000,
+  "price_expensive": 2500,
+  "price_too_expensive": 5000
+}

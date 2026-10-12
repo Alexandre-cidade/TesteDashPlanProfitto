@@ -1,0 +1,19 @@
+{
+  "id": "P199",
+  "buys": false,
+  "flips": [
+    "familia",
+    "primeira_gratis",
+    "referencias"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Não decido nada disso sem meu marido, e nenhum de nós conhece essa empresa; não é coisa que se contrata numa semana.",
+  "objection": "Entregar todos os nossos números a desconhecidos às vésperas da aposentadoria, sem saber quem são.",
+  "would_change_my_mind": "Uma primeira reunião sem custo com os dois juntos, para meu marido também avaliar a pessoa.",
+  "price_too_cheap": 500,
+  "price_cheap": 1000,
+  "price_expensive": 2500,
+  "price_too_expensive": 4000
+}

@@ -1,0 +1,19 @@
+{
+  "id": "P072",
+  "buys": false,
+  "flips": [
+    "independente",
+    "garantia",
+    "referencias"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Já paguei consultoria e ganhei um relatório bonito que nunca saiu da gaveta. E não está escrito em lugar nenhum que eles não vendem produto ou recebem comissão.",
+  "objection": "Vai virar só mais um diagnóstico bonito e, no fundo, alguém tentando me empurrar produto.",
+  "would_change_my_mind": "Garantia escrita de independência, sem comissão e sem ligação com banco.",
+  "price_too_cheap": 400,
+  "price_cheap": 900,
+  "price_expensive": 2200,
+  "price_too_expensive": 4500
+}

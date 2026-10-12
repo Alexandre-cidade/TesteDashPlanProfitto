@@ -1,0 +1,19 @@
+{
+  "id": "P163",
+  "buys": false,
+  "flips": [
+    "independente",
+    "referencias",
+    "familia"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Não sei se vão tentar me vender produto, e só contrato o que meus amigos já usam.",
+  "objection": "Conselho que no fundo é venda de seguro e previdência.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 300,
+  "price_cheap": 800,
+  "price_expensive": 2000,
+  "price_too_expensive": 3500
+}

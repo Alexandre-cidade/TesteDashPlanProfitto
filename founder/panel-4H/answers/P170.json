@@ -1,0 +1,19 @@
+{
+  "id": "P170",
+  "buys": false,
+  "flips": [
+    "independente",
+    "internacional",
+    "primeira_gratis"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Até faz sentido ter alguém do meu lado e não do banco, principalmente com os filhos estudando fora, mas nada ali me diz que eles não ganham comissão. Sem isso, é só mais um vendedor com outro nome.",
+  "objection": "Como sei que não vão me empurrar previdência e seguro com comissão embutida?",
+  "would_change_my_mind": "Garantia clara de que são independentes, não vendem produto e não ganham comissão.",
+  "price_too_cheap": 400,
+  "price_cheap": 800,
+  "price_expensive": 1800,
+  "price_too_expensive": 3000
+}

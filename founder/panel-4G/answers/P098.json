@@ -1,0 +1,18 @@
+{
+  "id": "P098",
+  "buys": false,
+  "flips": [
+    "avaliacoes",
+    "trial30"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Já desisti de dois apps em semanas e esse não tem nada que me faça ficar. Não daria acesso ao banco, então seria anotar à mão de novo, e isso eu não sustento.",
+  "objection": "Vou abandonar como abandonei os outros.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 7,
+  "price_cheap": 15,
+  "price_expensive": 35,
+  "price_too_expensive": 55
+}

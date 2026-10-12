@@ -1,0 +1,19 @@
+{
+  "id": "P020",
+  "buys": false,
+  "flips": [
+    "open_finance",
+    "desafio",
+    "avaliacoes"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Já larguei o Mobills e o Organizze depois de algumas semanas, e não vejo por que com esse seria diferente, ainda mais pagando e sem conhecer a marca.",
+  "objection": "Vou abandonar como abandonei os outros, com renda que varia todo mês fica difícil manter qualquer controle.",
+  "would_change_my_mind": "Lançamento automático dos gastos pelo Open Finance, que é o que fazia eu largar os outros.",
+  "price_too_cheap": 10,
+  "price_cheap": 25,
+  "price_expensive": 59,
+  "price_too_expensive": 99
+}

@@ -1,0 +1,19 @@
+{
+  "id": "P027",
+  "buys": false,
+  "flips": [
+    "familia",
+    "seguranca",
+    "anual"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Gosto que não precisa dar acesso aos bancos, mas com as contas da casa e a ajuda à família, R$ 49 por mês pesa. Se servisse para nós dois, pensaria.",
+  "objection": "R$ 49 só para mim é caro quando eu e meu parceiro dividimos tudo e ainda mando dinheiro para a família.",
+  "would_change_my_mind": "Uma conta compartilhada com meu parceiro pelo mesmo preço.",
+  "price_too_cheap": 8,
+  "price_cheap": 19,
+  "price_expensive": 39,
+  "price_too_expensive": 60
+}

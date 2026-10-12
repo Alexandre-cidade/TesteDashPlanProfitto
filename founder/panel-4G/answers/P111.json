@@ -1,0 +1,19 @@
+{
+  "id": "P111",
+  "buys": false,
+  "flips": [
+    "humano",
+    "ia",
+    "indicacao"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "quality",
+  "reason": "Um questionário de 20 minutos não vai entender a minha situação. Prefiro continuar aprendendo com o pessoal que eu sigo no YouTube, de graça.",
+  "objection": "Um plano genérico de app não serve para o meu caso.",
+  "would_change_my_mind": "Poder falar com uma pessoa de verdade quando travar, sem pagar R$ 297.",
+  "price_too_cheap": 10,
+  "price_cheap": 20,
+  "price_expensive": 39,
+  "price_too_expensive": 60
+}

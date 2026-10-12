@@ -1,0 +1,15 @@
+{
+  "id": "P159",
+  "buys": false,
+  "flips": ["seguranca", "avaliacoes", "garantia"],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Cuido das contas sozinha e ainda ajudo a família todo mês. Antes de pagar uma empresa que eu não conheço, quero saber quem vê meus dados e ver gente real dizendo que cancelar é fácil mesmo.",
+  "objection": "Tenho medo de não conseguir cancelar e continuar sendo cobrada, mesmo dizendo que é pelo app.",
+  "would_change_my_mind": "Uma garantia clara de privacidade e muita avaliação boa na loja de apps falando do cancelamento.",
+  "price_too_cheap": 7,
+  "price_cheap": 19,
+  "price_expensive": 35,
+  "price_too_expensive": 55
+}

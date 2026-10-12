@@ -1,0 +1,18 @@
+{
+  "id": "P201",
+  "buys": false,
+  "flips": [
+    "humano",
+    "indicacao"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "quality",
+  "reason": "Minha renda varia muito mês a mês e duvido que um questionário de 20 minutos gere um plano que funcione para isso. Metas mensais fixas não combinam com quem é autônoma.",
+  "objection": "Um app genérico não entende renda irregular e imposto de autônomo.",
+  "would_change_my_mind": "Falar com alguém de verdade, mas o plano com planejador a R$ 297 é caro demais.",
+  "price_too_cheap": 10,
+  "price_cheap": 25,
+  "price_expensive": 49,
+  "price_too_expensive": 79
+}

@@ -1,0 +1,19 @@
+{
+  "id": "P015",
+  "buys": false,
+  "flips": [
+    "avaliacoes",
+    "open_finance",
+    "preco_menor"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Talvez eu entre nos 7 dias grátis no impulso, mas não conheço a marca e cancelo antes de cobrar. R$ 49 pesa no meu salário.",
+  "objection": "Marca que nunca vi e mais uma assinatura que eu vou me arrepender.",
+  "would_change_my_mind": "Ver muita gente falando bem e um preço menor.",
+  "price_too_cheap": 7,
+  "price_cheap": 15,
+  "price_expensive": 29,
+  "price_too_expensive": 45
+}

@@ -1,0 +1,18 @@
+{
+  "id": "P210",
+  "buys": false,
+  "flips": [
+    "open_finance",
+    "preco_menor"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Uso o Nubank para tudo e ele já mostra meus gastos. Pagar R$ 49 e ainda ter que anotar à mão não faz sentido para mim.",
+  "objection": "Preço alto para algo que não é automático.",
+  "would_change_my_mind": "Conectar com o Nubank sozinho e custar menos de R$ 20.",
+  "price_too_cheap": 5,
+  "price_cheap": 15,
+  "price_expensive": 29,
+  "price_too_expensive": 45
+}

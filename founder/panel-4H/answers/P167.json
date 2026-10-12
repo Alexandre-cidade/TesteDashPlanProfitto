@@ -1,0 +1,19 @@
+{
+  "id": "P167",
+  "buys": false,
+  "flips": [
+    "independente",
+    "primeira_gratis",
+    "familia"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Acabei de vender a empresa e todo mundo aparece querendo cuidar do meu dinheiro. Não fecho nada sem meu marido e sem ter certeza de que não tem comissão por trás.",
+  "objection": "Como sei que não vão me empurrar produto agora que estou com dinheiro na mão?",
+  "would_change_my_mind": "Garantia por escrito de que não vendem produto nem recebem comissão, e uma primeira conversa sem custo com meu marido junto.",
+  "price_too_cheap": 400,
+  "price_cheap": 800,
+  "price_expensive": 1800,
+  "price_too_expensive": 3000
+}

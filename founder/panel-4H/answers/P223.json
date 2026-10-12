@@ -1,0 +1,19 @@
+{
+  "id": "P223",
+  "buys": false,
+  "flips": [
+    "primeira_gratis",
+    "independente",
+    "preco_menor"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Meu assessor do private não me cobra nada, viajo toda semana e não conheço essa empresa. R$ 1.500 por mês para alguém que nunca vi não fecha.",
+  "objection": "Entregar todo meu patrimônio a uma empresa desconhecida e ainda pagar mensalidade.",
+  "would_change_my_mind": "Um preço menor e um diagnóstico gratuito para eu conhecer antes.",
+  "price_too_cheap": 200,
+  "price_cheap": 500,
+  "price_expensive": 1000,
+  "price_too_expensive": 1800
+}

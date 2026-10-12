@@ -1,0 +1,15 @@
+{
+  "id": "P055",
+  "buys": false,
+  "flips": ["familia", "seguranca", "ia"],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "convenience",
+  "reason": "Não vou anotar gasto à mão, e ainda dividindo as contas com meu marido seria o dobro do trabalho. Não ter que conectar banco é bom, mas aí sobra o trabalho todo pra mim.",
+  "objection": "Anotar gasto à mão dá muito trabalho e a gente desiste no primeiro mês.",
+  "would_change_my_mind": "Uma forma de registrar gastos que não seja manual e não exija entregar acesso ao banco.",
+  "price_too_cheap": 15,
+  "price_cheap": 29,
+  "price_expensive": 69,
+  "price_too_expensive": 120
+}

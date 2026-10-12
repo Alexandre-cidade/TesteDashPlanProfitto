@@ -1,0 +1,19 @@
+{
+  "id": "P171",
+  "buys": false,
+  "flips": [
+    "independente",
+    "garantia",
+    "referencias"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Desconfio de qualquer um que dá conselho financeiro, porque sempre tem uma comissão escondida. A oferta fala de previdência e seguros e não diz quem paga quem, então para mim já acende o alerta.",
+  "objection": "Previdência e revisão de seguros soam como porta de entrada para vender produto.",
+  "would_change_my_mind": "Compromisso por escrito de que não recebem nada de banco, seguradora ou corretora.",
+  "price_too_cheap": 300,
+  "price_cheap": 600,
+  "price_expensive": 1200,
+  "price_too_expensive": 2000
+}

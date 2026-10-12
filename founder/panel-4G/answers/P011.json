@@ -1,0 +1,19 @@
+{
+  "id": "P011",
+  "buys": false,
+  "flips": [
+    "open_finance",
+    "preco_menor",
+    "anual"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Estou juntando cada real pro apartamento e não vou anotar gasto à mão. O app do banco grátis já mostra meus gastos.",
+  "objection": "Pagar R$ 49 por mês tira dinheiro da entrada do apê.",
+  "would_change_my_mind": "Automático e por menos de R$ 20.",
+  "price_too_cheap": 5,
+  "price_cheap": 9,
+  "price_expensive": 19,
+  "price_too_expensive": 29
+}

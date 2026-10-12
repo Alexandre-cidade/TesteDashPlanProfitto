@@ -1,0 +1,19 @@
+{
+  "id": "P181",
+  "buys": false,
+  "flips": [
+    "referencias",
+    "equipe",
+    "primeira_gratis"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Dinheiro não é o problema, eu pagaria para alguém tirar isso das minhas costas. Mas uma empresa de Porto Alegre que eu nunca ouvi falar, atendendo por vídeo, não ganha minha confiança num anúncio.",
+  "objection": "Não sei quem é esse sênior, nem se ele dá conta de misturar empresa e família no nível da minha operação.",
+  "would_change_my_mind": "Um empresário do meu porte em São Paulo me dizer que usa e resolve.",
+  "price_too_cheap": 500,
+  "price_cheap": 1500,
+  "price_expensive": 4000,
+  "price_too_expensive": 8000
+}

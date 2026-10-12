@@ -1,0 +1,19 @@
+{
+  "id": "P005",
+  "buys": false,
+  "flips": [
+    "desafio",
+    "humano",
+    "garantia"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Eu sei que preciso, mas vou fazer o questionário, esquecer o app e continuar pagando. Já me conheço.",
+  "objection": "Pagar e não usar, como sempre acontece comigo.",
+  "would_change_my_mind": "Alguém me cobrando de verdade, uma pessoa, não só notificação.",
+  "price_too_cheap": 9,
+  "price_cheap": 19,
+  "price_expensive": 35,
+  "price_too_expensive": 55
+}

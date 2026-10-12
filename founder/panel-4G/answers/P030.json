@@ -1,0 +1,19 @@
+{
+  "id": "P030",
+  "buys": false,
+  "flips": [
+    "open_finance",
+    "preco_menor",
+    "garantia"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "convenience",
+  "reason": "Já faço planilha e sei como é cansativo anotar gasto à mão; esse app também é manual, então seria pagar R$ 49 pelo mesmo trabalho, endividado.",
+  "objection": "Anotar gasto à mão dá muito trabalho e eu já faço isso de graça na planilha.",
+  "would_change_my_mind": "Se lançasse os gastos sozinho pelo Open Finance.",
+  "price_too_cheap": 5,
+  "price_cheap": 15,
+  "price_expensive": 30,
+  "price_too_expensive": 50
+}

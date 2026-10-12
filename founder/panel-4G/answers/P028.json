@@ -1,0 +1,18 @@
+{
+  "id": "P028",
+  "buys": true,
+  "flips": [
+    "desafio",
+    "open_finance"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 1,
+  "reason_code": "habit",
+  "reason": "Eu assino no impulso: vou começar animada, esquecer de cancelar no sétimo dia e pagar o primeiro mês. Depois provavelmente cancelo.",
+  "objection": "Vou pagar e não vou usar, igual às outras assinaturas que cancelei.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 9,
+  "price_cheap": 19,
+  "price_expensive": 39,
+  "price_too_expensive": 69
+}

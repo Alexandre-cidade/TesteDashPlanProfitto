@@ -1,0 +1,19 @@
+{
+  "id": "P206",
+  "buys": true,
+  "flips": [
+    "holding",
+    "familia",
+    "independente"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Vendi um negócio, tenho filhos pequenos e o dinheiro está solto; alguém sênior aqui no Moinhos olhando sucessão e PF/PJ todo mês vale R$ 1.500, e posso cancelar se não for bom.",
+  "objection": "Medo de que o 'sênior' na prática passe meu caso para um júnior depois do primeiro mês.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 500,
+  "price_cheap": 1000,
+  "price_expensive": 2500,
+  "price_too_expensive": 4000
+}

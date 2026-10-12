@@ -1,0 +1,19 @@
+{
+  "id": "P159",
+  "buys": false,
+  "flips": [
+    "equipe",
+    "referencias",
+    "holding"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "quality",
+  "reason": "Vendi a empresa e a situação ficou complexa; um planejador sozinho numa empresa pequena me parece pouco para sucessão e holding.",
+  "objection": "Uma pessoa só não dá conta de jurídico, tributário e investimentos juntos.",
+  "would_change_my_mind": "Uma equipe com advogado e contador e referências de clientes com patrimônio parecido.",
+  "price_too_cheap": 500,
+  "price_cheap": 1200,
+  "price_expensive": 3500,
+  "price_too_expensive": 6000
+}

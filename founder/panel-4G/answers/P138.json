@@ -1,0 +1,19 @@
+{
+  "id": "P138",
+  "buys": false,
+  "flips": [
+    "open_finance",
+    "desafio",
+    "humano"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Já larguei Mobills e o app do banco depois de umas semanas, e com filho e tudo sozinho não tenho tempo de anotar gasto. R$ 49 é dinheiro que vai para a entrada do apartamento.",
+  "objection": "Vou abandonar de novo e ficar pagando por algo que não uso.",
+  "would_change_my_mind": "Se os gastos entrassem sozinhos do banco e custasse bem menos.",
+  "price_too_cheap": 9,
+  "price_cheap": 19,
+  "price_expensive": 39,
+  "price_too_expensive": 60
+}

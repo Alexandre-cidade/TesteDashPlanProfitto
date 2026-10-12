@@ -1,0 +1,18 @@
+{
+  "id": "P102",
+  "buys": false,
+  "flips": [
+    "humano",
+    "familia"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "quality",
+  "reason": "Minha situação tem dívida no cartão, conta dividida com o parceiro e meta de carro; um questionário de 20 minutos não vai entender isso. Pagar R$ 297 pra falar com alguém é muito.",
+  "objection": "Um plano automático genérico que não entende minha vida de casal e minhas dívidas.",
+  "would_change_my_mind": "Poder tirar dúvidas com uma pessoa por chat dentro dos R$ 49.",
+  "price_too_cheap": 15,
+  "price_cheap": 29,
+  "price_expensive": 79,
+  "price_too_expensive": 150
+}

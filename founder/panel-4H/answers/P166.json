@@ -1,0 +1,19 @@
+{
+  "id": "P166",
+  "buys": false,
+  "flips": [
+    "independente",
+    "holding",
+    "equipe"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Meu private bank e meu assessor já cuidam disso sem eu pagar mensalidade, e o banco tem advogado e especialista em sucessão quando preciso. Não vejo por que pagar R$ 18 mil por ano a uma empresa de Porto Alegre que eu nunca ouvi falar.",
+  "objection": "Pagar por algo que já recebo de graça do banco, de alguém que não conheço.",
+  "would_change_my_mind": "Ver que o private está me empurrando produto e me custando mais do que R$ 1.500 em taxas escondidas.",
+  "price_too_cheap": 300,
+  "price_cheap": 600,
+  "price_expensive": 1200,
+  "price_too_expensive": 2500
+}

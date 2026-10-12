@@ -1,0 +1,18 @@
+{
+  "id": "P189",
+  "buys": true,
+  "flips": [
+    "desafio",
+    "humano"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Tô juntando pra entrada do apartamento e sei que preciso me organizar; R$ 49 não pesa e, sendo sincera, provavelmente nem cancelo a tempo.",
+  "objection": "Começar, empolgar uma semana e deixar de lado como tudo que eu adio.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 15,
+  "price_cheap": 29,
+  "price_expensive": 79,
+  "price_too_expensive": 129
+}

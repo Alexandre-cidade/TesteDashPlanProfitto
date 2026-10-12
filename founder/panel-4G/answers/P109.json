@@ -1,0 +1,18 @@
+{
+  "id": "P109",
+  "buys": false,
+  "flips": [
+    "open_finance",
+    "preco_menor"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Já baixei Mobills e Organizze e larguei porque anotar gasto à mão cansa. Este é a mesma coisa, só que pago.",
+  "objection": "Vou largar em duas semanas igual larguei os outros.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 5,
+  "price_cheap": 15,
+  "price_expensive": 29,
+  "price_too_expensive": 45
+}

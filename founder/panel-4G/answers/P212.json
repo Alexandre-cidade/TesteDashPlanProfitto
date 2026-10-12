@@ -1,0 +1,19 @@
+{
+  "id": "P212",
+  "buys": false,
+  "flips": [
+    "open_finance",
+    "familia",
+    "ia"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "convenience",
+  "reason": "Dinheiro não é problema, tempo é; se eu tiver que anotar gasto na mão eu largo na primeira semana.",
+  "objection": "Não vi nada dizendo que conecta com meu Nubank sozinho, então vai virar trabalho manual.",
+  "would_change_my_mind": "Conectar automático com os bancos via Open Finance e dividir com meu parceiro.",
+  "price_too_cheap": 15,
+  "price_cheap": 29,
+  "price_expensive": 79,
+  "price_too_expensive": 129
+}

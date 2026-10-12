@@ -1,0 +1,19 @@
+{
+  "id": "P146",
+  "buys": true,
+  "flips": [
+    "open_finance",
+    "ia",
+    "desafio"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 1,
+  "reason_code": "convenience",
+  "reason": "Eu assino no impulso, então provavelmente pago o primeiro mês. Mas se tiver que anotar gasto à mão, cancelo logo depois.",
+  "objection": "Anotar cada gasto à mão; eu nunca vou fazer isso.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 9,
+  "price_cheap": 19,
+  "price_expensive": 45,
+  "price_too_expensive": 70
+}

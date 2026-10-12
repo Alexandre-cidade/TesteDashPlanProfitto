@@ -1,0 +1,19 @@
+{
+  "id": "P085",
+  "buys": false,
+  "flips": [
+    "equipe",
+    "holding",
+    "presencial_casa"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Já tenho contador e advogado que resolvem, e uma pessoa sozinha online de Porto Alegre não me parece à altura da minha empresa. O preço não pesa, o que pesa é mais um fornecedor para coordenar.",
+  "objection": "Um planejador só vai depender do meu contador e do meu advogado, e eu acabo virando o intermediário.",
+  "would_change_my_mind": "Uma equipe completa que monte a holding e a sucessão e venha até mim, em vez de eu ir até ela.",
+  "price_too_cheap": 800,
+  "price_cheap": 1500,
+  "price_expensive": 5000,
+  "price_too_expensive": 10000
+}

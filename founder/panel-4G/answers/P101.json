@@ -1,0 +1,19 @@
+{
+  "id": "P101",
+  "buys": false,
+  "flips": [
+    "familia",
+    "preco_menor",
+    "anual"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Dividimos as contas em casal e R$ 49 só pra mim pesa; já larguei o Organizze em semanas. Não vejo pagar por algo que provavelmente vou abandonar.",
+  "objection": "Pagar e largar de novo, e ainda ser só uma conta pra um casal.",
+  "would_change_my_mind": "Conta compartilhada com meu parceiro por um preço menor.",
+  "price_too_cheap": 5,
+  "price_cheap": 15,
+  "price_expensive": 30,
+  "price_too_expensive": 49
+}

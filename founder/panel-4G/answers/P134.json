@@ -1,0 +1,18 @@
+{
+  "id": "P134",
+  "buys": false,
+  "flips": [
+    "humano",
+    "familia"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Eu e minha esposa já controlamos tudo na planilha, do nosso jeito. Um questionário de 20 minutos não vai entender nossa situação, e o planejador custa R$ 297.",
+  "objection": "Um app genérico não entende as particularidades da nossa vida.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 15,
+  "price_cheap": 25,
+  "price_expensive": 49,
+  "price_too_expensive": 79
+}

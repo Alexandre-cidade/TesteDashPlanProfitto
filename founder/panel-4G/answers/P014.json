@@ -1,0 +1,19 @@
+{
+  "id": "P014",
+  "buys": false,
+  "flips": [
+    "open_finance",
+    "indicacao",
+    "familia"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "convenience",
+  "reason": "Anotar tudo à mão, com as contas da casa e o que mando pra família, não vou fazer. E nenhum dos perfis de finanças que sigo falou disso.",
+  "objection": "Dá muito trabalho lançar gasto manualmente.",
+  "would_change_my_mind": "Conectar com os bancos e alguém que eu sigo recomendar.",
+  "price_too_cheap": 15,
+  "price_cheap": 29,
+  "price_expensive": 69,
+  "price_too_expensive": 99
+}

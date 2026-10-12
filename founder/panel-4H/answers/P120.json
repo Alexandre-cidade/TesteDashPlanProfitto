@@ -1,0 +1,19 @@
+{
+  "id": "P120",
+  "buys": false,
+  "flips": [
+    "referencias",
+    "holding",
+    "primeira_gratis"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "A sucessão me preocupa, mas não vou entregar meu patrimônio para uma empresa que não conheço, e como advogado consigo eu mesmo encaminhar boa parte disso.",
+  "objection": "Não conheço ninguém lá e não sei quem de fato me atenderia.",
+  "would_change_my_mind": "Um colega de Caxias que eu respeito ter usado e me indicar.",
+  "price_too_cheap": 300,
+  "price_cheap": 700,
+  "price_expensive": 1500,
+  "price_too_expensive": 2500
+}

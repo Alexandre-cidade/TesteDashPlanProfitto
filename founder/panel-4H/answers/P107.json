@@ -1,0 +1,19 @@
+{
+  "id": "P107",
+  "buys": false,
+  "flips": [
+    "garantia",
+    "primeira_gratis",
+    "independente"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Eu mesma cuido dos meus investimentos e me viro bem; pagar R$ 1.500 por mês para alguém me dizer o que eu já sei não faz sentido. E meu cônjuge teria que concordar.",
+  "objection": "Não vejo o que um planejador traria que eu não faça sozinha.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 400,
+  "price_cheap": 700,
+  "price_expensive": 1200,
+  "price_too_expensive": 2000
+}

@@ -1,0 +1,19 @@
+{
+  "id": "P224",
+  "buys": false,
+  "flips": [
+    "garantia",
+    "relatorio",
+    "primeira_gratis"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Já paguei consultoria que acabou num relatório na gaveta, e o assessor do private cuida dos investimentos sem custo. Não vejo o que muda aqui.",
+  "objection": "Pagar todo mês por reuniões e no fim nada ser executado, como da última vez.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 400,
+  "price_cheap": 900,
+  "price_expensive": 2000,
+  "price_too_expensive": 3000
+}

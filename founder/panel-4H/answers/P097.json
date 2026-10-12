@@ -1,0 +1,18 @@
+{
+  "id": "P097",
+  "buys": false,
+  "flips": [
+    "preco_menor",
+    "relatorio"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Meu assessor do banco já acompanha tudo sem mensalidade, e os aluguéis meu contador resolve. Não vou pagar R$ 1.500 por mês a mais.",
+  "objection": "É caro para conselho, já que tenho quem faça de graça.",
+  "would_change_my_mind": "Só por um preço bem menor.",
+  "price_too_cheap": 200,
+  "price_cheap": 500,
+  "price_expensive": 900,
+  "price_too_expensive": 1500
+}

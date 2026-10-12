@@ -1,0 +1,18 @@
+{
+  "id": "P197",
+  "buys": false,
+  "flips": [
+    "independente",
+    "primeira_gratis"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Meu private já me dá conselho sem mensalidade, e não vejo nada aqui dizendo que eles não ganham comissão em cima de produto.",
+  "objection": "Se eles também vendem previdência ou seguro, é mais um vendedor com outro nome, só que cobrando R$ 1.500.",
+  "would_change_my_mind": "Garantia por escrito de que não recebem comissão nem são ligados a banco.",
+  "price_too_cheap": 500,
+  "price_cheap": 1000,
+  "price_expensive": 2000,
+  "price_too_expensive": 3000
+}

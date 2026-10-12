@@ -1,0 +1,18 @@
+{
+  "id": "P192",
+  "buys": false,
+  "flips": [
+    "open_finance",
+    "familia"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "convenience",
+  "reason": "Divido as contas com minha parceira e quero juntar pro carro, mas não vou anotar gasto à mão e o app é só pra um.",
+  "objection": "Um app não entende a nossa situação de casal.",
+  "would_change_my_mind": "Conta compartilhada e conexão automática com os bancos.",
+  "price_too_cheap": 9,
+  "price_cheap": 19,
+  "price_expensive": 45,
+  "price_too_expensive": 69
+}

@@ -1,0 +1,19 @@
+{
+  "id": "P166",
+  "buys": false,
+  "flips": [
+    "indicacao",
+    "avaliacoes",
+    "garantia"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Sozinho com as contas e as crianças, até testaria os 7 dias no ônibus, mas não conheço a Profitto e nenhum dos canais que eu sigo falou dela. R$ 49 todo mês eu só pago por algo que alguém de confiança já validou.",
+  "objection": "Medo de cair numa assinatura que fica cobrando e de ser mais um app que eu abandono, porque não tenho tempo sobrando.",
+  "would_change_my_mind": "Um influenciador de finanças que eu acompanho mostrando que usa e que dá para cancelar fácil.",
+  "price_too_cheap": 9,
+  "price_cheap": 19,
+  "price_expensive": 39,
+  "price_too_expensive": 69
+}

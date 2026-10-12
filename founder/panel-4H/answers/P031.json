@@ -1,0 +1,19 @@
+{
+  "id": "P031",
+  "buys": false,
+  "flips": [
+    "presencial_casa",
+    "holding",
+    "garantia"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "convenience",
+  "reason": "Reunião a cada quinze dias com alguém de Porto Alegre, eu morando no Rio, não cabe na minha agenda. E sem meu marido sentar junto e concordar, não fecho nada.",
+  "objection": "Não tenho tempo para reuniões quinzenais e a empresa nem é daqui.",
+  "would_change_my_mind": "Se viessem até a minha casa ou empresa com poucas reuniões, e meu marido gostasse.",
+  "price_too_cheap": 400,
+  "price_cheap": 800,
+  "price_expensive": 2000,
+  "price_too_expensive": 3500
+}

@@ -1,0 +1,19 @@
+{
+  "id": "P187",
+  "buys": false,
+  "flips": [
+    "preco_menor",
+    "primeira_gratis",
+    "garantia"
+  ],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "R$ 18 mil por ano para alguém me dar conselho é muito. Eu e meu marido já conversamos com o contador e o assessor, e isso não sai de graça mas sai mais barato.",
+  "objection": "O preço, comparado com o que eu já pago para contador e assessor.",
+  "would_change_my_mind": "Um preço perto de R$ 600 ou 700 por mês.",
+  "price_too_cheap": 250,
+  "price_cheap": 500,
+  "price_expensive": 900,
+  "price_too_expensive": 1400
+}

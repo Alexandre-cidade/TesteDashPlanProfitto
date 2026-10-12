@@ -1,0 +1,19 @@
+{
+  "id": "P182",
+  "buys": false,
+  "flips": [
+    "independente",
+    "primeira_gratis",
+    "garantia"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Em nenhum lugar diz que eles não vendem produto nem recebem comissão. Se for mais um vendendo previdência disfarçado de planejamento, meu banco já faz isso de graça.",
+  "objection": "Quem me garante que não tem comissão escondida por trás da mensalidade?",
+  "would_change_my_mind": "Garantia por escrito de que não vendem nada e não ganham comissão de ninguém.",
+  "price_too_cheap": 400,
+  "price_cheap": 800,
+  "price_expensive": 1500,
+  "price_too_expensive": 2500
+}

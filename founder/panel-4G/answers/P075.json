@@ -1,0 +1,19 @@
+{
+  "id": "P075",
+  "buys": false,
+  "flips": [
+    "humano",
+    "desafio",
+    "open_finance"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Dinheiro não é o problema, mas já tenho planilha e o que me falta é alguém me cobrando, coisa que esse plano não tem.",
+  "objection": "Sem uma pessoa me cobrando eu não tenho disciplina; um relatório automático eu ignoro igual ignoro minha planilha.",
+  "would_change_my_mind": "Uma pessoa por chat acompanhando minha meta da entrada do apartamento.",
+  "price_too_cheap": 15,
+  "price_cheap": 30,
+  "price_expensive": 80,
+  "price_too_expensive": 150
+}

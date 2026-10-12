@@ -1,0 +1,15 @@
+{
+  "id": "P151",
+  "buys": false,
+  "flips": ["trial30", "desafio"],
+  "buys_if_flips": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Eu ia baixar, fazer metade do questionário e deixar pra depois. Em 7 dias eu nem começo direito, e com renda variável e juntando pro carro, R$ 49 por algo que eu não uso não rola.",
+  "objection": "Conheço meu histórico: eu não vou anotar gasto à mão todo dia, vou largar na primeira semana.",
+  "would_change_my_mind": "Ver que em 30 dias de teste eu realmente consegui manter o controle sem esforço.",
+  "price_too_cheap": 5,
+  "price_cheap": 15,
+  "price_expensive": 30,
+  "price_too_expensive": 49
+}

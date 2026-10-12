@@ -1,0 +1,19 @@
+{
+  "id": "P005",
+  "buys": false,
+  "flips": [
+    "independente",
+    "holding",
+    "internacional"
+  ],
+  "buys_if_flips": true,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Sucessão e os filhos lá fora me preocupam de verdade, mas não sei se essa empresa ganha comissão em algum produto e ela não fala nada sobre o exterior.",
+  "objection": "Como sei que não vão me empurrar produto?",
+  "would_change_my_mind": "Garantia por escrito de que não recebem comissão de nada, e alguém que entenda dos meus filhos morando fora.",
+  "price_too_cheap": 500,
+  "price_cheap": 1200,
+  "price_expensive": 3000,
+  "price_too_expensive": 6000
+}
