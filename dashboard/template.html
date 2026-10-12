@@ -143,6 +143,14 @@ details.note{max-width:none}details.note summary{cursor:pointer;font-weight:600;
 .sceo{border-top:4px solid #eda100}.sceo-btn{border-color:#eda100;background:#FFF6DD;font-weight:600}
 .sceo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}.sceo-grid ul{margin:4px 0 0;padding-left:18px;font-size:.84rem;display:grid;gap:3px}
 .mx input.ne{opacity:.45}.mx input.ne:checked{opacity:.7}
+.pos{color:var(--good)}.neg{color:var(--bad)}
+.g5{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:4px}
+.opt{display:inline-flex;align-items:center;gap:6px;cursor:pointer}.opt small{font-weight:700;font-size:.72rem}
+.mi.dim{opacity:.45}.ro{font-variant-numeric:tabular-nums}
+.quotes{display:grid;gap:8px;align-content:start}.quotes blockquote{font-size:.82rem}
+.cols4{grid-template-columns:repeat(3,minmax(0,1fr))!important}#fs-org{grid-column:auto!important}#fs-org .cofs{grid-template-columns:minmax(0,1fr)!important}
+.cofs .ctl label{font-weight:500;font-size:.85rem}
+.cofs .md{font-size:.72rem;color:var(--muted);line-height:1.3}.cofs .ctl{gap:2px}
 .help{font-size:.76rem;color:var(--muted);line-height:1.4;margin:-2px 0 0}
 .pbox{background:var(--sunk);border-radius:8px;padding:10px 12px;display:grid;gap:6px}
 .pbox .ttl{font-size:.74rem;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
@@ -236,178 +244,61 @@ select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid var(--lin
   <!-- SIMULADOR -->
   <section id="p-sim" role="tabpanel" aria-labelledby="t-sim">
     <div class="sim">
-
       <div class="stack">
         <div class="toolbar card">
-          <div class="prow" style="gap:8px"><select id="preset" aria-label="Cenários prontos">
-            <option value="">Ofertas prontas (Assistido)…</option>
-            <option value="v1">Pitch original (v1)</option>
-            <option value="atual">Oferta atual (v2)</option>
-            <option value="rec">Recomendado</option>
-            <option value="tudo">Tudo ligado</option>
-            <option value="tres">Ligar os 3 produtos</option>
-          </select><button class="btn primary" id="save">Salvar como referência</button><button class="btn sceo-btn" id="sceo-btn">★ Versão Super CEO</button><button class="btn" id="reset">Voltar ao início</button><button class="btn" data-pdf>Exportar PDF</button></div>
-          <span class="muted" style="font-size:.75rem">As setas comparam com a referência salva. Ao abrir, a referência é a oferta atual.</span>
+          <div class="prow" style="gap:8px"><button class="btn sceo-btn" id="sceo-btn">★ Versão Super CEO</button><button class="btn primary" id="save">Salvar como referência</button><button class="btn" id="reset">Voltar ao início</button><button class="btn" data-pdf>Exportar PDF</button></div>
+          <span class="muted" style="font-size:.75rem">As setas ▲▼ comparam com a referência salva.</span>
         </div>
         <div class="sbar" id="sbar" aria-live="polite"></div>
-        <div class="card sceo" id="sceo-card" hidden>
-          <div class="flexbetween"><h3>Versão Super CEO: por que cada número</h3><button class="lnk" id="sceo-close">fechar</button></div>
-          <p class="muted" style="margin:4px 0 10px;font-size:.85rem">A versão Super CEO combina referências de mercado com uma otimização feita no próprio simulador: entre preços, verbas de anúncio e produtos ligados, ficou a combinação de maior valuation no ano 5 sem deixar o caixa negativo, com até R$ 8 mil de anúncios por mês no ano 1. Os números do canal do Neto (inscritos, visualizações e crescimento) continuam os que vocês preencheram.</p>
-          <div class="sceo-grid">
-            <div><b>Realismo</b><ul><li>Conservador: só 1 em cada 4 compras do teste com compradores simulados se confirma. Pessoas reais compram menos que pessoas simuladas.</li></ul></div>
-            <div><b>Assistido</b><ul><li>R$ 397/mês com diagnóstico de R$ 197 (em 3x). Na otimização, esse preço deu o maior valuation.</li><li>Entregas que os compradores pedem: garantia, plano de exemplo, sessão do casal, raio-X das tarifas, plano de dívidas, CFP e contato mensal.</li><li>Cancelam 2% ao mês. Fintechs de consumo ficam entre 1% e 3%.</li><li>130 clientes por planejador: cerca de 100 em acompanhamento tradicional, mais com a plataforma e reuniões de 30 min. O planejador recebe 20%, com linha d'água de R$ 1.500.</li></ul></div>
-            <div><b>Digital</b><ul><li>R$ 49/mês, com Open Finance, desafio de 30 dias, garantia e chat com pessoa: as 4 mudanças que os 225 compradores do perfil mais pediram.</li><li>Custo de R$ 6 por cliente por mês com esses recursos. Cancelam 4% ao mês, enquanto apps de assinatura ficam entre 3% e 8%.</li></ul></div>
-            <div><b>Private</b><ul><li>R$ 1.800/mês com primeira reunião grátis, referências de clientes, holding com advogado parceiro e independência garantida. Foram os 4 pedidos mais citados pelos 225 compradores de alta renda.</li><li>40 clientes por planejador sênior, que recebe 30% com linha d'água de R$ 3.000. Parceiros custam R$ 150 por cliente.</li><li>Clientes chegam pela base dos assessores (15 por mês, 15% de comissão), sem anúncios.</li></ul></div>
-            <div><b>Marketing</b><ul><li>Anúncios de R$ 5 mil (Assistido) e R$ 3 mil (Digital) por mês, crescendo 25% ao ano.</li><li>Custo por interessado: R$ 30, R$ 15 e R$ 120, subindo 5% ao ano porque anunciar mais encarece.</li><li>Canal do Neto: 1,5% de quem assiste clica no link e 35% dos cliques deixam contato. A referência de mercado é de 0,3% a 2% de cliques, até 3% em finanças.</li></ul></div>
-            <div><b>Empresa</b><ul><li>Imposto de 6%: CNAE de educação financeira no Simples Nacional.</li><li>Outros custos fixos: R$ 1.500. Plataforma: R$ 5.000.</li><li>Adiantamento ao CEO: R$ 5 mil por mês até dar lucro e R$ 10 mil depois.</li><li>Dividendos: 50% do lucro do ano, mantendo pelo menos R$ 50 mil em caixa.</li></ul></div>
-          </div>
-          <p class="help" style="margin-top:8px">Referências: <a href="https://www.superads.ai/facebook-ads-costs/cost-per-lead/brazil" target="_blank" rel="noopener">custo por interessado no Meta, Brasil (Superads)</a> · <a href="https://www.conversion.com.br/blog/calculadora-de-custo-por-lead-cpl" target="_blank" rel="noopener">CPL médio (Conversion)</a> · <a href="https://blog.mean.ceo/?p=10240" target="_blank" rel="noopener">cancelamento em assinaturas e fintech</a> · <a href="https://www.kitces.com/blog/50-great-clients-how-many-clients-does-a-financial-advisor-need/" target="_blank" rel="noopener">clientes por planejador (Kitces)</a> · <a href="https://influencerfee.com/blog/youtube-ctr-benchmarks/" target="_blank" rel="noopener">cliques em link do YouTube</a>. São referências de direção, não garantias. Os compradores simulados vêm dos testes desta página.</p>
-        </div>
         <nav class="secnav" aria-label="Seções"><a href="#sec-prod"><b>1</b> Produtos</a><a href="#sec-emp"><b>2</b> Empresa</a><a href="#sec-scen"><b>3</b> Cenários dos sócios</a><a href="#sec-res"><b>4</b> Resultados</a></nav>
-        <div class="blk" id="sec-prod"><span class="tag ti">Individual · cada produto</span><h2><span class="num">1</span> Produtos</h2><p class="muted">Cada coluna é um produto. Preço, entregas, como chegam os clientes e atendimento de cada um.</p></div>
+        <div class="card sceo" id="sceo-card" hidden></div>
+
+        <div class="blk" id="sec-prod"><span class="tag ti">Individual · cada produto</span><h2><span class="num">1</span> Produtos</h2><p class="muted">Cada coluna é um produto. Mude qualquer número: o painel da direita recalcula na hora.</p></div>
         <div class="card" id="focus-card">
           <div class="flexbetween"><h3>Por onde começar</h3><label class="tog" style="align-items:center"><input type="checkbox" id="mx-adv"><span>Mostrar ajustes avançados</span></label></div>
-          
           <div id="focus-rec" class="frec"></div>
           <div class="tbl mx-wrap" style="margin-top:12px"><table id="mx-in" class="mx"></table></div>
-          <p class="help" style="margin-top:8px">Desmarque "vender" para tirar um produto do cenário sem apagar. "Sozinho" = a empresa vendendo só aquele produto, pagando plataforma, CEO e outros custos fixos. Clique no nome de uma seção para abrir ou fechar.</p>
+          <p class="help" style="margin-top:8px">Como a conversão é calculada: a taxa base vem de referências de mercado e você pode trocar. Preço e entregas mudam essa taxa conforme a reação dos compradores simulados de cada produto, num efeito limitado entre metade e o dobro. Quem chega por indicação compra 2× mais, e quem vem do canal do Neto 1,5×.</p>
         </div>
-        <div class="blk" id="sec-emp"><span class="tag te">Empresa · vale para todos</span><h2><span class="num">2</span> Empresa</h2><p class="muted">Canal do Neto, equipe, custos fixos e caixa: valem para todos os produtos ao mesmo tempo.</p></div>
+
+        <div class="blk" id="sec-emp"><span class="tag te">Empresa · vale para todos</span><h2><span class="num">2</span> Empresa</h2><p class="muted">Canal do Neto, equipe, custos fixos, sócios e valuation.</p></div>
         <div class="cols4" id="co-block">
-          <div class="card cocard" id="fs-org"><h3>Aquisição da empresa</h3><p class="help" style="margin:2px 0 10px">Canal do Neto e orgânico. Marketing pago, rede e indicações de cada produto ficam na tabela acima.</p><div class="cofs">
-            <div class="ctl"><label for="ytsubs">Inscritos no canal hoje</label><input type="number" id="ytsubs" class="tin" min="0" step="100" inputmode="numeric"></div>
-          <div class="ctl"><label for="ytviews">Visualizações por mês (somando todos os vídeos)</label><input type="number" id="ytviews" class="tin" min="0" step="500" inputmode="numeric"></div>
-          <div class="ctl"><div class="row"><label for="ytg1">Crescimento por mês no ano 1</label><output id="o-ytg1"></output></div><input type="range" id="ytg1" min="-5" max="20" step="0.5"></div>
-          <div class="ctl"><div class="row"><label for="ytg2">Crescimento por mês no ano 2</label><output id="o-ytg2"></output></div><input type="range" id="ytg2" min="-5" max="20" step="0.5"></div>
-          <div class="ctl"><div class="row"><label for="ytg3">Crescimento por mês no ano 3</label><output id="o-ytg3"></output></div><input type="range" id="ytg3" min="-5" max="20" step="0.5"></div>
-          <div class="ctl"><div class="row"><label for="ytg4">Crescimento por mês no ano 4</label><output id="o-ytg4"></output></div><input type="range" id="ytg4" min="-5" max="20" step="0.5"></div>
-          <div class="ctl"><div class="row"><label for="ytg5">Crescimento por mês no ano 5</label><output id="o-ytg5"></output></div><input type="range" id="ytg5" min="-5" max="20" step="0.5"></div>
-          <button class="btn" id="ytg-same" type="button">Usar o crescimento do ano 1 em todos os anos</button>
-          <p class="help">Inscritos e visualizações crescem juntos, mês a mês, no ritmo de cada ano.</p>
-          <div class="ctl"><div class="row"><label for="ytctr">De cada 100 visualizações, quantas clicam no link</label><output id="o-ytctr"></output></div><input type="range" id="ytctr" min="0" max="5" step="0.1"></div>
-          <div class="ctl"><div class="row"><label for="ytlead">De cada 100 cliques, quantos deixam contato</label><output id="o-ytlead"></output></div><input type="range" id="ytlead" min="0" max="100" step="5"></div>
-          <div class="ctl"><div class="row"><label for="orgother">Interessados por mês de outros orgânicos (Instagram, boca a boca, Google)</label><output id="o-orgother"></output></div><input type="range" id="orgother" min="0" max="500" step="5"></div>
-          <div class="ctl"><div class="row"><label for="orgcost">Custo mensal para produzir o conteúdo</label><output id="o-orgcost"></output></div><input type="range" id="orgcost" min="0" max="20000" step="250"></div>
-          <label class="tog"><input type="checkbox" id="yttrust"><span>A audiência confia no Neto<small>Quem vem do canal compra como quem chega indicado.</small></span></label>
-            <div class="osplit"><span class="ml">Como dividir o público do canal entre os produtos</span><span class="md">Arraste para dizer para qual produto o Neto mais leva gente. A porcentagem final aparece ao lado e soma 100%.</span><div id="orgsplit"></div></div>
-            <label class="tog"><input type="checkbox" id="menu"><span>Oferecer todos os produtos juntos (cardápio)<small>Quem chega vê todos os produtos ligados. Usa a escolha real do teste do cardápio: um produto tira vendas do outro.</small></span></label>
-          </div></div>
-          <div class="card cocard"><h3>Atendimento e equipe</h3><p class="help" style="margin:2px 0 10px">Liderança e custos que valem para todos os planejadores. Capacidade e % de cada planejador ficam por produto.</p><div class="cofs">
-            <div class="pbox" aria-live="polite"><span class="ttl">Planejadores necessários (informativo)</span><div class="grid6" id="pbox"></div><p class="help" id="pbox-note"></p></div>
-            <div class="ctl"><div class="row"><label for="span">Planejadores por líder de time</label><output id="o-span"></output></div><input type="range" id="span" min="2" max="15" step="1"></div>
-            <div class="ctl"><div class="row"><label for="lead">Quanto o líder recebe (% da receita do time)</label><output id="o-lead"></output></div><input type="range" id="lead" min="0" max="20" step="0.5"></div>
-            <div class="ctl"><div class="row"><label for="perprof">Custo fixo por pessoa da equipe, por mês</label><output id="o-perprof"></output></div><input type="range" id="perprof" min="0" max="2000" step="50"></div>
-          </div></div>
-          <div class="card cocard"><h3>Custos fixos</h3><p class="help" style="margin:2px 0 10px">Custos da empresa que não dependem do produto.</p><div class="cofs">
-            <div class="ctl"><div class="row"><label for="pmt">Plataforma Dashplan por mês (até 400 clientes)</label><output id="o-pmt"></output></div><input type="range" id="pmt" min="0" max="10000" step="250"></div>
-            <div class="ctl"><div class="row"><label for="other">Outros custos fixos (contador, sistemas)</label><output id="o-other"></output></div><input type="range" id="other" min="0" max="10000" step="100"></div>
-            <div class="ctl"><div class="row"><label for="tax">Imposto sobre a receita</label><output id="o-tax"></output></div><input type="range" id="tax" min="4" max="20" step="0.5"></div>
-          </div></div>
-          <div class="card cocard"><h3>Sócios, dividendos e valuation</h3><p class="help" style="margin:2px 0 10px">Adiantamento do CEO, distribuição de lucro e quanto a empresa vale.</p><div class="cofs">
-            <div class="ctl"><div class="row"><label for="ceo1">Adiantamento ao CEO por mês (até dar lucro)</label><output id="o-ceo1"></output></div><input type="range" id="ceo1" min="0" max="15000" step="500"></div>
-            <p class="help">É adiantamento de dividendos, não salário: sai do caixa, mas não entra como custo. Na distribuição, o CEO recebe a parte dele menos o que já adiantou.</p>
-            <div class="ctl"><div class="row"><label for="ceo2">Adiantamento ao CEO por mês (depois do 1º lucro)</label><output id="o-ceo2"></output></div><input type="range" id="ceo2" min="0" max="20000" step="500"></div>
-            <p class="help" id="ceo-note">A partir do primeiro mês em que receita ≥ todos os custos, a retirada muda para este valor e é paga pelo próprio lucro.</p>
-            <div class="ctl"><div class="row"><label for="cash">Caixa inicial</label><output id="o-cash"></output></div><input type="range" id="cash" min="20000" max="300000" step="5000"></div>
-          </div></div>
-            <div class="ctl"><div class="row"><label for="ceoshare">Participação do CEO no negócio</label><output id="o-ceoshare"></output></div><input type="range" id="ceoshare" min="0" max="100" step="1"></div>
-            <div class="ctl"><div class="row"><label for="divpct">Dividendos: quanto do lucro do ano distribuir</label><output id="o-divpct"></output></div><input type="range" id="divpct" min="0" max="100" step="5"></div>
-            <div class="ctl"><div class="row"><label for="divres">Caixa mínimo antes de distribuir</label><output id="o-divres"></output></div><input type="range" id="divres" min="0" max="500000" step="10000"></div>
-            <div class="ctl"><div class="row"><label for="multR">Valuation: múltiplo da receita recorrente anual</label><output id="o-multR"></output></div><input type="range" id="multR" min="0.5" max="8" step="0.5"></div>
-            <div class="ctl"><div class="row"><label for="multE">Valuation: múltiplo do lucro anual</label><output id="o-multE"></output></div><input type="range" id="multE" min="2" max="20" step="1"></div>
-            <p class="help">Valuation = média entre (receita recorrente anual × múltiplo) e (lucro dos últimos 12 meses × múltiplo). Referência para empresas de serviço recorrente pequenas: 1 a 3× a receita, 5 a 10× o lucro.</p>
-            <div class="ctl"><label for="realc">Quanto acreditar nos compradores simulados</label><select id="realc" class="tin"><option value="100">Otimista: vale tudo o que disseram</option><option value="50">Moderado: metade das compras se confirma</option><option value="25">Conservador: só 1 em 4 se confirma</option></select><span class="md">Pessoas simuladas costumam dizer "sim" mais do que pessoas reais. Isso desconta as compras do teste em todos os produtos.</span></div>
+          <div class="card cocard" id="fs-org"><h3>Canal do Neto</h3><p class="help" style="margin:2px 0 10px">Use os números do YouTube Studio.</p><div class="cofs" id="co-org"></div></div>
+          <div class="card cocard"><h3>Equipe e custos fixos</h3><p class="help" style="margin:2px 0 10px">Valem para a empresa inteira.</p><div class="cofs" id="co-cost"></div><div class="pbox" aria-live="polite" style="margin-top:10px"><span class="ttl">Planejadores necessários</span><div class="grid6" id="pbox"></div></div></div>
+          <div class="card cocard"><h3>Sócios e dividendos</h3><p class="help" style="margin:2px 0 10px">O adiantamento do CEO é adiantamento de dividendos, não custo.</p><div class="cofs" id="co-part"></div></div>
         </div>
-        <div class="blk" id="sec-scen"><span class="tag ts">Compartilhado</span><h2><span class="num">3</span> Cenários dos sócios</h2><p class="muted">Salve sua visão com um nome e compare com a dos outros sócios.</p></div>
+
+        <div class="blk" id="sec-scen"><span class="tag ts">Compartilhado</span><h2><span class="num">3</span> Cenários dos sócios</h2><p class="muted">Salve sua visão com um nome. Compare na aba "Comparar cenários".</p></div>
         <div class="card" id="scen-card">
           <div class="flexbetween"><h3>Salvar cenário</h3><span class="muted" id="scen-status" style="font-size:.8rem">conectando…</span></div>
-          <p class="muted" style="font-size:.8rem;margin:4px 0 10px">Ajuste os produtos e alavancas, dê um nome e salve. Todos que abrirem esta página veem os cenários salvos, podem abrir qualquer um para ver os números e marcar vários para comparar lado a lado.</p>
-          <div class="prow"><input type="text" id="scen-name" class="tin" maxlength="60" placeholder="Ex.: Alexandre – foco no Digital primeiro" aria-label="Nome do cenário"><button class="btn primary" id="scen-save">Salvar meu cenário</button></div>
+          <div class="prow" style="margin-top:8px"><input type="text" id="scen-name" class="tin" maxlength="60" placeholder="Ex.: Alexandre – foco no Assistido" aria-label="Nome do cenário"><button class="btn primary" id="scen-save">Salvar meu cenário</button></div>
           <div class="tbl" style="margin-top:10px"><table id="tbl-scen"></table></div>
-          <div id="scen-cmp-wrap" hidden style="margin-top:14px"><h3 style="font-size:.95rem">Comparação</h3><div class="tbl" style="margin-top:6px"><table id="tbl-scen-cmp"></table></div></div>
         </div>
-        <div class="blk" id="sec-res"><span class="tag tr">Resultado</span><h2><span class="num">4</span> Resultados</h2><p class="muted">A empresa inteira, somando todos os produtos à venda.</p></div>
-        <details class="note" id="honesty"><summary>De onde vêm os números</summary>São 1.000 compradores simulados, todos agentes de IA com perfil próprio: 50 viram o pitch original, 50 a oferta atual e 900 (10 segmentos, 12 comportamentos, várias cidades) viram uma de 4 ofertas, 225 em cada. A página não roda agentes a cada mudança: usa um modelo calibrado nas 1.020 respostas reais (incluindo 20 do re-teste). Real × modelo: oferta atual 17% × 12%, diagnóstico R$ 197 21% × 23%, oferta completa 25% × 25%, Profissional R$ 390 19% × 20%. Todos os que compraram levaram só o diagnóstico. Combinações que nenhum agente viu são extrapolação. Confirme com a pré-venda. Mais 450 para os produtos: Digital R$ 49 sozinho, 18% pagariam; cardápio com 3 produtos, 26% compram algo (Digital 10%, diagnóstico do Assistido 16%, Private 0,4%). No cardápio, só 1 dos 36 que compraram o diagnóstico seguiria para os R$ 297/mês.</details>
+
+        <div class="blk" id="sec-res"><span class="tag tr">Resultado</span><h2><span class="num">4</span> Resultados</h2><p class="muted">A empresa inteira, somando os produtos à venda.</p></div>
         <div class="kpis" id="kpis"></div>
-        <div class="card" id="val-card">
-          <div class="flexbetween"><h3>Quanto a empresa vale (valuation)</h3><span class="muted" style="font-size:.8rem" id="val-note"></span></div>
-          <div class="kpis" id="val-kpis" style="margin-top:10px"></div>
-          <svg class="chart" id="ch-val" viewBox="0 0 760 240" role="img" aria-label="Valuation mês a mês"></svg>
-          <div class="tbl" style="margin-top:10px"><table id="tbl-val"></table></div>
-          <p class="help" style="margin-top:6px">Método: média entre (receita recorrente anual × múltiplo) e (lucro operacional dos últimos 12 meses × múltiplo). Ajuste os múltiplos em Empresa → Sócios, dividendos e valuation. É uma referência para acompanhar a evolução, não um laudo.</p>
-        </div>
-        <div class="card" id="org-card">
-          <div class="flexbetween"><h3>Resultado do orgânico (canal do Neto)</h3><span class="muted" id="org-note" style="font-size:.8rem"></span></div>
-          <p class="muted" style="font-size:.8rem;margin:4px 0 10px">O Neto é a cara da Profitto e o canal dele vira um funil: quem assiste clica no link, deixa o contato e decide comprar como quem chega indicado, porque já confia nele. No painel, quem "segue influenciador de finanças" comprou 2 a 5 vezes mais que a média. Preencha com os números do YouTube Studio do canal. Em cada produto, o "peso no canal do Neto" (em Aquisição, à esquerda) diz para onde vão os interessados.</p>
-          <p class="help" id="org-sum"></p><button class="btn" id="org-edit" type="button">Ajustar o canal</button>
-          <p class="help" id="org-warn"></p>
-          <div class="kpis" id="org-kpis" style="margin-top:10px"></div>
-          <div class="flexbetween" style="margin-top:14px"><h3 style="font-size:.95rem">Clientes novos por mês, por canal</h3><div class="legend" id="org-legend"></div></div>
-          <svg class="chart" id="ch-org" viewBox="0 0 760 240" role="img" aria-label="Clientes novos por mês, por canal"></svg>
-          <div class="tbl" style="margin-top:10px"><table id="tbl-org"></table></div>
-        </div>
-        <div class="card" id="prod-card">
-          <div class="flexbetween"><h3>Resultado de cada produto (cenário consolidado)</h3><span class="muted" id="prod-note" style="font-size:.8rem"></span></div>
-          <div class="flexbetween" style="margin-top:10px"><h3 style="font-size:.95rem">Clientes ativos por produto</h3><div class="legend" id="prod-legend"></div></div>
-          <svg class="chart" id="ch-prod" viewBox="0 0 760 240" role="img" aria-label="Clientes ativos por produto, 5 anos"></svg>
-          <div class="tbl" style="margin-top:10px"><table id="tbl-prod"></table></div>
-        </div>
         <div class="grid2">
-          <div class="card">
-            <div class="flexbetween"><h3>Clientes ativos</h3><div class="legend"><span><i style="background:var(--s1)"></i>Cenário</span><span><i style="background:var(--s2)"></i>Referência</span><span><i style="background:var(--muted);height:0;border-top:1px dashed var(--muted)"></i>Break-even</span></div></div>
-            <svg class="chart" id="ch-clients" viewBox="0 0 560 240" role="img" aria-label="Clientes ativos por mês, 5 anos"></svg>
-          </div>
-          <div class="card">
-            <div class="flexbetween"><h3>Caixa acumulado</h3><div class="legend"><span><i style="background:var(--s1)"></i>Cenário</span><span><i style="background:var(--s2)"></i>Referência</span></div></div>
-            <svg class="chart" id="ch-cash" viewBox="0 0 560 240" role="img" aria-label="Caixa acumulado por mês, 5 anos"></svg>
-          </div>
+          <div class="card"><div class="flexbetween"><h3>Clientes por produto</h3><div class="legend" id="prod-legend"></div></div><svg class="chart" id="ch-prod" viewBox="0 0 760 240" role="img" aria-label="Clientes ativos por produto"></svg></div>
+          <div class="card"><div class="flexbetween"><h3>Caixa e valuation</h3><div class="legend"><span><i style="background:var(--s3)"></i>caixa</span><span><i style="background:var(--s1)"></i>valuation</span></div></div><svg class="chart" id="ch-val" viewBox="0 0 760 240" role="img" aria-label="Caixa e valuation por mês"></svg></div>
         </div>
-        <div class="card">
-          <div class="flexbetween"><h3>Escala: ano a ano</h3><div class="legend"><span><i style="background:var(--s1);height:8px;border-radius:2px"></i>Receita</span><span><i style="background:var(--s2);height:8px;border-radius:2px"></i>Resultado</span></div></div>
-          <svg class="chart" id="ch-years" viewBox="0 0 760 260" role="img" aria-label="Receita e resultado por ano, anos 1 a 5"></svg>
-          <div class="tbl" style="margin-top:10px"><table id="tbl-years"></table></div>
-        </div>
-        <div class="card">
-          <div class="flexbetween"><h3>Para onde vai cada R$ 100 da receita</h3><select id="split-year" aria-label="Ano"><option value="0">Ano 1</option><option value="1">Ano 2</option><option value="2">Ano 3</option><option value="3">Ano 4</option><option value="4" selected>Ano 5</option></select></div>
-          <p class="muted" style="font-size:.8rem;margin:4px 0 10px">Divisão da receita do ano escolhido. A última linha é o que fica para a empresa depois de tudo.</p>
-          <div class="bars" id="split"></div>
-        </div>
-        <div class="card">
-          <div class="flexbetween"><h3>Canais de aquisição</h3><span class="muted" id="ch-note" style="font-size:.8rem"></span></div>
-          <div class="tbl" style="margin-top:8px"><table id="tbl-ch"></table></div>
-        </div>
+        <div class="card"><h3>Ano a ano</h3><div class="tbl" style="margin-top:8px"><table id="tbl-years"></table></div></div>
         <div class="grid2">
-          <div class="card">
-            <div class="flexbetween"><h3>Quem compraria agora</h3><span class="muted num" id="dots-sum"></span></div>
-            <div class="scale" style="margin-block:8px 10px"><span><b style="background:var(--dot3)"></b>provável (≥50%)</span><span><b style="background:var(--dot2)"></b>talvez (25–50%)</span><span><b style="background:var(--dot1)"></b>difícil (10–25%)</span><span><b style="background:var(--dot0)"></b>não (&lt;10%)</span></div>
-            <div class="dots" id="dots"></div>
-            <p class="muted" style="font-size:.75rem;margin:10px 0 0">Bolinha com contorno = comprou de verdade no painel. Toque numa bolinha para ver a pessoa.</p>
-          </div>
-          <div class="card">
-            <h3>O que mais faria comprar</h3>
-            <p class="muted" id="lr-note" style="font-size:.8rem;margin:4px 0 10px"></p>
-            <div class="bars" id="levers-rank"></div>
-          </div>
+          <div class="card"><div class="flexbetween"><h3>De onde vêm os clientes</h3><select id="ch-year" aria-label="Ano"><option value="0">Ano 1</option><option value="1">Ano 2</option><option value="2">Ano 3</option><option value="3">Ano 4</option><option value="4" selected>Ano 5</option></select></div><div class="tbl" style="margin-top:8px"><table id="tbl-ch"></table></div></div>
+          <div class="card"><div class="flexbetween"><h3>Para onde vai cada R$ 100</h3><span class="muted" id="split-y" style="font-size:.8rem"></span></div><div class="bars" id="split" style="margin-top:8px"></div></div>
         </div>
-        <div class="card" id="pick-card" hidden></div>
-        <div class="card">
-          <h3>Mês a mês (5 anos)</h3>
-          <div class="tbl" style="margin-top:8px"><table id="tbl-month"></table></div>
-        </div>
+        <div class="card"><div class="flexbetween"><h3>O que faria mais gente comprar</h3><select id="obj-prod" aria-label="Produto"></select></div><p class="muted" id="obj-note" style="font-size:.8rem;margin:4px 0 10px"></p><div class="grid2"><div class="bars" id="levers-rank"></div><div id="obj-quotes" class="quotes"></div></div></div>
       </div>
       <aside class="live" id="live" aria-label="Resultado ao vivo">
         <div class="flexbetween"><h3>Resultado ao vivo</h3><span class="verdict" id="lv-verdict"></span></div>
         <p class="lv-chg" id="lv-chg" aria-live="polite"></p>
         <div class="lv-met" id="lv-met"></div>
         <div class="lv-blk"><div class="flexbetween"><span class="eyebrow">Caixa em 5 anos</span><span class="legend"><span><i style="background:var(--s1)"></i>cenário</span><span><i style="background:var(--s2)"></i>ref.</span></span></div><div id="lv-cash"></div></div>
-        <div class="lv-blk"><span class="eyebrow">Clientes por produto</span><div id="lv-prod"></div></div>
+        <div class="lv-blk"><span class="eyebrow">Por produto (ano 5)</span><div id="lv-prod"></div></div>
         <button class="btn primary" data-pdf>Exportar PDF</button>
-        <p class="help">▲▼ = diferença para a referência salva. Salve um cenário para comparar com os sócios.</p>
       </aside>
     </div>
   </section>
 
-  <!-- PESSOAS -->
   <!-- COMPARAR CENÁRIOS -->
   <section id="p-cmp" role="tabpanel" aria-labelledby="t-cmp" hidden>
     <div class="stack">
@@ -580,795 +471,375 @@ function prob(p,c){const u=unresolved(p,c).length;const pen=Math.pow(W,u);
   return Math.min(1,K*0.6*pscore(p,c.m)*pen)}
 function panelRate(c){let s=0;P.forEach(p=>s+=prob(p,c));return s/P.length}
 
-// ---- modelo do negócio ----
+// ======================= SIMULADOR v2 (modelo simples) =======================
 const HZ=60;
-function team(clients,c){const planners=Math.max(1,Math.ceil(clients/Math.max(1,c.cap)));const leaders=Math.floor(planners/Math.max(1,c.span));return {planners,leaders}}
-function teamCost(tm,c){return tm.planners*c.pfix+(tm.planners+tm.leaders)*c.perprof}
-function leadShare(tm,c){return tm.leaders>0?Math.min(1,tm.leaders*c.span/tm.planners):0}
-function platformCost(clients,c){return c.pmt+Math.max(0,clients-400)*20}
-const CH=['dir','pag','ind','ase','org'];
-const MIX=__MIX__;
-// ---- compradores próprios do Digital e do Private ----
 const SETS=__SETS__;
-const KINDNAME={as:'Compradores do Assistido (1.000)',dg:'Compradores do Digital ('+((SETS.dg&&SETS.dg.personas.length)||0)+')',pv:'Compradores do Private ('+((SETS.pv&&SETS.pv.personas.length)||0)+')',manual:'Informada manualmente'};
-const xk=(set,code)=>set+'_'+code;
-// opções equivalentes entre os tipos de produto (ex.: "Sem comissão" do Assistido = "Independência" do Private)
-const MAPG={dg:{checkin:'humano',garantia:'garantia',prova:'avaliacoes',casal:'familia'},pv:{comissao:'independente',garantia:'garantia',prova:'referencias',casal:'familia'}};
-function genOn(c,set,f){const m=MAPG[set]||{};return Object.keys(m).some(g=>m[g]===f&&c[g])}
-function lv(c,g){if(c[g])return true;return ['dg','pv'].some(st=>MAPG[st][g]&&c[xk(st,MAPG[st][g])])}
-function setU(p,c,set){let u=0;(p.F||[]).forEach(f=>{if(f==='preco_menor')return;if(!c[xk(set,f)]&&!genOn(c,set,f))u++});return u}
-function setProb(p,c,set){const S=SETS[set];return Math.min(1,S.k*pscore(p,c.m)*Math.pow(S.w,setU(p,c,set)))}
-function setRate(c,set){const ps=SETS[set].personas;let s=0;ps.forEach(p=>s+=setProb(p,c,set));return s/ps.length}
-function kindOf(p){return p.kind==='modelo'?'as':p.kind==='painel'?(p.id==='dg'||p.id==='pv'?p.id:'manual'):(p.kind||'as')}
-function personasOf(kind){return (kind==='dg'||kind==='pv')&&SETS[kind]?SETS[kind].personas:P}
-function probOf(p,c,kind){return (kind==='dg'||kind==='pv')?setProb(p,c,kind):prob(p,c)}
-const WARMCODE={dg:'indicacao',pv:'referencias'};
-
-const PRODS=null;
-function barrierRate(cfg){let s=0;P.forEach(p=>s+=Math.pow(W,unresolved(p,cfg).length));return s/P.length}
-function vwScore(vw,m){const[tc,c,e,t]=vw;let s;if(m<=c)s=1;else if(m<=e)s=1-0.4*(m-c)/Math.max(1,e-c);else if(m<t)s=0.6*(t-m)/Math.max(1,t-e);else s=0;if(m<tc)s*=0.5;return s}
-function baseRate(p){
-  const k=kindOf(p);
-  if(k==='dg'||k==='pv')return SETS[k]?setRate(p,k):0;
-  if(k!=='manual')return panelRate(p);
-  const tc=Object.assign({},p,p.tcfg||{});const b0=barrierRate(tc)||1;const v0=vwScore(p.vw||[p.m*0.3,p.m*0.6,p.m*1.2,p.m*1.8],p.tm||p.m)||0.01;
-  return Math.min(1,p.pbase/100*barrierRate(p)/b0*vwScore(p.vw||[p.m*0.3,p.m*0.6,p.m*1.2,p.m*1.8],p.m)/v0);
-}
-function warmOf(p){const k=kindOf(p);if(k==='dg'||k==='pv'){if(!SETS[k])return 1;const b=setRate(p,k);const w=Object.assign({},p,{[xk(k,WARMCODE[k])]:true});return b>0?setRate(w,k)/b:1}const w=Object.assign({},p,{prova:true});if(k!=='manual'){const b=panelRate(p);return b>0?panelRate(w)/b:1}const b=barrierRate(p);return b>0?barrierRate(w)/b:1}
-function menuFactor(p,st,list){if(!st.company.menu||list.length<2||!p.menuF)return 1;if(p.menuF==='as')return MIX.F.as/MIX.C;if(p.menuF==='dg')return list.some(q=>q.menuF==='as')?MIX.F.dg/MIX.E:1;return 1}
-function simulate(st){
-  st=migrate(st);const c=st.company;const list=st.list.filter(p=>p.on);
-  const tf=(c.tax+3.5)/100;
-  const RE=(c.realc||50)/100;
-  const L0=list.map(p=>{const r=baseRate(p)*RE*menuFactor(p,st,list);return {p,rate:r,warm:warmOf(p),coh:{dir:[],pag:[],ind:[],ase:[],org:[]},months:[]}});
-  const sumW=list.reduce((a,p)=>a+(+p.orgw||0),0);let ytM=1;
-  const months=[];let cash=c.cash-15000,beMonth=null,minCash=cash,outMonth=null,aOut=0;
-  for(let mo=1;mo<=HZ;mo++){
-    const ramp=mo===1?0.5:mo===2?0.75:1, yi=Math.floor((mo-1)/12);
-    if(mo>1)ytM*=1+(c['ytg'+Math.min(5,yi+1)]||0)/100;const yg=ytM;const ytSubs=(c.ytsubs||0)*yg,ytViews=(c.ytviews||0)*yg;
-    const orgL=(ytViews*(c.ytctr||0)/100*(c.ytlead||0)/100+(c.orgother||0))*ramp;
-    let leads=0,diags=0,newSubs=0,lost=0,clients=0,rev=0,comm={ind:0,ase:0},planVar=0,deliv=0,mkt=0,served=0,planners=0,pfixC=0,mrr=0;
-    const byCh={};CH.forEach(k=>byCh[k]={n:0,rev:0,newSubs:0});
-    L0.forEach(o=>{const p=o.p;const g=Math.pow(1+p.growth/100,yi);
-      const gm=Math.pow(1+(p.mktgr||0)/100,yi),gc=Math.pow(1+(p.cplgr||0)/100,yi);
-      const L={dir:p.rede*ramp*g,pag:(p.cpl>0?p.mkt*gm/(p.cpl*gc):0)*ramp,ind:p.pleads*ramp*g,ase:p.aleads*ramp*g,org:sumW>0?orgL*(+p.orgw||0)/sumW:0};
-      const dur={dir:0,pag:0,ind:p.pdur,ase:p.adur,org:0},com={dir:0,pag:0,ind:p.pcom/100,ase:p.acom/100,org:0};
-      let pn=0,pr=0,pns=0,pc=0,pd=0,pnsOrg=0;
-      CH.forEach(k=>{
-        const buyers=L[k]*o.rate*((k==='ind'||k==='ase'||(k==='org'&&c.yttrust))?o.warm:1);
-        const d=p.diag?buyers:0;const ns=p.diag?buyers*p.conv/100:buyers;
-        const C=o.coh[k];C.forEach(x=>{const l=x.n*p.churn/100;lost+=l;x.n-=l;x.age++});C.push({n:ns,age:0});
-        const n=C.reduce((a,x)=>a+x.n,0);const nCom=C.reduce((a,x)=>a+(x.age<dur[k]?x.n:0),0);
-        const r=n*p.m+d*(p.diag?p.dprice:0);
-        const cm=com[k]?(nCom*p.m+d*(p.diag?p.dprice:0))*com[k]:0;
-        if(com[k])comm[k]+=cm;
-        pn+=n;pr+=r;pns+=ns;pc+=cm;pd+=d;leads+=L[k];if(k==='org')pnsOrg+=ns;
-        byCh[k].n+=n;byCh[k].rev+=r;byCh[k].newSubs+=ns;
-      });
-      const pl=p.plan>0?Math.ceil(pn/Math.max(1,p.cap)):0;
-      const pv=pr*p.plan/100, dv=pn*p.deliv, mk=p.mkt*gm;
-      const top=Math.max(0,pl*(p.pfix||0)-pv);planVar+=pv;deliv+=dv;mkt+=mk;planners+=pl;pfixC+=top;if(p.plan>0)served+=pr;
-      diags+=pd;newSubs+=pns;clients+=pn;rev+=pr;mrr+=pn*p.m;
-      o.months.push({nsOrg:pnsOrg,n:pn,rev:pr,ns:pns,comm:pc,diags:pd,pl,pv,dv,mk,top,tax:pr*tf});
-    });
-    const tm={planners,leaders:Math.floor(planners/Math.max(1,c.span))};
-    const leadVar=planners>0?served*c.lead/100*leadShare(tm,c):0;
-    const taxFee=rev*tf, commVar=comm.ind+comm.ase;
-    const varCost=planVar+taxFee+leadVar+commVar+deliv;
-    const tcost=pfixC+(tm.planners+tm.leaders)*c.perprof;
-    const ceo=beMonth===null?c.ceo1:c.ceo2;
-    const platform=platformCost(clients,c);
-    const orgCost=c.orgcost||0;const fixed=platform+mkt+c.other+tcost+orgCost;
-    const profit=rev-varCost-fixed;
-    if(beMonth===null&&profit>=0)beMonth=mo;
-    cash+=profit-ceo;aOut+=ceo;let divD=0,divCeo=0,divOth=0;
-    if(mo%12===0){const yp=months.slice(mo-12).reduce((a,x)=>a+x.profit,0)+profit;const sh=(c.ceoshare||20)/100;const avail=cash-(c.divres||0);
-      if(yp>0&&avail>0&&(c.divpct||0)>0){const D1=avail/(1-sh);const Dmax=sh*D1<=aOut?D1:avail+aOut;divD=Math.min(yp*(c.divpct||0)/100,Dmax);
-        const right=sh*divD;divCeo=Math.max(0,right-aOut);aOut=Math.max(0,aOut-right);divOth=(1-sh)*divD;cash-=divOth+divCeo}}
-    const ttm=months.slice(Math.max(0,mo-12)).reduce((a,x)=>a+x.profit,0)+profit;
-    minCash=Math.min(minCash,cash);if(outMonth===null&&cash<0)outMonth=mo;
-    L0.forEach(o=>{const x=o.months[mo-1];const lv=served>0&&o.p.plan>0?leadVar*x.rev/served:0;x.lv=lv;
-      x.k=x.rev-x.pv-x.tax-x.comm-x.dv-lv-x.mk-x.top-x.pl*c.perprof});
-    months.push({mo,leads,diags,newSubs,lost,clients,rev,varCost,planVar,leadVar,taxFee,deliv,indVar:comm.ind,aseVar:comm.ase,tcost,platform,ceo,mkt,fixed,profit,cash,divD,divCeo,divOth,aOut,val:Math.max(0,(mrr*12*(c.multR||2)+Math.max(0,ttm)*(c.multE||8))/2),planners:tm.planners,leaders:tm.leaders,mrr,
-      cDir:byCh.dir.n+byCh.pag.n,cInd:byCh.ind.n,cAse:byCh.ase.n,rDir:byCh.dir.rev+byCh.pag.rev,rInd:byCh.ind.rev,rAse:byCh.ase.rev,nDir:byCh.dir.newSubs+byCh.pag.newSubs,nInd:byCh.ind.newSubs,nAse:byCh.ase.newSubs,
-      cRede:byCh.dir.n,cPag:byCh.pag.n,cOrg:byCh.org.n,rRede:byCh.dir.rev,rPag:byCh.pag.rev,rOrg:byCh.org.rev,nRede:byCh.dir.newSubs,nPag:byCh.pag.newSubs,nOrg:byCh.org.newSubs,ytSubs,ytViews,orgLeads:orgL,orgCost});
-  }
-  const ly=months.slice(48);const lrev=ly.reduce((a,x)=>a+x.rev,0)||1;const lcl=ly.reduce((a,x)=>a+x.clients,0)||1;
-  const arpu=lrev/lcl, unitVar=ly.reduce((a,x)=>a+x.varCost,0)/lrev, plPer=ly.reduce((a,x)=>a+x.planners,0)/lcl, mk=ly.reduce((a,x)=>a+x.mkt,0)/12;
-  const contrib=arpu*(1-unitVar);
-  let beClients=Infinity;
-  if(lcl>1)for(let n=1;n<=40000;n++){const pl=Math.ceil(n*plPer);const tm={planners:pl,leaders:Math.floor(pl/Math.max(1,c.span))};const pp=n*contrib-(platformCost(n,c)+mk+c.other+tm.planners*0+(tm.planners+tm.leaders)*c.perprof);if(pp>=0){beClients=n;break}}
-  const keys=['rev','profit','varCost','planVar','leadVar','taxFee','deliv','indVar','aseVar','tcost','platform','ceo','mkt','newSubs','diags','rDir','rInd','rAse','nDir','nInd','nAse','rRede','rPag','rOrg','nRede','nPag','nOrg','ytViews','orgLeads','orgCost','divD','divCeo','divOth'];
-  const years=[];for(let y=0;y<HZ/12;y++){const ms=months.slice(y*12,y*12+12);const e=ms[11];const o={y:y+1};keys.forEach(k=>o[k]=ms.reduce((a,x)=>a+x[k],0));
-    Object.assign(o,{clients:e.clients,planners:e.planners,leaders:e.leaders,cash:e.cash,mrr:e.mrr,cDir:e.cDir,cInd:e.cInd,cAse:e.cAse,cRede:e.cRede,cPag:e.cPag,cOrg:e.cOrg,ytSubs:e.ytSubs,aOut:e.aOut,val:e.val});years.push(o)}
-  const prods=L0.map(o=>{const ys=[];for(let y=0;y<5;y++){const ms=o.months.slice(y*12,y*12+12);const e=ms[11];const s=k=>ms.reduce((a,x)=>a+x[k],0);
-      ys.push({y:y+1,n:e.n,pl:e.pl,rev:s('rev'),ns:s('ns'),k:s('k'),mk:s('mk'),comm:s('comm'),diags:s('diags')})}
-    return {p:o.p,rate:o.rate,warm:o.warm,months:o.months,years:ys}});
-  const sp=list.find(p=>p.id===st.sel)||st.list.find(p=>p.id===st.sel)||list[0];
-  const sr=sp?baseRate(sp)*(c.realc||50)/100:0;
-  const y1=years[0].profit;
-  return {rate:sr,rateWarm:sr*(sp?warmOf(sp):1),prods,months,years,contrib,beClients,beMonth,minCash,outMonth,y1,panel:sp?baseRate(sp):0,selName:sp?sp.name:''};
-}
-function aloneOf(st,id){const s=clone(migrate(st));s.list.forEach(p=>p.on=p.id===id);s.company.menu=false;s.sel=id;return s}
-
-// ---- produtos e estado ----
-const PK=['mktgr','cplgr','orgw','m','diag','dprice','parcelado','cancel','comissao','cfp','garantia','exemplo','prova','online','checkin','casal','raiox','dividas','tributario','rede','mkt','cpl','real','conv','churn','growth','pleads','pcom','pdur','aleads','acom','adur','cap','pfix','plan','deliv','pbase'];
-const CK=['ceoshare','divpct','divres','multR','multE','realc','ytsubs','ytviews','ytg1','ytg2','ytg3','ytg4','ytg5','ytctr','ytlead','yttrust','orgcost','orgother','span','lead','perprof','other','ceo1','ceo2','tax','pmt','cash','menu'];
-const XK=[];['dg','pv'].forEach(st=>{if(SETS[st])SETS[st].levers.forEach(([c])=>XK.push(xk(st,c)))});PK.push(...XK);
-const IDS=PK.concat(CK);
-const PALX=['var(--s1)','var(--s3)','var(--s2)','#eda100','#e87ba4','#6250d6','#008300','#7a5c3e'];
-const pick=(o,ks)=>{const r={};ks.forEach(k=>{if(o[k]!==undefined)r[k]=o[k]});return r};
+function lv(c,g){return !!c[g]}
 const clone=o=>JSON.parse(JSON.stringify(o));
-const LEVK=Object.keys(LEVERS);
-function mkProd(id,name,ci,base,extra){const p=Object.assign({id,name,ci,on:true,kind:'as',menuF:null,vw:null,tm:0,tcfg:null},pick(base,PK),extra||{});if(p.kind==='manual'&&!p.tcfg)p.tcfg=pick(p,LEVK.concat(['diag','dprice']));return p}
-const BASEP=Object.assign({},PRESETS.atual,{deliv:0,pbase:25,ceoshare:20,divpct:50,divres:50000,multR:2,multE:8,realc:50,mktgr:25,cplgr:0,orgw:100,ytsubs:0,ytviews:0,ytg1:0,ytg2:0,ytg3:0,ytg4:0,ytg5:0,ytctr:1,ytlead:30,yttrust:true,orgcost:0,orgother:0});
-XK.forEach(k=>BASEP[k]=false);
+const pick=(o,ks)=>{const r={};ks.forEach(k=>{if(o[k]!==undefined)r[k]=o[k]});return r};
+function esc(t){return String(t).replace(/[&<>"]/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[ch]))}
+const PALX=['var(--s1)','var(--s3)','var(--s2)','#eda100','#e87ba4','#6250d6','#008300','#7a5c3e'];
+function colOf(p){return PALX[p.ci%PALX.length]}
+// ---- entregas de cada tipo de produto (o que os compradores simulados pediram) ----
+const OPTS={
+ as:[['checkin','Planejador procura o cliente todo mês'],['casal','Sessão com o casal'],['raiox','Raio-X das tarifas do banco'],['dividas','Plano para sair das dívidas'],['tributario','Imposto, empresa e sucessão'],['garantia','Devolve se o plano for genérico'],['exemplo','Plano de exemplo no site'],['cfp','Planejador com certificação CFP'],['cancel','Cancela quando quiser, sem multa'],['comissao','Diz que não ganha comissão'],['parcelado','Diagnóstico em 3x'],['online','100% online, sem reuniões'],['prova','Depoimentos de clientes']],
+ dg:SETS.dg?SETS.dg.levers.filter(x=>x[0]!=='preco_menor').map(x=>[x[0],x[1]]):[],
+ pv:SETS.pv?SETS.pv.levers.filter(x=>x[0]!=='preco_menor').map(x=>[x[0],x[1]]):[]};
+const TYPENAME={as:'Assistido (planejador)',dg:'Digital (app)',pv:'Private (alta renda)'};
+const BASECFG={as:{m:297,dprice:490,opts:{cancel:true,comissao:true,checkin:true}},dg:{m:49,dprice:0,opts:{}},pv:{m:1500,dprice:0,opts:{}}};
+function cfgAs(m,dprice,opts){const c={m,diag:dprice>0,dprice:dprice||0};OPTS.as.forEach(([k])=>c[k]=!!opts[k]);return c}
+function rawRate(type,m,dprice,opts){
+  if(type==='as')return panelRate(cfgAs(m,dprice,opts));
+  const c={m};(OPTS[type]||[]).forEach(([k])=>c[type+'_'+k]=!!opts[k]);return setRate(c,type);
+}
+function setU(p,c,set){let u=0;(p.F||[]).forEach(f=>{if(f==='preco_menor')return;if(!c[set+'_'+f])u++});return u}
+function setRate(c,set){const S=SETS[set];if(!S)return 0;let s=0;S.personas.forEach(p=>s+=Math.min(1,S.k*pscore(p,c.m)*Math.pow(S.w,setU(p,c,set))));return s/S.personas.length}
+const RELCACHE={};
+function relOf(p){ // efeito relativo de preço e entregas sobre a taxa base (limitado entre 0,5× e 2×)
+  const t=p.type;if(!BASECFG[t])return 1;
+  const key=t+'|'+p.m+'|'+p.dprice+'|'+Object.keys(p.opts||{}).filter(k=>p.opts[k]).sort().join(',');
+  if(RELCACHE[key]!==undefined)return RELCACHE[key];
+  const b=BASECFG[t];const r0=rawRate(t,b.m,b.dprice,b.opts);const r1=rawRate(t,p.m,p.dprice,p.opts||{});
+  const v=r0>0?Math.max(0.5,Math.min(2,r1/r0)):1;RELCACHE[key]=v;return v;
+}
+function optGain(p,k){const q=clone(p);q.opts=Object.assign({},q.opts);const on=!!q.opts[k];q.opts[k]=true;const a=relOf(q);q.opts[k]=false;const b=relOf(q);return b>0?a/b-1:0}
+// ---- padrões ----
+const PDEF={on:true,type:'as',m:297,dprice:0,ads:3000,cpl:30,adsgr:20,cplgr:5,refs:10,refgr:15,refcom:0,refmonths:12,base:2,dconv:40,churn:3,plan:20,floor:1500,cap:100,cost:0,orgw:50,opts:{}};
+function mkP(id,name,ci,x){return Object.assign(clone(PDEF),{id,name,ci},clone(x||{}))}
 function defaultProds(){return [
-  mkProd('as','Assistido',0,BASEP,{kind:'as',menuF:'as',mr:[97,797,10]}),
-  mkProd('dg','Digital (self-service)',1,BASEP,{on:false,kind:'dg',menuF:'dg',mr:[9,199,1],orgw:60,pbase:Math.round(MIX.E*1000)/10,vw:[10,20,50,80],tm:49,m:49,diag:false,dprice:0,parcelado:false,cancel:true,comissao:true,cfp:false,garantia:false,exemplo:false,prova:false,online:true,checkin:false,casal:false,raiox:false,dividas:true,tributario:false,rede:10,mkt:2000,cpl:15,churn:6,conv:100,plan:0,cap:120,pfix:0,deliv:0,pleads:0,aleads:0}),
-  mkProd('pv','Private',2,BASEP,{on:false,kind:'pv',menuF:'pv',mr:[500,5000,100],orgw:20,pbase:Math.round(MIX.PVHI*1000)/10,vw:[400,800,1500,2500],tm:1500,m:1500,diag:false,dprice:0,parcelado:false,cancel:true,comissao:false,cfp:true,garantia:false,exemplo:false,prova:false,online:false,checkin:true,casal:false,raiox:true,dividas:false,tributario:true,rede:10,mkt:0,cpl:40,churn:2,conv:100,plan:30,cap:25,pfix:0,deliv:0,pleads:0,aleads:20,acom:15})]}
-function defaultState(){return {company:Object.assign(pick(BASEP,CK),{menu:false}),list:defaultProds(),sel:'as'}}
-function migrate(x){ // estados antigos (planos) viram o novo formato
-  if(!x)return null;if(x.list&&x.company){if(x.company.ytgrow!==undefined&&x.company.ytg1===undefined)[1,2,3,4,5].forEach(i=>x.company['ytg'+i]=x.company.ytgrow);CK.forEach(k=>{if(x.company[k]===undefined)x.company[k]=BASEP[k]});x.list.forEach(p=>{if(p.mktgr===undefined)p.mktgr=p.growth;if(p.cplgr===undefined)p.cplgr=0;p.kind=kindOf(p);if(p.kind==='manual'&&!p.tcfg)p.tcfg=pick(p,LEVK.concat(['diag','dprice']))});x.list.forEach(p=>PK.forEach(k=>{if(p[k]===undefined)p[k]=(k==='orgw'?(p.id==='dg'?60:p.id==='pv'?20:100):BASEP[k])}));return x}
-  const st=defaultState();Object.assign(st.company,pick(x,CK));Object.assign(st.list[0],pick(x,PK));return st}
-let STATE=defaultState();
-const selP=()=>STATE.list.find(p=>p.id===STATE.sel)||STATE.list[0];
-function snapshot(){return clone({company:STATE.company,list:STATE.list,sel:STATE.sel})}
-function syncInputs(){
-  const co=STATE.company;
-  CK.forEach(k=>{const el=$(k);if(!el)return;const v=co[k];if(el.type==='checkbox')el.checked=!!v;else if(v!==undefined)el.value=v});
-  renderMatrix();
+  mkP('as','Assistido',0,{type:'as',m:297,dprice:197,ads:3000,cpl:30,refs:10,base:4,dconv:40,churn:3,plan:20,floor:1500,cap:100,orgw:60,opts:{checkin:true,cancel:true,comissao:true,dividas:true}}),
+  mkP('dg','Digital (app)',1,{type:'dg',m:49,dprice:0,ads:1500,cpl:12,refs:0,base:3,churn:6,plan:0,floor:0,cap:0,cost:3,orgw:30,opts:{}}),
+  mkP('pv','Private',2,{type:'pv',m:1500,dprice:0,ads:0,cpl:100,refs:8,refcom:15,base:3,churn:1.5,plan:30,floor:3000,cap:40,orgw:10,opts:{}})]}
+const CDEF={ytsubs:0,ytviews:0,ytg1:0,ytg2:0,ytg3:0,ytg4:0,ytg5:0,ytctr:1,ytlead:30,orgother:0,orgcost:0,pmt:5000,other:2000,tax:6,fee:3.5,span:8,lead:5,perprof:300,ceo1:10000,ceo2:10000,ceoshare:20,divpct:50,divres:50000,cash:100000,multR:2,multE:8};
+function defaultState(){return {v:2,company:clone(CDEF),list:defaultProds(),sel:'as'}}
+function migrate(x){ // aceita estados antigos (v1) e completa campos que faltam
+  if(!x)return null;
+  if(x.v!==2){const st=defaultState();if(x.company){Object.keys(CDEF).forEach(k=>{if(typeof x.company[k]==='number')st.company[k]=x.company[k]});if(x.company.realc===undefined){}}
+    if(Array.isArray(x.list)){st.list=x.list.map((o,i)=>{const t=o.kind==='pv'||o.id==='pv'?'pv':o.kind==='dg'||o.id==='dg'?'dg':'as';const d=defaultProds().find(q=>q.type===t)||mkP('p'+i,o.name,i,{});
+      const n=mkP(o.id||('p'+i),o.name||d.name,o.ci||i,Object.assign(clone(d),{type:t}));n.on=o.on!==false;['m','cpl','churn','plan','cap','orgw'].forEach(k=>{if(typeof o[k]==='number')n[k]=o[k]});
+      if(typeof o.mkt==='number')n.ads=o.mkt;if(typeof o.mktgr==='number')n.adsgr=o.mktgr;if(typeof o.pfix==='number')n.floor=o.pfix;if(typeof o.deliv==='number')n.cost=o.deliv;n.dprice=o.diag?(o.dprice||0):0;
+      n.refs=(o.rede||0)+(o.pleads||0)+(o.aleads||0);n.opts={};(OPTS[t]||[]).forEach(([k])=>{if(o[k]||o[t+'_'+k])n.opts[k]=true});return n})}
+    st.sel=st.list[0].id;return st}
+  Object.keys(CDEF).forEach(k=>{if(x.company[k]===undefined)x.company[k]=CDEF[k]});
+  x.list.forEach(p=>{Object.keys(PDEF).forEach(k=>{if(p[k]===undefined)p[k]=clone(PDEF[k])})});
+  if(!x.list.some(p=>p.id===x.sel))x.sel=x.list[0].id;return x;
 }
-let INIT=false;
-function readInputs(){
-  if(!INIT)return;const co=STATE.company;
-  CK.forEach(k=>{const el=$(k);if(!el)return;co[k]=el.type==='checkbox'?el.checked:+el.value});
+// ---- simulação mês a mês ----
+function platformCost(n,c){return c.pmt+Math.max(0,n-400)*20}
+function simulate(st0){
+  const st=migrate(clone(st0));const c=st.company;const list=st.list.filter(p=>p.on);
+  const sumW=list.reduce((a,p)=>a+(+p.orgw||0),0);const tf=(c.tax+c.fee)/100;
+  const S=list.map(p=>{const rel=relOf(p);const cv=p.base/100*rel;return {p,rel,cv:{ads:cv,ref:Math.min(1,cv*2),org:Math.min(1,cv*1.5)},n:0,refC:[],months:[]}});
+  const months=[];let cash=c.cash,beMonth=null,minCash=cash,outMonth=null,aOut=0,ytM=1;
+  for(let mo=1;mo<=HZ;mo++){
+    const yi=Math.floor((mo-1)/12),ramp=mo===1?0.5:mo===2?0.75:1;
+    if(mo>1)ytM*=1+(c['ytg'+Math.min(5,yi+1)]||0)/100;
+    const ytSubs=c.ytsubs*ytM,ytViews=c.ytviews*ytM,orgL=(ytViews*c.ytctr/100*c.ytlead/100+c.orgother)*ramp;
+    const m={mo,rev:0,clients:0,newSubs:0,diags:0,planVar:0,top:0,comm:0,cost:0,ads:0,planners:0,mrr:0,served:0,lAds:0,lRef:0,lOrg:0,nAds:0,nRef:0,nOrg:0,ytSubs,ytViews,orgL};
+    S.forEach(o=>{const p=o.p;
+      const lA=p.cpl>0?p.ads*Math.pow(1+p.adsgr/100,yi)/(p.cpl*Math.pow(1+p.cplgr/100,yi))*ramp:0;
+      const lR=p.refs*Math.pow(1+p.refgr/100,yi)*ramp, lO=sumW>0?orgL*(+p.orgw||0)/sumW:0;
+      const buy=k=>({ads:lA,ref:lR,org:lO}[k])*o.cv[k];
+      const hasD=p.dprice>0;const step=hasD?p.dconv/100:1;
+      const bA=buy('ads'),bR=buy('ref'),bO=buy('org');const d=hasD?bA+bR+bO:0;
+      const nsA=bA*step,nsR=bR*step,nsO=bO*step,ns=nsA+nsR+nsO;
+      o.n=o.n*(1-p.churn/100)+ns;
+      o.refC.forEach(x=>{x.n*=1-p.churn/100;x.age++});o.refC.push({n:nsR,age:0});
+      const refAct=o.refC.reduce((a,x)=>a+(x.age<p.refmonths?x.n:0),0);
+      const rev=o.n*p.m+d*p.dprice;
+      const comm=(refAct*p.m+(hasD?bR*p.dprice:0))*p.refcom/100;
+      const pl=p.plan>0?Math.ceil(o.n/Math.max(1,p.cap)):0;
+      const pv=rev*p.plan/100,top=Math.max(0,pl*p.floor-pv);
+      const cost=o.n*p.cost,ads=p.ads*Math.pow(1+p.adsgr/100,yi);
+      o.months.push({n:o.n,ns,rev,d,pl,pv,top,comm,cost,ads,lA,lR,lO,nsA,nsR,nsO});
+      m.rev+=rev;m.clients+=o.n;m.newSubs+=ns;m.diags+=d;m.planVar+=pv;m.top+=top;m.comm+=comm;m.cost+=cost;m.ads+=ads;m.planners+=pl;m.mrr+=o.n*p.m;if(p.plan>0)m.served+=rev;
+      m.lAds+=lA;m.lRef+=lR;m.lOrg+=lO;m.nAds+=nsA;m.nRef+=nsR;m.nOrg+=nsO;
+    });
+    const leaders=Math.floor(m.planners/Math.max(1,c.span));
+    m.leaders=leaders;m.leadVar=leaders>0?m.served*c.lead/100*Math.min(1,leaders*c.span/Math.max(1,m.planners)):0;
+    m.team=(m.planners+leaders)*c.perprof;m.taxFee=m.rev*tf;m.platform=platformCost(m.clients,c);m.other=c.other;m.orgCost=c.orgcost;
+    m.costs=m.planVar+m.top+m.leadVar+m.team+m.taxFee+m.comm+m.cost+m.ads+m.platform+m.other+m.orgCost;
+    m.profit=m.rev-m.costs;
+    if(beMonth===null&&m.profit>=0)beMonth=mo;
+    m.ceo=beMonth===null?c.ceo1:c.ceo2;
+    cash+=m.profit-m.ceo;aOut+=m.ceo;m.divD=0;m.divCeo=0;m.divOth=0;
+    if(mo%12===0){const yp=months.slice(mo-12).reduce((a,x)=>a+x.profit,0)+m.profit;const sh=c.ceoshare/100;const avail=cash-c.divres;
+      if(yp>0&&avail>0&&c.divpct>0){const D1=avail/(1-sh||1);const Dmax=sh*D1<=aOut?D1:avail+aOut;m.divD=Math.min(yp*c.divpct/100,Dmax);
+        const right=sh*m.divD;m.divCeo=Math.max(0,right-aOut);aOut=Math.max(0,aOut-right);m.divOth=(1-sh)*m.divD;cash-=m.divOth+m.divCeo}}
+    m.aOut=aOut;m.cash=cash;
+    const ttm=months.slice(Math.max(0,mo-12)).reduce((a,x)=>a+x.profit,0)+m.profit;
+    m.val=Math.max(0,(m.mrr*12*c.multR+Math.max(0,ttm)*c.multE)/2);
+    minCash=Math.min(minCash,cash);if(outMonth===null&&cash<0)outMonth=mo;
+    // contribuição de cada produto (antes dos custos fixos da empresa)
+    S.forEach(o=>{const x=o.months[mo-1];const lv=m.served>0&&o.p.plan>0?m.leadVar*x.rev/m.served:0;x.k=x.rev-x.pv-x.top-lv-x.rev*tf-x.comm-x.cost-x.ads-x.pl*c.perprof});
+    months.push(m);
+  }
+  const sumK=['rev','profit','newSubs','diags','planVar','top','leadVar','team','taxFee','comm','cost','ads','platform','other','orgCost','ceo','divD','divCeo','divOth','lAds','lRef','lOrg','nAds','nRef','nOrg','ytViews','orgL'];
+  const years=[];for(let y=0;y<5;y++){const ms=months.slice(y*12,y*12+12),e=ms[11],o={y:y+1};sumK.forEach(k=>o[k]=ms.reduce((a,x)=>a+x[k],0));
+    Object.assign(o,{clients:e.clients,planners:e.planners,leaders:e.leaders,cash:e.cash,mrr:e.mrr,val:e.val,aOut:e.aOut,ytSubs:e.ytSubs});years.push(o)}
+  const prods=S.map(o=>{const ys=[];for(let y=0;y<5;y++){const ms=o.months.slice(y*12,y*12+12),e=ms[11],s=k=>ms.reduce((a,x)=>a+x[k],0);ys.push({y:y+1,n:e.n,pl:e.pl,rev:s('rev'),ns:s('ns'),k:s('k'),ads:s('ads'),comm:s('comm'),lA:s('lA'),nsA:s('nsA')})}
+    return {p:o.p,rel:o.rel,cv:o.cv,months:o.months,years:ys}});
+  return {months,years,prods,beMonth,minCash,outMonth,st};
 }
-function renderTabs(){}
-function read(){readInputs();return snapshot()}
-function write(x){ // x: estado completo ou um cenário pronto (plano)
-  if(x&&x.list){STATE=clone(migrate(x));if(!STATE.list.some(p=>p.id===STATE.sel))STATE.sel=STATE.list[0].id}
-  else if(x){Object.assign(STATE.list.find(p=>p.id==='as')||selP(),pick(x,PK.filter(k=>k!=='orgw')));Object.assign(STATE.company,pick(x,CK))}
-  syncInputs();
-}
-function flatOf(st){const s=st||STATE;const p=(s.list.find(q=>q.id===s.sel)||s.list[0]);return Object.assign({},s.company,p)}
+function aloneOf(st,id){const s=migrate(clone(st));s.list.forEach(p=>p.on=p.id===id);return s}
 
 // ---- estado ----
-let ref=null,cur=null;
-try{ref=migrate(JSON.parse(localStorage.getItem('profitto-ref')||'null'))}catch(e){}
+let STATE=defaultState();
+const LS='profitto2-';
+try{const s=JSON.parse(localStorage.getItem(LS+'cur')||'null');if(s)STATE=migrate(s)}catch(e){}
+let ref=null;try{ref=migrate(JSON.parse(localStorage.getItem(LS+'ref')||'null'))}catch(e){}
 if(!ref)ref=defaultState();
-try{const sv=JSON.parse(localStorage.getItem('profitto-cur')||'null');if(sv)STATE=migrate(sv)}catch(e){}
-STATE=clone(migrate(STATE));cur=flatOf();
+const snapshot=()=>clone(STATE);
+const selP=()=>STATE.list.find(p=>p.id===STATE.sel)||STATE.list[0];
+function newId(){let i=1;while(STATE.list.some(p=>p.id==='p'+i))i++;return 'p'+i}
+function nextCi(){const u=STATE.list.map(p=>p.ci);let i=0;while(u.includes(i))i++;return i}
+const pc1=v=>(v*100).toFixed(1).replace('.',',')+'%';
+function delta(a,b,hb,fmt){const d=a-b;if(!isFinite(a)||!isFinite(b))return '';if(Math.abs(d)<Math.max(Math.abs(b)*0.005,0.5))return '<span class="delta eq">= referência</span>';const good=hb===null?null:hb?d>0:d<0;return `<span class="delta ${good===null?'eq':good?'up':'down'}">${good===null?(d>0?'+':'−'):(good?'▲ ':'▼ ')}${fmt(Math.abs(d))}</span>`}
 
-const FMT={ceoshare:v=>v+'%',divpct:v=>v+'%',divres:v=>BRL(v),multR:v=>String(v).replace('.',',')+'×',multE:v=>v+'×',orgw:v=>v+'',ytg1:v=>(v>0?'+':'')+String(v).replace('.',',')+'%',ytg2:v=>(v>0?'+':'')+String(v).replace('.',',')+'%',ytg3:v=>(v>0?'+':'')+String(v).replace('.',',')+'%',ytg4:v=>(v>0?'+':'')+String(v).replace('.',',')+'%',ytg5:v=>(v>0?'+':'')+String(v).replace('.',',')+'%',ytctr:v=>String(v).replace('.',',')+'%',ytlead:v=>v+'%',orgother:v=>v+' pessoas',orgcost:v=>v?BRL(v):'sem custo',deliv:v=>v?BRL(v):'sem custo',pbase:v=>String(v).replace('.',',')+'%',pleads:v=>v+' pessoas',pcom:v=>v+'% da receita',pdur:v=>v==60?'60 meses (sempre)':v+' meses',aleads:v=>v+' pessoas',acom:v=>v+'% da receita',adur:v=>v==60?'60 meses (sempre)':v+' meses',cap:v=>v+' clientes',pfix:v=>BRL(v),span:v=>v+' planejadores',lead:v=>String(v).replace('.',',')+'%',perprof:v=>BRL(v),other:v=>BRL(v),growth:v=>v+'%',m:v=>BRL(v)+'/mês',dprice:v=>v==0?'grátis':BRL(v),rede:v=>v+' pessoas',mkt:v=>BRL(v),cpl:v=>BRL(v),real:v=>v+'%',conv:v=>v+'%',churn:v=>String(v).replace('.',',')+'%',ceo1:v=>BRL(v),ceo2:v=>BRL(v),plan:v=>v?v+'%':'sem planejador',tax:v=>String(v).replace('.',',')+'%',pmt:v=>BRL(v),cash:v=>BRL(v)};
+// ---- tabela de produtos ----
+const MXS=[
+ ['Preço',[['m','Mensalidade (R$)',1,'Quanto o cliente paga por mês.'],['dprice','Diagnóstico de entrada (R$)',10,'Pagamento único antes de assinar. 0 = não tem diagnóstico.']]],
+ ['Como chegam os clientes',[['ads','Anúncios por mês (R$)',500,'Verba de marketing digital no primeiro ano.'],['adsgr','Aumento dos anúncios por ano (%)',5,'25 = a verba cresce 25% a cada ano.'],['cpl','Custo por interessado (R$)',5,'Quanto de anúncio custa cada pessoa que deixa contato.'],['refs','Indicações e rede por mês',1,'Conhecidos, parceiros e assessores que trazem interessados.'],['refcom','Comissão por indicação (%)',1,'% do que o cliente indicado pagar. 0 = sem comissão.'],
+   ['refmonths','Meses de comissão',1,'Por quanto tempo a comissão é paga.',1],['refgr','Indicações crescem por ano (%)',5,'',1],['cplgr','Custo por interessado sobe por ano (%)',5,'Anunciar mais costuma ficar mais caro.',1]]],
+ ['Quantos compram',[['base','De cada 100 interessados, compram (%)',0.5,'Taxa base de mercado. Com diagnóstico: quantos compram o diagnóstico.'],['dconv','De cada 100 diagnósticos, assinam (%)',5,'Só vale se houver diagnóstico.'],['__rel','Efeito do preço e das entregas',0,'Calculado pelos compradores simulados (entre 0,5× e 2×).'],['__cv','Viram clientes de fato',0,'De cada 100 interessados vindos de anúncio. Indicados: 2×. Canal do Neto: 1,5×.'],['churn','Cancelam por mês (%)',0.5,'Parte dos clientes que cancela a cada mês.']]],
+ ['Atendimento',[['plan','Planejador recebe (% da receita)',1,'0 = produto sem planejador.'],['floor',"Linha d'água do planejador (R$/mês)",250,'Mínimo garantido por planejador.'],['cap','Clientes por planejador',5,'Quantos clientes cada um atende.'],['cost','Outros custos por cliente (R$/mês)',1,'App, IA, parceiros.',1]]],
+ ['Tipo de produto',[['type','Compradores e entregas usados',0,'Define a lista de entregas e os compradores simulados.',1]]]];
+let MXADV=false;try{MXADV=localStorage.getItem(LS+'adv')==='1'}catch(e){}
+let MXC=new Set();try{MXC=new Set(JSON.parse(localStorage.getItem(LS+'col')||'[]'))}catch(e){}
+function cell(p,[k,lab,step]){
+  const a=`data-pid="${p.id}" data-k="${k}" aria-label="${esc(lab)} – ${esc(p.name)}"`;
+  if(k==='__rel'||k==='__cv')return `<span data-ro="${k}" data-rp="${p.id}">${roVal(p,k)}</span>`;
+  if(k==='type')return `<select class="mi" ${a}>${Object.keys(TYPENAME).map(t=>`<option value="${t}"${p.type===t?' selected':''}>${TYPENAME[t]}</option>`).join('')}</select>`;
+  const dim=(k==='dconv'&&!(p.dprice>0))||((k==='floor'||k==='cap')&&!(p.plan>0));
+  return `<input type="number" class="mi${dim?' dim':''}" ${a} step="${step}" min="0" value="${Math.round(p[k]*100)/100}">`;
+}
+function renderMatrix(){
+  const L=STATE.list;
+  let h='<thead><tr><th class="mx-l"></th>'+L.map(p=>`<th class="mx-c${p.on?'':' off'}"><div class="mx-h"><span class="sw" style="background:${colOf(p)}"></span><input type="text" class="mi mx-name" data-pid="${p.id}" data-k="name" value="${esc(p.name)}" maxlength="40" aria-label="Nome do produto"></div><label class="mx-on"><input type="checkbox" data-pid="${p.id}" data-k="on" ${p.on?'checked':''}> vender</label><div class="mx-act"><button class="lnk" data-act="dup" data-pid="${p.id}">duplicar</button>${L.length>1?`<button class="lnk" data-act="del" data-pid="${p.id}">remover</button>`:''}</div></th>`).join('')+'<th class="mx-c mx-add"><button class="btn" data-act="new">+ Novo produto</button></th></tr></thead><tbody>';
+  const sec=(name,rows)=>{const col=MXC.has(name);h+=`<tr class="mx-sec"><td colspan="${L.length+2}"><button class="lnk" data-sec="${esc(name)}" aria-expanded="${!col}">${col?'▸':'▾'} ${esc(name)}</button></td></tr>`;if(!col)rows.forEach(r=>{h+=`<tr><td class="mx-l" title="${esc(r[3]||'')}"><span class="ml">${esc(r[1])}</span>${MXADV&&r[3]?`<span class="md">${esc(r[3])}</span>`:''}</td>${L.map(p=>`<td class="mx-c${p.on?'':' off'}">${r.cell?r.cell(p):cell(p,r)}</td>`).join('')}<td></td></tr>`})};
+  MXS.forEach(([name,rows])=>{const rs=rows.filter(r=>MXADV||!r[4]);if(rs.length)sec(name,rs)});
+  // entregas: uma seção por tipo presente
+  [...new Set(L.map(p=>p.type))].forEach(t=>{
+    const rows=OPTS[t].map(([k,lab])=>{const r=[k,lab,0,'Os compradores simulados deste tipo citaram isso. O número ao lado é quanto muda a conversão.'];r.cell=p=>{if(p.type!==t)return '';const g=optGain(p,k);return `<label class="opt"><input type="checkbox" data-pid="${p.id}" data-k="opt:${k}" ${p.opts[k]?'checked':''}><small class="${g>0.005?'pos':g<-0.005?'neg':'muted'}">${g>0.005?'+':''}${Math.round(g*100)}%</small></label>`};return r});
+    sec('Entregas · '+TYPENAME[t],rows);
+  });
+  h+=`<tr class="mx-sec"><td colspan="${L.length+2}"><span class="eyebrow">Resultado de cada produto</span></td></tr></tbody><tbody id="mx-res"></tbody>`;
+  $('mx-in').innerHTML=h;
+}
+$('mx-in').addEventListener('input',e=>{
+  const t=e.target,pid=t.dataset&&t.dataset.pid,k=t.dataset&&t.dataset.k;if(!pid||!k)return;const p=STATE.list.find(x=>x.id===pid);if(!p)return;
+  let re=false;
+  if(k==='on'){p.on=t.checked;re=true}else if(k==='name')p.name=t.value.trim()||'Sem nome';else if(k==='type'){p.type=t.value;p.opts={};re=true}
+  else if(k.startsWith('opt:')){p.opts[k.slice(4)]=t.checked;re=true}
+  else{if(t.value==='')return;p[k]=+t.value;if(k==='plan'||k==='dprice')re=true}
+  if(re)renderMatrix();else refreshRO();update();
+});
+function roVal(p,k){if(k==='__rel'){const r=relOf(p);return `<span class="ro ${r>1.01?'pos':r<0.99?'neg':''}">${r.toFixed(2).replace('.',',')}×</span>`}const v=p.base/100*relOf(p)*(p.dprice>0?p.dconv/100:1);return `<b class="ro">${pc1(v)}</b>`}
+function refreshRO(){$('mx-in').querySelectorAll('[data-ro]').forEach(el=>{const p=STATE.list.find(x=>x.id===el.dataset.rp);if(p)el.innerHTML=roVal(p,el.dataset.ro)})}
+$('mx-in').addEventListener('click',e=>{
+  const s=e.target.closest('[data-sec]');if(s){const k=s.dataset.sec;MXC.has(k)?MXC.delete(k):MXC.add(k);try{localStorage.setItem(LS+'col',JSON.stringify([...MXC]))}catch(_){}renderMatrix();update();return}
+  const b=e.target.closest('[data-act]');if(!b)return;const act=b.dataset.act,pid=b.dataset.pid,p=STATE.list.find(x=>x.id===pid);
+  if(act==='new'){const n=mkP(newId(),'Novo produto',nextCi(),{type:'as',opts:{}});STATE.list.push(n);renderMatrix();update();const el=document.querySelector(`.mx-name[data-pid="${n.id}"]`);if(el)el.select()}
+  if(act==='dup'&&p){const n=Object.assign(clone(p),{id:newId(),ci:nextCi(),name:p.name+' (cópia)'});STATE.list.splice(STATE.list.indexOf(p)+1,0,n);renderMatrix();update()}
+  if(act==='del'&&p&&STATE.list.length>1&&confirm('Remover o produto "'+p.name+'"?')){STATE.list=STATE.list.filter(x=>x.id!==pid);if(STATE.sel===pid)STATE.sel=STATE.list[0].id;renderMatrix();update()}
+});
+$('mx-adv').checked=MXADV;$('mx-adv').addEventListener('change',e=>{MXADV=e.target.checked;try{localStorage.setItem(LS+'adv',MXADV?'1':'0')}catch(_){}renderMatrix();update()});
 
-function delta(a,b,higherBetter,fmt){
-  const d=a-b; const eps=Math.max(Math.abs(b)*0.005,0.0001);
-  if(!isFinite(a)||!isFinite(b)){return '<span class="delta eq">—</span>'}
-  if(Math.abs(d)<eps)return '<span class="delta eq">= igual à referência</span>';
-  const good=higherBetter?d>0:d<0;
-  return `<span class="delta ${good?'up':'down'}">${d>0?'▲':'▼'} ${fmt(Math.abs(d))} ${good?'melhor':'pior'}</span>`;
+// ---- campos da empresa ----
+const CO={
+ 'co-org':[['ytsubs','Inscritos hoje',100],['ytviews','Visualizações por mês',1000],['__g','Crescimento do canal por mês, ano 1 a 5 (%)'],['ytctr','De cada 100 visualizações, clicam no link (%)',0.1],['ytlead','De cada 100 cliques, deixam contato (%)',5],['orgother','Outros interessados orgânicos por mês',5,'Instagram, boca a boca, Google.'],['orgcost','Custo mensal de produção do conteúdo (R$)',250],['__split','Para qual produto vai o público']],
+ 'co-cost':[['pmt','Plataforma por mês, até 400 clientes (R$)',250,'Acima disso, +R$ 20 por cliente.'],['other','Outros custos fixos por mês (R$)',100,'Contador, sistemas, escritório.'],['tax','Imposto sobre a receita (%)',0.5,'Educação financeira no Simples: 6%.'],['fee','Taxa de cobrança do cartão/boleto (%)',0.5],['span','Planejadores por líder de time',1],['lead','Líder recebe (% da receita do time)',0.5],['perprof','Custo fixo por pessoa da equipe (R$/mês)',50,'Ferramentas e licenças.']],
+ 'co-part':[['ceo1','Adiantamento ao CEO por mês, até dar lucro (R$)',500],['ceo2','Adiantamento ao CEO por mês, depois do lucro (R$)',500],['ceoshare','Participação do CEO (%)',1],['divpct','Dividendos: quanto do lucro do ano distribuir (%)',5],['divres','Caixa mínimo antes de distribuir (R$)',10000],['cash','Caixa inicial (R$)',5000],['multR','Valuation: múltiplo da receita recorrente anual',0.5,'Serviço recorrente pequeno: 1 a 3×.'],['multE','Valuation: múltiplo do lucro anual',1,'Empresa pequena: 5 a 10×.']]};
+function renderCompany(){
+  Object.keys(CO).forEach(id=>{$(id).innerHTML=CO[id].map(([k,lab,step,help])=>{
+    if(k==='__g')return `<div class="ctl"><label>${lab}</label><div class="g5">${[1,2,3,4,5].map(i=>`<input type="number" class="mi" data-ck="ytg${i}" step="0.5" value="${STATE.company['ytg'+i]}" aria-label="Crescimento ano ${i}">`).join('')}</div></div>`;
+    if(k==='__split')return `<div class="osplit"><span class="ml">${lab}</span><div id="orgsplit"></div></div>`;
+    return `<div class="ctl"><label for="ck-${k}">${lab}</label><input type="number" class="mi" id="ck-${k}" data-ck="${k}" step="${step}" min="0" value="${STATE.company[k]}">${help?`<span class="md">${help}</span>`:''}</div>`}).join('')});
+  renderSplit();
 }
-
-function keepV(y){return y.rev>0?(y.rev-y.varCost)/y.rev:0}
-function keep(y){return 'R$ '+(keepV(y)*100).toFixed(0)+' de R$ 100'}
-function plannerBox(r,c){
-  const pts=[[1,'mês 1'],[12,'mês 12'],[24,'ano 2'],[36,'ano 3'],[48,'ano 4'],[60,'ano 5']];
-  $('pbox').innerHTML=pts.map(([m,l])=>{const x=r.months[m-1];return `<div><b>${x.planners}</b><span>${l}</span></div>`}).join('');
-  const x=r.months[59];
-  $('pbox-note').textContent='Soma, produto a produto, de clientes ÷ clientes por planejador, arredondado para cima. Produto com planejador a 0% não usa planejador. No ano 5: '+Math.round(x.clients).toLocaleString('pt-BR')+' clientes, '+x.planners+' planejador(es) e '+x.leaders+' líder(es).';
-  $('ceo-note').textContent=r.beMonth?'Neste cenário a troca acontece no mês '+r.beMonth+', o primeiro com receita ≥ todos os custos. Daí em diante a retirada é paga pelo lucro.':'Neste cenário a empresa não chega a dar lucro em 60 meses, então só vale a retirada de cima.';
-}
-function kpis(r,R,c){
-  const last=r.months[11],Rl=R.months[11];
-  const items=[
-   ['Compram: '+esc(r.selName),(r.panel*100).toFixed(1).replace('.',',')+'%',delta(r.panel*1000,R.panel*1000,true,v=>(v/10).toFixed(1).replace('.',',')+' p.p.'),'produto analisado (escolha na tabela), antes do desconto de realismo'],
-   [c.diag?'Diagnósticos por mês':'Assinaturas novas por mês',(c.diag?r.months[5].diags:r.months[5].newSubs).toFixed(1).replace('.',','),delta(c.diag?r.months[5].diags:r.months[5].newSubs,(R.months[5].diags||R.months[5].newSubs),true,v=>v.toFixed(1)),'mês 6, depois do desconto de realismo'],
-   ['Clientes ativos no mês 12',Math.round(last.clients),delta(last.clients,Rl.clients,true,v=>Math.round(v)),'break-even: '+(isFinite(r.beClients)?r.beClients:'∞')+' clientes, com a equipe'],
-   ['Receita no mês 12',BRLk(last.rev),delta(last.rev,Rl.rev,true,BRLk),'assinaturas + diagnósticos'],
-   ['Fica para a empresa (ano 5)',keep(r.years[4]),delta(keepV(r.years[4]),keepV(R.years[4]),true,v=>(v*100).toFixed(1).replace('.',',')+' p.p.'),'de cada R$ 100, depois de planejador, líder, imposto e cobrança'],
-   ['Resultado do ano 1',BRLk(r.y1),delta(r.y1,R.y1,true,BRLk),'operacional, sem o investimento inicial'],
-   ['Ponto mais baixo do caixa',BRLk(r.minCash),delta(r.minCash,R.minCash,true,BRLk),r.outMonth?'caixa fica negativo no mês '+r.outMonth:'o caixa nunca zera em 5 anos'],
-   ['Mês do primeiro lucro',r.beMonth?'mês '+r.beMonth:'depois do mês 60',delta(r.beMonth||61,R.beMonth||61,false,v=>Math.round(v)+' meses'),'primeiro mês com resultado ≥ 0'],
-   ['Clientes no fim do ano 5',Math.round(r.years[4].clients).toLocaleString('pt-BR'),delta(r.years[4].clients,R.years[4].clients,true,v=>Math.round(v)),'MRR '+BRLk(r.years[4].mrr)+' por mês'],
-   ['Receita do ano 5',BRLk(r.years[4].rev),delta(r.years[4].rev,R.years[4].rev,true,BRLk),'assinaturas + diagnósticos'],
-   ['Resultado do ano 5',BRLk(r.years[4].profit),delta(r.years[4].profit,R.years[4].profit,true,BRLk),'margem '+(r.years[4].rev>0?pct(r.years[4].profit/r.years[4].rev):'—')+' da receita'],
-   ['Planejadores: mês 12 → ano 5',last.planners+' → '+r.years[4].planners,delta(r.years[4].planners,R.years[4].planners,false,v=>Math.round(v)+' no ano 5'),'+ '+r.years[4].leaders+' líder(es) no ano 5 · '+c.cap+' clientes por planejador'],
-  ];
-  $('kpis').innerHTML=items.map(([l,v,d,s])=>`<div class="kpi"><span class="l">${l}</span><span class="v">${v}</span>${d}<span class="l">${s}</span></div>`).join('');
-  const st=$('verdict');
-  if(r.outMonth){st.className='verdict bad';st.textContent='Cenário: caixa acaba no mês '+r.outMonth}
-  else if(r.years[4].profit>=0&&r.y1<0){st.className='verdict yes';st.textContent='Cenário: lucro a partir do ano '+(r.years.findIndex(y=>y.profit>=0)+1)}
-  else if(r.y1>=0){st.className='verdict yes';st.textContent='Cenário: lucro no ano 1'}
-  else {st.className='verdict no';st.textContent='Cenário: prejuízo no ano 1, caixa aguenta'}
-}
+function renderSplit(){const on=STATE.list.filter(p=>p.on);const sw=on.reduce((a,p)=>a+(+p.orgw||0),0);
+  $('orgsplit').innerHTML=on.map(p=>`<div class="osr"><span><i class="sw" style="background:${colOf(p)}"></i>${esc(p.name)}</span><input type="range" min="0" max="100" step="5" value="${+p.orgw||0}" data-ow="${p.id}" aria-label="Público do Neto para ${esc(p.name)}"><b>${sw>0?Math.round((+p.orgw||0)/sw*100):0}%</b></div>`).join('')||'<p class="muted">Nenhum produto à venda.</p>'}
+$('co-block').addEventListener('input',e=>{const t=e.target;
+  if(t.dataset.ck){if(t.value==='')return;STATE.company[t.dataset.ck]=+t.value;update();return}
+  if(t.dataset.ow){const p=STATE.list.find(x=>x.id===t.dataset.ow);if(p){p.orgw=+t.value;const on=STATE.list.filter(q=>q.on),sw=on.reduce((a,q)=>a+(+q.orgw||0),0);[...$('orgsplit').querySelectorAll('.osr')].forEach((r,i)=>r.querySelector('b').textContent=(sw>0?Math.round((+on[i].orgw||0)/sw*100):0)+'%');update()}}});
+function syncAll(){renderMatrix();renderCompany()}
 
 // ---- gráficos ----
 const tip=$('tip');
-function showTip(e,html){tip.innerHTML=html;tip.hidden=false;const x=Math.min(e.clientX+14,window.innerWidth-tip.offsetWidth-8);const y=Math.min(e.clientY+14,window.innerHeight-tip.offsetHeight-8);tip.style.left=x+'px';tip.style.top=y+'px'}
+function showTip(e,html){tip.innerHTML=html;tip.hidden=false;const x=Math.min(e.clientX+14,innerWidth-330),y=Math.min(e.clientY+14,innerHeight-120);tip.style.left=x+'px';tip.style.top=y+'px'}
 function hideTip(){tip.hidden=true}
-function niceMax(v){if(v<=0)return 1;const p=Math.pow(10,Math.floor(Math.log10(v)));const n=v/p;return (n<=1?1:n<=2?2:n<=5?5:10)*p}
-function lineChart(svg,seriesA,seriesB,opts){
-  const Wd=560,H=240,l=78,r=14,t=12,b=26,iw=Wd-l-r,ih=H-t-b;
-  const all=seriesA.concat(seriesB).concat(opts.ref!=null&&isFinite(opts.ref)?[opts.ref]:[]);
-  let lo=Math.min(0,...all),hi=Math.max(1,...all);
-  const raw=(hi-lo)/5,pw=Math.pow(10,Math.floor(Math.log10(raw))),nn=raw/pw,step=(nn<=1?1:nn<=2?2:nn<=2.5?2.5:nn<=5?5:10)*pw;
-  const mn=Math.floor(lo/step)*step,mx=Math.ceil(hi/step)*step;
-  const x=i=>l+iw*i/(seriesA.length-1), y=v=>t+ih*(1-(v-mn)/(mx-mn||1));
-  let g='<g class="grid">';
-  for(let v=mn;v<=mx+step/2;v+=step){g+=`<line x1="${l}" x2="${Wd-r}" y1="${y(v)}" y2="${y(v)}"/><text x="${l-6}" y="${y(v)+4}" text-anchor="end">${opts.fmt(Math.abs(v)<step/1000?0:v)}</text>`}
-  g+='</g>';
-  let xl='';[1,12,24,36,48,60].forEach(m=>{xl+=`<text x="${x(m-1)}" y="${H-8}" text-anchor="middle">${m===1?'mês 1':'ano '+(m/12)}</text>`});
-  const path=s=>s.map((v,i)=>(i?'L':'M')+x(i).toFixed(1)+' '+y(v).toFixed(1)).join(' ');
-  let refl='';if(opts.ref!=null&&isFinite(opts.ref)&&opts.ref<=mx)refl=`<line class="ref" x1="${l}" x2="${Wd-r}" y1="${y(opts.ref)}" y2="${y(opts.ref)}"/><text x="${Wd-r}" y="${y(opts.ref)-5}" text-anchor="end">break-even ${Math.ceil(opts.ref)}</text>`;
-  let zero=mn<0?`<line class="zero" x1="${l}" x2="${Wd-r}" y1="${y(0)}" y2="${y(0)}"/>`:'';
-  const endA=seriesA.length-1;
-  svg.innerHTML=g+xl+refl+zero+
-   `<path d="${path(seriesB)}" fill="none" stroke="var(--s2)" stroke-width="2" stroke-dasharray="6 4"/>`+
-   `<path d="${path(seriesA)}" fill="none" stroke="var(--s1)" stroke-width="2"/>`+
-   `<circle cx="${x(endA)}" cy="${y(seriesA[endA])}" r="4" fill="var(--s1)" stroke="var(--surface)" stroke-width="2"/>`+
-   `<line id="${svg.id}-x" y1="${t}" y2="${t+ih}" stroke="var(--muted)" stroke-width="1" opacity="0"/>`+
-   `<rect x="${l}" y="${t}" width="${iw}" height="${ih}" fill="transparent" id="${svg.id}-hit"/>`;
-  const hit=svg.querySelector('#'+svg.id+'-hit'),cross=svg.querySelector('#'+svg.id+'-x');
-  const move=e=>{const pt=svg.getBoundingClientRect();const sx=(e.clientX-pt.left)/pt.width*Wd;const i=Math.max(0,Math.min(seriesA.length-1,Math.round((sx-l)/iw*(seriesA.length-1))));cross.setAttribute('x1',x(i));cross.setAttribute('x2',x(i));cross.setAttribute('opacity','.5');showTip(e,`<b>Mês ${i+1}</b><br>Cenário: ${opts.fmtTip(seriesA[i])}<br>Referência: ${opts.fmtTip(seriesB[i])}`)};
-  hit.addEventListener('pointermove',move);hit.addEventListener('pointerleave',()=>{cross.setAttribute('opacity','0');hideTip()});
-}
-
-function dotColor(v){return v>=0.5?'var(--dot3)':v>=0.25?'var(--dot2)':v>=0.1?'var(--dot1)':'var(--dot0)'}
-let selected=null;
-let dotsKind=null;
-function curKind(){return kindOf(selP())}
-function dots(c){
-  const el=$('dots');const kd=curKind();const PS=personasOf(kd);
-  if(dotsKind!==kd){dotsKind=kd;selected=null;el.innerHTML=PS.map((p,i)=>`<button class="dot${p.y?' real':''}" data-i="${i}" aria-label="${esc(p.n)}, ${p.a} anos"></button>`).join('')}
-  if(!el.dataset.wired){el.dataset.wired=1;
-    el.addEventListener('click',e=>{const b=e.target.closest('.dot');if(!b)return;selected=+b.dataset.i;renderPick(flatOf())});
-    el.addEventListener('pointerover',e=>{const b=e.target.closest('.dot');if(!b)return;const k=curKind();const p=personasOf(k)[+b.dataset.i];if(!p)return;showTip(e,`<b>${esc(p.n)}, ${p.a}</b> · ${esc(p.s)}<br>${esc(p.b)}<br>Chance agora: ${pct(probOf(p,flatOf(),k))}`)});
-    el.addEventListener('pointerout',hideTip)}
-  let sum=0;[...el.children].forEach((b,i)=>{const v=probOf(PS[i],c,kd);sum+=v;b.style.background=dotColor(v);b.classList.toggle('sel',i===selected)});
-  $('dots-sum').textContent='≈ '+Math.round(sum)+' de '+PS.length+' · '+(kd==='dg'?'compradores do Digital':kd==='pv'?'compradores do Private':'compradores do Assistido');
-}
-function renderPick(c){
-  const card=$('pick-card');if(selected===null){card.hidden=true;return}
-  const kd=curKind();const PS=personasOf(kd);const p=PS[selected];if(!p){card.hidden=true;return}
-  let pills,title;
-  if(kd==='dg'||kd==='pv'){const L=Object.fromEntries(SETS[kd].levers.map(x=>[x[0],x[1]]));pills=(p.F||[]).map(f=>{const ok=f==='preco_menor'?c.m<=p.p[2]:!!c[xk(kd,f)];return `<span class="pill ${ok?'on':'off'}">${ok?'✓':'✕'} ${esc(L[f]||f)}</span>`}).join('');title='O que faria comprar (verde = já está no produto)'}
-  else{const u=unresolved(p,c);pills=p.B.map(b=>`<span class="pill ${u.includes(b)?'off':'on'}">${u.includes(b)?'✕':'✓'} ${BARNAME[b]||b}</span>`).join('');title='Barreiras (verde = resolvida agora)'}
-  card.hidden=false;
-  card.innerHTML=`<div class="pcard"><div class="flexbetween"><h3>${esc(p.n)}, ${p.a} anos</h3><span class="pill">${p.y?'COMPROU no teste':'não comprou no teste'}${p.yf&&!p.y?' · compraria com as mudanças':''}</span></div>
-  <span class="muted">${esc(p.s)} · ${esc(p.b)} · renda ~${BRL(p.i)}/ano</span>
-  <div><span class="eyebrow">Chance de comprar com o produto como está</span><div class="kpi" style="border:0;padding:4px 0"><span class="v">${pct(probOf(p,c,kd))}</span></div></div>
-  <div><span class="eyebrow">${title}</span><div class="pills" style="margin-top:6px">${pills||'<span class="pill">nada citado</span>'}</div></div>
-  <div><span class="eyebrow">Preço mensal que aceita</span><p class="num" style="margin:4px 0 0">barato demais R$ ${p.p[0]} · barganha R$ ${p.p[1]} · começa a ficar caro R$ ${p.p[2]} · caro demais R$ ${p.p[3]}</p></div>
-  <blockquote>"${esc(p.r)}"</blockquote>
-  <p style="margin:0"><b>Maior dúvida:</b> ${esc(p.o||'—')}</p>
-  <p style="margin:0"><b>O que mudaria:</b> ${esc(p.w||'—')}</p>
-  <p class="muted" style="margin:0;font-size:.75rem">Fala de um comprador simulado. Pesquisa, não depoimento.</p></div>`;
-}
-function leverRank(c){
-  const kd=curKind();const rows=[];let unit,base;
-  if(kd==='dg'||kd==='pv'){const n=SETS[kd].personas.length;base=setRate(c,kd)*n;unit=n;
-    SETS[kd].levers.forEach(([code,lab])=>{if(code==='preco_menor'||c[xk(kd,code)])return;const c2=Object.assign({},c,{[xk(kd,code)]:true});rows.push([xk(kd,code),lab,setRate(c2,kd)*n-base])})}
-  else{base=panelRate(c)*1000;unit=1000;
-    Object.keys(LEVERS).forEach(k=>{if(c[k])return;const c2=Object.assign({},c,{[k]:true});rows.push([k,LEVERS[k],panelRate(c2)*1000-base])});
-    if(!c.diag||c.dprice>200){const c2=Object.assign({},c,{diag:true,dprice:197});rows.push(['__d','Diagnóstico a R$ 197',panelRate(c2)*1000-base])}}
-  rows.sort((a,b)=>b[2]-a[2]);
-  const mx=Math.max(0.5,...rows.map(r=>r[2]));
-  $('lr-note').textContent='Compradores a mais (de '+unit+') se ligar cada opção em '+selP().name+'.';
-  $('levers-rank').innerHTML=rows.length?rows.slice(0,8).map(([k,n,v])=>`<div class="bar"><div class="t"><div class="flexbetween"><span>${esc(n)}</span><button data-k="${k}">ligar</button></div><div class="track"><div class="fill" style="width:${Math.max(2,v/mx*100)}%"></div></div></div><span class="val">+${v<10?v.toFixed(1).replace('.',','):Math.round(v)}</span></div>`).join(''):'<p class="muted">Todas as opções já estão ligadas.</p>';
-}
-$('levers-rank').addEventListener('click',e=>{const b=e.target.closest('button[data-k]');if(!b)return;const k=b.dataset.k;const p=selP();if(k==='__d'){p.diag=true;p.dprice=197}else p[k]=true;renderMatrix();update()});
-function yearsChart(r,R){
-  const svg=$('ch-years'),Wd=760,H=260,l=78,rr=14,tp=14,bt=30,iw=Wd-l-rr,ih=H-tp-bt;
-  const ys=r.years;const vals=ys.flatMap(y=>[y.rev,y.profit]);
-  let lo=Math.min(0,...vals),hi=Math.max(1,...vals);
-  const raw=(hi-lo)/5,pw=Math.pow(10,Math.floor(Math.log10(raw))),nn=raw/pw,step=(nn<=1?1:nn<=2?2:nn<=2.5?2.5:nn<=5?5:10)*pw;
-  const mn=Math.floor(lo/step)*step,mx=Math.ceil(hi/step)*step;const y=v=>tp+ih*(1-(v-mn)/(mx-mn||1));
-  let s='<g class="grid">';for(let v=mn;v<=mx+step/2;v+=step){s+=`<line x1="${l}" x2="${Wd-rr}" y1="${y(v)}" y2="${y(v)}"/><text x="${l-6}" y="${y(v)+4}" text-anchor="end">${BRLk(Math.abs(v)<step/1000?0:v)}</text>`}s+='</g>';
-  const gw=iw/ys.length,bw=Math.min(46,gw*0.32);
-  ys.forEach((yy,i)=>{const cx=l+gw*i+gw/2;
-    [[yy.rev,'var(--s1)',-1,'Receita'],[yy.profit,'var(--s2)',1,'Resultado']].forEach(([v,col,side,lab])=>{const x0=cx+(side<0?-bw-1:1);const y0=y(Math.max(0,v)),y1=y(Math.min(0,v));const h=Math.max(1,y1-y0);
-      s+=`<rect x="${x0}" y="${y0}" width="${bw}" height="${h}" rx="3" fill="${col}" data-t="Ano ${yy.y} · ${lab}: ${BRL(v)}"/>`});
-    s+=`<text x="${cx}" y="${H-10}" text-anchor="middle">ano ${yy.y}</text>`});
-  if(mn<0)s+=`<line x1="${l}" x2="${Wd-rr}" y1="${y(0)}" y2="${y(0)}" stroke="var(--muted)" stroke-width="1"/>`;
-  svg.innerHTML=s;
-  svg.onpointermove=e=>{const t=e.target.getAttribute&&e.target.getAttribute('data-t');if(t)showTip(e,t);else hideTip()};svg.onpointerleave=hideTip;
-  const row=(lab,f,cls)=>`<tr><td>${lab}</td>${ys.map((yy,i)=>`<td class="n"${cls?` style="color:${cls(yy)}"`:''}>${f(yy,i)}</td>`).join('')}</tr>`;
-  $('tbl-years').innerHTML='<tr><th></th>'+ys.map(yy=>`<th class="n">Ano ${yy.y}</th>`).join('')+'</tr>'+
-   row('Clientes no fim do ano',yy=>Math.round(yy.clients).toLocaleString('pt-BR'))+
-   row('· rede + pago / orgânico / indicados / assessores',yy=>Math.round(yy.cDir)+' / '+Math.round(yy.cOrg)+' / '+Math.round(yy.cInd)+' / '+Math.round(yy.cAse))+
-   row('Novos assinantes no ano',yy=>Math.round(yy.newSubs).toLocaleString('pt-BR'))+
-   row('MRR no fim do ano',yy=>BRL(yy.mrr))+
-   row('Receita',yy=>BRL(yy.rev))+
-   row('Planejadores (% da receita de cada produto)',yy=>BRL(-yy.planVar))+
-   row('Líderes de time ('+String(cur.lead).replace('.',',')+'% da receita do time)',yy=>BRL(-yy.leadVar))+
-   row('Indicadores',yy=>BRL(-yy.indVar))+
-   row('Assessores',yy=>BRL(-yy.aseVar))+
-   row('Imposto + cobrança',yy=>BRL(-yy.taxFee))+
-   row('Custo de entrega',yy=>BRL(-yy.deliv))+
-   row('<b>Fica para a empresa antes dos fixos</b>',yy=>BRL(yy.rev-yy.varCost)+' ('+pct(keepV(yy))+')')+
-   row('Equipe fixa (fixo por planejador, custo por profissional)',yy=>BRL(-yy.tcost))+
-   row('Plataforma',yy=>BRL(-yy.platform))+
-   row('Marketing pago',yy=>BRL(-yy.mkt))+
-   row('Marketing orgânico (produção)',yy=>BRL(-yy.orgCost))+
-   row('Lucro operacional (antes do CEO)',yy=>BRL(yy.profit),yy=>yy.profit<0?'var(--bad)':'var(--good)')+
-   row('Adiantamentos ao CEO (saem do caixa)',yy=>BRL(-yy.ceo))+
-   row('Dividendos distribuídos',yy=>BRL(yy.divD))+
-   row('· CEO recebe ('+cur.ceoshare+'%, já descontado o adiantado)',yy=>BRL(yy.divCeo))+
-   row('· demais sócios ('+(100-cur.ceoshare)+'%)',yy=>BRL(yy.divOth))+
-   row('Adiantamento do CEO ainda a compensar',yy=>BRL(yy.aOut))+
-   row('<b>Valuation no fim do ano</b>',yy=>BRL(yy.val))+
-   row('<b>Fica para a empresa no fim (margem)</b>',yy=>yy.rev>0?pct(yy.profit/yy.rev):'—',yy=>yy.profit<0?'var(--bad)':'var(--good)')+
-   row('Planejadores / líderes',yy=>yy.planners+' / '+yy.leaders)+
-   row('Caixa no fim do ano',yy=>BRL(yy.cash),yy=>yy.cash<0?'var(--bad)':'inherit');
-}
-let lastR=null;
-function split(r){
-  lastR=r;const yy=r.years[+$('split-year').value];const R=yy.rev||1;
-  const parts=[['Planejadores',yy.planVar],['Líderes de time',yy.leadVar],['Indicadores',yy.indVar],['Assessores',yy.aseVar],['Imposto + cobrança',yy.taxFee],['Custo de entrega',yy.deliv],['Equipe fixa',yy.tcost],['Plataforma',yy.platform],['Marketing pago',yy.mkt],['Orgânico (produção)',yy.orgCost],['Outros fixos',cur.other*12]];
-  const used=parts.reduce((a,p)=>a+p[1],0);const left=yy.rev-used;
-  const mx=Math.max(R,used);
-  $('split').innerHTML=parts.map(([n,v])=>`<div class="bar"><div class="t"><div class="flexbetween"><span>${n}</span><span class="muted num">${BRL(v)}</span></div><div class="track"><div class="fill" style="width:${Math.min(100,v/mx*100)}%;background:var(--brand-2)"></div></div></div><span class="val">${(v/R*100).toFixed(0)}</span></div>`).join('')+
-   `<div class="bar"><div class="t"><div class="flexbetween"><b>${left>=0?'Fica para a empresa':'Falta para fechar a conta'}</b><span class="num" style="color:${left>=0?'var(--good)':'var(--bad)'}">${BRL(left)}</span></div><div class="track"><div class="fill" style="width:${Math.min(100,Math.abs(left)/mx*100)}%;background:${left>=0?'var(--good)':'var(--bad)'}"></div></div></div><span class="val" style="color:${left>=0?'var(--good)':'var(--bad)'}">${(left/R*100).toFixed(0)}</span></div>`;
-}
-$('split-year').addEventListener('change',()=>lastR&&split(lastR));
-function channels(r){
-  const y=r.years[+$('split-year').value];
-  const rows=[['Rede (contatos)',y.nRede,y.cRede,y.rRede,0],['Marketing pago',y.nPag,y.cPag,y.rPag,0],['Canal do Neto + orgânico',y.nOrg,y.cOrg,y.rOrg,0],['Indicadores',y.nInd,y.cInd,y.rInd,y.indVar,r.rateWarm],['Assessores',y.nAse,y.cAse,y.rAse,y.aseVar,r.rateWarm]];
-  $('ch-note').textContent='Ano '+y.y+' · '+esc(r.selName)+': direto '+(r.rate*100).toFixed(1).replace('.',',')+'%, indicado '+(r.rateWarm*100).toFixed(1).replace('.',',')+'%';
-  $('tbl-ch').innerHTML='<tr><th>Canal</th><th class="n">Novos assinantes no ano</th><th class="n">Clientes no fim do ano</th><th class="n">Receita no ano</th><th class="n">Percentual pago</th><th class="n">Fica para a empresa</th></tr>'+rows.map(([n,ns,cl,rv,cm])=>`<tr><td>${n}</td><td class="n">${Math.round(ns)}</td><td class="n">${Math.round(cl)}</td><td class="n">${BRL(rv)}</td><td class="n">${BRL(cm)}</td><td class="n">${rv>0&&y.rev>0?pct((rv-cm-rv*(y.planVar+y.leadVar+y.taxFee)/y.rev)/rv):'—'}</td></tr>`).join('');
-}
-$('split-year').addEventListener('change',()=>lastR&&channels(lastR));
-function monthTable(r){
-  const rows=r.months.filter(m=>[1,2,3,6,9,12,18,24,36,48,60].includes(m.mo));
-  $('tbl-month').innerHTML='<tr><th>Mês</th><th class="n">Interessados</th><th class="n">Diagnósticos</th><th class="n">Novos</th><th class="n">Clientes</th><th class="n">Equipe</th><th class="n">Receita</th><th class="n">Resultado</th><th class="n">Caixa</th></tr>'+rows.map(m=>`<tr><td>${m.mo}</td><td class="n">${Math.round(m.leads)}</td><td class="n">${m.diags.toFixed(1)}</td><td class="n">${m.newSubs.toFixed(1)}</td><td class="n">${Math.round(m.clients)}</td><td class="n">${m.planners}+${m.leaders}</td><td class="n">${BRL(m.rev)}</td><td class="n" style="color:${m.profit<0?'var(--bad)':'var(--good)'}">${BRL(m.profit)}</td><td class="n" style="color:${m.cash<0?'var(--bad)':'inherit'}">${BRL(m.cash)}</td></tr>`).join('');
-}
-function multiLine(svg,series,cols,fmtTip){
-  const Wd=760,H=240,l=60,r=14,t=12,b=26,iw=Wd-l-r,ih=H-t-b;const N=HZ;
-  const hi=Math.max(1,...series.flat());const raw=hi/5,pw=Math.pow(10,Math.floor(Math.log10(raw))),nn=raw/pw,step=(nn<=1?1:nn<=2?2:nn<=2.5?2.5:nn<=5?5:10)*pw;const mx=Math.ceil(hi/step)*step;
-  const x=i=>l+iw*i/(N-1),y=v=>t+ih*(1-v/mx);
-  let s='<g class="grid">';for(let v=0;v<=mx+step/2;v+=step)s+=`<line x1="${l}" x2="${Wd-r}" y1="${y(v)}" y2="${y(v)}"/><text x="${l-6}" y="${y(v)+4}" text-anchor="end">${Math.round(v).toLocaleString('pt-BR')}</text>`;s+='</g>';
+function multiLine(svg,series,cols,fmtTip,fmtAx){
+  const Wd=760,H=240,l=70,r=14,t=12,b=26,iw=Wd-l-r,ih=H-t-b;const N=series[0].length;
+  const all=series.flat();let lo=Math.min(0,...all),hi=Math.max(1,...all);const raw=(hi-lo)/5,pw=Math.pow(10,Math.floor(Math.log10(raw))),nn=raw/pw,step=(nn<=1?1:nn<=2?2:nn<=2.5?2.5:nn<=5?5:10)*pw;
+  const mn=Math.floor(lo/step)*step,mx=Math.ceil(hi/step)*step;const x=i=>l+iw*i/(N-1),y=v=>t+ih*(1-(v-mn)/(mx-mn||1));fmtAx=fmtAx||(v=>Math.round(v).toLocaleString('pt-BR'));
+  let s='<g class="grid">';for(let v=mn;v<=mx+step/2;v+=step)s+=`<line x1="${l}" x2="${Wd-r}" y1="${y(v)}" y2="${y(v)}"/><text x="${l-6}" y="${y(v)+4}" text-anchor="end">${fmtAx(Math.abs(v)<step/1000?0:v)}</text>`;s+='</g>';
+  if(mn<0)s+=`<line class="zero" x1="${l}" x2="${Wd-r}" y1="${y(0)}" y2="${y(0)}"/>`;
   [1,12,24,36,48,60].forEach(m=>{s+=`<text x="${x(m-1)}" y="${H-8}" text-anchor="middle">${m===1?'mês 1':'ano '+(m/12)}</text>`});
-  series.forEach((sr,j)=>{if(!sr.some(v=>v>0))return;s+=`<path d="${sr.map((v,i)=>(i?'L':'M')+x(i).toFixed(1)+' '+y(v).toFixed(1)).join(' ')}" fill="none" stroke="${cols[j]}" stroke-width="2"/><circle cx="${x(N-1)}" cy="${y(sr[N-1])}" r="4" fill="${cols[j]}" stroke="var(--surface)" stroke-width="2"/>`});
-  s+=`<line id="${svg.id}-x" y1="${t}" y2="${t+ih}" stroke="var(--muted)" stroke-width="1" opacity="0"/><rect x="${l}" y="${t}" width="${iw}" height="${ih}" fill="transparent" id="${svg.id}-hit"/>`;
-  svg.innerHTML=s;
-  const hit=svg.querySelector('#'+svg.id+'-hit'),cross=svg.querySelector('#'+svg.id+'-x');
-  hit.addEventListener('pointermove',e=>{const pt=svg.getBoundingClientRect();const sx=(e.clientX-pt.left)/pt.width*Wd;const i=Math.max(0,Math.min(N-1,Math.round((sx-l)/iw*(N-1))));cross.setAttribute('x1',x(i));cross.setAttribute('x2',x(i));cross.setAttribute('opacity','.5');showTip(e,fmtTip(i))});
-  hit.addEventListener('pointerleave',()=>{cross.setAttribute('opacity','0');hideTip()});
+  series.forEach((sr,j)=>{s+=`<path d="${sr.map((v,i)=>(i?'L':'M')+x(i).toFixed(1)+' '+y(v).toFixed(1)).join(' ')}" fill="none" stroke="${cols[j]}" stroke-width="2"/><circle cx="${x(N-1)}" cy="${y(sr[N-1])}" r="4" fill="${cols[j]}" stroke="var(--surface)" stroke-width="2"/>`});
+  s+=`<line class="xh" y1="${t}" y2="${t+ih}" stroke="var(--muted)" stroke-width="1" opacity="0"/><rect class="hit" x="${l}" y="${t}" width="${iw}" height="${ih}" fill="transparent"/>`;
+  svg.innerHTML=s;const hit=svg.querySelector('.hit'),cross=svg.querySelector('.xh');
+  hit.onpointermove=e=>{const pt=svg.getBoundingClientRect();const i=Math.max(0,Math.min(N-1,Math.round(((e.clientX-pt.left)/pt.width*Wd-l)/iw*(N-1))));cross.setAttribute('x1',x(i));cross.setAttribute('x2',x(i));cross.setAttribute('opacity','.5');showTip(e,fmtTip(i))};
+  hit.onpointerleave=()=>{cross.setAttribute('opacity','0');hideTip()};
 }
-function colOf(p){return PALX[p.ci%PALX.length]}
-function esc(t){return String(t).replace(/[&<>"]/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[ch]))}
-function products(r){
-  const act=r.prods;
-  $('prod-note').textContent=act.length+' produto(s) à venda'+(STATE.company.menu&&act.length>1?' · cardápio ligado':'');
-  $('prod-legend').innerHTML=act.map(o=>`<span><i style="background:${colOf(o.p)}"></i>${esc(o.p.name)}</span>`).join('');
-  if(!act.length){$('ch-prod').innerHTML='';$('tbl-prod').innerHTML='<tr><td>Nenhum produto ligado. Marque "Vender este produto" em algum.</td></tr>';return}
-  multiLine($('ch-prod'),act.map(o=>o.months.map(m=>m.n)),act.map(o=>colOf(o.p)),i=>`<b>Mês ${i+1}</b>`+act.map(o=>`<br>${esc(o.p.name)}: ${Math.round(o.months[i].n)} clientes · ${BRL(o.months[i].rev)}/mês`).join(''));
-  const ys=r.years;const gr=(a,b)=>b>0?((a/b-1)*100).toFixed(0)+'%':'—';
-  let body='';
-  act.forEach(o=>{const Y=o.years;
-    const rows=[
-      ['Compram (direto / indicado)',()=>(o.rate*100).toFixed(1).replace('.',',')+'% / '+(o.rate*o.warm*100).toFixed(1).replace('.',',')+'%',true],
-      ['Clientes no fim do ano',(y,i)=>Math.round(Y[i].n).toLocaleString('pt-BR')],
-      ['Novos clientes no ano',(y,i)=>Math.round(Y[i].ns).toLocaleString('pt-BR')],
-      ['Receita no ano',(y,i)=>BRL(Y[i].rev)],
-      ['Crescimento da receita',(y,i)=>i?gr(Y[i].rev,Y[i-1].rev):'—'],
-      ['Marketing do produto',(y,i)=>BRL(-Y[i].mk)],
-      ['Indicadores + assessores',(y,i)=>BRL(-Y[i].comm)],
-      ['Contribuição do produto',(y,i)=>`<span style="color:${Y[i].k<0?'var(--bad)':'var(--good)'}">${BRL(Y[i].k)}</span>`+(Y[i].rev>0?' ('+pct(Y[i].k/Y[i].rev)+')':'')],
-      ['Parte da receita total',(y,i)=>y.rev>0?pct(Y[i].rev/y.rev):'—'],
-      ['Planejadores',(y,i)=>o.p.plan>0?Y[i].pl:'—']];
-    body+=rows.map(([lab,f,once],j)=>`<tr>${j===0?`<td rowspan="${rows.length}" style="border-left:3px solid ${colOf(o.p)}"><b>${esc(o.p.name)}</b></td>`:''}<td>${lab}</td>${once?`<td class="n" colspan="5">${f()}</td>`:ys.map((y,i)=>`<td class="n">${f(y,i)}</td>`).join('')}</tr>`).join('');
-  });
-  $('tbl-prod').innerHTML='<tr><th>Produto</th><th></th>'+ys.map(y=>`<th class="n">Ano ${y.y}</th>`).join('')+'</tr>'+body+
-    '<tr><td colspan="2"><b>Consolidado</b> (contribuição de todos − plataforma, CEO, outros fixos e líderes)</td>'+ys.map(y=>`<td class="n"><b style="color:${y.profit<0?'var(--bad)':'var(--good)'}">${BRL(y.profit)}</b></td>`).join('')+'</tr>';
-}
-function orgPanel(r,R,c){
-  const ys=r.years,ms=r.months;
-  const noData=!(c.ytsubs>0||c.ytviews>0);
-  $('org-warn').innerHTML=noData?'<b>Preencha inscritos e visualizações por mês do canal</b> (YouTube Studio → Análises). Sem esses números o canal não gera interessados. Clique no link e interessado são premissas iniciais: troque pelos números reais quando tiver.':'Clique no link e interessado são premissas: troque pelos números reais do canal quando tiver (cliques no link da descrição / formulário).';
-  const gtxt=[1,2,3,4,5].map(i=>(c['ytg'+i]>0?'+':'')+String(c['ytg'+i]).replace('.',',')+'%').join(' · ');
-  $('org-sum').textContent='Canal: '+(c.ytsubs||0).toLocaleString('pt-BR')+' inscritos, '+(c.ytviews||0).toLocaleString('pt-BR')+' visualizações/mês, crescimento por mês nos anos 1 a 5: '+gtxt+'. Clique no link '+String(c.ytctr).replace('.',',')+'%, vira interessado '+c.ytlead+'%'+(c.yttrust?', compra como indicado':'')+'.';
-  $('org-note').textContent=noData?'sem números do canal':Math.round(ms[11].orgLeads).toLocaleString('pt-BR')+' interessados/mês no mês 12';
-  const y1=ys[0],y5=ys[4];
-  const share=y=>y.newSubs>0?pct(y.nOrg/y.newSubs):'—';
-  const cpcO=y=>y.nOrg>0?BRL(y.orgCost/y.nOrg):(y.orgCost>0?'—':'R$ 0');
-  const cpcP=y=>y.nPag>0?BRL(y.mkt/y.nPag):'—';
-  const items=[
-    ['Interessados do orgânico no ano 1',Math.round(y1.orgLeads).toLocaleString('pt-BR'),delta(y1.orgLeads,R.years[0].orgLeads,true,v=>Math.round(v)),'canal do Neto + outros orgânicos'],
-    ['Clientes novos do orgânico (ano 1)',Math.round(y1.nOrg).toLocaleString('pt-BR'),delta(y1.nOrg,R.years[0].nOrg,true,v=>Math.round(v)),share(y1)+' de todos os clientes novos'],
-    ['Receita de clientes orgânicos (ano 5)',BRLk(y5.rOrg),delta(y5.rOrg,R.years[4].rOrg,true,BRLk),y5.rev>0?pct(y5.rOrg/y5.rev)+' da receita':'—'],
-    ['Custo por cliente: orgânico × pago',cpcO(y1)+' × '+cpcP(y1),'<span class="delta eq">ano 1</span>','produção do conteúdo ÷ clientes orgânicos; verba paga ÷ clientes pagos']];
-  $('org-kpis').innerHTML=items.map(([l,v,d,s])=>`<div class="kpi"><span class="l">${l}</span><span class="v">${v}</span>${d}<span class="l">${s}</span></div>`).join('');
-  const ser=[['Rede','nRede','var(--brand-2)'],['Marketing pago','nPag','var(--s2)'],['Canal do Neto + orgânico','nOrg','var(--s3)'],['Indicadores','nInd','#eda100'],['Assessores','nAse','#6250d6']];
-  const act=ser.filter(s=>ms.some(m=>m[s[1]]>0.01));
-  $('org-legend').innerHTML=act.map(s=>`<span><i style="background:${s[2]}"></i>${s[0]}</span>`).join('');
-  multiLine($('ch-org'),act.map(s=>ms.map(m=>m[s[1]])),act.map(s=>s[2]),i=>`<b>Mês ${i+1}</b>`+act.map(s=>`<br>${s[0]}: ${ms[i][s[1]].toFixed(1).replace('.',',')} clientes novos`).join(''));
-  const row=(lab,f)=>`<tr><td>${lab}</td>${ys.map((y,i)=>`<td class="n">${f(y,i)}</td>`).join('')}</tr>`;
-  $('tbl-org').innerHTML='<tr><th></th>'+ys.map(y=>`<th class="n">Ano ${y.y}</th>`).join('')+'</tr>'+
-    row('Inscritos no fim do ano',y=>Math.round(y.ytSubs).toLocaleString('pt-BR'))+
-    row('Visualizações no ano',y=>Math.round(y.ytViews).toLocaleString('pt-BR'))+
-    row('Interessados do orgânico',y=>Math.round(y.orgLeads).toLocaleString('pt-BR'))+
-    row('Clientes novos do orgânico',y=>Math.round(y.nOrg).toLocaleString('pt-BR'))+
-    row('Parte dos clientes novos',y=>share(y))+
-    row('Clientes orgânicos ativos no fim do ano',y=>Math.round(y.cOrg).toLocaleString('pt-BR'))+
-    row('Receita de clientes orgânicos',y=>BRL(y.rOrg))+
-    row('Custo do orgânico (produção)',y=>BRL(-y.orgCost))+
-    row('Custo por cliente orgânico',y=>cpcO(y))+
-    row('Custo por cliente do marketing pago',y=>cpcP(y));
-}
-// ---- tabela de produtos (cada produto = uma coluna) ----
-const MXS=[
- ['Preço',[
-  ['m','Mensalidade (R$)','num',1,'Quanto o cliente paga por mês.'],
-  ['diag','Diagnóstico pago antes?','chk',0,'O cliente compra um diagnóstico avulso e depois decide se assina.'],
-  ['dprice','Preço do diagnóstico (R$)','num',10,'Pagamento único.'],
-  ['parcelado','Diagnóstico em 3x','chk',0,'Sem juros.',null,1],
-  ['conv','Diagnóstico → assinatura (%)','num',5,'De cada 100 que compram o diagnóstico, quantos assinam. O teste indicou poucos.',null,1]]],
- ['O que entrega',[
-  ['checkin','Contato mensal do planejador','chk',0,'O planejador marca a conversa, sem esperar o cliente pedir.'],
-  ['casal','Sessão com o casal','chk',0,'Reunião com os dois juntos.'],
-  ['raiox','Raio-X das tarifas do banco','chk',0,'Mostra quanto o banco já cobra em tarifas.'],
-  ['dividas','Plano para sair das dívidas','chk',0,'Passo a passo com datas.'],
-  ['tributario','Imposto, empresa e sucessão','chk',0,'IR, separação PF/PJ e sucessão.'],
-  ['online','100% online','chk',0,'Sem reuniões.'],
-  ['cancel','Cancela sem multa','chk',0,'Sem fidelidade.'],
-  ['comissao','Sem comissão','chk',0,'Só marque se for verdade.'],
-  ['cfp','Planejador CFP','chk',0,'Certificação mostrada no site.'],
-  ['garantia','Garantia de devolução','chk',0,'Devolve se o plano for genérico.'],
-  ['exemplo','Plano de exemplo no site','chk',0,'Real e anonimizado.'],
-  ['prova','Depoimentos de clientes','chk',0,'Só existe depois dos primeiros clientes.']]],
- ['Como chegam os clientes',[
-  ['mkt','Anúncios por mês (R$)','num',500,'Verba de marketing digital no primeiro ano.'],
-  ['mktgr','Aumento dos anúncios por ano (%)','num',5,'Quanto a verba cresce a cada ano: 25 = 25% a mais por ano.'],
-  ['cpl','Custo por interessado (R$)','num',5,'Quanto de anúncio custa cada pessoa que deixa contato.'],
-  ['cplgr','Custo por interessado sobe por ano (%)','num',5,'Anunciar mais costuma ficar mais caro.',null,1],
-  ['rede','Contatos da rede por mês','num',5,'Conhecidos que recebem a oferta direto.'],
-  ['growth','Rede e indicações crescem por ano (%)','num',5,'Crescimento dos contatos e indicações de um ano para o outro.',null,1],
-  ['churn','Cancelam por mês (%)','num',0.5,'Parte dos clientes que cancela todo mês.']]],
- ['Indicações e assessores',[
-  ['pleads','Indicações por mês','num',5,'Influenciadores, parceiros, vendedores de outros serviços.'],
-  ['pcom','Comissão do indicador (%)','num',1,''],
-  ['pdur','Meses de comissão do indicador','num',1,''],
-  ['aleads','Interessados de assessores por mês','num',5,'Clientes de assessores de investimento.'],
-  ['acom','Comissão do assessor (%)','num',1,''],
-  ['adur','Meses de comissão do assessor','num',1,'']],1],
- ['Atendimento',[
-  ['plan','Planejador recebe (% da receita)','num',1,'0 = produto sem planejador (self-service).'],
-  ['cap','Clientes por planejador','num',5,'Define quantos planejadores serão necessários.'],
-  ['pfix',"Linha d'água do planejador (R$/mês)",'num',250,'Mínimo garantido: o planejador recebe o maior valor entre a % e esta linha.'],
-  ['deliv','Outros custos por cliente (R$/mês)','num',5,'App, IA, material.',null,1]]],
- ['Compradores simulados',[
-  ['kind','Quem são os compradores','kind',0,'Cada produto usa compradores com o perfil dele.'],
-  ['pbase','Taxa de compra manual (%)','num',0.1,'Só se escolher "Informada manualmente".']],1]];
-MXS.forEach(sec=>{if(sec[0]==='O que entrega')sec[1].forEach(r=>r[5]='as')});
-['dg','pv'].forEach(st=>{if(!SETS[st])return;const S=SETS[st];const n=S.personas.length;
-  MXS.splice(MXS.findIndex(x=>x[0]==='Como chegam os clientes'),0,[(st==='dg'?'O que entrega (Digital)':'O que entrega (Private)'),S.levers.filter(([c])=>c!=='preco_menor').map(([c,t,cnt])=>[xk(st,c),t,'chk',0,cnt+' de '+n+' compradores do perfil disseram que isso os faria comprar.',st])])});
-let MXADV=false;try{MXADV=localStorage.getItem('profitto-adv')==='1'}catch(e){}
-let MXC=new Set();try{MXC=new Set(JSON.parse(localStorage.getItem('profitto-mxcol')||'[]'))}catch(e){}
-function mxCell(p,[k,lab,t,step,desc,set]){
-  let ne=false;if(set){const kd=kindOf(p);const own=set==='as'?(kd==='as'||kd==='manual'):kd===set;
-    if(!own){if(set==='as')ne=!((kd==='dg'||kd==='pv')&&MAPG[kd][k]);else{const code=k.slice(3);ne=!((kd==='as'||kd==='manual')&&Object.values(MAPG[set]).includes(code))}}}
-  if(ne&&t==='chk')return `<input type="checkbox" data-pid="${p.id}" data-k="${k}" ${p[k]?'checked':''} class="ne" title="Os compradores deste produto não citaram isso: marca a entrega, mas não muda quantos compram." aria-label="${esc(lab)} – ${esc(p.name)}">`;
-  const a=`data-pid="${p.id}" data-k="${k}" aria-label="${esc(lab)} – ${esc(p.name)}"`;
-  if(t==='chk')return `<input type="checkbox" ${a} ${p[k]?'checked':''}>`;
-  if(t==='kind'){const kd=kindOf(p);return `<select class="mi" ${a}>${['as','dg','pv','manual'].filter(o=>o==='as'||o==='manual'||SETS[o]).map(o=>`<option value="${o}"${kd===o?' selected':''}>${KINDNAME[o]}</option>`).join('')}</select>`}
-  const dis=false;
-  return `<input type="number" class="mi" ${a} step="${step}" min="0" value="${typeof p[k]==='number'?Math.round(p[k]*100)/100:p[k]}"${dis?' disabled':''}>`;
-}
-function renderOrgSplit(){
-  const on=STATE.list.filter(p=>p.on);const sw=on.reduce((a,p)=>a+(+p.orgw||0),0);
-  $('orgsplit').innerHTML=on.length?on.map(p=>`<div class="osr"><span><i class="sw" style="background:${colOf(p)}"></i>${esc(p.name)}</span><input type="range" min="0" max="100" step="5" value="${+p.orgw||0}" data-pid="${p.id}" aria-label="Público do Neto para ${esc(p.name)}"><b>${sw>0?Math.round((+p.orgw||0)/sw*100):0}%</b></div>`).join(''):'<p class="muted">Nenhum produto à venda.</p>';
-}
-function renderMatrix(){renderOrgSplit();
-  const L=STATE.list;
-  const head='<tr><th class="mx-l"></th>'+L.map(p=>`<th class="mx-c${p.on?'':' off'}"><div class="mx-h"><span class="sw" style="background:${colOf(p)}"></span><input type="text" class="mi mx-name" data-pid="${p.id}" data-k="name" value="${esc(p.name)}" maxlength="40" aria-label="Nome do produto"></div>
-    <label class="mx-on"><input type="checkbox" data-pid="${p.id}" data-k="on" ${p.on?'checked':''}> vender</label>
-    <div class="mx-act"><button class="lnk" data-act="dup" data-pid="${p.id}">duplicar</button>${L.length>1?`<button class="lnk" data-act="del" data-pid="${p.id}">remover</button>`:''}</div></th>`).join('')+
-    '<th class="mx-c mx-add"><button class="btn" data-act="new">+ Novo produto</button></th></tr>';
-  let body='';
-  MXS.forEach(([sec,allrows,sadv])=>{if(sadv&&!MXADV)return;const rows=allrows.filter(r=>MXADV||!r[6]);const col=MXC.has(sec);
-    body+=`<tr class="mx-sec"><td colspan="${L.length+2}"><button class="lnk" data-sec="${esc(sec)}" aria-expanded="${!col}">${col?'▸':'▾'} ${esc(sec)}</button></td></tr>`;
-    if(!col)rows.forEach(r=>{body+=`<tr><td class="mx-l" title="${esc(r[4]||'')}"><span class="ml">${esc(r[1])}${r[4]&&!MXADV?' <span class="qi">?</span>':''}</span>${r[4]&&MXADV?`<span class="md">${esc(r[4])}</span>`:''}</td>${L.map(p=>`<td class="mx-c${p.on?'':' off'}">${mxCell(p,r)}</td>`).join('')}<td></td></tr>`});
-  });
-  body+=`<tr class="mx-sec"><td colspan="${L.length+2}"><span class="eyebrow">Resultado de cada produto</span></td></tr>`;
-  $('mx-in').innerHTML='<thead>'+head+'</thead><tbody>'+body+'</tbody><tbody id="mx-res"></tbody>';
-}
-function focus(st){
-  const L=STATE.list;const tf=(st.company.tax+3.5)/100;
-  const rows=L.map(p=>{const r=simulate(aloneOf(st,p.id));const o=r.prods[0];
-    const unit=p.m*(1-p.plan/100-tf)-p.deliv;const y1=o.years[0];const cac=y1.ns>0?y1.mk/y1.ns:0;
-    const life=p.churn>0?100/p.churn:120;
-    return {p,r,o,unit,cac,ltv:unit*Math.min(life,120),pay:unit>0&&cac>0?cac/unit:0}});
-  const C=lastCons;const inC=id=>C&&C.prods.find(o=>o.p.id===id);
-  const cl=v=>`<span style="color:${v<0?'var(--bad)':'var(--good)'}">${BRLk(v)}</span>`;
-  const pc=v=>(v*100).toFixed(1).replace('.',',')+'%';
-  const R=(lab,f,b,adv)=>adv&&!MXADV?'':`<tr${b?' class="mx-b"':''}><td class="mx-l">${lab}</td>${rows.map(x=>`<td class="mx-c n${x.p.on?'':' off'}">${f(x)}</td>`).join('')}<td></td></tr>`;
-  $('mx-res').innerHTML=
-    R('De cada 100 interessados, compram',x=>pc(x.o.rate)+(x.o.warm>1.01?' <span class="muted">(indicados: '+pc(x.o.rate*x.o.warm)+')</span>':''))+
-    R('Recebe do público do Neto',x=>{if(!x.p.on)return '—';const on=L.filter(q=>q.on);const sw=on.reduce((a,q)=>a+(+q.orgw||0),0);const sh=sw>0?(+x.p.orgw||0)/sw:0;const n=C?C.months[11].orgLeads*sh:0;return pct(sh)+(n>0?' <span class="muted">≈ '+Math.round(n)+'/mês</span>':'')},0,1)+
-    R('Sobra por cliente por mês',x=>BRL(x.unit))+
-    R('Anúncio gasto por cliente novo (ano 1)',x=>x.cac?BRL(x.cac):'—')+
-    R('Meses para recuperar esse gasto',x=>x.pay?(x.pay<1?'< 1':x.pay.toFixed(1).replace('.',',')):'—',0,1)+
-    R('Quanto um cliente deixa no total',x=>BRL(x.ltv),0,1)+
-    R('<b>No cenário completo</b>: clientes ano 5',x=>{const o=inC(x.p.id);return o?Math.round(o.years[4].n).toLocaleString('pt-BR'):'não vende'})+
-    R('No cenário completo: receita ano 5',x=>{const o=inC(x.p.id);return o?BRLk(o.years[4].rev):'—'})+
-    R('No cenário completo: contribuição ano 5',x=>{const o=inC(x.p.id);return o?cl(o.years[4].k):'—'},0,1)+
-    R('<b>Sozinho</b>: resultado ano 1',x=>cl(x.r.years[0].profit),0,1)+
-    R('Sozinho: resultado ano 5',x=>cl(x.r.years[4].profit),true)+
-    R('Sozinho: caixa no pior momento',x=>cl(x.r.minCash),true)+
-    R('Sozinho: primeiro mês de lucro',x=>x.r.beMonth?'mês '+x.r.beMonth:'—',true)+
-    `<tr><td class="mx-l">Ver estes compradores na análise do fim da página</td>${rows.map(x=>`<td class="mx-c"><input type="radio" name="mxsel" data-act="sel" data-pid="${x.p.id}" ${x.p.id===STATE.sel?'checked':''} aria-label="Analisar ${esc(x.p.name)}"></td>`).join('')}<td></td></tr>`;
-  const ok=rows.filter(x=>x.r.years[4].profit>0);
-  const start=(ok.length?ok:rows).slice().sort((a,b)=>b.r.minCash-a.r.minCash)[0];
-  const pot=rows.slice().sort((a,b)=>b.r.years[4].profit-a.r.years[4].profit)[0];
-  const fast=rows.filter(x=>x.r.beMonth).sort((a,b)=>a.r.beMonth-b.r.beMonth)[0];
-  $('focus-rec').innerHTML=
-    `<div class="fc"><span class="eyebrow">Começar por</span><b>${esc(start.p.name)}</b><span class="muted" style="font-size:.8rem">precisa de menos caixa: pior momento ${BRLk(start.r.minCash)}</span></div>`+
-    `<div class="fc"><span class="eyebrow">Maior lucro no ano 5</span><b>${esc(pot.p.name)}</b><span class="muted" style="font-size:.8rem">${BRLk(pot.r.years[4].profit)} sozinho</span></div>`+
-    `<div class="fc"><span class="eyebrow">Lucro mais rápido</span><b>${fast?esc(fast.p.name):'nenhum em 5 anos'}</b><span class="muted" style="font-size:.8rem">${fast?'primeiro lucro no mês '+fast.r.beMonth:'nenhum produto sozinho chega ao lucro'}</span></div>`;
-}
-let lastCons=null;
-$('mx-in').addEventListener('input',e=>{
-  const t=e.target,pid=t.dataset&&t.dataset.pid,k=t.dataset&&t.dataset.k;if(!pid||!k)return;
-  const p=STATE.list.find(x=>x.id===pid);if(!p)return;
-  if(t.type==='checkbox')p[k]=t.checked;
-  else if(k==='name')p.name=t.value.trim()||'Sem nome';
-  else if(k==='kind'){p.kind=t.value;if(p.kind==='manual'&&!p.tcfg){p.tcfg=pick(p,LEVK.concat(['diag','dprice']));p.tm=p.m;p.vw=p.vw||[p.m*0.3,p.m*0.6,p.m*1.2,p.m*1.8];if(!(p.pbase>0))p.pbase=10}}
-  else{if(t.value==='')return;p[k]=+t.value;if(k==='pbase'&&kindOf(p)!=='manual'){p.kind='manual';if(!p.tcfg)p.tcfg=pick(p,LEVK.concat(['diag','dprice']));renderMatrix()}if(k==='dprice'&&p[k]>0&&!p.diag){p.diag=true;renderMatrix()}}
-  $('preset').value='';
-  if(t.type==='checkbox'||k==='kind'||k==='plan')renderMatrix();
-  update();
-});
-$('mx-in').addEventListener('click',e=>{
-  const s=e.target.closest('[data-sec]');if(s){const k=s.dataset.sec;if(MXC.has(k))MXC.delete(k);else MXC.add(k);try{localStorage.setItem('profitto-mxcol',JSON.stringify([...MXC]))}catch(_){}renderMatrix();update();return}
-  const b=e.target.closest('[data-act]');if(!b)return;const act=b.dataset.act,pid=b.dataset.pid;const p=STATE.list.find(x=>x.id===pid);
-  if(act==='new'){const n=mkProd(newId(),'Novo produto '+(STATE.list.length+1),nextCi(),BASEP,{});STATE.list.push(n);renderMatrix();update();const el=document.querySelector(`.mx-name[data-pid="${n.id}"]`);if(el)el.select()}
-  if(act==='dup'&&p){const n=Object.assign(clone(p),{id:newId(),ci:nextCi(),name:p.name+' (cópia)'});STATE.list.splice(STATE.list.indexOf(p)+1,0,n);renderMatrix();update()}
-  if(act==='del'&&p&&STATE.list.length>1&&confirm('Remover o produto "'+p.name+'"?')){STATE.list=STATE.list.filter(x=>x.id!==pid);if(STATE.sel===pid)STATE.sel=STATE.list[0].id;renderMatrix();update()}
-  if(act==='sel'&&p){STATE.sel=pid;update()}
-});
-// ---- painel de resultado ao vivo ----
-let prevLive=null;
-function spark(vals,cols,w,h,zero){
-  const all=vals.flat();let lo=Math.min(0,...all),hi=Math.max(1,...all);if(hi===lo)hi=lo+1;
-  const N=vals[0].length,x=i=>2+(w-4)*i/(N-1),y=v=>2+(h-4)*(1-(v-lo)/(hi-lo));
-  let s='';if(zero&&lo<0)s+=`<line x1="0" x2="${w}" y1="${y(0)}" y2="${y(0)}" stroke="var(--bad)" stroke-dasharray="3 3" opacity=".6"/>`;
-  vals.forEach((v,j)=>{s+=`<path d="${v.map((a,i)=>(i?'L':'M')+x(i).toFixed(1)+' '+y(a).toFixed(1)).join(' ')}" fill="none" stroke="${cols[j]}" stroke-width="2"/>`});
-  return `<svg viewBox="0 0 ${w} ${h}" class="spark" preserveAspectRatio="none">${s}</svg>`;
-}
-function live(r,R){
-  const y1=r.years[0],y5=r.years[4];
-  const met=[
-    ['Lucro operacional ano 1',y1.profit,R.years[0].profit,BRLk,true,'p1'],
-    ['Lucro operacional ano 5',y5.profit,R.years[4].profit,BRLk,true,'p5'],
-    ['Valuation no ano 5',y5.val,R.years[4].val,BRLk,true,'vl'],
-    ['Pior momento do caixa',r.minCash,R.minCash,BRLk,true,'mc'],
-    ['Primeiro mês de lucro',r.beMonth||61,R.beMonth||61,v=>v>60?'—':'mês '+v,false,'be'],
-    ['Receita ano 5',y5.rev,R.years[4].rev,BRLk,true,'rv'],
-    ['Clientes no ano 5',y5.clients,R.years[4].clients,v=>Math.round(v).toLocaleString('pt-BR'),true,'cl'],
-    ['Planejadores no ano 5',y5.planners,R.years[4].planners,v=>v,null,'pl']];
-  const now={};met.forEach(m=>now[m[5]]=m[1]);
-  let chg='';
-  if(prevLive){const d5=now.p5-prevLive.p5,dc=now.mc-prevLive.mc,db=(now.be>60?61:now.be)-(prevLive.be>60?61:prevLive.be);
-    const parts=[];if(Math.abs(d5)>=500)parts.push(`ano 5 <b class="${d5>0?'pos':'neg'}">${d5>0?'+':'−'}${BRLk(Math.abs(d5)).replace('R$ ','R$ ')}</b>`);
-    if(Math.abs(dc)>=500)parts.push(`caixa <b class="${dc>0?'pos':'neg'}">${dc>0?'+':'−'}${BRLk(Math.abs(dc))}</b>`);
-    if(db)parts.push(`1º lucro <b class="${db<0?'pos':'neg'}">${db<0?'':'+'}${db} meses</b>`);
-    if(parts.length)chg=parts.join(' · ');}
-  if(chg){$('lv-chg').innerHTML='Última alteração: '+chg;$('lv-chg').classList.remove('flash');void $('lv-chg').offsetWidth;$('lv-chg').classList.add('flash')}
-  else if(!prevLive)$('lv-chg').innerHTML='Mude qualquer número e veja o efeito aqui.';
-  prevLive=now;
-  $('lv-verdict').className=$('verdict').className;$('lv-verdict').textContent=$('verdict').textContent;
-  $('lv-met').innerHTML=met.map(([l,v,rv,f,hb])=>{const d=v-rv;const same=Math.abs(d)<Math.max(Math.abs(rv)*0.005,0.5);const good=hb===null?null:hb?d>0:d<0;
-    return `<div class="lm"><span>${l}</span><b class="${(l.startsWith('Lucro')||l.startsWith('Pior'))?(v<0?'neg':'pos'):''}">${f(v)}</b><small class="${same||good===null?'eq':good?'up':'down'}">${same?'= ref.':(good===null?(d>0?'+':'−'):(good?'▲ ':'▼ '))+(f===BRLk?BRLk(Math.abs(d)):Math.round(Math.abs(d)).toLocaleString('pt-BR'))}</small></div>`}).join('');
-  $('lv-cash').innerHTML=spark([r.months.map(m=>m.cash),R.months.map(m=>m.cash)],['var(--s1)','var(--s2)'],320,70,true);
-  const act=r.prods;
-  $('lv-prod').innerHTML=act.length?spark(act.map(o=>o.months.map(m=>m.n)),act.map(o=>colOf(o.p)),320,60,false)+
-    '<table class="lt"><tr><th></th><th class="n">Clientes a5</th><th class="n">Receita a5</th><th class="n">Contrib. a5</th></tr>'+act.map(o=>`<tr><td><i class="sw" style="background:${colOf(o.p)}"></i>${esc(o.p.name)}</td><td class="n">${Math.round(o.years[4].n).toLocaleString('pt-BR')}</td><td class="n">${BRLk(o.years[4].rev)}</td><td class="n ${o.years[4].k<0?'neg':''}">${BRLk(o.years[4].k)}</td></tr>`).join('')+'</table>':'<p class="muted">Nenhum produto à venda.</p>';
-}
-function valPanel(r,R,c){
-  const ms=r.months,ys=r.years,sh=(c.ceoshare||20)/100;
-  $('val-note').textContent='CEO tem '+Math.round(sh*100)+'% · demais sócios '+Math.round((1-sh)*100)+'%';
-  const it=[['Valuation no fim do ano 1',ys[0].val,R.years[0].val],['Valuation no fim do ano 3',ys[2].val,R.years[2].val],['Valuation no fim do ano 5',ys[4].val,R.years[4].val],['Parte do CEO no ano 5 ('+Math.round(sh*100)+'%)',ys[4].val*sh,R.years[4].val*sh]];
-  $('val-kpis').innerHTML=it.map(([l,v,rv])=>`<div class="kpi"><span class="l">${l}</span><span class="v">${BRLk(v)}</span>${delta(v,rv,true,BRLk)}</div>`).join('');
-  multiLine($('ch-val'),[ms.map(m=>m.val),ms.map(m=>m.cash)],['var(--s1)','var(--s3)'],i=>`<b>Mês ${i+1}</b><br>Valuation: ${BRL(ms[i].val)}<br>Caixa: ${BRL(ms[i].cash)}`);
-  const row=(l,f)=>`<tr><td>${l}</td>${ys.map((y,i)=>`<td class="n">${f(y,i)}</td>`).join('')}</tr>`;
-  $('tbl-val').innerHTML='<tr><th></th>'+ys.map(y=>`<th class="n">Ano ${y.y}</th>`).join('')+'</tr>'+
-    row('<span style="color:var(--s1)">●</span> Valuation no fim do ano',y=>BRL(y.val))+
-    row('Crescimento do valuation',(y,i)=>i&&ys[i-1].val>0?((y.val/ys[i-1].val-1)*100).toFixed(0)+'%':'—')+
-    row('Receita recorrente anual (MRR × 12)',y=>BRL(y.mrr*12))+
-    row('Lucro operacional no ano',y=>BRL(y.profit))+
-    row('<span style="color:var(--s3)">●</span> Caixa no fim do ano',y=>BRL(y.cash))+
-    row('Dividendos distribuídos no ano',y=>BRL(y.divD))+
-    row('Parte do CEO no valuation',y=>BRL(y.val*sh))+
-    row('Parte dos demais sócios',y=>BRL(y.val*(1-sh)))+
-    row('Adiantamento do CEO ainda a compensar',y=>BRL(y.aOut));
-}
-function update(){
-  const c=read();cur=flatOf(c);
-  try{localStorage.setItem('profitto-cur',JSON.stringify(c))}catch(e){}
-  Object.keys(FMT).forEach(k=>{const o=$('o-'+k);if(o)o.textContent=FMT[k](cur[k])});
-  const r=simulate(c),R=simulate(ref);lastCons=r;
-  const sb=(l,v,cls)=>`<span>${l} <b class="${cls||''}">${v}</b></span>`;const y5=r.years[4];
-  $('sbar').innerHTML=sb('À venda:',r.prods.map(o=>esc(o.p.name)).join(', ')||'nada')+sb('Lucro ano 1:',BRLk(r.years[0].profit),r.years[0].profit<0?'neg':'pos')+sb('Lucro ano 5:',BRLk(y5.profit),y5.profit<0?'neg':'pos')+sb('Valuation a5:',BRLk(y5.val))+sb('Pior caixa:',BRLk(r.minCash),r.minCash<0?'neg':'pos')+sb('1º lucro:',r.beMonth?'mês '+r.beMonth:'—')+sb('Clientes ano 5:',Math.round(y5.clients).toLocaleString('pt-BR'));
-  kpis(r,R,cur);live(r,R);plannerBox(r,cur);products(r);focus(c);orgPanel(r,R,c.company);valPanel(r,R,c.company);renderTabs();
-  lineChart($('ch-clients'),r.months.map(m=>m.clients),R.months.map(m=>m.clients),{ref:r.beClients,fmt:v=>Math.round(v),fmtTip:v=>Math.round(v)+' clientes'});
-  lineChart($('ch-cash'),r.months.map(m=>m.cash),R.months.map(m=>m.cash),{fmt:BRLk,fmtTip:BRL});
-  yearsChart(r,R);split(r);channels(r);dots(cur);leverRank(cur);renderPick(cur);monthTable(r);
-}
-document.querySelectorAll('#co-block input, #co-block select').forEach(el=>el.addEventListener('input',()=>{$('preset').value='';update()}));
-$('orgsplit').addEventListener('input',e=>{const t=e.target;const p=STATE.list.find(x=>x.id===t.dataset.pid);if(!p)return;p.orgw=+t.value;const on=STATE.list.filter(q=>q.on);const sw=on.reduce((a,q)=>a+(+q.orgw||0),0);[...$('orgsplit').querySelectorAll('.osr')].forEach((r,i)=>{r.querySelector('b').textContent=(sw>0?Math.round((+on[i].orgw||0)/sw*100):0)+'%'});update()});
-$('ytg-same').addEventListener('click',()=>{const v=$('ytg1').value;[2,3,4,5].forEach(i=>$('ytg'+i).value=v);update()});
-$('org-edit').addEventListener('click',()=>{const f=$('fs-org');f.scrollIntoView({behavior:'smooth',block:'start'});$('ytsubs').focus({preventScroll:true})});
-function newId(){let i=1;while(STATE.list.some(p=>p.id==='p'+i))i++;return 'p'+i}
-function nextCi(){const used=STATE.list.map(p=>p.ci);let i=0;while(used.includes(i))i++;return i}
-$('preset').addEventListener('change',e=>{const v=e.target.value;if(!v)return;readInputs();if(v==='tres'){defaultProds().forEach(d=>{if(!STATE.list.some(p=>p.id===d.id))STATE.list.push(d)});STATE.list.forEach(p=>{if(['as','dg','pv'].includes(p.id))p.on=true});syncInputs()}else write(PRESETS[v]);update()});
-$('save').addEventListener('click',()=>{ref=read();try{localStorage.setItem('profitto-ref',JSON.stringify(ref))}catch(e){}$('save').textContent='Referência salva';setTimeout(()=>$('save').textContent='Salvar como referência',1500);update()});
-$('reset').addEventListener('click',()=>{STATE=defaultState();write(STATE);ref=snapshot();try{localStorage.setItem('profitto-ref',JSON.stringify(ref))}catch(e){}update()});
+function spark(vals,cols,w,h){const all=vals.flat();let lo=Math.min(0,...all),hi=Math.max(1,...all);const N=vals[0].length,x=i=>2+(w-4)*i/(N-1),y=v=>2+(h-4)*(1-(v-lo)/(hi-lo||1));let s='';if(lo<0)s+=`<line x1="0" x2="${w}" y1="${y(0)}" y2="${y(0)}" stroke="var(--bad)" stroke-dasharray="3 3" opacity=".6"/>`;vals.forEach((v,j)=>{s+=`<path d="${v.map((a,i)=>(i?'L':'M')+x(i).toFixed(1)+' '+y(a).toFixed(1)).join(' ')}" fill="none" stroke="${cols[j]}" stroke-width="2"/>`});return `<svg viewBox="0 0 ${w} ${h}" class="spark" preserveAspectRatio="none">${s}</svg>`}
 
-// ---- aba Comparar cenários ----
+// ---- resultados ----
+let lastR=null,prevLive=null;
+function verdictOf(r){if(r.outMonth)return ['bad','Caixa fica negativo no mês '+r.outMonth];if(r.years[0].profit>=0)return ['yes','Lucro já no ano 1'];if(r.beMonth)return ['no','Primeiro lucro no mês '+r.beMonth];return ['bad','Não dá lucro em 5 anos']}
+function focus(r){
+  const st=STATE,L=st.list,tf=(st.company.tax+st.company.fee)/100;
+  const rows=L.map(p=>{const a=simulate(aloneOf(st,p.id)),o=a.prods[0],y1=o.years[0];const unit=p.m*(1-p.plan/100-tf)-p.cost;const cac=y1.nsA>0?y1.ads/y1.nsA:0;return {p,a,o,unit,cac,pay:unit>0&&cac>0?cac/unit:0}});
+  const inC=id=>r.prods.find(o=>o.p.id===id);const cl=v=>`<span class="${v<0?'neg':'pos'}">${BRLk(v)}</span>`;
+  const R=(lab,f,b)=>`<tr${b?' class="mx-b"':''}><td class="mx-l">${lab}</td>${rows.map(x=>`<td class="mx-c n${x.p.on?'':' off'}">${f(x)}</td>`).join('')}<td></td></tr>`;
+  $('mx-res').innerHTML=
+    R('Clientes no fim do ano 5',x=>{const o=inC(x.p.id);return o?Math.round(o.years[4].n).toLocaleString('pt-BR'):'não vende'})+
+    R('Receita no ano 5',x=>{const o=inC(x.p.id);return o?BRLk(o.years[4].rev):'—'})+
+    R('Contribuição no ano 5',x=>{const o=inC(x.p.id);return o?cl(o.years[4].k):'—'})+
+    R('Sobra por cliente por mês',x=>BRL(x.unit))+
+    R('Anúncio gasto por cliente novo',x=>x.cac?BRL(x.cac):'—')+
+    R('Meses para recuperar esse gasto',x=>x.pay?(x.pay<1?'< 1':x.pay.toFixed(1).replace('.',',')):'—')+
+    R('<b>Sozinho</b>: lucro no ano 5',x=>cl(x.a.years[4].profit),1)+
+    R('Sozinho: pior momento do caixa',x=>cl(x.a.minCash),1)+
+    R('Sozinho: primeiro lucro',x=>x.a.beMonth?'mês '+x.a.beMonth:'—',1);
+  const ok=rows.filter(x=>x.a.years[4].profit>0);const start=(ok.length?ok:rows).slice().sort((a,b)=>b.a.minCash-a.a.minCash)[0];
+  const pot=rows.slice().sort((a,b)=>b.a.years[4].profit-a.a.years[4].profit)[0];const fast=rows.filter(x=>x.a.beMonth).sort((a,b)=>a.a.beMonth-b.a.beMonth)[0];
+  $('focus-rec').innerHTML=`<div class="fc"><span class="eyebrow">Começar por</span><b>${esc(start.p.name)}</b><span class="muted" style="font-size:.8rem">precisa de menos caixa (pior momento ${BRLk(start.a.minCash)})</span></div><div class="fc"><span class="eyebrow">Maior lucro no ano 5</span><b>${esc(pot.p.name)}</b><span class="muted" style="font-size:.8rem">${BRLk(pot.a.years[4].profit)} sozinho</span></div><div class="fc"><span class="eyebrow">Lucro mais rápido</span><b>${fast?esc(fast.p.name):'nenhum'}</b><span class="muted" style="font-size:.8rem">${fast?'primeiro lucro no mês '+fast.a.beMonth:'nenhum produto sozinho dá lucro em 5 anos'}</span></div>`;
+}
+function kpis(r,R){const y1=r.years[0],y5=r.years[4];
+  const it=[['Lucro operacional no ano 1',BRLk(y1.profit),delta(y1.profit,R.years[0].profit,true,BRLk),'antes do adiantamento do CEO'],['Lucro operacional no ano 5',BRLk(y5.profit),delta(y5.profit,R.years[4].profit,true,BRLk),'margem '+(y5.rev>0?Math.round(y5.profit/y5.rev*100)+'%':'—')],['Receita no ano 5',BRLk(y5.rev),delta(y5.rev,R.years[4].rev,true,BRLk),'MRR '+BRLk(y5.mrr)+'/mês no fim'],['Clientes no fim do ano 5',Math.round(y5.clients).toLocaleString('pt-BR'),delta(y5.clients,R.years[4].clients,true,v=>Math.round(v)),y5.planners+' planejador(es), '+y5.leaders+' líder(es)'],['Pior momento do caixa',BRLk(r.minCash),delta(r.minCash,R.minCash,true,BRLk),r.outMonth?'fica negativo no mês '+r.outMonth:'nunca fica negativo'],['Valuation no fim do ano 5',BRLk(y5.val),delta(y5.val,R.years[4].val,true,BRLk),'CEO ('+STATE.company.ceoshare+'%): '+BRLk(y5.val*STATE.company.ceoshare/100)]];
+  $('kpis').innerHTML=it.map(([l,v,d,s])=>`<div class="kpi"><span class="l">${l}</span><span class="v">${v}</span>${d}<span class="l">${s}</span></div>`).join('')}
+function yearsTable(r){const ys=r.years,c=STATE.company;const row=(l,f,cls)=>`<tr${cls?` class="${cls}"`:''}><td>${l}</td>${ys.map(y=>`<td class="n">${f(y)}</td>`).join('')}</tr>`;const neg=v=>BRL(-v);
+  $('tbl-years').innerHTML='<tr><th></th>'+ys.map(y=>`<th class="n">Ano ${y.y}</th>`).join('')+'</tr>'+
+   row('Clientes no fim do ano',y=>Math.round(y.clients).toLocaleString('pt-BR'))+row('Clientes novos no ano',y=>Math.round(y.newSubs).toLocaleString('pt-BR'))+
+   row('<b>Receita</b>',y=>BRL(y.rev),'tb')+row('Planejadores (% da receita)',y=>neg(y.planVar))+row("Complemento da linha d'água",y=>neg(y.top))+row('Líderes de time',y=>neg(y.leadVar))+row('Equipe: custo fixo por pessoa',y=>neg(y.team))+row('Comissões de indicação',y=>neg(y.comm))+row('Imposto + cobrança',y=>neg(y.taxFee))+row('Outros custos por cliente',y=>neg(y.cost))+row('Anúncios',y=>neg(y.ads))+row('Produção de conteúdo',y=>neg(y.orgCost))+row('Plataforma',y=>neg(y.platform))+row('Outros custos fixos',y=>neg(y.other))+
+   row('<b>Lucro operacional</b>',y=>`<span class="${y.profit<0?'neg':'pos'}">${BRL(y.profit)}</span>`,'tb')+row('Adiantamento ao CEO (sai do caixa)',y=>neg(y.ceo))+row('Dividendos distribuídos',y=>BRL(y.divD))+row('· CEO recebe ('+c.ceoshare+'%, já descontado o adiantado)',y=>BRL(y.divCeo))+row('· demais sócios ('+(100-c.ceoshare)+'%)',y=>BRL(y.divOth))+row('Adiantamento do CEO ainda a compensar',y=>BRL(y.aOut))+
+   row('<b>Caixa no fim do ano</b>',y=>`<span class="${y.cash<0?'neg':''}">${BRL(y.cash)}</span>`,'tb')+row('<b>Valuation no fim do ano</b>',y=>BRL(y.val),'tb')}
+function channels(r){const y=r.years[+$('ch-year').value];const rows=[['Anúncios',y.lAds,y.nAds,y.ads],['Indicações e rede',y.lRef,y.nRef,y.comm],['Canal do Neto e orgânico',y.lOrg,y.nOrg,y.orgCost]];
+  $('tbl-ch').innerHTML='<tr><th>Canal</th><th class="n">Interessados</th><th class="n">Clientes novos</th><th class="n">Custo no ano</th><th class="n">Custo por cliente</th></tr>'+rows.map(([n,l,ns,cst])=>`<tr><td>${n}</td><td class="n">${Math.round(l).toLocaleString('pt-BR')}</td><td class="n">${Math.round(ns).toLocaleString('pt-BR')}</td><td class="n">${BRL(cst)}</td><td class="n">${ns>0.5?BRL(cst/ns):'—'}</td></tr>`).join('')}
+function split(r){const y=r.years[4],R=y.rev||1;$('split-y').textContent='ano 5';const parts=[['Planejadores e líderes',y.planVar+y.top+y.leadVar+y.team],['Anúncios e conteúdo',y.ads+y.orgCost],['Imposto e cobrança',y.taxFee],['Comissões',y.comm],['Plataforma e fixos',y.platform+y.other],['Outros custos por cliente',y.cost]];const left=y.profit;const mx=Math.max(R,...parts.map(p=>p[1]));
+  $('split').innerHTML=parts.map(([n,v])=>`<div class="bar"><div class="t"><div class="flexbetween"><span>${n}</span><span class="muted num">${BRLk(v)}</span></div><div class="track"><div class="fill" style="width:${Math.min(100,v/mx*100)}%;background:var(--brand-2)"></div></div></div><span class="val">${Math.round(v/R*100)}</span></div>`).join('')+`<div class="bar"><div class="t"><div class="flexbetween"><b>${left>=0?'Fica para a empresa':'Falta'}</b><span class="num ${left<0?'neg':'pos'}">${BRLk(left)}</span></div><div class="track"><div class="fill" style="width:${Math.min(100,Math.abs(left)/mx*100)}%;background:${left>=0?'var(--good)':'var(--bad)'}"></div></div></div><span class="val">${Math.round(left/R*100)}</span></div>`}
+function objections(){const sel=$('obj-prod');const L=STATE.list;if(!L.some(p=>p.id===sel.value))sel.value=STATE.sel;sel.innerHTML=L.map(p=>`<option value="${p.id}"${p.id===(sel.value||STATE.sel)?' selected':''}>${esc(p.name)}</option>`).join('');
+  const p=L.find(x=>x.id===sel.value)||L[0];const t=p.type;const n=t==='as'?P.length:(SETS[t]?SETS[t].personas.length:0);
+  const rows=OPTS[t].filter(([k])=>!p.opts[k]).map(([k,lab])=>[k,lab,optGain(p,k)]).sort((a,b)=>b[2]-a[2]).slice(0,7);const mx=Math.max(0.01,...rows.map(r=>r[2]));
+  $('obj-note').textContent='Quanto cada entrega ainda desligada aumentaria a conversão de '+p.name+', segundo os '+n+' compradores simulados do tipo '+TYPENAME[t]+'.';
+  $('levers-rank').innerHTML=rows.length?rows.map(([k,lab,g])=>`<div class="bar"><div class="t"><div class="flexbetween"><span>${esc(lab)}</span><button data-lk="${k}" data-lp="${p.id}">ligar</button></div><div class="track"><div class="fill" style="width:${Math.max(2,g/mx*100)}%"></div></div></div><span class="val">+${Math.round(g*100)}%</span></div>`).join(''):'<p class="muted">Todas as entregas já estão ligadas.</p>';
+  const ps=t==='as'?P.filter(x=>!x.y):(SETS[t]?SETS[t].personas.filter(x=>!x.y):[]);const qs=[];for(let i=0;i<ps.length&&qs.length<3;i+=Math.max(1,Math.floor(ps.length/3)))qs.push(ps[i]);
+  $('obj-quotes').innerHTML='<span class="eyebrow">O que dizem os que não compraram</span>'+qs.map(q=>`<blockquote>"${esc(q.o||q.r)}"<br><small class="muted">${esc(q.n)}, ${q.a} · ${esc(q.s)}</small></blockquote>`).join('')}
+$('obj-prod').addEventListener('change',objections);
+$('levers-rank').addEventListener('click',e=>{const b=e.target.closest('[data-lk]');if(!b)return;const p=STATE.list.find(x=>x.id===b.dataset.lp);if(p){p.opts[b.dataset.lk]=true;renderMatrix();update()}});
+$('ch-year').addEventListener('change',()=>lastR&&channels(lastR));
+function live(r,R){const y1=r.years[0],y5=r.years[4];
+  const met=[['Lucro operacional ano 1',y1.profit,R.years[0].profit,BRLk,true,'p1'],['Lucro operacional ano 5',y5.profit,R.years[4].profit,BRLk,true,'p5'],['Valuation no ano 5',y5.val,R.years[4].val,BRLk,true,'vl'],['Pior momento do caixa',r.minCash,R.minCash,BRLk,true,'mc'],['Primeiro mês de lucro',r.beMonth||61,R.beMonth||61,v=>v>60?'—':'mês '+v,false,'be'],['Receita ano 5',y5.rev,R.years[4].rev,BRLk,true,'rv'],['Clientes no ano 5',y5.clients,R.years[4].clients,v=>Math.round(v).toLocaleString('pt-BR'),true,'cl']];
+  const now={};met.forEach(m=>now[m[5]]=m[1]);
+  if(prevLive){const d5=now.p5-prevLive.p5,dc=now.mc-prevLive.mc,dv=now.vl-prevLive.vl;const parts=[];if(Math.abs(d5)>=500)parts.push(`lucro ano 5 <b class="${d5>0?'pos':'neg'}">${d5>0?'+':'−'}${BRLk(Math.abs(d5))}</b>`);if(Math.abs(dv)>=1000)parts.push(`valuation <b class="${dv>0?'pos':'neg'}">${dv>0?'+':'−'}${BRLk(Math.abs(dv))}</b>`);if(Math.abs(dc)>=500)parts.push(`caixa <b class="${dc>0?'pos':'neg'}">${dc>0?'+':'−'}${BRLk(Math.abs(dc))}</b>`);
+    if(parts.length){$('lv-chg').innerHTML='Última alteração: '+parts.join(' · ');$('lv-chg').classList.remove('flash');void $('lv-chg').offsetWidth;$('lv-chg').classList.add('flash')}}else $('lv-chg').textContent='Mude qualquer número e veja o efeito aqui.';
+  prevLive=now;const vd=verdictOf(r);$('lv-verdict').className='verdict '+vd[0];$('lv-verdict').textContent=vd[1];
+  $('lv-met').innerHTML=met.map(([l,v,rv,f,hb])=>{const d=v-rv,same=Math.abs(d)<Math.max(Math.abs(rv)*0.005,0.5),good=hb?d>0:d<0;return `<div class="lm"><span>${l}</span><b class="${/Lucro|Pior/.test(l)?(v<0?'neg':'pos'):''}">${f(v)}</b><small class="${same?'eq':good?'up':'down'}">${same?'= ref.':(good?'▲ ':'▼ ')+(f===BRLk?BRLk(Math.abs(d)):Math.round(Math.abs(d)).toLocaleString('pt-BR'))}</small></div>`}).join('');
+  $('lv-cash').innerHTML=spark([r.months.map(m=>m.cash),R.months.map(m=>m.cash)],['var(--s1)','var(--s2)'],320,70);
+  $('lv-prod').innerHTML=r.prods.length?'<table class="lt"><tr><th></th><th class="n">Clientes</th><th class="n">Receita</th><th class="n">Contrib.</th></tr>'+r.prods.map(o=>`<tr><td><i class="sw" style="background:${colOf(o.p)}"></i>${esc(o.p.name)}</td><td class="n">${Math.round(o.years[4].n).toLocaleString('pt-BR')}</td><td class="n">${BRLk(o.years[4].rev)}</td><td class="n ${o.years[4].k<0?'neg':''}">${BRLk(o.years[4].k)}</td></tr>`).join('')+'</table>':'<p class="muted">Nenhum produto à venda.</p>';
+  const sb=(l,v,cls)=>`<span>${l} <b class="${cls||''}">${v}</b></span>`;$('sbar').innerHTML=sb('Lucro ano 5:',BRLk(y5.profit),y5.profit<0?'neg':'pos')+sb('Valuation:',BRLk(y5.val))+sb('Pior caixa:',BRLk(r.minCash),r.minCash<0?'neg':'pos')+sb('Clientes:',Math.round(y5.clients))}
+function plannerBox(r){$('pbox').innerHTML=[[1,'mês 1'],[12,'mês 12'],[24,'ano 2'],[36,'ano 3'],[48,'ano 4'],[60,'ano 5']].map(([m,l])=>`<div><b>${r.months[m-1].planners}</b><span>${l}</span></div>`).join('')}
+let INIT=false;
+function update(){
+  try{localStorage.setItem(LS+'cur',JSON.stringify(STATE))}catch(e){}
+  const r=simulate(STATE),R=simulate(ref);lastR=r;
+  {const vd=verdictOf(r);const el=$('verdict');if(el){el.className='verdict '+vd[0];el.textContent='Cenário: '+vd[1]}}
+  live(r,R);kpis(r,R);focus(r);yearsTable(r);channels(r);split(r);objections();plannerBox(r);renderSplit();
+  $('prod-legend').innerHTML=r.prods.map(o=>`<span><i style="background:${colOf(o.p)}"></i>${esc(o.p.name)}</span>`).join('');
+  if(r.prods.length)multiLine($('ch-prod'),r.prods.map(o=>o.months.map(m=>m.n)),r.prods.map(o=>colOf(o.p)),i=>`<b>Mês ${i+1}</b>`+r.prods.map(o=>`<br>${esc(o.p.name)}: ${Math.round(o.months[i].n)} clientes`).join(''));else $('ch-prod').innerHTML='';
+  multiLine($('ch-val'),[r.months.map(m=>m.cash),r.months.map(m=>m.val)],['var(--s3)','var(--s1)'],i=>`<b>Mês ${i+1}</b><br>Caixa: ${BRL(r.months[i].cash)}<br>Valuation: ${BRL(r.months[i].val)}`,BRLk);
+}
+$('save').addEventListener('click',()=>{ref=snapshot();try{localStorage.setItem(LS+'ref',JSON.stringify(ref))}catch(e){}$('save').textContent='Referência salva';setTimeout(()=>$('save').textContent='Salvar como referência',1500);update()});
+$('reset').addEventListener('click',()=>{STATE=defaultState();ref=snapshot();try{localStorage.setItem(LS+'ref',JSON.stringify(ref))}catch(e){}$('sceo-card').hidden=true;syncAll();update()});
+
+// ---- comparar cenários ----
 let CMPSEL=new Set();
 function renderCmpTab(withList=true){
-  const box=$('cmp-list');if(!box)return;
-  const cur={id:'__cur',name:'Tela atual (não salva)',state:snapshot()};
-  const all=[cur].concat(SCEN);
+  const box=$('cmp-list');const all=[{id:'__cur',name:'Tela atual (não salva)',state:snapshot()}].concat(SCEN);
   if(withList)box.innerHTML=SCEN.length?all.map(s=>`<label class="cmp-it"><input type="checkbox" data-c="${s.id}" ${CMPSEL.has(s.id)?'checked':''}><span><b>${esc(s.name)}</b>${s.at?`<small class="muted"> · ${fmtDate(s.at)}</small>`:''}</span></label>`).join(''):'<p class="muted">Ainda não há cenários salvos. Salve na seção 3 do Simulador.</p>';
-  const sel=all.filter(s=>CMPSEL.has(s.id));
-  $('cmp-out').hidden=sel.length<2;$('cmp-hint').hidden=sel.length>=2;
-  if(sel.length<2)return;
-  const cols=sel.map(s=>{const r=simulate(s.state);return {name:s.name,r,st:migrate(clone(s.state))}});
-  const base=cols[0];
-  const cl=v=>`<span style="color:${v<0?'var(--bad)':'var(--good)'}">${BRLk(v)}</span>`;
-  const dlt=(v,b,good=true)=>{if(b===undefined)return '';const d=v-b;if(Math.abs(d)<1)return '';const g=good?d>0:d<0;return ` <small class="${g?'pos':'neg'}">${d>0?'+':'−'}${BRLk(Math.abs(d)).replace('R$ ','')}</small>`};
-  const R=(lab,f,df)=>`<tr><td>${lab}</td>${cols.map((c,i)=>`<td class="n">${f(c)}${i&&df?df(c,base):''}</td>`).join('')}</tr>`;
+  const sel=all.filter(s=>CMPSEL.has(s.id));$('cmp-out').hidden=sel.length<2;$('cmp-hint').hidden=sel.length>=2;if(sel.length<2)return;
+  const cols=sel.map(s=>({name:s.name,r:simulate(s.state)}));const base=cols[0];
+  const cl=v=>`<span class="${v<0?'neg':'pos'}">${BRLk(v)}</span>`;const dl=(v,b)=>{const d=v-b;return Math.abs(d)<1?'':` <small class="${d>0?'pos':'neg'}">${d>0?'+':'−'}${BRLk(Math.abs(d)).replace('R$ ','')}</small>`};
+  const R=(lab,f,g)=>`<tr><td>${lab}</td>${cols.map((c,i)=>`<td class="n">${f(c)}${i&&g?dl(g(c),g(base)):''}</td>`).join('')}</tr>`;
   const allP=[];cols.forEach(c=>c.r.prods.forEach(o=>{if(!allP.includes(o.p.name))allP.push(o.p.name)}));
   $('cmp-tbl').innerHTML='<tr><th></th>'+cols.map((c,i)=>`<th class="n" style="text-transform:none"><i class="sw" style="background:${PALX[i%PALX.length]}"></i>${esc(c.name)}</th>`).join('')+'</tr>'+
     R('Produtos à venda',c=>c.r.prods.map(o=>esc(o.p.name)+' '+BRL(o.p.m)).join('<br>')||'—')+
-    R('Valuation no ano 5',c=>BRLk(c.r.years[4].val),(c,b)=>dlt(c.r.years[4].val,b.r.years[4].val))+
-    R('Lucro operacional do ano 1',c=>cl(c.r.years[0].profit),(c,b)=>dlt(c.r.years[0].profit,b.r.years[0].profit))+
-    R('Lucro operacional do ano 5',c=>cl(c.r.years[4].profit),(c,b)=>dlt(c.r.years[4].profit,b.r.years[4].profit))+
-    R('Dividendos em 5 anos',c=>BRLk(c.r.years.reduce((a,y)=>a+y.divD,0)))+
-    R('Receita do ano 5',c=>BRLk(c.r.years[4].rev),(c,b)=>dlt(c.r.years[4].rev,b.r.years[4].rev))+
-    R('Caixa no pior momento',c=>cl(c.r.minCash),(c,b)=>dlt(c.r.minCash,b.r.minCash))+
-    R('Primeiro mês de lucro',c=>c.r.beMonth?'mês '+c.r.beMonth:'—')+
-    R('Clientes no ano 5',c=>Math.round(c.r.years[4].clients).toLocaleString('pt-BR'))+
-    R('Planejadores no ano 5',c=>c.r.years[4].planners)+
-    R('Anúncios no ano 1',c=>BRLk(c.r.years[0].mkt))+
-    R('Anúncios no ano 5',c=>BRLk(c.r.years[4].mkt))+
-    R('Clientes vindos do orgânico (ano 5)',c=>Math.round(c.r.years[4].nOrg).toLocaleString('pt-BR'))+
-    allP.map(n=>R('Receita ano 5 · '+esc(n),c=>{const o=c.r.prods.find(o=>o.p.name===n);return o?BRLk(o.years[4].rev):'—'})).join('')+
-    R('Adiantamento ao CEO',c=>BRL(c.st.company.ceo1)+' → '+BRL(c.st.company.ceo2))+
-    R('Caixa inicial',c=>BRL(c.st.company.cash));
+    R('Valuation no ano 5',c=>BRLk(c.r.years[4].val),c=>c.r.years[4].val)+R('Lucro operacional ano 1',c=>cl(c.r.years[0].profit),c=>c.r.years[0].profit)+R('Lucro operacional ano 5',c=>cl(c.r.years[4].profit),c=>c.r.years[4].profit)+
+    R('Receita ano 5',c=>BRLk(c.r.years[4].rev),c=>c.r.years[4].rev)+R('Pior momento do caixa',c=>cl(c.r.minCash),c=>c.r.minCash)+R('Primeiro lucro',c=>c.r.beMonth?'mês '+c.r.beMonth:'—')+
+    R('Clientes ano 5',c=>Math.round(c.r.years[4].clients).toLocaleString('pt-BR'))+R('Anúncios ano 1',c=>BRLk(c.r.years[0].ads))+R('Dividendos em 5 anos',c=>BRLk(c.r.years.reduce((a,y)=>a+y.divD,0)))+
+    allP.map(n=>R('Receita ano 5 · '+esc(n),c=>{const o=c.r.prods.find(o=>o.p.name===n);return o?BRLk(o.years[4].rev):'—'})).join('');
   $('cmp-legend').innerHTML=cols.map((c,i)=>`<span><i style="background:${PALX[i%PALX.length]}"></i>${esc(c.name)}</span>`).join('');
-  multiLine($('cmp-cash'),cols.map(c=>c.r.months.map(m=>m.cash)),cols.map((c,i)=>PALX[i%PALX.length]),i=>`<b>Mês ${i+1}</b>`+cols.map(c=>`<br>${esc(c.name)}: ${BRL(c.r.months[i].cash)}`).join(''));
+  multiLine($('cmp-cash'),cols.map(c=>c.r.months.map(m=>m.cash)),cols.map((c,i)=>PALX[i%PALX.length]),i=>`<b>Mês ${i+1}</b>`+cols.map(c=>`<br>${esc(c.name)}: ${BRL(c.r.months[i].cash)}`).join(''),BRLk);
   $('cmp-years').innerHTML='<tr><th>Lucro operacional por ano</th>'+[1,2,3,4,5].map(y=>`<th class="n">Ano ${y}</th>`).join('')+'</tr>'+cols.map((c,i)=>`<tr><td><i class="sw" style="background:${PALX[i%PALX.length]}"></i>${esc(c.name)}</td>${c.r.years.map(y=>`<td class="n">${cl(y.profit)}</td>`).join('')}</tr>`).join('');
 }
-document.addEventListener('change',e=>{const id=e.target.dataset&&e.target.dataset.c;if(!id)return;if(e.target.checked)CMPSEL.add(id);else CMPSEL.delete(id);renderCmpTab(false)});
-// ---- cenários compartilhados (db) ----
-let DB=null,USER=null,MYID=null,SCEN=[],CMP=new Set(),CANWRITE=true;
-const LSK='profitto-scen';
-function scenSummary(st){const r=simulate(st);const y5=r.years[4];return {y5rev:y5.rev,y5:y5.profit,y1:r.years[0].profit,min:r.minCash,be:r.beMonth,cl:y5.clients,pl:y5.planners,r}}
-function fmtDate(t){try{return new Date(t).toLocaleDateString('pt-BR',{day:'2-digit',month:'2-digit'})+' '+new Date(t).toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'})}catch(e){return ''}}
+document.addEventListener('change',e=>{const id=e.target.dataset&&e.target.dataset.c;if(!id)return;e.target.checked?CMPSEL.add(id):CMPSEL.delete(id);renderCmpTab(false)});
+
+// ---- cenários compartilhados ----
+let DB=null,USER=null,MYID=null,SCEN=[],CANWRITE=true;const LSK=LS+'scen';
+function fmtDate(t){try{const d=new Date(t);return d.toLocaleDateString('pt-BR',{day:'2-digit',month:'2-digit'})+' '+d.toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'})}catch(e){return ''}}
 async function renderScen(){
-  const ids=[...new Set(SCEN.map(s=>s.author).filter(Boolean))];
-  let ps={};if(USER&&ids.length){try{ps=await USER.profiles(ids)}catch(e){}}
+  const ids=[...new Set(SCEN.map(s=>s.author).filter(Boolean))];let ps={};if(USER&&ids.length){try{ps=await USER.profiles(ids)}catch(e){}}
   const who=s=>!s.author?'neste navegador':s.author===MYID?'você':((ps[s.author]&&ps[s.author].name)||'sócio');
-  const rows=SCEN.map(s=>{const m=scenSummary(s.state);s._m=m;const prods=migrate(s.state).list.filter(p=>p.on).map(p=>esc(p.name)).join(', ')||'—';
-    const mine=!s.author||s.author===MYID;
-    return `<tr><td><input type="checkbox" data-cmp="${s.id}" ${CMP.has(s.id)?'checked':''} aria-label="Comparar"></td><td><b>${esc(s.name)}</b><br><span class="muted" style="font-size:.75rem">${esc(who(s))} · ${fmtDate(s.at)}</span></td><td>${prods}</td><td class="n" style="color:${m.y5<0?'var(--bad)':'var(--good)'}">${BRLk(m.y5)}</td><td class="n" style="color:${m.min<0?'var(--bad)':'inherit'}">${BRLk(m.min)}</td><td class="n">${m.be?'mês '+m.be:'—'}</td><td><div class="btns"><button class="btn" data-open="${s.id}">Abrir</button>${mine||CANWRITE===false?'':''}${mine?`<button class="btn" data-del="${s.id}">Excluir</button>`:''}</div></td></tr>`}).join('');
-  $('tbl-scen').innerHTML=SCEN.length?'<tr><th></th><th>Cenário</th><th>Produtos</th><th class="n">Resultado ano 5</th><th class="n">Pior caixa</th><th class="n">1º lucro</th><th></th></tr>'+rows:'<tr><td class="muted">Nenhum cenário salvo ainda. Salve o primeiro.</td></tr>';
+  $('tbl-scen').innerHTML=SCEN.length?'<tr><th>Cenário</th><th>Produtos</th><th class="n">Lucro ano 5</th><th class="n">Valuation ano 5</th><th class="n">Pior caixa</th><th></th></tr>'+SCEN.map(s=>{const r=simulate(s.state),y5=r.years[4];const mine=!s.author||s.author===MYID;
+    return `<tr><td><b>${esc(s.name)}</b><br><small class="muted">${esc(who(s))} · ${fmtDate(s.at)}</small></td><td>${r.prods.map(o=>esc(o.p.name)).join(', ')||'—'}</td><td class="n ${y5.profit<0?'neg':'pos'}">${BRLk(y5.profit)}</td><td class="n">${BRLk(y5.val)}</td><td class="n ${r.minCash<0?'neg':''}">${BRLk(r.minCash)}</td><td><div class="btns"><button class="btn" data-open="${s.id}">Abrir</button>${mine?`<button class="btn" data-del="${s.id}">Excluir</button>`:''}</div></td></tr>`}).join(''):'<tr><td class="muted">Nenhum cenário salvo ainda.</td></tr>';
   renderCmpTab();
 }
-function renderCmp(){return;
-  const sel=SCEN.filter(s=>CMP.has(s.id));
-  $('scen-cmp-wrap').hidden=sel.length<1;if(!sel.length)return;
-  const cols=[{name:'Tela atual',st:read()}].concat(sel.map(s=>({name:s.name,st:s.state})));
-  cols.forEach(c=>c.m=c.m||scenSummary(c.st));
-  const R=(lab,f)=>`<tr><td>${lab}</td>${cols.map(c=>`<td class="n">${f(c)}</td>`).join('')}</tr>`;
-  const cl=v=>`<span style="color:${v<0?'var(--bad)':'var(--good)'}">${BRLk(v)}</span>`;
-  const allP=[];cols.forEach(c=>c.m.r.prods.forEach(o=>{if(!allP.includes(o.p.name))allP.push(o.p.name)}));
-  $('tbl-scen-cmp').innerHTML='<tr><th></th>'+cols.map(c=>`<th class="n" style="text-transform:none">${esc(c.name)}</th>`).join('')+'</tr>'+
-    R('Produtos à venda',c=>c.m.r.prods.map(o=>esc(o.p.name)+' '+BRL(o.p.m)).join('<br>')||'—')+
-    R('Receita do ano 5',c=>BRLk(c.m.y5rev))+
-    R('Resultado do ano 1',c=>cl(c.m.y1))+
-    R('Resultado do ano 5',c=>cl(c.m.y5))+
-    R('Caixa no pior momento',c=>cl(c.m.min))+
-    R('Primeiro mês de lucro',c=>c.m.be?'mês '+c.m.be:'—')+
-    R('Clientes no ano 5',c=>Math.round(c.m.cl).toLocaleString('pt-BR'))+
-    R('Planejadores no ano 5',c=>c.m.pl)+
-    allP.map(n=>R('Receita ano 5 · '+esc(n),c=>{const o=c.m.r.prods.find(o=>o.p.name===n);return o?BRLk(o.years[4].rev):'—'})).join('');
-}
-$('tbl-scen').addEventListener('change',e=>{const id=e.target.dataset&&e.target.dataset.cmp;if(!id)return;if(e.target.checked)CMP.add(id);else CMP.delete(id);renderCmp()});
-$('tbl-scen').addEventListener('click',async e=>{
-  const o=e.target.closest('[data-open]'),d=e.target.closest('[data-del]');
-  if(o){const s=SCEN.find(x=>x.id===o.dataset.open);if(s){write(s.state);$('scen-name').value=s.name;update();$('scen-status').textContent='Aberto: '+s.name}}
-  if(d){const s=SCEN.find(x=>x.id===d.dataset.del);if(!s||!confirm('Excluir o cenário "'+s.name+'"?'))return;
-    if(DB){try{await DB.collection('cenarios').doc(s.id).delete()}catch(err){$('scen-status').textContent='Não foi possível excluir'}}
-    else{SCEN=SCEN.filter(x=>x.id!==s.id);try{localStorage.setItem(LSK,JSON.stringify(SCEN))}catch(e){}renderScen()}}
-});
+$('tbl-scen').addEventListener('click',async e=>{const o=e.target.closest('[data-open]'),d=e.target.closest('[data-del]');
+  if(o){const s=SCEN.find(x=>x.id===o.dataset.open);if(s){STATE=migrate(clone(s.state));$('scen-name').value=s.name;syncAll();update();$('scen-status').textContent='Aberto: '+s.name;document.getElementById('sec-prod').scrollIntoView({behavior:'smooth'})}}
+  if(d){const s=SCEN.find(x=>x.id===d.dataset.del);if(!s||!confirm('Excluir o cenário "'+s.name+'"?'))return;if(DB){try{await DB.collection('cenarios').doc(s.id).delete()}catch(err){$('scen-status').textContent='Não foi possível excluir'}}else{SCEN=SCEN.filter(x=>x.id!==s.id);try{localStorage.setItem(LSK,JSON.stringify(SCEN))}catch(_){}renderScen()}}});
 $('scen-save').addEventListener('click',async()=>{
-  if(DB&&CANWRITE===false){$('scen-status').textContent='Seu acesso é só de visualização. Peça ao dono da página acesso de Colaborador (menu Compartilhar) para salvar cenários.';return}
+  if(DB&&CANWRITE===false){$('scen-status').textContent='Seu acesso é só de visualização. Peça ao dono da página acesso de Colaborador (menu Compartilhar).';return}
   const name=$('scen-name').value.trim();if(!name){$('scen-name').focus();$('scen-status').textContent='Dê um nome ao cenário';return}
-  const st=read();const doc={name,at:Date.now(),author:MYID||null,state:st};
-  $('scen-save').disabled=true;
-  try{
-    if(DB){await DB.collection('cenarios').add(doc);$('scen-status').textContent='Salvo para todos: '+name}
-    else{SCEN.unshift(Object.assign({id:'l'+Date.now()},doc));try{localStorage.setItem(LSK,JSON.stringify(SCEN))}catch(e){}renderScen();$('scen-status').textContent='Salvo neste navegador: '+name}
-  }catch(err){$('scen-status').textContent=err&&err.code==='invalid_argument'?'Você só pode ver os cenários (sem permissão para salvar)':'Não foi possível salvar agora'}
-  $('scen-save').disabled=false;
-});
-(async()=>{
-  try{SCEN=JSON.parse(localStorage.getItem(LSK)||'[]')}catch(e){SCEN=[]}
-  renderScen();
+  const doc={name,at:Date.now(),author:MYID||null,state:snapshot()};$('scen-save').disabled=true;
+  try{if(DB){await DB.collection('cenarios').add(doc);$('scen-status').textContent='Salvo para todos: '+name}else{SCEN.unshift(Object.assign({id:'l'+Date.now()},doc));try{localStorage.setItem(LSK,JSON.stringify(SCEN))}catch(_){}renderScen();$('scen-status').textContent='Salvo neste navegador: '+name}}
+  catch(err){$('scen-status').textContent=err&&err.code==='invalid_argument'?'Seu acesso não permite salvar.':'Não foi possível salvar agora'}
+  $('scen-save').disabled=false});
+async function initScen(){
+  try{SCEN=JSON.parse(localStorage.getItem(LSK)||'[]')}catch(e){SCEN=[]}renderScen();
   if(!window.claude||!window.claude.use){$('scen-status').textContent='Salvando só neste navegador';return}
-  const [db,user]=await Promise.all([claude.use('db'),claude.use('user')]);
-  USER=user;if(user){try{MYID=await user.id()}catch(e){}try{const w=await user.can('data.write');if(w===false){CANWRITE=false}}catch(e){}}
+  const [db,user]=await Promise.all([claude.use('db'),claude.use('user')]);USER=user;
+  if(user){try{MYID=await user.id()}catch(e){}try{if((await user.can('data.write'))===false)CANWRITE=false}catch(e){}}
   if(!db){$('scen-status').textContent='Salvando só neste navegador (entre na sua conta para compartilhar)';return}
   DB=db;$('scen-status').textContent=CANWRITE?'Compartilhado com quem abre esta página':'Você vê os cenários, mas seu acesso não permite salvar';
-  db.collection('cenarios').orderBy('at','desc').limit(200).onSnapshot(snap=>{
-    SCEN=snap.docs.map(d=>Object.assign({id:d.id},clone(d.data())));renderScen();
-  },()=>{$('scen-status').textContent='Não foi possível carregar os cenários'});
-})();
+  db.collection('cenarios').orderBy('at','desc').limit(200).onSnapshot(snap=>{SCEN=snap.docs.map(d=>Object.assign({id:d.id},clone(d.data())));renderScen()},()=>{$('scen-status').textContent='Não foi possível carregar os cenários'});
+}
 
-// ---- exportar PDF ----
-const pdfTxt=t=>String(t).replace(/−/g,'-').replace(/≈/g,'~').replace(/→/g,'->').replace(/·/g,'-').replace(/[^\x00-\xFF]/g,'');
+// ---- PDF ----
+const pdfTxt=t=>String(t).replace(/−/g,'-').replace(/≈/g,'~').replace(/→/g,'->').replace(/·/g,'-').replace(/×/g,'x').replace(/[^\x00-\xFF]/g,'');
 let jsPdfP=null;
-function loadJsPdf(){if(jsPdfP)return jsPdfP;const add=src=>new Promise((ok,ko)=>{const sc=document.createElement('script');sc.src=src;sc.onload=ok;sc.onerror=ko;document.head.appendChild(sc)});
-  jsPdfP=add('https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js').then(()=>add('https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.2/jspdf.plugin.autotable.min.js'));return jsPdfP}
-function pdfChart(doc,x,y,w,h,series,cols,title,fmt){
-  doc.setFontSize(9);doc.setTextColor(80);doc.text(pdfTxt(title),x,y-2);
-  const all=series.flat();let lo=Math.min(0,...all),hi=Math.max(1,...all);if(hi===lo)hi=lo+1;
-  doc.setDrawColor(220);doc.rect(x,y,w,h);
-  const N=series[0].length,px=i=>x+w*i/(N-1),py=v=>y+h*(1-(v-lo)/(hi-lo));
-  if(lo<0){doc.setDrawColor(200,80,80);doc.setLineDashPattern([1,1],0);doc.line(x,py(0),x+w,py(0));doc.setLineDashPattern([],0)}
-  series.forEach((sr,j)=>{doc.setDrawColor(...cols[j]);doc.setLineWidth(0.6);for(let i=1;i<N;i++)doc.line(px(i-1),py(sr[i-1]),px(i),py(sr[i]))});
-  doc.setLineWidth(0.2);doc.setFontSize(7);doc.setTextColor(120);doc.text(pdfTxt(fmt(hi)),x+1,y+3);doc.text(pdfTxt(fmt(lo)),x+1,y+h-1);
-  ['mês 1','ano 1','ano 2','ano 3','ano 4','ano 5'].forEach((l,i)=>doc.text(pdfTxt(l),x+w*[0,11,23,35,47,59][i]/59,y+h+4,{align:i?'center':'left'}));
-}
-const PDFCOL=[[42,120,214],[235,104,52],[27,175,122],[237,161,0],[232,123,164],[98,80,214]];
-async function savePdf(doc,name){
-  const dl=window.claude&&window.claude.use?await claude.use('downloads'):null;
-  if(dl){try{await dl.save({filename:name,data:doc.output('blob')});return true}catch(e){if(e&&e.code==='declined')return false}}
-  try{doc.save(name);return true}catch(e){return false}
-}
+function loadJsPdf(){if(jsPdfP)return jsPdfP;const add=src=>new Promise((ok,ko)=>{const sc=document.createElement('script');sc.src=src;sc.onload=ok;sc.onerror=ko;document.head.appendChild(sc)});jsPdfP=add('https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js').then(()=>add('https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.2/jspdf.plugin.autotable.min.js'));jsPdfP.catch(()=>{jsPdfP=null});return jsPdfP}
+const PDFCOL=[[42,120,214],[27,175,122],[235,104,52],[237,161,0],[232,123,164],[98,80,214]];
+function pdfChart(doc,x,y,w,h,series,cols,title,fmt){doc.setFontSize(9);doc.setTextColor(80);doc.text(pdfTxt(title),x,y-2);const all=series.flat();let lo=Math.min(0,...all),hi=Math.max(1,...all);doc.setDrawColor(220);doc.rect(x,y,w,h);const N=series[0].length,px=i=>x+w*i/(N-1),py=v=>y+h*(1-(v-lo)/(hi-lo||1));
+  if(lo<0){doc.setDrawColor(200,80,80);doc.line(x,py(0),x+w,py(0))}series.forEach((sr,j)=>{doc.setDrawColor(...cols[j]);doc.setLineWidth(0.6);for(let i=1;i<N;i++)doc.line(px(i-1),py(sr[i-1]),px(i),py(sr[i]))});doc.setLineWidth(0.2);doc.setFontSize(7);doc.setTextColor(120);doc.text(pdfTxt(fmt(hi)),x+1,y+3);doc.text(pdfTxt(fmt(lo)),x+1,y+h-1)}
+async function savePdf(doc,name){const dl=window.claude&&window.claude.use?await claude.use('downloads'):null;if(dl){try{await dl.save({filename:name,data:doc.output('blob')});return true}catch(e){if(e&&e.code==='declined')return false}}try{doc.save(name);return true}catch(e){return false}}
 async function exportPDF(){
-  const btns=[...document.querySelectorAll('[data-pdf]')];btns.forEach(b=>{b.disabled=true;b.dataset.t=b.textContent;b.textContent='Gerando PDF…'});
-  try{
-    await loadJsPdf();const {jsPDF}=window.jspdf;const doc=new jsPDF({unit:'mm',format:'a4'});
-    const st=read(),r=simulate(st),c=st.company,y5=r.years[4];
-    const name=($('scen-name').value||'').trim()||'Cenário atual';
-    const T=pdfTxt;let Y=16;
-    doc.setFont('helvetica','bold');doc.setFontSize(16);doc.setTextColor(35,31,32);doc.text('Profitto - Simulação do negócio',14,Y);
-    doc.setFont('helvetica','normal');doc.setFontSize(10);doc.setTextColor(90);Y+=6;doc.text(T(name+' - '+new Date().toLocaleDateString('pt-BR')+' - '+$('verdict').textContent),14,Y);Y+=6;
-    doc.autoTable({startY:Y,head:[['Resultado','Valor']],body:[['Lucro operacional do ano 1',BRL(r.years[0].profit)],['Lucro operacional do ano 5',BRL(y5.profit)],['Valuation no fim do ano 5',BRL(y5.val)],['Dividendos distribuídos em 5 anos',BRL(r.years.reduce((a,y)=>a+y.divD,0))],['Receita do ano 5',BRL(y5.rev)],['Pior momento do caixa',BRL(r.minCash)],['Primeiro mês de lucro',r.beMonth?'mês '+r.beMonth:'não chega em 5 anos'],['Clientes no fim do ano 5',Math.round(y5.clients).toLocaleString('pt-BR')],['Planejadores / líderes no ano 5',y5.planners+' / '+y5.leaders]].map(a=>a.map(T)),theme:'grid',styles:{fontSize:9},headStyles:{fillColor:[35,31,32]},columnStyles:{1:{halign:'right'}},margin:{left:14,right:110}});
-    pdfChart(doc,110,Y+6,86,34,[r.months.map(m=>m.cash)],[PDFCOL[0]],'Caixa acumulado em 5 anos',BRLk);
-    pdfChart(doc,110,Y+52,86,30,r.prods.map(o=>o.months.map(m=>m.n)),r.prods.map((o,i)=>PDFCOL[i%PDFCOL.length]),'Clientes por produto ('+r.prods.map(o=>o.p.name).join(', ')+')',v=>Math.round(v)+'');
-    Y=Math.max(doc.lastAutoTable.finalY,Y+92)+6;
-    doc.setFont('helvetica','bold');doc.setFontSize(11);doc.setTextColor(35,31,32);doc.text('Produtos à venda',14,Y);
-    doc.autoTable({startY:Y+2,head:[['Produto','Preço','Compram','Clientes a5','Receita a5','Contribuição a5']].map(a=>a.map(T)),body:r.prods.map(o=>[o.p.name,BRL(o.p.m)+'/mês'+(o.p.diag?' + diag. '+BRL(o.p.dprice):''),(o.rate*100).toFixed(1).replace('.',',')+'%',Math.round(o.years[4].n).toLocaleString('pt-BR'),BRL(o.years[4].rev),BRL(o.years[4].k)].map(T)),theme:'striped',styles:{fontSize:8.5},headStyles:{fillColor:[76,105,113]},margin:{left:14,right:14}});
-    Y=doc.lastAutoTable.finalY+8;doc.setFont('helvetica','bold');doc.setFontSize(11);doc.text('Ano a ano',14,Y);
-    const ys=r.years;
-    doc.autoTable({startY:Y+2,head:[['',...ys.map(y=>'Ano '+y.y)]],body:[['Clientes no fim do ano',...ys.map(y=>Math.round(y.clients).toLocaleString('pt-BR'))],['Receita',...ys.map(y=>BRLk(y.rev))],['Marketing pago',...ys.map(y=>BRLk(-y.mkt))],['Lucro operacional',...ys.map(y=>BRLk(y.profit))],['Adiantamento ao CEO',...ys.map(y=>BRLk(-y.ceo))],['Dividendos',...ys.map(y=>BRLk(y.divD))],['Caixa no fim do ano',...ys.map(y=>BRLk(y.cash))],['Valuation',...ys.map(y=>BRLk(y.val))]].map(a=>a.map(T)),theme:'grid',styles:{fontSize:8.5,halign:'right'},columnStyles:{0:{halign:'left'}},headStyles:{fillColor:[76,105,113]},margin:{left:14,right:14}});
-    doc.addPage();Y=16;doc.setFont('helvetica','bold');doc.setFontSize(12);doc.text('Premissas desta simulação',14,Y);
-    const P0=st.list.filter(p=>p.on);
-    const rowsP=[['Mensalidade',p=>BRL(p.m)],['Diagnóstico',p=>p.diag?BRL(p.dprice):'não'],['Anúncios por mês',p=>BRL(p.mkt)],['Aumento dos anúncios por ano',p=>(p.mktgr||0)+'%'],['Custo por interessado',p=>BRL(p.cpl)],['Contatos da rede por mês',p=>p.rede],['Público do Neto',p=>{const sw=P0.reduce((a,q)=>a+(+q.orgw||0),0);return sw?Math.round((+p.orgw||0)/sw*100)+'%':'0%'}],['Cancelam por mês',p=>String(p.churn).replace('.',',')+'%'],['Planejador (% da receita)',p=>p.plan?p.plan+'%':'sem planejador'],["Linha d'água do planejador",p=>p.plan?BRL(p.pfix||0):'-'],['Clientes por planejador',p=>p.plan?p.cap:'-'],['Compradores simulados',p=>KINDNAME[kindOf(p)]||'']];
-    doc.autoTable({startY:Y+4,head:[['',...P0.map(p=>p.name)].map(T)],body:rowsP.map(([l,f])=>[l,...P0.map(f)].map(x=>T(x))),theme:'grid',styles:{fontSize:8.5},headStyles:{fillColor:[35,31,32]},margin:{left:14,right:14}});
-    Y=doc.lastAutoTable.finalY+8;
-    doc.autoTable({startY:Y,head:[['Empresa','Valor']],body:[['Inscritos no canal do Neto',(c.ytsubs||0).toLocaleString('pt-BR')],['Visualizações por mês',(c.ytviews||0).toLocaleString('pt-BR')],['Crescimento do canal por mês (anos 1-5)',[1,2,3,4,5].map(i=>(c['ytg'+i]||0)+'%').join(' / ')],['Adiantamento ao CEO (antes / depois do lucro)',BRL(c.ceo1)+' / '+BRL(c.ceo2)],['Participação do CEO',c.ceoshare+'%'],['Dividendos (% do lucro / caixa mínimo)',c.divpct+'% / '+BRL(c.divres)],['Múltiplos de valuation (receita / lucro)',c.multR+'x / '+c.multE+'x'],['Plataforma por mês',BRL(c.pmt)],['Outros custos fixos',BRL(c.other)],['Imposto',c.tax+'%'],['Caixa inicial',BRL(c.cash)],['Quanto acreditar nos compradores simulados',c.realc+'%']].map(a=>a.map(T)),theme:'grid',styles:{fontSize:8.5},headStyles:{fillColor:[76,105,113]},columnStyles:{1:{halign:'right'}},margin:{left:14,right:14}});
-    Y=doc.lastAutoTable.finalY+8;doc.setFont('helvetica','normal');doc.setFontSize(8);doc.setTextColor(110);
-    doc.text(doc.splitTextToSize(T('Método: compradores simulados por IA (testes com centenas de perfis), descontados pela escolha de realismo acima. É pesquisa, não previsão: confirme com pré-venda e clientes reais. Gerado pelo Simulador Profitto.'),180),14,Y);
-    const ok=await savePdf(doc,'simulacao-profitto-'+name.toLowerCase().replace(/[^a-z0-9]+/g,'-').slice(0,40)+'.pdf');
-    btns.forEach(b=>b.textContent=ok?'PDF pronto':'PDF cancelado');
-  }catch(e){btns.forEach(b=>b.textContent='Não foi possível gerar')}
-  setTimeout(()=>btns.forEach(b=>{b.disabled=false;b.textContent=b.dataset.t}),2200);
+  const btns=[...document.querySelectorAll('[data-pdf]')];btns.forEach(b=>{b.disabled=true;b.dataset.t=b.dataset.t||b.textContent;b.textContent='Gerando PDF…'});let msg='PDF pronto';
+  try{await loadJsPdf();const {jsPDF}=window.jspdf;const doc=new jsPDF({unit:'mm',format:'a4'});const T=pdfTxt;
+    const st=snapshot(),r=simulate(st),c=st.company,y5=r.years[4],name=($('scen-name').value||'').trim()||'Cenário atual';let Y=16;
+    doc.setFont('helvetica','bold');doc.setFontSize(16);doc.setTextColor(35,31,32);doc.text('Profitto - Simulação do negócio',14,Y);doc.setFont('helvetica','normal');doc.setFontSize(10);doc.setTextColor(90);Y+=6;doc.text(T(name+' - '+new Date().toLocaleDateString('pt-BR')+' - '+verdictOf(r)[1]),14,Y);Y+=6;
+    doc.autoTable({startY:Y,head:[['Resultado','Valor']],body:[['Lucro operacional ano 1',BRL(r.years[0].profit)],['Lucro operacional ano 5',BRL(y5.profit)],['Receita ano 5',BRL(y5.rev)],['Clientes no fim do ano 5',Math.round(y5.clients).toLocaleString('pt-BR')],['Pior momento do caixa',BRL(r.minCash)],['Primeiro mês de lucro',r.beMonth?'mês '+r.beMonth:'não chega'],['Valuation no fim do ano 5',BRL(y5.val)],['Dividendos em 5 anos',BRL(r.years.reduce((a,y)=>a+y.divD,0))]].map(a=>a.map(T)),theme:'grid',styles:{fontSize:9},headStyles:{fillColor:[35,31,32]},columnStyles:{1:{halign:'right'}},margin:{left:14,right:110}});
+    pdfChart(doc,110,Y+6,86,32,[r.months.map(m=>m.cash),r.months.map(m=>m.val)],[PDFCOL[1],PDFCOL[0]],'Caixa (verde) e valuation (azul)',BRLk);
+    if(r.prods.length)pdfChart(doc,110,Y+50,86,28,r.prods.map(o=>o.months.map(m=>m.n)),r.prods.map((o,i)=>PDFCOL[i%PDFCOL.length]),'Clientes por produto',v=>Math.round(v)+'');
+    Y=Math.max(doc.lastAutoTable.finalY,Y+86)+6;doc.setFont('helvetica','bold');doc.setFontSize(11);doc.text('Produtos',14,Y);
+    doc.autoTable({startY:Y+2,head:[['Produto','Preço','Viram clientes','Clientes a5','Receita a5','Contribuição a5'].map(T)],body:r.prods.map(o=>[o.p.name,BRL(o.p.m)+'/mês'+(o.p.dprice>0?' + diag. '+BRL(o.p.dprice):''),pc1(o.p.base/100*o.rel*(o.p.dprice>0?o.p.dconv/100:1)),Math.round(o.years[4].n).toLocaleString('pt-BR'),BRL(o.years[4].rev),BRL(o.years[4].k)].map(T)),theme:'striped',styles:{fontSize:8.5},headStyles:{fillColor:[76,105,113]},margin:{left:14,right:14}});
+    Y=doc.lastAutoTable.finalY+8;doc.setFont('helvetica','bold');doc.setFontSize(11);doc.text('Ano a ano',14,Y);const ys=r.years;
+    doc.autoTable({startY:Y+2,head:[['',...ys.map(y=>'Ano '+y.y)]],body:[['Clientes',...ys.map(y=>Math.round(y.clients).toLocaleString('pt-BR'))],['Receita',...ys.map(y=>BRLk(y.rev))],['Anúncios',...ys.map(y=>BRLk(-y.ads))],['Lucro operacional',...ys.map(y=>BRLk(y.profit))],['Adiantamento CEO',...ys.map(y=>BRLk(-y.ceo))],['Dividendos',...ys.map(y=>BRLk(y.divD))],['Caixa no fim do ano',...ys.map(y=>BRLk(y.cash))],['Valuation',...ys.map(y=>BRLk(y.val))]].map(a=>a.map(T)),theme:'grid',styles:{fontSize:8.5,halign:'right'},columnStyles:{0:{halign:'left'}},headStyles:{fillColor:[76,105,113]},margin:{left:14,right:14}});
+    doc.addPage();Y=16;doc.setFont('helvetica','bold');doc.setFontSize(12);doc.text('Premissas',14,Y);const P0=st.list.filter(p=>p.on);const sw=P0.reduce((a,q)=>a+(+q.orgw||0),0);
+    const rp=[['Tipo',p=>TYPENAME[p.type]],['Mensalidade',p=>BRL(p.m)],['Diagnóstico',p=>p.dprice>0?BRL(p.dprice):'não'],['Anúncios por mês',p=>BRL(p.ads)],['Aumento dos anúncios por ano',p=>p.adsgr+'%'],['Custo por interessado',p=>BRL(p.cpl)],['Indicações por mês',p=>p.refs+(p.refcom?' ('+p.refcom+'% de comissão)':'')],['Público do Neto',p=>sw?Math.round(p.orgw/sw*100)+'%':'0%'],['Compram (base de mercado)',p=>p.base+'%'+(p.dprice>0?' / assinam '+p.dconv+'%':'')],['Efeito de preço e entregas',p=>relOf(p).toFixed(2)+'x'],['Cancelam por mês',p=>p.churn+'%'],['Planejador',p=>p.plan?p.plan+'% (linha d\'água '+BRL(p.floor)+', '+p.cap+' clientes)':'sem planejador'],['Entregas',p=>OPTS[p.type].filter(([k])=>p.opts[k]).map(x=>x[1]).join('; ')||'-']];
+    doc.autoTable({startY:Y+4,head:[['',...P0.map(p=>p.name)].map(T)],body:rp.map(([l,f])=>[l,...P0.map(f)].map(x=>T(x))),theme:'grid',styles:{fontSize:8},headStyles:{fillColor:[35,31,32]},margin:{left:14,right:14}});
+    Y=doc.lastAutoTable.finalY+6;doc.autoTable({startY:Y,head:[['Empresa','Valor']],body:[['Canal do Neto',(c.ytsubs||0).toLocaleString('pt-BR')+' inscritos, '+(c.ytviews||0).toLocaleString('pt-BR')+' visualizações/mês'],['Crescimento do canal por mês (anos 1-5)',[1,2,3,4,5].map(i=>c['ytg'+i]+'%').join(' / ')],['Cliques no link / viram contato',c.ytctr+'% / '+c.ytlead+'%'],['Plataforma / outros fixos',BRL(c.pmt)+' / '+BRL(c.other)],['Imposto + cobrança',c.tax+'% + '+c.fee+'%'],['Adiantamento CEO (antes / depois do lucro)',BRL(c.ceo1)+' / '+BRL(c.ceo2)],['Participação do CEO',c.ceoshare+'%'],['Dividendos',c.divpct+'% do lucro, caixa mínimo '+BRL(c.divres)],['Caixa inicial',BRL(c.cash)],['Valuation',c.multR+'x receita recorrente / '+c.multE+'x lucro (média)']].map(a=>a.map(T)),theme:'grid',styles:{fontSize:8.5},headStyles:{fillColor:[76,105,113]},margin:{left:14,right:14}});
+    Y=doc.lastAutoTable.finalY+8;doc.setFont('helvetica','normal');doc.setFontSize(8);doc.setTextColor(110);doc.text(doc.splitTextToSize(T('Método: conversão base de mercado ajustada por preço e entregas conforme a reação de compradores simulados (efeito limitado entre 0,5x e 2x). Pesquisa, não previsão: confirme com pré-venda. Gerado pelo Simulador Profitto.'),180),14,Y);
+    const ok=await savePdf(doc,'simulacao-profitto-'+name.toLowerCase().normalize('NFD').replace(/[^a-z0-9]+/g,'-').slice(0,40)+'.pdf');if(!ok)msg='PDF cancelado';
+  }catch(e){msg='Não foi possível gerar'}
+  btns.forEach(b=>b.textContent=msg);setTimeout(()=>btns.forEach(b=>{b.disabled=false;b.textContent=b.dataset.t}),2200);
 }
 document.addEventListener('click',e=>{if(e.target.closest('[data-pdf]'))exportPDF()});
+// ---- Super CEO ----
+const SUPERCEO=__SUPERCEO__;
+const SCEO_TXT=__SCEOTXT__;
+$('sceo-btn').addEventListener('click',()=>{const keep=pick(STATE.company,['ytsubs','ytviews','ytg1','ytg2','ytg3','ytg4','ytg5']);STATE=migrate(clone(SUPERCEO));Object.assign(STATE.company,keep);$('scen-name').value='Super CEO';$('sceo-card').innerHTML=SCEO_TXT;$('sceo-card').hidden=false;$('sceo-card').querySelector('#sceo-close').onclick=()=>{$('sceo-card').hidden=true};syncAll();update();$('sceo-card').scrollIntoView({behavior:'smooth',block:'start'})});
+window.__SIM={simulate,defaultState,clone,migrate,relOf,OPTS};
 
-
-$('mx-adv').checked=MXADV;$('mx-adv').addEventListener('change',e=>{MXADV=e.target.checked;try{localStorage.setItem('profitto-adv',MXADV?'1':'0')}catch(_){}renderMatrix();update()});
-const SUPERCEO={"company": {"ceoshare": 20, "divpct": 50, "divres": 50000, "multR": 2, "multE": 8, "realc": 25, "ytsubs": 0, "ytviews": 0, "ytg1": 0, "ytg2": 0, "ytg3": 0, "ytg4": 0, "ytg5": 0, "ytctr": 1.5, "ytlead": 35, "yttrust": true, "orgcost": 0, "orgother": 0, "span": 6, "lead": 5, "perprof": 300, "other": 1500, "ceo1": 5000, "ceo2": 10000, "tax": 6, "pmt": 5000, "cash": 100000, "menu": false}, "list": [{"id": "as", "name": "Assistido", "ci": 0, "on": true, "kind": "as", "menuF": "as", "vw": null, "tm": 0, "tcfg": null, "mktgr": 25, "cplgr": 5, "orgw": 100, "m": 397, "diag": true, "dprice": 197, "parcelado": true, "cancel": true, "comissao": true, "cfp": true, "garantia": true, "exemplo": true, "prova": false, "online": false, "checkin": true, "casal": true, "raiox": true, "dividas": true, "tributario": false, "rede": 25, "mkt": 5000, "cpl": 30, "real": 50, "conv": 50, "churn": 2, "growth": 15, "pleads": 10, "pcom": 10, "pdur": 12, "aleads": 0, "acom": 15, "adur": 12, "cap": 130, "pfix": 1500, "plan": 20, "deliv": 0, "pbase": 25, "dg_trial30": false, "dg_open_finance": false, "dg_ia": false, "dg_humano": false, "dg_desafio": false, "dg_familia": false, "dg_seguranca": false, "dg_avaliacoes": false, "dg_indicacao": false, "dg_garantia": false, "dg_anual": false, "dg_conteudo": false, "dg_preco_menor": false, "pv_independente": false, "pv_primeira_gratis": false, "pv_referencias": false, "pv_equipe": false, "pv_relatorio": false, "pv_familia": false, "pv_holding": false, "pv_internacional": false, "pv_garantia": false, "pv_presencial_casa": false, "pv_anual": false, "pv_preco_menor": false, "mr": [97, 797, 10]}, {"id": "dg", "name": "Digital (self-service)", "ci": 1, "on": true, "kind": "dg", "menuF": "dg", "vw": [10, 20, 50, 80], "tm": 49, "tcfg": null, "mktgr": 25, "cplgr": 5, "orgw": 60, "m": 49, "diag": false, "dprice": 0, "parcelado": false, "cancel": true, "comissao": true, "cfp": false, "garantia": false, "exemplo": false, "prova": false, "online": true, "checkin": false, "casal": false, "raiox": false, "dividas": true, "tributario": false, "rede": 10, "mkt": 3000, "cpl": 15, "real": 50, "conv": 100, "churn": 4, "growth": 15, "pleads": 0, "pcom": 10, "pdur": 12, "aleads": 0, "acom": 15, "adur": 12, "cap": 120, "pfix": 0, "plan": 0, "deliv": 6, "pbase": 17.8, "dg_trial30": false, "dg_open_finance": true, "dg_ia": false, "dg_humano": true, "dg_desafio": true, "dg_familia": false, "dg_seguranca": false, "dg_avaliacoes": false, "dg_indicacao": false, "dg_garantia": true, "dg_anual": false, "dg_conteudo": false, "dg_preco_menor": false, "pv_independente": false, "pv_primeira_gratis": false, "pv_referencias": false, "pv_equipe": false, "pv_relatorio": false, "pv_familia": false, "pv_holding": false, "pv_internacional": false, "pv_garantia": false, "pv_presencial_casa": false, "pv_anual": false, "pv_preco_menor": false, "mr": [9, 199, 1]}, {"id": "pv", "name": "Private", "ci": 2, "on": true, "kind": "pv", "menuF": "pv", "vw": [400, 800, 1500, 2500], "tm": 1500, "tcfg": null, "mktgr": 25, "cplgr": 5, "orgw": 20, "m": 1800, "diag": false, "dprice": 0, "parcelado": false, "cancel": true, "comissao": true, "cfp": true, "garantia": false, "exemplo": false, "prova": false, "online": false, "checkin": true, "casal": false, "raiox": true, "dividas": false, "tributario": true, "rede": 10, "mkt": 0, "cpl": 120, "real": 50, "conv": 100, "churn": 1, "growth": 15, "pleads": 0, "pcom": 10, "pdur": 12, "aleads": 15, "acom": 15, "adur": 12, "cap": 40, "pfix": 3000, "plan": 30, "deliv": 150, "pbase": 3.1, "dg_trial30": false, "dg_open_finance": false, "dg_ia": false, "dg_humano": false, "dg_desafio": false, "dg_familia": false, "dg_seguranca": false, "dg_avaliacoes": false, "dg_indicacao": false, "dg_garantia": false, "dg_anual": false, "dg_conteudo": false, "dg_preco_menor": false, "pv_independente": true, "pv_primeira_gratis": true, "pv_referencias": true, "pv_equipe": false, "pv_relatorio": false, "pv_familia": false, "pv_holding": true, "pv_internacional": false, "pv_garantia": false, "pv_presencial_casa": false, "pv_anual": false, "pv_preco_menor": false, "mr": [500, 5000, 100]}], "sel": "as"};
-$('sceo-btn').addEventListener('click',()=>{const keep=pick(STATE.company,['ytsubs','ytviews','ytg1','ytg2','ytg3','ytg4','ytg5','yttrust']);const ns=clone(SUPERCEO);Object.assign(ns.company,keep);write(ns);$('preset').value='';$('scen-name').value='Super CEO';$('sceo-card').hidden=false;update();$('sceo-card').scrollIntoView({behavior:'smooth',block:'start'})});
-$('sceo-close').addEventListener('click',()=>{$('sceo-card').hidden=true});
 // ---- abas ----
 const tabs=[...document.querySelectorAll('nav.tabs button')];
 function showTab(id){tabs.forEach(b=>{const on=b.dataset.tab===id;b.setAttribute('aria-selected',on);$('p-'+b.dataset.tab).hidden=!on});try{localStorage.setItem('profitto-tab',id)}catch(e){}}
@@ -1411,7 +882,6 @@ $('value-eq').innerHTML=[['Resultado dos sonhos',6,7],['Probabilidade percebida'
 const COND=[['Escolher um segmento inicial','em andamento','Profissionais liberais e casais (marketing.md)'],['Promessa em uma frase + resultado em 90 dias','feito','"Plano Claro em 15 Dias"'],['Unit economics positiva','feito','R$ 194,53 por cliente-mês (65%)'],['Garantia que o caixa aguente','feito','Diagnóstico a partir de R$ 197'],['Paga os fixos no ano 1','não','Depende do ritmo de clientes: use o simulador'],['Caixa suficiente','não na rampa base','Pré-venda + CEO a R$ 5 mil até o break-even'],['Custo por cliente medido','aberto','Pré-venda de 12/10 a 08/11'],['Enquadramento CVM e comissão','aberto','Decidir até 16/10'],['Vantagem durável declarada','aberto','Nicho + método + marca'],['Piloto pago com resultados','aberto','Meta: ≥ 20 diagnósticos pagos']];
 $('tbl-cond').innerHTML='<tr><th>Condição</th><th>Status</th><th>Como</th></tr>'+COND.map(([a,b,c])=>`<tr><td>${a}</td><td><span class="sev ${b==='feito'?'l':b==='aberto'||b==='em andamento'?'m':'h'}">${b}</span></td><td>${c}</td></tr>`).join('');
 
-syncInputs();INIT=true;update();
-window.__SIM={simulate,defaultState,clone,migrate,xk,SETS,setRate,panelRate};
+syncAll();INIT=true;update();initScen();
 })();
 </script>
